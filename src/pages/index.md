@@ -14,7 +14,7 @@ Adobe Target API offers limitless ways to integrate your most important customer
 <Resources slots="heading, links"/>
 
 ## Resources
-<!-- Need to update links -->
+
 * [Quickstart Guide](https://www.adobe.io/apis/experiencecloud/analytics/docs.html)
 * [Adobe Target Github Repo](https://github.com/AdobeDocs/analytics-2.0-apis)
 
@@ -42,7 +42,7 @@ Get started with the Adobe Target APIs.
 Try the Target API with Swagger UI. Explore, make calls, with full endpoint descriptions.
 
 [Profile API](api/profile-api/) 
-<!-- Need to update descriptions -->     
+   
 Insert description of what the Profile API does.
 
 <DiscoverBlock slots="link, text"/>
