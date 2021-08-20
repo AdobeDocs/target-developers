@@ -7,9 +7,9 @@ contributors:
 
 <Hero slots="heading, text"/> 
 
-# Adobe Target API
+# Adobe Target APIs and SDKs
 
-Adobe Target API offers limitless ways to integrate your most important customer data into key business processes.
+Adobe Target APIs and SDKs offer limitless ways to integrate your most important customer data into key business processes.
 
 <Resources slots="heading, links"/>
 
@@ -39,8 +39,6 @@ Get started with the Adobe Target APIs.
 
 ### API References
 
-Try the Target API with Swagger UI. Explore, make calls, with full endpoint descriptions.
-
 [Profile API](api/profile-api/) 
    
 Insert description of what the Profile API does.
@@ -61,7 +59,7 @@ Insert description of what the Delivery API does.
 
 [Migrating from at.js to AEP Web SDK](guides/migrating/)
 
-For help migrating from at.js to the newer and more capable AEP Web SDK.   
+For help migrating from at.js to AEP Web SDK.   
 
 <DiscoverBlock width="100%" slots="heading, link, text"/>
 
