@@ -52,70 +52,26 @@ module.exports = {
         path: '/guides/',
         pages: [
           {
-            title: 'Overview',
+            title: 'How to Configure Authentication for Adobe Target APIs',
             path: '/guides/'
           },
           {
-            title: 'Creating an OAuth Client',
-            path: '/guides/creating_oauth_client/'
+            title: 'Adobe Recommendations API Overview',
+            path: '/guides/recommendations-api-tutorial/recs-api-overview.html'
           },
           {
-            title: 'OAuth using cURL',
-            path: '/guides/oauth_using_curl/'
+            title: 'Manage Your Catalog with APIs',
+            path: '/guides/recommendations-api-tutorial/manage-catalog.html'
           },
           {
-            title: 'OAuth using POSTMAN',
-            path: '/guides/oauth_using_postman/'
+            title: 'Manage Custom Criteria',
+            path: '/guides/recommendations-api-tutorial/manage-custom-criteria.html'
           },
           {
-            title: 'JWT Authentication',
-            path: '/guides/jwt_authentication/'
+            title: 'Use the Delivery API with Recommendations',
+            path: '/guides/recommendations-api-tutorial/fetch-recs-server-side-delivery-api.html'
           }
         ]
-      },
-      {
-        title: 'Reporting API',
-        path: '/guides/reporting_api/',
-        pages: [
-          {
-            title: 'Overview',
-            path: '/guides/reporting_api/'
-          },
-          {
-            title: 'Reporting with breakdowns',
-            path: '/guides/reporting_api/reporting_breakdowns/',
-            pages: [
-              {
-                title: 'Reporting with single breakdowns',
-                path: '/guides/reporting_api/reporting_breakdowns/',
-              },
-              {
-                title: 'Reporting with multiple breakdowns',
-                path: '/guides/reporting_api/reporting_breakdowns/reporting_multiple_breakdowns/',
-              },
-            ]
-          },
-          {
-            title: 'Reporting tips and tricks',
-            path: '/guides/reporting_api/reporting_tips_tricks/'
-          }
-        ]
-      },
-      {
-        title: 'Discovery API',
-        path: '/guides/discovery_api/'
-      },
-      {
-        title: 'Segments API',
-        path: '/guides/segments_api/'
-      },
-      {
-        title: 'Calculated Metrics API',
-        path: '/guides/calculated_metrics_api/'
-      },
-      {
-        title: 'Migrating',
-        path: '/guides/migrating/'
       },
       {
         title: 'Overview',

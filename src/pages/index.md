@@ -15,8 +15,8 @@ Adobe Target APIs and SDKs offer limitless ways to integrate your most important
 
 ## Resources
 
-* [Quickstart Guide](https://www.adobe.io/apis/experiencecloud/analytics/docs.html)
-* [Adobe Target Github Repo](https://github.com/AdobeDocs/analytics-2.0-apis)
+* [Quickstart Guide](https://www.adobe.io/target/guide/)
+* [Adobe Target GitHub Repo](https://github.com/AdobeDocs/target-developers)
 
 ## Overview
 
@@ -66,5 +66,5 @@ For help migrating from at.js to AEP Web SDK.
 ## Contributing 
 
 We encourage you to participate in our open documentation initiative, if you have suggestions, corrections, additions 
-or deletions for this documentation, check out the source from [this github repo](https://github.com/adobe/gatsby-theme-spectrum-example), and submit a pull 
+or deletions for this documentation, check out the source from [this GitHub repo](https://github.com/adobe/gatsby-theme-spectrum-example), and submit a pull 
 request with your contribution. For more information, refer to the [contributing page](support/contribute/).
