@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Adobe. All rights reserved.
+ * Copyright 2021 Adobe. All rights reserved.
  * This file is licensed to you under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License. You may obtain a copy
  * of the License at http://www.apache.org/licenses/LICENSE-2.0
@@ -12,19 +12,13 @@
 
 module.exports = {
   siteMetadata: {
-    versions: [
-      {
-        title: 'v2.0',
-        selected: true
-      },
-      {
-        title: 'v1.4',
-        path: 'https://github.com/AdobeDocs/analytics-1.4-apis'
-      }
-    ],
+    home: {
+      title: 'Adobe Target Documentation',
+      path: 'https://experienceleague.adobe.com/docs/target.html'
+    },
     pages: [
       {
-        title: 'Adobe Analytics',
+        title: 'Adobe Target',
         path: '/'
       },
       {
@@ -34,13 +28,17 @@ module.exports = {
       {
         title: 'API Reference',
         menu: [{
-          title: 'API Reference v2.0',
-          description: 'Adobe Analytics Reporting API',
-          path: '/api/index.md'
+          title: 'Profile API',
+          description: 'Adobe Target Profile API',
+          path: '/api/profile-api/index.md'
         }, {
-          title: 'API Reference v1.4',
-          description: 'API Spec for the Adobe Marketing Cloud',
-          path: '/api/1.4.md'
+          title: 'Admin API',
+          description: 'Adobe Target Admin API',
+          path: '/api/admin-api/index.md'
+        }, {
+          title: 'Delivery API',
+          description: 'Adobe Target Delivery API',
+          path: '/api/delivery-api/index.md'
         }]
       },
       {
@@ -152,5 +150,5 @@ module.exports = {
     ]
   },
   plugins: [`@adobe/gatsby-theme-aio`],
-  pathPrefix: process.env.PATH_PREFIX || '/dev-site-documentation-template/'
+  pathPrefix: process.env.PATH_PREFIX || '/target/'
 };
