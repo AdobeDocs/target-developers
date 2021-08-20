@@ -27,7 +27,7 @@ This lesson walks through the preliminary steps required to generate authenticat
 |Resource|Details|
 | --- | --- |
 |Postman|In order to complete these steps successfully, get the [Postman app](https://www.postman.com/downloads/) for your operating system. Postman basic is free with account creation. While not required in order to use Adobe Target APIs in general, Postman makes API workflows easier, and Adobe Target provides several Postman collections to help execute its APIs and learn how they operate. The rest of this tutorial assumes working knowledge of Postman. For assistance, please reference the [Postman documentation](https://learning.getpostman.com/).  |
-|References|Familiarity with the following resources is assumed throughout the rest of this tutorial:<UL><li>[Adobe I/O Github](https://github.com/adobeio)</li><li>[Target Adobe I/O documentation](https://developers.adobetarget.com/api/#introduction)</li><li>[Recommendations API documentation](https://developers.adobetarget.com/api/recommendations/)</li></ul>|
+|References|Familiarity with the following resources is assumed throughout the rest of this tutorial:<UL><li>[Adobe I/O Github](https://github.com/adobeio)</li><li>[Target Adobe I/O documentation](https://developers.adobetarget.com/api/#introduction)</li><li>[Recommendations API documentation](https://developers.adobetarget.com/api/recommendations/)</li></UL>|
 
 ## Create an Adobe I/O project
 
