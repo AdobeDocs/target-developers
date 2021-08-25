@@ -1,0 +1,1086 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Adobe Target Delivery API",
+    "termsOfService": "https://www.adobe.com/legal/terms.html",
+    "x-logo": {
+      "url": "http://developers.adobetarget.com/api/recommendations/adobe_target-logo.png",
+      "altText": "Adobe Target Delivery API"
+    },
+    "description": "# Introduction\nWelcome to the documentation for the Adobe Target Delivery API!\n\nThe Adobe Target Delivery API is based on REST. This documentation describes the resources that make up the Adobe Target Delivery API. HTTP methods are utilized to execute operations on those resources.\n\nThrough Adobe Target's Delivery API, you can: \n\n* Deliver experiences across web, including SPAs, and mobile channels as well as non-browser based IoT devices such as a connected TV, kiosk, or in-store digital screen.\n* Deliver experiences from any server side platform or application that can make HTTP/s calls.\n* Deliver consistent and personalized experiences to a user no matter which channel or devices the user has engaged with your business.\n* Cache experiences for a user within a session in your server so that multiple API calls can be avoided and as a result achieve better performance.\n* Seamlessly integrate with Adobe Experience Cloud products such as Adobe Analytics, Adobe Audience Manager, and the Experience Cloud ID Service from the server side.\n\nNote: You can still access the legacy [/v1/mbox and /v2/batchmbox API documentation](https://developers.adobetarget.com/api/legacy-api/index.html). However, new features will be developed in the new Delivery API and will not be backported to the legacy APIs.\n\n# Changelog\n\nRead the [changelog](https://docs.adobe.com/content/help/en/target/using/implement-target/server-side/releases-server-side.html) for the Delivery API.\n\n# SDKs\nAdobe Target offers SDKs to interact with the Target Delivery API and help ease the Adobe Target integration with other Experience Cloud solutions such as Adobe Analytics and Adobe Audience Manager by helping you follow best practices in managing sessions and cookies.\nTherefore, it is highly recommended to leverage a SDK to mask away these complexities and prevent incorrect utilization of the API.\n\n## Node.js SDK  \nThe [Node.js SDK](https://github.com/adobe/target-nodejs-sdk) is open sourced and maintained within Github, where you can find the documentation and usage instructions.\n\nRead the [changelog](https://github.com/adobe/target-nodejs-sdk/blob/master/CHANGELOG.md) for the Node.js SDK\n\n## Java SDK  \nThe [Java SDK](https://github.com/adobe/target-java-sdk) is open sourced and maintained within Github, where you can find the documentation and usage instructions.\n\nRead the [changelog](https://github.com/adobe/target-java-sdk/blob/master/CHANGELOG.md) for the Java SDK\n\n# Getting Started\nA Target Delivery API call looks like this:\n```\ncurl -X POST \\\n  'https://`clientCode`.tt.omtrdc.net/rest/v1/delivery?client=`clientCode`&sessionId=d359234570e04f14e1faeeba02d6ab9914e' \\\n  -H 'Content-Type: application/json' \\\n  -H 'cache-control: no-cache' \\\n  -d '{\n      \"context\": {\n        \"channel\": \"web\",\n        \"browser\" : {\n          \"host\" : \"demo\"\n        },\n        \"address\" : {\n          \"url\" : \"http://demo.dev.tt-demo.com/demo/store/index.html\"\n        },\n        \"screen\" : {\n          \"width\" : 1200,\n          \"height\": 1400\n        }\n      },\n        \"execute\": {\n        \"mboxes\" : [\n          {\n            \"name\" : \"homepage\",\n            \"index\" : 1\n          }\n        ]\n      }\n    }'\n```\nThe `clientCode` can be retrieved from the Target UI by navigating to Setup > Implementation > Edit Settings > Advanced Settings > Client Code.\n\nBefore making a Target Delivery API call, there are a few steps to follow in order for a response to contain the relevant experience to show to an end-user:\n\n1. Create a Target Activity (A/B, XT, AP or Recommendations) using the [Form-Based Composer](https://docs.adobe.com/help/en/target/using/experiences/form-experience-composer.html) or the Visual Experience Composer.\n2. Use the Delivery API to get a response for the mboxes used in the Target Activity created in step 2.\n3. Present the experience to the visitor!\n\nIt's simple as 1, 2, 3!\n\n## Postman Collection\nPostman is an application that makes it easy to fire API calls. This Postman collection contains sample delivery API calls.\n[![Run in Postman](https://run.pstmn.io/button.svg)](https://www.getpostman.com/collections/449876888132fa49eaad)\n\n# User Permissions (Premium)\nWe allow customers to manage permissions for their users when using Adobe Target. In order to make a successful Adobe Target Delivery API call, a token with the right permissions must be passed within the API call. In order to learn more about user permissioning and how to retrieve the token visit this [documentation](https://docs.adobe.com/help/en/target/using/administer/manage-users/enterprise/properties-overview.html).\n\n```\ncurl -X POST \\\n  'https://demo.tt.omtrdc.net/rest/v1/delivery?client=demo&sessionId=d359234570e04f14e1faeeba02d6ab9914e' \\\n  -H 'Content-Type: application/json' \\\n  -H 'cache-control: no-cache' \\\n  -d '{\n      \"context\": {\n        \"channel\": \"web\",\n        \"browser\" : {\n          \"host\" : \"demo\"\n        },\n        \"address\" : {\n          \"url\" : \"http://demo.dev.tt-demo.com/demo/store/index.html\"\n        },\n        \"screen\" : {\n          \"width\" : 1200,\n          \"height\": 1400\n        }\n      },\n      \"property\" : {\n        \"token\": \"08b62abd-c3e7-dfb2-da93-96b3aa724d81\"\n      },\n        \"execute\": {\n        \"mboxes\" : [\n          {\n            \"name\" : \"homepage\",\n            \"index\" : 1\n          }\n        ]\n      }\n    }'\n```\n\nOnce you have the corresponding token, pass the token into `property` -> `token` for every API call that is made. If the `property` -> `token` is not passed within every API call, you will not get any `content` back from Adobe Target.\n\n```\n{\n    \"status\": 200,\n    \"requestId\": \"07ce783d-58b9-461c-9f4c-6873aeb00c01\",\n    \"client\": \"demo\",\n    \"id\": {\n        \"tntId\": \"d359234570e04f14e1faeeba02d6ab9914e.28_7\"\n    },\n    \"edgeHost\": \"mboxedge28.tt.omtrdc.net\",\n    \"execute\": {\n        \"mboxes\": [\n            {\n                \"index\": 1,\n                \"name\": \"homepage\"\n            }\n        ]\n    }\n}\n```\nAs you can see above, without passing the `property` -> `token`, you will not get any `content` back. If you expect `content` from your API call and are not retrieving any from the response, it is most likely because either the `property` -> `token` is not provided or it is being passed in without the correct permissions.\n\n\n# Identifying Visitors \nThere are multiple ways in which a visitor can be identified within Target. Target uses three identifiers:\n\nField Name  | Description\n------------|-------------\n`tntId` | The `tntId` is the primary identifier in Target for a user. You can supply this ID or Target will auto-generate it if the request doesn’t contain one.\n`thirdPartyId` | The `thirdPartyId` is your company’s identifier for the user that you can send with every call. When a user logs in to a company's site, the company typically creates an ID that is tied to the visitor's account, loyalty card, membership number, or other applicable identifiers for that company.\n`marketingCloudVisitorId` | The `marketingCloudVisitorId` is used to merge and share data between different Adobe solutions. The `marketingCloudVisitorId` is required for integrations with Adobe Analaytics and Adobe Audience Manager.\n`customerIds` | Along with the Experience Cloud Visitor ID, additional [customer IDs](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-authenticated-state.html) and an authenticated status for each visitor can be utilized\n\n## Target ID\nThe Target ID or `tntId` can be seen as a device ID. This `tntId` is generated automatically by Adobe Target if it isn't provided in the request. Thereafter, subsequent requests need to include this `tntId` in order for the right content to be delivered to a device used by the user.\n\n```\ncurl -X POST \\\n'https://demo.tt.omtrdc.net/rest/v1/delivery?client=demo&sessionId=10abf6304b2714215b1fd39a870f01afc#1555632114' \\\n-H 'Content-Type: application/json' \\\n-H 'cache-control: no-cache' \\\n-d '{\n  \"context\": {\n    \"channel\": \"web\",\n    \"browser\" : {\n      \"host\" : \"demo\"\n    },\n    \"address\" : {\n      \"url\" : \"http://demo.dev.tt-demo.com/demo/store/index.html\"\n    },\n    \"screen\" : {\n      \"width\" : 1200,\n      \"height\": 1400\n    }\n  },\n    \"execute\": {\n    \"mboxes\" : [\n      {\n        \"name\" : \"SummerOffer\",\n        \"index\" : 1\n      }\n    ]\n  }\n}'\n```\nThe above example call demonstrates how a `tntId` does not need to be passed in. In this scenario, Adobe Target will generate a `tntId` and provide it in the response as seen below:\n\n```\n{\n  \"status\": 200,\n  \"requestId\": \"5b586f83-890c-46ae-93a2-610b1caa43ef\",\n  \"client\": \"demo\",\n  \"id\": {\n      \"tntId\": \"10abf6304b2714215b1fd39a870f01afc.28_20\"\n  },\n  \"edgeHost\": \"mboxedge28.tt.omtrdc.net\",\n  ...\n}\n```\n\nThe generated `tntId` is `10abf6304b2714215b1fd39a870f01afc.28_20`. Please note that this `tntId` needs to be used when calling Adobe Target Delivery API for the same user across sessions. \n\n## Marketing Cloud Visitor ID\nThe `marketingCloudVisitorId` is a universal and persistent ID that identifies your visitors across all solutions in the Experience Cloud. When your organization implements the ID service, this ID lets you identify the same site visitor and their data in different Experience Cloud solutions like Adobe Target, Adobe Analytics or Adobe Audience Manager. Please note that the `marketingCloudVisitorId` is required when leveraging and integrating with Analytics and Audience Manager.\n\n```\ncurl -X POST \\\n  'https://demo.tt.omtrdc.net/rest/v1/delivery?client=demo&sessionId=10abf6304b2714215b1fd39a870f01afc#1555632114' \\\n  -H 'Content-Type: application/json' \\\n  -H 'cache-control: no-cache' \\\n  -d '{\n  \"id\": {\n    \"marketingCloudVisitorId\": \"10527837386392355901041112038610706884\"\n  },\n  \"context\": {\n    \"channel\": \"web\",\n    \"browser\" : {\n      \"host\" : \"demo\"\n    },\n    \"address\" : {\n      \"url\" : \"http://demo.dev.tt-demo.com/demo/store/index.html\"\n    },\n    \"screen\" : {\n      \"width\" : 1200,\n      \"height\": 1400\n    }\n  },\n    \"execute\": {\n    \"mboxes\" : [\n      {\n        \"name\" : \"SummerOffer\",\n        \"index\" : 1\n      }\n    ]\n  }\n}'\n```\nThe above example call demonstrates how a `marketingCloudVisitorId` that was retrieved from the Experience Cloud ID Service is passed to Adobe Target. In this scenario, Adobe Target will generate a `tntId` since it was not passed into the original call which will be mapped to the provided `marketingCloudVisitorId` as seen below in the response.\n```\n{\n    \"status\": 200,\n    \"requestId\": \"80173866-9026-4ac7-b467-a0ba178a591b\",\n    \"client\": \"demo\",\n    \"id\": {\n        \"tntId\": \"10abf6304b2714215b1fd39a870f01afc.28_20\",\n        \"marketingCloudVisitorId\": \"10527837386392355901041112038610706884\"\n    },\n    \"edgeHost\": \"mboxedge28.tt.omtrdc.net\",\n    ...\n}\n```\n\n## Third Party ID\nIf your organization uses an ID to identify your visitor, you can use `thirdPartyID` to deliver content. However, you must provide the `thirdPartyID` for every Adobe Target Delivery API call you make.\n```\ncurl -X POST \\\n  'https://demo.tt.omtrdc.net/rest/v1/delivery?client=demo&sessionId=10abf6304b2714215b1fd39a870f01afc#1555632114' \\\n  -H 'Content-Type: application/json' \\\n  -H 'cache-control: no-cache' \\\n  -d '{\n  \"id\": {\n    \"thirdPartyId\": \"B234A029348\"\n  },\n  \"context\": {\n    \"channel\": \"web\",\n    \"browser\" : {\n      \"host\" : \"demo\"\n    },\n    \"address\" : {\n      \"url\" : \"http://demo.dev.tt-demo.com/demo/store/index.html\"\n    },\n    \"screen\" : {\n      \"width\" : 1200,\n      \"height\": 1400\n    }\n  },\n    \"execute\": {\n    \"mboxes\" : [\n      {\n        \"name\" : \"SummerOffer\",\n        \"index\" : 1\n      }\n    ]\n  }\n}'\n```\nThe above example call demonstrates how a `thirdPartyId`, which is a persistent ID that your business utilizes to identify an end-user regardless of whether they are interacting with your business from web, mobile, or IoT channels. In other words, the `thirdPartyId` will reference user profile data that can be utilized across channels. In this scenario, Adobe Target will generate a `tntId` since it was not passed into the original call which will be mapped to the provided `thirdPartyId` as seen below in the response.\n```\n{\n    \"status\": 200,\n    \"requestId\": \"55de9886-bd14-4dee-819c-7d1633b79b90\",\n    \"client\": \"demo\",\n    \"id\": {\n        \"tntId\": \"10abf6304b2714215b1fd39a870f01afc.28_20\",\n        \"thirdPartyId\": \"B234A029348\"\n    },\n    \"edgeHost\": \"mboxedge28.tt.omtrdc.net\",\n    ...\n}\n```\n\n## Customer ID\n\n[Customer IDs](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-authenticated-state.html) can be added and associated with an Experience Cloud Visitor ID. Whenever sending `customerIds` the `marketingCloudVisitorId` must also be provided. Furthermore, an authentication status can be provided along with each `customerId` for each visitor. The following authentication status can be taken into consideration:\n\n\nAuthentication Status  | User Status\n------------|------------------------\n`unknown` | Unknown or never authenticated. This state can be used for scenarios like a visitor that has landed on your site by clicking on a display advert.\n`authenticated` | The user is currently authenticated with an active session on your website or app.\n`logged_out` | The user was authenticated but actively logged out. The user intended and meant to disconnect from the authenticated state. The user no longer wants to be treated as authenticated.\n\nPlease note that only when the customer id is in `authenticated` state will Target reference the user profile data that is stored and linked to the customer id. If the customer id is in `unknown` or `logged_out` state, then the customer id will be ignored and any user profile data that may be associated with it will not be leveraged for audience targeting.\n```\ncurl -X POST \\\n  'https://demo.tt.omtrdc.net/rest/v1/delivery?client=demo&sessionId=d359234570e044f14e1faeeba02d6ab23439914e' \\\n  -H 'Content-Type: application/json' \\\n  -H 'cache-control: no-cache' \\\n  -d '{\n      \"context\": {\n        \"channel\": \"web\",\n        \"browser\" : {\n          \"host\" : \"demo\"\n        },\n        \"address\" : {\n          \"url\" : \"http://demo.dev.tt-demo.com/demo/store/index.html\"\n        },\n        \"screen\" : {\n          \"width\" : 1200,\n          \"height\": 1400\n        }\n      },\n      \"id\": {\n        \"marketingCloudVisitorId\" : \"2304820394812039\",\n        \"customerIds\": [{\n          \"id\": \"134325423\",\n          \"integrationCode\" : \"crm_data\",\n          \"authenticatedState\" : \"authenticated\"\n        }]\n      },\n      \"property\" : {\n        \"token\": \"08b62abd-c3e7-dfb2-da93-96b3aa724d81\"\n      },\n        \"execute\": {\n        \"mboxes\" : [\n          {\n            \"name\" : \"homepage\",\n            \"index\" : 1\n          }\n        ]\n      }\n    }'\n```\n\nThe above example call demonstrates how to send a `customerId` with an `authenticatedState`. When sending a `customerId`, the `integrationCode`, `id`, and `authenticatedState` as well as the `marketingCloudVisitorId` are required. The `integrationCode` is the alias of the [customer attributes file](https://docs.adobe.com/help/en/target/using/audiences/visitor-profiles/working-with-customer-attributes.html) you provided through CRS.\n\n\n## Merged Profile\nYou can combine `tntId`, `thirdPartyID`, and `marketingCloudVisitorId` in the same request. In this scenario, Adobe Target will maintain the mapping of all these IDs and pin it to a visitor. Learn how profiles are [merged and synced in real time](https://docs.adobe.com/content/help/en/target/using/audiences/visitor-profiles/3rd-party-id.html) using the different identifiers.\n```\ncurl -X POST \\\n  'https://demo.tt.omtrdc.net/rest/v1/delivery?client=demo&sessionId=d359234570e044f14e1faeeba02d6ab23439914e' \\\n  -H 'Content-Type: application/json' \\\n  -H 'cache-control: no-cache' \\\n  -d '{\n      \"context\": {\n        \"channel\": \"web\",\n        \"browser\" : {\n          \"host\" : \"demo\"\n        },\n        \"address\" : {\n          \"url\" : \"http://demo.dev.tt-demo.com/demo/store/index.html\"\n        },\n        \"screen\" : {\n          \"width\" : 1200,\n          \"height\": 1400\n        }\n      },\n      \"id\": {\n        \"marketingCloudVisitorId\" : \"2304820394812039\",\n        \"tntId\": \"d359234570e044f14e1faeeba02d6ab23439914e.28_78\",\n        \"thirdPartyId\":\"23423432\"\n      },\n      \"property\" : {\n        \"token\": \"08b62abd-c3e7-dfb2-da93-96b3aa724d81\"\n      },\n      \"experienceCloud\": {\n        \"analytics\": {\n          \"supplementalDataId\" : \"23423498732598234\",\n          \"trackingServer\": \"ags041.sc.omtrdc.net\",\n          \"logging\": \"server_side\"\n        }\n      },\n        \"execute\": {\n        \"mboxes\" : [\n          {\n            \"name\" : \"homepage\",\n            \"index\" : 1\n          }\n        ]\n      }\n    }'\n```\nThe above example call demonstrates how you can combine `tntId`, `thirdPartyID`, and `marketingCloudVisitorId` in the same request. All 3 IDs are also returned in the response as well.\n```\n{\n    \"status\": 200,\n    \"requestId\": \"8e352d0d-103e-44ba-bdf4-bb7319dc3747\",\n    \"client\": \"demo\",\n    \"id\": {\n        \"tntId\": \"d359234570e044f14e1faeeba02d6ab23439914e.28_78\",\n        \"thirdPartyId\": \"23423432\",\n        \"marketingCloudVisitorId\": \"2304820394812039\"\n    ...\n}\n```\n\n# Single or Batch Delivery\nThe Adobe Target Delivery API supports a single or batch delivery call. One can make a server request for content for single or multiple mboxes. Please make sure to outweigh the performance costs when making a single call vs a batched call. If you know all of the content that needs to be shown for a user, it is best practice to retrieve content for all mboxes with a single batch delivery call so that you avoid making multiple single delivery calls.\n\n## Single Delivery Call\nYou can retrieve an experience to display to the user for one mbox via the Adobe Target Delivery API. Note that if you are making a single delivery call, you would need to initiate another server call to retrieve additional content for an mbox for a user. This can become very costly over time, so please make sure to evaluate your approach when using the single delivery API call.\n\n```\ncurl -X POST \\\n'https://demo.tt.omtrdc.net/rest/v1/delivery?client=demo&sessionId=7abf6304b2714215b1fd39a870f01afc#1555632114' \\\n-H 'Content-Type: application/json' \\\n-H 'cache-control: no-cache' \\\n-d '\n{\n  \"id\": {\n    \"tntId\": \"abcdefghijkl00023.1_1\"\n  },\n  \"context\": {\n    \"channel\": \"web\",\n    \"browser\" : {\n      \"host\" : \"demo\"\n    },\n    \"address\" : {\n      \"url\" : \"http://demo.dev.tt-demo.com/demo/store/index.html\"\n    },\n    \"screen\" : {\n      \"width\" : 1200,\n      \"height\": 1400\n    }\n  },\n    \"execute\": {\n    \"mboxes\" : [\n      {\n        \"name\" : \"SummerOffer\",\n        \"index\" : 1\n      }\n    ]\n  }\n}'\n```\nIn the single delivery call example above, we are retrieving the experience to display for the user with `tntId`: `abcdefghijkl00023.1_1` for an `mbox`:`SummerOffer` on the web channel. This single delivery call will generate the following response:\n\n```\n{\n  \"status\": 200,\n  \"requestId\": \"25e0cc42-3d7b-456a-8b49-af60c1fb23d9\",\n  \"client\": \"demo\",\n  \"id\": {\n      \"tntId\": \"abcdefghijkl00023.1_1\"\n  },\n  \"edgeHost\": \"mboxedge28.tt.omtrdc.net\",\n  \"execute\": {\n      \"mboxes\": [\n          {\n              \"index\": 1,\n              \"name\": \"SummerOffer\",\n              \"options\": [\n                  {\n                      \"content\": \"<p><b>Enjoy this 15% discount on your next purchase</b></p>\",\n                      \"type\": \"html\",\n                  }\n              ]\n          }\n      ]\n    }\n}\n```\nIn the response, you can see that the `content` field contains the HTML that describes the experience to be shown to the user for the web that corresponds to the SummerOffer mbox.\n\n### Execute Page Load\nIf there are experiences that should be shown when a page load happens in the web channel such as AB testing the fonts located in the footer or header, you can specify `pageLoad` in the `execute` field to retrieve all modifications that should be applied.\n\n```\ncurl -X POST \\\n  'https://demo.tt.omtrdc.net/rest/v1/delivery?client=demo&sessionId=d359570e04f14e1faeeba02d6ab9914e' \\\n  -H 'Content-Type: application/json' \\\n  -H 'cache-control: no-cache' \\\n  -d '{\n  \"id\": {\n    \"tntId\": \"84e8d0e211054f18af365d65f45e902b.28_131\"\n  },\n  \"context\": {\n    \"channel\": \"web\",\n    \"window\": {\n      \"width\": 1819,\n      \"height\": 842\n    },\n    \"browser\": {\n      \"host\": \"target.enablementadobe.com\"\n    },\n    \"address\": {\n      \"url\": \"https://target.enablementadobe.com/react/demo/#/\"\n    }\n  },\n  \"execute\": {\n    \"pageLoad\": {}\n  }\n}'\n```\nThe above sample call is to retrieve any experiences to show to a user when the page `https://target.enablementadobe.com/react/demo/#/` loads. \n\n```\n{\n      \"status\": 200,\n      \"requestId\": \"355ebc47-edb6-481f-aeae-ae55d71afaca\",\n      \"client\": \"demo\",\n      \"id\": {\n          \"tntId\": \"84e8d0e211054f18af365d65f45e902b.28_131\"\n      },\n      \"edgeHost\": \"mboxedge28.tt.omtrdc.net\",\n      \"execute\": {\n          \"pageLoad\": {\n              \"options\": [\n                  {\n                      \"content\": [\n                          {\n                              \"type\": \"setHtml\",\n                              \"selector\": \"#app > DIV:nth-of-type(1) > DIV:nth-of-type(1) > NAV.nav:eq(0) > DIV.container:eq(0) > DIV.nav-right:eq(0) > A.nav-item:eq(0)\",\n                              \"cssSelector\": \"#app > DIV:nth-of-type(1) > DIV:nth-of-type(1) > NAV:nth-of-type(1) > DIV:nth-of-type(1) > DIV:nth-of-type(2) > A:nth-of-type(1)\",\n                              \"content\": \"Modified Home\"\n                          }\n                      ],\n                      \"type\": \"actions\"\n                  }\n              ],\n              \"metrics\": [\n                  {\n                      \"type\": \"click\",\n                      \"selector\": \"#app > DIV:nth-of-type(1) > DIV:nth-of-type(2) > SECTION.section:eq(0) > DIV.container:eq(0) > FORM.col-md-4:eq(0) > DIV.form-group:eq(0) > BUTTON.btn:eq(0)\",\n                      \"eventToken\": \"QPaLjCeI9qKCBUylkRQKBg==\"\n                  }\n              ]\n          }\n      }\n  }\n  ```\nIn the `content` field the modification that needs to be applied on a page load can be retrieved. In the example above, you can see that a link on the header needs to be named to _Modified Home_.\n\n\n## Batched Delivery Call\nInstead of making multiple delivery calls with a single mbox in each call, making one delivery call with a batch of mboxes can reduce unnecessary server calls. Invoking a server call should be minimized as much as possible in order to be highly performant.\n\n```\ncurl -X POST \\\n'https://demo.tt.omtrdc.net/rest/v1/delivery?client=demo&sessionId=7abf6304b2714215b1fd39a870f01afc#1555632114' \\\n-H 'Content-Type: application/json' \\\n-H 'cache-control: no-cache' \\\n-d '\n{\n  \"id\": {\n    \"tntId\": \"abcdefghijkl00023.1_1\"\n  },\n  \"context\": {\n    \"channel\": \"web\",\n    \"browser\" : {\n      \"host\" : \"demo\"\n    },\n    \"address\" : {\n      \"url\" : \"http://demo.dev.tt-demo.com/demo/store/index.html\"\n    },\n    \"screen\" : {\n      \"width\" : 1200,\n      \"height\": 1400\n    }\n  },\n    \"execute\": {\n    \"mboxes\" : [\n      {\n        \"name\" : \"SummerOffer\",\n        \"index\" : 1\n      },\n      {\n        \"name\" : \"SummerShoesOffer\",\n        \"index\" : 2\n      },\n      {\n        \"name\" : \"SummerDressOffer\",\n        \"index\" : 3\n      }      \n    ]\n  }\n}'\n```\nIn the batched delivery call example above, we are retrieving the experiences to display for the user with `tntId`: `abcdefghijkl00023.1_1` for multiple `mbox`:`SummerOffer`, `SummerShoesOffer`, and `SummerDressOffer`. Since we know that we need to show an experience for multiple mboxes for this user, we can batch these requests and make 1 server call instead of 3 individual delivery calls.\n\n```\n{\n  \"status\": 200,\n  \"requestId\": \"fe15286f-effb-434f-85d8-c3db804075ce\",\n  \"client\": \"demo\",\n  \"id\": {\n      \"tntId\": \"abcdefghijkl00023.28_120\"\n  },\n  \"edgeHost\": \"mboxedge28.tt.omtrdc.net\",\n  \"execute\": {\n      \"mboxes\": [\n          {\n              \"index\": 1,\n              \"name\": \"SummerOffer\",\n              \"options\": [\n                  {\n                      \"content\": \"<p><b>Enjoy this 15% discount on your next purchase</b></p>\",\n                      \"type\": \"html\",\n\n                  }\n              ]\n          },\n          {\n              \"index\": 2,\n              \"name\": \"SummerShoesOffer\",\n              \"options\": [\n                  {\n                      \"content\": \"<p><b>Enjoy this 15% discount on your next shoe purchase</b></p>\",\n                      \"type\": \"html\",\n                  }\n              ]\n          },\n          {\n              \"index\": 3,\n              \"name\": \"SummerDressOffer\",\n              \"options\": [\n                  {\n                      \"content\": \"<p><b>Enjoy this 15% discount on your next dress purchase</b></p>\",\n                      \"type\": \"html\",\n                  }\n              ]\n          }\n      ]\n  }\n}\n```\n\nIn the response above, you can see that within the `content` field of each mbox, the HTML representation of the experience to show to the user for each mbox is retrievable. \n\n\n# Prefetch\nPrefetching allows clients like mobile apps and servers to fetch content for multiple mboxes or views in one request, cache it locally, and later notify Target when the user visits those mboxes or views. When utilizing prefetch, it's important to be familiar with the following terms:\n\nField Name  | Description\n------------|-------------\n`prefetch` | List of mboxes and views that should be fetched but shouldn’t be marked as visited. The Target Edge returns an `eventToken` for each mbox or view that exist in the prefetch array\n`notifications` | List of mboxes and views that were previously prefetched and should be marked as visited.\n`eventToken` | A hashed encrypted token that is returned when content is prefetched. This token should be sent back to Target in the `notifications` array.\n\n## Prefetch Mboxes\nClients like mobile apps and servers can prefetch multiple mboxes for a given user within a session and cache it in order to avoid multiple calls to Adobe Target Delivery API. \n\n```\ncurl -X POST \\\n'https://demo.tt.omtrdc.net/rest/v1/delivery?client=demo&sessionId=7abf6304b2714215b1fd39a870f01afc#1555632114' \\\n-H 'Content-Type: application/json' \\\n-H 'cache-control: no-cache' \\\n-d '\n{\n  \"id\": {\n    \"tntId\": \"abcdefghijkl00023.1_1\"\n  },\n  \"context\": {\n    \"channel\": \"web\",\n    \"browser\" : {\n      \"host\" : \"demo\"\n    },\n    \"address\" : {\n      \"url\" : \"http://demo.dev.tt-demo.com/demo/store/index.html\"\n    },\n    \"screen\" : {\n      \"width\" : 1200,\n      \"height\": 1400\n    }\n  },\n    \"prefetch\": {\n    \"mboxes\" : [\n      {\n        \"name\" : \"SummerOffer\",\n        \"index\" : 1\n      },\n      {\n        \"name\" : \"SummerShoesOffer\",\n        \"index\" : 2\n      },\n      {\n        \"name\" : \"SummerDressOffer\",\n        \"index\" : 3\n      }      \n    ]\n  }\n}'\n```\nWithin the `prefetch` field, add one or more `mboxes` you want to prefetch for at once for a user within a session. Once you prefetch for those `mboxes` you will receive the following response:\n\n```\n{\n    \"status\": 200,\n    \"requestId\": \"5efee0d8-3779-4b12-a74e-e04848faf191\",\n    \"client\": \"demo\",\n    \"id\": {\n        \"tntId\": \"abcdefghijkl00023.1_1\"\n    },\n    \"edgeHost\": \"mboxedge28.tt.omtrdc.net\",\n    \"prefetch\": {\n        \"mboxes\": [\n            {\n                \"index\": 1,\n                \"name\": \"SummerOffer\",\n                \"options\": [\n                    {\n                        \"content\": \"<p><b>Enjoy this 15% discount on your next purchase</b></p>\",\n                        \"type\": \"html\",\n                        \"eventToken\": \"GcvBXDhdJFNR9E9r1tgjfmqipfsIHvVzTQxHolz2IpSCnQ9Y9OaLL2gsdrWQTvE54PwSz67rmXWmSnkXpSSS2Q==\",\n                    }\n                ]\n            },\n            {\n                \"index\": 2,\n                \"name\": \"SummerShoesOffer\",\n                \"options\": [\n                    {\n                        \"content\": \"<p><b>Enjoy this 15% discount on your next shoe purchase</b></p>\"\n                        \"type\": \"html\",\n                        \"eventToken\": \"GcvBXDhdJFNR9E9r1tgjfmqipfsIHvVzTQxHolz2IpSCnQ9Y9OaLL2gsdrWQTvE54PwSz67rmXWmSnkXpSSS2Q==\",\n                    }\n                ]\n            },\n            {\n                \"index\": 3,\n                \"name\": \"SummerDressOffer\",\n                \"options\": [\n                    {\n                        \"content\": \"<p><b>Enjoy this 15% discount on your next dress purchase</b></p>\"\n                        \"type\": \"html\",\n                        \"eventToken\": \"GcvBXDhdJFNR9E9r1tgjfmqipfsIHvVzTQxHolz2IpSCnQ9Y9OaLL2gsdrWQTvE54PwSz67rmXWmSnkXpSSS2Q==\",\n                    }\n                ]\n            }\n        ]\n    }\n}\n```\n\nWithin the response, you will see the `content` field containing the experience to show to the user for a particular `mbox`. This is very useful when cached on your server so that when a user interacts with your web or mobile application within a session and visits an `mbox` on any particular page of your application, the experience can be delivered from the cache instead of making another Adobe Target Delivery API call. \nHowever, when an experience is delivered to the user from the `mbox`, a `notification` will be sent via a Delivery API call in order for impression logging to occur. This is because the response of `prefetch` calls are cached, which means that the user has not seen the experiences at the time the `prefetch` call happens. In order to learn more about the `notification` process, please jump to [Notifications](#section/Notifications).\n\n\n## Prefetch Views\n\nAdobe Target introduced a new concept called Views in order to support Single Page Applications (SPA) and Mobile Applications more seamlessly. Views can be seen as a logical group of visual elements that together make up a SPA or Mobile experience. Now, through the Delivery API, VEC created AB & XT activities with modifications on [Views for SPA](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/deploy-at-js/target-atjs-single-page-application.html) can now be prefetched.\n\n```\ncurl -X POST \\\n  'https://demo.tt.omtrdc.net/rest/v1/delivery?client=demo&sessionId=a3e7368c62d944c0855d424cd7a03ab0' \\\n  -H 'Content-Type: application/json' \\\n  -H 'cache-control: no-cache' \\\n  -d '{\n  \"id\": {\n    \"tntId\": \"84e8d0e211054f18af365d65f45e902b.28_131\"\n  },\n  \"context\": {\n    \"channel\": \"web\",\n    \"window\": {\n      \"width\": 1819,\n      \"height\": 842\n    },\n    \"browser\": {\n      \"host\": \"target.enablementadobe.com\"\n    },\n    \"address\": {\n      \"url\": \"https://target.enablementadobe.com/react/demo/#/\"\n    }\n  },\n  \"prefetch\": {\n    \"views\": [{}]\n  }\n}'\n```\n\nThe example call above will prefetch all the Views created thru the SPA VEC for AB and XT activities to display for the web `channel`. Notice in the call that we want to prefetch all the Views from the AB or XT activities that a visitor with `tntId`:`84e8d0e211054f18af365d65f45e902b.28_131` who is visiting the `url`:`https://target.enablementadobe.com/react/demo/#/` qualifies for.\n\n```\n{\n    \"status\": 200,\n    \"requestId\": \"14ce028e-d2d2-4504-b3da-32740fa8dd61\",\n    \"client\": \"demo\",\n    \"id\": {\n        \"tntId\": \"84e8d0e211054f18af365d65f45e902b.28_131\"\n    },\n    \"edgeHost\": \"mboxedge28.tt.omtrdc.net\",\n    \"prefetch\": {\n        \"views\": [\n            {\n                \"id\": 228,\n                \"name\": \"checkout-express\",\n                \"key\": \"checkout-express\",\n                \"state\": \"Vqfb6kYGAmzWOLf9W6E+Q/0LyS+SYe2h5tuTXzRNnkjKkZaZZr2ijp41/6AwK6fdFgADhFNC7l5efUCs9shgTw==\",\n                \"options\": [\n                    {\n                        \"content\": [\n                            {\n                                \"type\": \"setHtml\",\n                                \"selector\": \"#app > DIV:nth-of-type(1) > DIV:nth-of-type(2) > SECTION.section:eq(0) > DIV.container:eq(0) > FORM.col-md-4:eq(0) > DIV:nth-of-type(1) > DIV.mb-3:eq(2)\",\n                                \"cssSelector\": \"#app > DIV:nth-of-type(1) > DIV:nth-of-type(2) > SECTION:nth-of-type(1) > DIV:nth-of-type(1) > FORM:nth-of-type(2) > DIV:nth-of-type(1) > DIV:nth-of-type(3)\",\n                                \"content\": \"<span style=\\\"color:#000080;\\\"><strong>*We charge an additional fee of $12.34 for faster delivery. If you choose express delivery get 15% off on your next order.</strong></span>\"\n                            }\n                        ],\n                        \"type\": \"actions\",\n                        \"eventToken\": \"N3C13I0M2PH8iaKtONJlFJNWHtnQtQrJfmRrQugEa2qCnQ9Y9OaLL2gsdrWQTvE54PwSz67rmXWmSnkXpSSS2Q==\"\n                    }\n                ]\n            },\n            {\n                \"id\": 5,\n                \"name\": \"home\",\n                \"key\": \"home\",\n                \"state\": \"Vqfb6kYGAmzWOLf9W6E+Q/0LyS+SYe2h5tuTXzRNnkjKkZaZZr2ijp41/6AwK6fdFgADhFNC7l5efUCs9shgTw==\",\n                \"options\": [\n                    {\n                        \"content\": [\n                            {\n                                \"type\": \"setHtml\",\n                                \"selector\": \"#app > DIV:nth-of-type(1) > DIV:nth-of-type(2) > SECTION.section:eq(0) > DIV.container:eq(1) > DIV.heading:eq(0) > H1.title:eq(0)\",\n                                \"cssSelector\": \"#app > DIV:nth-of-type(1) > DIV:nth-of-type(2) > SECTION:nth-of-type(1) > DIV:nth-of-type(2) > DIV:nth-of-type(1) > H1:nth-of-type(1)\",\n                                \"content\": \"<span style=\\\"color:#800000;\\\"><strong>Trending Items</strong></span>\"\n                            }\n                        ],\n                        \"type\": \"actions\",\n                        \"eventToken\": \"N3C13I0M2PH8iaKtONJlFJNWHtnQtQrJfmRrQugEa2qCnQ9Y9OaLL2gsdrWQTvE54PwSz67rmXWmSnkXpSSS2Q==\"\n                    }\n                ]\n            },\n            {\n                \"id\": 6,\n                \"name\": \"products\",\n                \"key\": \"products\",\n                \"state\": \"Vqfb6kYGAmzWOLf9W6E+Q/0LyS+SYe2h5tuTXzRNnkjKkZaZZr2ijp41/6AwK6fdFgADhFNC7l5efUCs9shgTw==\",\n                \"options\": [\n                    {\n                        \"content\": [\n                            {\n                                \"type\": \"setStyle\",\n                                \"selector\": \"#app > DIV:nth-of-type(1) > DIV:nth-of-type(2) > SECTION.section:eq(0) > DIV.container:eq(0) > DIV.heading:eq(0) > BUTTON.btn:eq(0)\",\n                                \"cssSelector\": \"#app > DIV:nth-of-type(1) > DIV:nth-of-type(2) > SECTION:nth-of-type(1) > DIV:nth-of-type(1) > DIV:nth-of-type(1) > BUTTON:nth-of-type(1)\",\n                                \"content\": {\n                                    \"background-color\": \"rgba(191,0,0,1)\",\n                                    \"priority\": \"important\"\n                                }\n                            }\n                        ],\n                        \"type\": \"actions\",\n                        \"eventToken\": \"N3C13I0M2PH8iaKtONJlFJNWHtnQtQrJfmRrQugEa2qCnQ9Y9OaLL2gsdrWQTvE54PwSz67rmXWmSnkXpSSS2Q==\"\n                    }\n                ]\n            }\n        ]\n    }\n}\n```\nYou can see that in the `content` fields of the response, you will see the metadata such as the `type`, `selector`, `cssSelector`, and `content`, to render the experience to your end user when a user visits your page. Note that the `prefetched` content can be cached and rendered to the user when necessary.\n\n\n# Notifications\nNotifications should be fired when a prefetched mbox or view has been visited or rendered to the end user. In order for notifications to be fired off for the right mbox or view, please be sure to keep track of the corresponding `eventToken` for each mbox or view. Notifications with the right `eventToken` for the corresponding mboxes or views are required to be fired in order for reporting to be reflected correctly.  \n\n## Notifications for Prefetched Mboxes\nOne or multiple notifications can be sent via a single delivery call. Determine whether the metric that needs to be tracked is either a `click` or `display` for each mbox so that the `type` of the notification can be reflected correctly. Also, pass in an `id` for each notification so that one can determine whether a notification was sent correctly thru the Adobe Target Delivery API. The `timestamp` is also important to be forwarded to Adobe Target to indicate when the `click` or `display` occurred for a given mbox for reporting purposes.\n\n\n```\ncurl -X POST \\\n'https://demo.tt.omtrdc.net/rest/v1/delivery?client=demo&sessionId=10abf6304b2714215b1fd39a870f01afc#1555632114' \\\n-H 'Content-Type: application/json' \\\n-H 'cache-control: no-cache' \\\n-d '{\n    \"id\": {\n      \"tntId\": \"abcdefghijkl00023.1_1\"\n    },\n    \"context\": {\n      \"channel\": \"web\",\n      \"browser\" : {\n        \"host\" : \"demo\"\n      },\n      \"address\" : {\n        \"url\" : \"http://demo.dev.tt-demo.com/demo/store/index.html\"\n      },\n      \"screen\" : {\n        \"width\" : 1200,\n        \"height\": 1400\n      }\n    },\n      \"notifications\": [\n      {\n      \"id\" : \"SummerOfferNotification\",\n        \"timestamp\" : 1555705311051,\n        \"type\" : \"display\",\n        \"mbox\" : {\n          \"name\" :\"SummerOffer\"   \n        },\n        \"tokens\" : [\n          \"GcvBXDhdJFNR9E9r1tgjfmqipfsIHvVzTQxHolz2IpSCnQ9Y9OaLL2gsdrWQTvE54PwSz67rmXWmSnkXpSSS2Q\"\n        ]\n      },\n    {\n      \"id\" : \"SummerShoesOfferNotification\",\n        \"timestamp\" : 1555705311051,\n        \"type\" : \"display\",\n        \"mbox\" : {\n          \"name\" :\"SummerShoesOffer\"   \n        },\n        \"tokens\" : [\n          \"GcvBXDhdJFNR9E9r1tgjfmqipfsIHvVzTQxHolz2IpSCnQ9Y9OaLL2gsdrWQTvE54PwSz67rmXWmSnkXpSSS2Q\"\n        ]\n      },\n    {\n      \"id\" : \"SummerDressOfferNotification\",\n        \"timestamp\" : 1555705311051,\n        \"type\" : \"display\",\n        \"mbox\" : {\n          \"name\" :\"SummerDressOffer\"   \n        },\n        \"tokens\" : [\n          \"GcvBXDhdJFNR9E9r1tgjfmqipfsIHvVzTQxHolz2IpSCnQ9Y9OaLL2gsdrWQTvE54PwSz67rmXWmSnkXpSSS2Q\"\n        ]\n    } \n    ]\n  }'\n```\n\nThe above example call will result in a response that indicates the `notifications` request was successfully processed.\n\n```\n{\n  \"status\": 200,\n  \"requestId\": \"36014eed-4772-4c48-a9e2-e532762b6a85\",\n  \"client\": \"demo\",\n  \"id\": {\n      \"tntId\": \"abcdefghijkl00023.28_20\"\n  },\n  \"edgeHost\": \"mboxedge28.tt.omtrdc.net\",\n  \"notifications\": [\n      {\n          \"id\": \"SummerOfferNotification\"\n      },\n      {\n          \"id\": \"SummerDressOfferNotification\"\n      },\n      {\n          \"id\": \"SummerShoesOfferNotification\"\n      }\n  ]\n}\n```\nIf all the `notifications` sent to Adobe Target are correctly processed, they will appear in the `notifications` array in the response. However, if a `notifications` `id` is missing, that particular `notification` did not go through. In this scenario, a retry logic could be put into place until a successful `notification` response is retrieved. Ensure the retry logic has a timeout specified so the API call does not block and cause performance delays.\n\n\n## Notifications for Prefetched Views\nOne or multiple notifications can be sent via a single delivery call. Determine whether the metric that needs to be tracked is either a `click` or `display` for each mbox so that the type of the notification can be reflected correctly. Also, pass in an `id` for each notification so that one can determine whether a notification was sent correctly thru the Adobe Target Delivery API. The timestamp is also important to be forwarded to Adobe Target to indicate when the `click` or `display` occurred for a given view for reporting purposes.\n\n```\ncurl -X POST \\\n  'https://demo.tt.omtrdc.net/rest/v1/delivery?client=demo&sessionId=d359570e04f14e1faeeba02d6ab9914e' \\\n  -H 'Content-Type: application/json' \\\n  -H 'cache-control: no-cache' \\\n  -d '{\n  \"id\": {\n    \"tntId\": \"84e8d0e211054f18af365d65f45e902b.28_131\"\n  },\n  \"context\": {\n    \"channel\": \"web\",\n    \"browser\": {\n      \"host\": \"target.enablementadobe.com\"\n    },\n    \"address\": {\n      \"url\": \"https://target.enablementadobe.com/react/demo/#/\"\n    }\n  },\n  \"notifications\": [{\n      \"id\": \"228\",\n      \"type\": \"display\",\n      \"timestamp\": 1556226121884,\n      \"tokens\": [\"N3C13I0M2PH8iaKtONJlFJNWHtnQtQrJfmRrQugEa2qCnQ9Y9OaLL2gsdrWQTvE54PwSz67rmXWmSnkXpSSS2Q==\"],\n      \"view\": {\n        \"name\": \"checkout-express\",\n      }\n    },\n    {\n      \"id\": \"5\",\n      \"type\": \"display\",\n      \"timestamp\": 1556226121884,\n      \"tokens\": [\"N3C13I0M2PH8iaKtONJlFJNWHtnQtQrJfmRrQugEa2qCnQ9Y9OaLL2gsdrWQTvE54PwSz67rmXWmSnkXpSSS2Q==\"],\n      \"view\": {\n        \"name\": \"home\",\n      }\n    },\n    {\n      \"id\": \"6\",\n      \"type\": \"display\",\n      \"timestamp\": 1556226121884,\n      \"tokens\": [\"N3C13I0M2PH8iaKtONJlFJNWHtnQtQrJfmRrQugEa2qCnQ9Y9OaLL2gsdrWQTvE54PwSz67rmXWmSnkXpSSS2Q==\"],\n      \"view\": {\n        \"name\": \"products\",\n      }\n    }\n  ]\n}'\n```\nThe above example call will result in a response that indicates the `notifications` request was successfully processed.\n```\n{\n    \"status\": 200,\n    \"requestId\": \"85cc7394-c19a-4398-9b8b-bbee1e4c4579\",\n    \"client\": \"demo\",\n    \"id\": {\n        \"tntId\": \"84e8d0e211054f18af365d65f45e902b.28_131\"\n    },\n    \"edgeHost\": \"mboxedge28.tt.omtrdc.net\",\n    \"notifications\": [\n        {\n            \"id\": \"5\"\n        },\n        {\n            \"id\": \"6\"\n        },\n        {\n            \"id\": \"228\"\n        }\n    ]\n}\n```\nIf all the `notifications` sent to Adobe Target are correctly processed, they will appear in the `notifications` array in the response. However, if a `notifications` `id` is missing, that particular notification did not go through. In this scenario, a retry logic could be put into place until a successful notification response is retrieved. Ensure the retry logic has a timeout specified so the API call does not block and cause performance delays.\n\n# Integration with Experience Cloud\n\n## Adobe Analytics for Target (A4T)\nWhen a Adobe Target Delivery API call is fired from the server, Adobe Target returns the experience for that user and in addition to that, Adobe Target either returns the Adobe Analytics payload back to the caller or automatically forwards it to Adobe Analytics. In order to send Target activity information to Adobe Analytics on the server side, there are a few pre-requisites that need to be satisfied:\n1. The activity is set up in the Adobe Target UI with Adobe Analytics as the reporting source and the accounts are enabled for A4T\n2. Adobe Marketing Cloud Visitor ID is generated by the API user, and is available when the Target Delivery API call is fired\n\n### Adobe Target Automatically Forwards the Analytics Payload\nAdobe Target can automatically forward the analytics payload to Adobe Analytics via the server side if the following identifiers are provided:\n1. `supplementalDataId` - The ID that is utilized to stitch between Adobe Analytics and Adobe Target\n2. `trackingServer` - The Adobe Analaytics Server\nIn order for Adobe Target and Adobe Analytics to correctly stitch the data together, the same `supplementalDataId` need to be passed to both Adobe Target and Adobe Analytics.\n\n```\ncurl -X POST \\\n  'https://demo.tt.omtrdc.net/rest/v1/delivery?client=demo&sessionId=d359234570e04f14e1faeeba02d6ab9914e' \\\n  -H 'Content-Type: application/json' \\\n  -H 'cache-control: no-cache' \\\n  -d '{\n      \"context\": {\n        \"channel\": \"web\",\n        \"browser\" : {\n          \"host\" : \"demo\"\n        },\n        \"address\" : {\n          \"url\" : \"http://demo.dev.tt-demo.com/demo/store/index.html\"\n        },\n        \"screen\" : {\n          \"width\" : 1200,\n          \"height\": 1400\n        }\n      },\n      \"id\": {\n        \"marketingCloudVisitorId\": \"2304820394812039\"\n      },\n      \"property\" : {\n        \"token\": \"08b62abd-c3e7-dfb2-da93-96b3aa724d81\"\n      },\n      \"experienceCloud\": {\n        \"analytics\": {\n          \"supplementalDataId\" : \"23423498732598234\",\n          \"trackingServer\": \"ags041.sc.omtrdc.net\",\n          \"logging\": \"server_side\"\n        }\n      },\n        \"execute\": {\n        \"mboxes\" : [\n          {\n            \"name\" : \"homepage\",\n            \"index\" : 1\n          }\n        ]\n      }\n    }'\n```\n\n### Retrieve Analytics Payload from Adobe Target\nConsumers of the Adobe Target Delivery API, can retrieve the Adobe Analytics payload for a corresponding mbox so that the consumer can send the payload to Adobe Analytics via the [Data Insertion API](https://helpx.adobe.com/analytics/kb/data-insertion-api-post-method-adobe-analytics.html).\nWhen a server side Adobe Target call is fired, pass `client_side` to the `logging` field in the request. This will in turn return a payload if the mbox is present in an activity that is using Analytics as the reporting source.\n\n```\ncurl -X POST \\\n  'https://demo.tt.omtrdc.net/rest/v1/delivery?client=demo&sessionId=d359234570e04f14e1faeeba02d6ab9914e' \\\n  -H 'Content-Type: application/json' \\\n  -H 'cache-control: no-cache' \\\n  -d '{\n      \"context\": {\n        \"channel\": \"web\",\n        \"browser\" : {\n          \"host\" : \"demo\"\n        },\n        \"address\" : {\n          \"url\" : \"http://demo.dev.tt-demo.com/demo/store/index.html\"\n        },\n        \"screen\" : {\n          \"width\" : 1200,\n          \"height\": 1400\n        }\n      },\n      \"property\" : {\n        \"token\": \"08b62abd-c3e7-dfb2-da93-96b3aa724d81\"\n      },\n      \"experienceCloud\": {\n        \"analytics\": {\n          \"logging\": \"client_side\"\n        }\n      },\n        \"execute\": {\n        \"mboxes\" : [\n          {\n            \"name\" : \"homepage\",\n            \"index\" : 1\n          },\n          {\n            \"name\" : \"SummerShoesOffer\",\n            \"index\" : 2       \n          },\n          {\n            \"name\" : \"SummerDressOffer\",\n            \"index\" : 3       \n          }      \n        ]\n      }\n    }'\n```\n\nOnce you have specified `logging` = `client_side` you will receive the payload in the `mbox` field as seen below.\n\n```\n{\n    \"status\": 200,\n    \"requestId\": \"4b8855a5-8354-4ac4-8ae7-c551f7c0bb8a\",\n    \"client\": \"demo\",\n    \"id\": {\n        \"tntId\": \"d359234570e04f14e1faeeba02d6ab9914e.28_7\"\n    },\n    \"edgeHost\": \"mboxedge28.tt.omtrdc.net\",\n    \"execute\": {\n        \"mboxes\": [\n            {\n                \"index\": 1,\n                \"name\": \"homepage\",\n                \"options\": [\n                    {\n                        \"content\": \"<p><b>Enjoy this 15% discount on your next purchase</b></p>\",\n                        \"type\": \"html\",\n\n                    }\n                ],\n                \"analytics\": {\n                    \"payload\": {\n                        \"pe\": \"tnt\",\n                        \"tnta\": \"285408:0:0|2\"\n                    }\n                }\n            },\n            {\n                \"index\": 2,\n                \"name\": \"SummerShoesOffer\",\n                \"options\": [\n                    {\n                        \"content\": \"<p><b>Enjoy this 15% discount on your next shoe purchase</b></p>\",\n                        \"type\": \"html\",\n                    }\n                ]\n            },\n            {\n                \"index\": 3,\n                \"name\": \"SummerDressOffer\",\n                \"options\": [\n                    {\n                        \"content\": \"<p><b>Enjoy this 15% discount on your next dress purchase</b></p>\",\n                        \"type\": \"html\",\n                    }\n                ]\n            }\n        ]\n    }\n}\n```    \n\nIf the response from Target contains anything in the `analytics -> payload` property, forward it as it is to Adobe Analytics. Analytics knows how to process this payload. This can be done in a GET request using the following format:\n\n```\nhttps://{datacollectionhost.sc.omtrdc.net}/b/ss/{rsid}/0/CODEVERSION?pe=tnt&tnta={payload}&mcid={mcid}&vid={vid}&aid={aid}\n```\n\n#### Query String Parameters and Variables\nField Name  | Required | Description\n----------------|-------------|---------\n`rsid` | Yes | The report suite ID\n`pe` | Yes | Page event. Always set to `tnt`\n`tnta` | Yes | Analytics payload returned by Target server in `analytics -> payload -> tnta`\n`marketingCloudVisitorId` | Yes | Marketing Cloud Visitor ID\n\n#### Required Header Values\nHeader Name  | Header Value\n----------------|-------------\nHost | Analytics data collection server (eg: adobeags421.sc.omtrdc.net)\n\n#### Sample A4T Data Insertion HTTP Get Call\n\n```\nhttps://demo.sc.omtrdc.net/b/ss/myCustomRsid/0/MOBILE-1.0?pe=tnt&tnta=285408:0:0|2&mcid=2304820394812039\n```\n\n## Adobe Audience Manager\nAdobe Audience Manager segments can also be leveraged via Adobe Target Delivery APIs. In order to leverage AAM segments, the following fields need to be provided:\n\nField Name  | Required | Description\n----------------|-------------|---------\n`locationHint` | Yes | DCS Location Hint is used to determine which AAM DCS Endpoint to hit in order to retrieve the profile. Must be >= 1.\n`marketingCloudVisitorId` | Yes | Marketing Cloud Visitor ID\n`blob` | Yes | AAM Blob is used to send additional data to AAM. Must not be blank and the size <= 1024.\n\n\n```\ncurl -X POST \\\n  'https://demo.tt.omtrdc.net/rest/v1/delivery?client=demo&sessionId=d359234570e04f14e1faeeba02d6ab9914e' \\\n  -H 'Content-Type: application/json' \\\n  -H 'cache-control: no-cache' \\\n  -d '{\n      \"context\": {\n        \"channel\": \"web\",\n        \"browser\" : {\n          \"host\" : \"demo\"\n        },\n        \"address\" : {\n          \"url\" : \"http://demo.dev.tt-demo.com/demo/store/index.html\"\n        },\n        \"screen\" : {\n          \"width\" : 1200,\n          \"height\": 1400\n        }\n      },\n      \"id\": {\n        \"marketingCloudVisitorId\": \"2304820394812039\"\n      },\n      \"property\" : {\n        \"token\": \"08b62abd-c3e7-dfb2-da93-96b3aa724d81\"\n      },\n      \"experienceCloud\": {\n        \"audienceManager\": {\n          \"locationHint\": 9,\n          \"blob\": \"32fdghkjh34kj5h43\"\n        }\n      },\n        \"execute\": {\n        \"mboxes\" : [\n          {\n            \"name\" : \"homepage\",\n            \"index\" : 1\n          },\n          {\n            \"name\" : \"SummerShoesOffer\",\n            \"index\" : 2       \n          },\n          {\n            \"name\" : \"SummerDressOffer\",\n            \"index\" : 3       \n          }      \n        ]\n      }\n    }'\n```\n\n# Known Limitations\n1. There is no authentication for Target Delivery APIs.\n2. This API does not process cookies or redirect calls.\n3. Support for AP and Recs Activities: This API has two modes for fetching content - execute and prefetch mode. The prefetch mode can only be used for AB and XT activities. Don’t use the prefetch mode for Automated Personalization, Auto-Allocate, Auto-Target and Recommendations activty types. \n\n"
+  },
+  "servers": [
+    {
+      "url": "https://{clientCode}.tt.omtrdc.net/"
+    }
+  ],
+  "paths": {
+    "/rest/v1/delivery": {
+      "post": {
+        "summary": "Retrieve Target offers",
+        "operationId": "execute",
+        "tags": [
+          "Delivery API"
+        ],
+        "parameters": [
+          {
+            "name": "client",
+            "in": "query",
+            "required": true,
+            "description": "The customer client code",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "sessionId",
+            "in": "query",
+            "required": true,
+            "description": "This is the `sessionId` that should be generated and maintained by the API user for the current session the user is a part of. The `sessionId` can be any printable string except a space, ?, or /. It should be between 1 and 128 characters in length. <br><br> For a particular session, its value must stay the same across multiple requests for the same user since routing to a particular node in the edge cluster, which contains the user profile, is done using the `sessionId`. The session is active for 30 minutes on the server side. Therefore, you shouldn’t use a different `sessionId` for a particular `tntId` or `thirdPartyId` within 30 minutes of the last request made with the same `tntId` or `thirdPartyId`. Otherwise, changes to the profile could be inconsistent and unpredictable. <br><br>Furthermore, using the same `sessionId` with different `tntId` or `thirdPartyId` may cause unpredictable changes to the profiles.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Delivery Request",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "context"
+                ],
+                "properties": {
+                  "requestId": {
+                    "type": "string",
+                    "maxLength": 128,
+                    "description": "The request ID that will be returned in the response. In case it is not provided, an UUID is generated and\nreturned automatically.\n"
+                  },
+                  "impressionId": {
+                    "description": "If not present it will be automatically generated (UUID). If present,  second and subsequent requests with the\nsame id will not increment impressions to activities/metrics. Similar to page id.\n",
+                    "type": "string",
+                    "maxLength": 128
+                  },
+                  "id": {
+                    "type": "object",
+                    "description": "Object that contains the identifiers for the visitor.\nIf no id is provided in the first request, Target will generate a VisitorId with a tntId. The code that runs on the\nclient side is then responsible for passing this tntId value on all subsequent calls.\n\nValidation\n  * Either tntId, thirdPartyId or maketingCloudVisistorId required.\n",
+                    "properties": {
+                      "tntId": {
+                        "type": "string",
+                        "maxLength": 128,
+                        "description": "Tnt id - an unique identifier (UUID).\nIf no visitor id is provided the TNT id will be generated by the TNT server.\nThe TNT id retunred by the server may also contain the profile location hint,\nwith the same format as for other endpoints (standard/ajax/json/..).\nExample 32440324234-2343423.23_41, in this example the 23_41 is the profile location hint.\nTnt id retuned in the response (containting the profile location hint) should be used in the subsequent requests\n\nValidation\n  * Should not contain a '.' (dot) unless the dot delimits the location hint.\n"
+                      },
+                      "thirdPartyId": {
+                        "type": "string",
+                        "maxLength": 128,
+                        "description": "Third party id\n"
+                      },
+                      "marketingCloudVisitorId": {
+                        "type": "string",
+                        "maxLength": 128,
+                        "description": "Marketing cloud visitor id\n"
+                      },
+                      "customerIds": {
+                        "type": "array",
+                        "maxItems": 50,
+                        "description": "Along with the marketing cloud visitor id, you can associate additional customer ids\n\nValidation\n  * No null elements.\n",
+                        "items": {
+                          "required": [
+                            "id",
+                            "integrationCode",
+                            "authenticatedState"
+                          ],
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "string",
+                              "maxLength": 128
+                            },
+                            "integrationCode": {
+                              "type": "string",
+                              "maxLength": 50,
+                              "description": "This is the **alias** used when setting up a CRS datasource in the Marketing Cloud UI."
+                            },
+                            "authenticatedState": {
+                              "type": "string",
+                              "enum": [
+                                "unknown",
+                                "authenticated",
+                                "logged_out"
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "environmentId": {
+                    "description": "Valid client environment id. If not specified host will be determined base on the provided host.",
+                    "type": "integer",
+                    "format": "int64"
+                  },
+                  "property": {
+                    "type": "object",
+                    "required": [
+                      "token"
+                    ],
+                    "description": "Specifies the at_property via the token field. It can be used to control the scope for the delivery.\n",
+                    "properties": {
+                      "token": {
+                        "description": "The at_property token\n\nValidation\n* Required if the property is specified.\n",
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "trace": {
+                    "type": "object",
+                    "required": [
+                      "authorizationToken"
+                    ],
+                    "description": "Enables the trace for delivery API.\nAt present it is not be possible to set the metrics and packages for the trace.\n",
+                    "properties": {
+                      "authorizationToken": {
+                        "type": "string"
+                      },
+                      "usage": {
+                        "type": "object",
+                        "additionalProperties": {
+                          "type": "string"
+                        },
+                        "description": "A String dictionary of client SDK usage tracking and internal diagnostics metadata.\n"
+                      }
+                    }
+                  },
+                  "context": {
+                    "type": "object",
+                    "required": [
+                      "channel"
+                    ],
+                    "description": "Specifies the context for the request, IE if it a web request then is should include user agent etc.",
+                    "properties": {
+                      "channel": {
+                        "type": "string",
+                        "description": "Specifies the channel for the request. Only activities with the matching channel will be evaluated.\n",
+                        "enum": [
+                          "mobile",
+                          "web"
+                        ]
+                      },
+                      "mobilePlatform": {
+                        "type": "object",
+                        "required": [
+                          "deviceType",
+                          "platformType"
+                        ],
+                        "description": "Mobile Platform should be specified when the channel is Mobile",
+                        "properties": {
+                          "deviceName": {
+                            "description": "Optional field, added to help with device detection using device atlas.\nThis is equivalent of a.DeviceName field passed in from Mobile SDK\n",
+                            "type": "string"
+                          },
+                          "deviceType": {
+                            "type": "string",
+                            "description": "Field is mandatory when Mobile Platform is specified.\nOnly activities that match the specified deviceType or have the device type set to 'null' will be\nevaluated. Ex if device type is 'phone' in the delivery request, then only activities that have the device type\nequal to 'phone' or set to 'null' will be evaluated.\nAn activity with 'null' device type will be evaluated for requests for both, 'phone' and 'tablet'.\n",
+                            "enum": [
+                              "phone",
+                              "tablet"
+                            ]
+                          },
+                          "platformType": {
+                            "type": "string",
+                            "description": "Only activities with the specified mobile platform type will be evaluated.",
+                            "enum": [
+                              "android",
+                              "ios"
+                            ]
+                          },
+                          "version": {
+                            "type": "string",
+                            "maxLength": 128,
+                            "description": "If not specified - all activities with any platformVersion will be evaluated.\nIf specified - only activities with the same platformVersion will be evaluated.\n"
+                          }
+                        }
+                      },
+                      "application": {
+                        "type": "object",
+                        "description": "Application identifiers. If specified, should match the with the one from the activity.",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "maxLength": 250,
+                            "description": "Application ID.\nIf not specified - all activities with any applicationId will be evaluated.\nIf specified - only activities with the matching applicationId will be evaluated.\n"
+                          },
+                          "name": {
+                            "type": "string",
+                            "maxLength": 250,
+                            "description": "Application name.\nIf not specified - all activities with any applicationName will be evaluated.\nIf specified - only activities with specified applicationName will be evaluated.\n"
+                          },
+                          "version": {
+                            "type": "string",
+                            "maxLength": 128,
+                            "description": "Application version\nIf not specified - all activities with any applicationVersion will not be evaluated.\nIf specified - only activities with specific applicationVersion will be evaluated.\n"
+                          }
+                        }
+                      },
+                      "screen": {
+                        "type": "object",
+                        "description": "The properties that dictate a screen",
+                        "properties": {
+                          "width": {
+                            "type": "number",
+                            "format": "double",
+                            "description": "width"
+                          },
+                          "height": {
+                            "type": "number",
+                            "format": "double",
+                            "description": "height"
+                          },
+                          "colorDepth": {
+                            "type": "number",
+                            "format": "double",
+                            "description": "color depth"
+                          },
+                          "pixelRatio": {
+                            "type": "number",
+                            "format": "double",
+                            "description": "Optional, Used for device detection using the device atlas"
+                          },
+                          "orientation": {
+                            "type": "string",
+                            "description": "If not specified, all activities with any screen orientation will be evaluated.\nIf specified, only the activities with the matching screen orientation will evaluated.\n",
+                            "enum": [
+                              "portrait",
+                              "landscape"
+                            ]
+                          }
+                        }
+                      },
+                      "window": {
+                        "type": "object",
+                        "description": "The dimensions that dictate a window",
+                        "properties": {
+                          "width": {
+                            "type": "number",
+                            "format": "double",
+                            "description": "width"
+                          },
+                          "height": {
+                            "type": "number",
+                            "format": "double",
+                            "description": "height"
+                          }
+                        }
+                      },
+                      "browser": {
+                        "type": "object",
+                        "description": "Browser object may be specified only when the Channel is Web.",
+                        "properties": {
+                          "host": {
+                            "type": "string",
+                            "description": "Current web page host."
+                          },
+                          "webGLRenderer": {
+                            "type": "string",
+                            "description": "This is an optional field, added to help with device detection using device atlas.\n"
+                          }
+                        }
+                      },
+                      "address": {
+                        "type": "object",
+                        "description": "The address object. It indicates the current URL and the referring URL.",
+                        "properties": {
+                          "url": {
+                            "type": "string",
+                            "maxLength": 4096,
+                            "description": "URL"
+                          },
+                          "referringUrl": {
+                            "type": "string",
+                            "maxLength": 4096,
+                            "description": "referral URL"
+                          }
+                        }
+                      },
+                      "geo": {
+                        "type": "object",
+                        "description": "Geo data. If not specified, and Geo is enabled for the client, it will be resolved via user's IP.\n",
+                        "properties": {
+                          "latitude": {
+                            "type": "number",
+                            "format": "float",
+                            "description": "latitude"
+                          },
+                          "longitude": {
+                            "type": "number",
+                            "format": "float",
+                            "description": "longitude"
+                          }
+                        }
+                      },
+                      "timeOffsetInMinutes": {
+                        "type": "number",
+                        "description": "Specifies minutes from UTC for specific client",
+                        "format": "double"
+                      },
+                      "userAgent": {
+                        "description": "User-Agent should be sent only via this property. HTTP header User-Agent is ignored.",
+                        "type": "string"
+                      },
+                      "beacon": {
+                        "type": "boolean",
+                        "default": false,
+                        "description": "In case beacon = true is provided in the request, the server will return a 204 No Content response with no response body.\n"
+                      }
+                    }
+                  },
+                  "experienceCloud": {
+                    "type": "object",
+                    "description": "Integrations with Audience Manager and Analytics",
+                    "properties": {
+                      "audienceManager": {
+                        "type": "object",
+                        "description": "Audience Manager Integration (AAM).",
+                        "properties": {
+                          "locationHint": {
+                            "type": "integer",
+                            "minimum": 1,
+                            "description": "DCS location hint.\nUsed to determine which AAM DCS Endpoint to hit in order to retrieve the profile.\n"
+                          },
+                          "blob": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 1024,
+                            "description": "AAM Blob. Used to send additional data to AAM.\nValidation\n  * Cannot be blank.\n"
+                          }
+                        }
+                      },
+                      "analytics": {
+                        "type": "object",
+                        "description": "Integration with Adobe Analytics (A4T)",
+                        "properties": {
+                          "supplementalDataId": {
+                            "type": "string",
+                            "description": "Supplemental data id, used for **server side** integrations.\nFormat <16 hexadecimal digits>-<16 hexadecimal digits>\n",
+                            "maxLength": 33,
+                            "minLength": 33
+                          },
+                          "logging": {
+                            "type": "string",
+                            "description": "Indicates whether integraion will be done via client side (from the client) or server side (edge servers)\n",
+                            "enum": [
+                              "server_side",
+                              "client_side"
+                            ]
+                          },
+                          "trackingServer": {
+                            "type": "string",
+                            "description": "tracking server"
+                          },
+                          "trackingServerSecure": {
+                            "type": "string",
+                            "description": "secure tracking server"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "execute": {
+                    "type": "object",
+                    "description": "The execute part of the request that will be evaluated on the server side immediately.\nImpressions will be incremented for the matching activities.\n",
+                    "properties": {
+                      "pageLoad": {
+                        "type": "object",
+                        "description": "Object common for prefetch, execute and notifications in order to specify the request details.",
+                        "properties": {
+                          "address": {
+                            "$ref": "#/paths/~1rest~1v1~1delivery/post/requestBody/content/application~1json/schema/properties/context/properties/address"
+                          },
+                          "parameters": {
+                            "type": "object",
+                            "maxProperties": 50,
+                            "description": "Parameters map.\nSame object is reused for mbox or profile parameters with slight validation differences.\nFollowing names are not allowed for mbox parameters: 'orderId', 'orderTotal', productPurchasedIds'\nValidation (for both mbox and profile parameters):\n  * Max 50 parameters limit.\n  * Parameter name should not be blank.\n  * Parameter name max length 128.\n  * Parameter name should not start with 'profile.'\n  * Parameter value length max 5000.\n",
+                            "additionalProperties": {
+                              "type": "string",
+                              "description": "Name of the property"
+                            }
+                          },
+                          "profileParameters": {
+                            "$ref": "#/paths/~1rest~1v1~1delivery/post/requestBody/content/application~1json/schema/properties/execute/properties/pageLoad/properties/parameters"
+                          },
+                          "order": {
+                            "type": "object",
+                            "description": "Object that describes the order details.",
+                            "properties": {
+                              "id": {
+                                "type": "string",
+                                "maxLength": 250,
+                                "description": "Order Id."
+                              },
+                              "total": {
+                                "type": "number",
+                                "minimum": 0,
+                                "description": "Order Total. The amount of money in the current order.\n"
+                              },
+                              "purchasedProductIds": {
+                                "type": "array",
+                                "description": "Order's product ids.\nValidation\n  * No blank values allowed.\n  * Each product Id max length 50.\n  * Product ids, separated by commas and concatenated, total length should not exceed 250.\n",
+                                "items": {
+                                  "type": "string"
+                                }
+                              },
+                              "time": {
+                                "type": "date-time",
+                                "description": "Time in the [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601#Time_intervals) format\n"
+                              },
+                              "experienceLocalId": {
+                                "type": "integer",
+                                "minimum": 0,
+                                "maximum": 2147483647,
+                                "description": "Id used to track the experience across POST/PUT requests"
+                              },
+                              "duplicate": {
+                                "type": "boolean",
+                                "description": "Whether or not the order is a duplicate"
+                              },
+                              "outlier": {
+                                "type": "boolean",
+                                "description": "Whether or not the order is abnormally different from the rest in volume"
+                              }
+                            }
+                          },
+                          "product": {
+                            "type": "object",
+                            "description": "The properties of the products",
+                            "properties": {
+                              "id": {
+                                "type": "string",
+                                "maxLength": 128,
+                                "description": "Product id. Should not be blank."
+                              },
+                              "categoryId": {
+                                "type": "string",
+                                "maxLength": 128,
+                                "description": "Category id. Should not be blank."
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "mboxes": {
+                        "type": "array",
+                        "description": "An array of mboxes",
+                        "items": {
+                          "required": [
+                            "index",
+                            "mbox"
+                          ],
+                          "description": "Regional mbox request.",
+                          "allOf": [
+                            {
+                              "$ref": "#/paths/~1rest~1v1~1delivery/post/requestBody/content/application~1json/schema/properties/execute/properties/pageLoad"
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "index": {
+                                  "type": "integer",
+                                  "format": "int32",
+                                  "description": "An index for the mboxes to be executed or prefetched.\nMbox index is used for correlation between the mbox request with the mbox response, for either prefetch or\nexecute responses. Index should be unique in the mbox list.\n"
+                                },
+                                "name": {
+                                  "type": "string",
+                                  "description": "The name of the regional mbox to be evaluated.\n"
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  "prefetch": {
+                    "type": "object",
+                    "description": "Use this object to prefetch the content for `views` and/or `pageLoad` and/or `mboxes`.\n  * `views` - the request to prefetch selectors grouped per view.\n  * `pageLoad` - the request to prefetch selectors not assigned to any view.\n  * `mboxes` - the request to prefetch mbox content.\n",
+                    "properties": {
+                      "views": {
+                        "type": "array",
+                        "description": "An array of views\n",
+                        "items": {
+                          "description": "View request",
+                          "allOf": [
+                            {
+                              "$ref": "#/paths/~1rest~1v1~1delivery/post/requestBody/content/application~1json/schema/properties/execute/properties/pageLoad"
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "name": {
+                                  "type": "string",
+                                  "maxLength": 128,
+                                  "description": "View Name - Unique view name. If the activity has a metric with a view with this name it will be matched,\nproviding the Key matches as well or is null and view and metric targeting is matched.\n"
+                                },
+                                "key": {
+                                  "type": "string",
+                                  "maxLength": 512,
+                                  "description": "View Key - An optional encoded String identifier used in advanced scenarios, such as View fingerprinting.\nSame matching conditions as for View Name.\n"
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "pageLoad": {
+                        "$ref": "#/paths/~1rest~1v1~1delivery/post/requestBody/content/application~1json/schema/properties/execute/properties/pageLoad"
+                      },
+                      "mboxes": {
+                        "type": "array",
+                        "description": "Prefetch the content for the regional mbox.",
+                        "items": {
+                          "$ref": "#/paths/~1rest~1v1~1delivery/post/requestBody/content/application~1json/schema/properties/execute/properties/mboxes/items"
+                        }
+                      }
+                    }
+                  },
+                  "notifications": {
+                    "type": "array",
+                    "description": "Notifications for the displayed content, clicked selectors, and/or visited views or mboxes.",
+                    "items": {
+                      "description": "Notification object is used to sent notificaitons regarding what prefetched content was displayed\n(for views, pageLoad or regional mboxes), which views, pages and mboxes were visited (triggered),\nand which elements were clicked.\nNotification request detail will be validated and in case there are validation errors with any token or timestamp\nthe entire request will be invalidated, so there are no cases of inconsistent data, caused by a partially\nprocessed notification.\nthat may happen with a partially processed notification. This is different from the approach in the batch mbox v2 API.\nMboxes and views are mutually exclusive.\n",
+                      "required": [
+                        "id",
+                        "type",
+                        "timestamp"
+                      ],
+                      "allOf": [
+                        {
+                          "$ref": "#/paths/~1rest~1v1~1delivery/post/requestBody/content/application~1json/schema/properties/execute/properties/pageLoad"
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "string",
+                              "maxLength": 200,
+                              "description": "Notification id will be returned in response and will indicate that the notification was processed\nsuccessfully.\n"
+                            },
+                            "impressionId": {
+                              "type": "string",
+                              "maxLength": 128,
+                              "description": "Impression id is used to stitch (link) the current notification with a previous notification or\nexecute request. In case they both of them match, the second and other subsequent requests will not generate a\nnew impression to the activity, experience etc.\n"
+                            },
+                            "type": {
+                              "type": "string",
+                              "description": "Notification type. Currently only click and display are supported.",
+                              "enum": [
+                                "click",
+                                "display"
+                              ]
+                            },
+                            "timestamp": {
+                              "type": "integer",
+                              "format": "int64",
+                              "description": "Timestamp of the notification, in milliseconds elapsed since UNIX epoch."
+                            },
+                            "tokens": {
+                              "type": "array",
+                              "description": "A list of tokens for displayed content or clicked selectors, based on the type of notification.",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "mbox": {
+                              "description": "Notification for a regional mbox",
+                              "type": "object",
+                              "properties": {
+                                "name": {
+                                  "type": "string",
+                                  "maxLength": 250,
+                                  "description": "Mbox name.\nValidation\n  * No blank values allowed.\n  * A '-clicked' suffix or the following names are not allowed for mbox names: ** display mboxes **, ** any mbox **, ** click from display mbox **\n  * Allowed chars: - '-, ./=`:;&!@#$%^&*()+|?~[]{}'\n"
+                                },
+                                "state": {
+                                  "type": "string",
+                                  "description": "Mbox state token"
+                                }
+                              }
+                            },
+                            "view": {
+                              "type": "object",
+                              "description": "Notification for the displayed view.",
+                              "properties": {
+                                "name": {
+                                  "type": "string",
+                                  "maxLength": 128,
+                                  "description": "View Name - Unique view name. If the activity has a metric with a view with this name it will be matched,\nproviding the Key matches as well or is null and view and metric targeting is matched.\n"
+                                },
+                                "key": {
+                                  "type": "string",
+                                  "maxLength": 512,
+                                  "description": "View Key - An optional encoded String identifier used in advanced scenarios, such as View fingerprinting.\nSame matching conditions as for View Name.\n"
+                                },
+                                "state": {
+                                  "type": "string",
+                                  "description": "View state token."
+                                }
+                              }
+                            },
+                            "pageLoad": {
+                              "type": "object",
+                              "description": "Include this object to send display notifications for the prefetch page load contnet.",
+                              "properties": {
+                                "state": {
+                                  "type": "string",
+                                  "description": "Page Load state token"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "qaMode": {
+                    "type": "object",
+                    "description": "Use this object to enable the QA mode in the request.\nUse the QA mode to test the look and feel of your site or application for various activities in isolation or together,\nwith the possibilty to match or not match specified audiences, select a specific experience, count the\nimpressions/visits for the reporting or not.\n",
+                    "properties": {
+                      "token": {
+                        "type": "string",
+                        "description": "The encrypted token for the QA mode. It contains the list of the activity ids that are allowed to\nbe executed in QA mode.\nValidation\n  * After decryption, the client code from the token should match the one from the request.\n  * After decryption, activities with the ids specified in the token should belong to the client.\n"
+                      },
+                      "listedActivitiesOnly": {
+                        "type": "boolean",
+                        "description": "Specifies whether qa_mode campaigns should be executed in isolation or if they should be evaluated along other\nactive campaigns for current environment.\n"
+                      },
+                      "evaluateAsTrueAudienceIds": {
+                        "type": "array",
+                        "description": "List of audience ids that should be always evaluated as TRUE in the scope of the delivery request\n",
+                        "items": {
+                          "type": "integer",
+                          "format": "int64"
+                        }
+                      },
+                      "evaluateAsFalseAudienceIds": {
+                        "type": "array",
+                        "description": "List of audience ids that should be always evaluated as FALSE in the scope of the delivery request\n",
+                        "items": {
+                          "type": "integer",
+                          "format": "int64"
+                        }
+                      },
+                      "previewIndexes": {
+                        "type": "array",
+                        "description": "List of preview indexes. If present, the list cannot be empty.\n",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "activityIndex": {
+                              "type": "integer",
+                              "minimum": 1,
+                              "description": "Index references the activity in the activity list (from the encrypted token).\nValidation\n  * If the activity list index is out of boundaries of the activities list in the token or if it is null it will  be ignored.\n  * Activity list index starts with 1.\n  * Should be at least one activity index, and should reference an activity specified in the token.\n"
+                            },
+                            "experienceIndex": {
+                              "type": "integer",
+                              "minimum": 1,
+                              "description": "When specified, the experience with this index in the activity definition will be selected.\nValidation\n  * Can be null (unspecified)\n  * If index is not specified or out of bounds, the experience will be selected via activity experience selector strategy.\n  * Experience index starts with 1.\n"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "examples": {
+                "1_1_PrefetchViewsForWebChannel": {
+                  "summary": "Prefetch Mboxes for SPA and Web Applications\n",
+                  "value": {
+                    "id": {
+                      "tntId": "abcdefghijkl00023.1_1"
+                    },
+                    "context": {
+                      "channel": "web",
+                      "address": {
+                        "url": "http://demo.dev.tt-demo.com/demo/store/index.html"
+                      },
+                      "screen": {
+                        "width": 1200,
+                        "height": 1400
+                      }
+                    },
+                    "prefetch": {
+                      "mboxes": {
+                        "name": "SummerOffer",
+                        "index": 1
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "description": "Delivery response. Returned content will be based upon the request and client's active activities.",
+                  "properties": {
+                    "status": {
+                      "type": "integer"
+                    },
+                    "requestId": {
+                      "type": "string",
+                      "description": "ID of the processed request.\nIf it's not sent in the request, a random ID (UUID) is generated and returned with the response.\n"
+                    },
+                    "id": {
+                      "$ref": "#/paths/~1rest~1v1~1delivery/post/requestBody/content/application~1json/schema/properties/id"
+                    },
+                    "client": {
+                      "type": "string",
+                      "description": "Client's code. The one which was sent in the request's path."
+                    },
+                    "edgeHost": {
+                      "description": "Cluster host name that served the response. Ideally, all subsequent requests should be made to that host.",
+                      "type": "string"
+                    },
+                    "execute": {
+                      "type": "object",
+                      "description": "The object that contains responses from execute `pageLoad` and/or execute regional `mboxes` request.",
+                      "properties": {
+                        "pageLoad": {
+                          "type": "object",
+                          "description": "Page load response. Contains the result of prefetching or executing a request that will retrieve content for\nall selectors not associated with a particular view.\n",
+                          "properties": {
+                            "options": {
+                              "type": "array",
+                              "description": "List of options that should be applied.\nNote: options that have been set on selectors assigned to views will not be included here.\n",
+                              "items": {
+                                "type": "object",
+                                "description": "The content from the activitiesc is returned via the option objects.",
+                                "properties": {
+                                  "type": {
+                                    "type": "string",
+                                    "enum": [
+                                      "html",
+                                      "json",
+                                      "redirect",
+                                      "dynamic",
+                                      "actions"
+                                    ]
+                                  },
+                                  "content": {
+                                    "description": "Content that should be applied/displayed/replaced etc, based on the option type. Content can be one of:\n  * html\n  * redirect link\n  * link for a dynamic offer\n  * raw json\n  * one or more actions (json - from offers with templates and visual offers)\nActions format is specific for delivery API.\n",
+                                    "oneOf": [
+                                      {
+                                        "type": "string"
+                                      },
+                                      {
+                                        "type": "object"
+                                      },
+                                      {
+                                        "type": "array",
+                                        "items": {
+                                          "type": "object",
+                                          "properties": {
+                                            "type": {
+                                              "type": "string"
+                                            },
+                                            "selector": {
+                                              "type": "string"
+                                            },
+                                            "cssSelector": {
+                                              "type": "string"
+                                            },
+                                            "content": {
+                                              "oneOf": [
+                                                {
+                                                  "type": "string"
+                                                },
+                                                {
+                                                  "type": "object"
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  "eventToken": {
+                                    "description": "Will be present only in response of a prefetch request. After the content is displayed the event token should be\nsent via notifications to the edge server so that visit/visitor/impression events could be logged.\n",
+                                    "type": "string"
+                                  },
+                                  "responseTokens": {
+                                    "type": "object",
+                                    "description": "List of the response tokens and their values for the given option.\nResponse tokens can be defined via the /v1/responsetokens API.\nThe values for the tokens are computed for every option returned by a activity and represented as a dictionary:\n  * Key - the response token name.\n  * Value - the response token value. The value is usually a string, but it can be a list of string in case of\n  'category affinity' response token.\n",
+                                    "additionalProperties": {
+                                      "type": "object",
+                                      "properties": {
+                                        "responseTokenName": {
+                                          "type": "string"
+                                        },
+                                        "responseTokenValue": {
+                                          "type": "object"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "metrics": {
+                              "type": "array",
+                              "description": "Click track metrics. Note that click metrics for selectors set with views will not be included here.\nIn case the same activity is serving content for selectors both assinged to a view and selectors without any\nviews, and having click track metrics that are not assotiated with any view within the activity, then:\n  * in case of a prefetch only request, these metrics (tokens) will be set in the Prefetch response's metrics.\n  * in case of an execute only request, the metrics will be set in the page load response's metrics.\n  * in case of a request, with both, execute and prefetch, metrics will be set in the page load response's\n    metrics only.\n",
+                              "items": {
+                                "$ref": "#/paths/~1rest~1v1~1delivery/post/responses/200/content/application~1json/schema/properties/prefetch/properties/metrics/items"
+                              }
+                            },
+                            "analytics": {
+                              "type": "object",
+                              "description": "Contains the analytics payload metadata",
+                              "properties": {
+                                "payload": {
+                                  "type": "object",
+                                  "description": "Analytics payload for client side integration that should be sent to Analytics after content has been applied.\n",
+                                  "properties": {
+                                    "pe": {
+                                      "type": "string",
+                                      "description": "Indicates to Adobe Analytics that the payload is an Adobe Target type"
+                                    },
+                                    "tnta": {
+                                      "type": "string",
+                                      "description": "Contains Target metadata that describes the activity and experience"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "state": {
+                              "type": "string",
+                              "description": "View state token that must be sent back with display notification for the view.\nMay only be present for prefetch requests.\n"
+                            },
+                            "trace": {
+                              "type": "object",
+                              "description": "The object containing all trace data for the request, only present if the trace token was provided in the request.\n",
+                              "additionalProperties": {
+                                "type": "object",
+                                "properties": {
+                                  "traceKey": {
+                                    "type": "string"
+                                  },
+                                  "traceValue": {
+                                    "type": "object"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "mboxes": {
+                          "type": "array",
+                          "description": "The list of responses for requested regional mboxes.",
+                          "items": {
+                            "type": "object",
+                            "description": "Mbox response object.\n",
+                            "properties": {
+                              "index": {
+                                "type": "integer",
+                                "format": "int32",
+                                "description": "Indicates that the response is for mbox with the same index, as was specified in the prefetch or execute request.\n"
+                              },
+                              "name": {
+                                "type": "string",
+                                "description": "The name of the mbox. Since the same mbox name can be specified multiple times in the request it\nshould be used in conjunction with the index.\n"
+                              },
+                              "options": {
+                                "type": "array",
+                                "description": "The option that was matched for the current mbox. Cannot be an offer with templates or a visual offer.\n",
+                                "items": {
+                                  "$ref": "#/paths/~1rest~1v1~1delivery/post/responses/200/content/application~1json/schema/properties/execute/properties/pageLoad/properties/options/items"
+                                }
+                              },
+                              "metrics": {
+                                "type": "array",
+                                "description": "Click metrics.",
+                                "items": {
+                                  "$ref": "#/paths/~1rest~1v1~1delivery/post/responses/200/content/application~1json/schema/properties/prefetch/properties/metrics/items"
+                                }
+                              },
+                              "analytics": {
+                                "$ref": "#/paths/~1rest~1v1~1delivery/post/responses/200/content/application~1json/schema/properties/execute/properties/pageLoad/properties/analytics"
+                              },
+                              "trace": {
+                                "$ref": "#/paths/~1rest~1v1~1delivery/post/responses/200/content/application~1json/schema/properties/execute/properties/pageLoad/properties/trace"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "prefetch": {
+                      "type": "object",
+                      "description": "The object that will return the prefetched content based on the request, active activites etc\n",
+                      "properties": {
+                        "views": {
+                          "type": "array",
+                          "description": "Contains all the views matching the request.\n",
+                          "items": {
+                            "type": "object",
+                            "description": "This object will contain all the options for the selectors set for the current view, from the active activities,\nin case the context and targeting conditions from the request have been matched.\n",
+                            "properties": {
+                              "name": {
+                                "type": "string",
+                                "maxLength": 128,
+                                "description": "View Name - Unique view name. If the activity has a metric with a view with this name it will be matched,\nproviding the Key matches as well or is null and view and metric targeting is matched.\n"
+                              },
+                              "key": {
+                                "type": "string",
+                                "maxLength": 512,
+                                "description": "View Key - An optional encoded String identifier used in advanced scenarios, such as View fingerprinting.\nSame matching conditions as for View Name.\n"
+                              },
+                              "options": {
+                                "type": "array",
+                                "description": "The prefetched content (options) to be displayed for the current view.\n",
+                                "items": {
+                                  "$ref": "#/paths/~1rest~1v1~1delivery/post/responses/200/content/application~1json/schema/properties/execute/properties/pageLoad/properties/options/items"
+                                }
+                              },
+                              "metrics": {
+                                "type": "array",
+                                "description": "Click track metrics for the current view.\n",
+                                "items": {
+                                  "$ref": "#/paths/~1rest~1v1~1delivery/post/responses/200/content/application~1json/schema/properties/prefetch/properties/metrics/items"
+                                }
+                              },
+                              "analytics": {
+                                "$ref": "#/paths/~1rest~1v1~1delivery/post/responses/200/content/application~1json/schema/properties/execute/properties/pageLoad/properties/analytics"
+                              },
+                              "state": {
+                                "type": "string",
+                                "description": "View state token that must be sent back with display notification for the view."
+                              },
+                              "trace": {
+                                "$ref": "#/paths/~1rest~1v1~1delivery/post/responses/200/content/application~1json/schema/properties/execute/properties/pageLoad/properties/trace"
+                              }
+                            }
+                          }
+                        },
+                        "pageLoad": {
+                          "$ref": "#/paths/~1rest~1v1~1delivery/post/responses/200/content/application~1json/schema/properties/execute/properties/pageLoad"
+                        },
+                        "mboxes": {
+                          "type": "array",
+                          "description": "Prefetched mboxes, including content and notification tokens to be sent back when the mboxes are displayed.\n",
+                          "items": {
+                            "allOf": [
+                              {
+                                "$ref": "#/paths/~1rest~1v1~1delivery/post/responses/200/content/application~1json/schema/properties/execute/properties/mboxes/items"
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "state": {
+                                    "type": "string",
+                                    "description": "Mbox state token that must be sent back with display notification for the mbox."
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "metrics": {
+                          "type": "array",
+                          "description": "The click track metrics that are not assigned to a view but are present in activites that have views, except\nin case the same activity is serving content for selectors both assinged to a view and selectors without any\nviews, and having click track metrics that are not assotiated with any view within the activity, then:\n  * in case of a prefetch only request, these metrics (tokens) will be set in the prefetch response's metrics.\n  * in case of an execute only request, the metrics will be set in the page load response's metrics.\n  * in case of a request, with both, execute and prefetch, metrics will be set in the page load response's\n    metrics only.\n",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "type": {
+                                "$ref": "#/paths/~1rest~1v1~1delivery/post/requestBody/content/application~1json/schema/properties/notifications/items/allOf/1/properties/type"
+                              },
+                              "selector": {
+                                "type": "string",
+                                "description": "The selector"
+                              },
+                              "eventToken": {
+                                "description": "The event token that should be sent with the notifications in case the click occurred.",
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "examples": {
+                  "1_1_ResponseForPrefetchViewsForWebChannel": {
+                    "summary": "Prefetch Views for SPA and Web Applications\n",
+                    "value": {
+                      "status": 200,
+                      "requestId": "5efee0d8-3779-4b12-a74e-e04848faf191",
+                      "client": "demo",
+                      "id": {
+                        "tntId": "abcdefghijkl00023.1_1"
+                      },
+                      "edgeHost": "mboxedge28.tt.omtrdc.net",
+                      "prefetch": {
+                        "mboxes": [
+                          {
+                            "index": 1,
+                            "name": "SummerOffer",
+                            "options": {
+                              "content": "<p><b>Enjoy this 15% discount on your next purchase</b></p>",
+                              "type": "html",
+                              "eventToken": "GcvBXDhdJFNR9E9r1tgjfmqipf"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "status",
+                    "message"
+                  ],
+                  "properties": {
+                    "status": {
+                      "type": "integer",
+                      "format": "int32",
+                      "description": "HTTP response codes:\n* `400` - Validation error (ex. invalid token)\n* `500` - An internal server error during processing\n"
+                    },
+                    "message": {
+                      "type": "string",
+                      "description": "error message"
+                    }
+                  }
+                },
+                "examples": {
+                  "1_1_ErrorMessage": {
+                    "status": 400,
+                    "message": "Invalid property token"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
