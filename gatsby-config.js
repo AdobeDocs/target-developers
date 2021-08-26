@@ -57,19 +57,19 @@ module.exports = {
           },
           {
             title: 'Adobe Recommendations API Overview',
-            path: '/guides/recommendations-api-tutorial/recs-api-overview.html'
+            path: '/guides/recommendations-api-tutorial/recs-api-overview/'
           },
           {
             title: 'Manage Your Catalog with APIs',
-            path: '/guides/recommendations-api-tutorial/manage-catalog.html'
+            path: '/guides/recommendations-api-tutorial/manage-catalog/'
           },
           {
             title: 'Manage Custom Criteria',
-            path: '/guides/recommendations-api-tutorial/manage-custom-criteria.html'
+            path: '/guides/recommendations-api-tutorial/manage-custom-criteria/'
           },
           {
             title: 'Use the Delivery API with Recommendations',
-            path: '/guides/recommendations-api-tutorial/fetch-recs-server-side-delivery-api.html'
+            path: '/guides/recommendations-api-tutorial/fetch-recs-server-side-delivery-api/'
           }
         ]
       },
