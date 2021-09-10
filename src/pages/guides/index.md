@@ -13,7 +13,7 @@ exl-id: 8a1e93e4-67b2-4942-a8da-fc0f2cbb2df2
 ---
 # Configure authentication for Adobe Target APIs
 
-The Adobe Target Admin APIs, including [!DNL Recommendations] Admin APIs, are secured by authentication to ensure only authorized users use them to access Adobe Target. Use the [Adobe Developer Console](https://console.adobe.io/) to manage this authentication for all Adobe Experience Cloud solutions, including [!DNL Target].
+The Adobe Target Admin APIs, including Recommendations Admin APIs, are secured by authentication to ensure only authorized users use them to access Adobe Target. Use the [Adobe Developer Console](https://console.adobe.io/) to manage this authentication for all Adobe Experience Cloud solutions, including Adobe Target.
 
 This lesson walks through the preliminary steps required to generate authentication tokens needed to successfully interact with Adobe Target APIs. In the sections that follow, you will:
 

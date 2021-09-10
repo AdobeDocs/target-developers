@@ -28,6 +28,10 @@ module.exports = {
       {
         title: 'API Reference',
         menu: [{
+          title: 'Recommendations API',
+          description: 'Adobe Target Recommendations API',
+          path: '/api/recs-api/recs-api-overview.md'
+        }, {
           title: 'Profile API',
           description: 'Adobe Target Profile API',
           path: '/api/profile-api/index.md'
@@ -42,34 +46,58 @@ module.exports = {
         }]
       },
       {
+        title: 'SDK Reference',
+        path: '/sdk/'
+      },
+      {
         title: 'Support',
         path: '/support/'
       }
     ],
     subPages: [
       {
-        title: 'Get Started',
-        path: '/guides/',
-        pages: [
+        title: 'How to Configure Authentication for Adobe Target APIs',
+        path: '/guides/'
+      },
+      {
+        title: 'Adobe Recommendations API Overview',
+        path: '/recs-api/recs-api-overview.md'
+      },
+      {
+        title: 'Manage Your Catalog with APIs',
+        path: '/recs-api/manage-catalog.md'
+      },
+      {
+        title: 'Manage Custom Criteria',
+        path: '/recs-api/manage-custom-criteria.md'
+      },
+      {
+        title: 'Use the Delivery API with Recommendations',
+        path: '/recs-api/fetch-recs-server-side-delivery-api.md'
+      }
+      {
+        "title": "Welcome",
+        "path": "/sdk/"
+      },
+      {
+        "title": "Getting Started",
+        "path": "/sdk/getting-started/"
+        "pages": [
           {
-            title: 'How to Configure Authentication for Adobe Target APIs',
-            path: '/guides/'
+            "title": "Node.js",
+            "path": "sdk/nodejs.md"
           },
           {
-            title: 'Adobe Recommendations API Overview',
-            path: '/guides/recommendations-api-tutorial/recs-api-overview/'
+            "title": "Java",
+            "path": "sdk/java.md"
           },
           {
-            title: 'Manage Your Catalog with APIs',
-            path: '/guides/recommendations-api-tutorial/manage-catalog/'
+            "title": ".NET",
+            "path": "sdk/net.md"
           },
           {
-            title: 'Manage Custom Criteria',
-            path: '/guides/recommendations-api-tutorial/manage-custom-criteria/'
-          },
-          {
-            title: 'Use the Delivery API with Recommendations',
-            path: '/guides/recommendations-api-tutorial/fetch-recs-server-side-delivery-api/'
+            "title": "Python",
+            "path": "sdk/python.md"
           }
         ]
       },
