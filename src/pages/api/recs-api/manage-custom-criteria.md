@@ -35,19 +35,19 @@ Only proceed with this tutorial after you have read the warning above and are co
 
 1. Verify `TENANT_ID` and `API_KEY` for **Create custom criteria** reference the Postman environment variables established earlier. Use the image below for comparison.
 
-    ![CreateCustomCriteria1](../assets/CreateCustomCriteria1.png)
+    ![CreateCustomCriteria1](/assets/CreateCustomCriteria1.png)
 
 2. Add your **Body** as **raw** JSON that defines the location of your custom criteria CSV file. Use the example provided in the [Create Custom Criteria API](https://developers.adobetarget.com/api/recommendations/#operation/getAllCriteriaCustom) documentation as a template, supplying your `environmentId` and other values as necessary. For this example, we use LAST_PURCHASED as the key.
 
-    ![CreateCustomCriteria2](../assets/CreateCustomCriteria2.png)
+    ![CreateCustomCriteria2](/assets/CreateCustomCriteria2.png)
 
 3. Send the request and observe the response, which contains the details of the custom criteria you just created.
 
-    ![CreateCustomCriteria3](../assets/CreateCustomCriteria3.png)
+    ![CreateCustomCriteria3](/assets/CreateCustomCriteria3.png)
 
 4. To verify your custom criteria has been created, navigate within Adobe Target to **[!UICONTROL Recommendations] > [!UICONTROL Criteria]** and search for your criteria by name, or use the **List Custom Criteria API** in the next step.
 
-    ![CreateCustomCriteria4](../assets/CreateCustomCriteria4.png)
+    ![CreateCustomCriteria4](/assets/CreateCustomCriteria4.png)
 
 In this case, we have an error. Let's investigate the error by examining the custom criteria more closely, using the **List Custom Criteria API**.
 
@@ -58,7 +58,7 @@ To retrieve a list of all your custom criteria along with details for each, use 
 `GET https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/custom`
 
 1. Verify `TENANT_ID` and `API_KEY` as before, and send the request. In the response, note the custom criteria ID, as well as details regarding the error message noted earlier.
-   ![ListCustomCriteria](../assets/ListCustomCriteria.png)
+   ![ListCustomCriteria](/assets/ListCustomCriteria.png)
 
 In this case, the error occurred because the server information is incorrect, meaning Target is unable to access the CSV file containing the custom criteria definition. Let's edit the custom criteria to correct this.
 
@@ -69,16 +69,16 @@ To change the details of a custom criteria definition, use the [Edit Custom Crit
 `POST https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/custom/:criteriaId`
 
 1. Verify `TENANT_ID` and `API_KEY`, as before.
-![EditCustomCriteria1](../assets/EditCustomCriteria1.png)
+![EditCustomCriteria1](/assets/EditCustomCriteria1.png)
 
 1. Specify the criteria ID of the (single) custom criteria you would like to edit.
-![EditCustomCriteria2](../assets/EditCustomCriteria2.png)
+![EditCustomCriteria2](/assets/EditCustomCriteria2.png)
 
 1. In the Body, supply updated JSON with the correct server information. (For this step, specify FTP access to a server you can access.)
-![EditCustomCriteria3](../assets/EditCustomCriteria3.png)
+![EditCustomCriteria3](/assets/EditCustomCriteria3.png)
 
 1. Send the request and note the response.
-![EditCustomCriteria4](../assets/EditCustomCriteria4.png)
+![EditCustomCriteria4](/assets/EditCustomCriteria4.png)
 
 Let's verify the success of the updated custom criteria, using the **Get Custom Criteria API**.
 
@@ -89,11 +89,11 @@ To view custom criteria details for a specific custom criteria, use the [Get Cus
 `GET https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/custom/:criteriaId`
 
 1. Specify the criteria ID of the custom criteria whose details you would like to get. Send the request, and review the response.
-![GetCustomCriteria.png](../assets/GetCustomCriteria.png)
+![GetCustomCriteria.png](/assets/GetCustomCriteria.png)
 1. Verify success. (In our case, verify there are no further FTP errors.)
-   ![GetCustomCriteria1.png](../assets/GetCustomCriteria1.png)
+   ![GetCustomCriteria1.png](/assets/GetCustomCriteria1.png)
 1. (Optional) Verify the update reflects accurately in the UI.
-   ![GetCustomCriteria2.png](../assets/GetCustomCriteria2.png)
+   ![GetCustomCriteria2.png](/assets/GetCustomCriteria2.png)
 
 ## Delete Custom Criteria
 
@@ -102,10 +102,10 @@ Using the criteria ID noted earlier, delete your custom criteria, using the [Del
 `DELETE https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/custom/:criteriaId`
 
 1. Specify the criteria ID of the (single) custom criteria you would like to delete. Click **Send**.
-   ![DeleteCustomCriteria1](../assets/DeleteCustomCriteria1.png)
+   ![DeleteCustomCriteria1](/assets/DeleteCustomCriteria1.png)
 
 1. Verify the criteria has been deleted using Get Custom Criteria.
-   ![DeleteCustomCriteria2](../assets/DeleteCustomCriteria2.png)
+   ![DeleteCustomCriteria2](/assets/DeleteCustomCriteria2.png)
    In this case, the expected 404 error indicates the deleted criteria cannot be found.
 
 >[!NOTE]

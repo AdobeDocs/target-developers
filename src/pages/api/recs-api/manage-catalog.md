@@ -21,7 +21,7 @@ You can use the [Recommendations APIs](https://developers.adobetarget.com/api/re
 >
 >Send the **[!UICONTROL IMS: JWT Generate + Auth via User Token]** request whenever you need to refresh your access token for authentication, since it expires after 24 hours. See [Configure Adobe API Authentication](../apis/configure-io-target-integration.md) for instructions.
 
-![JWT3ff](../assets/configure-io-target-jwt3ff.png)
+![JWT3ff](/assets/configure-io-target-jwt3ff.png)
 
 >[!NOTE]
 >
@@ -39,15 +39,15 @@ For example, Save Entities may be used to update items whenever certain threshol
 
 1. Navigate to **Target > [!UICONTROL Setup] > [!UICONTROL Hosts] > [!UICONTROL Environments]** to obtain the Target Environment ID in which you want to add or update an item.
 
-    ![SaveEntities1](../assets/SaveEntities01.png)
+    ![SaveEntities1](/assets/SaveEntities01.png)
 
 2. Verify `TENANT_ID` and `API_KEY` reference the Postman environment variables established earlier. Use the image below for comparison. If necessary, modify the Headers and path in your API request to match those in the image below.
 
-    ![SaveEntities3](../assets/SaveEntities03.png)
+    ![SaveEntities3](/assets/SaveEntities03.png)
 
 3. Enter your JSON as **raw** code in the **Body**. Don't forget to specify your environment ID, using the `environment` variable. (In the example below, the environment ID is 6781.)
 
-    ![SaveEntities4.png](../assets/SaveEntities04.png)
+    ![SaveEntities4.png](/assets/SaveEntities04.png)
 
    >![NOTE]
    >
@@ -76,7 +76,7 @@ For example, Save Entities may be used to update items whenever certain threshol
 
 4. Click **Send**. You should receive the following response.
 
-    ![SaveEntities5.png](../assets/SaveEntities05.png)
+    ![SaveEntities5.png](/assets/SaveEntities05.png)
 
 The JSON object can be scaled to send multiple products. For example, this JSON specifies two entities.
 
@@ -120,7 +120,7 @@ The JSON object can be scaled to send multiple products. For example, this JSON 
 
 1. Now it's your turn! Use the **Save Entities** API to add the following items to your catalog. Use the sample JSON above as a starting point. (You will need to extend the JSON to include additional entities.)
 
-    ![SaveEntities6.png](../assets/SaveEntities06.png)
+    ![SaveEntities6.png](/assets/SaveEntities06.png)
 
 Whoops, looks like those last two items don't belong. Let's inspect them using the **Get Entity** API, and if necessary, delete them using the **Delete Entities** API.
 
@@ -136,15 +136,15 @@ Entity details can only be retrieved for a single entity at a time. You can use 
 
 1. In the API request, specify the entity ID, using the variable `entityId`. The following example will return details for the entity whose entityId=kit2004.
 
-   ![GetEntity1](../assets/GetEntity1.png)
+   ![GetEntity1](/assets/GetEntity1.png)
 
 2. Verify `TENANT_ID` and `API_KEY` reference the Postman environment variables established earlier. Use the image below for comparison. If necessary, modify the Headers and path in your API request to match those in the image below.
 
-    ![GetEntity2](../assets/GetEntity2.png)
+    ![GetEntity2](/assets/GetEntity2.png)
 
 3. Send the request.
 
-    ![GetEntity3](../assets/GetEntity3.png)
+    ![GetEntity3](/assets/GetEntity3.png)
     If you receive an error stating the entity was not found, as shown in the example above, verify you are submitting the request to the correct Target environment.
 
     >[!NOTE]
@@ -153,11 +153,11 @@ Entity details can only be retrieved for a single entity at a time. You can use 
 
 4. If necessary, add the `environmentId` parameter, and re-send the request.
 
-   ![GetEntity4](../assets/GetEntity4.png)
+   ![GetEntity4](/assets/GetEntity4.png)
 
 5. Send another **Get Entity** request, this time to inspect the entity whose entityId=kit2005.
 
-   ![GetEntity5](../assets/GetEntity5.png)
+   ![GetEntity5](/assets/GetEntity5.png)
 
 Suppose you decide these entities need to be removed from your catalog. Let's use the **Delete Entities** API.
 
@@ -177,29 +177,29 @@ DELETE https://mc.adobe.io/{{TENANT_ID}}/target/recs/entities?ids=[comma-delimit
 
 1. Navigate to **Target > [!UICONTROL Setup] > [!UICONTROL Hosts] > [!UICONTROL Environments]** to obtain the Target Environment ID from which you want to delete items.
 
-    ![DeleteEntities1](../assets/SaveEntities01.png)
+    ![DeleteEntities1](/assets/SaveEntities01.png)
 
 2. In the API request, specify the entity IDs of the entities you want to delete, using the syntax `&ids=[comma-delimited-entity-ids]` (a query parameter). When deleting more than one entity, separate the IDs using commas.
 
-    ![DeleteEntities2](../assets/DeleteEntities2.png)
+    ![DeleteEntities2](/assets/DeleteEntities2.png)
 
 3. Specify the environment ID, using the syntax `&environment=[environmentId]`, otherwise entities across all environments will be deleted.
 
-    ![DeleteEntities3](../assets/DeleteEntities3.png)
+    ![DeleteEntities3](/assets/DeleteEntities3.png)
 
 4. Verify `TENANT_ID` and `API_KEY` reference the Postman environment variables established earlier. Use the image below for comparison. If necessary, modify the Headers and path in your API request to match those in the image below.
 
-    ![DeleteEntities4](../assets/DeleteEntities4.png)
+    ![DeleteEntities4](/assets/DeleteEntities4.png)
 
 5. Send the request.
 
-    ![DeleteEntities5](../assets/DeleteEntities5.png)
+    ![DeleteEntities5](/assets/DeleteEntities5.png)
 
 6. Verify your results using **Get Entity**, which should now indicate the deleted entities cannot be found.
 
-    ![DeleteEntities6](../assets/DeleteEntities6.png)
+    ![DeleteEntities6](/assets/DeleteEntities6.png)
 
-    ![DeleteEntities6](../assets/DeleteEntities7.png)
+    ![DeleteEntities6](/assets/DeleteEntities7.png)
 
 Congrats! You can now use the Recommendations APIs to create, update, delete, and obtain details on the entities in your catalog. In the next section, you will learn how to manage custom criteria.
 
