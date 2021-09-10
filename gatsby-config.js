@@ -74,7 +74,7 @@ module.exports = {
       {
         title: 'Use the Delivery API with Recommendations',
         path: '/recs-api/fetch-recs-server-side-delivery-api.md'
-      }
+      },
       {
         "title": "Welcome",
         "path": "/sdk/"
