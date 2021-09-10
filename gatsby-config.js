@@ -81,7 +81,7 @@ module.exports = {
       },
       {
         "title": "Getting Started",
-        "path": "/sdk/getting-started/"
+        "path": "/sdk/getting-started/",
         "pages": [
           {
             "title": "Node.js",
