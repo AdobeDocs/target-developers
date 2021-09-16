@@ -189,4 +189,4 @@ In this exercise, you will use your new bearer access token by sending an API re
 1. Send your request, after ensuring you have selected the correct environment. You should receive a response containing your list of activities.
    ![testtoken6](assets/configure-io-target-testtoken6.png)
 
-Congratulations! Now that you have verified your Adobe authentication, you may use it to interact with Adobe Target APIs (as well as other Adobe APIs). For example, you can [Use Recommendations APIs](https://docs.adobe.com/content/help/en/target-learn/recommendations-api-tutorial/recs-api-overview.html) to create or manage recommendations.
+Congratulations! Now that you have verified your Adobe authentication, you may use it to interact with Adobe Target APIs (as well as other Adobe APIs). For example, you can [Use Recommendations APIs](../api/recs-api/index.md) to create or manage recommendations.

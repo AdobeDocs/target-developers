@@ -27,10 +27,11 @@ module.exports = {
       },
       {
         title: 'API Reference',
+        path: '/api/',
         menu: [{
           title: 'Recommendations API',
           description: 'Adobe Target Recommendations API',
-          path: '/api/recs-api/recs-api-overview.md'
+          path: '/api/recs-api/'
         }, {
           title: 'Profile API',
           description: 'Adobe Target Profile API',
@@ -60,44 +61,49 @@ module.exports = {
         path: '/guides/'
       },
       {
+        title: 'Adobe Target API Overview',
+        path: '/api/'
+      },
+      {
         title: 'Adobe Recommendations API Overview',
-        path: '/recs-api/recs-api-overview.md'
+        path: '/api/recs-api/'
       },
       {
         title: 'Manage Your Catalog with APIs',
-        path: '/recs-api/manage-catalog.md'
+        path: '/api/recs-api/manage-catalog.md'
       },
       {
         title: 'Manage Custom Criteria',
-        path: '/recs-api/manage-custom-criteria.md'
+        path: '/api/recs-api/manage-custom-criteria.md'
       },
       {
         title: 'Use the Delivery API with Recommendations',
-        path: '/recs-api/fetch-recs-server-side-delivery-api.md'
+        path: '/api/recs-api/fetch-recs-server-side-delivery-api.md'
       },
       {
-        "title": "Welcome",
-        "path": "/sdk/"
-      },
-      {
-        "title": "Getting Started",
-        "path": "/sdk/getting-started/",
-        "pages": [
+        title: "Overview",
+        path: "/sdk/",
+        header: true,
+        pages: [
           {
-            "title": "Node.js",
-            "path": "sdk/nodejs.md"
+            title: 'Welcome',
+            path: '/sdk/'
           },
           {
-            "title": "Java",
-            "path": "sdk/java.md"
+            title: 'Getting Started',
+            path: '/sdk/getting-started/'
           },
           {
-            "title": ".NET",
-            "path": "sdk/net.md"
+            title: 'Sample Apps',
+            path: '/sdk/sample-apps/'
           },
           {
-            "title": "Python",
-            "path": "sdk/python.md"
+            title: 'Core Principles',
+            path: '/sdk/core-principles/'
+          },
+          {
+            title: 'Integration with Experience Cloud',
+            path: '/sdk/integration/'
           }
         ]
       },
