@@ -1,6 +1,8 @@
 ---
 title: Welcome - Adobe Target SDKs
 description: This is the overview page for Adobe Target SDKs
+contributors:
+  - https://github.com/icaraps
 ---
 
 # Sample Apps
