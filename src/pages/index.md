@@ -31,7 +31,7 @@ The APIs allow for the creation of data rich user interfaces that you can use to
 
 ### Get Started
 
-[Quickstart Guide](guides/)
+[Pre-requisites](guides/)
     
 Get started with the Adobe Target APIs.
 
@@ -39,21 +39,15 @@ Get started with the Adobe Target APIs.
 
 ### API References
 
-[Profile API](api/profile-api/) 
-   
-Insert description of what the Profile API does.
+[Admin and Profile API](api/admin-api/) 
 
-<DiscoverBlock slots="link, text"/>
-
-[Admin API](api/admin-api/) 
-
-Insert description of what the Admin API does.
+Use Adobe Target’s Admin and Profile APIs to manage activities, audiences, offers, properties, reports, mboxes, environments, and profiles.
 
 <DiscoverBlock slots="link, text"/>
 
 [Delivery API](api/delivery-api/)
 
-Insert description of what the Delivery API does.
+Use Adobe Target's Delivery APIs to deliver experiences across web and mobile channels as well as non-browser based IoT devices such as a connected TV, kiosk, or in-store digital screen.
 
 <DiscoverBlock slots="link, text"/>
 
