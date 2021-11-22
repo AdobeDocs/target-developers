@@ -47,10 +47,6 @@ module.exports = {
         }]
       },
       {
-        title: 'SDK Reference',
-        path: '/sdk/'
-      },
-      {
         title: 'Support',
         path: '/support/'
       }
