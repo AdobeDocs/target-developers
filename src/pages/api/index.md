@@ -1,5 +1,4 @@
 ---
-keywords: api;apis;admin api;delivery api;reporting api;profile api
 description: Find Adobe Target APIs, including the Admin, Delivery, Reporting, and Profile APIs.
 title: Where Can I Find Target API and SDK Documentation?
 feature: APIs/SDKs
