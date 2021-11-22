@@ -29,18 +29,6 @@ module.exports = {
         title: 'API Reference',
         path: '/api/',
         menu: [{
-          title: 'Recommendations API',
-          description: 'Adobe Target Recommendations API',
-          path: '/api/recs-api/'
-        }, {
-          title: 'Profile API',
-          description: 'Adobe Target Profile API',
-          path: '/api/profile-api/index.md'
-        }, {
-          title: 'Admin API',
-          description: 'Adobe Target Admin API',
-          path: '/api/admin-api/index.md'
-        }, {
           title: 'Delivery API',
           description: 'Adobe Target Delivery API',
           path: '/api/delivery-api/index.md'
