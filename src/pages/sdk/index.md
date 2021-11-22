@@ -5,7 +5,9 @@ contributors:
   - https://github.com/icaraps
 ---
 
-Welcome to the reference guide for Adobe Target's server-side SDKs!
+For information on Adobe Target SDKs, please visit the [Adobe Target SDK documentation portal](https://adobetarget-sdks.gitbook.io/docs/).
+
+<!--Welcome to the reference guide for Adobe Target's server-side SDKs!
 
 Through Adobe Target's server-side SDKs, you can:
 
@@ -24,4 +26,4 @@ Check out our Sample Apps to have fun and play around!
 
 We encourage you to participate in our open documentation initiative, if you have suggestions, corrections, additions 
 or deletions for this documentation, check out the source from [this GitHub repo](https://github.com/adobe/gatsby-theme-spectrum-example), and submit a pull 
-request with your contribution. For more information, refer to the [contributing page](support/contribute/).
+request with your contribution. For more information, refer to the [contributing page](support/contribute/).-->

@@ -49,33 +49,6 @@ module.exports = {
         path: '/guides/'
       },
       {
-        title: "Overview",
-        path: "/sdk/",
-        header: true,
-        pages: [
-          {
-            title: 'Welcome',
-            path: '/sdk/'
-          },
-          {
-            title: 'Getting Started',
-            path: '/sdk/getting-started/'
-          },
-          {
-            title: 'Sample Apps',
-            path: '/sdk/sample-apps/'
-          },
-          {
-            title: 'Core Principles',
-            path: '/sdk/core-principles/'
-          },
-          {
-            title: 'Integration with Experience Cloud',
-            path: '/sdk/integration/'
-          }
-        ]
-      },
-      {
         title: 'Overview',
         path: '/support/',
         header: true,
