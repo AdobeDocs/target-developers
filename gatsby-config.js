@@ -28,11 +28,22 @@ module.exports = {
       {
         title: 'API Reference',
         path: '/api/',
-        menu: [{
+        menu: [
+          {
           title: 'Delivery API',
           description: 'Adobe Target Delivery API',
           path: '/api/delivery-api/index.md'
-        }]
+          },
+          {
+          title: 'Admin and Profile API',
+          description: 'Adobe Target Admin and Profile API',
+          path: '/api/admin-api/index.md'
+          }
+      ]
+      },
+      {
+        title: 'SDK Reference',
+        path: '/sdk/'
       },
       {
         title: 'Support',

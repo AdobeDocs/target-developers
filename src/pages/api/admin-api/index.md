@@ -5,4 +5,4 @@ contributors:
   - https://github.com/icaraps
 --- 
 
-Placeholder: Adobe Target Admin API Overview page
+For information on Adobe Target Admin and Profile APIs, please visit the [Adobe Target Admin and Profile API documentation portal](http://developers.adobetarget.com/api/#introduction).
