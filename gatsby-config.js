@@ -27,7 +27,6 @@ module.exports = {
       },
       {
         title: 'API Reference',
-        path: '/api/',
         menu: [
           {
           title: 'Delivery API',
