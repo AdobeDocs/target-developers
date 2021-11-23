@@ -34,15 +34,15 @@ Adobe Target APIs can be grouped according to type: Admin, Delivery, Reporting, 
 |Reporting|Export activity results and other reporting results.|Reporting APIs are included within the [Target Admin API Postman collection](https://developers.adobetarget.com/api/#admin-postman-collection).||
 |Profile|Retrieve and modify user profiles stored in Adobe Target.|[Target Profile API Postman Collection](https://developers.adobetarget.com/api/#profiles)||
 
->[!NOTE]
->
->There are important distinctions between Target Admin APIs (including the Recommendations APIs) and Target Delivery APIs:
->
->* Admin APIs let you configure various aspects of Target that you could also configure in the Target UI. Admin APIs require authentication.
->
->* Delivery APIs let you retrieve content. Delivery APIs do not require authentication.
->
->To use Target Admin APIs, you first need to configure authentication using Adobe I/O. For more information, see [How to Configure Authentication](../guides/index.md).
+<InlineAlert variant="info" slots="text"/>
+
+There are important distinctions between Target Admin APIs (including the Recommendations APIs) and Target Delivery APIs:
+
+* Admin APIs let you configure various aspects of Target that you could also configure in the Target UI. Admin APIs require authentication.
+
+* Delivery APIs let you retrieve content. Delivery APIs do not require authentication.
+
+To use Target Admin APIs, you first need to configure authentication using Adobe I/O. For more information, see [How to Configure Authentication](../guides/index.md).
 
 ## Discover 
 
