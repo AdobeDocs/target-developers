@@ -51,10 +51,6 @@ module.exports = {
     ],
     subPages: [
       {
-        title: 'Adobe Target API Overview',
-        path: '/guides/api-overview'
-      },
-      {
         title: 'How to Configure Authentication for Adobe Target APIs',
         path: '/guides/'
       },
