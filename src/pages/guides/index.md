@@ -69,8 +69,8 @@ In this section, you will access the Adobe Developer Console and create a projec
 
    ![configure-io-target-createproject11](assets/configure-io-target-createproject11.png)
 
-   <InlineAlert variant="help" slots="text"/>
-    
+   <InlineAlert variant="info" slots="text"/>
+   
    In this tutorial, we name our project "Target Integration." If you anticipate using your project for more than just Adobe Target, you may want to name it accordingly. For example, you might choose to name it "Adobe APIs" or "Experience Cloud APIs," since it may be used with other solutions in the Adobe Experience Cloud.
 
 ## Export project details
@@ -79,14 +79,9 @@ Now that you have an Adobe project you can use for accessing Target, you need to
 
 There are many ways to specify the details of your project in Postman, but in this section, we take advantage of some pre-built features and collections. First (in this section), you will export the details of your integration into a Postman environment. Next (in the following section), you will generate a bearer access token to grant you access to the necessary Adobe resources.
 
-<InlineAlert variant="help" slots="text"/>
+<InlineAlert variant="info" slots="text"/>
 
-For video instructions applicable for any Experience Cloud solution, including Target, see [Use Postman with Experience Platform APIs](https://docs.adobe.com/content/help/en/platform-learn/tutorials/apis/postman.html). The following sections are relevant to the Target APIs:
-
- 1. Export Adobe I/O Integration Details to Postman
- 2. Generate an Access Token with Postman
-
- These steps are also provided below.
+For video instructions applicable for any Experience Cloud solution, including Target, see [Use Postman with Experience Platform APIs](https://docs.adobe.com/content/help/en/platform-learn/tutorials/apis/postman.html). The following sections are relevant to the Target APIs: 1. Export Adobe I/O Integration Details to Postman 2. Generate an Access Token with Postman. These steps are also provided below.
 
 1. Still in the [Adobe Developer Console](https://console.adobe.io/), navigate to view your new project's **Service Account (JWT)** credentials. Use either the left navigation or the **Credentials** section as shown.
    ![JWT1](assets/configure-io-target-jwt1.png)
@@ -110,6 +105,9 @@ For video instructions applicable for any Experience Cloud solution, including T
    <InlineAlert variant="help" slots="text"/>
    
    Pop quiz! Can you remember where your private key is?
+
+   <InlineAlert variant="success" slots="text"/>
+   
    That's right, it's in the `config` file downloaded earlier from the Adobe Developer Console!
 
 8. From your file system, open your `config` file, and open the `private` key file.
@@ -146,9 +144,11 @@ In this section, you generate your bearer access token, which is required for au
 7.  Note the `ACCESS_TOKEN` and `JWT_TOKEN` values are now populated.
    ![token7](assets/configure-io-target-generatetoken7.png)
 
-<InlineAlert variant="success" slots="text"/>
+<InlineAlert variant="help" slots="text"/>
 
 Q: Do I have to use the Adobe I/O Access Token Generation Postman collection to generate the JSON Web Token (JWT) and bearer access token?
+
+<InlineAlert variant="success" slots="text"/>
 
 A: Nope! The Adobe I/O Access Token Generation Postman collection is available as a convenience to more easily generate the JWT and bearer access token in Postman. Alternatively, you can use capabilities within the Adobe Developer Console to manually generate the bearer access token.
 
@@ -176,13 +176,7 @@ In this exercise, you will use your new bearer access token by sending an API re
 
    <InlineAlert variant="info" slots="text"/>
    
-   The Tenant ID is different from your Target `clientcode`. The Tenant ID exists in the URL when you are logged in to Target. To obtain your Tenant ID, log in to the Adobe Experience Cloud, open Target, and click the Target card. Use the Tenant ID value as noted in the URL subdomain.
-   
-   For example, if your URL when logged in to Adobe Target is
-   
-   `<https://mycompany.experiencecloud.adobe.com/...>`
-   
-   then your Tenant ID is "mycompany."
+   The Tenant ID is different from your Target `clientcode`. The Tenant ID exists in the URL when you are logged in to Target. To obtain your Tenant ID, log in to the Adobe Experience Cloud, open Target, and click the Target card. Use the Tenant ID value as noted in the URL subdomain. For example, if your URL when logged in to Adobe Target is `<https://mycompany.experiencecloud.adobe.com/...>` then your Tenant ID is "mycompany."
 
 1. Send your request, after ensuring you have selected the correct environment. You should receive a response containing your list of activities.
    ![testtoken6](assets/configure-io-target-testtoken6.png)
