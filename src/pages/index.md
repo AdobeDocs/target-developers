@@ -38,9 +38,15 @@ Adobe Target APIs can be grouped according to type: Admin, Delivery, Reporting, 
 
 There are important distinctions between Target Admin APIs (including the Recommendations APIs) and Target Delivery APIs:
 
+<InlineAlert variant="info" slots="text"/>
+
 * Admin APIs let you configure various aspects of Target that you could also configure in the Target UI. Admin APIs require authentication.
 
+<InlineAlert variant="info" slots="text"/>
+
 * Delivery APIs let you retrieve content. Delivery APIs do not require authentication.
+
+<InlineAlert variant="info" slots="text"/>
 
 To use Target Admin APIs, you first need to configure authentication using Adobe I/O. For more information, see [How to Configure Authentication](../guides/index.md).
 
