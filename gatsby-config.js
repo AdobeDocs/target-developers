@@ -51,8 +51,38 @@ module.exports = {
     ],
     subPages: [
       {
-        title: 'How to Configure Authentication for Adobe Target APIs',
-        path: '/guides/'
+        title: 'Getting Started',
+        path: '/guides/',
+        header: true,
+        pages: [
+          {
+            title: 'How to Configure Authentication for Adobe Target APIs',
+            path: '/guides/'
+          },
+        ]
+      },
+      {
+        title: 'Use Recommendations APIs',
+        path: '/guides/recs-api/'
+        header: true,
+        pages: [
+          {
+            title: 'Recs API Overview',
+            path: '/guides/recs-api/'
+          },
+          {
+            title: 'Manage Your Catalog with APIs',
+            path: '/guides/recs-api/manage-catalog.md'
+          },
+          {
+            title: 'Manage Custom Criteria',
+            path: '/guides/recs-api/manage-custom-criteria.md'
+          },
+          {
+            title: 'Use the Delivery API with Recommendations',
+            path: '/guides/recs-api/fetch-recs-server-side-delivery-api.md'
+          }
+        ]
       },
       {
         title: 'Overview',
