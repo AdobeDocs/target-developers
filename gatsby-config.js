@@ -63,7 +63,7 @@ module.exports = {
       },
       {
         title: 'Use Recommendations APIs',
-        path: '/guides/recs-api/'
+        path: '/guides/recs-api/',
         header: true,
         pages: [
           {
