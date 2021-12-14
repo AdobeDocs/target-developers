@@ -17,15 +17,15 @@ At this point, you have learned how to generate an access token, using the JWT a
   
 You can use the [Recommendations APIs](https://developers.adobetarget.com/api/recommendations/) to add, update, or delete items in your recommendations catalog. As with the rest of the Adobe Target Admin APIs, the Recommendations APIs require authentication.
 
->[!TIP]
->
->Send the **[!UICONTROL IMS: JWT Generate + Auth via User Token]** request whenever you need to refresh your access token for authentication, since it expires after 24 hours. See [Configure Adobe API Authentication](../apis/configure-io-target-integration.md) for instructions.
+<InlineAlert variant="info" slots="text"/>
+
+Send the **IMS: JWT Generate + Auth via User Token** request whenever you need to refresh your access token for authentication, since it expires after 24 hours. See [Configure Adobe API Authentication](../apis/configure-io-target-integration.md) for instructions.
 
 ![JWT3ff](/assets/configure-io-target-jwt3ff.png)
 
->[!NOTE]
->
->Before proceeding, get the [Recommendations Postman collection](https://developers.adobetarget.com/api/recommendations/#section/Postman).
+<InlineAlert variant="info" slots="text"/>
+
+Before proceeding, get the [Recommendations Postman collection](https://developers.adobetarget.com/api/recommendations/#section/Postman).
 
 ## Creating and updating items with the Save Entities API
 
@@ -37,7 +37,7 @@ POST https://mc.adobe.io/{{TENANT_ID}}/target/recs/entities
 
 For example, Save Entities may be used to update items whenever certain thresholds are met—such as thresholds for inventory or price—in order to flag those items and prevent them from being recommended.
 
-1. Navigate to **Target > [!UICONTROL Setup] > [!UICONTROL Hosts] > [!UICONTROL Environments]** to obtain the Target Environment ID in which you want to add or update an item.
+1. Navigate to **Target > Setup > Hosts > CONTROL Environments** to obtain the Target Environment ID in which you want to add or update an item.
 
     ![SaveEntities1](/assets/SaveEntities01.png)
 
@@ -49,30 +49,30 @@ For example, Save Entities may be used to update items whenever certain threshol
 
     ![SaveEntities4.png](/assets/SaveEntities04.png)
 
-   >![NOTE]
-   >
-   >Below is sample JSON that adds entity.id kit2001 with associated entity values for a Toaster Oven product, into environment 6781.
-   >
-   >```
-   >    {
-   >    "entities": [{
-   >            "name": "Toaster Oven",
-   >            "id": "kit2001",
-   >            "environment": 6781,
-   >            "categories": [
-   >                "housewares:appliances"
-   >            ],
-   >            "attributes": {
-   >                "inventory": 77,
-   >                "margin": 23,
-   >                "message": "crashing helicopter",
-   >                "pageUrl": "www.foobar.foo.com/helicopter.html",
-   >                "thumbnailUrl": "www.foobar.foo.com/helicopter.jpg",
-   >                "value": 19.2
-   >            }
-   >        }]
-   >    }
-   >```
+   <InlineAlert variant="info" slots="text"/>
+   
+   Below is sample JSON that adds entity.id kit2001 with associated entity values for a Toaster Oven product, into environment 6781.
+   
+   ```
+       {
+       "entities": [{
+               "name": "Toaster Oven",
+               "id": "kit2001",
+               "environment": 6781,
+               "categories": [
+                   "housewares:appliances"
+               ],
+               "attributes": {
+                   "inventory": 77,
+                   "margin": 23,
+                   "message": "crashing helicopter",
+                   "pageUrl": "www.foobar.foo.com/helicopter.html",
+                   "thumbnailUrl": "www.foobar.foo.com/helicopter.jpg",
+                   "value": 19.2
+               }
+           }]
+       }
+   ```
 
 4. Click **Send**. You should receive the following response.
 
@@ -147,9 +147,9 @@ Entity details can only be retrieved for a single entity at a time. You can use 
     ![GetEntity3](/assets/GetEntity3.png)
     If you receive an error stating the entity was not found, as shown in the example above, verify you are submitting the request to the correct Target environment.
 
-    >[!NOTE]
-    >
-    >If no environment is explicitly specified, Get Entity attempts to get the entity from your [default environment](https://docs.adobe.com/content/help/en/target/using/administer/hosts.html#section_4F8539B07C0C45E886E8525C344D5FB0) only. If you wish to pull from any environment other than your default environment, you must specify the environment ID.
+<InlineAlert variant="info" slots="text"/>
+    
+If no environment is explicitly specified, Get Entity attempts to get the entity from your [default environment](https://docs.adobe.com/content/help/en/target/using/administer/hosts.html#section_4F8539B07C0C45E886E8525C344D5FB0) only. If you wish to pull from any environment other than your default environment, you must specify the environment ID.
 
 4. If necessary, add the `environmentId` parameter, and re-send the request.
 
@@ -169,13 +169,11 @@ To remove items from your catalog, use the [Delete Entities API](https://develop
 DELETE https://mc.adobe.io/{{TENANT_ID}}/target/recs/entities?ids=[comma-delimited-entity-ids]&environment=[environmentId]
 ```
 
->[!WARNING]
->
->This API deletes entities referenced by IDs you specify.
->
->If no entity IDs are provided, all entities in the given environment are deleted. If no environment ID is given, entities will be deleted from all environments. Use this with caution!
+<InlineAlert variant="warning" slots="text"/>
 
-1. Navigate to **Target > [!UICONTROL Setup] > [!UICONTROL Hosts] > [!UICONTROL Environments]** to obtain the Target Environment ID from which you want to delete items.
+The Delete Entities API deletes entities referenced by IDs you specify. If no entity IDs are provided, all entities in the given environment are deleted. If no environment ID is given, entities will be deleted from all environments. Use this with caution!
+
+1. Navigate to **Target > Setup > Hosts > Environments** to obtain the Target Environment ID from which you want to delete items.
 
     ![DeleteEntities1](/assets/SaveEntities01.png)
 
@@ -203,4 +201,4 @@ DELETE https://mc.adobe.io/{{TENANT_ID}}/target/recs/entities?ids=[comma-delimit
 
 Congrats! You can now use the Recommendations APIs to create, update, delete, and obtain details on the entities in your catalog. In the next section, you will learn how to manage custom criteria.
 
-[Next "Manage Custom Criteria" >](manage-custom-criteria.md)
+<!-- [Next "Manage Custom Criteria" >](manage-custom-criteria.md) -->

@@ -15,21 +15,21 @@ exl-id: 553d1208-647f-479d-acc7-d7760469d642
 
 The Adobe Target and Adobe Target Recommendations APIs can be used to deliver responses to web pages, but can also be used in non-HTML based experiences including apps, screens, consoles, emails, kiosks and other display devices. In other words, when Target libraries and JavaScript cannot be used, the **Target Delivery API** still allows us to access the full range of Target functionality to deliver personalized experiences.
 
->[!NOTE]
->
-> When requesting content containing actual recommendations (recommended products or items), use the Target Delivery API.
+<InlineAlert variant="help" slots="text"/>
+
+When requesting content containing actual recommendations (recommended products or items), use the Target Delivery API.
 
 To retrieve recommendations, send an Adobe Target Delivery API POST call with the appropriate contextual information, which may include a user ID (for use with profile-specific recommendations such as the user's recently viewed items), relevant mbox name, mbox parameters, profile parameters, or other attributes. The response will include recommended entity.ids (and may include other entity data) in JSON or HTML format, which can then be displayed in the device.
 
 The [Delivery API](https://developers.adobetarget.com/api/delivery-api/) for Adobe Target exposes all existing features that a standard Target request provides.
 
->[!NOTE]
->The Delivery API:
->* Enables you to retrieve experiences or offers for a location and an audience in a RESTful manner.
->* Requires no authentication.
->* Only POSTs.
->* Does not process cookies or redirect calls.
->* Does not require or recognize "user roles." It simply fetches content or reports events to Target edge servers.
+The Delivery API:
+
+* Enables you to retrieve experiences or offers for a location and an audience in a RESTful manner.
+* Requires no authentication.
+* Only POSTs.
+* Does not process cookies or redirect calls.
+* Does not require or recognize "user roles." It simply fetches content or reports events to Target edge servers.
 
 To use the Delivery API to deliver Target experiences—including recommendations—follow these steps:
 
@@ -45,11 +45,11 @@ To create recommendations that can be used with the Delivery API, use the [Form-
 1. First, create and save a JSON-based design to use in your recommendation. For sample JSON, plus background information regarding how JSON responses can be returned when configuring a form-based activity, see the documentation on [Creating Recommendation Designs](https://docs.adobe.com/content/help/en/target/using/recommendations/recommendations-design/create-design.html). In this example, the design is named *Simple JSON.*
    ![server-side-create-recs-json-design.png](/assets/server-side-create-recs-json-design.png)
 
-2. In Target, navigate to **[!UICONTROL Activities] > [!UICONTROL Create Activity] > [!UICONTROL Recommendations]**, then select **[!UICONTROL Form]**.
+2. In Target, navigate to **Activities > Create Activity > Recommendations**, then select **Form**.
 
    ![server-side-create-recs.png](/assets/server-side-create-recs.png)
 
-3. Select a Property, and click **[!UICONTROL Next]**.
+3. Select a Property, and click **Next**.
 4. Define the location where you would like users to receive the recommendation's response. The example below uses a location named *api_charter*. Select your JSON-based design, created earlier, named *Simple JSON.*
    ![server-side-create-recs-form.png](/assets/server-side-create-recs-form1.png)
 5. Save and activate the recommendation. It will generate results. [Once the results are ready](https://docs.adobe.com/content/help/en/target/using/recommendations/recommendations-activity/previewing-and-launching-your-recommendations-activity.html), you can use the Delivery API to retrieve them.
@@ -60,17 +60,17 @@ The syntax for the [Delivery API](https://developers.adobetarget.com/api/deliver
 
 `POST https://{{CLIENT_CODE}}.tt.omtrdc.net/rest/v1/delivery`
 
-1. Note the client code is required. As a reminder, your client code may be found in Adobe Target by navigating to **[!UICONTROL Recommendations] > [!UICONTROL Settings]**. Note the **[!UICONTROL Client Code]** value in the **[!UICONTROL Recommendation API Token]** section.
+1. Note the client code is required. As a reminder, your client code may be found in Adobe Target by navigating to **Recommendations > Settings**. Note the **Client Code** value in the **Recommendation API Token** section.
    ![client-code.png](/assets/client-code.png)
-1. Once you have your client code, construct your Delivery API call. The example below begins with the **[!UICONTROL Web Batched Mboxes Delivery API Call]** provided in the [Delivery API Postman collection](https://developers.adobetarget.com/api/delivery-api/#section/Getting-Started/Postman-Collection), making relevant modifications. For example:
+2. Once you have your client code, construct your Delivery API call. The example below begins with the **Web Batched Mboxes Delivery API Call** provided in the [Delivery API Postman collection](https://developers.adobetarget.com/api/delivery-api/#section/Getting-Started/Postman-Collection), making relevant modifications. For example:
    * the **browser** and **address** objects were removed from the **Body**, since they are not required for non-HTML use cases
    * *api_charter* is listed as the location name in this example
    * the entity.id is specified, since this recommendation is based on Content Similarity, which requires a current item key to be passed to Target.
    ![server-side-Delivery-API-call.png](/assets/server-side-delivery-api-call2.png)
    Remember to configure your query parameters correctly. For example, be sure to specify `{{CLIENT_CODE}}` as necessary. <!--Q: In the updated call syntax, entity.id is listed as a profileParameter instead of an mboxParameter as in older versions. --> <!--Q: Old image ![server-side-create-recs-post.png](/assets/server-side-create-recs-post.png) Old accompanying text: "Note this recommendation is based on Content Similar products based on the entity.id sent via mboxParameters." -->
    ![client-code3](/assets/client-code3.png)
-1. Send the request. This executes against the *api_charter* location, which has an active recommendation running on it, defined with your JSON design which will output a list of recommended entities.
-1. Receive a response based on the JSON design.
+3. Send the request. This executes against the *api_charter* location, which has an active recommendation running on it, defined with your JSON design which will output a list of recommended entities.
+4. Receive a response based on the JSON design.
    ![server-side-create-recs-json-response2.png](/assets/server-side-create-recs-json-response2.png)
    The response includes the key ID, as well as the entity IDs of the recommended entities.
 
