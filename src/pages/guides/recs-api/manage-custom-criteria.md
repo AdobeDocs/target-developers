@@ -17,7 +17,7 @@ Sometimes the algorithms provided by Recommendations are not able to surface par
 
 <InlineAlert variant="warning" slots="text"/>
 
-For custom criteria, either do everything (create, edit, delete) for a given custom criteria using the APIs, or else do everything (create, edit, delete) using the UI. Managing your custom criteria through a combination of the UI and the API may lead to conflicting information or unexpected results. For example, creating a custom criteria in the UI but then editing it via API will not reflect your updates in the UI, even though it will be updated in the backend, as visible via the API.
+For custom criteria, either perform all actions (create, edit, delete) for a given custom criteria using the APIs, or else perform all actions (create, edit, delete) using the UI. Managing your custom criteria through a combination of the UI and the API may lead to conflicting information or unexpected results. For example, creating a custom criteria in the UI but then editing it via API will not reflect your updates in the UI, even though it will be updated in the backend, as visible via the API.
 
 ## Create Custom Criteria
 
