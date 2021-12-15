@@ -51,7 +51,7 @@ module.exports = {
     ],
     subPages: [
       {
-        title: 'Getting Started',
+        title: 'Get Started',
         path: '/guides/',
         header: true,
         pages: [
