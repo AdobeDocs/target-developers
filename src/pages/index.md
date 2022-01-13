@@ -30,7 +30,7 @@ Adobe Target APIs can be grouped according to type: Admin, Delivery, Reporting, 
 |API type|What it enables you to do|Download link|Other helpful links|
 | --- | --- | --- |--- |
 |Admin|Create, modify, and delete activities, audiences, offers, and other objects (including Recommendations entities, criteria, designs, and so on. The Recommendations APIs are a type of admin API.)|<UL><li>[Target Admin API Postman Collection](https://developers.adobetarget.com/api/#admin-postman-collection)</li><li>[Recommendations API Postman Collection](https://developers.adobetarget.com/api/recommendations/#section/Postman)</li></UL>|[Use Recommendations APIs](../guides/recs-api/index.html) |
-|Delivery|Retrieve optimized and personalized content from Target for delivery to an end user.|[Target Delivery API Postman Collection](https://developers.adobetarget.com/api/delivery-api/#section/Getting-Started/Postman-Collection)||
+|Delivery|Retrieve optimized and personalized content from Target for delivery to an end user.|[Target Delivery API Postman Collection](https://developer.adobe.com/target/api/delivery-api/#section/Getting-Started/Postman-Collection)||
 |Reporting|Export activity results and other reporting results.|Reporting APIs are included within the [Target Admin API Postman collection](https://developers.adobetarget.com/api/#admin-postman-collection).||
 |Profile|Retrieve and modify user profiles stored in Adobe Target.|[Target Profile API Postman Collection](https://developers.adobetarget.com/api/#profiles)||
 
