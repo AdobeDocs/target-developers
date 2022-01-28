@@ -7,9 +7,10 @@ contributors:
 
 <Hero slots="heading, text"/> 
 
-# Adobe Target APIs and SDKs
+# Adobe Target Developer Portal
 
-Adobe Target APIs and SDKs offer limitless ways to integrate your most important customer data into key business processes.
+Resources and Guides for Adobe Target Developers
+<!--Adobe Target APIs and SDKs offer limitless ways to integrate your most important customer data into key business processes.-->
 
 <Resources slots="heading, links"/>
 
@@ -20,7 +21,7 @@ Adobe Target APIs and SDKs offer limitless ways to integrate your most important
 
 ## Overview
 
-This documentation provides instructions for Adobe Target APIs and SDKs.
+This documentation provides resources for Adobe Target developers, including administration, implementation, integrations, and instructions for Adobe Target APIs and SDKs.
 
 The Adobe Target APIs are a collection of APIs that power Adobe Target products like Adobe Recommendations. 
 The APIs allow for the creation of data-rich user interfaces you can use to manipulate and integrate data.
