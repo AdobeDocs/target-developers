@@ -142,11 +142,11 @@ module.exports = {
           },
           {
             title: 'Supported features',
-            path: '/sdk/supported-features/supported-features-overview.md'
+            path: '/sdk/on-device-decisioning/supported-features-overview.md'
           },
           {
             title: 'Troubleshooting',
-            path: '/sdk/troubleshooting/'
+            path: '/sdk/on-device-decisioning/troubleshooting/'
           }
         ]
       },
