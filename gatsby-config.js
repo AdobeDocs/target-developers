@@ -22,10 +22,6 @@ module.exports = {
         path: '/'
       },
       {
-        title: 'Implementation',
-        path: '/implementation/'
-      },
-      {
         title: 'Getting Started with APIs',
         path: '/guides/'
       },
@@ -54,25 +50,6 @@ module.exports = {
       }
     ],
     subPages: [
-      {
-        title: 'Implementation Strategies',
-        path: '/implementation/',
-        header: true,
-        pages: [
-          {
-            title: 'at.js',
-            path: '/implementation/atjs/'
-          },
-          {
-            title: 'AEP Web SDK',
-            path: '/implementation/alloy/'
-          },
-          {
-            title: 'Mobile SDK',
-            path: '/implementation/mobile/'
-          }
-        ]
-      },
       {
         title: 'Get Started',
         path: '/guides/',
@@ -105,6 +82,117 @@ module.exports = {
             title: 'Use the Delivery API with Recommendations',
             path: '/guides/recs-api/fetch-recs-server-side-delivery-api.md'
           }
+        ]
+      },
+      {
+        title: 'Intro to SDKs',
+        path: '/sdk/',
+        header: true,
+        pages: [
+          {
+            title: 'Welcome',
+            path: '/sdk/'
+          },
+          {
+            title: 'Getting started',
+            path: '/sdk/getting-started/getting-started-overview.md'
+          },
+          {
+            title: 'Sample apps',
+            path: '/sdk/sample-apps/sample-apps-overview.md'
+          },
+          {
+            title: 'Core principles',
+            path: '/sdk/core-principles/core-principles-overview.md'
+          },
+          {
+            title: 'Integration with Experience Cloud',
+            path: '/sdk/integration-with-experience-cloud/'
+          }
+        ]
+      },
+      {
+        title: 'On-Device Decisioning',
+        path: '/sdk/on-device-decisioning/',
+        header: true,
+        pages: [
+          {
+            title: 'Introduction to on-device decisioning',
+            path: '/sdk/on-device-decisioning/introduction-to-on-device-decisioning.md'
+          },
+          {
+            title: 'Rule artifact',
+            path: '/sdk/on-device-decisioning/manage-catalog.md'
+          },
+          {
+            title: 'Execute A/B tests with feature flags',
+            path: '/sdk/on-device-decisioning/manage-custom-criteria.md'
+          },
+          {
+            title: 'Execute feature tests with attributes',
+            path: '/sdk/on-device-decisioning/execute-feature-tests-with-attributes.md'
+          },
+          {
+            title: 'Manage rollouts for feature tests',
+            path: '/sdk/on-device-decisioning/manage-rollouts-for-feature-tests.md'
+          },
+          {
+            title: 'Deliver personalization',
+            path: '/sdk/on-device-decisioning/deliver-personalization.md'
+          },
+          {
+            title: 'Supported features',
+            path: '/sdk/supported-features/supported-features-overview.md'
+          },
+          {
+            title: 'Troubleshooting',
+            path: '/sdk/troubleshooting/'
+          }
+        ]
+      },
+      {
+        title: 'SDK Reference',
+        path: '/sdk/',
+        header: true,
+        pages: [
+          {
+            title: 'Node.js SDK',
+            path: '/sdk/'
+          },
+          {
+            title: 'Java SDK',
+            path: '/sdk/'
+          },
+          {
+            title: '.NET SDK',
+            path: '/sdk/'
+          },
+          {
+            title: 'Python SDK',
+            path: '/sdk/'
+          }
+        ]
+      },
+      {
+        title: 'Best Practices',
+        path: '/sdk/',
+        header: true,
+        pages: [
+          {
+            title: 'When to use on-device vs. edge decisioning',
+            path: '/sdk/'
+          },
+        ]
+      },
+      {
+        title: 'Rest API',
+        path: '/sdk/',
+        header: true,
+        pages: [
+          {
+            title: 'Using the REST API',
+            path: '/sdk/'
+          },
         ]
       },
       {
