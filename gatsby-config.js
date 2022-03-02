@@ -85,33 +85,6 @@ module.exports = {
         ]
       },
       {
-        title: 'Intro to SDKs',
-        path: '/sdk/',
-        header: true,
-        pages: [
-          {
-            title: 'Welcome',
-            path: '/sdk/'
-          },
-          {
-            title: 'Getting started',
-            path: '/sdk/getting-started/getting-started-overview.md'
-          },
-          {
-            title: 'Sample apps',
-            path: '/sdk/sample-apps/sample-apps-overview.md'
-          },
-          {
-            title: 'Core principles',
-            path: '/sdk/core-principles/core-principles-overview.md'
-          },
-          {
-            title: 'Integration with Experience Cloud',
-            path: '/sdk/integration-with-experience-cloud/'
-          }
-        ]
-      },
-      {
         title: 'Overview',
         path: '/support/',
         header: true,
