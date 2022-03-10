@@ -61,7 +61,7 @@ For help migrating from at.js to AEP Web SDK.
 
 ### SDK Guides
 
-[SDK Guides](sdk-guides/)
+[Getting Started with Target SDKs](sdk-guides/)
 
 Get started with Adobe Target SDKs, including On-Device Decisioning.
 
@@ -73,13 +73,19 @@ Get started with Adobe Target SDKs, including On-Device Decisioning.
 
 How to use the Target Node.js SDK.
 
+<DiscoverBlock slots="heading, link, text"/> 
+
 [Java SDK](sdk/java/)
 
 How to use the Target Java SDK.
 
+<DiscoverBlock slots="heading, link, text"/> 
+
 [.NET SDK](sdk/net/)
 
 How to use the Target .NET SDK.
+
+<DiscoverBlock slots="heading, link, text"/> 
 
 [Python SDK](sdk/python/)
 
