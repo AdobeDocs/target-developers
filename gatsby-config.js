@@ -110,6 +110,83 @@ module.exports = {
         ]
       },
       {
+        title: 'Target SDK Overview',
+        path: '/sdk-guides/',
+        header: true,
+        pages: [
+          {
+            title: 'Welcome',
+            path: '/sdk-guides/'
+          },
+          {
+            title: 'Getting started',
+            path: '/sdk-guides/getting-started/'
+          },
+          {
+            title: 'Sample apps',
+            path: '/sdk-guides/sample-apps/'
+          },
+          {
+            title: 'Core principles',
+            path: '/sdk-guides/core-principles/'
+          },
+          {
+            title: 'Integration with Experience Cloud',
+            path: '/sdk-guides/integration-with-experience-cloud/'
+          }
+        ]
+      },
+      {
+        title: 'On-Device Decisioning',
+        path: '/sdk-guides/on-device-decisioning/',
+        header: true,
+        pages: [
+          {
+            title: 'Introduction to On-Device Decisioning',
+            path: '/sdk-guides/on-device-decisioning/'
+          },
+          {
+            title: 'Rule artifact',
+            path: '/sdk-guides/on-device-decisioning/rule-artifact/'
+          },
+          {
+            title: 'Execute A/B tests with feature flags',
+            path: '/sdk-guides/on-device-decisioning/execute-ab-tests-with-feature-flags.md'
+          },
+          {
+            title: 'Execute feature tests with attributes',
+            path: '/sdk-guides/on-device-decisioning/execute-feature-tests-with-attributes.md'
+          },
+          {
+            title: 'Manage rollouts for feature tests',
+            path: '/sdk-guides/on-device-decisioning/manage-rollouts-for-feature-tests.md'
+          },
+          {
+            title: 'Deliver personalization',
+            path: '/sdk-guides/on-device-decisioning/deliver-personalization.md'
+          },
+          {
+            title: 'Supported features',
+            path: '/sdk-guides/on-device-decisioning/supported-features.md'
+          },
+          {
+            title: 'Troubleshooting',
+            path: '/sdk-guides/on-device-decisioning/troubleshooting.md'
+          }
+        ]
+      },
+      {
+        title: 'Best Practices',
+        path: '/sdk-guides/best-practices/',
+        header: true,
+        pages: [
+          {
+            title: 'When to use on-device vs. edge decisioning',
+            path: '/sdk-guides/best-practices/'
+          },
+        ]
+      },
+      {
         title: 'Overview',
         path: '/support/',
         header: true,
