@@ -22,8 +22,8 @@ module.exports = {
         path: '/'
       },
       {
-        title: 'Getting Started with APIs',
-        path: '/guides/'
+        title: 'API Guides',
+        path: '/api-guides/'
       },
       {
         title: 'API Reference',
@@ -41,8 +41,33 @@ module.exports = {
       ]
       },
       {
+        title: 'SDK Guides',
+        path: '/sdk-guides/'
+      },
+      {
         title: 'SDK Reference',
-        path: '/sdk/'
+        menu: [
+          {
+          title: 'Node.js SDK',
+          description: 'Adobe Target Node.js SDK',
+          path: '/sdk/node-js/'
+          },
+          {
+          title: 'Java SDK',
+          description: 'Adobe Target Java SDK',
+          path: '/sdk/java/'
+          },
+          {
+          title: '.NET SDK',
+          description: 'Adobe Target .NET SDK',
+          path: '/sdk/net/'
+          },
+          {
+          title: 'Python SDK',
+          description: 'Adobe Target Python SDK',
+          path: '/sdk/python/'
+          }
+      ]
       },
       {
         title: 'Support',
@@ -52,35 +77,35 @@ module.exports = {
     subPages: [
       {
         title: 'Get Started',
-        path: '/guides/',
+        path: '/api-guides/',
         header: true,
         pages: [
           {
             title: 'How to Configure Authentication for Adobe Target APIs',
-            path: '/guides/'
+            path: '/api-guides/'
           },
         ]
       },
       {
         title: 'Use Recommendations APIs',
-        path: '/guides/recs-api/',
+        path: '/api-guides/recs-api/',
         header: true,
         pages: [
           {
             title: 'Recs API Overview',
-            path: '/guides/recs-api/'
+            path: '/api-guides/recs-api/'
           },
           {
             title: 'Manage Your Catalog with APIs',
-            path: '/guides/recs-api/manage-catalog.md'
+            path: '/api-guides/recs-api/manage-catalog.md'
           },
           {
             title: 'Manage Custom Criteria',
-            path: '/guides/recs-api/manage-custom-criteria.md'
+            path: '/api-guides/recs-api/manage-custom-criteria.md'
           },
           {
             title: 'Use the Delivery API with Recommendations',
-            path: '/guides/recs-api/fetch-recs-server-side-delivery-api.md'
+            path: '/api-guides/recs-api/fetch-recs-server-side-delivery-api.md'
           }
         ]
       },
