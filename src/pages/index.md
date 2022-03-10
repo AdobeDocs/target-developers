@@ -7,53 +7,35 @@ contributors:
 
 <Hero slots="heading, text"/> 
 
-# Adobe Target Developer Portal
+# Adobe Target APIs and SDKs
 
-Resources and Guides for Adobe Target Developers
+API and SDK Resources and Guides for Adobe Target Developers
 <!--Adobe Target APIs and SDKs offer limitless ways to integrate your most important customer data into key business processes.-->
 
 <Resources slots="heading, links"/>
 
 ## Resources
 
-* [Getting Started](https://www.adobe.io/target/guide/)
 * [Adobe Target GitHub Repo](https://github.com/AdobeDocs/target-developers)
+* [Adobe Target Implementation](https://experienceleague.adobe.com/docs/target/using/implement-target/implementing-target.html)
+* [Adobe Target Administration](https://experienceleague.adobe.com/docs/target/using/administer/administrating-target.html)
+* [Adobe Target Release Notes](https://experienceleague.adobe.com/docs/target/using/release-notes/release-notes.html)
+* [Adobe Target Business User Guide](https://experienceleague.adobe.com/docs/target/using/target-home.html)
 
-## Overview
 
-This documentation provides resources for Adobe Target developers, including administration, implementation, integrations, and instructions for Adobe Target APIs and SDKs.
+## Description
 
-The Adobe Target APIs are a collection of APIs that power Adobe Target products like Adobe Recommendations. 
-The APIs allow for the creation of data-rich user interfaces you can use to manipulate and integrate data.
-
-Adobe Target APIs can be grouped according to type: Admin, Delivery, Reporting, and Profile APIs.
- 
-|API type|What it enables you to do|Download link|Other helpful links|
-| --- | --- | --- |--- |
-|Admin|Create, modify, and delete activities, audiences, offers, and other objects (including Recommendations entities, criteria, designs, and so on. The Recommendations APIs are a type of admin API.)|<UL><li>[Target Admin API Postman Collection](https://developers.adobetarget.com/api/#admin-postman-collection)</li><li>[Recommendations API Postman Collection](https://developers.adobetarget.com/api/recommendations/#section/Postman)</li></UL>|[Use Recommendations APIs](../guides/recs-api/index.html) |
-|Delivery|Retrieve optimized and personalized content from Target for delivery to an end user.|[Target Delivery API Postman Collection](https://developer.adobe.com/target/api/delivery-api/#section/Getting-Started/Postman-Collection)||
-|Reporting|Export activity results and other reporting results.|Reporting APIs are included within the [Target Admin API Postman collection](https://developers.adobetarget.com/api/#admin-postman-collection).||
-|Profile|Retrieve and modify user profiles stored in Adobe Target.|[Target Profile API Postman Collection](https://developers.adobetarget.com/api/#profiles)||
-
-## API Differences
-
-There are important distinctions between Target Admin APIs (including the Recommendations APIs) and Target Delivery APIs:
-
-* Admin APIs let you configure various aspects of Target that you could also configure in the Target UI. Admin APIs require authentication.
-
-* Delivery APIs let you retrieve content. Delivery APIs do not require authentication.
-
-To use Target Admin APIs, you first need to configure authentication using Adobe I/O. For more information, see [How to Configure Authentication](../guides/index.html).
+This documentation provides instructions for Adobe Target APIs and SDKs.
 
 ## Discover 
 
 <DiscoverBlock width="100%" slots="heading, link, text"/>
 
-### Configuration
+### API Guides
 
-[Getting Started](guides/)
+[Getting Started with Target APIs](api-guides/)
     
-Get started with the Adobe Target APIs.
+Get started with Adobe Target APIs, including configuration requirements.
 
 <DiscoverBlock slots="heading, link, text"/> 
 
@@ -71,9 +53,37 @@ Use Adobe Target's Delivery APIs to deliver experiences across web and mobile ch
 
 <DiscoverBlock slots="link, text"/>
 
-[Migrating from at.js to AEP Web SDK](guides/migrating/)
+[Migrating from at.js to AEP Web SDK](api-guides/migrating/)
 
-For help migrating from at.js to AEP Web SDK.   
+For help migrating from at.js to AEP Web SDK.
+
+<DiscoverBlock slots="heading, link, text"/>
+
+### SDK Guides
+
+[SDK Guides](sdk-guides/)
+
+Get started with Adobe Target SDKs, including On-Device Decisioning.
+
+<DiscoverBlock slots="heading, link, text"/> 
+
+### SDK References
+
+[Node.js SDK](sdk/node-js/)
+
+How to use the Target Node.js SDK.
+
+[Java SDK](sdk/java/)
+
+How to use the Target Java SDK.
+
+[.NET SDK](sdk/net/)
+
+How to use the Target .NET SDK.
+
+[Python SDK](sdk/python/)
+
+How to use the Target Python SDK.
 
 <DiscoverBlock width="100%" slots="heading, link, text"/>
 

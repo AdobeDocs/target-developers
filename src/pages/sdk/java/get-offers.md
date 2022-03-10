@@ -58,7 +58,7 @@ The `TargetDeliveryRequestBuilder` object has the following structure:
 |trackingServerSecure|String|No|The Adobe Analytics Secure Server in order for Adobe Target and Adobe Analytics to correctly stitch the data together.|
 |decisioningMethod|DecisioningMethod|No|Can be used to explicitly set ON_DEVICE or HYBRID decisioning method for on-device decisioning|
 
-The values of each field should conform to *Target View Delivery API* request specification. To learn more about the *Target View Delivery API*, see [http://developers.adobetarget.com/api/#view-delivery-overview](http://developers.adobetarget.com/api/#view-delivery-overview){target=_blank}
+The values of each field should conform to *Target View Delivery API* request specification. To learn more about the *Target View Delivery API*, see [http://developers.adobetarget.com/api/#view-delivery-overview](http://developers.adobetarget.com/api/#view-delivery-overview)
 
 
 ## Response

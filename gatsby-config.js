@@ -81,9 +81,13 @@ module.exports = {
         header: true,
         pages: [
           {
-            title: 'How to Configure Authentication for Adobe Target APIs',
+            title: 'Target API Overview',
             path: '/api-guides/'
           },
+          {
+            title: 'How to Configure Authentication for Adobe Target APIs',
+            path: '/api-guides/configure-authentication.md'
+          }
         ]
       },
       {
