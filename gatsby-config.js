@@ -187,6 +187,50 @@ module.exports = {
         ]
       },
       {
+        title: 'Java SDK Overview',
+        path: '/sdk/java/'
+      },
+      {
+        title: 'Install SDK',
+         path: '/sdk/java/get-offers.md'
+       },
+      {
+        title: 'Initialize SDK',
+        path: '/sdk/java/get-offers.md'
+      },
+      {
+        title: 'Get Offers',
+        path: '/sdk/java/get-offers.md'
+      },
+      {
+        title: 'Get Attributes',
+        path: '/sdk/java/get-offers.md'
+      },
+      {
+        title: 'Send Notifications',
+        path: '/sdk/java/get-offers.md'
+      },
+      {
+        title: 'SDK Events',
+        path: '/sdk/java/get-offers.md'
+      },
+      {
+        title: 'Logger',
+        path: '/sdk/java/get-offers.md'
+      },
+      {
+        title: 'Asynchronous Requests',
+        path: '/sdk/java/get-offers.md'
+      },
+      {
+        title: 'Proxy Configuration',
+        path: '/sdk/java/get-offers.md'
+      },
+      {
+        title: 'Utility Methods',
+        path: '/sdk/java/get-offers.md'
+      },
+      {
         title: 'Overview',
         path: '/support/',
         header: true,
