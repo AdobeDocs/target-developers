@@ -6,16 +6,25 @@
 
 ## Method
 
-getOffers
+### getOffers
 
-Syntax
+The TargetClient.getOffers method signature is shown as follows.
 
-**Java**
+<CodeBlock slots="heading, code" repeat="1" languages="JAVA" />
 
-```
-TargetClient.getOffers method signature.
+#### Request
+
+```java
 TargetDeliveryResponse TargetClient.getOffers(TargetDeliveryRequest request)
+```
+
 TargetDeliveryRequest is created using TargetDeliveryRequest.builder.
+
+<CodeBlock slots="heading, code" repeat="1" languages="JAVA" />
+
+#### Response
+
+```java
 TargetDeliveryRequestBuilder TargetDeliveryRequest.builder()
 ```
 
@@ -54,8 +63,6 @@ The values of each field should conform to *Target View Delivery API* request sp
 
 ## Response
 
-**Java**
-
 The `TargetDeliveryResponse` returned by `TargetClient.getOffers(`) has the following structure:
 
 |Name|Type|Description|
@@ -87,9 +94,11 @@ You don't have to worry about expiring the cookies. Target handles maxAge inside
 
 ## Example
 
-**Java**
+<CodeBlock slots="heading, code" repeat="2" languages="JAVA, JAVA" />
 
-``
+#### Request
+
+```java
 ClientConfig clientConfig = ClientConfig.builder()
         .client("acmeclient")
         .organizationId("1234567890@AdobeOrg")
@@ -104,6 +113,10 @@ TargetDeliveryRequest targetDeliveryRequest = TargetDeliveryRequest.builder()
         .context(new Context().channel(ChannelType.WEB))
         .execute(new ExecuteRequest().setMboxes(mboxRequests))
         .build();
+```
 
+#### Response
+
+```java
 TargetDeliveryResponse targetResponse = targetJavaClient.getOffers(targetDeliveryRequest);
 ```
