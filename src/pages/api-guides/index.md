@@ -5,6 +5,8 @@ description: Overview of the different Adobe Target APIs, including delivery api
 
 # API Overview
 
+## API Types
+
 The Adobe Target APIs are a collection of APIs that power Adobe Target products like Adobe Recommendations. The APIs allow for the creation of data-rich user interfaces you can use to manipulate and integrate data.
 
 Adobe Target APIs can be grouped according to type: Admin, Delivery, Reporting, and Profile APIs.
