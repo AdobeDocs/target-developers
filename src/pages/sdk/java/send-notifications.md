@@ -37,12 +37,13 @@ mboxRequests.add((MboxRequest) new MboxRequest().name("home").index(1));
 mboxRequests.add((MboxRequest) new MboxRequest().name("product1").index(2));
 PrefetchRequest prefetchMboxesRequest = new PrefetchRequest().setMboxes(mboxRequests)
 
-
 // Next, we fetch the offers via Target Java SDK getOffers() API
 TargetDeliveryResponse targetResponse = targetJavaClient.getOffers(targetDeliveryRequest);
 ```
 
 A successful response will contain a Target Delivery API response object, which contains prefetched content for the requested mboxes. A sample `targetResponse.response` object may look as follows:
+
+<CodeBlock slots="heading, code" repeat="1" languages="JAVA" />
 
 ```java
 {
@@ -100,6 +101,8 @@ A successful response will contain a Target Delivery API response object, which 
 
 Note the mbox `name` and `state` fields, as well as the `eventToken` field, in each of the Target content options. These should be provided in the `sendNotifications()` request, as soon as each content option is displayed. Let's suppose the `Product1` mbox has been displayed on a non-browser device. The notifications request will look like this:
 
+<CodeBlock slots="heading, code" repeat="1" languages="JAVA" />
+
 ```java
 TargetDeliveryRequest mboxNotificationRequest = TargetDeliveryRequest.builder().notifications(new ArrayList() {{
     add(new Notification()
@@ -116,6 +119,8 @@ TargetDeliveryRequest mboxNotificationRequest = TargetDeliveryRequest.builder().
 ```
 
 Notice that we've included both the mbox state and the event token corresponding to the Target offer delivered in the prefetch response. Having built the notifications request, we can send it to Target via `sendNotifications()` API method:
+
+<CodeBlock slots="heading, code" repeat="1" languages="JAVA" />
 
 ```java
 ResponseStatus notificationResponse = targetJavaClient.sendNotifications(mboxNotificationRequest);
