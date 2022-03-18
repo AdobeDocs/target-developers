@@ -267,6 +267,38 @@ module.exports = {
         path: '/sdk/java/utility-methods.md'
       },
       {
+        title: '.NET SDK Overview',
+        path: '/sdk/net/'
+      },
+      {
+        title: 'Install SDK',
+         path: '/sdk/net/install-sdk.md'
+       },
+      {
+        title: 'Initialize SDK',
+        path: '/sdk/net/initialize-sdk.md'
+      },
+      {
+        title: 'Get Offers',
+        path: '/sdk/net/get-offers.md'
+      },
+      {
+        title: 'Get Attributes',
+        path: '/sdk/net/get-attributes.md'
+      },
+      {
+        title: 'Send Notifications',
+        path: '/sdk/net/send-notifications.md'
+      },
+      {
+        title: 'SDK Events',
+        path: '/sdk/net/sdk-events.md'
+      },
+      {
+        title: 'Asynchronous Requests',
+        path: '/sdk/net/asynchronous-requests.md'
+      },
+      {
         title: 'Overview',
         path: '/support/',
         header: true,

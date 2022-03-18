@@ -20,4 +20,4 @@ compile 'com.adobe.target:java-sdk:1.0'
 </dependency>
 ```
 
-The open sourced code can be found at [https://github.com/adobe/target-java-sdk](https://github.com/adobe/target-java-sdk).
+The open sourced code can be found at <https://github.com/adobe/target-java-sdk>.

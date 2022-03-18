@@ -6,7 +6,9 @@
 
 <InlineAlert variant="info" slots="text"/>
 
-When an `execute` object with required params is within the request itself, the impression will be incremented automatically for qualifying activities. SDK methods that will increment an impression automatically are:
+When an `execute` object with required params is within the request itself, the impression will be incremented automatically for qualifying activities.
+
+SDK methods that will increment an impression automatically are:
 
 * `getOffers()`
 * `getAttributes()`

@@ -9,15 +9,15 @@ This reference guide shows how Adobe Target customers can install, initialize, a
 
 ## Getting Started
 
-To see how you can get started with using the .NET SDK, navigate to the [.NET SDK Getting Started Guide](https://adobetarget-sdks.gitbook.io/docs/getting-started/dotnet).
+To see how you can get started with the .NET SDK, navigate to the [.NET SDK Getting Started Guide](../sdk-guides/getting-started/net.md).
 
 ## Sample App
 
-Test drive the .NET SDK in a *sample application*.
+Test drive the .NET SDK in a [sample application](../sdk-guides/sample-apps/).
 
 ### Reference
 
-To read and understand the .NET SDK reference documentation, begin at *Install SDK*.
+To read and understand the .NET SDK reference documentation, begin at [Install SDK](../sdk/net/install-sdk.md).
 
 ## Source Files
 
