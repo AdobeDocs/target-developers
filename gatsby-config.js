@@ -196,11 +196,11 @@ module.exports = {
       },
       {
         title: 'Install SDK',
-         path: '/sdk/java/get-offers.md'
+         path: '/sdk/java/install-sdk.md'
        },
       {
         title: 'Initialize SDK',
-        path: '/sdk/java/get-offers.md'
+        path: '/sdk/java/initialize-sdk.md'
       },
       {
         title: 'Get Offers',
@@ -208,11 +208,11 @@ module.exports = {
       },
       {
         title: 'Get Attributes',
-        path: '/sdk/java/get-offers.md'
+        path: '/sdk/java/get-attributes.md'
       },
       {
         title: 'Send Notifications',
-        path: '/sdk/java/get-offers.md'
+        path: '/sdk/java/send-notifications.md'
       },
       {
         title: 'SDK Events',
