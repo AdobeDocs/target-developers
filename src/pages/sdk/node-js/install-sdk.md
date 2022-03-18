@@ -6,6 +6,8 @@ To get started, add it as a dependency by installing from NPM:
 
 <CodeBlock slots="heading, code" repeat="1" languages="JAVA" />
 
+### Install
+
 ```java
 npm i @adobe/target-nodejs-sdk -P
 ```

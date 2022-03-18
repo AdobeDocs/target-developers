@@ -7,9 +7,9 @@
 
 ## Method
 
-### getOffers
-
 <CodeBlock slots="heading, code" repeat="1" languages="js" />
+
+### getOffers
 
 ```js
 TargetClient.getOffers(options: Object): Promise
@@ -66,6 +66,8 @@ The `status` object used for indicating the status of the target response has th
 ## Example
 
 <CodeBlock slots="heading, code" repeat="1" languages="js" />
+
+### Node.js
 
 ```js
 const TargetClient = require("@adobe/target-nodejs-sdk");

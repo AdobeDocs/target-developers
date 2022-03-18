@@ -10,6 +10,8 @@ The `logger` object is expected to have a `debug()` and an `error()` method. Whe
 
 <CodeBlock slots="heading, code" repeat="1" languages="js" />
 
+### Node.js
+
 ```js
 const TargetClient = require("@adobe/target-nodejs-sdk");
 const CONFIG = {

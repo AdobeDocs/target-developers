@@ -6,10 +6,12 @@
 
 <InlineAlert variant="info" slots="text"/>
 
-When an `execute` object with required params is within the request itself, the impression will be incremented automatically for qualifying activities. SDK methods that will increment an impression automatically are:
+When an `execute` object with required params is within the request itself, the impression will be incremented automatically for qualifying activities.
 
-* getOffers()
-* getAttributes()
+SDK methods that will increment an impression automatically are:
+
+* `getOffers()`
+* `getAttributes()`
 
 When a `prefetch` object is passed within the request, the impression is not automatically incremented for the activities with mboxes within the `prefetch` object. `sendNotifications()` must be used for prefetched experiences for incrementing impressions and conversions.
 
@@ -18,8 +20,6 @@ When a `prefetch` object is passed within the request, the impression is not aut
 ### create
 
 <CodeBlock slots="heading, code" repeat="1" languages="JAVA" />
-
-#### Syntax
 
 ```java
 ResponseStatus TargetClient.sendNotifications(TargetDeliveryRequest request)
@@ -30,6 +30,8 @@ ResponseStatus TargetClient.sendNotifications(TargetDeliveryRequest request)
 First, let's build the Target Delivery API request for prefetching content for the `home` and `product1` mboxes.
 
 <CodeBlock slots="heading, code" repeat="1" languages="JAVA" />
+
+### Prefetch 
 
 ```java
 List<MboxRequest> mboxRequests = new ArrayList<>();
@@ -44,6 +46,8 @@ TargetDeliveryResponse targetResponse = targetJavaClient.getOffers(targetDeliver
 A successful response will contain a Target Delivery API response object, which contains prefetched content for the requested mboxes. A sample `targetResponse.response` object may look as follows:
 
 <CodeBlock slots="heading, code" repeat="1" languages="JAVA" />
+
+### Response
 
 ```java
 {
@@ -103,6 +107,8 @@ Note the mbox `name` and `state` fields, as well as the `eventToken` field, in e
 
 <CodeBlock slots="heading, code" repeat="1" languages="JAVA" />
 
+### Request
+
 ```java
 TargetDeliveryRequest mboxNotificationRequest = TargetDeliveryRequest.builder().notifications(new ArrayList() {{
     add(new Notification()
@@ -121,6 +127,8 @@ TargetDeliveryRequest mboxNotificationRequest = TargetDeliveryRequest.builder().
 Notice that we've included both the mbox state and the event token corresponding to the Target offer delivered in the prefetch response. Having built the notifications request, we can send it to Target via `sendNotifications()` API method:
 
 <CodeBlock slots="heading, code" repeat="1" languages="JAVA" />
+
+### Response
 
 ```java
 ResponseStatus notificationResponse = targetJavaClient.sendNotifications(mboxNotificationRequest);

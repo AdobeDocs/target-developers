@@ -6,9 +6,11 @@ Use the `create` method in order to initialize the Java SDK and instantiate the 
 
 ## Method
 
+TargetClient is created using `TargetClient.create`.
+
 <CodeBlock slots="heading, code" repeat="1" languages="JAVA" />
 
-TargetClient is created using `TargetClient.create`.
+### create
 
 ```java
 TargetClient TargetClient.create(ClientConfig clientConfig)

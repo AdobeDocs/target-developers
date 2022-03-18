@@ -16,7 +16,7 @@ Enabling on-device decisioning ensures an A/B activity is executed at near-zero 
 
 *Insert image-odd4.png*
 
-**NOTE**: You must have the Admin or Approver [user role](https://docs.adobe.com/content/help/en/target/using/administer/manage-users/user-management.html){target=_blank} to enable or disable the On-Device Decisioning toggle.
+**NOTE**: You must have the Admin or Approver [user role](https://docs.adobe.com/content/help/en/target/using/administer/manage-users/user-management.html) to enable or disable the On-Device Decisioning toggle.
 
 After enabling the On-Device Decisioning toggle, Adobe Target begins generating *rule artifacts* for your client.
 

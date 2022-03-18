@@ -6,9 +6,9 @@
 
 ## Method
 
-### getAttributes
-
 <CodeBlock slots="heading, code" repeat="1" languages="js" />
+
+### getAttributes
 
 ```js
 TargetClient.getAttributes(mboxNames: Array, options: Object): Promise
@@ -34,6 +34,8 @@ The `Promise` returned by `TargetClient.getAttributes()` resolves an object with
 ## Example
 
 <CodeBlock slots="heading, code" repeat="1" languages="js" />
+
+### Node.js
 
 ```js
 const TargetClient = require("@adobe/target-nodejs-sdk");

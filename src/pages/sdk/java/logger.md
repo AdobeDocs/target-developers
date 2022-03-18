@@ -9,7 +9,7 @@ When [initializing the SDK](/initialize-sdk.html), there are several options on 
 |`logRequests`|Logs whole request body as well as response body.|
 |`logRequestStatus`|Logs request's url, status along with response time.|
 
-Target Java SDK uses `slf4j` logging. You need to provide your implementation of logger such as `java.util.logging`, `logback`, and `log4j`. Refer to [http://www.slf4j.org/manual.html](http://www.slf4j.org/manual.html){target=_blank} for more information. All logs will be printed in `debug`.
+Target Java SDK uses `slf4j` logging. You need to provide your implementation of logger such as `java.util.logging`, `logback`, and `log4j`. Refer to [http://www.slf4j.org/manual.html](http://www.slf4j.org/manual.html) for more information. All logs will be printed in `debug`.
 
 ## Example
 
@@ -36,6 +36,8 @@ compile 'org.slf4j:slf4j-simple:2.0.0-alpha0'
 Enable the `DEBUG` logs based on your implementation, and mark the request logging flags.
 
 <CodeBlock slots="heading, code" repeat="1" languages="JAVA" />
+
+### Debug
 
 ```java
 System.setProperty(SimpleLogger.DEFAULT_LOG_LEVEL_KEY, "DEBUG");

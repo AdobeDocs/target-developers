@@ -13,11 +13,11 @@ To see how you can get started with using the Java SDK, navigate to the [Java SD
 
 ## Sample App
 
-Test drive the Java SDK in a [sample application](sdk-guides/sample-apps/).
+Test drive the Java SDK in a [sample application](../sdk-guides/sample-apps/).
 
 ## Reference
 
-To read and understand the Java SDK reference documentation, begin at [Install SDK](sdk/java/install-sdk/).
+To read and understand the Java SDK reference documentation, begin at [Install SDK](/install-sdk.md).
 
 ## Source Files
 

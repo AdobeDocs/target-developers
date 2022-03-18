@@ -96,7 +96,7 @@ TargetDeliveryResponse offers = targetClient.getOffers(request);
 
 ## User retrieves analytics payload from Adobe Target
 
-A user can retrieve the Adobe Analytics payload for a given mbox, then send it to Adobe Analytics via the [Data Insertion API](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md){target=_blank}. When an Adobe Target request is fired, pass `client_side` to the `logging` field in the request. This will return a payload if the specified mbox is present in an activity that is using Analytics as the reporting source.
+A user can retrieve the Adobe Analytics payload for a given mbox, then send it to Adobe Analytics via the [Data Insertion API](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md). When an Adobe Target request is fired, pass `client_side` to the `logging` field in the request. This will return a payload if the specified mbox is present in an activity that is using Analytics as the reporting source.
 
 ### Node.js
 

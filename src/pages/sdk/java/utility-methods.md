@@ -4,6 +4,8 @@ These helper methods are reusable across controllers and can be moved to a separ
 
 <CodeBlock slots="heading, code" repeat="1" languages="JAVA" />
 
+### Methods
+
 ```java
 public class TargetRequestUtils {
 

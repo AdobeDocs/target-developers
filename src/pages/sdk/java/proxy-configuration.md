@@ -6,6 +6,8 @@ If the application running the SDK requires a proxy to access the internet, the 
 
 <CodeBlock slots="heading, code" repeat="1" languages="JAVA" />
 
+### Basic Proxy Config
+
 ```java
 ClientConfig clientConfig = ClientConfig.builder()
     .client("acmeclient")
@@ -20,6 +22,8 @@ TargetClient targetClient = TargetClient.create(clientConfig);
 If a proxy authentication is required, the credentials can be passed as parameters to the `ClientProxyConfig` constructor, as per the below example. Note that this only works for simple username/password proxy authentication.
 
 <CodeBlock slots="heading, code" repeat="1" languages="JAVA" />
+
+### Basic Proxy Authentication
 
 ```java
 ClientConfig clientConfig = ClientConfig.builder()

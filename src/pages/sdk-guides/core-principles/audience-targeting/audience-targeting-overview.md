@@ -5,7 +5,7 @@ Audiences can be used to target your experimentation and personalization activit
 
 ## Target Library
 
-For more information, see [Target Library](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/target-library.html){target=_blank}.
+For more information, see [Target Library](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/target-library.html).
 ​
 * Referred from Bing
 * Chrome Browser
@@ -23,7 +23,7 @@ For more information, see [Target Library](https://experienceleague.adobe.com/do
 
 ## Geo
 
-For more information, see [Geo](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html){target=_blank}.
+For more information, see [Geo](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html).
 ​​
 * Country/Region
 * State
@@ -36,7 +36,7 @@ For more information, see [Geo](https://experienceleague.adobe.com/docs/target/u
 
 ## Network
 
-For more information, see [Network](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/network.html){target=_blank}.
+For more information, see [Network](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/network.html).
 
 * ISP
 * Domain Name
@@ -44,7 +44,7 @@ For more information, see [Network](https://experienceleague.adobe.com/docs/targ
 
 ## Mobile
 
-For more information, see [Mobile](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html){target=_blank}.
+For more information, see [Mobile](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html).
 
 * Device Marketing Name
 * Device Model
@@ -58,13 +58,13 @@ For more information, see [Mobile](https://experienceleague.adobe.com/docs/targe
 
 ## Custom
 
-For more information, see [Custom parameters](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html){target=_blank}.
+For more information, see [Custom parameters](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html).
 
 * any key / value pair
 
 ## Operating system
 
-For more information, see [Operating System](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/operating-system.html){target=_blank}.
+For more information, see [Operating System](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/operating-system.html).
 
 * Linux
 * Macintosh
@@ -72,7 +72,7 @@ For more information, see [Operating System](https://experienceleague.adobe.com/
 
 ## Site pages
 
-For more information, see [Site pages](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html){target=_blank}.
+For more information, see [Site pages](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html).
 
 * Current Page
 * Previous Page
@@ -81,7 +81,7 @@ For more information, see [Site pages](https://experienceleague.adobe.com/docs/t
 
 ## Browser
 
-For more information, see [Browser](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html){target=_blank}.
+For more information, see [Browser](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html).
 
 * Type
 * Language
@@ -89,13 +89,13 @@ For more information, see [Browser](https://experienceleague.adobe.com/docs/targ
 
 ## Visitor Profile
 
-For more information, see [Visitor Profile](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html){target=_blank}. 
+For more information, see [Visitor Profile](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html). 
 
 * any key / value pair, which is persisted
 
 ## Traffic Sources
 
-For more information, see [Traffic Sources](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html){target=_blank}.
+For more information, see [Traffic Sources](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html).
 
 * From Baidu
 * From Bing
@@ -107,6 +107,6 @@ For more information, see [Traffic Sources](https://experienceleague.adobe.com/d
 
 ## Time Frame
 
-For more information, see [Time Frame](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html){target=_blank}.
+For more information, see [Time Frame](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html).
 
 * Start Date / End Date

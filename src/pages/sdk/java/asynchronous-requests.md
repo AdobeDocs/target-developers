@@ -8,6 +8,8 @@ One benefit of server-side integration is that you can leverage the huge bandwid
 
 <CodeBlock slots="heading, code" repeat="1" languages="JAVA" />
 
+### Methods
+
 ```java
 CompletableFuture<TargetDeliveryResponse> getOffersAsync(TargetDeliveryRequest request);
 CompletableFuture<ResponseStatus> sendNotificationsAsync(TargetDeliveryRequest request);
@@ -19,6 +21,8 @@ CompletableFuture<Attributes> getAttributesAsync(TargetDeliveryRequest targetReq
 A sample `Spring` application Controller could look like this:
 
 <CodeBlock slots="heading, code" repeat="1" languages="JAVA" />
+
+### Sample Controller
 
 ```java
 @RestController

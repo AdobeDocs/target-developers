@@ -6,9 +6,9 @@
 
 ## Method
 
-### getAttributes
-
 <CodeBlock slots="heading, code" repeat="1" languages="JAVA" />
+
+### getAttributes
 
 ```java
 Attributes TargetClient.getAttributes(TargetDeliveryRequest targetRequest, String ...mboxes)

@@ -230,7 +230,7 @@ You will notice that the activity you are trying to qualify for is not in the `c
  }
 ```
 
-Finally, navigate to the Target UI and locate the activity in question: [experience.adobe.com/target](https://experience.adobe.com/target){target=_blank}
+Finally, navigate to the Target UI and locate the activity in question: [experience.adobe.com/target](https://experience.adobe.com/target)
 
 Review the rules used in the audience and ensure you only use those aforementioned that are supported. Additionally, ensure that the activity type is either A/B or XT.
 

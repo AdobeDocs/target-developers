@@ -42,7 +42,7 @@ The following code sample implements each of the steps outlined above. Each step
 
 #### Node.js
 
-This sample relies on [express, a Node.js web framework](https://expressjs.com/){target=_blank}.
+This sample relies on [express, a Node.js web framework](https://expressjs.com/).
 
 **server.js**
 
@@ -156,7 +156,7 @@ app.listen(3000, function () {
 
 #### Java
 
-This sample uses [spring, a Java web framework](https://spring.io/){target=_blank}.
+This sample uses [spring, a Java web framework](https://spring.io/).
 
 **ClientSampleApplication.java**
 
@@ -252,7 +252,7 @@ public class TargetClientService {
 }
 ```
 
-**[TargetRequestUtils.java](https://adobetarget-sdks.gitbook.io/docs/sdk-reference-guides/java-sdk/utility-methods){target=_blank}**
+**[TargetRequestUtils.java](https://adobetarget-sdks.gitbook.io/docs/sdk-reference-guides/java-sdk/utility-methods)**
 
 index.html
 

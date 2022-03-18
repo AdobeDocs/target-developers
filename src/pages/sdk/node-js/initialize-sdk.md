@@ -8,6 +8,8 @@ Use the `create` method in order to initialize the Node.js SDK and instantiate t
 
 <CodeBlock slots="heading, code" repeat="1" languages="js" />
 
+### create
+
 ```js
 TargetClient.create(options: Object): TargetClient
 ```
@@ -25,7 +27,7 @@ TargetClient.create(options: Object): TargetClient
 |secure|Boolean|No|true|Unset to enforce HTTP scheme|
 |logger|Object|No|NOOP logger|Replaces the default NOOP logger|
 |targetLocationHint|String|No|None|Target location hint|
-|fetchApi|Function|No|global.fetch or window.fetch|[fetch](https://fetch.spec.whatwg.org/){target=_blank} is used by the SDK for http requests. By default node-fetch or the browser implementation of fetch is used. But an alternative implementation can be provided using `fetchApi`|
+|fetchApi|Function|No|global.fetch or window.fetch|[fetch](https://fetch.spec.whatwg.org/) is used by the SDK for http requests. By default node-fetch or the browser implementation of fetch is used. But an alternative implementation can be provided using `fetchApi`|
 |propertyToken|String|No|None|**Target Property Token**. If specified here, all `getOffers` calls will use this value. **For on-device decisioning**, the SDK will only download the artifact that contains the qualified activities for the property token set in `propertyToken`|
 |decisioningMethod|String|No|server-side|Determines which decisioning method to use (*on-device*, server-side, hybrid)|
 |pollingInterval|Number|No|300000 (5 minutes)|Polling interval for the *on-device rule artifact* (in milliseconds)
@@ -37,6 +39,8 @@ TargetClient.create(options: Object): TargetClient
 ## Example
 
 <CodeBlock slots="heading, code" repeat="1" languages="js" />
+
+### Node.js
 
 ```js
 const CONFIG = {

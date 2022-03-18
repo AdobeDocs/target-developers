@@ -18,6 +18,8 @@ The `OnDeviceDecisioningHandler` object contains the following callbacks, which 
 
 <CodeBlock slots="heading, code" repeat="1" languages="JAVA" />
 
+### SDK Events
+
 ```java
 ClientConfig clientConfig = ClientConfig.builder()
         .client("acmeclient")
