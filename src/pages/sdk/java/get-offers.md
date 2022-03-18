@@ -8,7 +8,7 @@
 
 ### getOffers
 
-The TargetClient.getOffers method signature is shown as follows.
+The `TargetClient.getOffers` method signature is shown as follows.
 
 <CodeBlock slots="heading, code" repeat="1" languages="JAVA" />
 
@@ -18,7 +18,7 @@ The TargetClient.getOffers method signature is shown as follows.
 TargetDeliveryResponse TargetClient.getOffers(TargetDeliveryRequest request)
 ```
 
-TargetDeliveryRequest is created using TargetDeliveryRequest.builder.
+TargetDeliveryRequest is created using `TargetDeliveryRequest.builder`.
 
 <CodeBlock slots="heading, code" repeat="1" languages="JAVA" />
 
