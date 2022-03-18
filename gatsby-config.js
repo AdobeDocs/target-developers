@@ -191,6 +191,38 @@ module.exports = {
         ]
       },
       {
+        title: 'Node.js SDK Overview',
+        path: '/sdk/node-js/'
+      },
+      {
+        title: 'Install SDK',
+         path: '/sdk/node-js/install-sdk.md'
+       },
+      {
+        title: 'Initialize SDK',
+        path: '/sdk/node-js/initialize-sdk.md'
+      },
+      {
+        title: 'Get Offers',
+        path: '/sdk/node-js/get-offers.md'
+      },
+      {
+        title: 'Get Attributes',
+        path: '/sdk/node-js/get-attributes.md'
+      },
+      {
+        title: 'Send Notifications',
+        path: '/sdk/node-js/send-notifications.md'
+      },
+      {
+        title: 'SDK Events',
+        path: '/sdk/node-js/sdk-events.md'
+      },
+      {
+        title: 'Logger',
+        path: '/sdk/node-js/logger.md'
+      },
+      {
         title: 'Java SDK Overview',
         path: '/sdk/java/'
       },
@@ -216,23 +248,23 @@ module.exports = {
       },
       {
         title: 'SDK Events',
-        path: '/sdk/java/get-offers.md'
+        path: '/sdk/java/sdk-events.md'
       },
       {
         title: 'Logger',
-        path: '/sdk/java/get-offers.md'
+        path: '/sdk/java/logger.md'
       },
       {
         title: 'Asynchronous Requests',
-        path: '/sdk/java/get-offers.md'
+        path: '/sdk/java/asynchronous-requests.md'
       },
       {
         title: 'Proxy Configuration',
-        path: '/sdk/java/get-offers.md'
+        path: '/sdk/java/proxy-configuration.md'
       },
       {
         title: 'Utility Methods',
-        path: '/sdk/java/get-offers.md'
+        path: '/sdk/java/utility-methods.md'
       },
       {
         title: 'Overview',

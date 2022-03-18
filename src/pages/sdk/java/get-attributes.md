@@ -10,8 +10,6 @@
 
 <CodeBlock slots="heading, code" repeat="1" languages="JAVA" />
 
-#### Syntax
-
 ```java
 Attributes TargetClient.getAttributes(TargetDeliveryRequest targetRequest, String ...mboxes)
 ```

@@ -8,10 +8,6 @@ Use the `create` method in order to initialize the Java SDK and instantiate the 
 
 <CodeBlock slots="heading, code" repeat="1" languages="JAVA" />
 
-### Java
-
-## create
-
 TargetClient is created using `TargetClient.create`.
 
 ```java
