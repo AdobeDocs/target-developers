@@ -2,7 +2,7 @@
 
 ## Description
 
-When [initializing the SDK](/initialize-sdk.html), there are several options on the `ClientConfig` object, which can be set to log requests.
+When [initializing the SDK](../initialize-sdk.html), there are several options on the `ClientConfig` object, which can be set to log requests.
 
 |Option|Description|
 | --- | --- |

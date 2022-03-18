@@ -65,6 +65,6 @@ public class TargetRestController {
 }
 ```
 
-This example assumes you have [initialized the SDK](/initialize-sdk.html) as a spring bean and that you have [utility methods](/src/pages/sdk/java/utility-methods.md) available.
+This example assumes you have [initialized the SDK](../initialize-sdk.html) as a spring bean and that you have [utility methods](/src/pages/sdk/java/utility-methods.md) available.
 
 The Target request is fired before `simulateIO` and by the time it is executed target result should also be ready. Even if it is not, you will have significant savings in most cases.

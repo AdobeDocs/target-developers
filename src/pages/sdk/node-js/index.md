@@ -12,11 +12,11 @@ To see how you can get started with using the Node.js SDK, navigate to the [Node
 
 ## Sample App
 
-Test drive the Node.js SDK in a [sample application](../../sdk-guides/sample-apps/index.md).
+Test drive the Node.js SDK in a [sample application](../sdk-guides/sample-apps/).
 
 ## Reference
 
-To read and understand the Node.js SDK reference documentation, begin at [Install SDK](/install-sdk.md).
+To read and understand the Node.js SDK reference documentation, begin at [Install SDK](../sdk/node-js/install-sdk.md).
 
 ## Source Files
 
