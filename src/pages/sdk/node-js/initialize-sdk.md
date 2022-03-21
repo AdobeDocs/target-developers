@@ -29,11 +29,11 @@ TargetClient.create(options: Object): TargetClient
 |targetLocationHint|String|No|None|Target location hint|
 |fetchApi|Function|No|global.fetch or window.fetch|[fetch](https://fetch.spec.whatwg.org/) is used by the SDK for http requests. By default node-fetch or the browser implementation of fetch is used. But an alternative implementation can be provided using `fetchApi`|
 |propertyToken|String|No|None|**Target Property Token**. If specified here, all `getOffers` calls will use this value. **For on-device decisioning**, the SDK will only download the artifact that contains the qualified activities for the property token set in `propertyToken`|
-|decisioningMethod|String|No|server-side|Determines which decisioning method to use (*on-device*, server-side, hybrid)|
-|pollingInterval|Number|No|300000 (5 minutes)|Polling interval for the *on-device rule artifact* (in milliseconds)
-|artifactLocation|String|No|None|A fully qualified url to the *on-device decisioning rule artifact*. Overrides internally determined location.|
-|artifactPayload|Object|No|None|The JSON payload of the *on-device decisioning rule artifact*. If specified, it is used instead of requesting one from a URL.|
-|*events*|Object<String,Function>|No|None|An optional object with event name keys and callback function values|
+|decisioningMethod|String|No|server-side|Determines which decisioning method to use ([on-device](../../sdk-guides/on-device-decisioning/index.md), server-side, hybrid)|
+|pollingInterval|Number|No|300000 (5 minutes)|Polling interval for the [on-device decisioning rule artifact](../../sdk-guides/on-device-decisioning/rule-artifact/index.md) (in milliseconds)
+|artifactLocation|String|No|None|A fully qualified url to the [on-device decisioning rule artifact](../../sdk-guides/on-device-decisioning/rule-artifact/index.md). Overrides internally determined location.|
+|artifactPayload|Object|No|None|The JSON payload of the [on-device decisioning rule artifact](../../sdk-guides/on-device-decisioning/rule-artifact/index.md). If specified, it is used instead of requesting one from a URL.|
+|[events](../sdk-events.md)|Object<String,Function>|No|None|An optional object with event name keys and callback function values|
 |telemetryEnabled|Boolean|No|true|When enabled, Adobe will collect SDK feature usage and performance telemetry data. Personal data is not collected.|
 
 ## Example

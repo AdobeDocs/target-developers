@@ -108,7 +108,7 @@ A successful response will contain a Target Delivery API response object, which 
 }
 ```
 
-Note the `mbox` name and `state` fields, as well as the `eventToken` field, in each of the Target content options. These should be provided in the `SendNotifications()` request, as soon as each content option is displayed. Let's suppose the `Product1` mbox has been displayed on a non-browser device. The notifications request will appear as follows:
+Note the `mbox` name and `state` fields, as well as the `eventToken` field, in each of the Target content options. These should be provided in the `SendNotifications()` request, as soon as each content option is displayed. Let's suppose the `product1` mbox has been displayed on a non-browser device. The notifications request will appear as follows:
 
 <CodeBlock slots="heading, code" repeat="1" languages="dotnet" />
 

@@ -18,7 +18,7 @@ Attributes TargetClient.getAttributes(TargetDeliveryRequest targetRequest, Strin
 
 |Name|Type|Required|Default|Description|
 | --- | --- | --- | --- | --- |
-|targetRequest|TargetDeliveryRequest|Yes|None|The same target request as used for [Get Offers​](../get-offers.html)
+|targetRequest|TargetDeliveryRequest|Yes|None|The same target request as used for [Get Offers​](/get-offers.md)
 |mboxNames|var-args array|No|None|A var-args array of mbox names|
 
 

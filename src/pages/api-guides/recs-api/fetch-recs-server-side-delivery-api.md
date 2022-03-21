@@ -13,7 +13,7 @@ exl-id: 553d1208-647f-479d-acc7-d7760469d642
 ---
 # Fetching Recommendations with the Delivery API
 
-The Adobe Target and Adobe Target Recommendations APIs can be used to deliver responses to web pages, but can also be used in non-HTML based experiences including apps, screens, consoles, emails, kiosks and other display devices. In other words, when Target libraries and JavaScript cannot be used, the **Target Delivery API** still allows us to access the full range of Target functionality to deliver personalized experiences.
+The Adobe Target and Adobe Target Recommendations APIs can be used to deliver responses to web pages, but can also be used in non-HTML based experiences including apps, screens, consoles, emails, kiosks and other display devices. In other words, when Target libraries and JavaScript cannot be used, the [Target Delivery API](../../api/delivery-api/index.md) still allows us to access the full range of Target functionality to deliver personalized experiences.
 
 <InlineAlert variant="help" slots="text"/>
 
@@ -116,8 +116,7 @@ We learned in an [earlier section](manage-catalog.md) how to manage Adobe Target
 
 ## Reference documentation
 
-* [Adobe Target API documentation](https://developers.adobetarget.com/api/#getting-started)
-* [Adobe Target Delivery API](https://developers.adobetarget.com/api/delivery-api/)
+* [Adobe Target API documentation](https://developer.adobe.com/target/api/delivery-api/)
 * [Integrate Recommendations with email](https://docs.adobe.com/content/help/en/target/using/recommendations/recommendations-faq/integrating-recs-email.html)
 
 ## Summary and Review

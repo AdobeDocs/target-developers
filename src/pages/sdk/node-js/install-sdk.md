@@ -4,11 +4,11 @@ The Node.js SDK is distributed by [npm](https://www.npmjs.com/package/@adobe/tar
 
 To get started, add it as a dependency by installing from NPM:
 
-<CodeBlock slots="heading, code" repeat="1" languages="JAVA" />
+<CodeBlock slots="heading, code" repeat="1" languages="js" />
 
 ### Install
 
-```java
+```js
 npm i @adobe/target-nodejs-sdk -P
 ```
 
