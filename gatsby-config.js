@@ -299,6 +299,42 @@ module.exports = {
         path: '/sdk/net/asynchronous-requests.md'
       },
       {
+        title: 'Python SDK Overview',
+        path: '/sdk/python/'
+      },
+      {
+        title: 'Install SDK',
+         path: '/sdk/python/install-sdk.md'
+       },
+      {
+        title: 'Initialize SDK',
+        path: '/sdk/python/initialize-sdk.md'
+      },
+      {
+        title: 'Get Offers',
+        path: '/sdk/python/get-offers.md'
+      },
+      {
+        title: 'Get Attributes',
+        path: '/sdk/python/get-attributes.md'
+      },
+      {
+        title: 'Send Notifications',
+        path: '/sdk/python/send-notifications.md'
+      },
+      {
+        title: 'SDK Events',
+        path: '/sdk/python/sdk-events.md'
+      },
+      {
+        title: 'Asynchronous Requests',
+        path: '/sdk/python/asynchronous-requests.md'
+      },
+      {
+        title: 'Logger',
+        path: '/sdk/python/logger.md'
+      },
+      {
         title: 'Overview',
         path: '/support/',
         header: true,
