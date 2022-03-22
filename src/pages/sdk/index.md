@@ -1,8 +1,8 @@
-Getting started overview
+# SDK References
 
-In order to get up and running, we encourage you to create your first *on-device decisioning* feature flag activity in the language of your choice:
+Target SDK References:
 
-* *Node.js*
-* *Java*
-* *.NET*
-* *Python*
+* [Node.js](../node-js/)
+* [Java](../java/)
+* [.NET](../net/)
+* [Python](../python/)
