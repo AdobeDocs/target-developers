@@ -201,4 +201,4 @@ The Delete Entities API deletes entities referenced by IDs you specify. If no en
 
 Congrats! You can now use the Recommendations APIs to create, update, delete, and obtain details on the entities in your catalog. In the next section, you will learn how to manage custom criteria.
 
-<!-- [Next "Manage Custom Criteria" >](manage-custom-criteria.md) -->
+<!--- [Next "Manage Custom Criteria" >](manage-custom-criteria.md) --->

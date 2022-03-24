@@ -14,7 +14,7 @@
 
 1. Enabling on-device decisioning ensures an A/B activity is executed at near-zero latency. To enable this feature, navigate to **Administration** > **Implementation** > **Account details** and enable the **On-Device Decisioning** toggle.
 
-<!--Insert image-ood4.png-->
+<!--- Insert image-ood4.png --->
 ![alt image](./asset-getting-started-1.png)
 
 <InlineAlert variant="info" slots="text"/>
