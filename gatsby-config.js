@@ -116,7 +116,6 @@ module.exports = {
       {
         title: 'Target SDK Overview',
         path: '/sdk-guides/',
-        header: true,
         pages: [
           {
             title: 'Welcome',
@@ -130,20 +129,59 @@ module.exports = {
             title: 'Sample apps',
             path: '/sdk-guides/sample-apps/'
           },
+        ]
+      },
+      {
+        title: 'Core principles',
+        path: '/sdk-guides/core-principles/',
+        pages: [
           {
             title: 'Core principles',
-            path: '/sdk-guides/core-principles/'
+            path: '/sdk-guides/core-principles/',
           },
           {
+            title: 'User identification & bucketing',
+            path: '/sdk-guides/core-principles/user-identification-and-bucketing.md'
+          },
+          {
+            title: 'Audience targeting',
+            path: '/sdk-guides/core-principles/audience-targeting.md'
+          },
+          {
+            title: 'Event tracking',
+            path: '/sdk-guides/core-principles/event-tracking.md'
+          },
+          {
+            title: 'User permissions & properties',
+            path: '/sdk-guides/core-principles/user-permissions-and-properties.md'
+          }
+        ]
+      },
+      {
+        title: 'Integration with Experience Cloud',
+        path: '/sdk-guides/integration-with-experience-cloud/',
+        pages: [
+          {
             title: 'Integration with Experience Cloud',
-            path: '/sdk-guides/integration-with-experience-cloud/'
+            path: '/sdk-guides/integration-with-experience-cloud/',
+          },
+          {
+            title: 'Experience Cloud ID (ECID) Service',
+            path: '/sdk-guides/integration-with-experience-cloud/ecid.md'
+          },
+          {
+            title: 'Analytics for Target (A4T) reporting',
+            path: '/sdk-guides/integration-with-experience-cloud/a4t-reporting.md'
+          },
+          {
+            title: 'AAM Segments',
+            path: '/sdk-guides/integration-with-experience-cloud/aam-segments.md'
           }
         ]
       },
       {
         title: 'On-Device Decisioning',
         path: '/sdk-guides/on-device-decisioning/',
-        header: true,
         pages: [
           {
             title: 'Introduction to On-Device Decisioning',

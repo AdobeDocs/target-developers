@@ -35,7 +35,7 @@ For Node.js, Java, and Python, run the following command in your project directo
 
 <CodeBlock slots="heading, code" repeat="4" languages="js, java, bash, python" />
 
-#### Node.js
+#### Node.js (NPM)
 
 ```js
 npm i @adobe/target-nodejs-sdk -P
@@ -109,7 +109,7 @@ var targetClientConfig = new TargetClientConfig.Builder("testClient", "ABCDEF012
 this.targetClient.Initialize(targetClientConfig);
 ```
 
-#### Python (pip)
+#### Python
 
 ```python
 from target_python_sdk import TargetClient
@@ -230,7 +230,7 @@ var attributes = targetClient.GetAttributes(request, "ondevice-featureflag");
 var flag = attributes.GetString("ondevice-featureflag", "flag");
 ```
 
-#### Python (pip)
+#### Python
 
 ```python
 # ... Code removed for brevity
@@ -330,7 +330,7 @@ var notificationRequest = new TargetDeliveryRequest.Builder()
 targetClient.SendNotifications(notificationRequest);
 ```
 
-#### Python (pip)
+#### Python
 
 ```python
 # ... Code removed for brevity
