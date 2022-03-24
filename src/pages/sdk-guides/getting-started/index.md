@@ -230,7 +230,7 @@ var attributes = targetClient.GetAttributes(request, "ondevice-featureflag");
 var flag = attributes.GetString("ondevice-featureflag", "flag");
 ```
 
-### Python (pip)
+#### Python (pip)
 
 ```python
 # ... Code removed for brevity
