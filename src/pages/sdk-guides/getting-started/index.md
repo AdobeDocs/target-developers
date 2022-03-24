@@ -21,7 +21,7 @@ In order to get up and running, we encourage you to create your first [on-device
 
 Enabling on-device decisioning ensures an A/B activity is executed at near-zero latency. To enable this feature, navigate to **Administration** > **Implementation** > **Account details** and enable the **On-Device Decisioning** toggle.
 
-   <!--- *Insert image-odd4.png* --->
+   <!--- Insert image-odd4.png --->
    ![alt image](./asset-odd-toggle.png)
 
 <InlineAlert variant="info" slots="text"/>
@@ -138,7 +138,7 @@ TargetClient targetClient = TargetClient.create(config);
 
 1. In Adobe Target, navigate to the **Activities** page, then select **Create Activity** > **A/B test**. 
 
-   <!--- *Insert image-ab.png* --->
+   <!--- Insert image-ab.png --->
    ![alt image](./asset-ab.png)
 
 1. In the **Create A/B Test Activity** modal, leave the default Web option selected (1), select **Form** as your experience composer (2), select **Default Workspace** with **No Property Restrictions**(3), then click **Next** (4).

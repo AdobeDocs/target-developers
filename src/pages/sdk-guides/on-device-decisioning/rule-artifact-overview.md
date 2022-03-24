@@ -15,12 +15,12 @@ Enabling traces will output additional information from Adobe Target in regards 
 
 1. Navigate to the Target UI.
 
-   <!--- *Insert image-target-ui-1.png* --->
+   <!--- Insert image-target-ui-1.png --->
    ![alt image](./rule-artifact-1.png)
 
 1. Navigate to **Administration** > **Implementation** and click **Generate New Authorization Token**.
 
-   <!--- *Insert image-target-ui-2.png* --->
+   <!--- Insert image-target-ui-2.png --->
    ![alt image](./rule-artifact-2.png)
 
 1. Copy the newly generated authorization token to the clipboard and add it to your Target request.
