@@ -21,7 +21,6 @@ In order to get up and running, we encourage you to create your first [on-device
 
 Enabling on-device decisioning ensures an A/B activity is executed at near-zero latency. To enable this feature, navigate to **Administration** > **Implementation** > **Account details** and enable the **On-Device Decisioning** toggle.
 
-   <!--- Insert image-odd4.png --->
    ![alt image](./asset-odd-toggle.png)
 
 <InlineAlert variant="info" slots="text"/>
