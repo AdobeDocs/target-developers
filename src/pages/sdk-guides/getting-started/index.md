@@ -33,15 +33,15 @@ After enabling the **On-Device Decisioning** toggle, Adobe Target begins generat
 
 For Node.js, Java, and Python, run the following command in your project directory in the terminal. For .NET, add it as a dependency by [installing from NuGet](https://www.nuget.org/packages/Adobe.Target.Client).
 
-   <CodeBlock slots="heading, code" repeat="4" languages="js, java, bash, python" />
+<CodeBlock slots="heading, code" repeat="4" languages="js, java, bash, python" />
 
-   ### Node.js
+### Node.js
 
    ```js
    npm i @adobe/target-nodejs-sdk -P
    ```
 
-   ### Java (Maven)
+### Java (Maven)
 
    ```java
    <dependency>
@@ -51,13 +51,14 @@ For Node.js, Java, and Python, run the following command in your project directo
    </dependency>
    ```
 
-   ### .NET (Bash)
+### .NET (Bash)
 
    ```bash
    dotnet add package Adobe.Target.Client
    ```
 
-   ### Python (pip)
+### Python (pip)
+
    ```python
    pip install target-python-sdk
    ```
@@ -72,7 +73,7 @@ Using the create method of the SDK, configure the SDK to complete the initializa
 
    <CodeBlock slots="heading, code" repeat="4" languages="js, java, bash, python" />
    
-   ### Node.js
+### Node.js
 
    ```js
    const TargetClient = require("@adobe/target-nodejs-sdk");
@@ -94,7 +95,7 @@ Using the create method of the SDK, configure the SDK to complete the initializa
    }
    ```
 
-   ### Java (Maven)
+### Java (Maven)
 
    ```java
    ClientConfig config = ClientConfig.builder()
@@ -104,7 +105,7 @@ Using the create method of the SDK, configure the SDK to complete the initializa
 TargetClient targetClient = TargetClient.create(config);
    ```
 
-   ### .NET (C#)
+### .NET (C#)
 
    ```csharp
    var targetClientConfig = new TargetClientConfig.Builder("testClient", "ABCDEF012345677890ABCDEF0@AdobeOrg")
@@ -112,7 +113,7 @@ TargetClient targetClient = TargetClient.create(config);
    this.targetClient.Initialize(targetClientConfig);
    ```
 
-   ### Python (pip)
+### Python (pip)
    
    ```python
    from target_python_sdk import TargetClient
@@ -187,13 +188,9 @@ TargetClient targetClient = TargetClient.create(config);
 
 After setting up the feature flag variables in Adobe Target, modify your application code to use them. For example, after getting the feature flag in the application, you can use it to enable features and render the experience for which the visitor qualified.
 
-Node.js
-
-
-
    <CodeBlock slots="heading, code" repeat="4" languages="js, java, bash, python" />
    
-   ### Node.js
+### Node.js
 
    ```js
    //... Code removed for brevity
@@ -213,7 +210,7 @@ Node.js
    }
    ```
 
-   ### Java (Maven)
+### Java (Maven)
 
    ```java
    MboxRequest mbox = new MboxRequest().name("ondevice-featureflag").index(0);
@@ -225,7 +222,7 @@ Node.js
    String flag = attributes.getString("ondevice-featureflag", "flag");
    ```
 
-   ### .NET (C#)
+### .NET (C#)
 
    ```csharp
    var mbox = new MboxRequest(index: 0, name: "ondevice-featureflag");
@@ -237,7 +234,7 @@ Node.js
    var flag = attributes.GetString("ondevice-featureflag", "flag");
    ```
 
-   ### Python (pip)
+### Python (pip)
 
    ```python
    # ... Code removed for brevity
@@ -259,7 +256,7 @@ Optionally, you may send additional events for tracking conversions using the se
 
    <CodeBlock slots="heading, code" repeat="4" languages="js, java, bash, python" />
    
-   ### Node.js
+### Node.js
 
    ```js
    //... Code removed for brevity
@@ -287,7 +284,7 @@ Optionally, you may send additional events for tracking conversions using the se
    })
    ```
 
-   ### Java (Maven)
+### Java (Maven)
 
    ```java
    Notification notification = new Notification();
@@ -310,7 +307,7 @@ Optionally, you may send additional events for tracking conversions using the se
    notificationDeliveryService.sendNotification(notificationRequest);
    ```
 
-   ### .NET (C#)
+### .NET (C#)
 
    ```csharp
    var order = new Order
@@ -337,7 +334,7 @@ Optionally, you may send additional events for tracking conversions using the se
    targetClient.SendNotifications(notificationRequest);
    ```
 
-   ### Python (pip)
+### Python (pip)
    
    ```python
    # ... Code removed for brevity
