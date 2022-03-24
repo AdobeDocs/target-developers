@@ -184,183 +184,183 @@ target_client = TargetClient.create(CONFIG)
 
 After setting up the feature flag variables in Adobe Target, modify your application code to use them. For example, after getting the feature flag in the application, you can use it to enable features and render the experience for which the visitor qualified.
 
-   <CodeBlock slots="heading, code" repeat="4" languages="js, java, bash, python" />
-   
-### Node.js
+<CodeBlock slots="heading, code" repeat="4" languages="js, java, bash, python" />
 
-   ```js
-   //... Code removed for brevity
-   ​
-   let featureFlags = {};
-   ​
-   function targetClientReady() {
-      tClient.getAttributes(["ondevice-featureflag"]).then(function(response) {
-         const featureFlags = response.asObject("ondevice-featureflag");
-         if(featureFlags.enabled && featureFlags.flag !== "expA") { //Assuming "expA" is control
-            console.log("Render alternate experience" + featureFlags.flag);
-         }
-         else {
-            console.log("Render default experience");
-         }
-      });
-   }
-   ```
+#### Node.js
 
-### Java (Maven)
+```js
+//... Code removed for brevity
+​
+let featureFlags = {};
+​
+function targetClientReady() {
+   tClient.getAttributes(["ondevice-featureflag"]).then(function(response) {
+      const featureFlags = response.asObject("ondevice-featureflag");
+      if(featureFlags.enabled && featureFlags.flag !== "expA") { //Assuming "expA" is control
+         console.log("Render alternate experience" + featureFlags.flag);
+      }
+      else {
+         console.log("Render default experience");
+      }
+   });
+}
+```
 
-   ```java
-   MboxRequest mbox = new MboxRequest().name("ondevice-featureflag").index(0);
-   TargetDeliveryRequest request = TargetDeliveryRequest.builder()
-      .context(new Context().channel(ChannelType.WEB))
-      .execute(new ExecuteRequest().mboxes(Arrays.asList(mbox)))
-      .build();
-   Attributes attributes = targetClient.getAttributes(request, "ondevice-featureflag");
-   String flag = attributes.getString("ondevice-featureflag", "flag");
-   ```
+#### Java (Maven)
 
-### .NET (C#)
+```java
+MboxRequest mbox = new MboxRequest().name("ondevice-featureflag").index(0);
+TargetDeliveryRequest request = TargetDeliveryRequest.builder()
+   .context(new Context().channel(ChannelType.WEB))
+   .execute(new ExecuteRequest().mboxes(Arrays.asList(mbox)))
+   .build();
+Attributes attributes = targetClient.getAttributes(request, "ondevice-featureflag");
+String flag = attributes.getString("ondevice-featureflag", "flag");
+```
 
-   ```csharp
-   var mbox = new MboxRequest(index: 0, name: "ondevice-featureflag");
-   var deliveryRequest = new TargetDeliveryRequest.Builder()
-      .SetContext(new Context(ChannelType.Web))
-      .SetExecute(new ExecuteRequest(mboxes: new List<MboxRequest> { mbox }))
-      .Build();
-   var attributes = targetClient.GetAttributes(request, "ondevice-featureflag");
-   var flag = attributes.GetString("ondevice-featureflag", "flag");
-   ```
+#### .NET (C#)
+
+```csharp
+var mbox = new MboxRequest(index: 0, name: "ondevice-featureflag");
+var deliveryRequest = new TargetDeliveryRequest.Builder()
+   .SetContext(new Context(ChannelType.Web))
+   .SetExecute(new ExecuteRequest(mboxes: new List<MboxRequest> { mbox }))
+   .Build();
+var attributes = targetClient.GetAttributes(request, "ondevice-featureflag");
+var flag = attributes.GetString("ondevice-featureflag", "flag");
+```
 
 ### Python (pip)
 
-   ```python
-   # ... Code removed for brevity
+```python
+# ... Code removed for brevity
 
-   feature_flags = {}
+feature_flags = {}
 
-   def target_client_ready():
-      attribute_provider = target_client.get_attributes(["ondevice-featureflag"])
-      feature_flags = attribute_provider.as_object(mbox_name="ondevice-featureflag")
-      if feature_flags.get("enabled") and feature_flags.get("flag") != "expA": # Assuming "expA" is control
-         print("Render alternate experience {}".format(feature_flags.get("flag")))
-      else:
-         print("Render default experience")
-   ```
+def target_client_ready():
+   attribute_provider = target_client.get_attributes(["ondevice-featureflag"])
+   feature_flags = attribute_provider.as_object(mbox_name="ondevice-featureflag")
+   if feature_flags.get("enabled") and feature_flags.get("flag") != "expA": # Assuming "expA" is control
+      print("Render alternate experience {}".format(feature_flags.get("flag")))
+   else:
+      print("Render default experience")
+```
 
 ## 6. Implement additional tracking for events in your application
 
 Optionally, you may send additional events for tracking conversions using the sendNotification() function.
 
-   <CodeBlock slots="heading, code" repeat="4" languages="js, java, bash, python" />
-   
-### Node.js
+<CodeBlock slots="heading, code" repeat="4" languages="js, java, bash, python" />
 
-   ```js
-   //... Code removed for brevity
-   ​
-   //When a conversion happens
-   TargetClient.sendNotifications({
-      targetCookie,
-      "request" : {
-         "notifications" : [
-         {
-            type: "display",
-            timestamp : Date.now(),
-            id: "conversion",
-            mbox : {
-               name : "orderConfirm"
-            },
-            order : {
-               id: "BR9389",
-               total : 98.93,
-               purchasedProductIds : ["J9393", "3DJJ3"]
-            }
+#### Node.js
+
+```js
+//... Code removed for brevity
+​
+//When a conversion happens
+TargetClient.sendNotifications({
+   targetCookie,
+   "request" : {
+      "notifications" : [
+      {
+         type: "display",
+         timestamp : Date.now(),
+         id: "conversion",
+         mbox : {
+            name : "orderConfirm"
+         },
+         order : {
+            id: "BR9389",
+            total : 98.93,
+            purchasedProductIds : ["J9393", "3DJJ3"]
          }
-         ]
       }
-   })
-   ```
+      ]
+   }
+})
+```
 
-### Java (Maven)
+#### Java (Maven)
 
-   ```java
-   Notification notification = new Notification();
-   notification.setId("conversion");
-   notification.setImpressionId(UUID.randomUUID().toString());
-   notification.setType(MetricType.DISPLAY);
-   notification.setTimestamp(System.currentTimeMillis());
-   Order order = new Order("BR9389");
-   order.total(98.93);
-   order.purchasedProductIds(["J9393", "3DJJ3"]);
-   notification.setOrder(order);
+```java
+Notification notification = new Notification();
+notification.setId("conversion");
+notification.setImpressionId(UUID.randomUUID().toString());
+notification.setType(MetricType.DISPLAY);
+notification.setTimestamp(System.currentTimeMillis());
+Order order = new Order("BR9389");
+order.total(98.93);
+order.purchasedProductIds(["J9393", "3DJJ3"]);
+notification.setOrder(order);
 
-   TargetDeliveryRequest notificationRequest =
-      TargetDeliveryRequest.builder()
-         .context(new Context().channel(ChannelType.WEB))
-         .notifications(Collections.singletonList(notification))
-         .build();
+TargetDeliveryRequest notificationRequest =
+   TargetDeliveryRequest.builder()
+      .context(new Context().channel(ChannelType.WEB))
+      .notifications(Collections.singletonList(notification))
+      .build();
 
-   NotificationDeliveryService notificationDeliveryService = new NotificationDeliveryService();
-   notificationDeliveryService.sendNotification(notificationRequest);
-   ```
+NotificationDeliveryService notificationDeliveryService = new NotificationDeliveryService();
+notificationDeliveryService.sendNotification(notificationRequest);
+```
 
-### .NET (C#)
+#### .NET (C#)
 
-   ```csharp
-   var order = new Order
-   {
-      Id = "BR9389",
-      Total = 98.93M,
-      PurchasedProductIds = new List<string> { "J9393", "3DJJ3" },
-   };
-   ​
-   var notification = new Notification
-   {
-      Id = "conversion",
-      ImpressionId = Guid.NewGuid().ToString(),
-      Type = MetricType.Display,
-      Timestamp = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds(),
-      Order = order,
-   };
-   ​
-   var notificationRequest = new TargetDeliveryRequest.Builder()
-      .SetContext(new Context(ChannelType.Web))
-      .SetNotifications(new List<Notification> {notification})
-      .Build();
-   ​
-   targetClient.SendNotifications(notificationRequest);
-   ```
+```csharp
+var order = new Order
+{
+   Id = "BR9389",
+   Total = 98.93M,
+   PurchasedProductIds = new List<string> { "J9393", "3DJJ3" },
+};
+​
+var notification = new Notification
+{
+   Id = "conversion",
+   ImpressionId = Guid.NewGuid().ToString(),
+   Type = MetricType.Display,
+   Timestamp = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds(),
+   Order = order,
+};
+​
+var notificationRequest = new TargetDeliveryRequest.Builder()
+   .SetContext(new Context(ChannelType.Web))
+   .SetNotifications(new List<Notification> {notification})
+   .Build();
+​
+targetClient.SendNotifications(notificationRequest);
+```
 
-### Python (pip)
-   
-   ```python
-   # ... Code removed for brevity
+#### Python (pip)
 
-   # When a conversion happens
-   notification_mbox = NotificationMbox(name="orderConfirm")
-   order = Order(id="BR9389, total=98.93, purchased_product_ids=["J9393", "3DJJ3"])
-   notification = Notification(
-      id="conversion",
-      type=MetricType.DISPLAY,
-      timestamp=1621530726000,  # Epoch time in milliseconds
-      mbox=notification_mbox,
-      order=order
-   )
-   notification_request = DeliveryRequest(notifications=[notification])
+```python
+# ... Code removed for brevity
+
+# When a conversion happens
+notification_mbox = NotificationMbox(name="orderConfirm")
+order = Order(id="BR9389, total=98.93, purchased_product_ids=["J9393", "3DJJ3"])
+notification = Notification(
+   id="conversion",
+   type=MetricType.DISPLAY,
+   timestamp=1621530726000,  # Epoch time in milliseconds
+   mbox=notification_mbox,
+   order=order
+)
+notification_request = DeliveryRequest(notifications=[notification])
 
 
-   target_client.send_notifications({
-      "target_cookie": target_cookie,
-      "request" : notification_request
-   })
-   ```
+target_client.send_notifications({
+   "target_cookie": target_cookie,
+   "request" : notification_request
+})
+```
 
 ## Activate your A/B activity
 
 1. Click **Activate** (1) to activate your A/B activity.
 
-   <InlineAlert variant="info" slots="text"/>
+<InlineAlert variant="info" slots="text"/>
 
-   You must have the **Approver** or **Publisher** [user role](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) to perform this step.
-   
-   <!--- Insert image-activate.png --->
-   ![alt image](./asset-activate.png)
+You must have the **Approver** or **Publisher** [user role](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) to perform this step.
+
+<!--- Insert image-activate.png --->
+![alt image](./asset-activate.png)
