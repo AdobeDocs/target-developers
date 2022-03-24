@@ -115,8 +115,12 @@ def target_client_ready():
         print("Render alternate experience {}".format(feature_flags.get("flag")))
     else:
         print("Render default experience")
+```
+
 6. Implement additional tracking for events in your application
 Optionally, you may send additional events for tracking conversions using the send_notification() function.
+
+```
 # ... Code removed for brevity
 
 # When a conversion happens

@@ -14,11 +14,14 @@
 
 1. Enabling on-device decisioning ensures an A/B activity is executed at near-zero latency. To enable this feature, navigate to **Administration** > **Implementation** > **Account details** and enable the **On-Device Decisioning** toggle.
 
-*Insert image-ood4.png*
+<!--Insert image-ood4.png-->
+![alt image](./asset-getting-started-1.png)
 
-**NOTE:** You must have the Admin or Approver *user role* to enable or disable the On-Device Decisioning toggle.
+<InlineAlert variant="info" slots="text"/>
 
-After enabling the On-Device Decisioning toggle, Adobe Target begins generating *rule artifacts* for your client.
+You must have the **Admin** or **Approver** [user role](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) to enable or disable the **On-Device Decisioning** toggle.
+
+After enabling the **On-Device Decisioning** toggle, Adobe Target begins generating *rule artifacts* for your client.
 
 ## Install the SDK
 

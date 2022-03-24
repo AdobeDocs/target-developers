@@ -54,7 +54,8 @@ On-device decisioning is available for all Adobe Target customers who use Adobe 
 
 **NOTE**: You must have the Admin or Approver *user role* to enable or disable the On-Device Decisioning toggle.
 
-*Insert image-odd4.png*
+<~--Insert image-odd4.png-->
+![alt image](./asset-odd-toggle.png)
 
 After enabling the On-Device Decisioning toggle, Adobe Target will begin generating and propagating *rule artifacts* for your client.
 
