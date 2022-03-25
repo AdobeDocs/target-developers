@@ -116,6 +116,7 @@ module.exports = {
       {
         title: 'Target SDK Overview',
         path: '/sdk-guides/',
+        header: true,
         pages: [
           {
             title: 'Welcome',
@@ -132,8 +133,9 @@ module.exports = {
         ]
       },
       {
-        title: 'Core principles',
+        title: 'Adobe Target core principles',
         path: '/sdk-guides/core-principles/',
+        header: true,
         pages: [
           {
             title: 'Core principles',
@@ -160,9 +162,10 @@ module.exports = {
       {
         title: 'Integration with Experience Cloud',
         path: '/sdk-guides/integration-with-experience-cloud/',
+        header: true,
         pages: [
           {
-            title: 'Integration with Experience Cloud',
+            title: 'Integration Overview',
             path: '/sdk-guides/integration-with-experience-cloud/',
           },
           {
@@ -182,6 +185,7 @@ module.exports = {
       {
         title: 'On-Device Decisioning',
         path: '/sdk-guides/on-device-decisioning/',
+        header: true,
         pages: [
           {
             title: 'Introduction to On-Device Decisioning',
