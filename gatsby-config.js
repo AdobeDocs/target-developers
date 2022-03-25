@@ -133,12 +133,12 @@ module.exports = {
         ]
       },
       {
-        title: 'Adobe Target core principles',
+        title: 'Core Principles',
         path: '/sdk-guides/core-principles/',
         header: true,
         pages: [
           {
-            title: 'Core principles',
+            title: 'Adobe Target core principles',
             path: '/sdk-guides/core-principles/',
           },
           {
@@ -160,7 +160,7 @@ module.exports = {
         ]
       },
       {
-        title: 'Integration with Experience Cloud',
+        title: 'Integration',
         path: '/sdk-guides/integration-with-experience-cloud/',
         header: true,
         pages: [
