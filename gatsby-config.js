@@ -193,7 +193,7 @@ module.exports = {
           },
           {
             title: 'Rule artifact',
-            path: '/sdk-guides/on-device-decisioning/rule-artifact/'
+            path: '/sdk-guides/on-device-decisioning/rule-artifact-overview.md'
           },
           {
             title: 'Execute A/B tests with feature flags',
