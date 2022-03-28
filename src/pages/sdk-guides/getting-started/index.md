@@ -354,7 +354,7 @@ target_client.send_notifications({
 })
 ```
 
-## Activate your A/B activity
+## 7. Activate your A/B activity
 
 1. Click **Activate** (1) to activate your A/B activity.
 
