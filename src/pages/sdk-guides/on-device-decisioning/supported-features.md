@@ -2,13 +2,13 @@
 
 Adobe Target's server-side SDKs give developers the flexibility to choose between performance and freshness of data for decisions. In other words, if delivering the most relevant and engaging personalized content via machine learning is most important to you, a live server call should be made. But when performance is more critical, an on-device decision should be made. For on-device decisioning to work, please refer to the following list of supported features:
 
-* *Activity Types*
-* *Audience Targeting*
-* *Allocation Method*
+* Activity Types
+* Audience Targeting
+* Allocation Method
 
 ## Activity types
 
-The following table indicates which [activity types](https://docs.adobe.com/content/help/en/target/using/activities/target-activities-guide.html) created using the [Form-based Experience Composer](https://docs.adobe.com/help/en/target/using/experiences/form-experience-composer.html) are supported or not supported for on-device decisioning.
+The following table indicates which [activity types](https://experienceleague.adobe.com/docs/target/using/activities/target-activities-guide.html) created using the [Form-based Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?lang=en) are supported or not supported for on-device decisioning.
 
 |Activity Type|Supported|
 | --- | --- |
@@ -46,7 +46,7 @@ In order to maintain near-zero latency for on-device decisioning activities with
 
 **Node.js**
 
-```
+```csharp
 const CONFIG = {
     client: "acmeclient",
     organizationId: "1234567890@AdobeOrg",
@@ -75,7 +75,7 @@ targetClient.getOffers({
 
 **Java**
 
-```
+```java
 public class TargetRequestUtils {
 
     public static Context getContext(HttpServletRequest request) {
@@ -102,7 +102,7 @@ However, if you do not have the ability to perform IP-to-Geo lookups on your ser
 
 **Node.js**
 
-```
+```csharp
 const CONFIG = {
     client: "acmeclient",
     organizationId: "1234567890@AdobeOrg",
@@ -127,7 +127,7 @@ targetClient.getOffers({
 
 **Java**
 
-```
+```java
 public class TargetRequestUtils {
 
     public static Context getContext(HttpServletRequest request) {

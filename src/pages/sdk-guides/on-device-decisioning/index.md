@@ -6,7 +6,7 @@ The next-generation Adobe Target SDKs now offer on-device decisioning, which pro
 
 When you install and initialize an Adobe Target SDK with on-device decisioning enabled, a *rule artifact* is downloaded and cached locally on your server, from the Akamai CDN closest to your server. When a request to retrieve an Adobe Target experience is made within your server-side application, the decision regarding which content to return is made in-memory, based on the metadata encoded in the cached rule artifact, which defines all of your on-device decisioning A/B and XT activities.
 
-*Insert image-sdk-local-decisioning-architecture-diagram.png*
+![alt image](./asset-sdk-local-decisioning-architecture-diagram.png)
 
 ## What are the benefits?
 
@@ -19,7 +19,7 @@ When you install and initialize an Adobe Target SDK with on-device decisioning e
 
 ### Activities
 
-On-device decisioning supports the following activity types created by the [Form-based Experience Composer](https://docs.adobe.com/help/en/target/using/experiences/form-experience-composer.html):
+On-device decisioning supports the following activity types created by the [Form-based Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html):
 
 * A/B Test
 * Experience Targeting (XT)
@@ -52,14 +52,17 @@ On-device decisioning supports the following audience rules:
 
 On-device decisioning is available for all Adobe Target customers who use Adobe Target server-side SDKs. In order to enable this feature, navigate to **Administration** > **Implementation** > **Account details** in the Adobe Target UI, and enable the **On-Device Decisioning** toggle.
 
-**NOTE**: You must have the Admin or Approver *user role* to enable or disable the On-Device Decisioning toggle.
+<InlineAlert variant="info" slots="text"/>
 
-<~--Insert image-odd4.png-->
+You must have the Admin or Approver *user role* to enable or disable the On-Device Decisioning toggle.
+
 ![alt image](./asset-odd-toggle.png)
 
 After enabling the On-Device Decisioning toggle, Adobe Target will begin generating and propagating *rule artifacts* for your client.
 
-**NOTE**: Ensure you enable the toggle before you initialize the Adobe Target SDK to use on-device decisioning. The rule artifacts will first need to generate and propagate to the Akamai CDNs in order for on-device decisioning to work.
+<InlineAlert variant="info" slots="text"/>
+
+Ensure you enable the toggle before you initialize the Adobe Target SDK to use on-device decisioning. The rule artifacts will first need to generate and propagate to the Akamai CDNs in order for on-device decisioning to work.
 
 ### Include all existing on-device decisioning qualified activities in the artifact toggle
 
@@ -71,21 +74,23 @@ Leaving this toggle **off** means you will need to re-create and activate any on
 
 After you create an activity, a label called **Decisioning Method**, visible in the activity detail page, indicates whether the activity is on-device decisioning capable.
 
-*Insert image-odd9.png*
+![alt image](./asset-odd9.png)
 
 You can also see all activities that are on-device decisioning capable on the **Activities** page by adding the column **Decisioning Method** to the list of activities.
 
-*Insert image-odd7.png*
+![alt image](./asset-odd7.png)
 
-**NOTE**: After creating and activating an activity that is on-device decisioning capable, it may take up 5-10 minutes before it is included in the rules artifact that is generated and propagated to the Akamai CDN PoPs.
+<InlineAlert variant="info" slots="text"/>
+
+After creating and activating an activity that is on-device decisioning capable, it may take up 5-10 minutes before it is included in the rules artifact that is generated and propagated to the Akamai CDN PoPs.
 
 ## What is the summary of steps I need to follow to ensure my on-device decisioning activities are delivered successfully via Adobe Target's server-side SDK?
 
 1. Access the Adobe Target UI and navigate to **Administration** > **Implementation** > **Account details** to enable the **On-Device Decisioning** toggle.
 1. Enable the **Include all existing on-device decisioning qualified activities in the artifact** toggle.
-1. Create and activate an activity type that is *supported* by on-device decisioning, and verify that the **Decisioning Method** is **On-Device Decisioning** for that activity.
-1. Install and initialize the *Node.js* or *Java* SDK with `decisioningMethod = on-device`.
+1. Create and activate an activity type that is supported by on-device decisioning, and verify that the **Decisioning Method** is **On-Device Decisioning** for that activity.
+1. Install and initialize the [Node.js](../sdk/node-js/index.md) or [Java](../sdk/java/index.md) SDK with `decisioningMethod = on-device`.
 1. Implement `getOffers()` or `getAttributes()` in your code to retrieve an experience on-device.
 1. Deploy your code.
 
-For examples demonstrating how to get started with steps 1-3 above, see *Getting started (Node.js)*, or *Getting started (Java)*.
+For examples demonstrating how to get started with steps 1-3 above, see the [Getting started](../getting-started/index.md) section.
