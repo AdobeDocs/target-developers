@@ -18,7 +18,7 @@ When initializing the SDK, ensure that you enable logging.
 
 For Node.js SDK a `logger` object should be provided.
 
-```
+```js
 const CONFIG = {
   client: "<your client code>",
   organizationId: "<your organization ID>",
@@ -30,7 +30,7 @@ const CONFIG = {
 
 For Java SDK `logRequests` on the `ClientConfig` should be enabled.
 
-```
+```java
 ClientConfig config = ClientConfig.builder()
   .client("<your client code>")
   .organizationId("<your organization ID>")
@@ -40,7 +40,7 @@ ClientConfig config = ClientConfig.builder()
 
 Also the JVM should be started with the following command line parameter:
 
-```
+```java
 $ java -Dorg.slf4j.simpleLogger.defaultLogLevel=DEBUG ...
 ```
 
@@ -49,18 +49,18 @@ $ java -Dorg.slf4j.simpleLogger.defaultLogLevel=DEBUG ...
 Enabling traces will output additional information from Adobe Target in regards to the rules artifact.
 
 1. Navigate to the Target UI in Experience Cloud.
+  
+   ![alt image](./asset-target-ui-1.png)
 
-   *Insert image-target-ui-1.png*
-
-1 Navigate to **Administration** > **Implementation** and click **Generate New Authorization Token**.
-
-   *Insert image-target-ui-2.png*
+1. Navigate to **Administration** > **Implementation** and click **Generate New Authorization Token**.
+  
+   ![alt image](./asset-target-ui-2.png)
 
 1. Copy the newly generated authorization token to the clipboard and add it to your Target request:
 
 **Node.js**
 
-```
+```js
 const request = {
   trace: {
     authorizationToken: "88f1a924-6bc5-4836-8560-2f9c86aeb36b"
@@ -71,9 +71,10 @@ const request = {
     }]
 }};
 ```
+
 **Java SDK**
 
-```
+```java
 Trace trace = new Trace()
   .authorizationToken("88f1a924-6bc5-4836-8560-2f9c86aeb36b");
 Context context = new Context()
@@ -95,7 +96,7 @@ TargetDeliveryRequest request = TargetDeliveryRequest.builder()
 
 **Node.js SDK**
 
-```
+```js
   AT: LD.ArtifactProvider fetching artifact - https://assets.adobetarget.com/your-client-code/production/v1/rules.json
   AT: LD.ArtifactProvider artifact received - status=200
 ```
@@ -127,19 +128,19 @@ TBD
 
 1. Navigate to the Target UI in Experience Cloud
 
-  *Insert image-target-ui-1.png*
+    ![alt image](./asset-target-ui-1.png)
 
 1. Create a new XT activity using the Form-based Experience Composer.
 
-   *Insert image-form-base-composer-ui.png*
+    ![alt image](./asset-form-base-composer-ui.png)
 
 1. Input the mbox name used in your Target request as the location for the XT activity (note this should be a unique mbox name specifically for development purposes).
 
-   *Insert image-mbox-location-ui.png*
+    ![alt image](./asset-mbox-location-ui.png)
 
 1. Change the content to either an HTML offer or JSON offer. This will be returned in the Target request to your application. Leave targeting for the activity as 'All Visitors' and select any metric you would like. Name the activity, save it, and then activate it to ensure the mbox/location in use is only for development.
 
-   *Insert image-target-content-ui.png*
+   ![alt image](./asset-target-content-ui.png)
 
 1. In your application, add a log statements for the content received in the response from your Target request
 
@@ -191,7 +192,9 @@ Response:  <div>test</div>
 
 ## Common Troubleshooting Scenarios
 
-**NOTE**: Please be sure to review *supported features* for on-device decisioning when running into issues.
+<InlineAlert variant="info" slots="text"/>
+
+Please be sure to review [supported features](supported-features.md) for on-device decisioning when running into issues.
 
 ### On-device decisioning activities not executing due to unsupported audience or activity
 
@@ -234,7 +237,7 @@ Finally, navigate to the Target UI and locate the activity in question: [experie
 
 Review the rules used in the audience and ensure you only use those aforementioned that are supported. Additionally, ensure that the activity type is either A/B or XT.
 
-*Insert image-target-audience-ui.png*
+![alt image](./asset-target-audience-ui.png)
 
 ### On-device decisioning activities not executing due to unqualified audience
 
@@ -244,7 +247,7 @@ If an on-device decisioning activity is not executing, but you have verified tha
 
 **rules.json**
 
-```
+```json
  ...
  rules: {
    mboxes: {
@@ -257,7 +260,7 @@ If an on-device decisioning activity is not executing, but you have verified tha
 
  **Node.js SDK**
 
- ```
+ ```js
  const request = {
    trace: {
      authorizationToken: '2dfc1dce-1e58-4e05-bbd6-a6725893d4d6'
@@ -272,7 +275,7 @@ If an on-device decisioning activity is not executing, but you have verified tha
 
 **Java SDK**
 
-```
+```java
 Context context = new Context()
   .channel(ChannelType.WEB);
 MboxRequest mbox = new MboxRequest()
@@ -423,6 +426,7 @@ Look at the `artifactLastRetrieved` date of the artifact and ensure that you hav
 (4) Review the `campaignId` to ensure the activity or activities you are expecting to execute are evaluated. The `campaignId` will match the activity ID on the activity overview tab in the Target UI:
 
 *Insert image-activity-id-target-ui.png*
+![alt image](./asset-activity-id-target-ui.png)
 
 (5) Review the `matchedRuleConditions` and `unmatchedRuleConditions` to identify issues with qualifying for the audience rules for a given activity.
 
