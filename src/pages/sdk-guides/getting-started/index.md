@@ -1,6 +1,6 @@
 # Getting Started with Target SDKs
 
-In order to get up and running, we encourage you to create your first [on-device decisioning](../../sdk-guides/on-device-decisioning/index.md) feature flag activity in the language of your choice:
+In order to get up and running, we encourage you to create your first [on-device decisioning](../on-device-decisioning/index.md) feature flag activity in the language of your choice:
 
 * Node.js
 * Java
