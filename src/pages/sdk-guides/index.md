@@ -20,4 +20,4 @@ See the [Getting Started](../sdk-guides/getting-started/) page to learn how to r
 
 See the [SDK References](/sdk/) to familiarize yourself with each API method.
 
-Check out our [Sample Apps](../sample-apps/) to have fun and play around!
+Check out our [Sample Apps](../sdk-guides/sample-apps/) to have fun and play around!

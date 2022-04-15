@@ -238,148 +238,172 @@ module.exports = {
         ]
       },
       {
-        title: 'Node.js SDK Overview',
-        path: '/sdk/node-js/'
+        title: 'Node.js SDK',
+        path: '/sdk/node-js/',
+        pages: [
+          {
+            title: 'Overview',
+            path: '/sdk/node-js/',
+          },
+          {
+            title: 'Install SDK',
+            path: '/sdk/node-js/install-sdk.md'
+          },
+          {
+            title: 'Initialize SDK',
+            path: '/sdk/node-js/initialize-sdk.md'
+          },
+          {
+            title: 'Get Offers',
+            path: '/sdk/node-js/get-offers.md'
+          },
+          {
+            title: 'Get Attributes',
+            path: '/sdk/node-js/get-attributes.md'
+          },
+          {
+            title: 'Send Notifications',
+            path: '/sdk/node-js/send-notifications.md'
+          },
+          {
+            title: 'SDK Events',
+            path: '/sdk/node-js/sdk-events.md'
+          },
+          {
+            title: 'Logger',
+            path: '/sdk/node-js/logger.md'
+          }
+        ]
       },
       {
-        title: 'Install SDK',
-         path: '/sdk/node-js/install-sdk.md'
-       },
-      {
-        title: 'Initialize SDK',
-        path: '/sdk/node-js/initialize-sdk.md'
+        title: 'Java SDK',
+        path: '/sdk/java/',
+        pages: [
+          {
+            title: 'Overview',
+            path: '/sdk/java/'
+          },
+          {
+            title: 'Install SDK',
+            path: '/sdk/java/install-sdk.md'
+          },
+          {
+            title: 'Initialize SDK',
+            path: '/sdk/java/initialize-sdk.md'
+          },
+          {
+            title: 'Get Offers',
+            path: '/sdk/java/get-offers.md'
+          },
+          {
+            title: 'Get Attributes',
+            path: '/sdk/java/get-attributes.md'
+          },
+          {
+            title: 'Send Notifications',
+            path: '/sdk/java/send-notifications.md'
+          },
+          {
+            title: 'SDK Events',
+            path: '/sdk/java/sdk-events.md'
+          },
+          {
+            title: 'Logger',
+            path: '/sdk/java/logger.md'
+          },
+          {
+            title: 'Asynchronous Requests',
+            path: '/sdk/java/asynchronous-requests.md'
+          },
+          {
+            title: 'Proxy Configuration',
+            path: '/sdk/java/proxy-configuration.md'
+          },
+          {
+            title: 'Utility Methods',
+            path: '/sdk/java/utility-methods.md'
+          }
+        ]
       },
       {
-        title: 'Get Offers',
-        path: '/sdk/node-js/get-offers.md'
+        title: '.NET SDK',
+        path: '/sdk/net/',
+        pages: [
+          {
+            title: 'Overview',
+            path: '/sdk/net/'
+          },
+          {
+            title: 'Install SDK',
+            path: '/sdk/net/install-sdk.md'
+          },
+          {
+            title: 'Initialize SDK',
+            path: '/sdk/net/initialize-sdk.md'
+          },
+          {
+            title: 'Get Offers',
+            path: '/sdk/net/get-offers.md'
+          },
+          {
+            title: 'Get Attributes',
+            path: '/sdk/net/get-attributes.md'
+          },
+          {
+            title: 'Send Notifications',
+            path: '/sdk/net/send-notifications.md'
+          },
+          {
+            title: 'SDK Events',
+            path: '/sdk/net/sdk-events.md'
+          },
+          {
+            title: 'Asynchronous Requests',
+            path: '/sdk/net/asynchronous-requests.md'
+          },
+        ]
       },
       {
-        title: 'Get Attributes',
-        path: '/sdk/node-js/get-attributes.md'
-      },
-      {
-        title: 'Send Notifications',
-        path: '/sdk/node-js/send-notifications.md'
-      },
-      {
-        title: 'SDK Events',
-        path: '/sdk/node-js/sdk-events.md'
-      },
-      {
-        title: 'Logger',
-        path: '/sdk/node-js/logger.md'
-      },
-      {
-        title: 'Java SDK Overview',
-        path: '/sdk/java/'
-      },
-      {
-        title: 'Install SDK',
-         path: '/sdk/java/install-sdk.md'
-       },
-      {
-        title: 'Initialize SDK',
-        path: '/sdk/java/initialize-sdk.md'
-      },
-      {
-        title: 'Get Offers',
-        path: '/sdk/java/get-offers.md'
-      },
-      {
-        title: 'Get Attributes',
-        path: '/sdk/java/get-attributes.md'
-      },
-      {
-        title: 'Send Notifications',
-        path: '/sdk/java/send-notifications.md'
-      },
-      {
-        title: 'SDK Events',
-        path: '/sdk/java/sdk-events.md'
-      },
-      {
-        title: 'Logger',
-        path: '/sdk/java/logger.md'
-      },
-      {
-        title: 'Asynchronous Requests',
-        path: '/sdk/java/asynchronous-requests.md'
-      },
-      {
-        title: 'Proxy Configuration',
-        path: '/sdk/java/proxy-configuration.md'
-      },
-      {
-        title: 'Utility Methods',
-        path: '/sdk/java/utility-methods.md'
-      },
-      {
-        title: '.NET SDK Overview',
-        path: '/sdk/net/'
-      },
-      {
-        title: 'Install SDK',
-         path: '/sdk/net/install-sdk.md'
-       },
-      {
-        title: 'Initialize SDK',
-        path: '/sdk/net/initialize-sdk.md'
-      },
-      {
-        title: 'Get Offers',
-        path: '/sdk/net/get-offers.md'
-      },
-      {
-        title: 'Get Attributes',
-        path: '/sdk/net/get-attributes.md'
-      },
-      {
-        title: 'Send Notifications',
-        path: '/sdk/net/send-notifications.md'
-      },
-      {
-        title: 'SDK Events',
-        path: '/sdk/net/sdk-events.md'
-      },
-      {
-        title: 'Asynchronous Requests',
-        path: '/sdk/net/asynchronous-requests.md'
-      },
-      {
-        title: 'Python SDK Overview',
-        path: '/sdk/python/'
-      },
-      {
-        title: 'Install SDK',
-         path: '/sdk/python/install-sdk.md'
-       },
-      {
-        title: 'Initialize SDK',
-        path: '/sdk/python/initialize-sdk.md'
-      },
-      {
-        title: 'Get Offers',
-        path: '/sdk/python/get-offers.md'
-      },
-      {
-        title: 'Get Attributes',
-        path: '/sdk/python/get-attributes.md'
-      },
-      {
-        title: 'Send Notifications',
-        path: '/sdk/python/send-notifications.md'
-      },
-      {
-        title: 'SDK Events',
-        path: '/sdk/python/sdk-events.md'
-      },
-      {
-        title: 'Asynchronous Requests',
-        path: '/sdk/python/asynchronous-requests.md'
-      },
-      {
-        title: 'Logger',
-        path: '/sdk/python/logger.md'
+        title: 'Python SDK',
+        path: '/sdk/python/',
+        pages: [
+          {
+            title: 'Overview',
+            path: '/sdk/python/'
+          },
+          {
+            title: 'Install SDK',
+             path: '/sdk/python/install-sdk.md'
+           },
+          {
+            title: 'Initialize SDK',
+            path: '/sdk/python/initialize-sdk.md'
+          },
+          {
+            title: 'Get Offers',
+            path: '/sdk/python/get-offers.md'
+          },
+          {
+            title: 'Get Attributes',
+            path: '/sdk/python/get-attributes.md'
+          },
+          {
+            title: 'Send Notifications',
+            path: '/sdk/python/send-notifications.md'
+          },
+          {
+            title: 'SDK Events',
+            path: '/sdk/python/sdk-events.md'
+          },
+          {
+            title: 'Asynchronous Requests',
+            path: '/sdk/python/asynchronous-requests.md'
+          },
+          {
+            title: 'Logger',
+            path: '/sdk/python/logger.md'
+          },
+        ]
       },
       {
         title: 'Overview',
