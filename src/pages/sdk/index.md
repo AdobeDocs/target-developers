@@ -2,7 +2,7 @@
 
 Target SDK References:
 
-* [Node.js](../node-js/)
-* [Java](../java/)
-* [.NET](../net/)
-* [Python](../python/)
+* [Node.js](../sdk/node-js/)
+* [Java](../sdk/java/)
+* [.NET](../sdk/net/)
+* [Python](../sdk/python/)

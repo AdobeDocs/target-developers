@@ -233,6 +233,10 @@ module.exports = {
         ]
       },
       {
+        title: 'Adobe Target SDK Overview',
+        path: '/sdk/'
+      },
+      {
         title: 'Node.js SDK Overview',
         path: '/sdk/node-js/'
       },

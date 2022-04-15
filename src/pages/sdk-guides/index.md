@@ -16,7 +16,7 @@ Through Adobe Target's server-side SDKs, you can:
 * Deliver **Machine Learning (ML) driven personalized experiences** to a user, no matter which channel or device the user has engaged with your business.
 * **Seamlessly integrate with Adobe Experience Cloud** products such as **Adobe Analytics**, **Adobe Audience Manager**, and the **Experience Cloud ID Service** from the server side.
 
-See the [Getting Started](/getting-started/) page to learn how to run a simple feature flagging use case via [on-device decisioning](/on-device-decisioning/).
+See the [Getting Started](../sdk-guides/getting-started/) page to learn how to run a simple feature flagging use case via [on-device decisioning](../sdk-guides/on-device-decisioning/).
 
 See the [SDK References](/sdk/) to familiarize yourself with each API method.
 
