@@ -93,7 +93,7 @@ How to use the Target Python SDK.
 
 <DiscoverBlock slots="link, text"/> 
 
-[AEP Web SDK]([sdk/python/](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html)) 
+[AEP Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html)
 
 How to implement Experience Cloud applications, including Adobe Target, with Adobe Experience Platform Web SDK.
 
