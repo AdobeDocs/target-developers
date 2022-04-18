@@ -48,11 +48,6 @@ module.exports = {
         title: 'SDK Reference',
         menu: [
           {
-            title: 'SDK Overview',
-            description: 'Adobe Target SDK Overview',
-            path: '/sdk/'
-          },
-          {
           title: 'Node.js SDK',
           description: 'Adobe Target Node.js SDK',
           path: '/sdk/node-js/'
@@ -236,6 +231,10 @@ module.exports = {
             path: '/sdk-guides/best-practices/'
           },
         ]
+      },
+      {
+        title: 'SDK Overview'
+        path: '/sdk/'
       },
       {
         title: 'Node.js SDK',
