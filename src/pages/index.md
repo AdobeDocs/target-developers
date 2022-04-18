@@ -73,23 +73,35 @@ Get started with Adobe Target SDKs, including On-Device Decisioning.
 
 How to use the Target Node.js SDK.
 
-<DiscoverBlock slots="heading, link, text"/> 
+<DiscoverBlock slots="link, text"/> 
 
 [Java SDK](sdk/java/)
 
 How to use the Target Java SDK.
 
-<DiscoverBlock slots="heading, link, text"/> 
+<DiscoverBlock slots="link, text"/> 
 
 [.NET SDK](sdk/net/)
 
 How to use the Target .NET SDK.
 
-<DiscoverBlock slots="heading, link, text"/> 
+<DiscoverBlock slots="link, text"/> 
 
 [Python SDK](sdk/python/)
 
 How to use the Target Python SDK.
+
+<DiscoverBlock slots="link, text"/> 
+
+[AEP Web SDK]([sdk/python/](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html)) 
+
+How to implement Experience Cloud applications, including Adobe Target, with Adobe Experience Platform Web SDK.
+
+<DiscoverBlock slots="link, text"/>
+
+[Mobile SDK](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-target)
+
+How to configure Adobe Target with Adobe Experience Platform Mobile SDKs.
 
 <DiscoverBlock width="100%" slots="heading, link, text"/>
 

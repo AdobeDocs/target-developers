@@ -233,10 +233,6 @@ module.exports = {
         ]
       },
       {
-        title: 'SDK Overview',
-        path: '/sdk/'
-      },
-      {
         title: 'Node.js SDK',
         path: '/sdk/node-js/',
         pages: [
