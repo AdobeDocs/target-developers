@@ -233,7 +233,7 @@ module.exports = {
         ]
       },
       {
-        title: 'SDK Overview'
+        title: 'SDK Overview',
         path: '/sdk/'
       },
       {
