@@ -7,9 +7,9 @@ contributors:
 
 <Hero slots="heading, text"/> 
 
-# Adobe Target APIs and SDKs
+# Adobe Target Developer Guide
 
-API and SDK Resources and Guides for Adobe Target Developers
+Resources and Guides for Adobe Target Developers
 [//]: # (Adobe Target APIs and SDKs offer limitless ways to integrate your most important customer data into key business processes.)
 
 <Resources slots="heading, links"/>
@@ -25,49 +25,43 @@ API and SDK Resources and Guides for Adobe Target Developers
 
 ## Description
 
-This documentation provides instructions for Adobe Target APIs and SDKs.
+This portal provides resources and guides for Adobe Target Developers, including API and SDK documentation to [implement](#implementation-guides) Target, as well as links to guides to [administer](#administration-guides) Target.
 
-## Discover 
+## Implementation Guides
 
 <DiscoverBlock width="100%" slots="heading, link, text"/>
 
-### API Guides
+### Client-Side SDKs
 
-[Getting Started with Target APIs](api-guides/)
-    
-Get started with Adobe Target APIs, including configuration requirements.
+[AEP Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html)
+
+Implement Target using the AEP Web SDK
+
+<DiscoverBlock slots="link, text"/>
+
+[Target Web SDK](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/implement-target-for-client-side-web.html)
+
+Implement Target using at.js
+
 
 <DiscoverBlock slots="heading, link, text"/> 
 
-### API References
+### Mobile Apps
 
-[Admin and Profile API](api/admin-api/) 
+[AEP Mobile SDK](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-target)
 
-Use Adobe Target’s Admin and Profile APIs to manage activities, audiences, offers, properties, reports, mboxes, environments, and profiles.
+Implement Adobe Target with Adobe Experience Platform Mobile SDKs.
 
-<DiscoverBlock slots="link, text"/>
 
-[Delivery API](api/delivery-api/)
+<DiscoverBlock slots="heading, link, text"/> 
 
-Use Adobe Target's Delivery APIs to deliver experiences across web and mobile channels as well as non-browser based IoT devices such as a connected TV, kiosk, or in-store digital screen.
+### Server-Side Implementation
 
-<DiscoverBlock slots="link, text"/>
-
-[Migrating from at.js to AEP Web SDK](api-guides/migrating/)
-
-For help migrating from at.js to AEP Web SDK.
-
-<DiscoverBlock slots="heading, link, text"/>
-
-### SDK Guides
-
-[Getting Started with Target SDKs](sdk-guides/)
+[Target SDK Overview](sdk-guides/)
 
 Get started with Adobe Target SDKs, including On-Device Decisioning.
 
-<DiscoverBlock slots="heading, link, text"/> 
-
-### SDK References
+<DiscoverBlock slots="link, text"/> 
 
 [Node.js SDK](sdk/node-js/)
 
@@ -91,19 +85,75 @@ How to use the Target .NET SDK.
 
 How to use the Target Python SDK.
 
-<DiscoverBlock slots="link, text"/> 
 
-[AEP Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html)
+<DiscoverBlock slots="heading, link, text"/> 
 
-How to implement Experience Cloud applications, including Adobe Target, with Adobe Experience Platform Web SDK.
+### Hybrid Implementation
+
+[Hybrid Deployment](https://experienceleague.adobe.com/docs/target/using/implement-target/hybrid-implementation.html)
+
+Implement Target using a combination of client- and server-side implementation.
+
+
+<DiscoverBlock slots="heading, link, text"/>
+
+### APIs
+
+[Getting Started](api-guides/)
+    
+Get started with Adobe Target APIs, including configuration requirements.
 
 <DiscoverBlock slots="link, text"/>
 
-[Mobile SDK](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-target)
+[Delivery API](api/delivery-api/)
 
-How to configure Adobe Target with Adobe Experience Platform Mobile SDKs.
+Use Adobe Target's Delivery APIs to deliver experiences across web and mobile channels as well as non-browser based IoT devices such as a connected TV, kiosk, or in-store digital screen.
+
 
 <DiscoverBlock width="100%" slots="heading, link, text"/>
+
+### Migration
+
+[Migrating from at.js to AEP Web SDK](api-guides/migrating/)
+
+For help migrating from at.js to AEP Web SDK.
+
+
+
+## Administration Guides
+
+<DiscoverBlock slots="heading, link, text"/>
+
+### Admin APIs
+
+[Admin and Profile API](api/admin-api/) 
+
+Use Adobe Target’s Admin and Profile APIs to manage activities, audiences, offers, properties, reports, mboxes, environments, and profiles.
+
+<DiscoverBlock slots="link, text"/> 
+
+[Reporting API](http://developers.adobetarget.com/api/#reports) 
+
+Retrieve A/B activity report data.
+
+<DiscoverBlock slots="link, text"/> 
+
+[Recommendations API](http://developers.adobetarget.com/api/recommendations/) 
+
+Use the Recommendations API.
+
+<DiscoverBlock slots="link, text"/> 
+
+[Recommendations API tutorial](api-guides/recs-api/)
+
+Practice using the Recommendations API in this hands-on tutorial.
+
+<DiscoverBlock slots="link, text"/> 
+
+[Admin Console](https://experienceleague.adobe.com/docs/target/using/administer/administrating-target.html) 
+
+Administer Adobe Target using the Target UI.
+
 
 ## Contributing 
 
