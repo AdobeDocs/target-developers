@@ -30,9 +30,7 @@ This portal provides resources and guides for Adobe Target Developers, including
 ## Implementation Guides
 
 
-<DiscoverBlock slots="image, heading, link, text"/>
-
-![Server-Side SDKs](asset-serverside.png)
+<DiscoverBlock slots="heading, link, text"/>
 
 ### Server-Side Implementation
 
@@ -46,7 +44,7 @@ Get started with Adobe Target SDKs, including On-Device Decisioning.
 
 How to use the Target Node.js SDK.
 
-<DiscoverBlock slots="link, text"/> 
+<DiscoverBlock slots= "link, text"/> 
 
 [Java SDK](sdk/java/)
 
@@ -65,9 +63,7 @@ How to use the Target .NET SDK.
 How to use the Target Python SDK.
 
 
-<DiscoverBlock slots="image, heading, link, text"/>
-
-![Client-side SDKs](asset-clientside.png)
+<DiscoverBlock slots="heading, link, text"/>
 
 ### Client-Side SDKs
 
@@ -82,9 +78,7 @@ Implement Target using the AEP Web SDK.
 Implement Target using at.js.
 
 
-<DiscoverBlock slots="image, heading, link, text"/>
-
-![Hybrid](asset-hybrid.png)
+<DiscoverBlock slots= "heading, link, text"/>
 
 ### Hybrid Implementation
 
@@ -93,9 +87,7 @@ Implement Target using at.js.
 Implement Target using a combination of client- and server-side implementation.
 
 
-<DiscoverBlock slots="image, heading, link, text"/>
-
-![Mobile](asset-mobile.png)
+<DiscoverBlock slots="heading, link, text"/>
 
 ### Mobile Apps
 
@@ -104,9 +96,7 @@ Implement Target using a combination of client- and server-side implementation.
 Implement Adobe Target with Adobe Experience Platform Mobile SDKs.
 
 
-<DiscoverBlock slots="image, heading, link, text"/>
-
-![Delivery APIs](asset-deliveryapis.png)
+<DiscoverBlock slots="heading, link, text"/>
 
 ### APIs
 
@@ -125,9 +115,7 @@ Use Adobe Target's Delivery APIs to deliver experiences across web and mobile ch
 
 ## Administration Guides
 
-<DiscoverBlock slots="image, heading, link, text"/>
-
-![Admin APIs](asset-adminapis.png)
+<DiscoverBlock slots="heading, link, text"/>
 
 ### Admin APIs
 
