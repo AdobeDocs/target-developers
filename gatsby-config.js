@@ -14,7 +14,7 @@ module.exports = {
   siteMetadata: {
     home: {
       title: 'Adobe Target Developer Guide',
-      path: '/'
+      path: '/target/'
     },
     pages: [
       {
