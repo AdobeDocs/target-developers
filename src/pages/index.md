@@ -29,29 +29,6 @@ This portal provides resources and guides for Adobe Target Developers, including
 
 ## Implementation Guides
 
-<DiscoverBlock width="100%" slots="heading, link, text"/>
-
-### Client-Side SDKs
-
-[AEP Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html)
-
-Implement Target using the AEP Web SDK
-
-<DiscoverBlock slots="link, text"/>
-
-[Target Web SDK](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/implement-target-for-client-side-web.html)
-
-Implement Target using at.js
-
-
-<DiscoverBlock slots="heading, link, text"/> 
-
-### Mobile Apps
-
-[AEP Mobile SDK](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-target)
-
-Implement Adobe Target with Adobe Experience Platform Mobile SDKs.
-
 
 <DiscoverBlock slots="heading, link, text"/> 
 
@@ -86,6 +63,21 @@ How to use the Target .NET SDK.
 How to use the Target Python SDK.
 
 
+<DiscoverBlock slots="heading, link, text"/>
+
+### Client-Side SDKs
+
+[AEP Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html)
+
+Implement Target using the AEP Web SDK.
+
+<DiscoverBlock slots="link, text"/>
+
+[Target Web SDK](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/implement-target-for-client-side-web.html)
+
+Implement Target using at.js.
+
+
 <DiscoverBlock slots="heading, link, text"/> 
 
 ### Hybrid Implementation
@@ -93,6 +85,24 @@ How to use the Target Python SDK.
 [Hybrid Deployment](https://experienceleague.adobe.com/docs/target/using/implement-target/hybrid-implementation.html)
 
 Implement Target using a combination of client- and server-side implementation.
+
+
+<DiscoverBlock slots="heading, link, text"/> 
+
+### Mobile Apps
+
+[AEP Mobile SDK](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-target)
+
+Implement Adobe Target with Adobe Experience Platform Mobile SDKs.
+
+
+<DiscoverBlock width="100%" slots="heading, link, text"/>
+
+### Migration
+
+[Migrating from at.js to AEP Web SDK](api-guides/migrating/)
+
+For help migrating from at.js to AEP Web SDK.
 
 
 <DiscoverBlock slots="heading, link, text"/>
@@ -109,14 +119,6 @@ Get started with Adobe Target APIs, including configuration requirements.
 
 Use Adobe Target's Delivery APIs to deliver experiences across web and mobile channels as well as non-browser based IoT devices such as a connected TV, kiosk, or in-store digital screen.
 
-
-<DiscoverBlock width="100%" slots="heading, link, text"/>
-
-### Migration
-
-[Migrating from at.js to AEP Web SDK](api-guides/migrating/)
-
-For help migrating from at.js to AEP Web SDK.
 
 
 

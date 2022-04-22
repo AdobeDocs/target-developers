@@ -13,14 +13,10 @@
 module.exports = {
   siteMetadata: {
     home: {
-      title: 'Adobe Target Documentation',
-      path: 'https://experienceleague.adobe.com/docs/target.html'
+      title: 'Adobe Target Developer Guide',
+      path: '/'
     },
     pages: [
-      {
-        title: 'Adobe Target',
-        path: '/'
-      },
       {
         title: 'API Guides',
         path: '/api-guides/'
