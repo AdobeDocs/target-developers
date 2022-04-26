@@ -27,7 +27,7 @@ Content delivery has been tested across the following browsers and devices:
 
 | Device Type | Browser Version |
 |--- |--- |
-|Windows|<ul><li>Microsoft Internet Explorer 9 and 10. Tested in emulation mode.<br>**Note**: Content delivery on IE 9 is no longer supported with at.js 1.3.0 (and later). Content delivery on IE 10, 11, and all older versions is no longer supported with at.js 2.5.0 (and later).</li><li>Internet Explorer 11<br />**Note**: Content delivery on IE 10, 11, and all older versions is no longer supported with at.js 2.5.0 (and later).</li><li>Microsoft Edge</li><li>Chrome (latest, latest minus 1)</li><li>Firefox (latest, latest minus 1)</li></ul>|
+|Windows|<ul><li>Microsoft Internet Explorer 9 and 10. Tested in emulation mode.<br />**Note**: Content delivery on IE 9 is no longer supported with at.js 1.3.0 (and later). Content delivery on IE 10, 11, and all older versions is no longer supported with at.js 2.5.0 (and later).</li><li>Internet Explorer 11<br />**Note**: Content delivery on IE 10, 11, and all older versions is no longer supported with at.js 2.5.0 (and later).</li><li>Microsoft Edge</li><li>Chrome (latest, latest minus 1)</li><li>Firefox (latest, latest minus 1)</li></ul>|
 |Mac|<ul><li>Apple Safari (Latest)<br />**Note**: For more information about how Safari handles first- and third-party cookies, see [Target Cookie](/help/c-implementing-target/c-implementing-target-for-client-side-web/t-mbox-download/cookie-behavior.md).</li><li>Firefox (latest, latest minus 1)</li><li>Chrome (latest, latest minus 1)</li></ul>|
 |Mobile/Tablet|<ul><li>Apple iOS (latest)</li><li>Android devices and tablets (Android 4 and later)</li><li>Microsoft Surface (Windows 8.1)</li></ul>|
 
