@@ -29,6 +29,32 @@ This portal provides resources and guides for Adobe Target Developers, including
 
 ## Implementation Guides
 
+<DiscoverBlock slots="heading, link, text"/>
+
+### Before you implement
+
+[Before you implement](before-implement/)
+
+Considerations before you implement Adobe Target.
+
+
+
+
+<DiscoverBlock slots="heading, link, text"/>
+
+### Client-Side SDKs
+
+[AEP Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html)
+
+Implement Target using the AEP Web SDK.
+
+<DiscoverBlock slots="link, text"/>
+
+[Target Web SDK](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/implement-target-for-client-side-web.html)
+
+Implement Target using at.js.
+
+
 
 <DiscoverBlock slots="heading, link, text"/>
 
@@ -63,19 +89,7 @@ How to use the Target .NET SDK.
 How to use the Target Python SDK.
 
 
-<DiscoverBlock slots="heading, link, text"/>
 
-### Client-Side SDKs
-
-[AEP Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html)
-
-Implement Target using the AEP Web SDK.
-
-<DiscoverBlock slots="link, text"/>
-
-[Target Web SDK](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/implement-target-for-client-side-web.html)
-
-Implement Target using at.js.
 
 
 <DiscoverBlock slots= "heading, link, text"/>

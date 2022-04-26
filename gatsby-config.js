@@ -18,6 +18,10 @@ module.exports = {
     },
     pages: [
       {
+        title: 'Before You Implement',
+        path: '/before-implement/'
+      },
+      {
         title: 'API Guides',
         path: '/api-guides/'
       },
@@ -68,7 +72,7 @@ module.exports = {
           description: 'Adobe Target Python SDK',
           path: '/sdk/python/'
           }
-      ]
+        ]
       },
       {
         title: 'Support',
@@ -76,6 +80,116 @@ module.exports = {
       }
     ],
     subPages: [
+      {
+        title: 'Before You Implement',
+        path: '/before-implement/',
+        pages: [
+          {
+            title: 'Before you implement',
+            path: '/before-implement/'
+          },
+          {
+            title: 'Prepare to implement',
+            path: '/before-implement/prepare-to-implement-target.md'
+          }
+        ]
+      },
+      {
+        title: 'Privacy and security',
+        path: '/before-implement/privacy/',
+        pages: [
+          {
+            title: 'Privacy overview',
+            path: '/before-implement/privacy/privacy.md'
+          },
+          {
+            title: 'Privacy and data protection regulations',
+            path: '/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.md'
+          },
+          {
+            title: 'Target cookies',
+            path: '/before-implement/privacy/cookie-behavior.md'
+          },
+          {
+            title: 'Delete the Target cookie',
+            path: '/before-implement/privacy/cookie-deleting.md'
+          },
+          {
+            title: 'Google Chrome SameSite cookie policies',
+            path: '/before-implement/privacy/google-chrome-samesite-cookie-policies.md'
+          },
+          {
+            title: 'Apple Intelligent Tracking Prevention (ITP) 2.x',
+            path: '/before-implement/privacy/apple-itp-2x.md'
+          },
+          {
+            title: 'Content Security Policy (CSP) directives',
+            path: '/before-implement/privacy/content-security-policy.md'
+          },
+          {
+            title: 'Allowlist Target edge nodes',
+            path: '/before-implement/privacy/allowlist-edges.md'
+          }
+        ]
+      },
+      {
+        title: 'Methods to get data into Target',
+        path: '/before-implement/methods-to-get-data-into-target/',
+        pages: [
+          {
+            title: 'Methods overview',
+            path: '/before-implement/methods-to-get-data-into-target.md'
+          },
+          {
+            title: 'Page parameters',
+            path: '/before-implement/page-parameters.md'
+          },
+          {
+            title: 'In-page profile attributes',
+            path: '/before-implement/in-page-profile-attributes.md'
+          },
+          {
+            title: 'Script profile attributes',
+            path: '/before-implement/script-profile-attributes.md'
+          },
+          {
+            title: 'Data providers',
+            path: '/before-implement/data-providers.md'
+          },
+          {
+            title: 'Bulk profile update API',
+            path: '/before-implement/bulk-profile-update-api.md'
+          },
+          {
+            title: 'Single profile update API',
+            path: '/before-implement/single-profile-update-api.md'
+          },
+          {
+            title: 'Customer attributes',
+            path: '/before-implement/customer-attributes.md'
+          },
+          {
+            title: 'Profile API settings',
+            path: '/before-implement/profile-api-settings.md'
+          }
+        ]
+      },
+      {
+        title: 'Target security overview',
+        path: '/before-implement/target-security-overview.md'
+      },
+      {
+        title: 'Supported browsers',
+        path: '/before-implement/supported-browsers.md'
+      },
+      {
+        title: 'Transport Layer Security (TLS) encryption changes',
+        path: '/before-implement/tls-transport-layer-security-encryption.md'
+      },
+      {
+        title: 'CNAME and Adobe Target',
+        path: '/before-implement/implement-cname-support-in-target.md'
+      },
       {
         title: 'Get Started',
         path: '/api-guides/',
