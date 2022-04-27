@@ -17,7 +17,7 @@ This function was introduced with at.js 2.x. This function is not available for 
 |Key|Type|Required?|Description|
 | --- | --- | --- | --- |
 |selector|String|No|HTML element or CSS selector used to identify the HTML element where Target should place the offer content. If a selector is not provided, Target assumes that the HTML element to use is HTML HEAD.|
-|Response|Object|Yes|Response object from `getOffers()`.<br>See Requests table below.|
+|Response|Object|Yes|Response object from `getOffers()`.<br />See Requests table below.|
 
 ## Response
 
@@ -32,7 +32,7 @@ Consult the [Delivery API documentation](https://developers.adobetarget.com/api/
 |response > prefetch > views > state|An opaque view state token that should be forwarded with display notification for the view|
 |response > prefetch  > views > options > responseTokens|Contains the map of `responseTokens` that have been collected when the current option was being processed.|
 |response > prefetch  > views > analytics > payload|Analytics payload for client-side integration that should be sent to Analytics after the view has been applied.|
-|response > prefetch  > views > trace|The object containing all trace data for the prefetch call per view.<br>The trace object will also include a version for the trace.<br>The trace object will also include details of the current view.|
+|response > prefetch  > views > trace|The object containing all trace data for the prefetch call per view.<br />The trace object will also include a version for the trace.<br />The trace object will also include details of the current view.|
 |response > prefetch  > views > options > eventToken|Event logging is done per option. For every applied option the respective event token should to be added to the list of notification tokens. Note that a View is composed of multiple options. If all options have been applied and seen, all `eventTokens` need to be included in the notification.|
 |response > prefetch  > views > name|The human-readable view name.|
 |response > prefetch  > views > metrics|Reporting metrics that should be watched and then notify Target about. Currently, just click metric is supported. In case a click on the element happens, the appropriate `eventTokens` should be collected and a notification should be sent.|

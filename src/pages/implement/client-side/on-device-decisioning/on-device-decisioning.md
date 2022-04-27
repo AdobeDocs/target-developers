@@ -62,10 +62,10 @@ The following list corresponds to the numbers in the diagram:
 |Step|Description|
 | --- | --- |
 |1|The Experience Cloud Visitor ID is retrieved from the [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=en).|
-|2|The at.js library loads synchronously and hides the document body.<br>   The at.js library can also be loaded asynchronously with an optional pre-hiding snippet implemented on the page.|
+|2|The at.js library loads synchronously and hides the document body.<br />   The at.js library can also be loaded asynchronously with an optional pre-hiding snippet implemented on the page.|
 |3|The at.js library hides the body to prevent flickering.|
 |4|A page-load request is made that includes all configured parameters, such as (ECID, Customer ID, Custom Parameters, User Profile, and so forth.)|
-|5|Profile scripts execute and then feed into the Profile Store.<br>The Profile Store requests qualified audiences from the Audience Library (for example, audiences shared from Adobe Analytics, Adobe Audience Manager, and so forth.).<br>Customer attributes are sent to the Profile Store in a batch process.|
+|5|Profile scripts execute and then feed into the Profile Store.<br />The Profile Store requests qualified audiences from the Audience Library (for example, audiences shared from Adobe Analytics, Adobe Audience Manager, and so forth.).<br />Customer attributes are sent to the Profile Store in a batch process.|
 |6|The Profile Store is used for audience qualification and bucketing to filter activities.|
 |7|The resulting content is selected after the experience is determined from live Target activities.|
 |8|The at.js library hides the corresponding elements on the page that are associated with the experience that must be rendered.|
@@ -99,7 +99,7 @@ Adobe Target Admin servers qualify all of your activities that are eligible for 
 |Step|Description|
 | --- | --- |
 |1|The Experience Cloud Visitor ID is retrieved from the [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html).|
-|2|The at.js library loads synchronously and hides the document body.<br>The at.js library can also be loaded asynchronously with an optional pre-hiding snippet implemented on the page.|
+|2|The at.js library loads synchronously and hides the document body.<br />The at.js library can also be loaded asynchronously with an optional pre-hiding snippet implemented on the page.|
 |3|The at.js library hides the body to prevent flickering.|
 |4|The at.js library makes a request to retrieve the JSON rule artifact from the nearest Akamai CDN to the visitor.|
 |5|The Akamai CDN responds with the JSON rule artifact.|
@@ -124,7 +124,7 @@ Adobe Target Admin servers qualify all of your activities that are eligible for 
 |Step|Description|
 | --- | --- |
 |1|The Experience Cloud Visitor ID is retrieved from the [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html).|
-|2|The at.js library loads synchronously and hides the document body.<br>The at.js library can also be loaded asynchronously with an optional pre-hiding snippet implemented on the page.|
+|2|The at.js library loads synchronously and hides the document body.<br />The at.js library can also be loaded asynchronously with an optional pre-hiding snippet implemented on the page.|
 |3|The at.js library hides the body to prevent flickering.|
 |4|The at.js library interprets the JSON rule artifact and executes the decision in memory to retrieve the experience.|
 |5|The tested elements are hidden.|
@@ -157,7 +157,7 @@ Adobe Target Admin servers qualify all of your activities that are eligible for 
 |Step|Description|
 | --- | --- |
 |1|The Experience Cloud Visitor ID is retrieved from the [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html).|
-|2|The at.js library loads synchronously and hides the document body.<br>The at.js library can also be loaded asynchronously with an optional pre-hiding snippet implemented on the page.|
+|2|The at.js library loads synchronously and hides the document body.<br />The at.js library can also be loaded asynchronously with an optional pre-hiding snippet implemented on the page.|
 |3|The at.js library hides the body to prevent flickering.|
 |4|A page-load request is made to the Adobe Target Edge Network, including all configured parameters such as (ECID, Customer ID, Custom Parameters, User Profile, and so forth.)| 
 |5|In parallel, at.js makes a request to retrieve the JSON rule artifact from the nearest Akamai CDN to the visitor.|
@@ -185,7 +185,7 @@ Adobe Target Admin servers qualify all of your activities that are eligible for 
 |Step|Description|
 | --- | --- |
 |1|The Experience Cloud Visitor ID is retrieved from the [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html).|
-|2|The at.js library loads synchronously and hides the document body.<br>The at.js library can also be loaded asynchronously with an optional pre-hiding snippet implemented on the page.|
+|2|The at.js library loads synchronously and hides the document body.<br />The at.js library can also be loaded asynchronously with an optional pre-hiding snippet implemented on the page.|
 |3|The at.js library hides the body to prevent flickering.|
 |4|A request is made to retrieve an experience.|
 |5|The at.js library confirms that the JSON rule artifact has already been cached and executes the decision in memory to retrieve the experience.| 

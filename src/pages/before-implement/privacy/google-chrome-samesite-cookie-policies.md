@@ -82,7 +82,7 @@ To understand what you need to do to have Target continue to work for Google Chr
 |Target JavaScript Library|SameSite by default cookies = Enabled|Cookies without SameSite must be secure = Enabled|
 | --- | --- | --- |
 |at.js 1.*x* with first-party cookie.|No impact.|No impact if you are not using cross-domain tracking.|
-|at.js 1.*x* with cross-domain tracking enabled.|No impact.|You must enable the HTTPS protocol for your site.<br>Target uses a third-party cookie to track users and Google requires third-party cookies to have `SameSite = None` and Secure flag. The Secure flag requires your sites must use the HTTPS protocol.|
+|at.js 1.*x* with cross-domain tracking enabled.|No impact.|You must enable the HTTPS protocol for your site.<br />Target uses a third-party cookie to track users and Google requires third-party cookies to have `SameSite = None` and Secure flag. The Secure flag requires your sites must use the HTTPS protocol.|
 |at.js 2.*x*|No impact.|No impact.|
 
 ## What does Target need to do?

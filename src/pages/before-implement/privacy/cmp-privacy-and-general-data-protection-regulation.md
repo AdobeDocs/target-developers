@@ -202,9 +202,9 @@ In addition to the requirements from Central Privacy Service, a valid GDPR or CC
 | Request Status | Target Response Message | Scenario |
 |--- |--- |--- |
 |Processing|Processing|Target received the GDPR or CCPA request and is processing.|
-|Complete|Not applicable - company context not applicable|The IMS ID in the GDPR or CCPA request is not mapped to any Target client.<br>Some companies have multiple IMS IDs. Submit the IMS ID where Target is provisioned.|
-|Complete|Not applicable - user context not found|The ID provided in the GDPR or CCPA request for the specific visitor or data subject is not present in the Target profile store.<br>This result also returns if you attempt to submit a namespace ID type that is not supported by Target (see above for supported IDs).|
-|Error|Error Message (details depend on the type of error)|Error while fetching or deleting the requested data subject profile.<br>Error while uploading to Azure for access request.|
+|Complete|Not applicable - company context not applicable|The IMS ID in the GDPR or CCPA request is not mapped to any Target client.<br />Some companies have multiple IMS IDs. Submit the IMS ID where Target is provisioned.|
+|Complete|Not applicable - user context not found|The ID provided in the GDPR or CCPA request for the specific visitor or data subject is not present in the Target profile store.<br />This result also returns if you attempt to submit a namespace ID type that is not supported by Target (see above for supported IDs).|
+|Error|Error Message (details depend on the type of error)|Error while fetching or deleting the requested data subject profile.<br />Error while uploading to Azure for access request.|
 
 ### What response does Target send to the GDPR API for an access request? {#section_D96D8FBEAF9C4BDAA638215FAFE00763}
 

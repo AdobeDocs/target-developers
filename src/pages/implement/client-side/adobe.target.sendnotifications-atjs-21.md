@@ -43,7 +43,7 @@ This function has been introduced in at.js 2.1.0 and will be available for any v
 |Request > notifications > timestamp|Number`<int64>`|Yes||Timestamp of the notification in milliseconds elapsed since UNIX epoch.|
 |Request > notifications > tokens|Array of String|Yes||A list of tokens for displayed content or clicked selectors, based on the type of notification.|
 |Request > notifications > mbox|Object|No||Notifications for the mbox.|
-|Request > notifications > mbox > name|String|No|No blank values allowed.<br>Allowed chars: See note following this table.|mbox name.|
+|Request > notifications > mbox > name|String|No|No blank values allowed.<br />Allowed chars: See note following this table.|mbox name.|
 |Request > notifications > mbox > state|String|No||mbox state token.|
 |Request > notifications > view |Object|No|||
 |Request > notifications > view > id|Integer `<int64>`|No||View id. The id that was assigned to the view when the view was created via the view API.|

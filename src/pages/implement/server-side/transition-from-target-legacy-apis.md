@@ -27,7 +27,7 @@ The legacy APIs will be decommissioned when you Target Classic is decommissioned
 
 | Date | Details |
 |--- |--- |
-|October 17, 2017|All API methods that perform a write operation (`saveCampaign`, `copyCampaign`, `saveHTMLOfferContent`, and `setCampaignState`) were decommissioned.<br>This is the same date when all Target Classic user accounts were set to read-only status.|
+|October 17, 2017|All API methods that perform a write operation (`saveCampaign`, `copyCampaign`, `saveHTMLOfferContent`, and `setCampaignState`) were decommissioned.<br />This is the same date when all Target Classic user accounts were set to read-only status.|
 |November 14, 2017|The remaining APIs were decommissioned. This is the date when the Target Classic user interface was decommissioned|
 
 Recommendations Classic APIs won’t be impacted by this time line.
@@ -40,18 +40,18 @@ The new API methods are linked to the corresponding section in the API documenta
 
 | Grouping | Legacy API Method | New API Method | Notes |
 |--- |--- |--- |--- |
-|Campaign/Activity|Campaign Create|[Create AB Activity](https://developers.adobetarget.com/api/#create-ab-activity)<br>[Create XT Activity](https://developers.adobetarget.com/api/#create-xt-activity)|The new APIs provide separate create methods for AB and XT|
-||Campaign Update|[Update AB Activity](https://developers.adobetarget.com/api/#update-ab-activity)<br>[Update XT Activity](https://developers.adobetarget.com/api/#update-xt-activity)||
+|Campaign/Activity|Campaign Create|[Create AB Activity](https://developers.adobetarget.com/api/#create-ab-activity)<br />[Create XT Activity](https://developers.adobetarget.com/api/#create-xt-activity)|The new APIs provide separate create methods for AB and XT|
+||Campaign Update|[Update AB Activity](https://developers.adobetarget.com/api/#update-ab-activity)<br />[Update XT Activity](https://developers.adobetarget.com/api/#update-xt-activity)||
 ||Copy Campaign|N/A|Use the Activity Create APIs|
 ||Campaign List|[List Activities](https://developers.adobetarget.com/api/#list-activities)||
 ||Campaign State|[Update Activity State](https://developers.adobetarget.com/api/#update-activity-state)||
-||Campaign View|[Get AB Activity by ID](https://developers.adobetarget.com/api/#get-ab-activity-by-id)<br>[Get XT Activity by ID](https://developers.adobetarget.com/api/#get-xt-activity-by-id)||
+||Campaign View|[Get AB Activity by ID](https://developers.adobetarget.com/api/#get-ab-activity-by-id)<br />[Get XT Activity by ID](https://developers.adobetarget.com/api/#get-xt-activity-by-id)||
 ||Third-Party Campaign ID|N/A|If you are using a thirdpartyID, the relevant Activity methods can be used|
 |Offers|Offer Create|[Create Offer](https://developers.adobetarget.com/api/#create-offer)||
 ||Offer Get|[Get Offer by ID](https://developers.adobetarget.com/api/#get-offer-by-id)||
 ||Offer List|[List Offers](https://developers.adobetarget.com/api/#list-offers)||
 ||Folder List|N/A|Folders aren’t supported in Target Standard/Premium|
-|Reporting|Campaign Performance Report|[Get AB Performance Report](https://developers.adobetarget.com/api/#get-ab-performance-report)<br>[Get XT Performance Report](https://developers.adobetarget.com/api/#get-xt-performance-report)||
+|Reporting|Campaign Performance Report|[Get AB Performance Report](https://developers.adobetarget.com/api/#get-ab-performance-report)<br />[Get XT Performance Report](https://developers.adobetarget.com/api/#get-xt-performance-report)||
 ||Audit Report|[Get Audit Report](https://developers.adobetarget.com/api/#get-audit-report)||
 ||1-1 Content Report|[Get AP Performance Report](https://developers.adobetarget.com/api/#get-ap-activity-performance-report)||
 |Account Settings|Get Host Groups|[List Environments](https://developers.adobetarget.com/api/#list-environments)||

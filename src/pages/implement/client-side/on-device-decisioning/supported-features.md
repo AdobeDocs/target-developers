@@ -41,7 +41,7 @@ The following table indicates which audience rules are supported or not supporte
 |[Visitor Profile](/help/main/c-target/c-audiences/c-target-rules/visitor-profile.md)|No|
 |[Traffic Sources](/help/main/c-target/c-audiences/c-target-rules/traffic-sources.md)|No|
 |[Time Frame](/help/main/c-target/c-audiences/c-target-rules/time-frame.md)|Yes|
-|Adobe Experience Cloud Audiences<br>(Audiences from Adobe Analytics, Adobe Audience Manager, and Adobe Experience Manager|No|
+|Adobe Experience Cloud Audiences<br />(Audiences from Adobe Analytics, Adobe Audience Manager, and Adobe Experience Manager|No|
 
 ### Geo targeting for on-device decisioning
 

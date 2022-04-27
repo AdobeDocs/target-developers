@@ -25,13 +25,13 @@ The following diagrams help you understand the workflow of at.js 2.*x* with View
 |Call|Details|
 | --- | --- |
 |1|Call returns the Experience Cloud ID if the user is authenticated; another call syncs the customer ID.|
-|2|The at.js library loads synchronously and hides the document body.<br>at.js can also be loaded asynchronously with an option prehiding snippet implemented on the page.|
+|2|The at.js library loads synchronously and hides the document body.<br />at.js can also be loaded asynchronously with an option prehiding snippet implemented on the page.|
 |3|A page load request is made including all configured parameters (MCID, SDID, and customer ID).|
-|4|Profile scripts execute and then feed into the Profile Store. The Store requests qualified audiences from the Audience Library (for example, audiences shared from Adobe Analytics, Audience Management, etc.).<br>Customer attributes are sent to the Profile Store in a batch process.|
+|4|Profile scripts execute and then feed into the Profile Store. The Store requests qualified audiences from the Audience Library (for example, audiences shared from Adobe Analytics, Audience Management, etc.).<br />Customer attributes are sent to the Profile Store in a batch process.|
 |5|Based on URL request parameters and profile data, Target decides which activities and experiences to return to the visitor for the current page and future views.|
-|6|Targeted content is sent back to the page, optionally including profile values for additional personalization.<br>Targeted content on the current page is revealed as quickly as possible without flicker of default content.<br>Targeted content for views that are shown as a result to user actions in a SPA that is cached in the browser so it can be instantly applied without an additional server call when the views are triggered through `triggerView()`.|
+|6|Targeted content is sent back to the page, optionally including profile values for additional personalization.<br />Targeted content on the current page is revealed as quickly as possible without flicker of default content.<br />Targeted content for views that are shown as a result to user actions in a SPA that is cached in the browser so it can be instantly applied without an additional server call when the views are triggered through `triggerView()`.|
 |7|Analytics data is sent to Data Collection servers.|
-|8|Targeted data is matched to Analytics data via the SDID and is processed into the Analytics reporting storage.<br>Analytics data can then be viewed in both Analytics and Target via Analytics for Target (A4T) reports.|
+|8|Targeted data is matched to Analytics data via the SDID and is processed into the Analytics reporting storage.<br />Analytics data can then be viewed in both Analytics and Target via Analytics for Target (A4T) reports.|
 
 Now, wherever `triggerView()` is implemented on your SPA, the Views and actions are retrieved from cache and shown to the user without a server call. `triggerView()` also makes a notifications request to the Target backend in order to increment and record impression counts.
 
@@ -183,7 +183,7 @@ This is no longer supported and should not be used.
 
 ## Summary of deprecated, new, and supported at.js functions in 2.*x*
 
-|Method|Supported?|New?|Deprecated?<br>(Default content will be shown)|
+|Method|Supported?|New?|Deprecated?<br />(Default content will be shown)|
 | --- | --- | --- | --- |
 |`getOffer()`|Yes|||
 |`getOffers()`||Yes||
@@ -192,7 +192,7 @@ This is no longer supported and should not be used.
 |`triggerView()`||Yes||
 |`trackEvent()`|Yes|||
 |`mboxCreate()`|||Yes|
-|`mboxDefine()`<br>`mboxUpdate()`|||Yes|
+|`mboxDefine()`<br />`mboxUpdate()`|||Yes|
 |`targetGlobalSettings()`|Yes|||
 |`Data Providers`|Yes|||
 |`targetPageParams()`|Yes|||
@@ -380,7 +380,7 @@ Auto-Target activities are supported through at.js 2.*x* and the VEC when all mo
 |Click-tracking|Yes|
 |Multi-activity delivery|Yes|
 |targetGlobalSettings|Yes (but not x-domain)|
-|at.js methods|Everything is supported except for<br>`mboxCreate()`<br>`mboxUpdate()`<br>`mboxDefine()`<br>which will display default content.|
+|at.js methods|Everything is supported except for<br />`mboxCreate()`<br />`mboxUpdate()`<br />`mboxDefine()`<br />which will display default content.|
 
 ### Query string parameters
 

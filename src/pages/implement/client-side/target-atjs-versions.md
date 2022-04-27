@@ -236,7 +236,7 @@ This release also fixes an issue where Target might override redirect URL parame
 
 <InlineAlert variant="info" slots="text"/>
 
-If you require Adobe Opt-in support for GDPR, you must currently use at.js 1.7.0 or 2.1.0.<br>For a list of all versions, see [at.js version details](/help/c-implementing-target/c-implementing-target-for-client-side-web/target-atjs-versions.md).
+If you require Adobe Opt-in support for GDPR, you must currently use at.js 1.7.0 or 2.1.0.<br />For a list of all versions, see [at.js version details](/help/c-implementing-target/c-implementing-target-for-client-side-web/target-atjs-versions.md).
 
 ## at.js Version 1.6.4 {#at-js-164}
 

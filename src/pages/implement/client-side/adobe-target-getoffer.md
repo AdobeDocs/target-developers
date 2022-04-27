@@ -15,10 +15,10 @@ Use with `adobe.target.applyOffer()` to process the response or use your own suc
 | Key | Type | Required | Description |
 |--- |--- |--- |--- |
 |mbox|String|Yes|Mbox name|
-|params|Object|No|Mbox parameters. An object of key-value pairs that has the following structure:<br>`{ "param1": "value1", "param2": "value2"}`|
-|success|Function|Yes|Callback to be executed when we got a response from the server. The success callback function will receive a single parameter that represents an array of offer objects. Here is a success callback example:<br>`function handleSuccess(response){......}`<br>See Responses below for details.|
+|params|Object|No|Mbox parameters. An object of key-value pairs that has the following structure:<br />`{ "param1": "value1", "param2": "value2"}`|
+|success|Function|Yes|Callback to be executed when we got a response from the server. The success callback function will receive a single parameter that represents an array of offer objects. Here is a success callback example:<br />`function handleSuccess(response){......}`<br />See Responses below for details.|
 |error|Function|Yes|Callback to be executed when we got an error. There are a few cases that are considered erroneous:<ul><li>HTTP status code different from 200 OK</li><li>Response can not be parsed. For example we poorly constructed JSON or HTML instead of JSON.</li><li>Response contains the "error" key. For example an exception was thrown on the edge a request could not be properly processed. We could get an error when an mbox is blocked and we could not retrieve any content for it, etc. The error callback function will receive two parameters: status and error. Here is an error callback example: `function handleError(status, error){......}`</li></ul>See Error Responses below for details.|
-|timeout|Number|No|Timeout in milliseconds. If not specified, the default timeout in at.js will be used.<br>The default timeout can be set from the Target UI under Administration > Implementation.|
+|timeout|Number|No|Timeout in milliseconds. If not specified, the default timeout in at.js will be used.<br />The default timeout can be set from the Target UI under Administration > Implementation.|
 
 ## Examples {#section_97C2D2E03E6549BEA7F4873E3F5E4A0D}
 

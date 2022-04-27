@@ -267,7 +267,7 @@ Each data provider has the following structure:
 |name|String|Name of provider.|
 |version|String|Provider version. This key will be used for provider evolution.|
 |timeout|Number|Represents the provider timeout if this is a network request.  This key is optional.|
-|provider|Function|The function that contains the provider data fetching logic.<br>The function has a single required parameter: `callback`. The callback parameter is a function that should be invoked only when the data has been successfully fetched or there is an error.<br>The callback expects two parameters:<ul><li>error: Indicates if an error occurred. If everything is OK, then this parameter should be set to null.</li><li>params: A JSON object, representing the parameters that will be sent in a Target request.</li></ul>|
+|provider|Function|The function that contains the provider data fetching logic.<br />The function has a single required parameter: `callback`. The callback parameter is a function that should be invoked only when the data has been successfully fetched or there is an error.<br />The callback expects two parameters:<ul><li>error: Indicates if an error occurred. If everything is OK, then this parameter should be set to null.</li><li>params: A JSON object, representing the parameters that will be sent in a Target request.</li></ul>|
 
 The following example shows where the data provider is using sync execution:
 

@@ -14,9 +14,9 @@ These versions of ITP include the following restrictions:
 
 |Version|Details|
 | --- | --- |
-[ITP 2.1](https://webkit.org/blog/8613/intelligent-tracking-prevention-2-1/)|Capped client-side cookies that are placed on the browser using the `document.cookie` API to a seven-day expiry.<br>Released February 21, 2019.|
-|[ITP 2.2](https://webkit.org/blog/8828/intelligent-tracking-prevention-2-2/)|Drastically reduced the seven-day expiry cap to one day.<br>Released April 24, 2019.|
-|[ITP 2.3](https://webkit.org/blog/9521/intelligent-tracking-prevention-2-3/)|Eliminated several workarounds, such as employing localStorage or using the JavaScript `Document.referrer property`.<br>Released September 23, 2019.<br>CNAME-cloaking defence feature to ITP released in Safari 14, macOS Big Sur, Catalina, Mojave, iOS 14, and iPadOS 14. All cookies created by a third-party CNAME-cloaked HTTP response will be set to expire in seven days.<br>Announced November 12, 2020.|
+[ITP 2.1](https://webkit.org/blog/8613/intelligent-tracking-prevention-2-1/)|Capped client-side cookies that are placed on the browser using the `document.cookie` API to a seven-day expiry.<br />Released February 21, 2019.|
+|[ITP 2.2](https://webkit.org/blog/8828/intelligent-tracking-prevention-2-2/)|Drastically reduced the seven-day expiry cap to one day.<br />Released April 24, 2019.|
+|[ITP 2.3](https://webkit.org/blog/9521/intelligent-tracking-prevention-2-3/)|Eliminated several workarounds, such as employing localStorage or using the JavaScript `Document.referrer property`.<br />Released September 23, 2019.<br />CNAME-cloaking defence feature to ITP released in Safari 14, macOS Big Sur, Catalina, Mojave, iOS 14, and iPadOS 14. All cookies created by a third-party CNAME-cloaked HTTP response will be set to expire in seven days.<br />Announced November 12, 2020.|
 
 ## What is the impact to me as an Adobe Target customer? {#impact}
 
