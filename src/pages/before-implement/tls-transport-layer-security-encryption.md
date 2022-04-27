@@ -71,11 +71,11 @@ To check the TLS version on your website using Google Chrome:
 1. Open the affected website in Chrome.
 1. From the Chrome menu (the three vertical ellipses), click More Tools > Developer Tools.
 
-   ![Chrome Developer Tools](/asset/chrome-developer-tools.png)
+   ![Chrome Developer Tools](assets/chrome-developer-tools.png)
 
 1. Open the Security tab, then examine the TLS version information under Connection:
 
-   ![TLS version details](/asset/chrome-tls-version.png)
+   ![TLS version details](assets/chrome-tls-version.png)
 
 <InlineAlert variant="info" slots="text"/>
 
