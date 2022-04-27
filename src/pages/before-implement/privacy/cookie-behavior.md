@@ -1,5 +1,12 @@
 ---
-keywords: Overview and Reference;webkit;cookies;first-party;third-party;1st-party;3rd-party
+keywords:
+- Overview and Reference
+- webkit
+- cookies
+- first-party
+- third-party
+- 1st-party
+- 3rd-party
 description: Learn about Target cookie behavior (first-party cookie, third-party cookie with first-party cookie, or third-party cookie alone).
 title: Where Can I Find Information About Target Cookies?
 feature: at.js

@@ -1,5 +1,14 @@
 ---
-keywords: content security policy;csp;at.js;whitelist;allowlist;flicker;pre-hide;pre-hiding;prehiding
+keywords:
+- content security policy
+- csp
+- at.js
+- whitelist
+- allowlist
+- flicker
+- pre-hide
+- pre-hiding
+- prehiding
 description: Learn about the Content Security Policy (CSP) directives you should add when using Adobe Target.
 title: How Does Target Handle Content Security Policies (CSP)?
 feature: Privacy & Security

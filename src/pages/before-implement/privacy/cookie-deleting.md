@@ -1,5 +1,15 @@
 ---
-keywords: cookie;cookies;delete cookie;delete target cookie;google chrome;chrome;mozilla firefox;firefox;microsoft edge;safari
+keywords:
+- cookie
+- cookies
+- delete cookie
+- delete target cookie
+- google chrome
+- chrome
+- mozilla firefox
+- firefox
+- microsoft edge
+- safari
 description: Learn how to delete your Target browser cookies so that you can validate your experiences.
 title: How Do I Delete the Target Cookie?
 feature: Privacy & Security

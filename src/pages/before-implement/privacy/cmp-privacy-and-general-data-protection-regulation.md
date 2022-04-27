@@ -1,5 +1,19 @@
 ---
-keywords: gdpr;eu;european union;privacy;faq;frequently asked questions;california consumer privacy act;ccpa;privacy;data protection;opt-out;opt out;government;regulation
+keywords:
+- gdpr
+- eu
+- european union
+- privacy
+- faq
+- frequently asked questions
+- california consumer privacy act
+- ccpa
+- privacy
+- data protection
+- opt-out
+- opt out
+- government
+- regulation
 description: Learn about Target and the European Union General Data Protection Regulation (GDPR), the California Consumer Privacy Act (CCPA), and other privacy requirements.
 title: How Does Target Handle Privacy and Data Protection Regulations?
 feature: Privacy & Security

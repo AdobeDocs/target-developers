@@ -1,5 +1,10 @@
 ---
-keywords: implement;implementing;setting up;setup;page parameter
+keywords:
+- implement
+- implementing
+- setting up
+- setup
+- page parameter
 description: Get data into Target using in-page profile attributes.
 title: How Do I Get Data into Target Using In-Page Profile Attributes?
 feature: Implementation

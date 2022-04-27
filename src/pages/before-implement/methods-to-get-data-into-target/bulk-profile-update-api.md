@@ -1,5 +1,10 @@
 ---
-keywords: implement;implementing;setting up;setup;bulk profile update
+keywords:
+- implement
+- implementing
+- setting up
+- setup
+- bulk profile update
 description: Get data into Target using the bulk profile update API.
 title: How Do I Get Data into Target Using the Bulk Profile Update API?
 feature: Implementation

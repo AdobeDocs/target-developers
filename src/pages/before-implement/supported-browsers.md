@@ -1,5 +1,14 @@
 ---
-keywords: Browsers;Prerequisites;Requirements;internet explorer;chrome;firefox;safari;android;surface
+keywords:
+- Browsers
+- Prerequisites
+- Requirements
+- internet explorer
+- chrome
+- firefox
+- safari
+- android
+- surface
 description: Learn which internet browsers Adobe Target supports for its interface and for content delivery.
 title: What Browsers Does Target Support?
 feature: Implementation

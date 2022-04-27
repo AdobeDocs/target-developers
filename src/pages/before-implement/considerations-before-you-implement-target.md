@@ -1,5 +1,7 @@
 ---
-keywords: implement;implementing
+keywords:
+- implement
+- implementing
 description: Know the considerations you should address before implementing Adobe Target.
 title: What Should I Know Before Implementing?
 feature: Implementation

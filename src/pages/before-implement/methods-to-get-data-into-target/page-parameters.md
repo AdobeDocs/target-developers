@@ -1,5 +1,10 @@
 ---
-keywords: implement;implementing;setting up;setup;page parameters
+keywords:
+- implement
+- implementing
+- setting up
+- setup
+- page parameters
 description: Get data into Target using page parameters.
 title: How Do I Get Data into Target Using Page Parameters?
 feature: Implementation

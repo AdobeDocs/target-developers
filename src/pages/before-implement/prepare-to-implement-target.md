@@ -1,5 +1,9 @@
 ---
-keywords: implement;implementing;rfi;request for information
+keywords:
+- implement
+- implementing
+- rfi
+- request for information
 description: Know the considerations you should address before implementing Adobe Target. Complete necessary tasks and gather information when preparing to implement Target.
 title: How Should I Prepare to Implement Target?
 feature: Implementation

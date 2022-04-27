@@ -1,5 +1,10 @@
 ---
-keywords: google;samesite;cookies;chrome 80;ietf
+keywords:
+- google
+- samesite
+- cookies
+- chrome 80
+- ietf
 description: Discover how Adobe Target handles the SameSite IETF standard introduced with Google Chrome version 80 and what you need to do to comply with these policies.
 title: How Does Target Handle Google's Samesite Cookie Policies?
 feature: Privacy & Security

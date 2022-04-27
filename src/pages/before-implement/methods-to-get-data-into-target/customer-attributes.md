@@ -1,5 +1,10 @@
 ---
-keywords: implement;implementing;setting up;setup;customer attributes
+keywords:
+- implement
+- implementing
+- setting up
+- setup
+- customer attributes
 description: Get data into Target using customer attributes.
 title: How Do I Get Data into Target Using Customer Attributes?
 feature: Implementation

@@ -1,5 +1,10 @@
 ---
-keywords: implement;implementing;setting up;setup;script profile attributes
+keywords:
+- implement
+- implementing
+- setting up
+- setup
+- script profile attributes
 description: Get data into Target using script profile attributes.
 title: How Do I Get Data into Target Using Script Profile Attributes?
 feature: Implementation
