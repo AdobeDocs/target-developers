@@ -15,7 +15,7 @@ A *target location* is also referred to as an mbox. An identified location in th
 
 A *[success metric](/help/main/c-activities/r-success-metrics/success-metrics.md#reference_D011575C85DA48E989A244593D9B9924)* is an action performed by the user that identifies if a specific activity was successful (such as signing up, making a purchase, booking a ticket, and so on).
 
-![](assets/mobile-target-location.png)
+![alt image](assets/mobile-target-location.png)
 
 * **Target Location:** The content that shows below the register button.
 
@@ -25,4 +25,4 @@ A *[success metric](/help/main/c-activities/r-success-metrics/success-metrics.md
 
 **Understand How Target Works in the SDK**
 
-![](assets/how-target-mobile-works.png)
+![alt image](assets/how-target-mobile-works.png)

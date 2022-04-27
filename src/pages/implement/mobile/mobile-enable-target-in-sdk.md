@@ -22,11 +22,11 @@ Add the Adobe Mobile Services SDK to your app.
 
    Add your Target clientcode and timeout. The clientcode is unique to your account or company. The timeout is the time in number of seconds until which Target will wait for a response before showing the default content. Make sure the **Use HTTPS** option is checked in the Manage App Settings page in Adobe Mobile Services. If HTTPS isn't enabled, all calls in iOS9+ will be blocked unless you allowlist the Target server.
 
-   ![](assets/mobile-clientcode.png)
+   ![alt image](assets/mobile-clientcode.png)
 
 1. After you’ve created/located your app, find the app settings and download the desired SDK.
 
-   ![](assets/download-sdk.png)
+   ![alt image](assets/download-sdk.png)
 
 <InlineAlert variant="warning" slots="text"/>
 

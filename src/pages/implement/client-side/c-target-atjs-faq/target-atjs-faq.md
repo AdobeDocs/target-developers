@@ -18,7 +18,7 @@ Among other benefits, at.js improves page-load times for web implementations, im
 
 The following diagram illustrates page-load performance using mbox.js versus at.js.
 
-![](assets/atjs_vesus_mboxjs.png)
+![alt image](assets/atjs_vesus_mboxjs.png)
 
 As illustrated above, using mbox.js, page content did not begin to load until after the Target call is complete. Using at.js, page content begins loading when the Target call is initiated and does not wait until the call is complete.
 

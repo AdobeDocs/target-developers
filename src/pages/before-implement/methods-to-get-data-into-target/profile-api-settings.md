@@ -19,11 +19,11 @@ For added security, you can require that the Bulk Update API call require a vali
 1. Click **Administration** > **Implementation**. 
 1. Under **Profile API** slide the **Require Authentication** toggle to the enabled or disabled position.
 
-   ![](assets/profile_api_settings.png)
+   ![alt image](assets/profile_api_settings.png)
 
 1. (Conditional) If you enabled authentication requirements, click **Generate New Profile Authentication Token**.
 
-   ![](assets/profile_api_settings_2.png)
+   ![alt image](assets/profile_api_settings_2.png)
 
    The token expires according to the time listed in the Expires In box.
 

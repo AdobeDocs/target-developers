@@ -60,6 +60,6 @@ Although there are some reserved keys, both profile and mbox parameters can cont
 
       Search for your target location name in your debug console. You will see a call to `YOUR-CLIENT-CODE.tt.omtrdc.net`with all the parameters that you just passed.
 
-      ![](assets/mobile-debug.png)
+      ![alt image](assets/mobile-debug.png)
 
    You can build audiences and restrict or target the display of content using these parameters in Target Standard.

@@ -28,11 +28,11 @@ These parameters must be sent to the target-global-mbox via `targetPageParams()`
 
 You'll also want to add targeting to the conversion piece so that Target only counts conversions on the target-global-mbox when the order confirmation page has been viewed, as shown below:
 
-![](assets/revenue1.png)
+![alt image](assets/revenue1.png)
 
 The Site Pages section illustrated above contains the following selections: Current Page, URL, contains, orderconfirm.
 
-![](assets/revenue2.png)
+![alt image](assets/revenue2.png)
 
 The options in the above illustration include the following settings:
 

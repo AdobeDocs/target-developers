@@ -31,11 +31,11 @@ The mobile preview functionality lets you fully test your Mobile app activities 
 
    The following illustration is an example on iOS:
 
-   ![](assets/mobile-preview-url-scheme-ios.png)
+   ![alt image](assets/mobile-preview-url-scheme-ios.png)
 
    The following illustration is an example on Android:
 
-   ![](assets/Android_Deeplink.png)
+   ![alt image](assets/Android_Deeplink.png)
 
 1. **Track Adobe DeepLink**
 
@@ -87,7 +87,7 @@ The mobile preview functionality lets you fully test your Mobile app activities 
 
 1. In the Target UI, click the **More Options** icon (three vertical ellipses), then select **Create Mobile Preview**.
 
-   ![](assets/mobile-preview-create.png)
+   ![alt image](assets/mobile-preview-create.png)
 
 2. Select the activities that you want to preview, then click **Generate Mobile Preview Link**.
 
@@ -95,17 +95,17 @@ The mobile preview functionality lets you fully test your Mobile app activities 
    
    Only form-based AB and XT activities can be selected.
 
-   ![](assets/mobile-preview-select-activities.png)
+   ![alt image](assets/mobile-preview-select-activities.png)
 
 3. Specify your app's URL scheme.
 
    This needs to be the same as what is present in your iOS or Android app. Repeat this process separately for iOS and Android, if required.
 
-   ![](assets/mobile-preview-enter-url-scheme.png)
+   ![alt image](assets/mobile-preview-enter-url-scheme.png)
 
 4. Click **Generate Mobile Preview Link**, then copy the link.
 
-   ![](assets/mobile-preview-generate-and-copy.png)
+   ![alt image](assets/mobile-preview-generate-and-copy.png)
 
 ## Preview on Your Device {#section_521F0D46F3DE4A2A98283A1B73FF69F6}
 

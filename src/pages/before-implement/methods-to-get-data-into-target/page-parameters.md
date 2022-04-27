@@ -45,11 +45,11 @@ Data gets sent to Target in real time, and can be used on the same server call t
   
   Everything else must be url-encoded. The standard specifies the following format ( [https://www.ietf.org/rfc/rfc1738.txt](https://www.ietf.org/rfc/rfc1738.txt) ), as illustrated below:
 
-  ![](assets/ietf1.png)
+  ![alt image](assets/ietf1.png)
 
   Or, the full list for simplicity:
 
-  ![](assets/ietf2.png)
+  ![alt image](assets/ietf2.png)
 
 ## Code examples
 

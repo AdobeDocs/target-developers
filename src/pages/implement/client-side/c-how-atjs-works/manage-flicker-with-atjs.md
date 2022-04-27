@@ -30,7 +30,7 @@ The following illustration shows the Hide Body and Show Body calls in both at.js
 
 **at.js 1.*x***
 
-![](assets/target-flow2.png)
+![alt image](assets/target-flow2.png)
 
 For more information about the `bodyHiddenStyle` override, see [targetGlobalSettings()](/help/c-implementing-target/c-implementing-target-for-client-side-web/targetgobalsettings.md).
 
