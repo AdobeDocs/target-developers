@@ -2,7 +2,7 @@
 
 ## Use Case Driven
 
-*Insert image-comparison.jpeg*
+![alt image](assets/comparison.jpeg)
 
 The main difference between *on-device* decisioning and edge decisioning is that on-device decisioning executes decisions locally on your servers, while edge decisions are made on Adobe Target's Edge network. On-device decisioning should be used for any A/B or XT activities that need to be delivered on highly trafficked pages, where performance greatly impacts your business KPIs such as conversion, revenue, and retention. For example, suppose your marketing team is running ad campaigns to attract prospects to your home page. Running ad campaigns on publisher networks requires payment, therefore any prospect that lands on your home page translates to a dollar amount. At the same time, suppose you are running A/B experiments to see which hero image best captures your consumer's attention. If delivering those A/B experiments takes an additional 2 seconds, there is a high likelihood the consumer will become impatient and bounce. There go your marketing dollars and A/B experiments! Losing this hard-earned prospect is difficult, since any opportunity of converting this prospect to a loyal or repeat customer is now forfeited. Therefore, running an on-device decisioning activity for this use case can avoid any negative impact that latency can introduce.
 
