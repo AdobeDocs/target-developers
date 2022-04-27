@@ -56,7 +56,7 @@ There are three different values that can be passed into the SameSite attribute:
 
 Keeping the above in mind, Chrome 80 introduces two independent settings for users: "SameSite by default cookies" and "Cookies without SameSite must be secure." These settings will be enabled by default in Chrome 80.
 
-![SameSite dialog box](../assets/samesite.png/)
+![SameSite dialog box](../assets/samesite.png)
 
 * **SameSite by default cookies**: When set, all cookies that don’t specify the SameSite attribute will automatically be forced to use `SameSite = Lax`.
 * **Cookies without SameSite must be secure**: When set, cookies without the SameSite attribute or with `SameSite = None` need to be Secure. Secure in this context means that all browser requests must follow the HTTPS protocol. Cookies that do not adhere to this requirement are rejected. All websites should use HTTPS to meet this requirement.
