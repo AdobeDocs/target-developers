@@ -134,50 +134,42 @@ target_client = TargetClient.create(CONFIG)
 
 1. In Adobe Target, navigate to the **Activities** page, then select **Create Activity** > **A/B test**. 
 
-   <!--- Insert image-ab.png --->
    ![alt image](./asset-ab.png)
 
-1. In the **Create A/B Test Activity** modal, leave the default Web option selected (1), select **Form** as your experience composer (2), select **Default Workspace** with **No Property Restrictions**(3), then click **Next** (4).
+2. In the **Create A/B Test Activity** modal, leave the default Web option selected (1), select **Form** as your experience composer (2), select **Default Workspace** with **No Property Restrictions**(3), then click **Next** (4).
 
-   <!--- Insert image-form.png --->
    ![alt image](./asset-form.png)
 
-1. In the **Experiences** step of activity creation, provide a name for your activity (1) and add a second experience, Experience B, by clicking **Add Experience** (2). Enter the location name of your choice (3). For example, `ondevice-featureflag` or `homepage-addtocart-featureflag` are location names indicating the destinations for feature flag testing.  In the example shown below, `ondevice-featureflag` is the location defined for Experience B. Optionally, you may add Audience Refinements (4) to restrict qualification to the activity.
+3. In the **Experiences** step of activity creation, provide a name for your activity (1) and add a second experience, Experience B, by clicking **Add Experience** (2). Enter the location name of your choice (3). For example, `ondevice-featureflag` or `homepage-addtocart-featureflag` are location names indicating the destinations for feature flag testing.  In the example shown below, `ondevice-featureflag` is the location defined for Experience B. Optionally, you may add Audience Refinements (4) to restrict qualification to the activity.
 
-   <!--- Insert image-location.png --->
    ![alt image](./asset-location.png)
 
-1. In the **CONTENT** section on the same page, select **Create JSON Offer** in the drop-down (1) as shown.
+4. In the **CONTENT** section on the same page, select **Create JSON Offer** in the drop-down (1) as shown.
 
-   <!--- Insert image-offer.png --->
+
    ![alt image](./asset-offer.png)
 
-1. In the **JSON Data** text box that appears, type your feature flag variables for each experience (1), using a valid JSON object (2).
+5. In the **JSON Data** text box that appears, type your feature flag variables for each experience (1), using a valid JSON object (2).
 
    Enter the feature flag variables for Experience A.
 
-   <!--- Insert image-json_a.png --->
    ![alt image](./asset-json_a.png)
 
    Enter the feature flag variables for Experience B.
 
-   <!--- Insert image-json_b.png --->
    ![alt image](./asset-json_b.png)
 
 
-1. Click **Next** (1) to advance to the **Targeting** step of activity creation.
+6. Click **Next** (1) to advance to the **Targeting** step of activity creation.
 
-   <!--- Insert image-next_2_t.png --->
    ![alt image](./asset-next_2_t.png)
 
-1. In the **Targeting** step example shown below, Audience Targeting (2) remains on the default set of All Visitors, for simplicity. This means the activity is untargeted. However, note Adobe recommends you always target your audiences for production activities. Click **Next** (3) to advance to the **Goals & Settings** step of activity creation.
+7. In the **Targeting** step example shown below, Audience Targeting (2) remains on the default set of All Visitors, for simplicity. This means the activity is untargeted. However, note Adobe recommends you always target your audiences for production activities. Click **Next** (3) to advance to the **Goals & Settings** step of activity creation.
 
-   <!--- Insert image-next_2_g.png --->
    ![alt image](./asset-next_2_g.png)
 
-1. In the **Goals & Settings** step, set **Reporting Source** to **Adobe Target** (1). Define the **Goal Metric** as **Conversion**, specifying the details based on your site's conversion metrics (2). Click **Save & Close** (3) to save the activity.
+8. In the **Goals & Settings** step, set **Reporting Source** to **Adobe Target** (1). Define the **Goal Metric** as **Conversion**, specifying the details based on your site's conversion metrics (2). Click **Save & Close** (3) to save the activity.
 
-   <!--- Insert image-conv.png --->
    ![alt image](./asset-conv.png)
 
 ## 5. Implement and render the feature in your application
@@ -362,5 +354,4 @@ target_client.send_notifications({
 
 You must have the **Approver** or **Publisher** [user role](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) to perform this step.
 
-<!--- Insert image-activate.png --->
 ![alt image](./asset-activate.png)
