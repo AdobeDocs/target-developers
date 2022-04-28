@@ -19,7 +19,7 @@ exl-id: 8a366c79-d944-4d44-be5a-7c4f65385beb
 
 The Adobe Target application and content delivery has been tested across a wide range of browsers and devices.
 
-For more important information about TLS, see [TLS (Transport Layer Security) Encryption Changes](/help/c-implementing-target/c-considerations-before-you-implement-target/tls-transport-layer-security-encryption.md#concept_CC1001E9D3AE4BABAF90B8311B0A6451).
+For more important information about TLS, see [TLS (Transport Layer Security) Encryption Changes](tls-transport-layer-security-encryption.md).
 
 ## Target Standard/Premium interface {#section_1B73CA4B7BBC460BB7009DF00A2AFC4D}
 

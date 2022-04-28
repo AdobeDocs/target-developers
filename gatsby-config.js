@@ -96,7 +96,7 @@ module.exports = {
       },
       {
         title: 'Privacy and security',
-        path: '/before-implement/privacy/',
+        path: '/before-implement/privacy/privacy.md',
         pages: [
           {
             title: 'Privacy overview',
@@ -134,7 +134,7 @@ module.exports = {
       },
       {
         title: 'Methods to get data into Target',
-        path: '/before-implement/methods-to-get-data-into-target/',
+        path: '/before-implement/methods-to-get-data-into-target/methods-to-get-data-into-target.md',
         pages: [
           {
             title: 'Methods overview',
