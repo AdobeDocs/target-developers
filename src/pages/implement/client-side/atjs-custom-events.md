@@ -44,7 +44,7 @@ To make sure that events can be used in different scenarios, the custom events h
 |tracking|Object|Contains the `sessionId` and `deviceId`. In some cases, `deviceId` could be missing because Target couldn't retrieve it from edge server.|
 |type|String|**On-device decisioning artifact succeeded**<br />Constant:<br />`adobe.target.event.ARTIFACT_DOWNLOAD_SUCCEEDED`<br />String value: `artifactDownloadSucceeded`<br />Description: Called when the on-device decisioning artifact is successfully downloaded.<br />**On-device decisioning artifact failed**<br />Constant: `adobe.target.event.ARTIFACT_DOWNLOAD_FAILED`<br />String Value: `artifactDownloadFailed`<br />Description: Called when the on-device decisioning artifact failed to download.| 
 
-## Usage {#section_0500FF09D3A04450B5DC8F85C6F793E0}
+## Usage
 
 ```javascript
 document.addEventListener(adobe.target.event.REQUEST_SUCCEEDED, function(event) { 
@@ -52,7 +52,7 @@ document.addEventListener(adobe.target.event.REQUEST_SUCCEEDED, function(event) 
 });
 ```
 
-## Training Video: Response Tokens and the at.js Custom Events ![Tutorial badge](src/pages/assets/tutorial.png) {#section_ED304A7137DC42A4BDCD6D57C989F1FA}
+## Training Video: Response Tokens and the at.js Custom Events ![Tutorial badge](../assets/tutorial.png)
 
 Watch the following video to learn how to use Response Tokens and at.js Custom Events to share profile information from Target to third-party systems.
 

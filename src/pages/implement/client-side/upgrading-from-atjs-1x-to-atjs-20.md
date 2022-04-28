@@ -26,7 +26,7 @@ Here are some benefits of using at.js 2.*x* that are not available in previous v
 
 The following diagrams help you understand the workflow of at.js 2.*x* with Views and how this enhances the SPA integration. To get a better introduction of the concepts used in at.js 2.*x*, see [Single Page Application implementation](/help/c-implementing-target/c-implementing-target-for-client-side-web/how-to-deployatjs/target-atjs-single-page-application.md).
 
-![Target flow with at.js 2.*x*](/assets/system-diagram-atjs-20.png)
+![Target flow with at.js 2.*x*](assets/system-diagram-atjs-20.png)
 
 |Call|Details|
 | --- | --- |
@@ -762,7 +762,7 @@ at.js 2.*x* JSON payload:
 
 Version is sent as a query string parameter via the version parameter.
 
-## Training video: at.js 2.*x* architectural diagram ![Overview badge](./assets/overview.png)
+## Training video: at.js 2.*x* architectural diagram ![Overview badge](../assets/overview.png )
 
 at.js 2.*x* enhances Adobe Target's support for SPAs and integrates with other Experience Cloud solutions. This video explains how everything comes together.
 

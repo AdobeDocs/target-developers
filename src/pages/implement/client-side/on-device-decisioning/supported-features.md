@@ -25,11 +25,11 @@ The following table indicates which [activity types](https://experienceleague.co
 | --- | --- |
 |[A/B Test](https://experienceleague.corp.adobe.com/docs/target/using/activities/abtest/test-ab.html)|Yes|
 |[Auto-Allocate](https://experienceleague.corp.adobe.com/docs/target/using/activities/auto-allocate/automated-traffic-allocation.html)|No|
-|[Auto-Target](https://experienceleague.corp.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html) ![Premium](./assets/premium.png)|No|
+|[Auto-Target](https://experienceleague.corp.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html) ![Premium](../../assets/premium.png)|No|
 |[Multivariate Test](https://experienceleague.corp.adobe.com/docs/target/using/activities/multivariate-test/multivariate-testing.html) (MVT)|No|
 |[Experience Targeting](https://experienceleague.corp.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html) (XT)|Yes|
-|[Automated Personalization](https://experienceleague.corp.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html) ![Premium](./assets/premium.png)|No|
-|[Recommendations](https://experienceleague.corp.adobe.com/docs/target/using/recommendations/recommendations.html) ![Premium](./assets/premium.png)|No|
+|[Automated Personalization](https://experienceleague.corp.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html) ![Premium](../../assets/premium.png)|No|
+|[Recommendations](https://experienceleague.corp.adobe.com/docs/target/using/recommendations/recommendations.html) ![Premium](../../assets/premium.png)|No|
 |[Activities using Analytics for Target](https://experienceleague.corp.adobe.com/docs/target/using/integrate/a4t/a4t.html?) (A4T)|Yes|
 
 ## Audience targeting

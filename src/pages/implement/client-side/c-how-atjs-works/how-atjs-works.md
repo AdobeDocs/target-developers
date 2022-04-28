@@ -40,7 +40,7 @@ From a high level view, there are a couple of differences between the two versio
 
 The following diagrams help you understand the workflow of at.js 2.x with Views and how this enhances the SPA integration. To get a better introduction of the concepts used in at.js 2.x, see [Single Page Application implementation](/help/c-implementing-target/c-implementing-target-for-client-side-web/how-to-deployatjs/target-atjs-single-page-application.md).
 
-![Target flow with at.js 2.x](/assets/system-diagram-atjs-20.png)
+![Target flow with at.js 2.x](../assets/system-diagram-atjs-20.png)
 
 |Step|Details|
 | --- | --- |
