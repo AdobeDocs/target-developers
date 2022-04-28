@@ -34,7 +34,7 @@ AT: LD.ArtifactProvider artifact received - status=200
 
 The following illustration shows these messages in the console log:
 
-![Console log with artifact messages](/help/c-implementing-target/c-implementing-target-for-client-side-web/on-device-decisioning/assets/browser-console.png)
+![Console log with artifact messages](assets/browser-console.png)
 
 ## Step 2: Verify the rule artifact download in your browser's Network tab
 

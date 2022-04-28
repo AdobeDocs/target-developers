@@ -33,7 +33,7 @@ The following illustration shows the Hide Body and Show Body calls in both at.js
 
 **at.js 2.x**
 
-![Target flow: at.js page load request](/assets/atjs-20-flow-page-load-request.png)
+![Target flow: at.js page load request](assets/atjs-20-flow-page-load-request.png)
 
 **at.js 1.*x***
 

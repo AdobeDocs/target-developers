@@ -207,7 +207,7 @@ The following diagrams help you understand the workflow of at.js 2.x with Views 
 
 Now, wherever `triggerView()` is implemented on your SPA, the Views and actions are retrieved from cache and shown to the user without a server call. `triggerView()` also makes a notifications request to the Target backend in order to increment and record impression counts.
 
-![Target flow at.js 2.x triggerView](/assets/atjs-20-triggerview.png)
+![Target flow at.js 2.x triggerView](../assets/atjs-20-triggerview.png)
 
 |Step|Details|
 | --- | --- |
