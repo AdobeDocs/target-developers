@@ -40,7 +40,7 @@ To use the Delivery API to deliver Target experiences—including recommendation
 
 ## Create a Recommendation using the Form-based Experience Composer
 
-To create recommendations that can be used with the Delivery API, use the [Form-based Composer](https://docs.adobe.com/content/help/en/target/using/experiences/form-experience-composer.html). 
+To create recommendations that can be used with the Delivery API, use the [Form-based Composer](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html). 
 
 1. First, create and save a JSON-based design to use in your recommendation. For sample JSON, plus background information regarding how JSON responses can be returned when configuring a form-based activity, see the documentation on [Creating Recommendation Designs](https://docs.adobe.com/content/help/en/target/using/recommendations/recommendations-design/create-design.html). In this example, the design is named *Simple JSON.*
    ![server-side-create-recs-json-design.png](/assets/server-side-create-recs-json-design.png)

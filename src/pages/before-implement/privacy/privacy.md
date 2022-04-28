@@ -47,7 +47,7 @@ Target receives the full IP address and obfuscates it (if set to Last octet or F
 
 <InlineAlert variant="info" slots="text"/>
 
-[Contact Adobe Client Care](/help/main/cmp-resources-and-contact-information.md#reference_ACA3391A00EF467B87930A450050077C) to determine which setting you are currently using or to enable the IP obfuscation feature.
+[Contact Adobe Client Care](https://experienceleague.corp.adobe.com/docs/target/using/cmp-resources-and-contact-information.html#reference_ACA3391A00EF467B87930A450050077C) to determine which setting you are currently using or to enable the IP obfuscation feature.
 
 ## GeoSegmentation {#section_BB69F96559BD44BDA4177537C4A5345A}
 

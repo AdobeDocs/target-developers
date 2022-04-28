@@ -52,4 +52,4 @@ Profile scripts are quite flexible:
 
 ### Links to relevant information
 
-[Profile Script Attributes](/help/main/c-target/c-visitor-profile/profile-parameters.md#concept_8C07AEAB0A144FECA8B4FEB091AED4D2)
+[Profile Script Attributes](https://experienceleague.corp.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html#concept_8C07AEAB0A144FECA8B4FEB091AED4D2)

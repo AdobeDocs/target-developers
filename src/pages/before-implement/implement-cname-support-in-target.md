@@ -37,7 +37,7 @@ Instructions for working with Adobe Client Care to implement CNAME (Canonical Na
    
    Adobe's certificate authority, DigiCert, cannot issue a certificate until this step is complete. Therefore, Adobe cannot fulfill your request for a CNAME implementation until this step is complete.
 
-1. [Fill out this form](/help/main/assets/FPC_Request_Form.xlsx) and include it when you [open an Adobe Client Care ticket requesting CNAME support](https://experienceleague.corp.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?lang=en#reference_ACA3391A00EF467B87930A450050077C):
+1. [Fill out this form](/src/pages/assets/FPC_Request_Form.xlsx) and include it when you [open an Adobe Client Care ticket requesting CNAME support](https://experienceleague.corp.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?lang=en#reference_ACA3391A00EF467B87930A450050077C):
 
    * Adobe Target client code:
    * SSL certificate hostnames (example: `target.example.com target.example.org`):

@@ -21,11 +21,11 @@ The cookie behavior depends on whether it is a first-party cookie, a third-party
 
 This topic contains information about `mboxSession` and `mboxPC`. Implementation best practices recommend that you do not link or store sensitive information with the cookie data: `mboxSession` or `mboxPC`.
 
-See also [Delete the Target cookie](/help/main/c-implementing-target/c-considerations-before-you-implement-target/c-privacy/cookie-deleting.md).
+See also [Delete the Target cookie](/privacy/cookie-deleting.md).
 
 ## When to Use First- or Third-Party Cookies {#section_F71B29420C004A7FA3B1921E619B326E}
 
-Your site setup determines which cookies you want to use. It is helpful to understand how Target works when trying to understand first and third-party cookies. See [How Adobe Target Works](/help/main/c-intro/how-target-works.md#concept_459AB4DEE7364A9290C2FD405DC29584) for more information.
+Your site setup determines which cookies you want to use. It is helpful to understand how Target works when trying to understand first and third-party cookies. See [How Adobe Target Works](https://experienceleague.corp.adobe.com/docs/target/using/introduction/how-target-works.html) for more information.
 
 There are three main use cases for cookies:
 
@@ -35,7 +35,7 @@ There are three main use cases for cookies:
 
    Approach: Use only first-party cookies (the default). 
 
-1. Users cross domains and you want to track and test their behavior across these domains.
+2. Users cross domains and you want to track and test their behavior across these domains.
 
    Example: A user comes to your site to shop but checks out through Yahoo stores. Three approaches (work with your account representative to determine the best approach):
 
@@ -45,7 +45,7 @@ There are three main use cases for cookies:
 
       The `mboxSession` parameter must be passed to a landing page and referenced from the JavaScript library (Adobe Experience Platform Web SDK or at.js). It cannot be an intermediate redirector page.
 
-1. You are only using adboxes or Flashboxes on a third-party site.
+3. You are only using adboxes or Flashboxes on a third-party site.
 
    Two approaches (work with your account representative to determine the best approach):
 
@@ -138,5 +138,5 @@ From Apple:
 
 | Affected Functionality | Details |
 |--- |--- |
-|Opt-out support|Apple's WebKit tracking changes breaks opt-out support.<br />Target opt-out uses a cookie in the `clientcode.tt.omtrdc.net` domain. For more details, see [Privacy](/help/main/c-implementing-target/c-considerations-before-you-implement-target/c-privacy/privacy.md).<br />Target supports two opt-outs:<ul><li>One per client (the client manages the opt-out link).</li><li>One via Adobe that opts the user out of all Target functionality for all customers.</li></ul>Both methods use the third-party cookie.|
-|Target activities|Customers can choose their [profile lifetime length](/help/main/c-target/c-visitor-profile/visitor-profile-lifetime.md) for their Target accounts (up to 90 days). The concern is that if the account's profile lifetime is longer than 30 days, and the first-party cookie gets purged because the customer's domain has been marked as tracking users cross-site, behavior for Safari visitors are affected in the following areas in Target:<br />**Target reports**: If a Safari user enters into an activity, returns after 30 days, and then converts, that user counts as two visitors and one conversion.<br />This behavior is the same for activities using Analytics as the reporting source (A4T).<br />**Profile & activity membership**:<ul><li>Profile data is erased when the first-party cookie expires.</li><li>Activity membership is erased when the first-party cookie expires.</li><li> Target does not function in Safari for accounts using a third-party cookie implementation or a first- and third-party cookie implementation. This behavior is not new. Safari has not allowed third-party cookies for a while.</li></ul><br />**Suggestions**: If there is a concern that the customer domain might be marked as one tracking visitors cross-session, it is safest to set the profile lifetime to 30 days or fewer in Target. This limit ensures that users are tracked similarly in Safari and all other browsers.|
+|Opt-out support|Apple's WebKit tracking changes breaks opt-out support.<br />Target opt-out uses a cookie in the `clientcode.tt.omtrdc.net` domain. For more details, see [Privacy](privacy.md).<br />Target supports two opt-outs:<ul><li>One per client (the client manages the opt-out link).</li><li>One via Adobe that opts the user out of all Target functionality for all customers.</li></ul>Both methods use the third-party cookie.|
+|Target activities|Customers can choose their [profile lifetime length](https://experienceleague.corp.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile-lifetime.html) for their Target accounts (up to 90 days). The concern is that if the account's profile lifetime is longer than 30 days, and the first-party cookie gets purged because the customer's domain has been marked as tracking users cross-site, behavior for Safari visitors are affected in the following areas in Target:<br />**Target reports**: If a Safari user enters into an activity, returns after 30 days, and then converts, that user counts as two visitors and one conversion.<br />This behavior is the same for activities using Analytics as the reporting source (A4T).<br />**Profile & activity membership**:<ul><li>Profile data is erased when the first-party cookie expires.</li><li>Activity membership is erased when the first-party cookie expires.</li><li> Target does not function in Safari for accounts using a third-party cookie implementation or a first- and third-party cookie implementation. This behavior is not new. Safari has not allowed third-party cookies for a while.</li></ul><br />**Suggestions**: If there is a concern that the customer domain might be marked as one tracking visitors cross-session, it is safest to set the profile lifetime to 30 days or fewer in Target. This limit ensures that users are tracked similarly in Safari and all other browsers.|

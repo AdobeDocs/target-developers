@@ -36,17 +36,17 @@ For added security, you can require that the Bulk Update API call require a vali
 
    * At least Editor permission (or Approver)
 
-     For more information for Target Standard customers, see [Specify roles and Permissions](/help/main/administrating-target/c-user-management/c-user-management/user-management.md#roles-permissions) in *Users*. For more information for Target Premium customers, see [Configure enterprise permissions](/help/main/administrating-target/c-user-management/property-channel/properties-overview.md).
+     For more information for Target Standard customers, see [Specify roles and Permissions](https://experienceleague.corp.adobe.com/docs/target/using/administer/manage-users/users/user-management.html#roles-permissions) in *Users*. For more information for Target Premium customers, see [Configure enterprise permissions](https://experienceleague.corp.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html).
 
    * Admin role on the workspace/product profile level
 
-     Workspaces are available to Target Premium customers only. For more information, see [Configure enterprise permissions](/help/main/administrating-target/c-user-management/property-channel/properties-overview.md).
+     Workspaces are available to Target Premium customers only. For more information, see [Configure enterprise permissions](https://experienceleague.corp.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html).
 
    * Admin Rights (Sysadmin permission) on the Adobe Target product level
 
    <InlineAlert variant="info" slots="text"/>
 
-   You can also generate a profile authentication token via API. For more information, see [Profiles](https://developers.adobetarget.com/api/#profiles) on the [Adobe Target Developers website](https://developers.adobetarget.com/).
+   You can also generate a profile authentication token via API. For more information, see [Profiles](https://developers.adobetarget.com/api/#profiles) in the Adobe Target Admin and Profile API guide.
 
 1. Copy the token and include it in the header of the request in the format: "Authorization" : "Bearer "
 

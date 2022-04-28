@@ -20,7 +20,7 @@ Suppose you are a touring company. You want to deliver a personalized offer of 2
 
   ![alt image](./asset-odd-toggle.png)
 
-   **NOTE**: You must have the Admin or Approver [user role](https://docs.adobe.com/content/help/en/target/using/administer/manage-users/user-management.html) to enable or disable the On-Device Decisioning toggle.
+   **NOTE**: You must have the Admin or Approver [user role](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) to enable or disable the On-Device Decisioning toggle.
 
    After enabling the **On-Device Decisioning** toggle, Adobe Target begins generating *rule artifacts* for your client.
 

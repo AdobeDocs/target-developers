@@ -130,7 +130,7 @@ All GDPR and CCPA requests across Experience Cloud solutions, including Target, 
 
 ### What information does Adobe enable customers to delete in response to a data subject/user request? {#section_4B51D00924EC4166B2442218B69214F0}
 
-The information related to an individual visitor within Target is contained within the Target Visitor Profile. Target lets customers delete all data associated with an ID in their Visitor Profile. For examples of the profile data Target stores, see [Visitor Profile](/help/main/c-target/c-audiences/c-target-rules/visitor-profile.md#concept_E972690B9A4C4372A34229FA37EDA38E).
+The information related to an individual visitor within Target is contained within the Target Visitor Profile. Target lets customers delete all data associated with an ID in their Visitor Profile. For examples of the profile data Target stores, see [Visitor Profile](https://experienceleague.corp.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html).
 
 Aggregated or anonymized data (for example, reporting data) that does not identify a particular individual, or data that is unrelated to a specific individual (for example, content data), is outside the scope of a user-deletion request.
 
@@ -296,10 +296,10 @@ The following table contains description of the illustrative profile JSON fields
 
 | Field | Description |
 |--- |--- |
-|Sample_Parameter|Many pieces of information in the Target profile are uploaded or directly provided by the Data Controller. In this example, a parameter was uploaded into the Target profile using the Profile Update API. For more information, see [Methods to get Data into Target](/help/c-implementing-target/c-considerations-before-you-implement-target/methods-to-get-data-into-target/methods-to-get-data-into-target.md).|
+|Sample_Parameter|Many pieces of information in the Target profile are uploaded or directly provided by the Data Controller. In this example, a parameter was uploaded into the Target profile using the Profile Update API. For more information, see [Methods to get Data into Target](/methods-to-get-data-into-target/methods-to-get-data-into-target.md).|
 |user.ReturnTimeOfDay|This standard field includes the time of day of a user’s most recent return visit.|
 |firstSessionStart|This standard field includes the time of day the user’s first session began.|
-|user.sessionCountScript|Many pieces of information in the Target profile are uploaded or directly provided by the Data Controller. In this example, a profile script is incrementing the number of sessions this visitor has made to the Data Controller’s site. For more information, see [Profile Script Attributes](/help/main/c-target/c-visitor-profile/profile-parameters.md).|
+|user.sessionCountScript|Many pieces of information in the Target profile are uploaded or directly provided by the Data Controller. In this example, a profile script is incrementing the number of sessions this visitor has made to the Data Controller’s site. For more information, see [Profile Script Attributes](https://experienceleague.corp.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html).|
 
 <InlineAlert variant="info" slots="text"/>
 
