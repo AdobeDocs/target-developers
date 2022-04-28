@@ -762,7 +762,7 @@ at.js 2.*x* JSON payload:
 
 Version is sent as a query string parameter via the version parameter.
 
-## Training video: at.js 2.*x* architectural diagram ![Overview badge](/src/pages/assets/overview.png)
+## Training video: at.js 2.*x* architectural diagram ![Overview badge](./assets/overview.png)
 
 at.js 2.*x* enhances Adobe Target's support for SPAs and integrates with other Experience Cloud solutions. This video explains how everything comes together.
 

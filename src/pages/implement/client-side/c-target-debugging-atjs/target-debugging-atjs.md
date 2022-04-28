@@ -26,19 +26,19 @@ Review the [Adobe Experience Cloud Debugger Extension documentation](https://exp
 
 The following videos step you through the debugging process:
 
-### Add the Adobe Experience Cloud Debugger Extension ![Overview badge](/src/pages/assets/overview.png) {#section_8CD96F76E397476193529573F3199615}
+### Add the Adobe Experience Cloud Debugger Extension ![Overview badge](./assets/overview.png) {#section_8CD96F76E397476193529573F3199615}
 
 <Media slots="video"/>
 
 <https://video.tv.adobe.com/v/23114/>
 
-### Basic Adobe Target Debugging Using the Adobe Experience Cloud Debugger ![Overview badge](/src/pages/assets/overview.png) {#section_AB2814A994DC4A86BABDD0441343D911}
+### Basic Adobe Target Debugging Using the Adobe Experience Cloud Debugger ![Overview badge](./assets/overview.png) {#section_AB2814A994DC4A86BABDD0441343D911}
 
 <Media slots="video"/>
 
 <https://video.tv.adobe.com/v/23115/>
 
-### Mbox Trace ![Overview badge](/src/pages/assets/overview.png) {#section_FD3BC8019FA847209AB8BCA747C50211}
+### Mbox Trace ![Overview badge](./assets/overview.png) {#section_FD3BC8019FA847209AB8BCA747C50211}
 
 <Media slots="video"/>
 

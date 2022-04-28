@@ -307,7 +307,7 @@ The following information describes the order of operations that you must follow
 
 The following videos contain more information:
 
-### Understanding how at.js 2.x works ![Overview badge](/src/pages/assets/overview.png)
+### Understanding how at.js 2.x works ![Overview badge](./assets/overview.png)
 
 <Media slots="video"/>
 
@@ -315,7 +315,7 @@ The following videos contain more information:
 
 See [Understanding how at.js 2.x works](https://helpx.adobe.com/target/kt/using/atjs20-diagram-technical-video-understand.html) for more information.
 
-### Implement at.js 2.x in a SPA ![Tutorial badge](/src/pages/assets/tutorial.png)
+### Implement at.js 2.x in a SPA ![Tutorial badge](./assets/tutorial.png)
 
 <Media slots="video"/>
 
@@ -323,7 +323,7 @@ See [Understanding how at.js 2.x works](https://helpx.adobe.com/target/kt/using/
 
 See [Implement Adobe Target's at.js 2.x in a Single Page Application (SPA)](https://helpx.adobe.com/target/kt/using/atjs2-single-page-application-technical-video-implement.html) for more information.
 
-### Using the VEC for SPAs in Adobe Target ![Tutorial badge](/src/pages/assets/tutorial.png)
+### Using the VEC for SPAs in Adobe Target ![Tutorial badge](./assets/tutorial.png)
 
 <Media slots="video"/>
 
