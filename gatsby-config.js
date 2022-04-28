@@ -138,39 +138,39 @@ module.exports = {
         pages: [
           {
             title: 'Methods overview',
-            path: '/before-implement/methods-to-get-data-into-target.md'
+            path: '/before-implement/methods-to-get-data-into-target/methods-to-get-data-into-target.md'
           },
           {
             title: 'Page parameters',
-            path: '/before-implement/page-parameters.md'
+            path: '/before-implement/methods-to-get-data-into-target/page-parameters.md'
           },
           {
             title: 'In-page profile attributes',
-            path: '/before-implement/in-page-profile-attributes.md'
+            path: '/before-implement/methods-to-get-data-into-target/in-page-profile-attributes.md'
           },
           {
             title: 'Script profile attributes',
-            path: '/before-implement/script-profile-attributes.md'
+            path: '/before-implement/methods-to-get-data-into-target/script-profile-attributes.md'
           },
           {
             title: 'Data providers',
-            path: '/before-implement/data-providers.md'
+            path: '/before-implement/methods-to-get-data-into-target/data-providers.md'
           },
           {
             title: 'Bulk profile update API',
-            path: '/before-implement/bulk-profile-update-api.md'
+            path: '/before-implement/methods-to-get-data-into-target/bulk-profile-update-api.md'
           },
           {
             title: 'Single profile update API',
-            path: '/before-implement/single-profile-update-api.md'
+            path: '/before-implement/methods-to-get-data-into-target/single-profile-update-api.md'
           },
           {
             title: 'Customer attributes',
-            path: '/before-implement/customer-attributes.md'
+            path: '/before-implement/methods-to-get-data-into-target/customer-attributes.md'
           },
           {
             title: 'Profile API settings',
-            path: '/before-implement/profile-api-settings.md'
+            path: '/before-implement/methods-to-get-data-into-target/profile-api-settings.md'
           }
         ]
       },
