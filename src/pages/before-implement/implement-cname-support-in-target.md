@@ -37,7 +37,7 @@ Instructions for working with Adobe Client Care to implement CNAME (Canonical Na
 
 Adobe's certificate authority, DigiCert, cannot issue a certificate until this step is complete. Therefore, Adobe cannot fulfill your request for a CNAME implementation until this step is complete.
 
-1. [Fill out this form](/help/main/assets/FPC_Request_Form.xlsx) and include it when you [open an Adobe Client Care ticket requesting CNAME support](/help/main/cmp-resources-and-contact-information.md#reference_ACA3391A00EF467B87930A450050077C):
+1. [Fill out this form](/help/main/assets/FPC_Request_Form.xlsx) and include it when you [open an Adobe Client Care ticket requesting CNAME support](https://experienceleague.corp.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?lang=en#reference_ACA3391A00EF467B87930A450050077C):
 
    * Adobe Target client code:
    * SSL certificate hostnames (example: `target.example.com target.example.org`):
@@ -49,13 +49,13 @@ Adobe's certificate authority, DigiCert, cannot issue a certificate until this s
       * Certificate state/region (example: California):
       * Certificate city (example: San Jose):
 
-1. If Adobe is purchasing the certificate, Adobe works with DigiCert to purchase and deploy your certificate on Adobe's production servers.
+2. If Adobe is purchasing the certificate, Adobe works with DigiCert to purchase and deploy your certificate on Adobe's production servers.
 
    If the customer is purchasing the certificate (BYOC), Adobe Client Care sends you the certificate signing request (CSR). Use the CSR when purchasing the certificate through your certificate authority of choice. After the certificate is issued, send a copy of the certificate and any intermediate certificates to Adobe Client Care for deployment.
 
    Adobe Client Care notifies you when your implementation is ready.
 
-1. Update the `serverDomain` ([documentation](/help/c-implementing-target/c-implementing-target-for-client-side-web/targetgobalsettings.md#serverDomain)) to the new CNAME hostname and set `overrideMboxEdgeServer` to `false` ([documentation](/help/c-implementing-target/c-implementing-target-for-client-side-web/targetgobalsettings.md#overridemboxedgeserver)) in your at.js configuration.
+3. Update the `serverDomain` ([documentation](/help/c-implementing-target/c-implementing-target-for-client-side-web/targetgobalsettings.md#serverDomain)) to the new CNAME hostname and set `overrideMboxEdgeServer` to `false` ([documentation](/help/c-implementing-target/c-implementing-target-for-client-side-web/targetgobalsettings.md#overridemboxedgeserver)) in your at.js configuration.
 
 ## Frequently Asked Questions
 
