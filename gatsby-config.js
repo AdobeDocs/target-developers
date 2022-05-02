@@ -22,6 +22,36 @@ module.exports = {
         path: '/before-implement/'
       },
       {
+        title: 'Implement',
+        menu: [
+          {
+            title: 'Client-side',
+            description: 'Implement using AEP Web SDK or at.js',
+            path: '/implement/client-side/implement-target-for-client-side-web.md'
+          },
+          {
+            title: 'Server-side',
+            description: 'Node.js, Java, .NET, Python',
+            path: '/implement/server-side/'
+          },
+          {
+            title: 'Hybrid',
+            description: 'Client- and Server-side combination',
+            path: '/implement/hybrid/'
+          },
+          {
+            title: 'Mobile',
+            description: 'AEP Mobile SDK',
+            path: '/implement/mobile/'
+          },
+          {
+            title: 'APIs',
+            description: 'Get Started, Delivery API',
+            path: '/implement/api-guides/'
+          }
+        ]
+      },
+      {
         title: 'API Guides',
         path: '/api-guides/'
       },
@@ -38,7 +68,7 @@ module.exports = {
           description: 'Adobe Target Admin and Profile API',
           path: '/api/admin-api/index.md'
           }
-      ]
+        ]
       },
       {
         title: 'SDK Guides',
@@ -189,6 +219,258 @@ module.exports = {
       {
         title: 'CNAME and Adobe Target',
         path: '/before-implement/implement-cname-support-in-target.md'
+      },
+      {
+        title: 'Implement Target overview',
+        path: '/implement/implementing-target.md'
+      },
+      {
+        title: 'Client-side web: implement Target',
+        path: '/implement/client-side/implement-target-for-client-side-web.md',
+        pages: [
+          {
+            title: 'Overview: implement Target for client-side web',
+            path: '/implement/client-side/implement-target-for-client-side-web.md'
+          },
+          {
+            title: 'AEP Web SDK implementation overview',
+            path: '/implement/client-side/aep-web-sdk.md'
+          },
+          {
+            title: 'at.js implementation',
+            path: '/implement/client-side/how-atjs-works/',
+            pages: [
+              {
+                title: 'How at.js works',
+                path: '/implement/client-side/how-atjs-works/how-atjs-works.md'
+              },
+              {
+                title: 'How at.js manages flicker',
+                path: '/implement/client-side/how-atjs-works/manage-flicker-with-atjs.md'
+              },
+              {
+                title: 'at.js integrations',
+                path: '/implement/client-side/how-atjs-works/target-atjs-integrations.md'
+              }
+            ]
+          },
+          {
+            title: 'How to deploy at.js',
+            path: '/implement/client-side/how-to-deployatjs/',
+            pages: [
+              {
+                title: 'How to deploy at.js',
+                path: '/implement/client-side/how-to-deployatjs/how-to-deployatjs.md'
+              },
+              {
+                title: 'Implement Target using Adobe Experience Platform',
+                path: '/implement/client-side/how-to-deployatjs/implement-target-using-adobe-launch.md'
+              },
+              {
+                title: 'Implement Target without a tag manager',
+                path: '/implement/client-side/how-to-deployatjs/implement-target-without-a-tag-manager.md'
+              },
+              {
+                title: 'Implement Target using Dynamic Tag Manager (DTM)',
+                path: '/implement/client-side/how-to-deployatjs/implement-target-using-dtm.md'
+              },
+              {
+                title: 'Implement Target for Single Page Applications (SPAs)',
+                path: '/implement/client-side/how-to-deployatjs/target-atjs-single-page-application.md'
+              }
+            ]
+          },
+          {
+            title: 'at.js functions',
+            path: '/implement/client-side/atjs-functions/',
+            pages: [
+              {
+                title: 'at.js functions overview',
+                path: '/implement/client-side/atjs-functions/atjs-functions.md'
+              },
+              {
+                title: 'adobe.target.getOffer()',
+                path: '/implement/client-side/atjs-functions/adobe-target-getoffer.md'
+              },
+              {
+                title: 'adobe.target.getOffers() - at.js 2.x',
+                path: '/implement/client-side/atjs-functions/adobe-target-getoffers-atjs-2.md'
+              },
+              {
+                title: 'adobe.target.applyOffer()',
+                path: '/implement/client-side/atjs-functions/adobe-target-applyoffer.md'
+              },
+              {
+                title: 'adobe.target.applyOffers() - at.js 2.x',
+                path: '/implement/client-side/atjs-functions/adobe-target-applyoffers-atjs-2.md'
+              },
+              {
+                title: 'adobe.target.triggerView() - at.js 2.x',
+                path: '/implement/client-side/atjs-functions/adobe-target-triggerview-atjs-2.md'
+              },
+              {
+                title: 'adobe.target.trackEvent()',
+                path: '/implement/client-side/atjs-functions/adobe-target-trackevent.md'
+              },
+              {
+                title: 'mboxCreate() - at.js 1.x',
+                path: '/implement/client-side/atjs-functions/mboxcreate-atjs.md'
+              },
+              {
+                title: 'targetGlobalSettings()',
+                path: '/implement/client-side/atjs-functions/targetglobalsettings.md'
+              },
+              {
+                title: 'mboxDefine() and mboxUpdate() - at.js 1.x',
+                path: '/implement/client-side/atjs-functions/mboxdefine-mboxupdate-atjs-1x.md'
+              },
+              {
+                title: 'targetPageParams()',
+                path: '/implement/client-side/atjs-functions/targetpageparams.md'
+              },
+              {
+                title: 'targetPageParamsAll()',
+                path: '/implement/client-side/atjs-functions/targetpageparamsall.md'
+              },
+              {
+                title: 'registerExtension() - at.js 1.x',
+                path: '/implement/client-side/atjs-functions/registerextension-atjs-1x.md'
+              },
+              {
+                title: 'sendNotifications() - at.js 2.1',
+                path: '/implement/client-side/atjs-functions/adobe.target.sendnotifications-atjs-21.md'
+              },
+              {
+                title: 'at.js custom events',
+                path: '/implement/client-side/atjs-functions/atjs-custom-events.md'
+              },
+              {
+                title: 'Debug at.js using the Adobe Experience Cloud Debugger',
+                path: '/implement/client-side/target-debugging-atjs/target-debugging-atjs.md'
+              },
+              {
+                title: 'Use cloud-based instances with Target',
+                path: '/implement/client-side/target-debugging-atjs/targeting-using-cloud-based-instances.md'
+              }
+            ]
+          },
+          {
+            title: 'at.js frequently asked questions',
+            path: '/implement/client-side/target-atjs-faq/target-atjs-faq.md',
+            pages: [
+              {
+                title: 'at.js FAQs',
+                path: '/implement/client-side/target-atjs-faq/target-atjs-faq.md'
+              }
+            ]
+          },
+          {
+            title: 'at.js version details',
+            path: '/implement/client-side/target-atjs-versions.md'
+          },
+          {
+            title: 'Upgrading from at.js 1.x to at.js 2.x',
+            path: '/implement/client-side/upgrading-from-atjs-1x-to-atjs-20.md'
+          },
+          {
+            title: 'at.js cookies',
+            path: '/implement/client-side/atjs-cookies.md'
+          },
+          {
+            title: 'Understand the Global mbox',
+            path: '/implement/client-side/global-mbox',
+            pages: [
+              {
+                title: 'Global mbox overview',
+                path: '/implement/client-side/global-mbox/global-mbox-overview.md'
+              },
+              {
+                title: 'Customize a global mbox',
+                path: '/implement/client-side/global-mbox/customize-global-mbox.md'
+              },
+              {
+                title: 'Use a global mbox from a legacy implementation',
+                path: '/implement/client-side/global-mbox/mbox-global-target-standard.md'
+              },
+              {
+                title: 'Pass parameters to a global mbox',
+                path: '/implement/client-side/global-mbox/pass-parameters-to-global-mbox.md'
+              },
+              {
+                title: 'Global mbox frequently asked questions',
+                path: '/implement/client-side/global-mbox/global-mbox-faq'
+              }
+            ]
+          },
+        ]
+      },
+      {
+        title: 'Target for mobile apps overview',
+        path: '/implement/mobile/target-mobile-app.md'
+      },
+      {
+        title: 'How Target works in mobile apps',
+        path: '/implement/mobile/how-target-works-mobile-apps.md'
+      },
+      {
+        title: 'Enable Target in the SDK',
+        path: '/implement/mobile/enable-target-in-sdk.md'
+      },
+      {
+        title: 'iOS - create a Target location and success metric',
+        path: '/implement/mobile/mobile-create-location-and-metric.md'
+      },
+      {
+        title: 'iOS - send custom user data',
+        path: '/implement/mobile/mobile-custom-user-data.md'
+      },
+      {
+        title: 'Target mobile preview',
+        path: '/implement/mobile/target-mobile-preview.md'
+      },
+      {
+        title: 'Prefetch offer content',
+        path: '/implement/mobile/prefetch-offer-content.md'
+      },
+      {
+        title: 'Target for mobile apps FAQ',
+        path: '/implement/mobile/mobile-faq.md'
+      },
+      {
+        title: 'Use Location Service',
+        path: '/implement/mobile/use-location-service'
+      },
+      {
+        title: 'Server-side: implement Target overview',
+        path: '/implement/server-side/server-side-overview.md'
+      },
+      {
+        title: 'Transition from Target legacy APIs to Adobe I/O',
+        path: '/implement/server-side/transition-from-target-legacy-apis.md'
+      },
+      {
+        title: 'On-device decisioning',
+        path: '/implement/server-side/on-device-decisioning.md'
+      },
+      {
+        title: 'Hybrid implementation',
+        path: '/implement/hybrid/hybrid-implementation.md'
+      },
+      {
+        title: 'Email: implement Target overview',
+        path: '/implement/email/non-js-based-implementation.md'
+      },
+      {
+        title: 'Create an Adbox for an image',
+        path: '/implement/email/testing-content-with-the-adbox.md'
+      },
+      {
+        title: 'Test an email image Adbox',
+        path: '/implement/email/testing-email-image-adbox.md'
+      },
+      {
+        title: 'Work with redirectors',
+        path: '/implement/email/working with redirectors.md'
       },
       {
         title: 'Get Started',
