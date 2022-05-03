@@ -42,7 +42,7 @@ module.exports = {
           {
             title: 'Mobile',
             description: 'AEP Mobile SDK',
-            path: '/implement/mobile/target-mobile-app.md'
+            path: '/implement/mobile/'
           },
           {
             title: 'APIs',
@@ -406,12 +406,12 @@ module.exports = {
       },
       {
         title: 'Target for Mobile Apps',
-        path: '/implement/mobile/target-mobile-app.md',
+        path: '/implement/mobile/',
         header: true,
         pages: [
           {
             title: 'Target for mobile apps overview',
-            path: '/implement/mobile/target-mobile-app.md'
+            path: '/implement/mobile/'
           },
           {
             title: 'How Target works in mobile apps',
