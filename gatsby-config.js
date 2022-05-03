@@ -32,7 +32,7 @@ module.exports = {
           {
             title: 'Server-side',
             description: 'Node.js, Java, .NET, Python',
-            path: '/implement/server-side/server-side-overview.md'
+            path: '/implement/server-side/'
           },
           {
             title: 'Hybrid',
@@ -442,12 +442,12 @@ module.exports = {
       },
       {
         title: 'Server-side Implementation',
-        path: '/implement/server-side/server-side-overview.md',
+        path: '/implement/server-side/',
         header: true,
         pages: [
           {
             title: 'Target Server-side implementation overview',
-            path: '/implement/server-side/server-side-overview.md'
+            path: '/implement/server-side/'
           },
           {
             title: 'Transition from Target legacy APIs to Adobe I/O',
