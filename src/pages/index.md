@@ -17,7 +17,7 @@ Resources and Guides for Adobe Target Developers
 ## Resources
 
 * [Adobe Target GitHub Repo](https://github.com/AdobeDocs/target-developers)
-* [Adobe Target Implementation](https://experienceleague.adobe.com/docs/target/using/implement-target/implementing-target.html)
+* [Adobe Target Implementation](./before-implement/index.md)
 * [Adobe Target Administration](https://experienceleague.adobe.com/docs/target/using/administer/administrating-target.html)
 * [Adobe Target Release Notes](https://experienceleague.adobe.com/docs/target/using/release-notes/release-notes.html)
 * [Adobe Target Business User Guide](https://experienceleague.adobe.com/docs/target/using/target-home.html)
@@ -50,7 +50,7 @@ Implement Target using the AEP Web SDK.
 
 <DiscoverBlock slots="link, text"/>
 
-[Target Web SDK](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/implement-target-for-client-side-web.html)
+[Target Web SDK](implement/client-side/)
 
 Implement Target using at.js.
 
@@ -96,7 +96,7 @@ How to use the Target Python SDK.
 
 ### Hybrid Implementation
 
-[Hybrid Deployment](https://experienceleague.adobe.com/docs/target/using/implement-target/hybrid-implementation.html)
+[Hybrid Deployment](implement/hybrid/)
 
 Implement Target using a combination of client- and server-side implementation.
 
@@ -105,7 +105,13 @@ Implement Target using a combination of client- and server-side implementation.
 
 ### Mobile Apps
 
-[AEP Mobile SDK](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-target)
+[AEP Mobile SDK Overview](implement/mobile/)
+
+Overview of how to implement Adobe Target with Adobe Experience Platform Mobile SDKs.
+
+<DiscoverBlock slots= "link, text"/>
+
+[AEP Mobile SDK Reference](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-target)
 
 Implement Adobe Target with Adobe Experience Platform Mobile SDKs.
 
