@@ -21,7 +21,7 @@ The Adobe Target application and content delivery has been tested across a wide 
 
 For more important information about TLS, see [TLS (Transport Layer Security) Encryption Changes](tls-transport-layer-security-encryption.md).
 
-## Target Standard/Premium interface {#section_1B73CA4B7BBC460BB7009DF00A2AFC4D}
+## Target Standard/Premium interface
 
 The Target interface supports the following browsers and devices:
 
@@ -30,7 +30,7 @@ The Target interface supports the following browsers and devices:
 |Windows|<ul><li>Microsoft Edge</li><li>Google Chrome (latest, latest minus 1)</li><li>Mozilla Firefox (latest, latest minus 1)</li></ul>|
 |Mac|<ul><li>Firefox (latest, latest minus 1)</li><li>Chrome (latest, latest minus 1)</li></ul>|
 
-## Content delivery {#section_1045A946056441268D40025529918D3D}
+## Content delivery
 
 Content delivery has been tested across the following browsers and devices:
 

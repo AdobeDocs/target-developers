@@ -32,7 +32,7 @@ However, in at.js 2.x, HTTP GET is no longer used and instead uses HTTP POST. HT
 
 Therefore, neither third-party cookies nor cross-domain tracking are supported in at.js 2.0.0.
 
-## at.js 1.*x* cookie behavior {#at-js-1x-cookie-behavior}
+## at.js 1.*x* cookie behavior
 
 For at.js versions 1.*x*, the cookie behavior depends on whether it is a first-party cookie, a third-party cookie with a first-party cookie, or a third-party cookie alone.
 

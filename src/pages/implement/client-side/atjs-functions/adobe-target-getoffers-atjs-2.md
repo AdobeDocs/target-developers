@@ -208,7 +208,7 @@ adobe.target.getOffers({
 
 The payload can then be forwarded to Adobe Analytics via the [Data Insertion API](https://helpx.adobe.com/analytics/kb/data-insertion-api-post-method-adobe-analytics.html).
 
-## Fetch and render data from multiple mboxes via getOffers() and applyOffers() {#multiple}
+## Fetch and render data from multiple mboxes via getOffers() and applyOffers()
 
 at.js 2.x lets you fetch multiple mboxes via the `getOffers()` API. You can also fetch data for multiple mboxes and then use `applyOffers()` to render the data in different locations identified by a CSS selector.
 

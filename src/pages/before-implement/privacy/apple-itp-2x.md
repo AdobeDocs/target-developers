@@ -24,7 +24,7 @@ These versions of ITP include the following restrictions:
 |[ITP 2.2](https://webkit.org/blog/8828/intelligent-tracking-prevention-2-2/)|Drastically reduced the seven-day expiry cap to one day.<br />Released April 24, 2019.|
 |[ITP 2.3](https://webkit.org/blog/9521/intelligent-tracking-prevention-2-3/)|Eliminated several workarounds, such as employing localStorage or using the JavaScript `Document.referrer property`.<br />Released September 23, 2019.<br />CNAME-cloaking defence feature to ITP released in Safari 14, macOS Big Sur, Catalina, Mojave, iOS 14, and iPadOS 14. All cookies created by a third-party CNAME-cloaked HTTP response will be set to expire in seven days.<br />Announced November 12, 2020.|
 
-## What is the impact to me as an Adobe Target customer? {#impact}
+## What is the impact to me as an Adobe Target customer?
 
 Target provides JavaScript libraries for you to deploy on your pages so that Target can deliver real-time personalization to your visitors. There are three Target JavaScript libraries at.js 1.x, at.js 2.x that place client-side Target cookies on your visitors' browsers via the `document.cookie` API. As a result, Target cookies are impacted by Apple’s ITP 2.1, 2.2, and 2.3 and will expire after seven days (with ITP 2.1) and after one day (with ITP 2.2 and ITP 2.3).
 

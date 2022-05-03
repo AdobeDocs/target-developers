@@ -29,7 +29,7 @@ Use the Redirector to do the following:
 
 For help deciding the right setup see [Non-JavaScript-Based Implementations](/help/c-implementing-target/c-non-javascript-based-implementation/non-javascript-based-implementation.md#concept_4799C58B081A43F6B3B8CC25A8D5D7C4). 
 
-## Create a redirector {#redirector}
+## Create a redirector
 
 Before you can use a redirector, you must create it.
 
@@ -84,11 +84,11 @@ Before you can use a redirector, you must create it.
 
 7. Submit the full Redirector URL to your Display Ad Network as the ad destination.
 
-## Use a redirector to pass Costs per Click and Revenue Per Click {#concept_3078EF48E9C44B34992D62AAB9628853}
+## Use a redirector to pass Costs per Click and Revenue Per Click
 
 Information about using a redirector to pas costs per click and revenue per click.
 
-### Passing Costs per Click {#section_DEB889470F7D4360B5CEA85FD05DEDFA}
+### Passing Costs per Click
 
 Use a redirector to pass the costs per click.
 
@@ -105,7 +105,7 @@ https://<your_clientcode>.tt.omtrdc.net/​m2/yourclientcode/ubox/​page?mbox=r
 &mboxPageValue=-0.1&mboxDefault=​https://www.yourcompany.com/usualdestination.htm
 ```
 
-### Passing Revenue per Click {#section_3E48AC465E7D42DAAC51B4BFF83F64B1}
+### Passing Revenue per Click
 
 Use a redirector to pass the revenue per click.
 

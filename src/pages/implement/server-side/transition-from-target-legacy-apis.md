@@ -16,14 +16,14 @@ With the decommissioning of Adobe Target Classic, the APIs that are connected to
 
 For more information about the Target API documentation, see [Target APIs and NodeJS SDK](/help/c-implementing-target/c-api-and-sdk-overview/api-and-sdk-overview.md#concept_5718EC1FF2ED4436935D0BCCD7AA29A6).
 
-## Terminology {#section_D8286EDAE3B24D208DA432AEF2E88FD9}
+## Terminology
 
 | Term | Description |
 |--- |--- |
 |Legacy API|APIs that are linked to your Target Classic account. These API calls are based on a username and password-based authentication and use the hostname `testandtarget.omniture.com`. If your API calls contain a user name and password in the request URL, you must transition to Adobe I/O APIs.|
 |Adobe I/O|Adobe I/O is the new gateway for Target APIs. These APIs are connected to your Target Standard/Premium account. The Target APIs on Adobe I/O use a JWT-based authentication, which is the industry standard for secure enterprise APIs.|
 
-## Timeline {#section_A478EBF637554A2DB5A31661955121ED}
+## Timeline
 
 The legacy APIs will be decommissioned when you Target Classic is decommissioned:
 
@@ -34,7 +34,7 @@ The legacy APIs will be decommissioned when you Target Classic is decommissioned
 
 Recommendations Classic APIs won’t be impacted by this time line.
 
-## Equivalent Methods {#section_DDB42CCC172545B09CB728D794CC466B}
+## Equivalent Methods
 
 The following table lists the equivalent new Target API methods for the legacy API methods. The new APIs return JSON when compared to the XML response provided by the legacy APIs.
 
@@ -58,10 +58,10 @@ The new API methods are linked to the corresponding section in the API documenta
 ||1-1 Content Report|[Get AP Performance Report](https://developers.adobetarget.com/api/#get-ap-activity-performance-report)||
 |Account Settings|Get Host Groups|[List Environments](https://developers.adobetarget.com/api/#list-environments)||
 
-## Exceptions {#section_09CF9A0E289149279783B4801D1B6D4C}
+## Exceptions
 
 If you require an exception, please contact your Customer Success Manager.
 
-## Help {#section_591F850E2B7A4342B1C233693425415C}
+## Help
 
 Please contact Adobe Target Client Care (tt-support@adobe.com) if you have any questions or need help transitioning to the new Target APIs on Adobe I/O.

@@ -52,7 +52,7 @@ Now, wherever `triggerView()` is implemented on your SPA, the Views and actions 
 |5|Analytics data sent to Data Collection Servers.|
 |6|Target data is matched to Analytics data via the SDID and is processed into the Analytics reporting storage. Analytics data can then be viewed in both Analytics and Target via A4T reports.|
 
-## Deploy at.js 2.*x* {#deploy-atjs-200}
+## Deploy at.js 2.*x*
 
 1. Deploy at.js 2.*x* via tags in [Adobe Experience Platform](/help/c-implementing-target/c-implementing-target-for-client-side-web/how-to-deployatjs/cmp-implementing-target-using-adobe-launch.md) extension. 
 
@@ -277,7 +277,7 @@ Yes, because execute > pageLoad is treated on the Target edge servers like `targ
 |Auto Create Global Mbox|Yes|
 |Global Mbox Name|Yes|
 
-### Cross-domain tracking support in at.js 2.x {#cross-domain}
+### Cross-domain tracking support in at.js 2.x
 
 Cross-domain tracking makes it possible to stitch visitors across different domains. Because a new cookie must be created for each domain, it is difficult to track visitors when they navigate from domain to domain. To accomplish cross-domain tracking, Target uses a third-party cookie to track visitors across domains. This allows you to create a Target activity that spans `siteA.com` and `siteB.com` and visitors remain in the same experience when they navigate across unique domains. This functionality ties into Target’s third-party and first-party cookie behavior.
 
@@ -320,7 +320,7 @@ When a prefetch call is made to the Target backend, the profile scripts are exec
 
 No, you do not need to add pre-hiding code before calling `triggerView()`. at.js 2.*x* manages the pre-hiding and flicker logic before the view is displayed and applied.
 
-### Which at.js 1.*x* parameters for creating audiences are not supported in at.js 2.*x*? {#audience-parameters}
+### Which at.js 1.*x* parameters for creating audiences are not supported in at.js 2.*x*?
 
 The following at.js 1.x parameters are *NOT* currently supported for audience creation when using at.js 2.*x*:
 
@@ -334,7 +334,7 @@ The following at.js 1.x parameters are *NOT* currently supported for audience cr
 * devicePixelRatio
 * vst.* parameters ([see below](#vst))
 
-### at.js 2.*x* does not support creating audiences using vst.* parameters {#vst}
+### at.js 2.*x* does not support creating audiences using vst.* parameters 
 
 Customers on at.js 1.*x* were able to use vst.* mbox parameters to create audiences. This was an unintended side-effect of how at.js 1.*x* sent mbox parameters to the Target back-end. After migrating to at.js 2.*x*, you can no longer create audiences using these parameters because at.js 2.*x* sends mbox parameters differently.
 
@@ -342,7 +342,7 @@ Customers on at.js 1.*x* were able to use vst.* mbox parameters to create audien
 
 The following tables explain at.js. 2.*x* compatibility with different activity types, integrations, features, and at.js functions.
 
-### Activity types {#types}
+### Activity types
 
 |Type|Supported?|
 | --- | --- |
@@ -358,7 +358,7 @@ The following tables explain at.js. 2.*x* compatibility with different activity 
 
 Auto-Target activities are supported through at.js 2.*x* and the VEC when all modifications are applied to the `Page Load Event`. When modifications are added to particular views, A/B Test, Auto-Allocate, and Experience Targeting (XT) activities only are supported.
 
-### Integrations {#integrations}
+### Integrations
 
 |Type|Supported?|
 | --- | --- |
@@ -398,11 +398,11 @@ Auto-Target activities are supported through at.js 2.*x* and the VEC when all mo
 |`?mboxSession`|No|
 |`?mboxOverride.browserIp`|Yes|
 
-## Response tokens {#response-tokens}
+## Response tokens
 
 at.js 2.*x*, just like at.js 1.*x*, uses the custom event `at-request-succeeded` to surface response tokens. For code examples using the `at-request-succeeded` custom event, see [Response tokens](https://experienceleague.corp.adobe.com/docs/target/using/administer/response-tokens.html).
 
-## at.js 1.*x* parameters to at.js 2.*x* payload mapping {#payload-mapping}
+## at.js 1.*x* parameters to at.js 2.*x* payload mapping
 
 This section outlines the mappings between at.js 1.*x* and at.js 2.*x*.
 

@@ -238,7 +238,7 @@ module.exports = {
           },
           {
             title: 'at.js implementation',
-            path: '/implement/client-side/how-atjs-works/',
+            path: '/implement/client-side/how-atjs-works/how-atjs-works.md',
             pages: [
               {
                 title: 'How at.js works',
@@ -256,7 +256,7 @@ module.exports = {
           },
           {
             title: 'How to deploy at.js',
-            path: '/implement/client-side/how-to-deployatjs/',
+            path: '/implement/client-side/how-to-deployatjs/how-to-deployatjs.md',
             pages: [
               {
                 title: 'How to deploy at.js',
@@ -282,7 +282,7 @@ module.exports = {
           },
           {
             title: 'at.js functions',
-            path: '/implement/client-side/atjs-functions/',
+            path: '/implement/client-side/atjs-functions/atjs-functions.md',
             pages: [
               {
                 title: 'at.js functions overview',

@@ -27,11 +27,11 @@ Individual feature-usage data is collected for internal Adobe purposes to identi
 
 You can opt out of reporting usage data in our SDKs by setting `telemetryEnabled` to false in the client initialization options. For more information, see [telemetryEnabled in targetGlobalSettings](/help/c-implementing-target/c-implementing-target-for-client-side-web/targetgobalsettings.md#telemetry).
 
-## Collection of IP addresses {#section_91BDB8105EBF4B85B7B8B8A14675AC85}
+## Collection of IP addresses
 
 The IP address of a visitor to your website is transmitted to an Adobe Data Processing Center (DPC). Depending on the network configuration for the visitor, the IP address does not necessarily represent the IP address of the visitor’s computer. For example, the IP address could be the external IP address of a Network Address Translation (NAT) firewall, HTTP proxy, or Internet gateway. Target doesn't store any IP addresses of the user or any Personally Identifiable Information (PII). IP addresses are used only by Target during the session (in-memory, never persisted).
 
-## Replacement of last octet of IP addresses {#section_AE84EB0D7CE04E93B279B77732ADD61E}
+## Replacement of last octet of IP addresses
 
 Adobe has developed a new “privacy by design” setting that can be enabled by Adobe Client Care for Adobe Target. When this setting is enabled, the last octet (the last portion) of the IP address is immediately hidden when the IP address is collected by Adobe. This anonymization is performed before any processing of the IP address, including before an optional geo-lookup of the IP address.
 
@@ -49,13 +49,13 @@ Target receives the full IP address and obfuscates it (if set to Last octet or F
 
 [Contact Adobe Client Care](https://experienceleague.corp.adobe.com/docs/target/using/cmp-resources-and-contact-information.html#reference_ACA3391A00EF467B87930A450050077C) to determine which setting you are currently using or to enable the IP obfuscation feature.
 
-## GeoSegmentation {#section_BB69F96559BD44BDA4177537C4A5345A}
+## GeoSegmentation
 
 If you enable the replacement of the last octet of the IP address, the remaining values of the IP address can be analyzed using reports in Adobe Target. If the last octet of the IP address has not been obfuscated, then the full IP address can be analyzed in Adobe Target. You can use the GeoSegmentation feature to map out visitor location by geographic area. GeoSegmentation data is granular only to the city level or zip code level, and not to the individual level.
 
 If IP addresses are completely obfuscated, GeoSegmentation and geo targeting is not available.
 
-## Opt-out link {#section_E7A62B7B99C94B3A806CB262D16E27FC}
+## Opt-out link
 
 You can add an opt-out link to your sites to enable visitors to opt-out of all counting and content delivery.
 

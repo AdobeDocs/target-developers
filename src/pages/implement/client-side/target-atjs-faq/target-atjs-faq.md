@@ -38,7 +38,7 @@ exl-id: 937f880a-1842-4655-be44-0a5614c2dbcc
 
 Answers to frequently asked questions about the Adobe Target at.js JavaScript library.
 
-## What are the advantages of using at.js versus mbox.js? {#section_FE30D01A577C46ACB0F787B85F5E0F6B}
+## What are the advantages of using at.js versus mbox.js?
 
 The at.js library replaces mbox.js. The mbox.js library is no longer supported. However, for most people, at.js provides advantages over mbox.js.
 
@@ -50,7 +50,7 @@ The following diagram illustrates page-load performance using mbox.js versus at.
 
 As illustrated above, using mbox.js, page content did not begin to load until after the Target call is complete. Using at.js, page content begins loading when the Target call is initiated and does not wait until the call is complete.
 
-## What is the impact of at.js and mbox.js on page-load time? {#page-load}
+## What is the impact of at.js and mbox.js on page-load time?
 
 Many customers and consultants want to know the impact of at.js and mbox.js on page-load time, especially in the context of new vs returning users. Unfortunately, it's hard to measure and give concrete numbers regarding how at.js or mbox.js influence page-load time due to each customer's implementation.
 
@@ -88,7 +88,7 @@ The following sections describe the sequence of actions for new and returning vi
 
 For new visitors, when the Visitor API is present, Target has to go over the wire multiple times to make sure that Target requests contain Experience Cloud Visitor ID data. For returning visitors, Target goes over the wire only to Target to retrieve the personalized content. 
 
-## Why does it seem like I see slower response times after upgrading from a previous version of at.js to version 1.0.0? {#section_DFBA5854FFD142B49AD87BFAA09896B0}
+## Why does it seem like I see slower response times after upgrading from a previous version of at.js to version 1.0.0?
 
 at.js version 1.0.0 and later fires all the requests in parallel. Previous versions execute the requests sequentially, meaning the requests are put in a queue and Target waits for first request to complete before moving on to the next request.
 
@@ -105,7 +105,7 @@ From a response-time perspective, mathematically, this sequence can be summed li
 
 The at.js library version 1.0.0 completes the requests faster. In addition, at.js requests are asynchronous, so Target doesn't block page rendering. Even if requests take seconds to complete, you still see the rendered page, only some portions of the page are blanked out until Target gets a response from the Target edge.
 
-## Can I load the Target library asynchronously? {#section_AB9A0CA30C5440C693413F1455841470}
+## Can I load the Target library asynchronously?
 
 The at.js 1.0.0 release makes it possible to load the Target library asynchronously.
 
@@ -137,19 +137,19 @@ If you are deploying at.js through a synchronous DTM implementation, the pre-hid
 
 For more information, see [How at.js manages flicker](/help/c-implementing-target/c-implementing-target-for-client-side-web/c-how-atjs-works/manage-flicker-with-atjs.md). 
 
-## Is at.js compatible with the Adobe Experience Manager integration (Experience Manager)? {#section_6177AE10542344239753764C6165FDDC}
+## Is at.js compatible with the Adobe Experience Manager integration (Experience Manager)?
 
 Adobe Experience Manager 6.2 with FP-11577 (or later) now supports at.js implementations with its Adobe Target Cloud Services integration.
 
-## How can I prevent page-load flicker using at.js? {#section_4D78AAAE73C24E578C974743A3C65919}
+## How can I prevent page-load flicker using at.js?
 
 Target provides several ways to prevent page-load flicker. For more information, see [Preventing Flicker with at.js](/help/c-implementing-target/c-implementing-target-for-client-side-web/c-how-atjs-works/manage-flicker-with-atjs.md#concept_AA168574397D4474B993EEAB90865EBA).
 
-## What is the file size of at.js? {#section_6A25C9A14C66441785A7635FEF5C4475}
+## What is the file size of at.js?
 
 The at.js file is approximately 109 KB when downloaded. However, because most servers automatically compress files to make file sizes smaller, at.js is approximately 34 KB when compressed (using GZIP or another method) on your server and loaded as users visit your website. The compression settings on the server where you installed at.js determine its actual compressed size.
 
-## Why is at.js bigger than mbox.js? {#section_AA1C43897E46448FA3E26EEC10ED7E51}
+## Why is at.js bigger than mbox.js?
 
 at.js implementations use a single library ( at.js), while mbox.js implementations actually use two libraries ( mbox.js and target.js). So a fairer comparison is at.js versus mbox.js *and* `target.js`. Comparing the gzipped sizes of the two versions, at.js version 1.2 is 34 KB and mbox.js version 63 is 26.2 KB. ``
 
@@ -157,35 +157,35 @@ at.js is larger because it does a lot more DOM parsing compared to mbox.js. This
 
 Despite the larger file size, our testing indicates that pages load faster with at.js versus mbox.js. Also, at.js is superior from a security perspective because it doesn't load additional files dynamically or use `document.write`.
 
-## Does at.js have jQuery in it? Can I remove this part of at.js because I already have jQuery on my website? {#section_E4604E46E7B34460B8DD6A78D9B476F9}
+## Does at.js have jQuery in it? Can I remove this part of at.js because I already have jQuery on my website?
 
 at.js currently uses parts of jQuery and thus you see the MIT license notification at the top of at.js. jQuery is not exposed and it doesn't interfere with the jQuery library you already have on your page, which might be a different version. Removal of the jQuery code within at.js is not supported.
 
-## Does at.js support Safari and cross domain set to x-only? {#section_114EC271A6E045E1B2183B66F1B71285}
+## Does at.js support Safari and cross domain set to x-only?
 
 No, if cross domain is set to x-only and Safari has third-party cookies disabled, then both mbox.js and at.js sets a disabled cookie and no mbox requests are executed for that particular client's domain.
 
 To support Safari visitors, a better X-Domain would be “disabled” (sets only a first-party cookie) or “enabled” (sets only a first-party cookie on Safari, while setting first- and third-party cookies on other browsers).
 
-## Can I use the Target Visual Experience Composer (VEC) in my single-page applications? {#section_459C1BEABD4B4A1AADA6CF4EC7A70DFB}
+## Can I use the Target Visual Experience Composer (VEC) in my single-page applications?
 
 Yes, you can use the VEC for your SPA if you use at.js 2.x. For more information, see [Single Page (SPA) Visual Experience Composer](https://experienceleague.corp.adobe.com/docs/target/using/experiences/spa-visual-experience-composer.html).
 
-## Can I use the Adobe Experience Cloud Debugger with at.js implementations? {#section_FF3CF4C5FD2F4DB1BF1A6B39DA161637}
+## Can I use the Adobe Experience Cloud Debugger with at.js implementations?
 
 Yes. You can also use mboxTrace for debugging purposes or your browser's Developer Tools to inspect the Network requests, filtering to "mbox" to isolate mbox calls.
 
-## Can I use special characters in mbox names with at.js? {#section_8E31D2E8A27642098934D7DACFB2A600}
+## Can I use special characters in mbox names with at.js?
 
 Yes, same as with mbox.js.
 
-## Why are my mboxes not firing on my web pages? {#section_4BA5DA424B734324AAB51E4588FA50F5}
+## Why are my mboxes not firing on my web pages?
 
 Target customers sometimes use cloud-based instances with Target for testing or simple proof-of-concept purposes. These domains, and many others, are part of the [Public Suffix List](https://publicsuffix.org/list/public_suffix_list.dat).
 
 Modern browsers do not save cookies if you are using these domains unless you customize the `cookieDomain` setting using targetGlobalSettings(). For more information, see [Using Cloud-Based Instances with Target](/help/c-implementing-target/c-implementing-target-for-client-side-web/c-target-debugging-atjs/targeting-using-cloud-based-instances.md).
 
-## Can IP addresses be used as the cookie domain when using at.js? {#section_8BEEC91A3410459D9E442840A3C88AF7}
+## Can IP addresses be used as the cookie domain when using at.js?
 
 Yes, if you are using [at.js version 1.2 or later](/help/c-implementing-target/c-implementing-target-for-client-side-web/target-atjs-versions.md#reference_DBB5EDB79EC44E558F9E08D4774A0F7A). Adobe strongly recommends that you keep current with the latest version, however.
 
@@ -215,7 +215,7 @@ if (/^123\.456\.78\..*/g.test(window.location.hostname)) {
 }
 ```
 
-## Why do I see warning messages, such as "actions with missing selectors"? {#section_C36BED5B16634361A1BA46FCB731489D}
+## Why do I see warning messages, such as "actions with missing selectors"?
 
 These messages are not related to at.js functionality. The at.js library tries to report anything that can't be found in the DOM.
 
@@ -229,11 +229,11 @@ The following are possible root causes if you see this warning message:
   
   For best results, please download and use the latest version of at.js. For more information, see [at.js Version Details](/help/c-implementing-target/c-implementing-target-for-client-side-web/target-atjs-versions.md) and [Download at.js](/help/c-implementing-target/c-implementing-target-for-client-side-web/how-to-deployatjs/implementing-target-without-a-tag-manager.md).
 
-## What is the domain tt.omtrdc.net that Target server calls go to? {#section_999C29940E8B4CAD8A957A6B1D440317}
+## What is the domain tt.omtrdc.net that Target server calls go to?
 
 tt.omtrdc.net is the domain name for Adobe's EDGE network, used to receive all server calls for Target.
 
-## Why doesn't at.js always use HttpOnly and Secure cookie flags? {#section_74527E3B41B54B0A83F217C3E664ED1F}
+## Why doesn't at.js always use HttpOnly and Secure cookie flags?
 
 HttpOnly can be set only via server-side code. Target cookies, such as mbox, are created and saved via JavaScript code, so Target can't use the HttpOnly cookie flag. Target does use set HttpOnly for third-party cookies set from the server side when cross-domain is enabled.
 
@@ -241,15 +241,15 @@ Secure can be set via JavaScript only when the page has been loaded via HTTPS. I
 
 To ensure that Target can properly track users, and because the cookies are generated client-side, Target doesn't use either of these flags except in the situations mentioned above.
 
-## How often does at.js fire a network request? {#section_57C5235DF7694AF093A845D73EABADFD}
+## How often does at.js fire a network request?
 
 Target executes all of its decisioning on the server side. This means that at.js fires a network request every time the page reloads or an at.js public API is invoked.
 
-## In the best case scenario, can we expect that the user doesn't experience any visible effects on page load relating to hiding, replacing, and showing content? {#section_CB3C566AD61F417FAC0EC5AC706723EB}
+## In the best case scenario, can we expect that the user doesn't experience any visible effects on page load relating to hiding, replacing, and showing content?
 
 at.js tries to avoid pre-hiding HTML BODY or other DOM elements for an extended period, but this depends on network conditions and activity setup. at.js provides [settings](/help/c-implementing-target/c-implementing-target-for-client-side-web/targetgobalsettings.md) you can use to customize the BODY hiding CSS style, such that instead of blanking the entire HTML BODY, you can pre-hide only some parts of the page. The expectation is that those parts contain DOM elements that have to be "personalized."
 
-## What is the sequence of events in an average scenario where a user qualifies for an activity? {#section_56E6F448E901403FB77DF02F44C44452}
+## What is the sequence of events in an average scenario where a user qualifies for an activity?
 
 The at.js request is an async `XMLHttpRequest`, so we execute the following steps:
 
@@ -263,17 +263,17 @@ The at.js request is an async `XMLHttpRequest`, so we execute the following step
 1. If a DOM element is found, Target applies DOM changes and the element pre-hiding STYLE is removed. 
 1. If DOM elements are not found, a global timeout unhides the elements to avoid having a broken page.
 
-## How often is the page's content fully loaded and visible when at.js finally unhides the element the activity is changing? {#section_01AFF476EFD046298A2E17FE3ED85075}
+## How often is the page's content fully loaded and visible when at.js finally unhides the element the activity is changing?
 
 Considering the above scenario, how often is the page's content fully loaded and visible when at.js finally unhides the element the activity is changing? In other words, the page is fully visible except for the activity's content, which is then revealed slightly after the rest of the content.
 
 at.js doesn't block the page from rendering. A user might notice some blank regions on the page that represent elements that are customized by Target. If the content to be applied doesn't contain many remote assets, such as SCRIPTs or IMGs, everything should render quickly.
 
-## How would a fully cached page affect the above scenario? Would it be more likely for the activity's content to become visible noticeably after the rest of the page's content loads? {#section_CE76335A3E0B41CB8253DEE5E060FCDA}
+## How would a fully cached page affect the above scenario? Would it be more likely for the activity's content to become visible noticeably after the rest of the page's content loads?
 
 If a page is cached on a CDN that is close to user's location, but not near the Target edge, that user might see some delays. Target edges are well distributed across the globe, so this is not an issue most of the time.
 
-## Is it possible for a hero image to be displayed and then swapped out after a short delay? {#section_C25B07B25B854AAE8DEE1623D0FA62A3}
+## Is it possible for a hero image to be displayed and then swapped out after a short delay?
 
 Considering the following scenario:
 

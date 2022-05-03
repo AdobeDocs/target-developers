@@ -19,7 +19,7 @@ Information about how the Target at.js JavaScript library prevents flicker durin
 
 Flicker happens when default content momentarily displays to visitors before it is replaced by the activity content. Flicker is undesirable because it can be confusing to visitors.
 
-## Using an auto-created global mbox {#section_C502170D551C4F52AAFD8E82C41BB63A}
+## Using an auto-created global mbox
 
 If you enable the [Auto Create Global Mbox](/help/c-implementing-target/c-implementing-target-for-client-side-web/t-mbox-download/c-understanding-global-mbox/understanding-global-mbox.md#concept_76AC0EC995A048238F3220F53773DB13) setting when configuring at.js, at.js manages flicker by changing the opacity setting as the page loads. When at.js loads, it will change the opacity setting of the `<body>` element to "0", making the page initially invisible to visitors. After a response from Target is received—or if an error with the Target request is detected—at.js resets opacity to "1". This ensures that the visitor only sees the page after your activities' content has been applied.
 

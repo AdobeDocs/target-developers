@@ -29,7 +29,7 @@ The options parameter is mandatory and has the following structure:
 |selector|String or DOM Element|No|HTML element or CSS selector used to identify the HTML element where Target should place the offer content. If selector is not provided, Target assumes that the HTML element should use HTML HEAD.|
 |Offer|Array|Yes|An array actions that should be applied to the element.|
 
-## Example {#section_D8D6A17B73DE4542937CDB687193A5CC}
+## Example
 
 The following example shows how to use `getOffer` and `applyOffer` together:
 

@@ -45,7 +45,7 @@ exl-id: 14080cf6-6a15-4829-b95d-62c068898564
 
 You can override settings in the at.js library using `targetGlobalSettings()`, rather than configuring them in the Target Standard/Premium UI or by using REST APIs.
 
-## Settings {#section_42C759AE9B524A43B8659018677224B8}
+## Settings
 
 You can override the following settings:
 
@@ -99,7 +99,7 @@ You can override the following settings:
 * **Default Value**: See [Data Providers](#data-providers) below.
 * **Description**: See [Data Providers](#data-providers) below.
 
-### decisioningMethod {#on-device-decisioning}
+### decisioningMethod
 
 * **Type**: String 
 * **Default Value**: server-side 
@@ -240,7 +240,7 @@ The deviceIdLifetime setting is overrideable in at.js version 2.3.1 or later.
 * **Default Value**: See [Hybrid personalization](#server-state) below.
 * **Description**: See [Hybrid personalization](#server-state) below.
 
-### telemetryEnabled {#telemetry}
+### telemetryEnabled
 
 * **Type**: Boolean
 * **Default Value**: true
@@ -264,7 +264,7 @@ The deviceIdLifetime setting is overrideable in at.js version 2.3.1 or later.
 * **Default Value**: 2000 ms = 2 s
 * **Description**: Represents the Visitor API request timeout.
 
-## Usage {#section_9AD6FA3690364F7480C872CB55567FB0}
+## Usage
 
 This function can be defined before at.js is loaded or in **Administration** > **Implementation** > **Edit at.js Settings** > **Code Settings** > **Library Header**.
 
@@ -278,7 +278,7 @@ window.targetGlobalSettings = {
 };
 ```
 
-## Data Providers {#data-providers}
+## Data Providers 
 
 This setting lets customers gather data from third-party data providers, such as Demandbase, BlueKai, and custom services, and pass the data to Target as mbox parameters in the global mbox request. It supports the collection of data from multiple providers via async and sync requests. Using this approach makes it easy to manage flicker of default page content, while including independent timeouts for each provider to limit the impact on page performance
 
@@ -395,7 +395,7 @@ Consider the following when working with the `dataProviders` setting:
 * If the data providers added to `window.targetGlobalSettings.dataProviders` are async, they will be executed in parallel. The Visitor API request will be executed in parallel with functions added to `window.targetGlobalSettings.dataProviders` to allow a minimum wait time. 
 * at.js won't try to cache the data. If the data provider fetches data only once, the data provider should make sure that data is cached and, when the provider function is invoked, serve the cache data for the second invocation.
 
-## Content Security Policy {#content-security}
+## Content Security Policy
 
 at.js 2.3.0+ supports setting Content Security Policy nonces on SCRIPT and STYLE tags appended to the page DOM when applying delivered Target offers.
 
@@ -418,7 +418,7 @@ window.targetGlobalSettings = {
 
 After `cspScriptNonce` and `cspStyleNonce` settings are specified, at.js 2.3.0+ sets these as nonce attributes on all SCRIPT and STYLE tags that it appends to the DOM when applying Target offers.
 
-## Hybrid personalization {#server-state}
+## Hybrid personalization
 
 `serverState` is a setting available in at.js v2.2+ that can be used to optimize page performance when a hybrid integration of Target is implemented. Hybrid integration means that you are using both at.js v2.2+ on the client-side and the delivery API or a Target SDK on the server-side to deliver experiences. `serverState` gives at.js v2.2+ the ability to apply experiences directly from content fetched on the server side and returned to the client as part of the page being served.
 

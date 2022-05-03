@@ -34,7 +34,7 @@ Pre-defined events have a structure that allows you to extract the required data
 
 To make sure that events can be used in different scenarios, the custom events have a payload object that is assigned to the detail property of the event object (that is passed to the handler). Also to avoid passing strings as event names, the events are exposed as constants using `adobe.target.event` namespace.
 
-## Structure {#section_0E5C9A13DE234A5DAECBCBF9F23F94FE}
+## Structure
 
 | Key | Type | Description |
 |--- |--- |--- |

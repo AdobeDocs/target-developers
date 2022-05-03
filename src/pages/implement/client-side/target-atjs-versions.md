@@ -35,7 +35,7 @@ This release contains the following enhancement:
 
 * Added support for [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components). This version of at.js is required to create and test personalized experiences and offers on custom elements and on elements inside custom elements. This functionality is included in the Target Standard/Premium 21.10.5 release.
 
-## at.js 1.8.3 (September 21, 2021) {#183}
+## at.js 1.8.3 (September 21, 2021)
 
 This release contains the following changes:
 
@@ -201,7 +201,7 @@ This is a maintenance release and includes the following fix:
 
 * Fixed a race condition in the DOM polling code that caused JavaScript exceptions for certain customers. (TNT-31869)
 
-## at.js Version 2.0.0 {#at-js-200}
+## at.js Version 2.0.0
 
 at.js 2.x provides rich feature sets that equip your business to execute personalization on next generation client-side technologies. This new version is focused on upgrading at.js to have harmonious interactions with single page applications (SPAs).
 
@@ -229,7 +229,7 @@ For more information, see [Upgrading from at.js 1.x to at.js 2.x](/help/c-implem
 
 If you require Adobe Opt-in support for the [General Data Protection Regulation](/help/c-implementing-target/c-considerations-before-you-implement-target/privacy/cmp-privacy-and-general-data-protection-regulation.md) (GDPR), you must currently use at.js 1.7.0 or at.js 2.1.0.
 
-## at.js Version 1.7.0 {#at-js-170}
+## at.js Version 1.7.0
 
 at.js 1.7.0 brings Adobe Opt-In support. Adobe Opt-In is a way to simplify Adobe solutions integrations with consent management platforms.
 
@@ -241,13 +241,13 @@ This release also fixes an issue where Target might override redirect URL parame
 
 If you require Adobe Opt-in support for GDPR, you must currently use at.js 1.7.0 or 2.1.0.<br />For a list of all versions, see [at.js version details](/help/c-implementing-target/c-implementing-target-for-client-side-web/target-atjs-versions.md).
 
-## at.js Version 1.6.4 {#at-js-164}
+## at.js Version 1.6.4
 
 at.js 1.6.4 is a maintenance release and addresses the following issue:
 
 * Fixed a race condition manifesting in Microsoft Internet Explorer 11 that caused duplicate offers to be applied.
 
-## at.js Version 1.6.3 {#section_484A56774E004282B98FFFF851E4E670}
+## at.js Version 1.6.3
 
 at.js version 1.6.3 includes the following fixes and enhancements:
 
@@ -256,7 +256,7 @@ at.js version 1.6.3 includes the following fixes and enhancements:
 * Fixed an issue with timing out a promise in environments where there was no native support for promises. (TNT-30974)
 * Issues are now correctly captured and reported via the content-rendering failed event. Previously, JavaScript might have been reported to have run successfully, even if that wasn't the case. (TNT-30599)
 
-## at.js Version 1.6.2 {#section_88BE2F69943D4280B8170F377886B58E}
+## at.js Version 1.6.2
 
 This is a maintenance release and addresses the following issue:
 
@@ -283,7 +283,7 @@ Here are the enhancements and fixes that were included in at.js Version 1.6.0:
 * Client-side edge routing is now enabled by default. (TNT-30261) 
 * Fixed an issue with Visual Experience Composer (VEC) action rendering when there are dependencies between actions. (TNT-30248)
 
-## at.js Version 1.5.0 {#section_128C6761884C4DA8AE50D6A605FF6F55}
+## at.js Version 1.5.0
 
 at.js version 1.5.0 is now available.
 
@@ -303,7 +303,7 @@ at.js version 1.5.0 is now available.
     scheduler = setTimeout
   ```
 
-## at.js Version 1.3.0 {#section_24EAAE1CFA814EF8B19E61842F4D8321}
+## at.js Version 1.3.0
 
 at.js version 1.3.0 is now available.
 
@@ -328,13 +328,13 @@ at.js version 1.3.0 is now available.
 * This release adds many performance improvements, including shorter callstacks when inspecting a Chrome CPU profile. 
 * at.js 1.3.0 no longer supports content delivery on Microsoft Internet Explorer 9. For a list of supported browsers, see [Supported Browsers](/help/c-implementing-target/c-considerations-before-you-implement-target/supported-browsers.md#reference_01B4BF99E7D545A7998773202A2F6100). Going forward, all requests are executed via `XMLHttpRequest` with CORS support with no JSONP requests. This change greatly improves security.
 
-## at.js Version 1.2.3 {#section_CE4D14AF00D04F4C8A2F0513F5EA1A84}
+## at.js Version 1.2.3
 
 at.js version 1.2.3 is now available.
 
 * Adds support for JSON offers. JSON offers are supported only in activities created using the Form-based Experience Composer. Currently the only way to use JSON offers is via direct API calls. See [Create JSON Offers](https://experienceleague.corp.adobe.com/docs/target/using/experiences/offers/create-json-offer.html).
 
-## at.js Version 1.2.2 {#section_4E96D13F2DFE4F1F81A1089877D53649}
+## at.js Version 1.2.2
 
 at.js version 1.2.2 is now available.
 
@@ -343,13 +343,13 @@ at.js version 1.2.2 is now available.
 * Fixed an issue that caused `getOffer() params` to fail when `targetPageParams()` returns an empty string. (TNT-28359) 
 * Fixed an issue with session ID generation when using x-only. (TNT-28361)
 
-## at.js Version 1.2.1 {#section_F757C8174BBA4F68AC5524ADC3D9C5E3}
+## at.js Version 1.2.1
 
 at.js version 1.2.1 is now available.
 
 * Fixed an issue when click tracking on a link with target="_blank" prevented Target from opening the link in a new tab.
 
-## at.js Version 1.2.0 {#section_1C3A18C595C34B25A14A440D213F3B9C}
+## at.js Version 1.2.0
 
 at.js version 1.2 is now available as a maintenance release that contains mostly bug fixes.
 
@@ -364,7 +364,7 @@ at.js version 1.2 is now available as a maintenance release that contains mostly
 * Made changes to ensure that `sdidParamExpiry` is properly initialized and passed to the Visitor API. This is a regression that has been added to `at.js 1.1.0`. Previous at.js versions are not affected. This affects only clients using redirect offers and A4T. (TNT-27791) 
 * Made changes to ensure that `SCRIPT` is executed regardless of the type attribute being used. (TNT-27865)
 
-## at.js Version 1.1.0 {#section_8F494E1EA94E48A9B169F5CF9FE6DC56}
+## at.js Version 1.1.0
 
 **Date:** August 2, 2017
 
@@ -374,7 +374,7 @@ The following enhancements and fixes are included in at.js version 1.1:
 * Resolved issue so that `document.currentScript polyfill` doesn't interfere with Angular 1.X. 
 * Made changes to ensure that click tracking doesn't interfere with visibility property. Click tracking elements are marked with the `at-element-click-tracking` CSS class instead of `at-element-marker`.
 
-## at.js Version 1.0.0 {#section_37A3D23FC4AD42A68AA831B89E03E725}
+## at.js Version 1.0.0
 
 **Date:** July 7, 2017
 
@@ -390,7 +390,7 @@ The following enhancements and fixes are included at.js version 1.0:
 * Fix for `getOffer()` function giving an error on some websites. 
 * Load the Target library asynchronously. For more information, see [at.js Frequently Asked Questions](/help/c-implementing-target/c-implementing-target-for-client-side-web/c-target-atjs-faq/target-atjs-faq.md#concept_D6EFE8D84A06476DB5ABD494D7E8C769).
 
-## at.js Version 0.9.7 {#section_6C7B698BE21E40E495FD2850EFBF3E80}
+## at.js Version 0.9.7
 
 **Date:** May 22, 2017
 
@@ -398,7 +398,7 @@ The following enhancements and fixes are included in at.js version 0.9.7:
 
 * Fixed an issue related to an asset key that was missing from `insertAfter` and `insertBefore` actions in the Visual Experience Composer (VEC). These issues were related to the migration from visual offers to offer templates.
 
-## at.js Version 0.9.6 {#section_EEFA6413F2F947AD8C4A88128B90245D}
+## at.js Version 0.9.6
 
 **Date:** April 13, 2017
 
@@ -417,7 +417,7 @@ The following enhancements and fixes are included in at.js version 0.9.6:
 * The algorithm for extracting the top-level domain that should be used when saving cookies has changed in at.js version 0.9.6. Because of this change, cookies cannot be saved to addresses that use IP. Most of the time, IP addresses are used for testing purposes, but as workarounds you can use DNS entries or adjust the hosts file on a local box. 
 * Fixed move and rearrange actions handling when properties are string values instead of integers.
 
-## at.js Version 0.9.4 {#section_A15B12F12CD94F07B3F56613A79A815F}
+## at.js Version 0.9.4
 
 **Date:** January 19, 2017
 
@@ -428,7 +428,7 @@ The following enhancements and fixes are included in at.js version 0.9.6:
 * Added `secureOnly` setting that indicates whether at.js should use HTTPS only or be allowed to switch between HTTP and HTTPS based on the page protocol. This is an advanced setting that defaults to False and can be overridden via `targetGlobalSettings`. 
 * The Legacy Browser Support option is available in at.js version 0.9.3 and earlier. This option was removed in at.js version 0.9.4.
 
-## at.js Version 0.9.3 {#section_DF13BC1D7C994AE7A36B81937A699DF4}
+## at.js Version 0.9.3
 
 **Date:** October 10, 2016
 
@@ -436,7 +436,7 @@ The following enhancements and fixes are included in at.js version 0.9.6:
 * Ensures that default content is rendered if a dynamic remote offer fails (for example, if the URL is incorrect and returns a 404 error). 
 * Ensures that elements are revealed quickly when VEC click-tracking selectors can't be found in the DOM.
 
-## at.js Version 0.9.2 {#section_148549CBB4F046BAA8F79C79B64EC889}
+## at.js Version 0.9.2
 
 **Date:** September 21, 2016
 
@@ -444,7 +444,7 @@ The following enhancements and fixes are included in at.js version 0.9.6:
 * Added `CustomEvent` support for the notification mechanism. Previously, the at.js event notification mechanism could not be used via standard DOM APIs, such as `document.addEventListener()`. Now you can use `document.addEventListener()` to subscribe to at.js events, such as request events and content rendering events. 
 * Fixed an issue related to offers created in the Visual Experience Composer (VEC). Prior to this release, Target hid the selectors and un-hid them only when all selectors matched. In at.js 0.9.2 Target un-hides the selectors as soon as they are matched.
 
-## at.js Version 0.9.1 {#section_DAFB99114D604CFB8416C1BC7DEEAEEE}
+## at.js Version 0.9.1
 
 **Date:** July 14, 2016
 
@@ -452,7 +452,7 @@ The following enhancements and fixes are included in at.js version 0.9.6:
 * Corrects an issue in 0.9.0 that impacted implementations using at.js on some pages and mbox.js (now deprecated) on other pages. 
 * If you use Adobe Analytics as your activity's reporting source, you do not need to specify a tracking server during activity creation if you are using mbox.js version 61 (or later) or at.js version 0.9.1 (or later). The at.js library automatically sends tracking server values to Target. During activity creation, you can leave the Tracking Server field empty on the Goals & Settings page.
 
-## at.js Version 0.9.0 {#section_2981CC9792F245389B39BB5B69F84C4E}
+## at.js Version 0.9.0
 
 **Target Release:** 16.6.1
 
@@ -476,7 +476,7 @@ The following enhancements and fixes are included in at.js version 0.9.6:
 
   You can override settings in the at.js library, rather than configuring them in the Target Standard/Premium UI or by using REST APIs.
 
-## at.js Version 0.8.0 {#section_E1C7B08EC0494388A022C28A8B8FE807}
+## at.js Version 0.8.0
 
 **Date:** May 5, 2016.
 

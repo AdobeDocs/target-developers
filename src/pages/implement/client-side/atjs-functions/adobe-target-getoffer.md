@@ -27,7 +27,7 @@ Use with `adobe.target.applyOffer()` to process the response or use your own suc
 |error|Function|Yes|Callback to be executed when we got an error. There are a few cases that are considered erroneous:<ul><li>HTTP status code different from 200 OK</li><li>Response can not be parsed. For example we poorly constructed JSON or HTML instead of JSON.</li><li>Response contains the "error" key. For example an exception was thrown on the edge a request could not be properly processed. We could get an error when an mbox is blocked and we could not retrieve any content for it, etc. The error callback function will receive two parameters: status and error. Here is an error callback example: `function handleError(status, error){......}`</li></ul>See Error Responses below for details.|
 |timeout|Number|No|Timeout in milliseconds. If not specified, the default timeout in at.js will be used.<br />The default timeout can be set from the Target UI under Administration > Implementation.|
 
-## Examples {#section_97C2D2E03E6549BEA7F4873E3F5E4A0D}
+## Examples
 
 Adding parameters with getOffer() and using applyOffer() for success-handling:
 
@@ -90,7 +90,7 @@ adobe.target.getOffer({
 });
 ```
 
-## Responses {#section_CF9FD236EF794620BCBF84EB80160183}
+## Responses
 
 The response parameter passed to the success callback will be an array of actions. An action is an object that usually has the following format:
 
@@ -122,7 +122,7 @@ The response parameter passed to the success callback will be an array of action
 }
 ```
 
-## Error Responses {#section_1ACCE79AF2CB4FA2AD1371EA06AF129F}
+## Error Responses
 
 The "status" and "error" parameters passed to the error callback will have the following format:
 

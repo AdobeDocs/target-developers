@@ -40,7 +40,7 @@ Notes:
 
 For more information and examples of how to use `registerExtension`, see the [Adobe Experience Cloud Target atjs Extensions](https://github.com/Adobe-Marketing-Cloud/target-atjs-extensions) page on GitHub.
 
-## Settings Module Methods {#section_8501CDD4B0624FA2B10532C98C5F4328}
+## Settings Module Methods
 
 | Key | Type | Description |
 |--- |--- |--- |
@@ -50,7 +50,7 @@ For more information and examples of how to use `registerExtension`, see the [Ad
 |globalMboxAutoCreate|Boolean|Indicates if auto-create is enabled or not|
 |timeout|Number|Request timeout|
 
-## Logger Module Methods {#section_10AF62B49AEF48F981E950D26E176138}
+## Logger Module Methods
 
 | Key | Type | Description |
 |--- |--- |--- |

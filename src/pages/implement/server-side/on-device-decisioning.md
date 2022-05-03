@@ -38,7 +38,7 @@ In this recorded webinar, Adobe Target product experts discuss how moving critic
 
 Adobe recommends the following best practices when using on-device decisioning:
 
-### Best practices when decisioning method is "on-device" {#best-practices-on-device}
+### Best practices when decisioning method is "on-device"
 
 When using "on-device" as the decisioning method, the artifact is downloaded when the visitor loads the webpage for the first time. Any activity qualification that needs to happen on the first page load (no cache) happens only after the artifact is fully downloaded. There are certain best practices you can follow to ensure that activity qualifications happen fast for a new anonymous visitor.
 
@@ -47,7 +47,7 @@ When using "on-device" as the decisioning method, the artifact is downloaded whe
 * If your artifact files becomes very large due to legitimate reasons, you can use the "hybrid" decisioning method. This method allows you to download the artifact in parallel and all Target API calls go over the wire until the artifact has downloaded. Read the best [practices section on "Hybrid" decisioning mode](#best-practices-hybrid) below to learn more about this approach.
 * If you have a Single Page Application (SPA), Adobe recommends that you load and initialize at.js before loading your application's main JavaScript file during first page load. This approach initiates the artifact downloading much earlier, providing a faster experience rendering.
 
-### Best practices when decisioning method is "hybrid" {#best-practices-hybrid}
+### Best practices when decisioning method is "hybrid"
 
 When using "hybrid" as the decisioning method, the artifact is downloaded in parallel. Until the artifact is downloaded, any Target API calls go over the wire even if the "locations" are on-device capable. This behavior is the default for all `getOffers()` calls and provides the best performance in most situations. If you change the default behavior of `getOffers()` by setting the `decisioningMethod` to `on-device`, follow these best practices to avoid errors and ensure the best performance.
 

@@ -26,11 +26,11 @@ AdBox ads and Redirector can be used with any kind of activity. The following ta
 |AdBox|Returns different images to the ad|To change the content of an ad|`clientcode​.tt.​omtrdc​.net/​m2​/​clientcode/ubox/​image?`|redirect offer|URL for an image|
 |Redirector|Redirects a visitor to a different web page|To change the landing page of an ad|`clientcode​.tt.omtrdc.net/​m2/clientcode​/ubox/page?`|redirect offer|URL for a page|
 
-## Security best practices {#security}
+## Security best practices
 
 Note that with Redirector, you can be exposed to a risk of an Open Redirect Vulnerability. To avoid the unauthorized use of Redirector links by third parties, we recommend you use "authorized hosts" to allowlist the default redirect URL domains. Target uses hosts to allowlist domains to which you want to allow redirects. For more information, see [Create Allowlists that specify hosts that are authorized to send mbox calls to Target](https://experienceleague.corp.adobe.com/docs/target/using/administer/hosts.html#allowlist) in *Hosts*.
 
-## Constraints {#section_38F559DCF1324271926608BCD4AB1227}
+## Constraints
 
 * There is no client-side timeout as with standard mboxes. If Target is completely down, visitors to the ad will not see content, not even default. 
 * 3rd-party cookies are used to track the visits. If the PCIds are different, by default the visitor's 3rd party is merged with any existing 1st-party profiles. 

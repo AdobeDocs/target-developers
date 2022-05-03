@@ -16,7 +16,7 @@ Information about common integrations with Target and their support status with 
 
 If you have a compelling need for an integration that is not supported or mentioned here, please contact your account representative or consultant.
 
-## Supported Integrations {#section_3B44A970D3FB42D1973701452C868B55}
+## Supported Integrations
 
 | Integration | Details |
 |--- |--- |
@@ -27,7 +27,7 @@ If you have a compelling need for an integration that is not supported or mentio
 |Adobe Experience Manager (AEM) Cloud Service|The AEM Cloud Service enables the creation of A/B tests and Experience Targeting activities within the AEM workflow. Supports at.js with Adobe Experience Manager 6.2 with FP-11577 (or later) . For more information, see [Integrating with Adobe Target](https://helpx.adobe.com/experience-manager/6-2/sites/administering/using/target.html) and select your AEM version.|
 |AEM Experience Fragments|Experience fragments created in AEM in Target activities let you combine the ease-of-use and power of AEM with powerful Automated Intelligence (AI) and Machine Learning (ML) capabilities in Target to test and personalize experiences at scale.  AEM brings together all of your content and assets in a central location to fuel your personalization strategy. AEM lets you easily create content for desktops, tablets, and mobile devices in one location without writing code. There’s no need to create pages for every device—AEM automatically adjusts each experience using your content.  See [AEM experience fragments](https://experienceleague.corp.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html).|
 
-## Unsupported Integrations {#section_8EFCAED418DC42E0B07F95924819EAC2}
+## Unsupported Integrations
 
 | Integration | Details |
 |--- |--- |
@@ -35,7 +35,7 @@ If you have a compelling need for an integration that is not supported or mentio
 |Legacy Target to SiteCatalyst Integration|This was the integration that made mbox calls named `"SiteCatalyst: Event"` and `"SiteCatalyst: Purchase"` so you could build success metrics and user profiles based on evars and props. This functionality is replaced by A4T and P&A.|
 |Legacy Audience Manager (AAM) to Target Integration|This was the integration that made a front-end API call to retrieve AAM segments and then sent them as mbox parameters on every mbox call on the page.|
 
-## Third-Party Integrations {#section_EE599839CCAD49DD97640E5EDAD9082E}
+## Third-Party Integrations
 
 | Integration | Details |
 |--- |--- |

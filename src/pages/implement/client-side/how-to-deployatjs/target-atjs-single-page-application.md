@@ -226,7 +226,7 @@ After you have completed installing at.js 2.x and adding `triggerView()` to your
 
 The VEC for SPAs is really the same VEC that you use on regular web pages, but some additional capabilities are available when you open a single page app with `triggerView()` implemented.
 
-## Use TriggerView to ensure that A4T works correctly with at.js 2.x and SPAs {#triggerview}
+## Use TriggerView to ensure that A4T works correctly with at.js 2.x and SPAs
 
 To ensure that [Analytics for Target](https://experienceleague.corp.adobe.com/docs/target/using/integrate/a4t/a4t.html) (A4T) works correctly with at.js 2.x, be sure to send the same SDID in the Target request and in the Analytics request.
 
@@ -275,7 +275,7 @@ Although these examples use JavaScript code, all this can be simplified if you a
 
 If the preceding steps are followed you should have a robust A4T solution for SPAs.
 
-## Implementation best practices {#bp}
+## Implementation best practices
 
 at.js 2.x APIs let you customize your Target implementation in many ways, but it is important to follow the correct order of operations during this process.
 

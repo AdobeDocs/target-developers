@@ -23,7 +23,7 @@ This topic contains information about `mboxSession` and `mboxPC`. Implementation
 
 See also [Delete the Target cookie](/privacy/cookie-deleting.md).
 
-## When to Use First- or Third-Party Cookies {#section_F71B29420C004A7FA3B1921E619B326E}
+## When to Use First- or Third-Party Cookies
 
 Your site setup determines which cookies you want to use. It is helpful to understand how Target works when trying to understand first and third-party cookies. See [How Adobe Target Works](https://experienceleague.corp.adobe.com/docs/target/using/introduction/how-target-works.html) for more information.
 
@@ -57,7 +57,7 @@ There are three main use cases for cookies:
 
       This approach is only for the rare case where AdBox implementations are used without on-site targeting.
 
-## First-Party Cookie Behavior {#section_CE6313D979EA4D0897D2F661E7A8AFA7}
+## First-Party Cookie Behavior
 
 The first-party cookie is stored in clientdomain.com, where `clientdomain` is your domain.
 
@@ -67,7 +67,7 @@ The JavaScript library generates an `mboxSession ID` and stores it in the Target
 
 The AMCV_###@AdobeOrg first-party cookie is always set with the Experience Cloud Visitor ID.
 
-## Third-Party Cookie Behavior {#section_4C3A83990BF8415BB1806602D84AED48}
+## Third-Party Cookie Behavior
 
 The third-party cookie is stored in clientcode.tt.omtrdc.net and the first-party cookie is stored in clientdomain.com, where `clientdomain` is your domain.
 
@@ -81,7 +81,7 @@ If the browser rejects third-party cookies, the redirect request does not includ
 
 The demdex.net cookie is set if third-party cookies are not blocked.
 
-## Third-Party and First-Party Cookie Behavior {#section_F0C9AD8BFDF8457A999C4A07A0F7A981}
+## Third-Party and First-Party Cookie Behavior
 
 The third-party cookie is stored in clientcode.tt.omtrdc.net and the first-party cookie is stored in clientdomain.com, where `clientdomain` is your domain.
 
@@ -91,7 +91,7 @@ If the browser accepts third-party cookies, the redirect request includes those 
 
 Some browsers reject third-party cookies. If the third-party cookie is blocked, the first-party cookie still works. Target attempts to set the third-party cookie, and if it cannot, then Target can only track on the client's specific domain. Cross-domain tracking does not work if the third-party cookie is blocked, unless the `mboxSession` is appended in the link that crosses domains. In this case, another first-party cookie is set and synched with the prior domain's first-party cookie.
 
-## Cookie Settings {#section_B498B8D1A34A444BBF84CC720EE9D87F}
+## Cookie Settings
 
 The cookie has several default settings. You can change these settings if needed, except the cookie duration. Consult your account representative when changing cookie settings.
 
@@ -112,7 +112,7 @@ The cookie keeps various values to manage how your visitors experience campaigns
 |check|A simple test value used to determine if a visitor supports cookies. Set each time a visitor requests a page.|
 |disable|Set if visitor's load time exceeds the timeout configured in the JavaScript library file. By default, this value lasts one hour.|
 
-## Impact on Target for Safari visitors due to Apple WebKit tracking changes {#section_2A2E5730ED7D4A0985C904AFEA310AAE}
+## Impact on Target for Safari visitors due to Apple WebKit tracking changes
 
 **How does Adobe Target tracking work?**
 

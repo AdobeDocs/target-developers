@@ -19,11 +19,11 @@ Use the mobile preview link to perform easy end-to-end QA for mobile app activit
 
 The mobile preview feature requires that you download and install the appropriate 4.14 (or later) version of the Adobe Mobile SDK.
 
-## Overview {#section_981D6FA4AEE64098809EA606E89E4A5E}
+## Overview
 
 The mobile preview functionality lets you fully test your Mobile app activities prior to launching them live.
 
-## Prerequisites {#section_A763C564C9E84B0EB448237B5B1E4068}
+## Prerequisites
 
 1. **Use a supported version of the SDK:** The mobile preview feature requires that you download and install the appropriate 4.14 (or later) version of Adobe Mobile SDK in your corresponding apps.
 
@@ -88,7 +88,7 @@ The mobile preview functionality lets you fully test your Mobile app activities 
    <activity android:name="com.adobe.mobile.MessageFullScreenActivity" />
    ```
 
-## Generating a Preview Link {#section_D9D58173FFF34E9BB75EBF357273F128}
+## Generating a Preview Link
 
 1. In the Target UI, click the **More Options** icon (three vertical ellipses), then select **Create Mobile Preview**.
 
@@ -112,7 +112,7 @@ The mobile preview functionality lets you fully test your Mobile app activities 
 
    ![alt image](assets/mobile-preview-generate-and-copy.png)
 
-## Preview on Your Device {#section_521F0D46F3DE4A2A98283A1B73FF69F6}
+## Preview on Your Device
 
 Open the link in a mobile browser on a device where you have your app installed. This app can be the production app that you downloaded from the Apple App store or the Google Play store. It doesn't have to be a special build. If you have an active preview link, you will be able to view the experiences on device.
 
@@ -129,7 +129,7 @@ Open the link in a mobile browser on a device where you have your app installed.
    |![mobile preview 1](assets/mobile-preview-experience-selection-1.png)|![mobile preview 2](assets/mobile-preview-experience-result-1-france.png)|![mobile preview 3](assets/mobile-preview-experience-result-1-shipfree.png)|
    |![mobile preview 4](assets/mobile-preview-experience-selection-2.png)|![mobile preview 5](assets/mobile-preview-experience-result-2-aus.png)|![mobile preview 6](assets/mobile-preview-experience-result-2-10off.png)|
 
-## Limitations {#section_4E9BDED0F718485292527EFB508305BD}
+## Limitations
 
 * The view must load again for the new content to display after the **Launch Experiences** button is clicked. The easiest way is to switch to a different screen and then come back to the screen where you are expecting the change to happen. 
 * Mobile preview is not supported for Android versions earlier than API-19 (KitKat).

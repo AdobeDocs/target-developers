@@ -33,7 +33,7 @@ The following table lists the various sources where you can get more information
 |[Quickstart guide](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html)|Information about deploying and managing the analytics, marketing, and advertising tags necessary to power relevant customer experiences.|
 |[Adobe Target extension overview](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html)|Information about implementing Target using Adobe Experience Platform.|
 
-## Advantages of implementing at.js using the Target extension {#section_48B3F938B6F8491DAF798E0DB54EF304}
+## Advantages of implementing at.js using the Target extension
 
 The following advantages apply only if you use tags in Adobe Experience Platform to implement at.js. For this reason, Adobe strongly suggests that you use tags in Adobe Experience Platform rather than a manual implementation of at.js.
 

@@ -102,7 +102,7 @@ This video is a recording of "Office Hours," an initiative led by the Adobe Cust
 
 <https://video.tv.adobe.com/v/27959>
 
-## How at.js renders offers with HTML content {#render}
+## How at.js renders offers with HTML content
 
 When rendering offers with HTML content, at.js applies the following algorithm:
 

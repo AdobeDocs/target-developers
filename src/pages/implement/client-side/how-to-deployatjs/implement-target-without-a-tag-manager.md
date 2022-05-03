@@ -111,7 +111,7 @@ For more information, see [Privacy](/help/c-implementing-target/c-considerations
 
 The Legacy Browser Support option was available in at.js version 0.9.3 and earlier. This option was removed in at.js version 0.9.4. For a list of browsers supported by at.js, see [Supported Browsers](/help/c-implementing-target/c-considerations-before-you-implement-target/supported-browsers.md).<br />Legacy browsers are older browsers that do not fully support CORS (Cross Origin Resource Sharing). These browsers include: Internet Explorer browsers earlier than version 11 and Safari versions 6 and below. If Legacy Browser Support was disabled, Target did not deliver content or count visitors in reports on these browsers. If this option was enabled, it is recommended to do quality assurance across older browsers to ensure a good customer experience.
 
-## Download at.js {#concept_1E1F958F9CCC4E35AD97581EFAF659E2}
+## Download at.js
 
 Instructions to download the library using the Target interface or the Download API.
 
@@ -123,14 +123,14 @@ Instructions to download the library using the Target interface or the Download 
 
  Adobe Target supports both at.js 1.*x* and at.js 2.*x*. Please upgrade to the most recent update of either major version of at.js to ensure that you are running a supported version. For more information about what's in each version, see [at.js Version Details](/help/c-implementing-target/c-implementing-target-for-client-side-web/target-atjs-versions.md#reference_DBB5EDB79EC44E558F9E08D4774A0F7A).
 
-### Download at.js using the Target interface {#section_1F5EE401C2314338910FC57F9592894E}
+### Download at.js using the Target interface
 
 To download at.js from the Target interface:
 
 1. Click **Administration** > **Implementation**. 
 1. From the Implementation Methods section, click the **Download** button next to the desired at.js version.
 
-### Download at.js using the Target Download API {#section_C0D9D2A9068144708D08526BA5CA10D0}
+### Download at.js using the Target Download API
 
 To download at.js using the API.
 
@@ -176,7 +176,7 @@ To download at.js using the API.
 
    Loading this URL starts the download of your customized at.js file.
 
-## at.js implementation {#concept_03CFA86973A147839BEB48A06FEE5E5A}
+## at.js implementation
 
 at.js should be implemented in the `<head>` element of every page of your website. 
 
@@ -243,7 +243,7 @@ Consider the following important notes:
 * If you use JavaScript helper libraries, such as jQuery, include them before Target so you can use their syntax and methods when building Target experiences. 
 * Include at.js in the `<head>` of your pages.
 
-## Track conversions {#task_E85D2F64FEB84201A594F2288FABF053}
+## Track conversions
 
 The Order Confirmation mbox records details about orders on your site and allows reporting based on revenue and orders. The Order Confirmation mbox can also drive recommendation algorithms, such as "People who bought product x also bought product y."
 
