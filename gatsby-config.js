@@ -226,7 +226,7 @@ module.exports = {
         path: '/before-implement/implement-cname-support-in-target.md'
       },
       {
-        title: 'Client-side web: implement Target',
+        title: 'Client-side implementation',
         path: '/implement/client-side/',
         header: true,
         pages: [
@@ -491,7 +491,7 @@ module.exports = {
           },
           {
             title: 'Work with redirectors',
-            path: '/implement/email/working with redirectors.md'
+            path: '/implement/email/working-with-redirectors.md'
           }
         ]
       },
