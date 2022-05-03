@@ -441,16 +441,23 @@ module.exports = {
         path: '/implement/mobile/use-location-service.md'
       },
       {
-        title: 'Server-side: implement Target overview',
-        path: '/implement/server-side/server-side-overview.md'
-      },
-      {
-        title: 'Transition from Target legacy APIs to Adobe I/O',
-        path: '/implement/server-side/transition-from-target-legacy-apis.md'
-      },
-      {
-        title: 'On-device decisioning',
-        path: '/implement/server-side/on-device-decisioning.md'
+        title: 'Server-side Implementation',
+        path: '/implement/server-side/server-side-overview.md',
+        header: true,
+        pages: [
+          {
+            title: 'Target Server-side implementation overview',
+            path: '/implement/server-side/server-side-overview.md'
+          },
+          {
+            title: 'Transition from Target legacy APIs to Adobe I/O',
+            path: '/implement/server-side/transition-from-target-legacy-apis.md'
+          },
+          {
+            title: 'On-device decisioning',
+            path: '/implement/server-side/on-device-decisioning.md'
+          },
+        ]
       },
       {
         title: 'Hybrid implementation',
