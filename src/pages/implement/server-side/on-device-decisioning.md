@@ -22,7 +22,7 @@ exl-id: ae782511-6f32-4123-be76-838584e05b39
 
 On-Device Decisioning provides the ability to cache your Adobe Target A/B Test and Experience Targeting (XT) activities on your server and perform in-memory decisioning at near-zero latency, without blocking network requests to the Adobe Target Edge Network.
 
-For more information, see [Introduction to on-device decisioning](https://adobetarget-sdks.gitbook.io/docs/on-device-decisioning/introduction-to-on-device-decisioning) in the *[Adobe Target SDKs documentation](https://adobetarget-sdks.gitbook.io/docs/)*.
+For more information, see [Introduction to on-device decisioning](../../sdk-guides/).
 
 ## Webinar: Personalize and test at zero latency with on-device decisions from Adobe Target
 
