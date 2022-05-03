@@ -118,6 +118,14 @@ Implement Adobe Target with Adobe Experience Platform Mobile SDKs.
 
 <DiscoverBlock slots="heading, link, text"/>
 
+### Email
+
+[Email Overview](implement/email/)
+
+Overview of how to implement Adobe Target in emails.
+
+<DiscoverBlock slots="heading, link, text"/>
+
 ### APIs
 
 [Getting Started](api-guides/)

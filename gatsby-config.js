@@ -45,6 +45,11 @@ module.exports = {
             path: '/implement/mobile/'
           },
           {
+            title: 'Email',
+            description: 'Email implementation',
+            path: '/implement/email/'
+          },
+          {
             title: 'APIs',
             description: 'Get Started, Delivery API',
             path: '/api-guides/'
@@ -468,20 +473,27 @@ module.exports = {
         path: '/implement/hybrid/'
       },
       {
-        title: 'Email: implement Target overview',
-        path: '/implement/email/non-js-based-implementation.md'
-      },
-      {
-        title: 'Create an Adbox for an image',
-        path: '/implement/email/testing-content-with-the-adbox.md'
-      },
-      {
-        title: 'Test an email image Adbox',
-        path: '/implement/email/testing-email-image-adbox.md'
-      },
-      {
-        title: 'Work with redirectors',
-        path: '/implement/email/working with redirectors.md'
+        title: 'Email Implementation',
+        path: '/implement/email/',
+        header: true,
+        pages: [
+          {
+            title: 'Email implementation overview',
+            path: '/implement/email/'
+          },
+          {
+            title: 'Create an Adbox for an image',
+            path: '/implement/email/testing-content-with-the-adbox.md'
+          },
+          {
+            title: 'Test an email image Adbox',
+            path: '/implement/email/testing-email-image-adbox.md'
+          },
+          {
+            title: 'Work with redirectors',
+            path: '/implement/email/working with redirectors.md'
+          }
+        ]
       },
       {
         title: 'Get Started',
