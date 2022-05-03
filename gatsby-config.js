@@ -27,7 +27,7 @@ module.exports = {
           {
             title: 'Client-side',
             description: 'Implement using AEP Web SDK or at.js',
-            path: '/implement/client-side/implement-target-for-client-side-web.md'
+            path: '/implement/client-side/'
           },
           {
             title: 'Server-side',
@@ -37,7 +37,7 @@ module.exports = {
           {
             title: 'Hybrid',
             description: 'Client- and Server-side combination',
-            path: '/implement/hybrid/hybrid-implementation.md'
+            path: '/implement/hybrid/'
           },
           {
             title: 'Mobile',
@@ -221,16 +221,13 @@ module.exports = {
         path: '/before-implement/implement-cname-support-in-target.md'
       },
       {
-        title: 'Implement Target overview',
-        path: '/implement/implementing-target.md'
-      },
-      {
         title: 'Client-side web: implement Target',
-        path: '/implement/client-side/implement-target-for-client-side-web.md',
+        path: '/implement/client-side/',
+        header: true,
         pages: [
           {
             title: 'Overview: implement Target for client-side web',
-            path: '/implement/client-side/implement-target-for-client-side-web.md'
+            path: '/implement/client-side/'
           },
           {
             title: 'AEP Web SDK implementation overview',
@@ -468,7 +465,7 @@ module.exports = {
       },
       {
         title: 'Hybrid implementation',
-        path: '/implement/hybrid/hybrid-implementation.md'
+        path: '/implement/hybrid/'
       },
       {
         title: 'Email: implement Target overview',
