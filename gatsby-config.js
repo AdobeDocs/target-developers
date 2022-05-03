@@ -32,22 +32,22 @@ module.exports = {
           {
             title: 'Server-side',
             description: 'Node.js, Java, .NET, Python',
-            path: '/implement/server-side/'
+            path: '/implement/server-side/server-side-overview.md'
           },
           {
             title: 'Hybrid',
             description: 'Client- and Server-side combination',
-            path: '/implement/hybrid/'
+            path: '/implement/hybrid/hybrid-implementation.md'
           },
           {
             title: 'Mobile',
             description: 'AEP Mobile SDK',
-            path: '/implement/mobile/'
+            path: '/implement/mobile/target-mobile-app.md'
           },
           {
             title: 'APIs',
             description: 'Get Started, Delivery API',
-            path: '/implement/api-guides/'
+            path: '/api-guides/'
           }
         ]
       },
@@ -378,7 +378,7 @@ module.exports = {
           },
           {
             title: 'Understand the Global mbox',
-            path: '/implement/client-side/global-mbox',
+            path: '/implement/client-side/global-mbox/global-mbox-overview.md',
             pages: [
               {
                 title: 'Global mbox overview',
@@ -398,7 +398,7 @@ module.exports = {
               },
               {
                 title: 'Global mbox frequently asked questions',
-                path: '/implement/client-side/global-mbox/global-mbox-faq'
+                path: '/implement/client-side/global-mbox/global-mbox-faq.md'
               }
             ]
           },
@@ -438,7 +438,7 @@ module.exports = {
       },
       {
         title: 'Use Location Service',
-        path: '/implement/mobile/use-location-service'
+        path: '/implement/mobile/use-location-service.md'
       },
       {
         title: 'Server-side: implement Target overview',
