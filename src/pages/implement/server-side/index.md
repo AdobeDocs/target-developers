@@ -41,7 +41,7 @@ Link: [Server Side Delivery APIs](https://developers.adobetarget.com/api/deliver
 
 `/rest/v1/delivery`
 
-Throught the Target Delivery API, you can:
+Through the Target Delivery API, you can:
 
 * Deliver experiences across web, including SPAs, and mobile channels as well as non-browser based IoT devices, such as connected TVs, kiosks, or in-store digital screens.
 * Deliver experiences from any server-side platform or application that can make HTTP/s calls.
@@ -51,9 +51,14 @@ Throught the Target Delivery API, you can:
 
 ## Server Side SDKs
 
-Link: [Adobe Target SDKs](https://adobetarget-sdks.gitbook.io/docs/)
+The Adobe Target server-side SDK documentation helps you implement Target on your servers in your language of choice.
 
-The Adobe Target server-side SDK documentation portal helps you implement Target on your servers in your language of choice.
+Target SDK References:
+
+* [Node.js](/sdk/node-js/)
+* [Java](../sdk/java/)
+* [.NET](../sdk/net/)
+* [Python](../sdk/python/)
 
 ## Target Recommendations APIs
 
