@@ -405,40 +405,47 @@ module.exports = {
         ]
       },
       {
-        title: 'Target for mobile apps overview',
-        path: '/implement/mobile/target-mobile-app.md'
-      },
-      {
-        title: 'How Target works in mobile apps',
-        path: '/implement/mobile/how-target-works-mobile-apps.md'
-      },
-      {
-        title: 'Enable Target in the SDK',
-        path: '/implement/mobile/enable-target-in-sdk.md'
-      },
-      {
-        title: 'iOS - create a Target location and success metric',
-        path: '/implement/mobile/mobile-create-location-and-metric.md'
-      },
-      {
-        title: 'iOS - send custom user data',
-        path: '/implement/mobile/mobile-custom-user-data.md'
-      },
-      {
-        title: 'Target mobile preview',
-        path: '/implement/mobile/target-mobile-preview.md'
-      },
-      {
-        title: 'Prefetch offer content',
-        path: '/implement/mobile/prefetch-offer-content.md'
-      },
-      {
-        title: 'Target for mobile apps FAQ',
-        path: '/implement/mobile/mobile-faq.md'
-      },
-      {
-        title: 'Use Location Service',
-        path: '/implement/mobile/use-location-service.md'
+        title: 'Target for Mobile Apps',
+        path: '/implement/mobile/target-mobile-app.md',
+        header: true,
+        pages: [
+          {
+            title: 'Target for mobile apps overview',
+            path: '/implement/mobile/target-mobile-app.md'
+          },
+          {
+            title: 'How Target works in mobile apps',
+            path: '/implement/mobile/how-target-works-mobile-apps.md'
+          },
+          {
+            title: 'Enable Target in the SDK',
+            path: '/implement/mobile/enable-target-in-sdk.md'
+          },
+          {
+            title: 'iOS - create a Target location and success metric',
+            path: '/implement/mobile/mobile-create-location-and-metric.md'
+          },
+          {
+            title: 'iOS - send custom user data',
+            path: '/implement/mobile/mobile-custom-user-data.md'
+          },
+          {
+            title: 'Target mobile preview',
+            path: '/implement/mobile/target-mobile-preview.md'
+          },
+          {
+            title: 'Prefetch offer content',
+            path: '/implement/mobile/prefetch-offer-content.md'
+          },
+          {
+            title: 'Target for mobile apps FAQ',
+            path: '/implement/mobile/mobile-faq.md'
+          },
+          {
+            title: 'Use Location Service',
+            path: '/implement/mobile/use-location-service.md'
+          },
+        ]
       },
       {
         title: 'Server-side Implementation',
