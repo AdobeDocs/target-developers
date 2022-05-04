@@ -420,9 +420,8 @@ module.exports = {
         ]
       },
       {
-        title: 'Server-side Implementation',
+        title: 'Implement server-side',
         path: '/implement/server-side/',
-        header: true,
         pages: [
           {
             title: 'Target Server-side implementation overview',
@@ -441,7 +440,6 @@ module.exports = {
       {
         title: 'Node.js SDK',
         path: '/implement/server-side/node-js/',
-        header: true,
         pages: [
           {
             title: 'Overview',
@@ -480,7 +478,6 @@ module.exports = {
       {
         title: 'Java SDK',
         path: '/implement/server-side/java/',
-        header: true,
         pages: [
           {
             title: 'Overview',
@@ -531,7 +528,6 @@ module.exports = {
       {
         title: '.NET SDK',
         path: '/implement/server-side/net/',
-        header: true,
         pages: [
           {
             title: 'Overview',
@@ -570,7 +566,6 @@ module.exports = {
       {
         title: 'Python SDK',
         path: '/implement/server-side/python/',
-        header: true,
         pages: [
           {
             title: 'Overview',
