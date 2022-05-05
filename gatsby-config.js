@@ -438,6 +438,16 @@ module.exports = {
         ]
       },
       {
+        title: 'SDK Guides',
+        path: '/sdk-guides/',
+        pages: [
+          {
+            title: 'SDK Guides landing page',
+            path: '/sdk-guides/'
+          }
+        ]
+      },
+      {
         title: 'Node.js SDK',
         path: '/implement/server-side/node-js/',
         pages: [
