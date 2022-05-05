@@ -76,10 +76,6 @@ module.exports = {
         ]
       },
       {
-        title: 'SDK Guides',
-        path: '/sdk-guides/'
-      },
-      {
         title: 'Support',
         path: '/support/'
       }
@@ -436,8 +432,8 @@ module.exports = {
             path: '/implement/server-side/on-device-decisioning.md'
           },
           {
-            title: 'Test - Page from a diff location',
-            path: '/sdk-guides/'
+            title: 'TEST - rando page',
+            path: '/sdk-guides/integration-with-experience-cloud/aam-segments.md'
           }
         ]
       },
@@ -476,10 +472,6 @@ module.exports = {
           {
             title: 'Logger',
             path: '/implement/server-side/node-js/logger.md'
-          },
-          {
-            title: 'Test - Page from a diff location',
-            path: '/sdk-guides/getting-started/'
           }
         ]
       },
@@ -676,125 +668,6 @@ module.exports = {
             title: 'Use the Delivery API with Recommendations',
             path: '/api-guides/recs-api/fetch-recs-server-side-delivery-api.md'
           }
-        ]
-      },
-      {
-        title: 'Target SDK Overview',
-        path: '/sdk-guides/',
-        header: true,
-        pages: [
-          {
-            title: 'Welcome',
-            path: '/sdk-guides/'
-          },
-          {
-            title: 'Getting started',
-            path: '/sdk-guides/getting-started/'
-          },
-          {
-            title: 'Sample apps',
-            path: '/sdk-guides/sample-apps/'
-          },
-        ]
-      },
-      {
-        title: 'Core Principles',
-        path: '/sdk-guides/core-principles/',
-        header: true,
-        pages: [
-          {
-            title: 'Adobe Target core principles',
-            path: '/sdk-guides/core-principles/',
-          },
-          {
-            title: 'User identification & bucketing',
-            path: '/sdk-guides/core-principles/user-identification-and-bucketing.md'
-          },
-          {
-            title: 'Audience targeting',
-            path: '/sdk-guides/core-principles/audience-targeting.md'
-          },
-          {
-            title: 'Event tracking',
-            path: '/sdk-guides/core-principles/event-tracking.md'
-          },
-          {
-            title: 'User permissions & properties',
-            path: '/sdk-guides/core-principles/user-permissions-and-properties.md'
-          }
-        ]
-      },
-      {
-        title: 'Integration',
-        path: '/sdk-guides/integration-with-experience-cloud/',
-        header: true,
-        pages: [
-          {
-            title: 'Integration Overview',
-            path: '/sdk-guides/integration-with-experience-cloud/',
-          },
-          {
-            title: 'Experience Cloud ID (ECID) Service',
-            path: '/sdk-guides/integration-with-experience-cloud/ecid.md'
-          },
-          {
-            title: 'Analytics for Target (A4T) reporting',
-            path: '/sdk-guides/integration-with-experience-cloud/a4t-reporting.md'
-          },
-          {
-            title: 'AAM Segments',
-            path: '/sdk-guides/integration-with-experience-cloud/aam-segments.md'
-          }
-        ]
-      },
-      {
-        title: 'On-Device Decisioning',
-        path: '/sdk-guides/on-device-decisioning/',
-        header: true,
-        pages: [
-          {
-            title: 'Introduction to On-Device Decisioning',
-            path: '/sdk-guides/on-device-decisioning/'
-          },
-          {
-            title: 'Rule artifact',
-            path: '/sdk-guides/on-device-decisioning/rule-artifact-overview.md'
-          },
-          {
-            title: 'Execute A/B tests with feature flags',
-            path: '/sdk-guides/on-device-decisioning/execute-ab-tests-with-feature-flags.md'
-          },
-          {
-            title: 'Execute feature tests with attributes',
-            path: '/sdk-guides/on-device-decisioning/execute-feature-tests-with-attributes.md'
-          },
-          {
-            title: 'Manage rollouts for feature tests',
-            path: '/sdk-guides/on-device-decisioning/manage-rollouts-for-feature-tests.md'
-          },
-          {
-            title: 'Deliver personalization',
-            path: '/sdk-guides/on-device-decisioning/deliver-personalization.md'
-          },
-          {
-            title: 'Supported features',
-            path: '/sdk-guides/on-device-decisioning/supported-features.md'
-          },
-          {
-            title: 'Troubleshooting',
-            path: '/sdk-guides/on-device-decisioning/troubleshooting.md'
-          }
-        ]
-      },
-      {
-        title: 'Best Practices',
-        path: '/sdk-guides/best-practices/',
-        header: true,
-        pages: [
-          {
-            title: 'When to use on-device vs. edge decisioning',
-            path: '/sdk-guides/best-practices/'
-          },
         ]
       },
       {
