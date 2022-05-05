@@ -127,7 +127,7 @@ Overview of how to implement Adobe Target in emails.
 
 <DiscoverBlock slots="heading, link, text"/>
 
-### What are the Target APIs?
+### Target APIs for implementation
 
 [Introduction](before-administer/)
     
