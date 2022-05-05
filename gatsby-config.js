@@ -435,14 +435,8 @@ module.exports = {
             title: 'On-device decisioning',
             path: '/implement/server-side/on-device-decisioning.md'
           },
-        ]
-      },
-      {
-        title: 'SDK Guides',
-        path: '/sdk-guides/',
-        pages: [
           {
-            title: 'SDK Guides landing page',
+            title: 'Test - Page from a diff location',
             path: '/sdk-guides/'
           }
         ]
@@ -482,6 +476,10 @@ module.exports = {
           {
             title: 'Logger',
             path: '/implement/server-side/node-js/logger.md'
+          },
+          {
+            title: 'Test - Page from a diff location',
+            path: '/sdk-guides/getting-started/'
           }
         ]
       },
