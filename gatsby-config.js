@@ -50,28 +50,23 @@ module.exports = {
             path: '/implement/email/'
           },
           {
-            title: 'APIs',
-            description: 'Get Started, Delivery API',
-            path: '/api-guides/'
+            title: 'Delivery API',
+            description: 'Target API for implementation',
+            path: '/implement/delivery-api/'
           }
         ]
       },
       {
-        title: 'API Guides',
-        path: '/api-guides/'
+        title: 'Before You Administer',
+        path: '/before-administer/'
       },
       {
-        title: 'API Reference',
+        title: 'Administer',
         menu: [
-          {
-          title: 'Delivery API',
-          description: 'Adobe Target Delivery API',
-          path: '/api/delivery-api/index.md'
-          },
           {
           title: 'Admin and Profile API',
           description: 'Adobe Target Admin and Profile API',
-          path: '/api/admin-api/index.md'
+          path: '/administer/admin-api/'
           }
         ]
       },
@@ -194,7 +189,6 @@ module.exports = {
       {
         title: 'Client-side implementation',
         path: '/implement/client-side/',
-        header: true,
         pages: [
           {
             title: 'Overview: implement Target for client-side web',
@@ -375,7 +369,6 @@ module.exports = {
       {
         title: 'Target for Mobile Apps',
         path: '/implement/mobile/',
-        header: true,
         pages: [
           {
             title: 'Target for mobile apps overview',
@@ -433,111 +426,111 @@ module.exports = {
           },
           {
             title: 'Welcome',
-            path: '/implement/sdk-guides/'
+            path: '/implement/server-side/sdk-guides/'
           },
           {
             title: 'Getting started',
-            path: '/implement/sdk-guides/getting-started/'
+            path: '/implement/server-side/sdk-guides/getting-started/'
           },
           {
             title: 'Sample apps',
-            path: '/implement/sdk-guides/sample-apps/'
+            path: '/implement/server-side/sdk-guides/sample-apps/'
           },
         ]
       },
       {
         title: 'Core Principles',
-        path: '/implement/sdk-guides/core-principles/',
+        path: '/implement/server-side/sdk-guides/core-principles/',
         pages: [
           {
             title: 'Adobe Target core principles',
-            path: '/implement/sdk-guides/core-principles/',
+            path: '/implement/server-side/sdk-guides/core-principles/',
           },
           {
             title: 'User identification & bucketing',
-            path: '/implement/sdk-guides/core-principles/user-identification-and-bucketing.md'
+            path: '/implement/server-side/sdk-guides/core-principles/user-identification-and-bucketing.md'
           },
           {
             title: 'Audience targeting',
-            path: '/implement/sdk-guides/core-principles/audience-targeting.md'
+            path: '/implement/server-side/sdk-guides/core-principles/audience-targeting.md'
           },
           {
             title: 'Event tracking',
-            path: '/implement/sdk-guides/core-principles/event-tracking.md'
+            path: '/implement/server-side/sdk-guides/core-principles/event-tracking.md'
           },
           {
             title: 'User permissions & properties',
-            path: '/implement/sdk-guides/core-principles/user-permissions-and-properties.md'
+            path: '/implement/server-side/sdk-guides/core-principles/user-permissions-and-properties.md'
           }
         ]
       },
       {
         title: 'Integration',
-        path: '/implement/sdk-guides/integration-with-experience-cloud/',
+        path: '/implement/server-side/sdk-guides/integration-with-experience-cloud/',
         pages: [
           {
             title: 'Integration Overview',
-            path: '/implement/sdk-guides/integration-with-experience-cloud/',
+            path: '/implement/server-side/sdk-guides/integration-with-experience-cloud/',
           },
           {
             title: 'Experience Cloud ID (ECID) Service',
-            path: '/implement/sdk-guides/integration-with-experience-cloud/ecid.md'
+            path: '/implement/server-side/sdk-guides/integration-with-experience-cloud/ecid.md'
           },
           {
             title: 'Analytics for Target (A4T) reporting',
-            path: '/implement/sdk-guides/integration-with-experience-cloud/a4t-reporting.md'
+            path: '/implement/server-side/sdk-guides/integration-with-experience-cloud/a4t-reporting.md'
           },
           {
             title: 'AAM Segments',
-            path: '/implement/sdk-guides/integration-with-experience-cloud/aam-segments.md'
+            path: '/implement/server-side/sdk-guides/integration-with-experience-cloud/aam-segments.md'
           }
         ]
       },
       {
         title: 'On-Device Decisioning',
-        path: '/implement/sdk-guides/on-device-decisioning/',
+        path: '/implement/server-side/sdk-guides/on-device-decisioning/',
         pages: [
           {
             title: 'Introduction to On-Device Decisioning',
-            path: '/implement/sdk-guides/on-device-decisioning/'
+            path: '/implement/server-side/sdk-guides/on-device-decisioning/'
           },
           {
             title: 'Rule artifact',
-            path: '/implement/sdk-guides/on-device-decisioning/rule-artifact-overview.md'
+            path: '/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md'
           },
           {
             title: 'Execute A/B tests with feature flags',
-            path: '/implement/sdk-guides/on-device-decisioning/execute-ab-tests-with-feature-flags.md'
+            path: '/implement/server-side/sdk-guides/on-device-decisioning/execute-ab-tests-with-feature-flags.md'
           },
           {
             title: 'Execute feature tests with attributes',
-            path: '/implement/sdk-guides/on-device-decisioning/execute-feature-tests-with-attributes.md'
+            path: '/implement/server-side/sdk-guides/on-device-decisioning/execute-feature-tests-with-attributes.md'
           },
           {
             title: 'Manage rollouts for feature tests',
-            path: '/implement/sdk-guides/on-device-decisioning/manage-rollouts-for-feature-tests.md'
+            path: '/implement/server-side/sdk-guides/on-device-decisioning/manage-rollouts-for-feature-tests.md'
           },
           {
             title: 'Deliver personalization',
-            path: '/implement/sdk-guides/on-device-decisioning/deliver-personalization.md'
+            path: '/implement/server-side/sdk-guides/on-device-decisioning/deliver-personalization.md'
           },
           {
             title: 'Supported features',
-            path: '/implement/sdk-guides/on-device-decisioning/supported-features.md'
+            path: '/implement/server-side/sdk-guides/on-device-decisioning/supported-features.md'
           },
           {
             title: 'Troubleshooting',
-            path: '/implement/sdk-guides/on-device-decisioning/troubleshooting.md'
+            path: '/implement/server-side/sdk-guides/on-device-decisioning/troubleshooting.md'
           }
         ]
       },
       {
         title: 'Best Practices',
-        path: '/implement/sdk-guides/best-practices/',
+        path: '/implement/server-side/sdk-guides/best-practices/',
         pages: [
           {
             title: 'When to use on-device vs. edge decisioning',
-            path: '/implement/sdk-guides/best-practices/'
+            path: '/implement/server-side/sdk-guides/best-practices/'
           },
         ]
       },
@@ -738,39 +731,37 @@ module.exports = {
       },
       {
         title: 'Get Started',
-        path: '/api-guides/',
-        header: true,
+        path: '/before-administer/',
         pages: [
           {
             title: 'Target API Overview',
-            path: '/api-guides/'
+            path: '/before-administer/'
           },
           {
             title: 'How to Configure Authentication for Adobe Target APIs',
-            path: '/api-guides/configure-authentication.md'
+            path: '/before-administer/configure-authentication.md'
           }
         ]
       },
       {
         title: 'Use Recommendations APIs',
-        path: '/api-guides/recs-api/',
-        header: true,
+        path: '/before-administer/recs-api/',
         pages: [
           {
             title: 'Recs API Overview',
-            path: '/api-guides/recs-api/'
+            path: '/before-administer/recs-api/'
           },
           {
             title: 'Manage Your Catalog with APIs',
-            path: '/api-guides/recs-api/manage-catalog.md'
+            path: '/before-administer/recs-api/manage-catalog.md'
           },
           {
             title: 'Manage Custom Criteria',
-            path: '/api-guides/recs-api/manage-custom-criteria.md'
+            path: '/before-administer/recs-api/manage-custom-criteria.md'
           },
           {
             title: 'Use the Delivery API with Recommendations',
-            path: '/api-guides/recs-api/fetch-recs-server-side-delivery-api.md'
+            path: '/before-administer/recs-api/fetch-recs-server-side-delivery-api.md'
           }
         ]
       },

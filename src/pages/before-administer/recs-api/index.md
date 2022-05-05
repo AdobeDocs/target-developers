@@ -13,12 +13,12 @@ exl-id: 10f80056-fb71-4362-86bc-d161f596cb91
 ---
 # Adobe Recommendations API Overview
 
-APIs relevant for Recommendations include [admin APIs](https://docs.adobe.com/content/help/en/target/using/apis/api-overview.html) that allow you to:
+APIs relevant for Recommendations include [admin APIs](../../before-administer/) that allow you to:
 
 * Manage your catalog of recommendable products or content
 * Manage your Recommendations algorithms and activities
 
-Using the Target [delivery API](https://docs.adobe.com/content/help/en/target/using/apis/api-overview.html) with Recommendations, you can also:
+Using the Target [delivery API](../../implement/delivery-api/) with Recommendations, you can also:
 
 * Retrieve recommendations in JSON, HTML, or XML objects so they can be displayed in web, mobile, email, Internet of Things (IOT), and other channels.
 

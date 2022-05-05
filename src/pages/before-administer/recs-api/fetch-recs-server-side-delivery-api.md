@@ -21,7 +21,7 @@ When requesting content containing actual recommendations (recommended products 
 
 To retrieve recommendations, send an Adobe Target Delivery API POST call with the appropriate contextual information, which may include a user ID (for use with profile-specific recommendations such as the user's recently viewed items), relevant mbox name, mbox parameters, profile parameters, or other attributes. The response will include recommended entity.ids (and may include other entity data) in JSON or HTML format, which can then be displayed in the device.
 
-The [Delivery API](https://developers.adobetarget.com/api/delivery-api/) for Adobe Target exposes all existing features that a standard Target request provides.
+The [Delivery API](../../api/delivery-api/index.md) for Adobe Target exposes all existing features that a standard Target request provides.
 
 The Delivery API:
 
@@ -56,7 +56,7 @@ To create recommendations that can be used with the Delivery API, use the [Form-
 
 ## Use the Delivery API
 
-The syntax for the [Delivery API](https://developers.adobetarget.com/api/delivery-api/#tag/Delivery-API) is:
+The syntax for the [Delivery API](../../api/delivery-api/index.md) is:
 
 `POST https://{{CLIENT_CODE}}.tt.omtrdc.net/rest/v1/delivery`
 
