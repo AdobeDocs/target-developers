@@ -125,11 +125,11 @@ Implement Adobe Target with Adobe Experience Platform Mobile SDKs.
 Overview of how to implement Adobe Target in emails.
 
 
-<DiscoverBlock slots="link, text"/>
+<DiscoverBlock slots="heading, link, text"/>
 
-### APIs
+### What are the Target APIs?
 
-[Overview](before-administer/)
+[Introduction](before-administer/)
     
 Overview of Adobe Target APIs.
 
@@ -140,19 +140,17 @@ Overview of Adobe Target APIs.
 Use Adobe Target's Delivery APIs to deliver experiences across web and mobile channels as well as non-browser based IoT devices such as a connected TV, kiosk, or in-store digital screen.
 
 
-
-
 ## Administration Guides
 
 <DiscoverBlock slots="heading, link, text"/>
 
-### APIs
+### What are the Target APIs?
 
-[Overview](before-administer/)
+[Introduction](before-administer/)
     
 Overview of Adobe Target APIs.
 
-<DiscoverBlock slots="link, text"/>
+<DiscoverBlock slots="heading, link, text"/>
 
 ### Admin APIs
 
