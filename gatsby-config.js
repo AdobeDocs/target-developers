@@ -432,13 +432,117 @@ module.exports = {
             path: '/implement/server-side/on-device-decisioning.md'
           },
           {
-            title: 'TEST - rando page',
-            path: '/sdk-guides/integration-with-experience-cloud/aam-segments.md'
+            title: 'Welcome',
+            path: '/implement/sdk-guides/'
+          },
+          {
+            title: 'Getting started',
+            path: '/implement/sdk-guides/getting-started/'
+          },
+          {
+            title: 'Sample apps',
+            path: '/implement/sdk-guides/sample-apps/'
+          },
+        ]
+      },
+      {
+        title: 'Core Principles',
+        path: '/implement/sdk-guides/core-principles/',
+        pages: [
+          {
+            title: 'Adobe Target core principles',
+            path: '/implement/sdk-guides/core-principles/',
+          },
+          {
+            title: 'User identification & bucketing',
+            path: '/implement/sdk-guides/core-principles/user-identification-and-bucketing.md'
+          },
+          {
+            title: 'Audience targeting',
+            path: '/implement/sdk-guides/core-principles/audience-targeting.md'
+          },
+          {
+            title: 'Event tracking',
+            path: '/implement/sdk-guides/core-principles/event-tracking.md'
+          },
+          {
+            title: 'User permissions & properties',
+            path: '/implement/sdk-guides/core-principles/user-permissions-and-properties.md'
           }
         ]
       },
       {
-        title: 'Node.js SDK',
+        title: 'Integration',
+        path: '/implement/sdk-guides/integration-with-experience-cloud/',
+        pages: [
+          {
+            title: 'Integration Overview',
+            path: '/implement/sdk-guides/integration-with-experience-cloud/',
+          },
+          {
+            title: 'Experience Cloud ID (ECID) Service',
+            path: '/implement/sdk-guides/integration-with-experience-cloud/ecid.md'
+          },
+          {
+            title: 'Analytics for Target (A4T) reporting',
+            path: '/implement/sdk-guides/integration-with-experience-cloud/a4t-reporting.md'
+          },
+          {
+            title: 'AAM Segments',
+            path: '/implement/sdk-guides/integration-with-experience-cloud/aam-segments.md'
+          }
+        ]
+      },
+      {
+        title: 'On-Device Decisioning',
+        path: '/implement/sdk-guides/on-device-decisioning/',
+        pages: [
+          {
+            title: 'Introduction to On-Device Decisioning',
+            path: '/implement/sdk-guides/on-device-decisioning/'
+          },
+          {
+            title: 'Rule artifact',
+            path: '/implement/sdk-guides/on-device-decisioning/rule-artifact-overview.md'
+          },
+          {
+            title: 'Execute A/B tests with feature flags',
+            path: '/implement/sdk-guides/on-device-decisioning/execute-ab-tests-with-feature-flags.md'
+          },
+          {
+            title: 'Execute feature tests with attributes',
+            path: '/implement/sdk-guides/on-device-decisioning/execute-feature-tests-with-attributes.md'
+          },
+          {
+            title: 'Manage rollouts for feature tests',
+            path: '/implement/sdk-guides/on-device-decisioning/manage-rollouts-for-feature-tests.md'
+          },
+          {
+            title: 'Deliver personalization',
+            path: '/implement/sdk-guides/on-device-decisioning/deliver-personalization.md'
+          },
+          {
+            title: 'Supported features',
+            path: '/implement/sdk-guides/on-device-decisioning/supported-features.md'
+          },
+          {
+            title: 'Troubleshooting',
+            path: '/implement/sdk-guides/on-device-decisioning/troubleshooting.md'
+          }
+        ]
+      },
+      {
+        title: 'Best Practices',
+        path: '/implement/sdk-guides/best-practices/',
+        pages: [
+          {
+            title: 'When to use on-device vs. edge decisioning',
+            path: '/implement/sdk-guides/best-practices/'
+          },
+        ]
+      },
+      {
+        title: 'Node.js SDK Reference',
         path: '/implement/server-side/node-js/',
         pages: [
           {
@@ -476,7 +580,7 @@ module.exports = {
         ]
       },
       {
-        title: 'Java SDK',
+        title: 'Java SDK Reference',
         path: '/implement/server-side/java/',
         pages: [
           {
@@ -526,7 +630,7 @@ module.exports = {
         ]
       },
       {
-        title: '.NET SDK',
+        title: '.NET SDK Reference',
         path: '/implement/server-side/net/',
         pages: [
           {
@@ -564,7 +668,7 @@ module.exports = {
         ]
       },
       {
-        title: 'Python SDK',
+        title: 'Python SDK Reference',
         path: '/implement/server-side/python/',
         pages: [
           {
