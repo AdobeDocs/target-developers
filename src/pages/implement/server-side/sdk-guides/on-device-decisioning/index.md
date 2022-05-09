@@ -6,7 +6,7 @@ The next-generation Adobe Target SDKs now offer on-device decisioning, which pro
 
 When you install and initialize an Adobe Target SDK with on-device decisioning enabled, a *rule artifact* is downloaded and cached locally on your server, from the Akamai CDN closest to your server. When a request to retrieve an Adobe Target experience is made within your server-side application, the decision regarding which content to return is made in-memory, based on the metadata encoded in the cached rule artifact, which defines all of your on-device decisioning A/B and XT activities.
 
-![alt image](./asset-sdk-local-decisioning-architecture-diagram.png)
+![alt image](assets/asset-sdk-local-decisioning-architecture-diagram.png)
 
 ## What are the benefits?
 
@@ -56,7 +56,7 @@ On-device decisioning is available for all Adobe Target customers who use Adobe 
 
 You must have the Admin or Approver *user role* to enable or disable the On-Device Decisioning toggle.
 
-![alt image](./asset-odd-toggle.png)
+![alt image](assets/asset-odd-toggle.png)
 
 After enabling the On-Device Decisioning toggle, Adobe Target will begin generating and propagating *rule artifacts* for your client.
 
@@ -74,11 +74,11 @@ Leaving this toggle **off** means you will need to re-create and activate any on
 
 After you create an activity, a label called **Decisioning Method**, visible in the activity detail page, indicates whether the activity is on-device decisioning capable.
 
-![alt image](./asset-odd9.png)
+![alt image](assets/asset-odd9.png)
 
 You can also see all activities that are on-device decisioning capable on the **Activities** page by adding the column **Decisioning Method** to the list of activities.
 
-![alt image](./asset-odd7.png)
+![alt image](assets/asset-odd7.png)
 
 <InlineAlert variant="info" slots="text"/>
 

@@ -10,9 +10,9 @@ exl-id: 4b4274a9-b91a-4a79-9b40-8b1909a2d1d1
 ---
 # Transition from Target legacy APIs to Adobe I/O
 
-Information to help you use transition from the Target legacy APIs to the new APIs on Adobe I/O.
+Information to help you transition from the Target legacy APIs to the new APIs on Adobe I/O.
 
-With the decommissioning of Adobe Target Classic, the APIs that are connected to your Target Classic account have also been made unavailable. This document will help you transition your legacy API-based integrations to the Target APIs powered by Adobe I/O.
+With the decommissioning of Adobe Target Classic, the APIs connected to your Target Classic account have also been made unavailable. This document will help you transition your legacy API-based integrations to the Target APIs powered by Adobe I/O.
 
 For more information about the Target API documentation, see [Target APIs and NodeJS SDK](/help/c-implementing-target/c-api-and-sdk-overview/api-and-sdk-overview.md#concept_5718EC1FF2ED4436935D0BCCD7AA29A6).
 

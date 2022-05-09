@@ -50,11 +50,11 @@ Enabling traces will output additional information from Adobe Target in regards 
 
 1. Navigate to the Target UI in Experience Cloud.
   
-   ![alt image](./asset-target-ui-1.png)
+   ![alt image](assets/asset-target-ui-1.png)
 
 1. Navigate to **Administration** > **Implementation** and click **Generate New Authorization Token**.
   
-   ![alt image](./asset-target-ui-2.png)
+   ![alt image](assets/asset-target-ui-2.png)
 
 1. Copy the newly generated authorization token to the clipboard and add it to your Target request:
 
@@ -128,19 +128,19 @@ TBD
 
 1. Navigate to the Target UI in Experience Cloud
 
-    ![alt image](./asset-target-ui-1.png)
+    ![alt image](assets/asset-target-ui-1.png)
 
 1. Create a new XT activity using the Form-based Experience Composer.
 
-    ![alt image](./asset-form-base-composer-ui.png)
+    ![alt image](assets/asset-form-base-composer-ui.png)
 
 1. Input the mbox name used in your Target request as the location for the XT activity (note this should be a unique mbox name specifically for development purposes).
 
-    ![alt image](./asset-mbox-location-ui.png)
+    ![alt image](assets/asset-mbox-location-ui.png)
 
 1. Change the content to either an HTML offer or JSON offer. This will be returned in the Target request to your application. Leave targeting for the activity as 'All Visitors' and select any metric you would like. Name the activity, save it, and then activate it to ensure the mbox/location in use is only for development.
 
-   ![alt image](./asset-target-content-ui.png)
+   ![alt image](assets/asset-target-content-ui.png)
 
 1. In your application, add a log statements for the content received in the response from your Target request
 
@@ -237,7 +237,7 @@ Finally, navigate to the Target UI and locate the activity in question: [experie
 
 Review the rules used in the audience and ensure you only use those aforementioned that are supported. Additionally, ensure that the activity type is either A/B or XT.
 
-![alt image](./asset-target-audience-ui.png)
+![alt image](assets/asset-target-audience-ui.png)
 
 ### On-device decisioning activities not executing due to unqualified audience
 
@@ -426,7 +426,7 @@ Look at the `artifactLastRetrieved` date of the artifact and ensure that you hav
 (4) Review the `campaignId` to ensure the activity or activities you are expecting to execute are evaluated. The `campaignId` will match the activity ID on the activity overview tab in the Target UI:
 
 *Insert image-activity-id-target-ui.png*
-![alt image](./asset-activity-id-target-ui.png)
+![alt image](assets/asset-activity-id-target-ui.png)
 
 (5) Review the `matchedRuleConditions` and `unmatchedRuleConditions` to identify issues with qualifying for the audience rules for a given activity.
 
