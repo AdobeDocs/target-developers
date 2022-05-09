@@ -411,18 +411,6 @@ module.exports = {
             path: '/implement/server-side/'
           },
           {
-            title: 'Transition from Target legacy APIs to Adobe I/O',
-            path: '/implement/server-side/transition-from-target-legacy-apis.md'
-          },
-          {
-            title: 'On-device decisioning',
-            path: '/implement/server-side/on-device-decisioning.md'
-          },
-          {
-            title: 'Welcome',
-            path: '/implement/server-side/sdk-guides/'
-          },
-          {
             title: 'Getting started',
             path: '/implement/server-side/sdk-guides/getting-started/'
           },
@@ -430,6 +418,10 @@ module.exports = {
             title: 'Sample apps',
             path: '/implement/server-side/sdk-guides/sample-apps/'
           },
+          {
+            title: 'Transition from Target legacy APIs to Adobe I/O',
+            path: '/implement/server-side/transition-from-target-legacy-apis.md'
+          }
         ]
       },
       {

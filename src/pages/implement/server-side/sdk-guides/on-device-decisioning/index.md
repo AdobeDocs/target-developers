@@ -1,3 +1,24 @@
+---
+keywords:
+- server side
+- server-side
+- sdk
+- sdks
+- on-device
+- decisioning
+- on device
+- ondevice
+- zero latency
+- latency
+- near-zero
+- node.js
+description: Learn how to use on-device decisioning to cache your Target A/B and MVT activities on your server to perform in-memory decisioning at near-zero latency.
+title: What is On-Device Decisioning?
+feature: Implement Server-side
+role: Developer
+exl-id: ae782511-6f32-4123-be76-838584e05b39
+---
+
 # Introduction to on-device decisioning
 
 The next-generation Adobe Target SDKs now offer on-device decisioning, which provides the ability to cache your A/B and Experience Targeting (XT) campaigns on your server and perform in-memory decisioning at near-zero latency, without blocking network requests to Adobe Target's Edge Network. Adobe Target also offers the flexibility of delivering the most relevant and up-to-date experience from your experimentation and ML-driven personalization campaigns via a live server call. In other words, when performance is most important, you can choose to utilize on-device decisioning, but when the most relevant and up-to-date experience is needed, a server call can be made instead. See [when to use on-device vs. edge decisioning](https://adobetarget-sdks.gitbook.io/docs/best-practices/when-to-use-server-side-vs-on-device-decisioning) to learn about use cases that warrant using one over the other.
@@ -94,3 +115,43 @@ After creating and activating an activity that is on-device decisioning capable,
 1. Deploy your code.
 
 For examples demonstrating how to get started with steps 1-3 above, see the [Getting started](../getting-started/index.md) section.
+
+
+## Additional Resources
+
+### Webinar: Personalize and test at zero latency with on-device decisions from Adobe Target
+
+More than ever, marketers, product owners and developers are being tasked with optimizing the overall customer experience on sites, in apps, and everywhere else they connect with their customers. Multiple tools with data silos and complicated implementations are inadequate.
+
+In this recorded webinar, Adobe Target product experts discuss how moving critical experience optimization decisions on-device to execute locally with near-zero latency can open doors to exciting new use cases while improving site performance for your customers.
+
+<Media slots="video"/>
+
+<https://video.tv.adobe.com/v/328148>
+
+
+### Tutorial: On-device decisioning
+
+Adobe Target on-device decisioning enables near-zero latency content delivery.
+
+This 7-minute video:
+
+* Describes on-device decisioning, including how it compares to other methods of Target implementation
+* Demonstrates how to enable on-device decisioning in Target
+* Examines a sample form-based composer activity that has been configured with JSON content
+* Shows sample Node.JS SDK code containing key configuration required for on-device decisioning
+* Demonstrates results in a browser
+
+<Media slots="video"/>
+
+<https://video.tv.adobe.com/v/329032>
+
+For more videos and tutorials, see the [Adobe Target Tutorials](https://experienceleague.adobe.com/docs/target-learn/tutorials/overview.html) guide.
+
+### Adobe Tech Blog - Part 1: Run Adobe Target NodeJS SDK for experimentation and personalization on edge platforms (Akamai Edge Workers)
+
+[Click here to access the blog post](https://medium.com/adobetech/part-1-run-adobe-target-nodejs-sdk-for-experimentation-and-personalization-on-edge-platforms-4d8660964ed9).
+
+### Adobe Tech Blog - Part 2: Run Adobe Target NodeJS SDK for experimentation and personalization on edge platforms (AWS Lambda@Edge)
+
+[Click here to access the blog post](https://medium.com/adobetech/part-2-run-adobe-target-nodejs-sdk-for-experimentation-and-personalization-on-edge-platforms-aws-4d6bdac24563).

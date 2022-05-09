@@ -53,12 +53,21 @@ Through the Target Delivery API, you can:
 
 The Adobe Target server-side SDK documentation helps you implement Target on your servers in your language of choice.
 
-Target SDK References:
+* [Node.js](node-js/)
+* [Java](java/)
+* [.NET](net/)
+* [Python](python/)
 
-* [Node.js](/sdk/node-js/)
-* [Java](../sdk/java/)
-* [.NET](../sdk/net/)
-* [Python](../sdk/python/)
+Through Adobe Target's server-side SDKs, you can:
+
+* Execute and run **feature flagging**, **rollouts**, and **A/B experiments** at **near-zero latency**.
+* Deliver experiences across **web**, including **SPAs**, and **mobile channels**, as well as non-browser based **Internet of Things (IoT) devices** such as a connected TV, kiosk, or in-store digital screen.
+* Deliver **Machine Learning (ML) driven personalized experiences** to a user, no matter which channel or device the user has engaged with your business.
+* **Seamlessly integrate with Adobe Experience Cloud** products such as **Adobe Analytics**, **Adobe Audience Manager**, and the **Experience Cloud ID Service** from the server side.
+
+See the [Getting Started](sdk-guides/getting-started/) page to learn how to run a simple feature flagging use case via [on-device decisioning](sdk-guides/on-device-decisioning/).
+
+Check out our [Sample Apps](sdk-guides/sample-apps/) to have fun and play around!
 
 ## Target Recommendations APIs
 
