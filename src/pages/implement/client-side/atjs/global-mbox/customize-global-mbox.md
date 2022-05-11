@@ -25,7 +25,7 @@ Information to help you customize an Adobe Target global mbox for at.js.
 
    This custom global mbox is also used for click tracking.
 
-   ![custom-global-mbox](/assets/custom-global-mbox.png)
+   ![custom-global-mbox](../assets/custom-global-mbox.png)
 
 3. Implement the at.js library on your site.
 

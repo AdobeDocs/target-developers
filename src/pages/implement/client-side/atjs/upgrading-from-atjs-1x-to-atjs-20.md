@@ -26,7 +26,7 @@ Here are some benefits of using at.js 2.*x* that are not available in previous v
 
 The following diagrams help you understand the workflow of at.js 2.*x* with Views and how this enhances the SPA integration. To get a better introduction of the concepts used in at.js 2.*x*, see [Single Page Application implementation](/help/c-implementing-target/c-implementing-target-for-client-side-web/atjs/how-to-deployatjs/target-atjs-single-page-application.md).
 
-![Target flow with at.js 2.*x*](assets/system-diagram-atjs-20.png)
+![Target flow with at.js 2.*x*](../assets/system-diagram-atjs-20.png)
 
 |Call|Details|
 | --- | --- |
@@ -41,7 +41,7 @@ The following diagrams help you understand the workflow of at.js 2.*x* with View
 
 Now, wherever `triggerView()` is implemented on your SPA, the Views and actions are retrieved from cache and shown to the user without a server call. `triggerView()` also makes a notifications request to the Target backend in order to increment and record impression counts.
 
-![Target flow at.js 2.*x* triggerView](assets/atjs-20-triggerview.png)
+![Target flow at.js 2.*x* triggerView](../assets/atjs-20-triggerview.png)
 
 |Call|Details|
 | --- | --- |
@@ -251,11 +251,11 @@ Essentially the global mbox concept was introduced to let Target know whether to
 
 Customers are able to specify a global mbox name via **Target > Administration > Implementation > Edit at.js Settings**. This setting is used by the Target edge severs to translate execute > pageLoad to the global mbox name that appears in the Target UI. This allows customers to continue to use server-side APIs, the form-based composer, profile scripts, and create audiences using the global mbox name. We strongly recommend that you also make sure the same global mbox name is configured on the **Administration > Visual Experience Composer** page, as well, in case you still have pages using at.js 1.*x*, as shown in the following illustrations.
 
-![Modify at.js dialog](/assets/modify-atjs.png)
+![Modify at.js dialog](../assets/modify-atjs.png)
 
 and
 
-![Custom Global mbox](/assets/custom-global-mbox.png)
+![Custom Global mbox](../assets/custom-global-mbox.png)
 
 ### Does the auto-create global mbox setting need to be turned on for at.js 2.*x*?
 
@@ -762,7 +762,7 @@ at.js 2.*x* JSON payload:
 
 Version is sent as a query string parameter via the version parameter.
 
-## Training video: at.js 2.*x* architectural diagram ![Overview badge](../assets/overview.png )
+## Training video: at.js 2.*x* architectural diagram ![Overview badge](../../assets/overview.png)
 
 at.js 2.*x* enhances Adobe Target's support for SPAs and integrates with other Experience Cloud solutions. This video explains how everything comes together.
 

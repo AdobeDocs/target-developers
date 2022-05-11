@@ -192,7 +192,7 @@ Now that we have covered what Adobe Target Views are, we can leverage this conce
 
 The following diagrams help you understand the workflow of at.js 2.x with Views and how this enhances the SPA integration. To get a better introduction of the concepts used in at.js 2.x, see [Single Page Application implementation](/help/c-implementing-target/c-implementing-target-for-client-side-web/atjs/how-to-deployatjs/target-atjs-single-page-application.md).
 
-![Target flow with at.js 2.x](../assets/system-diagram-atjs-20.png)
+![Target flow with at.js 2.x](../../assets/system-diagram-atjs-20.png)
 
 |Step|Details|
 | --- | --- |
@@ -207,7 +207,7 @@ The following diagrams help you understand the workflow of at.js 2.x with Views 
 
 Now, wherever `triggerView()` is implemented on your SPA, the Views and actions are retrieved from cache and shown to the user without a server call. `triggerView()` also makes a notifications request to the Target backend in order to increment and record impression counts.
 
-![Target flow at.js 2.x triggerView](../assets/atjs-20-triggerview.png)
+![Target flow at.js 2.x triggerView](../../assets/atjs-20-triggerview.png)
 
 |Step|Details|
 | --- | --- |
@@ -315,7 +315,7 @@ The following videos contain more information:
 
 See [Understanding how at.js 2.x works](https://helpx.adobe.com/target/kt/using/atjs20-diagram-technical-video-understand.html) for more information.
 
-### Implement at.js 2.x in a SPA ![Tutorial badge](../../assets/tutorial.png)
+### Implement at.js 2.x in a SPA ![Tutorial badge](../../../assets/tutorial.png)
 
 <Media slots="video"/>
 
@@ -323,7 +323,7 @@ See [Understanding how at.js 2.x works](https://helpx.adobe.com/target/kt/using/
 
 See [Implement Adobe Target's at.js 2.x in a Single Page Application (SPA)](https://helpx.adobe.com/target/kt/using/atjs2-single-page-application-technical-video-implement.html) for more information.
 
-### Using the VEC for SPAs in Adobe Target ![Tutorial badge](../../assets/tutorial.png)
+### Using the VEC for SPAs in Adobe Target ![Tutorial badge](../../../assets/tutorial.png)
 
 <Media slots="video"/>
 
