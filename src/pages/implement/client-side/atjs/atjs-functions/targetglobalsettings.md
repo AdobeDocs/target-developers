@@ -551,7 +551,7 @@ Consider the following when using `serverState`:
 
   To turn these settings on, enable the toggle in **Administration > Implementation > Edit > Page Load Enabled**.
 
-  ![Page Load Enabled settings](../assets/page-load-enabled-setting.png)
+  ![Page Load Enabled settings](../../assets/page-load-enabled-setting.png)
 
 * If you are using `serverState` and using `<script>` tags in the content returned, ensure that your HTML content uses `<\/script>` instead of `</script>`. If you use `</script>`, the browser interprets `</script>` as the end on an inline SCRIPT and it might break the HTML page.
 

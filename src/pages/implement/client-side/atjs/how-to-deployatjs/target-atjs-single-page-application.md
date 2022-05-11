@@ -307,7 +307,7 @@ The following information describes the order of operations that you must follow
 
 The following videos contain more information:
 
-### Understanding how at.js 2.x works ![Overview badge](../../assets/overview.png)
+### Understanding how at.js 2.x works ![Overview badge](../../../assets/overview.png)
 
 <Media slots="video"/>
 
