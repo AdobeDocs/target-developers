@@ -227,7 +227,7 @@ The following are possible root causes if you see this warning message:
 * The underlying page is part of a Single Page Application (SPA) or the page contains elements that appear farther down the page and the at.js "selector polling mechanism" cannot find those elements. Increasing the `selectorsPollingTimeout` might help. For more information, see [targetGlobalSettings()](/help/c-implementing-target/c-implementing-target-for-client-side-web/targetgobalsettings.md). 
 * Any click-tracking metric tries to add itself to every page, regardless of the URL on which the metric was set up. Although harmless, this situation makes many of these messages display.
   
-  For best results, please download and use the latest version of at.js. For more information, see [at.js Version Details](/help/c-implementing-target/c-implementing-target-for-client-side-web/target-atjs-versions.md) and [Download at.js](/help/c-implementing-target/c-implementing-target-for-client-side-web/how-to-deployatjs/implementing-target-without-a-tag-manager.md).
+  For best results, please download and use the latest version of at.js. For more information, see [at.js Version Details](/help/c-implementing-target/c-implementing-target-for-client-side-web/target-atjs-versions.md) and [Download at.js](/help/c-implementing-target/c-implementing-target-for-client-side-web/atjs/how-to-deployatjs/implementing-target-without-a-tag-manager.md).
 
 ## What is the domain tt.omtrdc.net that Target server calls go to?
 

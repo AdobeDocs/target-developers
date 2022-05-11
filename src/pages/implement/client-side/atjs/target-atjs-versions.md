@@ -17,7 +17,7 @@ Details about changes in each version of the Adobe Target at.js JavaScript libra
 
 Adobe Target supports both at.js 1.*x* and at.js 2.*x*. Please upgrade to the most recent update of either major version of at.js to ensure that you are running a supported version.
 
-Tags in [Adobe Experience Platform](/help/c-implementing-target/c-implementing-target-for-client-side-web/how-to-deployatjs/cmp-implementing-target-using-adobe-launch.md) are the preferred method to upgrade at.js. Extension developers continually add new features to their extensions, and frequently fix bugs. These updates are packaged into new versions of an extension and made available in the Adobe Experience Platform catalog as upgrades. For more information, see [Extension upgrades](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/extension-upgrade.html) in the *Tags overview* guide.
+Tags in [Adobe Experience Platform](/help/c-implementing-target/c-implementing-target-for-client-side-web/atjs/how-to-deployatjs/cmp-implementing-target-using-adobe-launch.md) are the preferred method to upgrade at.js. Extension developers continually add new features to their extensions, and frequently fix bugs. These updates are packaged into new versions of an extension and made available in the Adobe Experience Platform catalog as upgrades. For more information, see [Extension upgrades](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/extension-upgrade.html) in the *Tags overview* guide.
 
 ## at.js version 2.8.1 (January 28, 2022)
 
@@ -423,7 +423,7 @@ The following enhancements and fixes are included in at.js version 0.9.6:
 
 * mbox names can now contain special characters, including ampersands ( & ).
 
-  For a list of allowable special characters, see [at.js Configurations](/help/c-implementing-target/c-implementing-target-for-client-side-web/how-to-deployatjs/implementing-target-without-a-tag-manager.md#concept_2FA0456607D04F82B0539C5BF5309812). 
+  For a list of allowable special characters, see [at.js Configurations](/help/c-implementing-target/c-implementing-target-for-client-side-web/atjs/how-to-deployatjs/implementing-target-without-a-tag-manager.md#concept_2FA0456607D04F82B0539C5BF5309812). 
 
 * Added `secureOnly` setting that indicates whether at.js should use HTTPS only or be allowed to switch between HTTP and HTTPS based on the page protocol. This is an advanced setting that defaults to False and can be overridden via `targetGlobalSettings`. 
 * The Legacy Browser Support option is available in at.js version 0.9.3 and earlier. This option was removed in at.js version 0.9.4.

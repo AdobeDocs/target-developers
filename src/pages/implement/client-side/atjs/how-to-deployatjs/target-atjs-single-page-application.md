@@ -190,7 +190,7 @@ Now that we have covered what Adobe Target Views are, we can leverage this conce
 
 ## at.js 2.x system diagrams
 
-The following diagrams help you understand the workflow of at.js 2.x with Views and how this enhances the SPA integration. To get a better introduction of the concepts used in at.js 2.x, see [Single Page Application implementation](/help/c-implementing-target/c-implementing-target-for-client-side-web/how-to-deployatjs/target-atjs-single-page-application.md).
+The following diagrams help you understand the workflow of at.js 2.x with Views and how this enhances the SPA integration. To get a better introduction of the concepts used in at.js 2.x, see [Single Page Application implementation](/help/c-implementing-target/c-implementing-target-for-client-side-web/atjs/how-to-deployatjs/target-atjs-single-page-application.md).
 
 ![Target flow with at.js 2.x](../assets/system-diagram-atjs-20.png)
 
@@ -271,7 +271,7 @@ document.addEventListener("at-view-end", function(e) {
 
 You must fire the `at-view-start` and `at-view-end` events. These events are not part of at.js custom events.
 
-Although these examples use JavaScript code, all this can be simplified if you are using a tag manager, such as tags in [Adobe Experience Platform](/help/c-implementing-target/c-implementing-target-for-client-side-web/how-to-deployatjs/cmp-implementing-target-using-adobe-launch.md).
+Although these examples use JavaScript code, all this can be simplified if you are using a tag manager, such as tags in [Adobe Experience Platform](/help/c-implementing-target/c-implementing-target-for-client-side-web/atjs/how-to-deployatjs/cmp-implementing-target-using-adobe-launch.md).
 
 If the preceding steps are followed you should have a robust A4T solution for SPAs.
 

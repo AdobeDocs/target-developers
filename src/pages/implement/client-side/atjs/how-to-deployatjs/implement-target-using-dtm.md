@@ -19,5 +19,5 @@ Adobe Dynamic Tag Manager is a legacy product and is no longer supported. For th
 
 Tags in Adobe Experience Platform are the next generation of tag management capabilities from Adobe. Tags give customers a simple way to deploy and manage the analytics, marketing, and advertising tags necessary to power relevant customer experiences.
 
-For more information, see [Implement Target using Adobe Platform](/help/c-implementing-target/c-implementing-target-for-client-side-web/how-to-deployatjs/cmp-implementing-target-using-adobe-launch.md).
+For more information, see [Implement Target using Adobe Platform](/help/c-implementing-target/c-implementing-target-for-client-side-web/atjs/how-to-deployatjs/cmp-implementing-target-using-adobe-launch.md).
 

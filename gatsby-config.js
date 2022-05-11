@@ -196,111 +196,111 @@ module.exports = {
       },
       {
         title: 'at.js implementation',
-        path: '/implement/client-side/how-atjs-works/how-atjs-works.md',
+        path: '/implement/client-side/atjs/how-atjs-works/how-atjs-works.md',
         pages: [
           {
             title: 'How at.js works',
-            path: '/implement/client-side/how-atjs-works/how-atjs-works.md'
+            path: '/implement/client-side/atjs/how-atjs-works/how-atjs-works.md'
           },
           {
             title: 'How at.js manages flicker',
-            path: '/implement/client-side/how-atjs-works/manage-flicker-with-atjs.md'
+            path: '/implement/client-side/atjs/how-atjs-works/manage-flicker-with-atjs.md'
           },
           {
             title: 'at.js integrations',
-            path: '/implement/client-side/how-atjs-works/target-atjs-integrations.md'
+            path: '/implement/client-side/atjs/how-atjs-works/target-atjs-integrations.md'
           }
         ]
       },
       {
         title: 'How to deploy at.js',
-        path: '/implement/client-side/how-to-deployatjs/how-to-deployatjs.md',
+        path: '/implement/client-side/atjs/how-to-deployatjs/how-to-deployatjs.md',
         pages: [
           {
             title: 'How to deploy at.js',
-            path: '/implement/client-side/how-to-deployatjs/how-to-deployatjs.md'
+            path: '/implement/client-side/atjs/how-to-deployatjs/how-to-deployatjs.md'
           },
           {
             title: 'Implement Target using Adobe Experience Platform',
-            path: '/implement/client-side/how-to-deployatjs/implement-target-using-adobe-launch.md'
+            path: '/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md'
           },
           {
             title: 'Implement Target without a tag manager',
-            path: '/implement/client-side/how-to-deployatjs/implement-target-without-a-tag-manager.md'
+            path: '/implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager.md'
           },
           {
             title: 'Implement Target using Dynamic Tag Manager (DTM)',
-            path: '/implement/client-side/how-to-deployatjs/implement-target-using-dtm.md'
+            path: '/implement/client-side/atjs/how-to-deployatjs/implement-target-using-dtm.md'
           },
           {
             title: 'Implement Target for Single Page Applications (SPAs)',
-            path: '/implement/client-side/how-to-deployatjs/target-atjs-single-page-application.md'
+            path: '/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md'
           }
         ]
       },
       {
         title: 'at.js functions',
-        path: '/implement/client-side/atjs-functions/atjs-functions.md',
+        path: '/implement/client-side/atjs/atjs-functions/atjs.md',
         pages: [
           {
             title: 'at.js functions overview',
-            path: '/implement/client-side/atjs-functions/atjs-functions.md'
+            path: '/implement/client-side/atjs/atjs-functions/atjs.md'
           },
           {
             title: 'adobe.target.getOffer()',
-            path: '/implement/client-side/atjs-functions/adobe-target-getoffer.md'
+            path: '/implement/client-side/atjs/atjs-functions/adobe-target-getoffer.md'
           },
           {
             title: 'adobe.target.getOffers() - at.js 2.x',
-            path: '/implement/client-side/atjs-functions/adobe-target-getoffers-atjs-2.md'
+            path: '/implement/client-side/atjs/atjs-functions/adobe-target-getoffers-atjs-2.md'
           },
           {
             title: 'adobe.target.applyOffer()',
-            path: '/implement/client-side/atjs-functions/adobe-target-applyoffer.md'
+            path: '/implement/client-side/atjs/atjs-functions/adobe-target-applyoffer.md'
           },
           {
             title: 'adobe.target.applyOffers() - at.js 2.x',
-            path: '/implement/client-side/atjs-functions/adobe-target-applyoffers-atjs-2.md'
+            path: '/implement/client-side/atjs/atjs-functions/adobe-target-applyoffers-atjs-2.md'
           },
           {
             title: 'adobe.target.triggerView() - at.js 2.x',
-            path: '/implement/client-side/atjs-functions/adobe-target-triggerview-atjs-2.md'
+            path: '/implement/client-side/atjs/atjs-functions/adobe-target-triggerview-atjs-2.md'
           },
           {
             title: 'adobe.target.trackEvent()',
-            path: '/implement/client-side/atjs-functions/adobe-target-trackevent.md'
+            path: '/implement/client-side/atjs/atjs-functions/adobe-target-trackevent.md'
           },
           {
             title: 'mboxCreate() - at.js 1.x',
-            path: '/implement/client-side/atjs-functions/mboxcreate-atjs.md'
+            path: '/implement/client-side/atjs/atjs-functions/mboxcreate-atjs.md'
           },
           {
             title: 'targetGlobalSettings()',
-            path: '/implement/client-side/atjs-functions/targetglobalsettings.md'
+            path: '/implement/client-side/atjs/atjs-functions/targetglobalsettings.md'
           },
           {
             title: 'mboxDefine() and mboxUpdate() - at.js 1.x',
-            path: '/implement/client-side/atjs-functions/mboxdefine-mboxupdate-atjs-1x.md'
+            path: '/implement/client-side/atjs/atjs-functions/mboxdefine-mboxupdate-atjs-1x.md'
           },
           {
             title: 'targetPageParams()',
-            path: '/implement/client-side/atjs-functions/targetpageparams.md'
+            path: '/implement/client-side/atjs/atjs-functions/targetpageparams.md'
           },
           {
             title: 'targetPageParamsAll()',
-            path: '/implement/client-side/atjs-functions/targetpageparamsall.md'
+            path: '/implement/client-side/atjs/atjs-functions/targetpageparamsall.md'
           },
           {
             title: 'registerExtension() - at.js 1.x',
-            path: '/implement/client-side/atjs-functions/registerextension-atjs-1x.md'
+            path: '/implement/client-side/atjs/atjs-functions/registerextension-atjs-1x.md'
           },
           {
             title: 'sendNotifications() - at.js 2.1',
-            path: '/implement/client-side/atjs-functions/adobe.target.sendnotifications-atjs-21.md'
+            path: '/implement/client-side/atjs/atjs-functions/adobe.target.sendnotifications-atjs-21.md'
           },
           {
             title: 'at.js custom events',
-            path: '/implement/client-side/atjs-functions/atjs-custom-events.md'
+            path: '/implement/client-side/atjs/atjs-functions/atjs-custom-events.md'
           },
           {
             title: 'Debug at.js using the Adobe Experience Cloud Debugger',
@@ -314,49 +314,49 @@ module.exports = {
       },
       {
         title: 'at.js frequently asked questions',
-        path: '/implement/client-side/target-atjs-faq/target-atjs-faq.md',
+        path: '/implement/client-side/atjs/target-atjs-faq/target-atjs-faq.md',
         pages: [
           {
             title: 'at.js FAQs',
-            path: '/implement/client-side/target-atjs-faq/target-atjs-faq.md'
+            path: '/implement/client-side/atjs/target-atjs-faq/target-atjs-faq.md'
           }
         ]
       },
       {
         title: 'at.js version details',
-        path: '/implement/client-side/target-atjs-versions.md'
+        path: '/implement/client-side/atjs/target-atjs-versions.md'
       },
       {
         title: 'Upgrading from at.js 1.x to at.js 2.x',
-        path: '/implement/client-side/upgrading-from-atjs-1x-to-atjs-20.md'
+        path: '/implement/client-side/atjs/upgrading-from-atjs-1x-to-atjs-20.md'
       },
       {
         title: 'at.js cookies',
-        path: '/implement/client-side/atjs-cookies.md'
+        path: '/implement/client-side/atjs/atjs-cookies.md'
       },
       {
         title: 'Understand the Global mbox',
-        path: '/implement/client-side/global-mbox/global-mbox-overview.md',
+        path: '/implement/client-side/atjs/global-mbox/global-mbox-overview.md',
         pages: [
           {
             title: 'Global mbox overview',
-            path: '/implement/client-side/global-mbox/global-mbox-overview.md'
+            path: '/implement/client-side/atjs/global-mbox/global-mbox-overview.md'
           },
           {
             title: 'Customize a global mbox',
-            path: '/implement/client-side/global-mbox/customize-global-mbox.md'
+            path: '/implement/client-side/atjs/global-mbox/customize-global-mbox.md'
           },
           {
             title: 'Use a global mbox from a legacy implementation',
-            path: '/implement/client-side/global-mbox/mbox-global-target-standard.md'
+            path: '/implement/client-side/atjs/global-mbox/mbox-global-target-standard.md'
           },
           {
             title: 'Pass parameters to a global mbox',
-            path: '/implement/client-side/global-mbox/pass-parameters-to-global-mbox.md'
+            path: '/implement/client-side/atjs/global-mbox/pass-parameters-to-global-mbox.md'
           },
           {
             title: 'Global mbox frequently asked questions',
-            path: '/implement/client-side/global-mbox/global-mbox-faq.md'
+            path: '/implement/client-side/atjs/global-mbox/global-mbox-faq.md'
           }
         ]
       },
@@ -474,39 +474,39 @@ module.exports = {
       },
       {
         title: 'On-Device Decisioning',
-        path: '/implement/server-side/sdk-guides/on-device-decisioning/',
+        path: '/implement/server-side/sdk-guides/atjs/on-device-decisioning/',
         pages: [
           {
             title: 'Introduction to On-Device Decisioning',
-            path: '/implement/server-side/sdk-guides/on-device-decisioning/'
+            path: '/implement/server-side/sdk-guides/atjs/on-device-decisioning/'
           },
           {
             title: 'Rule artifact',
-            path: '/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md'
+            path: '/implement/server-side/sdk-guides/atjs/on-device-decisioning/rule-artifact-overview.md'
           },
           {
             title: 'Execute A/B tests with feature flags',
-            path: '/implement/server-side/sdk-guides/on-device-decisioning/execute-ab-tests-with-feature-flags.md'
+            path: '/implement/server-side/sdk-guides/atjs/on-device-decisioning/execute-ab-tests-with-feature-flags.md'
           },
           {
             title: 'Execute feature tests with attributes',
-            path: '/implement/server-side/sdk-guides/on-device-decisioning/execute-feature-tests-with-attributes.md'
+            path: '/implement/server-side/sdk-guides/atjs/on-device-decisioning/execute-feature-tests-with-attributes.md'
           },
           {
             title: 'Manage rollouts for feature tests',
-            path: '/implement/server-side/sdk-guides/on-device-decisioning/manage-rollouts-for-feature-tests.md'
+            path: '/implement/server-side/sdk-guides/atjs/on-device-decisioning/manage-rollouts-for-feature-tests.md'
           },
           {
             title: 'Deliver personalization',
-            path: '/implement/server-side/sdk-guides/on-device-decisioning/deliver-personalization.md'
+            path: '/implement/server-side/sdk-guides/atjs/on-device-decisioning/deliver-personalization.md'
           },
           {
             title: 'Supported features',
-            path: '/implement/server-side/sdk-guides/on-device-decisioning/supported-features.md'
+            path: '/implement/server-side/sdk-guides/atjs/on-device-decisioning/supported-features.md'
           },
           {
             title: 'Troubleshooting',
-            path: '/implement/server-side/sdk-guides/on-device-decisioning/troubleshooting.md'
+            path: '/implement/server-side/sdk-guides/atjs/on-device-decisioning/troubleshooting.md'
           }
         ]
       },

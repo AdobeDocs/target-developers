@@ -61,7 +61,7 @@ Accessing and deleting data as it applies to the CCPA follows the same process a
 
 ## Adobe Target and Adobe Experience Platform opt-in
 
-Target provides opt-in functionality support via tags in Adobe Experience Platform to help support your consent management strategy. Opt-in functionality lets customers control how and when the Target tag is fired. There is also an option via Adobe Experience Platform to pre-approve the Target tag. To enable the ability to use Opt-In in the Target at.js library, you should use `targetGlobalSettings` and add the `optinEnabled=true` setting. In Adobe Experience Platform, select "enable" from the GDPR Opt-In drop-down list in the extension installation view. See [Implement Target using Adobe Experience Platform](../../../../../implement/client-side/how-to-deployatjs/cmp-implementing-target-using-adobe-launch.md) for more details.
+Target provides opt-in functionality support via tags in Adobe Experience Platform to help support your consent management strategy. Opt-in functionality lets customers control how and when the Target tag is fired. There is also an option via Adobe Experience Platform to pre-approve the Target tag. To enable the ability to use Opt-In in the Target at.js library, you should use `targetGlobalSettings` and add the `optinEnabled=true` setting. In Adobe Experience Platform, select "enable" from the GDPR Opt-In drop-down list in the extension installation view. See [Implement Target using Adobe Experience Platform](../../../../../implement/client-side/atjs/how-to-deployatjs/cmp-implementing-target-using-adobe-launch.md) for more details.
 
 The following code snippet shows you how to enable the `optinEnabled=true` setting:
 

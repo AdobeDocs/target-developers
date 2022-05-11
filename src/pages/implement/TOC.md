@@ -49,11 +49,11 @@ feature-set: Target
          + [How at.js manages flicker](c-implementing-target-for-client-side-web/c-how-atjs-works/manage-flicker-with-atjs.md)
         + [at.js integrations](c-implementing-target-for-client-side-web/c-how-atjs-works/target-atjs-integrations.md)
       + How to deploy at.js {#deploy-at-js}
-         + [How to deploy at.js](c-implementing-target-for-client-side-web/how-to-deployatjs/how-to-deployatjs.md)
-         + [Implement Target using Adobe Experience Platform](c-implementing-target-for-client-side-web/how-to-deployatjs/cmp-implementing-target-using-adobe-launch.md)
-         + [Implement Target without a tag manager](c-implementing-target-for-client-side-web/how-to-deployatjs/implementing-target-without-a-tag-manager.md)
-         + [Implement Target using Dynamic Tag Manager (DTM)](c-implementing-target-for-client-side-web/how-to-deployatjs/implementing-target-using-dynamic-tag-management.md)
-         + [Implement Target for Single Page Applications (SPAs)](c-implementing-target-for-client-side-web/how-to-deployatjs/target-atjs-single-page-application.md)
+         + [How to deploy at.js](c-implementing-target-for-client-side-web/atjs/how-to-deployatjs/how-to-deployatjs.md)
+         + [Implement Target using Adobe Experience Platform](c-implementing-target-for-client-side-web/atjs/how-to-deployatjs/cmp-implementing-target-using-adobe-launch.md)
+         + [Implement Target without a tag manager](c-implementing-target-for-client-side-web/atjs/how-to-deployatjs/implementing-target-without-a-tag-manager.md)
+         + [Implement Target using Dynamic Tag Manager (DTM)](c-implementing-target-for-client-side-web/atjs/how-to-deployatjs/implementing-target-using-dynamic-tag-management.md)
+         + [Implement Target for Single Page Applications (SPAs)](c-implementing-target-for-client-side-web/atjs/how-to-deployatjs/target-atjs-single-page-application.md)
       + at.js functions {#functions-overview}
          + [at.js functions overview](c-implementing-target-for-client-side-web/cmp-atjs-functions.md)
          + [adobe.target.getOffer()](/help/c-implementing-target/c-implementing-target-for-client-side-web/adobe-target-getoffer.md)
@@ -76,7 +76,7 @@ feature-set: Target
          + [at.js FAQs](c-implementing-target-for-client-side-web/c-target-atjs-faq/target-atjs-faq.md)
       + [at.js version details](c-implementing-target-for-client-side-web/target-atjs-versions.md)
       + [Upgrading from at.js 1.x to at.js 2.x](c-implementing-target-for-client-side-web/upgrading-from-atjs-1x-to-atjs-20.md)
-      + [at.js cookies](c-implementing-target-for-client-side-web/atjs-cookies.md)
+      + [at.js cookies](c-implementing-target-for-client-side-web/atjs/atjs-cookies.md)
    + Understand the Global mbox {#global-mbox}
       + [Understand the global mbox overview](c-implementing-target-for-client-side-web/t-mbox-download/c-understanding-global-mbox/understanding-global-mbox.md)
       + [Customize a global mbox](c-implementing-target-for-client-side-web/t-mbox-download/c-understanding-global-mbox/customize-global-mbox.md)

@@ -24,7 +24,7 @@ Here are some benefits of using at.js 2.*x* that are not available in previous v
 
 ## at.js 2.*x* system diagrams
 
-The following diagrams help you understand the workflow of at.js 2.*x* with Views and how this enhances the SPA integration. To get a better introduction of the concepts used in at.js 2.*x*, see [Single Page Application implementation](/help/c-implementing-target/c-implementing-target-for-client-side-web/how-to-deployatjs/target-atjs-single-page-application.md).
+The following diagrams help you understand the workflow of at.js 2.*x* with Views and how this enhances the SPA integration. To get a better introduction of the concepts used in at.js 2.*x*, see [Single Page Application implementation](/help/c-implementing-target/c-implementing-target-for-client-side-web/atjs/how-to-deployatjs/target-atjs-single-page-application.md).
 
 ![Target flow with at.js 2.*x*](assets/system-diagram-atjs-20.png)
 
@@ -54,7 +54,7 @@ Now, wherever `triggerView()` is implemented on your SPA, the Views and actions 
 
 ## Deploy at.js 2.*x*
 
-1. Deploy at.js 2.*x* via tags in [Adobe Experience Platform](/help/c-implementing-target/c-implementing-target-for-client-side-web/how-to-deployatjs/cmp-implementing-target-using-adobe-launch.md) extension. 
+1. Deploy at.js 2.*x* via tags in [Adobe Experience Platform](/help/c-implementing-target/c-implementing-target-for-client-side-web/atjs/how-to-deployatjs/cmp-implementing-target-using-adobe-launch.md) extension. 
 
    <InlineAlert variant="info" slots="text"/>
    
@@ -62,7 +62,7 @@ Now, wherever `triggerView()` is implemented on your SPA, the Views and actions 
 
    Or
 
-   Manually download at.js 2.*x* using the Target UI and deploy it using the [method of your choice](/help/c-implementing-target/c-implementing-target-for-client-side-web/how-to-deployatjs/how-to-deployatjs.md).
+   Manually download at.js 2.*x* using the Target UI and deploy it using the [method of your choice](/help/c-implementing-target/c-implementing-target-for-client-side-web/atjs/how-to-deployatjs/how-to-deployatjs.md).
 
 ## Deprecated at.js functions
 
@@ -366,7 +366,7 @@ Auto-Target activities are supported through at.js 2.*x* and the VEC when all mo
 |Audiences|Yes|
 |Customer Attributes|Yes|
 |AEM Experience Fragments|Yes|
-|Adobe Experience Platform extension|[Yes](/help/c-implementing-target/c-implementing-target-for-client-side-web/how-to-deployatjs/cmp-implementing-target-using-adobe-launch.md)|
+|Adobe Experience Platform extension|[Yes](/help/c-implementing-target/c-implementing-target-for-client-side-web/atjs/how-to-deployatjs/cmp-implementing-target-using-adobe-launch.md)|
 |Debugger|Yes|
 |Auditor|Rules have not yet been updated for at.js 2.*x*|
 |Opt-In| No. Opt-in support for [GDPR](/help/c-implementing-target/c-considerations-before-you-implement-target/privacy/cmp-privacy-and-general-data-protection-regulation.md) is supported in [at.js version 2.1.0](/help/c-implementing-target/c-implementing-target-for-client-side-web/target-atjs-versions.md).  |

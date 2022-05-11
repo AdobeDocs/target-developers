@@ -18,7 +18,7 @@ Information about implementing Adobe Target without using a tag manager or tags 
 
 <InlineAlert variant="info" slots="text"/>
 
-Tags in [Adobe Experience Platform](/help/c-implementing-target/c-implementing-target-for-client-side-web/how-to-deployatjs/cmp-implementing-target-using-adobe-launch.md#topic_5234DDAEB0834333BD6BA1B05892FC25) are the preferred method for implementing Target and the at.js library. The following information is not applicable when using tags in Adobe Experience Platform to implement Target.
+Tags in [Adobe Experience Platform](/help/c-implementing-target/c-implementing-target-for-client-side-web/atjs/how-to-deployatjs/cmp-implementing-target-using-adobe-launch.md#topic_5234DDAEB0834333BD6BA1B05892FC25) are the preferred method for implementing Target and the at.js library. The following information is not applicable when using tags in Adobe Experience Platform to implement Target.
 
 To access the Implementation page, click **Administration** > **Implementation**.
 
@@ -117,7 +117,7 @@ Instructions to download the library using the Target interface or the Download 
 
 <InlineAlert variant="info" slots="text"/>
 
- [Adobe Experience Platform](/help/c-implementing-target/c-implementing-target-for-client-side-web/how-to-deployatjs/cmp-implementing-target-using-adobe-launch.md#topic_5234DDAEB0834333BD6BA1B05892FC25) is the preferred method for implementing Target and the at.js library. The following information is not applicable when using tags in Adobe Experience Platform to implement Target.
+ [Adobe Experience Platform](/help/c-implementing-target/c-implementing-target-for-client-side-web/atjs/how-to-deployatjs/cmp-implementing-target-using-adobe-launch.md#topic_5234DDAEB0834333BD6BA1B05892FC25) is the preferred method for implementing Target and the at.js library. The following information is not applicable when using tags in Adobe Experience Platform to implement Target.
 
 <InlineAlert variant="info" slots="text"/>
 
@@ -180,7 +180,7 @@ To download at.js using the API.
 
 at.js should be implemented in the `<head>` element of every page of your website. 
 
-A typical implementation of Target not using a tag manager, such as tags in [Adobe Experience Platform](/help/c-implementing-target/c-implementing-target-for-client-side-web/how-to-deployatjs/cmp-implementing-target-using-adobe-launch.md#topic_5234DDAEB0834333BD6BA1B05892FC25) looks like this:
+A typical implementation of Target not using a tag manager, such as tags in [Adobe Experience Platform](/help/c-implementing-target/c-implementing-target-for-client-side-web/atjs/how-to-deployatjs/cmp-implementing-target-using-adobe-launch.md#topic_5234DDAEB0834333BD6BA1B05892FC25) looks like this:
 
 ```
 <!doctype html> 

@@ -29,7 +29,7 @@ Information to help you customize an Adobe Target global mbox for at.js.
 
 3. Implement the at.js library on your site.
 
-   See [How to deploy at.js](/help/c-implementing-target/c-implementing-target-for-client-side-web/how-to-deployatjs/how-to-deployatjs.md) for more information.
+   See [How to deploy at.js](/help/c-implementing-target/c-implementing-target-for-client-side-web/atjs/how-to-deployatjs/how-to-deployatjs.md) for more information.
 
 4. Time the transition with your release.
 
