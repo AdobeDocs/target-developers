@@ -200,7 +200,7 @@ module.exports = {
         pages: [
           {
             title: 'How at.js works',
-            path: '/implement/client-side/atjs/how-atjs-works/how-atjs-works.md',
+            path: '/implement/client-side/atjs/how-atjs-works/',
             pages: [
               {
                 title: 'How at.js works',
@@ -218,7 +218,7 @@ module.exports = {
           },
           {
             title: 'How to deploy at.js',
-            path: '/implement/client-side/atjs/how-to-deployatjs/how-to-deployatjs.md',
+            path: '/implement/client-side/atjs/how-to-deployatjs/',
             pages: [
               {
                 title: 'How to deploy at.js',
@@ -244,7 +244,7 @@ module.exports = {
           },
           {
             title: 'at.js functions',
-            path: '/implement/client-side/atjs/atjs-functions/atjs.md',
+            path: '/implement/client-side/atjs/atjs-functions/',
             pages: [
               {
                 title: 'at.js functions overview',
@@ -318,7 +318,7 @@ module.exports = {
           },
           {
             title: 'at.js frequently asked questions',
-            path: '/implement/client-side/atjs/target-atjs-faq/target-atjs-faq.md',
+            path: '/implement/client-side/atjs/target-atjs-faq/',
             pages: [
               {
                 title: 'at.js FAQs',
@@ -340,7 +340,7 @@ module.exports = {
           },
           {
             title: 'Understand the Global mbox',
-            path: '/implement/client-side/atjs/global-mbox/global-mbox-overview.md',
+            path: '/implement/client-side/atjs/global-mbox/',
             pages: [
               {
                 title: 'Global mbox overview',
