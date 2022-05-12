@@ -40,7 +40,7 @@ From a high level view, there are a couple of differences between the two versio
 
 The following diagrams help you understand the workflow of at.js 2.x with Views and how this enhances the SPA integration. To get a better introduction of the concepts used in at.js 2.x, see [Single Page Application implementation](/help/c-implementing-target/c-implementing-target-for-client-side-web/atjs/how-to-deployatjs/target-atjs-single-page-application.md).
 
-![Target flow with at.js 2.x](../../../assets/system-diagram-atjs-20.png)
+![Target flow with at.js 2.x](../assets/system-diagram-atjs-20.png)
 
 |Step|Details|
 | --- | --- |
@@ -55,7 +55,7 @@ The following diagrams help you understand the workflow of at.js 2.x with Views 
 
 Now, wherever `triggerView()` is implemented on your SPA, the Views and actions are retrieved from cache and shown to the user without a server call. `triggerView()` also makes a notifications request to the Target backend in order to increment and record impression counts. For more information on at.js for SPAs with Views, see [Single Page Application implementation](/help/c-implementing-target/c-implementing-target-for-client-side-web/atjs/how-to-deployatjs/target-atjs-single-page-application.md).
 
-![Target flow at.js 2.x triggerView](../../../assets/atjs-20-triggerview.png)
+![Target flow at.js 2.x triggerView](../assets/atjs-20-triggerview.png)
 
 |Step|Details|
 | --- | --- |
