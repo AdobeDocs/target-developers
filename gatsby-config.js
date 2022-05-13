@@ -701,7 +701,6 @@ module.exports = {
       {
         title: 'Email Implementation',
         path: '/implement/email/',
-        header: true,
         pages: [
           {
             title: 'Email implementation overview',
@@ -741,7 +740,7 @@ module.exports = {
         pages: [
           {
             title: 'Recs API Overview',
-            path: '/before-administer/recs-api/'
+            path: '/before-administer/recs-api/recs-api-overview/'
           },
           {
             title: 'Manage Your Catalog with APIs',
@@ -760,7 +759,6 @@ module.exports = {
       {
         title: 'Overview',
         path: '/support/',
-        header: true,
         pages: [
           {
             title: 'Help',
@@ -779,7 +777,6 @@ module.exports = {
       {
         title: 'Community',
         path: '/support/community/',
-        header: true,
         pages: [
           {
             title: 'Information',

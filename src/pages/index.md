@@ -60,31 +60,31 @@ Implement Target using at.js.
 
 ### Server-Side Implementation
 
-[Target SDK Overview](sdk-guides/)
+[Target SDK Overview](implement/server-side/)
 
 Get started with Adobe Target SDKs, including On-Device Decisioning.
 
 <DiscoverBlock slots="link, text"/> 
 
-[Node.js SDK](sdk/node-js/)
+[Node.js SDK](implement/server-side/node-js/)
 
 How to use the Target Node.js SDK.
 
 <DiscoverBlock slots= "link, text"/> 
 
-[Java SDK](sdk/java/)
+[Java SDK](implement/server-side/java/)
 
 How to use the Target Java SDK.
 
 <DiscoverBlock slots="link, text"/> 
 
-[.NET SDK](sdk/net/)
+[.NET SDK](implement/server-side/net/)
 
 How to use the Target .NET SDK.
 
 <DiscoverBlock slots="link, text"/> 
 
-[Python SDK](sdk/python/)
+[Python SDK](implement/server-side/python/)
 
 How to use the Target Python SDK.
 
@@ -144,11 +144,11 @@ Use Adobe Target's Delivery APIs to deliver experiences across web and mobile ch
 
 <DiscoverBlock slots="heading, link, text"/>
 
-### What are the Target APIs?
+### What are the Target Admin APIs?
 
 [Introduction](before-administer/)
     
-Overview of Adobe Target APIs.
+Overview and configuration requirements for Adobe Target Admin and Profile APIs, including Recommendations APIs.
 
 <DiscoverBlock slots="heading, link, text"/>
 
