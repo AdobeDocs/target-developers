@@ -200,11 +200,11 @@ module.exports = {
         pages: [
           {
             title: 'How at.js works',
-            path: '/implement/client-side/atjs/how-atjs-works/',
+            path: '/implement/client-side/atjs/how-atjs-works/index.md',
             pages: [
               {
                 title: 'How at.js works',
-                path: '/implement/client-side/atjs/how-atjs-works/'
+                path: '/implement/client-side/atjs/how-atjs-works/index.md'
               },
               {
                 title: 'How at.js manages flicker',
@@ -740,7 +740,7 @@ module.exports = {
         pages: [
           {
             title: 'Recs API Overview',
-            path: '/before-administer/recs-api/'
+            path: '/before-administer/recs-api/index.md'
           },
           {
             title: 'Manage Your Catalog with APIs',
