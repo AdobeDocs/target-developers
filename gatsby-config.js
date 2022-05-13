@@ -196,15 +196,15 @@ module.exports = {
       },
       {
         title: 'at.js implementation',
-        path: '/implement/client-side/atjs/how-atjs-works/',
+        path: '/implement/client-side/atjs/',
         pages: [
           {
             title: 'How at.js works',
-            path: '/implement/client-side/atjs/how-atjs-works/index.md',
+            path: '/implement/client-side/atjs/how-atjs-works/how-atjs-works.md',
             pages: [
               {
                 title: 'How at.js works',
-                path: '/implement/client-side/atjs/how-atjs-works/index.md'
+                path: '/implement/client-side/atjs/how-atjs-works/how-atjs-works.md'
               },
               {
                 title: 'How at.js manages flicker',
@@ -701,6 +701,7 @@ module.exports = {
       {
         title: 'Email Implementation',
         path: '/implement/email/',
+        header: true,
         pages: [
           {
             title: 'Email implementation overview',
@@ -740,7 +741,7 @@ module.exports = {
         pages: [
           {
             title: 'Recs API Overview',
-            path: '/before-administer/recs-api/index.md'
+            path: '/before-administer/recs-api/'
           },
           {
             title: 'Manage Your Catalog with APIs',
@@ -759,6 +760,7 @@ module.exports = {
       {
         title: 'Overview',
         path: '/support/',
+        header: true,
         pages: [
           {
             title: 'Help',
@@ -777,6 +779,7 @@ module.exports = {
       {
         title: 'Community',
         path: '/support/community/',
+        header: true,
         pages: [
           {
             title: 'Information',
