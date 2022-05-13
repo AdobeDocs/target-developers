@@ -200,11 +200,11 @@ module.exports = {
         pages: [
           {
             title: 'How at.js works',
-            path: '/implement/client-side/atjs/how-atjs-works/how-atjs-works.md',
+            path: '/implement/client-side/atjs/how-atjs-works/',
             pages: [
               {
                 title: 'How at.js works',
-                path: '/implement/client-side/atjs/how-atjs-works/how-atjs-works.md'
+                path: '/implement/client-side/atjs/how-atjs-works/'
               },
               {
                 title: 'How at.js manages flicker',
