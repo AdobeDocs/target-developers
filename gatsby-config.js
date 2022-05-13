@@ -740,7 +740,7 @@ module.exports = {
         pages: [
           {
             title: 'Recs API Overview',
-            path: '/before-administer/recs-api/recs-api-overview/'
+            path: '/before-administer/recs-api/'
           },
           {
             title: 'Manage Your Catalog with APIs',
