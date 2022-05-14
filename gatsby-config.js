@@ -701,7 +701,6 @@ module.exports = {
       {
         title: 'Email Implementation',
         path: '/implement/email/',
-        header: true,
         pages: [
           {
             title: 'Email implementation overview',
