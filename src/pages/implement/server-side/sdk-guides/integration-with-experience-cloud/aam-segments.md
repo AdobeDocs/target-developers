@@ -252,7 +252,7 @@ public class TargetClientService {
 }
 ```
 
-**[TargetRequestUtils.java](https://adobetarget-sdks.gitbook.io/docs/sdk-reference-guides/java-sdk/utility-methods)**
+**[TargetRequestUtils.java](../../java/utility-methods.md)**
 
 index.html
 

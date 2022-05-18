@@ -42,7 +42,7 @@ You can view the following account details. These settings cannot be changed.
 | --- | --- |
 |Client Code|The client code is a client-specific sequence of characters often required when using the Target APIs.|
 |IMS Organization ID|This ID ties your implementation to your Adobe Experience Cloud account.|
-|On-Device Decisioning|To enable on-device decisioning, slide the toggle to the "on" position.<br />On-device decisioning lets you cache your A/B and Experience Targeting (XT) campaigns on your server and perform in-memory decisioning at near-zero latency. For more information, see [Introduction to on-device decisioning](https://adobetarget-sdks.gitbook.io/docs/on-device-decisioning/introduction-to-on-device-decisioning) in the *Adobe Target SDKs* guide.|
+|On-Device Decisioning|To enable on-device decisioning, slide the toggle to the "on" position.<br />On-device decisioning lets you cache your A/B and Experience Targeting (XT) campaigns on your server and perform in-memory decisioning at near-zero latency. For more information, see [Introduction to on-device decisioning](../../../server-side/sdk-guides/on-device-decisioning/index.md).|
 |Include all existing on-device decisioning qualified activities in the artifact|(Conditional) This option displays if you enable on-device decisioning.<br />Slide the toggle to the "on" position if you want all your live Target activities that qualify for on-device decisioning to be automatically included in the artifact.<br />Leaving this toggle off means you must re-create and activate any on-device decisioning activities in order for them to be included in the generated rules artifact.|
 
 ## Implementation methods

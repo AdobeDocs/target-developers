@@ -10,4 +10,4 @@ On the other hand, edge decisioning requires a network blocking call to retrieve
 
 ## Supported Features
 
-In addition to assessing your use cases and business goals, review which features on-device decisioning [supports](https://adobetarget-sdks.gitbook.io/docs/on-device-decisioning/supported-features) before deciding whether to use on-device decisioning versus edge decisioning. Currently, edge decisioning supports all activity types, audience targeting, and allocation methods.
+In addition to assessing your use cases and business goals, review which features on-device decisioning [supports](../on-device-decisioning/supported-features.md) before deciding whether to use on-device decisioning versus edge decisioning. Currently, edge decisioning supports all activity types, audience targeting, and allocation methods.
