@@ -42,7 +42,7 @@ To use the Delivery API to deliver Target experiences—including recommendation
 
 To create recommendations that can be used with the Delivery API, use the [Form-based Composer](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html). 
 
-1. First, create and save a JSON-based design to use in your recommendation. For sample JSON, plus background information regarding how JSON responses can be returned when configuring a form-based activity, see the documentation on [Creating Recommendation Designs](https://docs.adobe.com/content/help/en/target/using/recommendations/recommendations-design/create-design.html). In this example, the design is named *Simple JSON.*
+1. First, create and save a JSON-based design to use in your recommendation. For sample JSON, plus background information regarding how JSON responses can be returned when configuring a form-based activity, see the documentation on [Creating Recommendation Designs](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-design/create-design.html). In this example, the design is named *Simple JSON.*
    ![server-side-create-recs-json-design.png](/assets/server-side-create-recs-json-design.png)
 
 2. In Target, navigate to **Activities > Create Activity > Recommendations**, then select **Form**.
@@ -52,7 +52,7 @@ To create recommendations that can be used with the Delivery API, use the [Form-
 3. Select a Property, and click **Next**.
 4. Define the location where you would like users to receive the recommendation's response. The example below uses a location named *api_charter*. Select your JSON-based design, created earlier, named *Simple JSON.*
    ![server-side-create-recs-form.png](/assets/server-side-create-recs-form1.png)
-5. Save and activate the recommendation. It will generate results. [Once the results are ready](https://docs.adobe.com/content/help/en/target/using/recommendations/recommendations-activity/previewing-and-launching-your-recommendations-activity.html), you can use the Delivery API to retrieve them.
+5. Save and activate the recommendation. It will generate results. [Once the results are ready](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-activity/previewing-and-launching-your-recommendations-activity.html), you can use the Delivery API to retrieve them.
 
 ## Use the Delivery API
 
@@ -87,10 +87,10 @@ The following resources provide examples of various non-HTML focused implementat
 |[Consuming RESTful APIs in AEM](https://helpx.adobe.com/experience-manager/using/restful-services.html)|How to create and deploy an Adobe Experience Manager OSGi bundle that consumes data from a third-party RESTful web service.|
 |[Adobe Target Everywhere - Implement Server Side or in the IoT](https://expleague.azureedge.net/labs/L733/index.html)|Adobe Summit 2019 Lab that provides hands-on experience for a React application that leverages Adobe Target server-side APIs.|
 |[Adobe Target in a Mobile App Without the Adobe SDK](https://community.tealiumiq.com/t5/Universal-Data-Hub/Adobe-Target-in-a-Mobile-App-Without-the-Adobe-SDK/ta-p/26753)|This guide shows you how to set up Adobe Target in your mobile app without installing the Adobe SDK. This solution uses the Tealium SDK webview and the Remote Commands module to send and receive requests to the Adobe Visitor API (Experience Cloud) and the Adobe Target API.|
-|[How Adobe Target Works in Mobile Apps](https://docs.adobe.com/content/help/en/target/using/implement-target/mobile-apps/mobile-how-target-works-mobile-apps.html)|How Target works with the Mobile SDK|
+|[How Adobe Target Works in Mobile Apps](../../implement/mobile/how-target-works-mobile-apps.md)|How Target works with the Mobile SDK|
 |[Configuring the Target extension in Experience Platform Launch and Implementing Target APIs](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-target)|Steps for configuring the Target extension in Experience Platform Launch, adding the Target Extension to your app, and implementing Target APIs to request activities, prefetch offers, and Enter visual preview mode.|
 |[Adobe Target Node Client](https://www.npmjs.com/package/@adobe/target-nodejs-sdk)|Open-sourced Target Node.js SDK v1.0|
-|[Server Side overview](https://docs.adobe.com/content/help/en/target/using/implement-target/server-side/api-and-sdk-overview.html)|Information about Adobe Target Server Side delivery APIs, Server Side Batch Delivery APIs, Node.js SDK, and Adobe Target Recommendations APIs.|
+|[Server Side overview](../../implement/server-side/)|Information about Adobe Target Server Side delivery APIs, Server Side Batch Delivery APIs, Node.js SDK, and Adobe Target Recommendations APIs.|
 |[Adobe Campaign Content Recommendations in Email](https://medium.com/adobetech/adobe-campaign-content-recommendations-in-email-b51ced771d7f )|Blog that describes how to leverage content recommendations in email via Adobe Target and Adobe I/O Runtime in Adobe Campaign.|
 
 ## Managing Recommendations Setup with APIs
@@ -117,7 +117,7 @@ We learned in an [earlier section](manage-catalog.md) how to manage Adobe Target
 ## Reference documentation
 
 * [Adobe Target API documentation](https://developer.adobe.com/target/api/delivery-api/)
-* [Integrate Recommendations with email](https://docs.adobe.com/content/help/en/target/using/recommendations/recommendations-faq/integrating-recs-email.html)
+* [Integrate Recommendations with email](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-faq/integrating-recs-email.html)
 
 ## Summary and Review
 

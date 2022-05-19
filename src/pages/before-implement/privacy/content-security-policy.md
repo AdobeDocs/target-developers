@@ -17,7 +17,7 @@ exl-id: 31457b16-ed21-4540-8d0c-abfb49d1fbe9
 ---
 # Content Security Policy (CSP) directives
 
-If you are using [Content Security Policy](https://en.wikipedia.org/wiki/Content_Security_Policy) (CSP) for your Adobe Target implementation, you should add the following CSP directives when using [at.js 2.1 or later](/help/c-implementing-target/c-implementing-target-for-client-side-web/target-atjs-versions.md):
+If you are using [Content Security Policy](https://en.wikipedia.org/wiki/Content_Security_Policy) (CSP) for your Adobe Target implementation, you should add the following CSP directives when using [at.js 2.1 or later](../../implement/client-side/atjs/target-atjs-versions.md):
 
 * `connect-src` with `*.tt.omtrdc.net` allowlisted. Necessary to allow the network request to the Target edge.
 * `style-src unsafe-inline`. Required for pre-hiding and flicker control.

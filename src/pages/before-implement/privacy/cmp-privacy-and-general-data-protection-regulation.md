@@ -307,7 +307,7 @@ This code sample is a shortened version of a Target profile JSON for illustratio
 
 ### Does Target support IP obfuscation?
 
-Target supports IP obfuscation if you choose to use it as part of your GDPR or CCPA implementation strategy. For more information, see [Privacy](/help/c-implementing-target/c-considerations-before-you-implement-target/privacy/privacy.md#concept_639482A343DB4963A6144378E1D8D7F0).
+Target supports IP obfuscation if you choose to use it as part of your GDPR or CCPA implementation strategy. For more information, see [Privacy](privacy.md/#replacement-of-last-octet-of-ip-addresses).
 
 ### Should I do something to prevent my data from being shared or sold to third parties?
 

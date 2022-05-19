@@ -13,13 +13,13 @@ The following table indicates which [activity types](https://experienceleague.ad
 |Activity Type|Supported|
 | --- | --- |
 |[A/B Test](https://experienceleague.corp.adobe.com/docs/target/using/activities/abtest/test-ab.html)|Yes|
-|[Auto-Allocate](https://docs.adobe.com/content/help/en/target/using/activities/auto-allocate/automated-traffic-allocation.html)|No|
+|[Auto-Allocate](https://experienceleague.adobe.com/docs/target/using/activities/auto-allocate/automated-traffic-allocation.html)|No|
 |[Auto-Target](https://experienceleague.corp.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html)|No|
 |[Analytics for Target](https://experienceleague.corp.adobe.com/docs/target/using/integrate/a4t/a4t.html) (A4T)|Yes|
-|[Multivariate Test](https://docs.adobe.com/content/help/en/target/using/activities/multivariate-test/multivariate-testing.html) (MVT)|No|
+|[Multivariate Test](https://experienceleague.adobe.com/docs/target/using/activities/multivariate-test/multivariate-testing.html) (MVT)|No|
 |[Experience Targeting](https://experienceleague.corp.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html) (XT)|Yes|
 |[Automated Personalization](https://experienceleague.corp.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html) (AP)|No|
-|[Recommendations](https://docs.adobe.com/content/help/en/target/using/recommendations/recommendations.html)|No|
+|[Recommendations](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html)|No|
 
 
 ## Audience targeting
@@ -149,5 +149,5 @@ The following table indicates which allocation methods are supported or not supp
 |Allocation Method|Supported|
 | --- | --- |
 |Manual|Yes|
-|[Auto-allocate to best experience](https://docs.adobe.com/content/help/en/target/using/activities/auto-allocate/automated-traffic-allocation.html)|No|
-|[Auto-target for personalized experiences](https://docs.adobe.com/content/help/en/target/using/activities/auto-target-to-optimize.html)|No|
+|[Auto-allocate to best experience](https://experienceleague.adobe.com/docs/target/using/activities/auto-allocate/automated-traffic-allocation.html)|No|
+|[Auto-target for personalized experiences](https://experienceleague.adobe.com/docs/target/using/activities/auto-target-to-optimize.html)|No|

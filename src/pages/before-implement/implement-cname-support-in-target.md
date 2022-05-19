@@ -54,7 +54,7 @@ Instructions for working with Adobe Client Care to implement CNAME (Canonical Na
 
    Adobe Client Care notifies you when your implementation is ready.
 
-1. Update the `serverDomain` [documentation](/help/c-implementing-target/c-implementing-target-for-client-side-web/targetgobalsettings.md#serverDomain)) to the new CNAME hostname and set `overrideMboxEdgeServer` to `false` [documentation](/help/c-implementing-target/c-implementing-target-for-client-side-web/targetgobalsettings.md#overridemboxedgeserver)) in your at.js configuration.
+1. Update the `serverDomain` [documentation](../implement/client-side/atjs/atjs-functions/targetglobalsettings.md#serverdomain) to the new CNAME hostname and set `overrideMboxEdgeServer` to `false` [documentation](../implement/client-side/atjs/atjs-functions/targetglobalsettings.md#overridemboxedgeserver) in your at.js configuration.
 
 ## Frequently Asked Questions
 
@@ -84,7 +84,7 @@ No, Target requires a separate hostname and certificate.
 
 ### Is my current implementation of Target impacted by ITP 2.x?
 
-Apple Intelligent Tracking Prevention (ITP) version 2.3 introduced its CNAME Cloaking Mitigation feature, which is able to detect Adobe Target CNAME implementations and reduces the cookie's expiration to seven days. Currently Target has no workaround for ITP's CNAME Cloaking Mitigation. For more information about ITP, see [Apple Intelligent Tracking Prevention (ITP) 2.x](/help/c-implementing-target/c-considerations-before-you-implement-target/privacy/apple-itp-2x.md).
+Apple Intelligent Tracking Prevention (ITP) version 2.3 introduced its CNAME Cloaking Mitigation feature, which is able to detect Adobe Target CNAME implementations and reduces the cookie's expiration to seven days. Currently Target has no workaround for ITP's CNAME Cloaking Mitigation. For more information about ITP, see [Apple Intelligent Tracking Prevention (ITP) 2.x](../before-implement/privacy/apple-itp-2x.md).
 
 ### What kind of service disruptions can I expect when my CNAME implementation is deployed?
 

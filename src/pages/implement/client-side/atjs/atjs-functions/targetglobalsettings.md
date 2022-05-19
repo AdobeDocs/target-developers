@@ -198,7 +198,7 @@ The deviceIdLifetime setting is overrideable in at.js version 2.3.1 or later.
 * **Default Value**: true (true beginning with at.js version 1.6.2)
 * **Description**: Indicates if we should use `<clientCode>.tt.omtrdc.net` domain or `mboxedge<clusterNumber>.tt.omtrdc.net` domain.
 
-  If this value is true, `mboxedge<clusterNumber>.tt.omtrdc.net` domain will be saved to a cookie. Currently not working with [CNAME](/help/c-implementing-target/c-considerations-before-you-implement-target/implement-cname-support-in-target.md) when using at.js versions prior to at.js 1.8.2 and at.js 2.3.1. If this is an issue for you, consider [updating at.js](/help/c-implementing-target/c-implementing-target-for-client-side-web/target-atjs-versions.md) to a newer, supported version.
+  If this value is true, `mboxedge<clusterNumber>.tt.omtrdc.net` domain will be saved to a cookie. Currently not working with [CNAME](/help/c-implementing-target/c-considerations-before-you-implement-target/implement-cname-support-in-target.md) when using at.js versions prior to at.js 1.8.2 and at.js 2.3.1. If this is an issue for you, consider [updating at.js](/src/pages/implement/client-side/atjs/target-atjs-versions.md) to a newer, supported version.
 
 ### overrideMboxEdgeServerTimeout
 
@@ -290,8 +290,8 @@ The following videos contain more information:
 
 | Video | Description |
 |--- |--- |
-|[Using Data Providers in Adobe Target](https://helpx.adobe.com/target/kt/using/dataProviders-atjs-feature-video-use.html)|Data Providers is a capability that allows you to easily pass data from third parties to Target. A third party could be a weather service, a DMP, or even your own web service. You can then use this data to build audiences, target content, and enrich the visitor profile.|
-|[Implement Data Providers in Adobe Target](https://helpx.adobe.com/target/kt/using/dataProviders-atjs-technical-video-implement.html)|Implementation details and examples of how to use Adobe Target's dataProviders feature to retrieve data from third-party data providers and pass it in the Target request.|
+|[Using Data Providers in Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html)|Data Providers is a capability that allows you to easily pass data from third parties to Target. A third party could be a weather service, a DMP, or even your own web service. You can then use this data to build audiences, target content, and enrich the visitor profile.|
+|[Implement Data Providers in Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/implement-data-providers-to-integrate-third-party-data.html)|Implementation details and examples of how to use Adobe Target's dataProviders feature to retrieve data from third-party data providers and pass it in the Target request.|
 
 The `window.targetGlobalSettings.dataProviders` setting is an array of data providers.
 
@@ -427,7 +427,7 @@ After `cspScriptNonce` and `cspStyleNonce` settings are specified, at.js 2.3.0+ 
 You must have a hybrid integration of Target.
   
 * **Server-side**:  You must use the new [delivery API](../../implement/delivery-api/) or [Target SDKs](../../implement/server-side/sdk-guides/).
-* **Client-side**: You must use [at.js version 2.2 or later](/help/c-implementing-target/c-implementing-target-for-client-side-web/target-atjs-versions.md).
+* **Client-side**: You must use [at.js version 2.2 or later](/src/pages/implement/client-side/atjs/target-atjs-versions.md).
 
 ### Code samples
 

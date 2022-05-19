@@ -187,7 +187,7 @@ Modern browsers do not save cookies if you are using these domains unless you cu
 
 ## Can IP addresses be used as the cookie domain when using at.js?
 
-Yes, if you are using [at.js version 1.2 or later](/help/c-implementing-target/c-implementing-target-for-client-side-web/target-atjs-versions.md#reference_DBB5EDB79EC44E558F9E08D4774A0F7A). Adobe strongly recommends that you keep current with the latest version, however.
+Yes, if you are using [at.js version 1.2 or later](/src/pages/implement/client-side/atjs/target-atjs-versions.md). Adobe strongly recommends that you keep current with the latest version, however.
 
 <InlineAlert variant="info" slots="text"/>
 
@@ -224,10 +224,10 @@ The following are possible root causes if you see this warning message:
 * The page is being built dynamically and at.js cannot find the element.
 * The page is being built slowly (due to a slow network) and at.js cannot find the selector in the DOM.
 * The page structure that activity is running on has been changed. If you reopen the activity in the Visual Experience Composer (VEC), you should get a warning message. Update the activity so that all the necessary elements can be found. 
-* The underlying page is part of a Single Page Application (SPA) or the page contains elements that appear farther down the page and the at.js "selector polling mechanism" cannot find those elements. Increasing the `selectorsPollingTimeout` might help. For more information, see [targetGlobalSettings()](/help/c-implementing-target/c-implementing-target-for-client-side-web/targetgobalsettings.md). 
+* The underlying page is part of a Single Page Application (SPA) or the page contains elements that appear farther down the page and the at.js "selector polling mechanism" cannot find those elements. Increasing the `selectorsPollingTimeout` might help. For more information, see [targetGlobalSettings()](/src/pages/implement/client-side/atjs/atjs-functions/targetglobalsettings.md). 
 * Any click-tracking metric tries to add itself to every page, regardless of the URL on which the metric was set up. Although harmless, this situation makes many of these messages display.
   
-  For best results, please download and use the latest version of at.js. For more information, see [at.js Version Details](/help/c-implementing-target/c-implementing-target-for-client-side-web/target-atjs-versions.md) and [Download at.js](/help/c-implementing-target/c-implementing-target-for-client-side-web/atjs/how-to-deployatjs/implementing-target-without-a-tag-manager.md).
+  For best results, please download and use the latest version of at.js. For more information, see [at.js Version Details](/src/pages/implement/client-side/atjs/target-atjs-versions.md) and [Download at.js](/src/pages/implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager.md).
 
 ## What is the domain tt.omtrdc.net that Target server calls go to?
 
@@ -247,7 +247,7 @@ Target executes all of its decisioning on the server side. This means that at.js
 
 ## In the best case scenario, can we expect that the user doesn't experience any visible effects on page load relating to hiding, replacing, and showing content?
 
-at.js tries to avoid pre-hiding HTML BODY or other DOM elements for an extended period, but this depends on network conditions and activity setup. at.js provides [settings](/help/c-implementing-target/c-implementing-target-for-client-side-web/targetgobalsettings.md) you can use to customize the BODY hiding CSS style, such that instead of blanking the entire HTML BODY, you can pre-hide only some parts of the page. The expectation is that those parts contain DOM elements that have to be "personalized."
+at.js tries to avoid pre-hiding HTML BODY or other DOM elements for an extended period, but this depends on network conditions and activity setup. at.js provides [settings](/src/pages/implement/client-side/atjs/atjs-functions/targetglobalsettings.md) you can use to customize the BODY hiding CSS style, such that instead of blanking the entire HTML BODY, you can pre-hide only some parts of the page. The expectation is that those parts contain DOM elements that have to be "personalized."
 
 ## What is the sequence of events in an average scenario where a user qualifies for an activity?
 

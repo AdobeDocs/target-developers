@@ -21,7 +21,7 @@ In a client-side implementation of Adobe Target, Target delivers the experiences
 
 ## What is at.js?
 
-The at.js library is the new implementation library for Target. The at.js library improves page-load times for web implementations and provides better implementation options for single-page applications. at.js is the recommended implementation library and is updated frequently with new capabilities. We recommend that all customers implement or migrate to the [latest version of at.js](/help/c-implementing-target/c-implementing-target-for-client-side-web/target-atjs-versions.md#reference_DBB5EDB79EC44E558F9E08D4774A0F7A).
+The at.js library is the new implementation library for Target. The at.js library improves page-load times for web implementations and provides better implementation options for single-page applications. at.js is the recommended implementation library and is updated frequently with new capabilities. We recommend that all customers implement or migrate to the [latest version of at.js](/src/pages/implement/client-side/atjs/target-atjs-versions.md).
 
 For more information, see [Target JavaScript libraries](https://experienceleague.corp.adobe.com/docs/target/using/introduction/how-target-works.html#libraries).
 
@@ -74,7 +74,7 @@ at.js 2.x enhances Adobe Target's support for SPAs and integrates with other Exp
 
 <https://video.tv.adobe.com/v/26250>
 
-See [Understanding how at.js 2.x works](https://helpx.adobe.com/target/kt/using/atjs20-diagram-technical-video-understand.html) for more information.
+See [Understanding how at.js 2.x works](https://experienceleague.adobe.com/docs/target-learn/tutorials/implementation/understanding-how-atjs-20-works.html) for more information.
 
 ## at.js 1.x diagram
 

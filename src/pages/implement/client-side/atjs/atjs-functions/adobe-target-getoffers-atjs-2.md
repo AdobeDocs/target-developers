@@ -206,7 +206,7 @@ adobe.target.getOffers({
 }
 ```
 
-The payload can then be forwarded to Adobe Analytics via the [Data Insertion API](https://helpx.adobe.com/analytics/kb/data-insertion-api-post-method-adobe-analytics.html).
+The payload can then be forwarded to Adobe Analytics via the [Data Insertion API](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md).
 
 ## Fetch and render data from multiple mboxes via getOffers() and applyOffers()
 

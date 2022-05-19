@@ -13,7 +13,7 @@ exl-id: ee63bd3e-200a-4c08-b364-9f17a479033b
 ---
 # Manage Custom Criteria
 
-Sometimes the algorithms provided by Recommendations are not able to surface particular items you would like to promote. In such a situation, custom criteria provide a way for you to deliver a specific set of recommended items for a given key item or category. You define the mapping between the key item or category and the recommended items, and import that mapping as a custom criteria. This process is described in the [custom criteria documentation](https://docs.adobe.com/content/help/en/target/using/recommendations/criteria/recommendations-csv.html). As noted in that documentation, you are able to create, edit, and delete custom criteria through the Target user interface (UI). However, Target also provides a set of Custom Criteria APIs that allow for more detailed management of your custom criteria.
+Sometimes the algorithms provided by Recommendations are not able to surface particular items you would like to promote. In such a situation, custom criteria provide a way for you to deliver a specific set of recommended items for a given key item or category. You define the mapping between the key item or category and the recommended items, and import that mapping as a custom criteria. This process is described in the [custom criteria documentation](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/recommendations-csv.html). As noted in that documentation, you are able to create, edit, and delete custom criteria through the Target user interface (UI). However, Target also provides a set of Custom Criteria APIs that allow for more detailed management of your custom criteria.
 
 <InlineAlert variant="warning" slots="text"/>
 

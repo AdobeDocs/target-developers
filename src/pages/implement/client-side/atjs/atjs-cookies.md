@@ -109,7 +109,7 @@ The cookie has several default settings. You can change these settings if needed
 |Cookie name|mbox.|
 |Cookie domain|The second and top levels of the domains from which you serve the content. Because it is served from your company's domain, the cookie is a first party cookie. Example: `mycompany.com`.|
 |Server domain|`clientcode.tt.omtrdc.net`, using the client code for your account.|
-|Cookie duration|The cookie remains on the visitor's browser two years from his or her last login.<br />The `deviceIdLifetime` setting is overrideable in [at.js version 2.3.1 or later](/help/c-implementing-target/c-implementing-target-for-client-side-web/target-atjs-versions.md). For more information, see [targetGlobalSettings()](/help/c-implementing-target/c-implementing-target-for-client-side-web/targetgobalsettings.md).|
+|Cookie duration|The cookie remains on the visitor's browser two years from his or her last login.<br />The `deviceIdLifetime` setting is overrideable in [at.js version 2.3.1 or later](../atjs/target-atjs-versions.md). For more information, see [targetGlobalSettings()](../../../implement/client-side/atjs/atjs-functions/targetglobalsettings.md).|
 |P3P policy|The cookie is published with a P3P policy, as required by the default setting in most browsers. A P3P policy indicates to a browser who is serving the cookie and how the information will be used.|
 
 The cookie keeps a number of values to manage how your visitors experience campaigns:

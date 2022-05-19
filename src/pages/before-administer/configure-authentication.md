@@ -13,7 +13,7 @@ exl-id: 8a1e93e4-67b2-4942-a8da-fc0f2cbb2df2
 ---
 # Configure authentication for Adobe Target APIs
 
-The Adobe Target Admin APIs, including Recommendations Admin APIs, are secured by authentication to ensure only authorized users use them to access Adobe Target. Use the [Adobe Developer Console](https://console.adobe.io/) to manage this authentication for all Adobe Experience Cloud solutions, including Adobe Target.
+The Adobe Target Admin APIs, including Recommendations Admin APIs, are secured by authentication to ensure only authorized users use them to access Adobe Target. Use the [Adobe Developer Console](https://developer.adobe.com/console/home) to manage this authentication for all Adobe Experience Cloud solutions, including Adobe Target.
 
 This lesson walks through the preliminary steps required to generate authentication tokens needed to successfully interact with Adobe Target APIs. In the sections that follow, you will:
 
@@ -37,7 +37,7 @@ In this section, you will access the Adobe Developer Console and create a projec
 
 1. In the [Adobe Admin Console](https://adminconsole.adobe.com/), ensure your Adobe user account has been granted both [Product Admin](https://helpx.adobe.com/enterprise/using/admin-roles.html) and [Developer](https://helpx.adobe.com/enterprise/using/manage-developers.html) level access to Target.
 
-2. In the [Adobe Developer Console](https://console.adobe.io/), select the Experience Cloud Organization for which you want to create this integration. (Note it is likely you may only have access to a single Experience Cloud Organization.) 
+2. In the [Adobe Developer Console](https://developer.adobe.com/console/home), select the Experience Cloud Organization for which you want to create this integration. (Note it is likely you may only have access to a single Experience Cloud Organization.) 
 
    ![configure-io-target-createproject2.png](assets/configure-io-target-createproject2.png)
 
@@ -81,9 +81,9 @@ There are many ways to specify the details of your project in Postman, but in th
 
 <InlineAlert variant="info" slots="text"/>
 
-For video instructions applicable for any Experience Cloud solution, including Target, see [Use Postman with Experience Platform APIs](https://docs.adobe.com/content/help/en/platform-learn/tutorials/apis/postman.html). The following sections are relevant to the Target APIs: 1. Export Adobe I/O Integration Details to Postman 2. Generate an Access Token with Postman. These steps are also provided below.
+For video instructions applicable for any Experience Cloud solution, including Target, see [Use Postman with Experience Platform APIs](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html). The following sections are relevant to the Target APIs: 1. Create and export Experience Platform API to Postman 2. Generate an Access Token with Postman. These steps are also provided below.
 
-1. Still in the [Adobe Developer Console](https://console.adobe.io/), navigate to view your new project's **Service Account (JWT)** credentials. Use either the left navigation or the **Credentials** section as shown.
+1. Still in the [Adobe Developer Console](https://developer.adobe.com/console/home), navigate to view your new project's **Service Account (JWT)** credentials. Use either the left navigation or the **Credentials** section as shown.
    ![JWT1](assets/configure-io-target-jwt1.png)
    In **Credential details**, note you may view your **Public key(s)**, **Client ID**, and other information related to your service account.
    ![JWT1a](assets/configure-io-target-jwt1a.png)

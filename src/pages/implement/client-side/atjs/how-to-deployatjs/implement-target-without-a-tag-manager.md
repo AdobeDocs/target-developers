@@ -121,7 +121,7 @@ Instructions to download the library using the Target interface or the Download 
 
 <InlineAlert variant="info" slots="text"/>
 
- Adobe Target supports both at.js 1.*x* and at.js 2.*x*. Please upgrade to the most recent update of either major version of at.js to ensure that you are running a supported version. For more information about what's in each version, see [at.js Version Details](/help/c-implementing-target/c-implementing-target-for-client-side-web/target-atjs-versions.md#reference_DBB5EDB79EC44E558F9E08D4774A0F7A).
+ Adobe Target supports both at.js 1.*x* and at.js 2.*x*. Please upgrade to the most recent update of either major version of at.js to ensure that you are running a supported version. For more information about what's in each version, see [at.js Version Details](/src/pages/implement/client-side/atjs/target-atjs-versions.md).
 
 ### Download at.js using the Target interface
 
@@ -172,7 +172,7 @@ To download at.js using the API.
 
     <InlineAlert variant="warning" slots="text"/>
     
-    The Target team maintains only two versions of at.js—the current version and the second-latest version. Please upgrade at.js as necessary to ensure that you are running a supported version. For more information about what's in each version, see [at.js Version Details](/help/c-implementing-target/c-implementing-target-for-client-side-web/target-atjs-versions.md#reference_DBB5EDB79EC44E558F9E08D4774A0F7A).
+    The Target team maintains only two versions of at.js—the current version and the second-latest version. Please upgrade at.js as necessary to ensure that you are running a supported version. For more information about what's in each version, see [at.js Version Details](/src/pages/implement/client-side/atjs/target-atjs-versions.md).
 
    Loading this URL starts the download of your customized at.js file.
 

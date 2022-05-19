@@ -313,7 +313,7 @@ The following videos contain more information:
 
 <https://video.tv.adobe.com/v/26250>
 
-See [Understanding how at.js 2.x works](https://helpx.adobe.com/target/kt/using/atjs20-diagram-technical-video-understand.html) for more information.
+See [Understanding how at.js 2.x works](https://experienceleague.adobe.com/docs/target-learn/tutorials/implementation/understanding-how-atjs-20-works.html) for more information.
 
 ### Implement at.js 2.x in a SPA ![Tutorial badge](../../../assets/tutorial.png)
 
@@ -321,7 +321,7 @@ See [Understanding how at.js 2.x works](https://helpx.adobe.com/target/kt/using/
 
 <https://video.tv.adobe.com/v/26248>
 
-See [Implement Adobe Target's at.js 2.x in a Single Page Application (SPA)](https://helpx.adobe.com/target/kt/using/atjs2-single-page-application-technical-video-implement.html) for more information.
+See [Implement Adobe Target's at.js 2.x in a Single Page Application (SPA)](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer-for-single-page-applications.html) for more information.
 
 ### Using the VEC for SPAs in Adobe Target ![Tutorial badge](../../../assets/tutorial.png)
 
@@ -329,4 +329,4 @@ See [Implement Adobe Target's at.js 2.x in a Single Page Application (SPA)](http
 
 <https://video.tv.adobe.com/v/26249>
 
-See [Using the Visual Experience Composer for Single Page Application (SPA VEC) in Adobe Target](https://helpx.adobe.com/target/kt/using/visual-experience-composer-for-single-page-applications-feature-video-use.html) for more information.
+See [Using the Visual Experience Composer for Single Page Application (SPA VEC) in Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer-for-single-page-applications.html) for more information.

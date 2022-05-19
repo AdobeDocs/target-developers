@@ -239,7 +239,7 @@ This release also fixes an issue where Target might override redirect URL parame
 
 <InlineAlert variant="info" slots="text"/>
 
-If you require Adobe Opt-in support for GDPR, you must currently use at.js 1.7.0 or 2.1.0.<br />For a list of all versions, see [at.js version details](/help/c-implementing-target/c-implementing-target-for-client-side-web/target-atjs-versions.md).
+If you require Adobe Opt-in support for GDPR, you must currently use at.js 1.7.0 or 2.1.0.<br />For a list of all versions, see [at.js version details](/src/pages/implement/client-side/atjs/target-atjs-versions.md).
 
 ## at.js Version 1.6.4
 
@@ -319,7 +319,7 @@ at.js version 1.3.0 is now available.
 
 * You can augment an at.js request with additional parameters that come from data providers. Data providers should be added to `window.targetGlobalSettings` under the `dataProviders key`.
 
-  For more information, see [Data Providers](/help/c-implementing-target/c-implementing-target-for-client-side-web/targetgobalsettings.md#data-providers). 
+  For more information, see [Data Providers](atjs-functions/targetglobalsettings.md#data-providers). 
 
 * at.js requests now use GET, but it will switch to POST when the URL size exceeds 2048 characters. There is a new property named `urlSizeLimit` where you can increase the size limit if necessary. This change allows Target to align at.js to AppMeasurement, which uses the same technique. 
 * Target now enforces that the `mbox` key in the `adobe.target.applyOffer(options)` function is used. This key has been required in the past, but Target now enforces its use to ensure that Target has proper validation and customers are using the function correctly. 
