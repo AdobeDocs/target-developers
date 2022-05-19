@@ -93,7 +93,7 @@ For more information, see [Profile API settings](/src/pages/before-implement/met
 
 Generate an authorization token to use advanced Target debugging tools. Click **Generate New Authentication Token**.
 
-![Generate New Authentication Token](/src/pages/before-implement/methods-to-get-data-into-target/assets/debugger-auth-token.png)
+![Generate New Authentication Token](../../../../before-implement/methods-to-get-data-into-target/assets/debugger-auth-token.png)
 
 ### Privacy
 
