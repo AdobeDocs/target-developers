@@ -21,7 +21,7 @@ The cookie behavior depends on whether it is a first-party cookie, a third-party
 
 This topic contains information about `mboxSession` and `mboxPC`. Implementation best practices recommend that you do not link or store sensitive information with the cookie data: `mboxSession` or `mboxPC`.
 
-See also [Delete the Target cookie](/help/c-implementing-target/c-considerations-before-you-implement-target/privacy/cookie-deleting.md).
+See also [Delete the Target cookie](/src/pages/before-implement/privacy/cookie-deleting.md).
 
 ## When to Use First- or Third-Party Cookies
 
@@ -138,5 +138,5 @@ From Apple:
 
 | Affected Functionality | Details |
 |--- |--- |
-|Opt-out support|Apple's WebKit tracking changes breaks opt-out support.<br />Target opt-out uses a cookie in the `clientcode.tt.omtrdc.net` domain. For more details, see [Privacy](/help/c-implementing-target/c-considerations-before-you-implement-target/privacy/privacy.md).<br />Target supports two opt-outs:<ul><li>One per client (the client manages the opt-out link).</li><li>One via Adobe that opts the user out of all Target functionality for all customers.</li></ul>Both methods use the third-party cookie.|
+|Opt-out support|Apple's WebKit tracking changes breaks opt-out support.<br />Target opt-out uses a cookie in the `clientcode.tt.omtrdc.net` domain. For more details, see [Privacy](/src/pages/before-implement/privacy/privacy.md).<br />Target supports two opt-outs:<ul><li>One per client (the client manages the opt-out link).</li><li>One via Adobe that opts the user out of all Target functionality for all customers.</li></ul>Both methods use the third-party cookie.|
 |Target activities|Customers can choose their [profile lifetime length](https://experienceleague.corp.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile-lifetime.html) for their Target accounts (up to 90 days). The concern is that if the account's profile lifetime is longer than 30 days, and the first-party cookie gets purged because the customer's domain has been marked as tracking users cross-site, behavior for Safari visitors are affected in the following areas in Target:<br />**Target reports**: If a Safari user enters into an activity, returns after 30 days, and then converts, that user counts as two visitors and one conversion.<br />This behavior is the same for activities using Analytics as the reporting source (A4T).<br />**Profile & activity membership**:<ul><li>Profile data is erased when the first-party cookie expires.</li><li>Activity membership is erased when the first-party cookie expires.</li><li> Target does not function in Safari for accounts using a third-party cookie implementation or a first- and third-party cookie implementation. This behavior is not new. Safari has not allowed third-party cookies for a while.</li></ul><br />**Suggestions**: If there is a concern that the customer domain might be marked as one tracking visitors cross-session, it is safest to set the profile lifetime to 30 days or fewer in Target. This limit ensures that users are tracked similarly in Safari and all other browsers.|

@@ -31,7 +31,7 @@ Creates an internal mapping between a nodeId and an mbox name, but does not exec
 
 ## mboxUpdate
 
-Executes the request and applies the offer to the element identified by the `nodeId` in the `mboxDefine()`. Can also be used to update an mbox initiated by `mboxCreate`. Built into at.js mostly to ease the transition from mbox.js (now deprecated) to at.js. `mboxDefine()`/ `mboxUpdate()` could be replaced by [adobe.target.getOffer()](/help/c-implementing-target/c-implementing-target-for-client-side-web/adobe-target-getoffer.md) and [adobe.target.applyOffer()](/help/c-implementing-target/c-implementing-target-for-client-side-web/adobe-target-applyoffer.md) using the selector option.
+Executes the request and applies the offer to the element identified by the `nodeId` in the `mboxDefine()`. Can also be used to update an mbox initiated by `mboxCreate`. Built into at.js mostly to ease the transition from mbox.js (now deprecated) to at.js. `mboxDefine()`/ `mboxUpdate()` could be replaced by [adobe.target.getOffer()](/src/pages/implement/client-side/atjs/atjs-functions/adobe-target-getoffer.md) and [adobe.target.applyOffer()](/src/pages/implement/client-side/atjs/atjs-functions/adobe-target-applyoffer.md) using the selector option.
 
 ## Example
 

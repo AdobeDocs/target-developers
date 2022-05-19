@@ -243,6 +243,28 @@ module.exports = {
             ]
           },
           {
+            title: 'On-device decisioning for at.js',
+            path: '/implement/client-side/atjs/on-device-decisioning',
+            pages: [
+              {
+                title: 'On-device decisioning overview',
+                path: '/implement/client-side/atjs/on-device-decisioning/on-device-decisioning.md'
+              },
+              {
+                title: 'Supported features',
+                path: '/implement/client-side/atjs/on-device-decisioning/supported-features.md'
+              },
+              {
+                title: 'Rule artifact',
+                path: '/implement/client-side/atjs/on-device-decisioning/rule-artifact.md'
+              },
+              {
+                title: 'Troubleshooting',
+                path: '/implement/client-side/atjs/on-device-decisioning/troubleshooting-on-device-decisioning.md'
+              }
+            ]
+          },
+          {
             title: 'at.js functions',
             path: '/implement/client-side/atjs/atjs-functions/atjs.md',
             pages: [
@@ -300,7 +322,7 @@ module.exports = {
               },
               {
                 title: 'sendNotifications() - at.js 2.1',
-                path: '/implement/client-side/atjs/atjs-functions/adobe.target.sendnotifications-atjs-21.md'
+                path: '/implement/client-side/atjs/atjs-functions/adobe-target-sendnotifications-atjs-21.md'
               },
               {
                 title: 'at.js custom events',

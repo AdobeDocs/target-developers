@@ -39,8 +39,8 @@ The following advantages apply only if you use tags in Adobe Experience Platform
 
 * **Solves Adobe Analytics and Target race condition:** Because the Analytics call could be fired before the Target call, the Target call is not stitched to the Analytics call. This sequencing can lead to incorrect data. The Target extension ensures that the Analytics beacon call waits until the Target call completes, successfully or not. Using tags in Adobe Experience Platform solves the data inconsistency customers can experience when implementing manually.
 
-  <InlineAlert variant="info" slots="text"/>
+<InlineAlert variant="info" slots="text"/>
   
-  Use the Send Beacon action in the Adobe Analytics extension so that the Analytics call waits for the Target call. If you directly call `s.t()` or `s.tl()` using custom code, Analytics calls do not wait until Target calls are complete.
+Use the Send Beacon action in the Adobe Analytics extension so that the Analytics call waits for the Target call. If you directly call `s.t()` or `s.tl()` using custom code, Analytics calls do not wait until Target calls are complete.
 
 * **Prevents incorrect redirect offer handling:** If you have Target and Analytics on the page, and there is a redirect offer executed by Target, you can experience a situation in which the Analytics tracker fires a request when it shouldn’t (because the user is being redirected to a different URL). If you implement Target and Analytics via tags in Adobe Experience Platform, you’ll not experience this issue. Using tags in Adobe Experience Platform, Target instructs Analytics to abort the Analytics beacon request.

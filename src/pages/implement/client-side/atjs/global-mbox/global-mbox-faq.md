@@ -30,7 +30,7 @@ To collect revenue and order information on the target-global-mbox, "mbox parame
 
 For the `orderConfirmPage`, you should pass in `orderTotal`, `orderId`, and `productPurchasedId`.
 
-These parameters must be sent to the target-global-mbox via `targetPageParams()`. For more information, see [Passing Parameters to a Global mbox](/help/c-implementing-target/c-implementing-target-for-client-side-web/t-mbox-download/c-understanding-global-mbox/pass-parameters-to-global-mbox.md#concept_33362A04146C4E3C8E7089B65F38B5E5).
+These parameters must be sent to the target-global-mbox via `targetPageParams()`. For more information, see [Passing Parameters to a Global mbox](/src/pages/implement/client-side/atjs/global-mbox/pass-parameters-to-global-mbox.md).
 
 You'll also want to add targeting to the conversion piece so that Target only counts conversions on the target-global-mbox when the order confirmation page has been viewed, as shown below:
 

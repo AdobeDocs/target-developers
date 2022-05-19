@@ -135,7 +135,7 @@ If you are deploying at.js through an asynchronous Adobe Experience Platform imp
 
 If you are deploying at.js through a synchronous DTM implementation, the pre-hiding snippet can be added through a Page Load rule triggered at the top of the page.
 
-For more information, see [How at.js manages flicker](/help/c-implementing-target/c-implementing-target-for-client-side-web/c-how-atjs-works/manage-flicker-with-atjs.md). 
+For more information, see [How at.js manages flicker](/src/pages/implement/client-side/atjs/how-atjs-works/manage-flicker-with-atjs.md). 
 
 ## Is at.js compatible with the Adobe Experience Manager integration (Experience Manager)?
 
@@ -143,7 +143,7 @@ Adobe Experience Manager 6.2 with FP-11577 (or later) now supports at.js impleme
 
 ## How can I prevent page-load flicker using at.js?
 
-Target provides several ways to prevent page-load flicker. For more information, see [Preventing Flicker with at.js](/help/c-implementing-target/c-implementing-target-for-client-side-web/c-how-atjs-works/manage-flicker-with-atjs.md#concept_AA168574397D4474B993EEAB90865EBA).
+Target provides several ways to prevent page-load flicker. For more information, see [Preventing Flicker with at.js](/src/pages/implement/client-side/atjs/how-atjs-works/manage-flicker-with-atjs.md).
 
 ## What is the file size of at.js?
 
@@ -183,7 +183,7 @@ Yes, same as with mbox.js.
 
 Target customers sometimes use cloud-based instances with Target for testing or simple proof-of-concept purposes. These domains, and many others, are part of the [Public Suffix List](https://publicsuffix.org/list/public_suffix_list.dat).
 
-Modern browsers do not save cookies if you are using these domains unless you customize the `cookieDomain` setting using targetGlobalSettings(). For more information, see [Using Cloud-Based Instances with Target](/help/c-implementing-target/c-implementing-target-for-client-side-web/c-target-debugging-atjs/targeting-using-cloud-based-instances.md).
+Modern browsers do not save cookies if you are using these domains unless you customize the `cookieDomain` setting using targetGlobalSettings(). For more information, see [Using Cloud-Based Instances with Target](/src/pages/implement/client-side/target-debugging-atjs/targeting-using-cloud-based-instances.md).
 
 ## Can IP addresses be used as the cookie domain when using at.js?
 
@@ -193,7 +193,7 @@ Yes, if you are using [at.js version 1.2 or later](/src/pages/implement/client-s
 
 The following examples are not necessary if you are using at.js version 1.2 or later.
 
-Depending on how you use [targetGlobalSettings](/help/c-implementing-target/c-implementing-target-for-client-side-web/targetgobalsettings.md), you might need to make additional modifications to the code after downloading at.js. For example, if you needed slightly different settings for your Target implementations on various websites and were unable to define these settings dynamically using custom JavaScript, make these customizations manually after downloading the file and before uploading to the respective website.
+Depending on how you use [targetGlobalSettings](/src/pages/implement/client-side/atjs/atjs-functions/targetglobalsettings.md), you might need to make additional modifications to the code after downloading at.js. For example, if you needed slightly different settings for your Target implementations on various websites and were unable to define these settings dynamically using custom JavaScript, make these customizations manually after downloading the file and before uploading to the respective website.
 
 The following examples let you use the `targetGlobalSettings()` at.js function to insert a code snippet to support IP addresses:
 

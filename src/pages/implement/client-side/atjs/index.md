@@ -29,7 +29,7 @@ In the Target implementation illustrated below, the following Adobe Experience C
 
 ## What is the difference between at.js 1.*x* and at.js 2.x workflow diagrams?
 
-See [Upgrading from at.js 1.x to at.js 2.x](/help/c-implementing-target/c-implementing-target-for-client-side-web/upgrading-from-atjs-1x-to-atjs-20.md) for more information on the differences that were introduced in 2.O from 1.*x*.
+See [Upgrading from at.js 1.x to at.js 2.x](/src/pages/implement/client-side/atjs/upgrading-from-atjs-1x-to-atjs-20.md) for more information on the differences that were introduced in 2.O from 1.*x*.
 
 From a high level view, there are a couple of differences between the two versions:
 
@@ -38,7 +38,7 @@ From a high level view, there are a couple of differences between the two versio
 
 ## at.js 2.x diagrams
 
-The following diagrams help you understand the workflow of at.js 2.x with Views and how this enhances the SPA integration. To get a better introduction of the concepts used in at.js 2.x, see [Single Page Application implementation](/help/c-implementing-target/c-implementing-target-for-client-side-web/atjs/how-to-deployatjs/target-atjs-single-page-application.md).
+The following diagrams help you understand the workflow of at.js 2.x with Views and how this enhances the SPA integration. To get a better introduction of the concepts used in at.js 2.x, see [Single Page Application implementation](/src/pages/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md).
 
 ![Target flow with at.js 2.x](../assets/system-diagram-atjs-20.png)
 
@@ -53,7 +53,7 @@ The following diagrams help you understand the workflow of at.js 2.x with Views 
 |7|Analytics data is sent to Data Collection servers.|
 |8|Targeted data is matched to Analytics data via the SDID and is processed into the Analytics reporting storage.<br />Analytics data can then be viewed in both Analytics and Target via Analytics for Target (A4T) reports.|
 
-Now, wherever `triggerView()` is implemented on your SPA, the Views and actions are retrieved from cache and shown to the user without a server call. `triggerView()` also makes a notifications request to the Target backend in order to increment and record impression counts. For more information on at.js for SPAs with Views, see [Single Page Application implementation](/help/c-implementing-target/c-implementing-target-for-client-side-web/atjs/how-to-deployatjs/target-atjs-single-page-application.md).
+Now, wherever `triggerView()` is implemented on your SPA, the Views and actions are retrieved from cache and shown to the user without a server call. `triggerView()` also makes a notifications request to the Target backend in order to increment and record impression counts. For more information on at.js for SPAs with Views, see [Single Page Application implementation](/src/pages/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md).
 
 ![Target flow at.js 2.x triggerView](../assets/atjs-20-triggerview.png)
 

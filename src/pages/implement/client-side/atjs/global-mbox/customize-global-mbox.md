@@ -19,9 +19,9 @@ Information to help you customize an Adobe Target global mbox for at.js.
 
 2. Disable **Page load enabled (Auto create global mbox)**, then add the name of the custom global mbox that you would like to use to deliver activities from Target.
 
-   <InlineAlert variant="warning" slots="text"/>
-   
-   The change is automatically saved when you select a different global mbox.
+<InlineAlert variant="warning" slots="text"/>
+
+The change is automatically saved when you select a different global mbox.
 
    This custom global mbox is also used for click tracking.
 
@@ -29,7 +29,7 @@ Information to help you customize an Adobe Target global mbox for at.js.
 
 3. Implement the at.js library on your site.
 
-   See [How to deploy at.js](/help/c-implementing-target/c-implementing-target-for-client-side-web/atjs/how-to-deployatjs/how-to-deployatjs.md) for more information.
+   See [How to deploy at.js](/src/pages/implement/client-side/atjs/how-to-deployatjs/how-to-deployatjs.md) for more information.
 
 4. Time the transition with your release.
 

@@ -22,7 +22,7 @@ The code to call the JavaScript function must come before the global mbox on the
 
 <InlineAlert variant="info" slots="text"/>
 
-If you want to add parameters to all mboxes on the page, not just to the global mbox, use the [targetPageParamsAll()](/help/c-implementing-target/c-implementing-target-for-client-side-web/targetpageparamsall.md) function.
+If you want to add parameters to all mboxes on the page, not just to the global mbox, use the [targetPageParamsAll()](/src/pages/implement/client-side/atjs/atjs-functions/targetpageparamsall.md) function.
 
 You can pass in parameters to `target-global-mbox` using the `targetPageParams()` function in any of the following ways:
 

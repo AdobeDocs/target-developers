@@ -21,7 +21,7 @@ Flicker happens when default content momentarily displays to visitors before it 
 
 ## Using an auto-created global mbox
 
-If you enable the [Auto Create Global Mbox](/help/c-implementing-target/c-implementing-target-for-client-side-web/t-mbox-download/c-understanding-global-mbox/understanding-global-mbox.md#concept_76AC0EC995A048238F3220F53773DB13) setting when configuring at.js, at.js manages flicker by changing the opacity setting as the page loads. When at.js loads, it will change the opacity setting of the `<body>` element to "0", making the page initially invisible to visitors. After a response from Target is received—or if an error with the Target request is detected—at.js resets opacity to "1". This ensures that the visitor only sees the page after your activities' content has been applied.
+If you enable the [Auto Create Global Mbox](/src/pages/implement/client-side/atjs/global-mbox/customize-global-mbox.md) setting when configuring at.js, at.js manages flicker by changing the opacity setting as the page loads. When at.js loads, it will change the opacity setting of the `<body>` element to "0", making the page initially invisible to visitors. After a response from Target is received—or if an error with the Target request is detected—at.js resets opacity to "1". This ensures that the visitor only sees the page after your activities' content has been applied.
 
 If you enable the setting when configuring at.js, at.js will set HTML BODY style opacity to 0. After a response from Target is received, at.js resets HTML BODY opacity to 1.
 
@@ -39,7 +39,7 @@ The following illustration shows the Hide Body and Show Body calls in both at.js
 
 ![alt image](assets/target-flow2.png)
 
-For more information about the `bodyHiddenStyle` override, see [targetGlobalSettings()](/help/c-implementing-target/c-implementing-target-for-client-side-web/targetgobalsettings.md).
+For more information about the `bodyHiddenStyle` override, see [targetGlobalSettings()](/src/pages/implement/client-side/atjs/atjs-functions/targetglobalsettings.md).
 
 ## Managing flicker when loading at.js asynchronously
 

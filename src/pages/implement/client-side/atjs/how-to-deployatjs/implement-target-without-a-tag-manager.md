@@ -18,7 +18,7 @@ Information about implementing Adobe Target without using a tag manager or tags 
 
 <InlineAlert variant="info" slots="text"/>
 
-Tags in [Adobe Experience Platform](/help/c-implementing-target/c-implementing-target-for-client-side-web/atjs/how-to-deployatjs/cmp-implementing-target-using-adobe-launch.md#topic_5234DDAEB0834333BD6BA1B05892FC25) are the preferred method for implementing Target and the at.js library. The following information is not applicable when using tags in Adobe Experience Platform to implement Target.
+Tags in [Adobe Experience Platform](/src/pages/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) are the preferred method for implementing Target and the at.js library. The following information is not applicable when using tags in Adobe Experience Platform to implement Target.
 
 To access the Implementation page, click **Administration** > **Implementation**.
 
@@ -32,7 +32,7 @@ You can specify the following settings on this page:
 
 <InlineAlert variant="info" slots="text"/>
 
-You can override settings in the at.js library, rather than configuring them in the Target Standard/Premium UI or by using REST APIs. For more information, see [targetGlobalSettings()](/help/c-implementing-target/c-implementing-target-for-client-side-web/targetgobalsettings.md).
+You can override settings in the at.js library, rather than configuring them in the Target Standard/Premium UI or by using REST APIs. For more information, see [targetGlobalSettings()](/src/pages/implement/client-side/atjs/atjs-functions/targetglobalsettings.md).
 
 ## Account details
 
@@ -59,7 +59,7 @@ These settings are applied to all Target .js libraries. After performing changes
 | --- | --- |
 |Page load enabled (Auto-create global mbox|Select whether to embed the global mbox call in the at.js file to automatically fire on each page load.|
 |Global mbox|Select a name for the global mbox. By default, this name is  target-global-mbox.<br />Special characters, including ampersands (&), can be used in mbox names with at.js.|
-|Timeout (seconds)|If Target does not respond with content within the defined period, the server call times out and default content is displayed. Additional calls continue to be attempted during the visitor's session. The default is 5 seconds.<br />The at.js library uses the timeout setting in `XMLHttpRequest`. The timeout starts when the request is fired and stops when Target gets a response from the server. For more information, see [XMLHttpRequest.timeout](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/timeout) on the Mozilla Developer Network.<br />If the specified timeout occurs before receiving the response, default content is shown and the visitor might be counted as a participant in an activity because all data collection happens on the Target edge. If the request reaches the Target edge, the visitor is counted.<br />Consider the following when configuring the timeout setting:<ul><li>If the value is too low, users might see default content most of the time, although the visitor could be counted as a participant in the activity.</li><li>If the value is too high, visitors might see blank regions on your web page or blank pages if you use body hiding for extended periods of time.</li></ul>To get a better understanding of mbox response times, look at the Network tab in your browser's Developer Tools. You can also use third-party web performance monitoring tools, such as Catchpoint.<br />**Note**: The [visitorApiTimeout](/help/c-implementing-target/c-implementing-target-for-client-side-web/targetgobalsettings.md) setting ensures that Target doesn't wait for the Visitor API response for too long. This setting and the Timeout setting for at.js described here do not affect each other.|
+|Timeout (seconds)|If Target does not respond with content within the defined period, the server call times out and default content is displayed. Additional calls continue to be attempted during the visitor's session. The default is 5 seconds.<br />The at.js library uses the timeout setting in `XMLHttpRequest`. The timeout starts when the request is fired and stops when Target gets a response from the server. For more information, see [XMLHttpRequest.timeout](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/timeout) on the Mozilla Developer Network.<br />If the specified timeout occurs before receiving the response, default content is shown and the visitor might be counted as a participant in an activity because all data collection happens on the Target edge. If the request reaches the Target edge, the visitor is counted.<br />Consider the following when configuring the timeout setting:<ul><li>If the value is too low, users might see default content most of the time, although the visitor could be counted as a participant in the activity.</li><li>If the value is too high, visitors might see blank regions on your web page or blank pages if you use body hiding for extended periods of time.</li></ul>To get a better understanding of mbox response times, look at the Network tab in your browser's Developer Tools. You can also use third-party web performance monitoring tools, such as Catchpoint.<br />**Note**: The [visitorApiTimeout](/src/pages/implement/client-side/atjs/atjs-functions/targetglobalsettings.md#visitorapitimeout) setting ensures that Target doesn't wait for the Visitor API response for too long. This setting and the Timeout setting for at.js described here do not affect each other.|
 |Profile Lifetime|This setting determines how long visitor profiles are stored. By default, profiles are stored for two weeks. This setting can be increased up to 90 days.<br />To change the  Profile Lifetime  setting, contact [Client Care](https://experienceleague.corp.adobe.com/docs/target/using/cmp-resources-and-contact-information.html#reference_ACA3391A00EF467B87930A450050077C).|
 
 ### Main implementation method
@@ -87,13 +87,13 @@ In addition to the settings explained above, the following specific at.js settin
 
 Enable or disable authentication for batch updates via API and generate a profile authentication token.
 
-For more information, see [Profile API settings](/help/c-implementing-target/c-considerations-before-you-implement-target/methods-to-get-data-into-target/profile-api-settings.md).
+For more information, see [Profile API settings](/src/pages/before-implement/methods-to-get-data-into-target/profile-api-settings.md).
 
 ### Debugger tools
 
 Generate an authorization token to use advanced Target debugging tools. Click **Generate New Authentication Token**.
 
-![Generate New Authentication Token](../../../../before-implement/methods-to-get-data-into-target/assets/debugger-auth-token.png)
+![Generate New Authentication Token](/src/pages/before-implement/methods-to-get-data-into-target/assets/debugger-auth-token.png)
 
 ### Privacy
 
@@ -105,11 +105,11 @@ Choose the desired setting from the Obfuscate Visitor IP address drop-down list:
 * Entire IP obfuscation
 * None
 
-For more information, see [Privacy](/help/c-implementing-target/c-considerations-before-you-implement-target/privacy/privacy.md).
+For more information, see [Privacy](/src/pages/before-implement/privacy/privacy.md).
 
 <InlineAlert variant="info" slots="text"/>
 
-The Legacy Browser Support option was available in at.js version 0.9.3 and earlier. This option was removed in at.js version 0.9.4. For a list of browsers supported by at.js, see [Supported Browsers](/help/c-implementing-target/c-considerations-before-you-implement-target/supported-browsers.md).<br />Legacy browsers are older browsers that do not fully support CORS (Cross Origin Resource Sharing). These browsers include: Internet Explorer browsers earlier than version 11 and Safari versions 6 and below. If Legacy Browser Support was disabled, Target did not deliver content or count visitors in reports on these browsers. If this option was enabled, it is recommended to do quality assurance across older browsers to ensure a good customer experience.
+The Legacy Browser Support option was available in at.js version 0.9.3 and earlier. This option was removed in at.js version 0.9.4. For a list of browsers supported by at.js, see [Supported Browsers](/src/pages/before-implement/supported-browsers.md).<br />Legacy browsers are older browsers that do not fully support CORS (Cross Origin Resource Sharing). These browsers include: Internet Explorer browsers earlier than version 11 and Safari versions 6 and below. If Legacy Browser Support was disabled, Target did not deliver content or count visitors in reports on these browsers. If this option was enabled, it is recommended to do quality assurance across older browsers to ensure a good customer experience.
 
 ## Download at.js
 
@@ -117,7 +117,7 @@ Instructions to download the library using the Target interface or the Download 
 
 <InlineAlert variant="info" slots="text"/>
 
- [Adobe Experience Platform](/help/c-implementing-target/c-implementing-target-for-client-side-web/atjs/how-to-deployatjs/cmp-implementing-target-using-adobe-launch.md#topic_5234DDAEB0834333BD6BA1B05892FC25) is the preferred method for implementing Target and the at.js library. The following information is not applicable when using tags in Adobe Experience Platform to implement Target.
+ [Adobe Experience Platform](/src/pages/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) is the preferred method for implementing Target and the at.js library. The following information is not applicable when using tags in Adobe Experience Platform to implement Target.
 
 <InlineAlert variant="info" slots="text"/>
 
@@ -180,7 +180,7 @@ To download at.js using the API.
 
 at.js should be implemented in the `<head>` element of every page of your website. 
 
-A typical implementation of Target not using a tag manager, such as tags in [Adobe Experience Platform](/help/c-implementing-target/c-implementing-target-for-client-side-web/atjs/how-to-deployatjs/cmp-implementing-target-using-adobe-launch.md#topic_5234DDAEB0834333BD6BA1B05892FC25) looks like this:
+A typical implementation of Target not using a tag manager, such as tags in [Adobe Experience Platform](/src/pages/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) looks like this:
 
 ```
 <!doctype html> 
@@ -239,7 +239,7 @@ Consider the following important notes:
 * The HTML5 Doctype (for example, `<!doctype html>`) should be used. Unsupported or older doctypes could result in Target not being able to make a request. 
 * Preconnect and Prefetch are options that might help your web pages load faster. If you use these configurations, ensure that you replace `<client code>` with your own client code, which you can obtain from the **Administration** > **Implementation page. 
 * If you have a data layer, it is optimal to define as much of it as possible in the `<head>` of your pages before at.js loads. This placement provides the maximum ability to use this information in Target for personalization. 
-* Special Target functions, such as `targetPageParams()`, `targetPageParamsAll()`, Data Providers, and `targetGlobalSettings()` should be defined after your data layer and before at.js loads. Alternatively, these functions could be saved in the Library Header section of the Edit at.js Settings page and saved as part of the at.js library itself. For more information on these functions, see [at.js functions](/help/c-implementing-target/c-implementing-target-for-client-side-web/cmp-atjs-functions.md). 
+* Special Target functions, such as `targetPageParams()`, `targetPageParamsAll()`, Data Providers, and `targetGlobalSettings()` should be defined after your data layer and before at.js loads. Alternatively, these functions could be saved in the Library Header section of the Edit at.js Settings page and saved as part of the at.js library itself. For more information on these functions, see [at.js functions](/src/pages/implement/client-side/atjs/atjs-functions/atjs-functions.md). 
 * If you use JavaScript helper libraries, such as jQuery, include them before Target so you can use their syntax and methods when building Target experiences. 
 * Include at.js in the `<head>` of your pages.
 

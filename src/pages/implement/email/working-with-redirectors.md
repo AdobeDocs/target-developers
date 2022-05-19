@@ -27,7 +27,7 @@ Use the Redirector to do the following:
 
 * Find which landing page leads to the most conversions
 
-For help deciding the right setup see [Non-JavaScript-Based Implementations](/help/c-implementing-target/c-non-javascript-based-implementation/non-javascript-based-implementation.md#concept_4799C58B081A43F6B3B8CC25A8D5D7C4). 
+For help deciding the right setup see [Non-JavaScript-Based Implementations](/src/pages/implement/email/index.md). 
 
 ## Create a redirector
 
@@ -65,7 +65,7 @@ Before you can use a redirector, you must create it.
 3. If you will test different destinations for one ad, create [Redirect Offers](https://experienceleague.corp.adobe.com/docs/target/using/experiences/vec/redirect-offer.html) for each version.
 4. Create the campaign.
 
-   See [Non-JavaScript-Based Implementations](/help/c-implementing-target/c-non-javascript-based-implementation/non-javascript-based-implementation.md#concept_4799C58B081A43F6B3B8CC25A8D5D7C4) for the right setup to meet your goals. 
+   See [Non-JavaScript-Based Implementations](/src/pages/implement/email/index.md) for the right setup to meet your goals. 
 5. Complete QA on the campaign.
 
    Create a dummy page with an `<a href>` containing the Redirector URL. Example:
