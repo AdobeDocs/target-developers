@@ -54,15 +54,11 @@ Now, wherever `triggerView()` is implemented on your SPA, the Views and actions 
 
 ## Deploy at.js 2.*x*
 
-1. Deploy at.js 2.*x* via tags in [Adobe Experience Platform](/src/pages/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) extension. 
+Deploy at.js 2.*x* via tags in [Adobe Experience Platform](/src/pages/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) extension. 
 
-   <InlineAlert variant="info" slots="text"/>
-   
-   Deploying at.js using tags in Adobe Experience Platform is the preferred method.
+<InlineAlert variant="info" slots="text"/>
 
-   Or
-
-   Manually download at.js 2.*x* using the Target UI and deploy it using the [method of your choice](/src/pages/implement/client-side/atjs/how-to-deployatjs/how-to-deployatjs.md).
+Deploying at.js using tags in Adobe Experience Platform is the preferred method. Alternatively, manually download at.js 2.*x* using the Target UI and deploy it using the [method of your choice](/src/pages/implement/client-side/atjs/how-to-deployatjs/how-to-deployatjs.md).
 
 ## Deprecated at.js functions
 
