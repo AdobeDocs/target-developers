@@ -160,7 +160,7 @@ To download at.js using the API.
 
 1. Download at.js.
 
-   Load this URL with the following structure:
+   Load this URL with the following structure. Loading this URL starts the download of your customized at.js file.
 
    ```
    https://admin<varname>admin number</varname>.testandtarget.omniture.com/admin/rest/v1/libraries/atjs/download?client=<varname>client code</varname>&version=<version number>
@@ -170,11 +170,9 @@ To download at.js using the API.
     * Replace `client code` with the client code from Step 1. 
     * Replace `version number` with the desired at.js version number (for example, 2.2).
 
-    <InlineAlert variant="warning" slots="text"/>
-    
-    The Target team maintains only two versions of at.js—the current version and the second-latest version. Please upgrade at.js as necessary to ensure that you are running a supported version. For more information about what's in each version, see [at.js Version Details](/src/pages/implement/client-side/atjs/target-atjs-versions.md).
+<InlineAlert variant="warning" slots="text"/>
 
-   Loading this URL starts the download of your customized at.js file.
+The Target team maintains only two versions of at.js—the current version and the second-latest version. Please upgrade at.js as necessary to ensure that you are running a supported version. For more information about what's in each version, see [at.js Version Details](/src/pages/implement/client-side/atjs/target-atjs-versions.md).
 
 ## at.js implementation
 
@@ -254,10 +252,6 @@ If users make purchases on your website, Adobe recommends implementing an Order 
 1. In your order details page, insert the mbox script following the model below.
 1. Replace the WORDS IN CAPITAL LETTERS with either dynamic or static values from your catalog.
 
-   <InlineAlert variant="info" slots="text"/>
-   
-   Use comma delimiting to separate multiple product IDs.
-
    **Tip:** You can also pass order information in any mbox (it does not need to be named `orderConfirmPage`). You can also pass order information in multiple mboxes within the same campaign.
 
    ```
@@ -272,6 +266,10 @@ If users make purchases on your website, Adobe recommends implementing an Order 
    }); 
    </script> 
    ```
+
+<InlineAlert variant="info" slots="text"/>
+
+In the Order Confirmation mbox, use comma delimiting to separate multiple product IDs.
 
 The Order Confirmation mbox uses the following parameters:
 
