@@ -46,9 +46,9 @@ For added security, you can require that the Bulk Update API call require a vali
   
   You can also generate a profile authentication token via API. For more information, see [Profiles](https://developers.adobetarget.com/api/#profiles) in the Adobe Target Admin and Profile API guide.
 
-1. Copy the token and include it in the header of the request in the format: "Authorization" : "Bearer."
+4. Copy the token and include it in the header of the request in the format: "Authorization" : "Bearer."
 
-1. Click **Generate New Profile Authentication Token** to regenerate the token as needed.
+5. Click **Generate New Profile Authentication Token** to regenerate the token as needed.
 
 <InlineAlert variant="warning" slots="text"/>
 
