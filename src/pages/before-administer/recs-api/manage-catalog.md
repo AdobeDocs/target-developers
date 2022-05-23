@@ -118,7 +118,7 @@ The JSON object can be scaled to send multiple products. For example, this JSON 
     }
 ```
 
-1. Now it's your turn! Use the **Save Entities** API to add the following items to your catalog. Use the sample JSON above as a starting point. (You will need to extend the JSON to include additional entities.)
+5. Now it's your turn! Use the **Save Entities** API to add the following items to your catalog. Use the sample JSON above as a starting point. (You will need to extend the JSON to include additional entities.)
 
     ![SaveEntities6.png](/assets/SaveEntities06.png)
 

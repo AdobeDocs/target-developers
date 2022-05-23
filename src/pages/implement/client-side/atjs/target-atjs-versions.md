@@ -128,9 +128,9 @@ This release of at.js includes the following enhancements and fixes:
 * Previously, the ECID made two blocking calls before at.js could fetch experiences. This has been reduced to a single call, which significantly improves performance.
 * Fixed incorrect prefetched view processing, where event tokens from default offers were not included in sent notifications.
 
-  <InlineAlert variant="info" slots="text"/>
-  
-  Upgrade your ECID Extension to v4.4 to take advantage of this performance enhancement.
+<InlineAlert variant="info" slots="text"/>
+
+Upgrade your ECID Extension to v4.4 to take advantage of this performance enhancement.
 
 * at.js version 2.2 also provides a new setting called `serverState`. This setting can be used to optimize page performance when a hybrid integration of Target is implemented. Hybrid integration means that you are using both at.js v2.2+ on the client-side and the delivery API or a Target SDK on the server-side to deliver experiences. `serverState` gives at.js v2.2+ the ability to apply experiences directly from content fetched on the server side and returned to the client as part of the page being served. For more information, see "serverState" in [targetGlobalSettings](/src/pages/implement/client-side/atjs/atjs-functions/targetglobalsettings.md#serverstate).
 
