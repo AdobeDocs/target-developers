@@ -58,7 +58,11 @@ Deploy at.js 2.*x* via tags in [Adobe Experience Platform](/src/pages/implement/
 
 <InlineAlert variant="info" slots="text"/>
 
-Deploying at.js using tags in Adobe Experience Platform is the preferred method. Alternatively, manually download at.js 2.*x* using the Target UI and deploy it using the [method of your choice](/src/pages/implement/client-side/atjs/how-to-deployatjs/how-to-deployatjs.md).
+Deploying at.js using tags in Adobe Experience Platform is the preferred method.
+
+Or
+
+Manually download at.js 2.*x* using the Target UI and deploy it using the [method of your choice](/src/pages/implement/client-side/atjs/how-to-deployatjs/how-to-deployatjs.md).
 
 ## Deprecated at.js functions
 
