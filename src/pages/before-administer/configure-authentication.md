@@ -69,9 +69,9 @@ In this section, you will access the Adobe Developer Console and create a projec
 
    ![configure-io-target-createproject11](assets/configure-io-target-createproject11.png)
 
-   <InlineAlert variant="info" slots="text"/>
-   
-   In this tutorial, we name our project "Target Integration." If you anticipate using your project for more than just Adobe Target, you may want to name it accordingly. For example, you might choose to name it "Adobe APIs" or "Experience Cloud APIs," since it may be used with other solutions in the Adobe Experience Cloud.
+<InlineAlert variant="info" slots="text"/>
+
+In this tutorial, we name our project "Target Integration." If you anticipate using your project for more than just Adobe Target, you may want to name it accordingly. For example, you might choose to name it "Adobe APIs" or "Experience Cloud APIs," since it may be used with other solutions in the Adobe Experience Cloud.
 
 ## Export project details
 
@@ -102,13 +102,13 @@ For video instructions applicable for any Experience Cloud solution, including T
 7. Note `CLIENT_SECRET` and `API_KEY` (along with other variables) have their values pre-populated, taken from your integration as defined in the Adobe Developer Console. (The Postman `CLIENT_SECRET` variable should match the `CLIENT SECRET` Adobe credential as displayed in the Developer Console, and `API_KEY` in Postman should likewise match `CLIENT ID` in the Developer Console.) By contrast, note `PRIVATE_KEY`, `JWT_TOKEN`, and `ACCESS_TOKEN` are blank. Let's start by providing the `PRIVATE_KEY` value.
    ![JWT7](assets/configure-io-target-jwt7.png)
 
-   <InlineAlert variant="help" slots="text"/>
-   
-   Pop quiz! Can you remember where your private key is?
+<InlineAlert variant="help" slots="text"/>
 
-   <InlineAlert variant="success" slots="text"/>
-   
-   That's right, it's in the `config` file downloaded earlier from the Adobe Developer Console!
+Pop quiz! Can you remember where your private key is?
+
+<InlineAlert variant="success" slots="text"/>
+
+That's right, it's in the `config` file downloaded earlier from the Adobe Developer Console!
 
 8. From your file system, open your `config` file, and open the `private` key file.
    ![JWT8](assets/configure-io-target-jwt8.png)
@@ -135,9 +135,9 @@ In this section, you generate your bearer access token, which is required for au
 
    ![token5](assets/configure-io-target-generatetoken5.png)
 
-   <InlineAlert variant="info" slots="text"/>
-   
-   This bearer access token will be valid for 24 hours. Send the request again whenever you need to generate a new token.
+<InlineAlert variant="info" slots="text"/>
+
+This bearer access token will be valid for 24 hours. Send the request again whenever you need to generate a new token.
    
 6. Open the Manage Environments modal again, and select your environment.
    ![token6](assets/configure-io-target-jwt11.png)
@@ -174,9 +174,9 @@ In this exercise, you will use your new bearer access token by sending an API re
 
    ![testtoken5](assets/configure-io-target-testtoken5.png)
 
-   <InlineAlert variant="info" slots="text"/>
-   
-   The Tenant ID is different from your Target `clientcode`. The Tenant ID exists in the URL when you are logged in to Target. To obtain your Tenant ID, log in to the Adobe Experience Cloud, open Target, and click the Target card. Use the Tenant ID value as noted in the URL subdomain. For example, if your URL when logged in to Adobe Target is `<https://mycompany.experiencecloud.adobe.com/...>` then your Tenant ID is "mycompany."
+<InlineAlert variant="info" slots="text"/>
+
+The Tenant ID is different from your Target `clientcode`. The Tenant ID exists in the URL when you are logged in to Target. To obtain your Tenant ID, log in to the Adobe Experience Cloud, open Target, and click the Target card. Use the Tenant ID value as noted in the URL subdomain. For example, if your URL when logged in to Adobe Target is `<https://mycompany.experiencecloud.adobe.com/...>` then your Tenant ID is "mycompany."
 
 1. Send your request, after ensuring you have selected the correct environment. You should receive a response containing your list of activities.
    ![testtoken6](assets/configure-io-target-testtoken6.png)
