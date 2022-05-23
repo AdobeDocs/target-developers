@@ -96,9 +96,9 @@ The mobile preview functionality lets you fully test your Mobile app activities 
 
 2. Select the activities that you want to preview, then click **Generate Mobile Preview Link**.
 
-   <InlineAlert variant="info" slots="text"/>
-   
-   Only form-based AB and XT activities can be selected.
+<InlineAlert variant="info" slots="text"/>
+
+Only form-based AB and XT activities can be selected.
 
    ![alt image](assets/mobile-preview-select-activities.png)
 
