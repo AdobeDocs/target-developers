@@ -178,7 +178,7 @@ In this exercise, you will use your new bearer access token by sending an API re
 
 The Tenant ID is different from your Target `clientcode`. The Tenant ID exists in the URL when you are logged in to Target. To obtain your Tenant ID, log in to the Adobe Experience Cloud, open Target, and click the Target card. Use the Tenant ID value as noted in the URL subdomain. For example, if your URL when logged in to Adobe Target is `<https://mycompany.experiencecloud.adobe.com/...>` then your Tenant ID is "mycompany."
 
-1. Send your request, after ensuring you have selected the correct environment. You should receive a response containing your list of activities.
+9. Send your request, after ensuring you have selected the correct environment. You should receive a response containing your list of activities.
    ![testtoken6](assets/configure-io-target-testtoken6.png)
 
 Congratulations! Now that you have verified your Adobe authentication, you may use it to interact with Adobe Target APIs (as well as other Adobe APIs). For example, you can [Use Recommendations APIs](https://experienceleague.adobe.com/docs/target-learn/recommendations-api-tutorial/recs-api-overview.html?lang=en) to create or manage recommendations, or you can use it with the [Target Delivery API](../api/delivery-api/index.md).
