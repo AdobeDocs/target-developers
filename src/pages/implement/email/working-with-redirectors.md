@@ -34,7 +34,7 @@ For help deciding the right setup see [Non-JavaScript-Based Implementations](/sr
 Before you can use a redirector, you must create it.
 
 1. Determine the ad's destination variations, including the default destination.
-1. Create the Redirector URL.
+2. Create the Redirector URL.
 
    ```
    https://<your_testandtarget_clientcode>.tt.omtrdc.net/​m2/yourclientcode/ubox
@@ -58,15 +58,15 @@ Before you can use a redirector, you must create it.
 
 Note that with Redirector you can be exposed to a risk of an Open Redirect Vulnerability. To avoid the unauthorized use of Redirector links by third parties, Adobe recommends you use "authorized hosts" to allowlist the default redirect URL domains. Target uses hosts to allowlist domains to which you want to allow redirects. For more information, see [Create Allowlists that specify hosts that are authorized to send mbox calls to Target](https://experienceleague.corp.adobe.com/docs/target/using/administer/hosts.html#allowlist) in *Hosts*.
 
-2. Validate the Redirector.
+3. Validate the Redirector.
    1. *Security best practice*: Ensure that the domain used in the Redirector is allowlisted, as indicated above. If you use a domain that is not allowlisted, Adobe will block any calls to that domain to prevent malicious actors from using the Redirector to redirect to potentially malicious domains.
    2. Insert the Redirector URL into a browser and refresh.
    3. Log in to your account, refresh your mbox list and verify the new Redirector is listed as an mbox.
-3. If you will test different destinations for one ad, create [Redirect Offers](https://experienceleague.corp.adobe.com/docs/target/using/experiences/vec/redirect-offer.html) for each version.
-4. Create the campaign.
+4. If you will test different destinations for one ad, create [Redirect Offers](https://experienceleague.corp.adobe.com/docs/target/using/experiences/vec/redirect-offer.html) for each version.
+5. Create the campaign.
 
    See [Non-JavaScript-Based Implementations](/src/pages/implement/email/index.md) for the right setup to meet your goals. 
-5. Complete QA on the campaign.
+6. Complete QA on the campaign.
 
    Create a dummy page with an `<a href>` containing the Redirector URL. Example:
 
@@ -76,13 +76,13 @@ Note that with Redirector you can be exposed to a risk of an Open Redirect Vulne
    redirectorlink_456&mboxDefault=http%3A%2F%2Fwww%2Eyourcompany%2Ecom%2F​usualdestination%2Ehtm>
    ```
 
-6. Verify that all experiences, default content, and reports act as expected on all browser types, for all of your environments.
+7. Verify that all experiences, default content, and reports act as expected on all browser types, for all of your environments.
 
 <InlineAlert variant="info" slots="text"/>
 
 Redirectors are not supported by Offer Preview or Browse for mbox. Preview experiences directly in a browser. Also, `mboxDebug` does not work with Redirectors.
 
-7. Submit the full Redirector URL to your Display Ad Network as the ad destination.
+8. Submit the full Redirector URL to your Display Ad Network as the ad destination.
 
 ## Use a redirector to pass Costs per Click and Revenue Per Click
 

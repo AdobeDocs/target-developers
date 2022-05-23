@@ -244,7 +244,7 @@ module.exports = {
           },
           {
             title: 'On-device decisioning for at.js',
-            path: '/implement/client-side/atjs/on-device-decisioning',
+            path: '/implement/client-side/atjs/on-device-decisioning/on-device-decisioning.md',
             pages: [
               {
                 title: 'On-device decisioning overview',
