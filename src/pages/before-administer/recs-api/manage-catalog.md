@@ -49,9 +49,9 @@ For example, Save Entities may be used to update items whenever certain threshol
 
     ![SaveEntities4.png](/assets/SaveEntities04.png)
 
-   <InlineAlert variant="info" slots="text"/>
-   
-   Below is sample JSON that adds entity.id kit2001 with associated entity values for a Toaster Oven product, into environment 6781.
+<InlineAlert variant="info" slots="text"/>
+
+Below is sample JSON that adds entity.id kit2001 with associated entity values for a Toaster Oven product, into environment 6781.
    
    ```
        {
