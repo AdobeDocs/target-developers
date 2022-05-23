@@ -54,9 +54,9 @@ Before you can use a redirector, you must create it.
 
      This must be URL encoded and must be an absolute reference. You can use the [HTML URL Encoding Reference](https://www.w3schools.com/tags/ref_urlencode.asp) to quickly encodes your URLs.
 
-     <InlineAlert variant="warning" slots="text"/>
-     
-     Note that with Redirector you can be exposed to a risk of an Open Redirect Vulnerability. To avoid the unauthorized use of Redirector links by third parties, Adobe recommends you use "authorized hosts" to allowlist the default redirect URL domains. Target uses hosts to allowlist domains to which you want to allow redirects. For more information, see [Create Allowlists that specify hosts that are authorized to send mbox calls to Target](https://experienceleague.corp.adobe.com/docs/target/using/administer/hosts.html#allowlist) in *Hosts*.
+<InlineAlert variant="warning" slots="text"/>
+
+Note that with Redirector you can be exposed to a risk of an Open Redirect Vulnerability. To avoid the unauthorized use of Redirector links by third parties, Adobe recommends you use "authorized hosts" to allowlist the default redirect URL domains. Target uses hosts to allowlist domains to which you want to allow redirects. For more information, see [Create Allowlists that specify hosts that are authorized to send mbox calls to Target](https://experienceleague.corp.adobe.com/docs/target/using/administer/hosts.html#allowlist) in *Hosts*.
 
 2. Validate the Redirector.
    1. *Security best practice*: Ensure that the domain used in the Redirector is allowlisted, as indicated above. If you use a domain that is not allowlisted, Adobe will block any calls to that domain to prevent malicious actors from using the Redirector to redirect to potentially malicious domains.
@@ -78,9 +78,9 @@ Before you can use a redirector, you must create it.
 
 6. Verify that all experiences, default content, and reports act as expected on all browser types, for all of your environments.
 
-   <InlineAlert variant="info" slots="text"/>
-   
-   Redirectors are not supported by Offer Preview or Browse for mbox. Preview experiences directly in a browser. Also, `mboxDebug` does not work with Redirectors.
+<InlineAlert variant="info" slots="text"/>
+
+Redirectors are not supported by Offer Preview or Browse for mbox. Preview experiences directly in a browser. Also, `mboxDebug` does not work with Redirectors.
 
 7. Submit the full Redirector URL to your Display Ad Network as the ad destination.
 

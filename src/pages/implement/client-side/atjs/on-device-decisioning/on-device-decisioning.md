@@ -234,15 +234,15 @@ Make sure you enable the toggle before you initialize the Adobe Target SDK to us
 ## How do I configure at.js 2.5.0+ to use on-device decisioning?
 
 1. Click **Administration** > **Implementation** > **Account details**.
-1. Under **Implementation Methods** > **Main Implementation Method**, click **Edit** next to your at.js version (must be at.js 2.5.0 or later).
+2. Under **Implementation Methods** > **Main Implementation Method**, click **Edit** next to your at.js version (must be at.js 2.5.0 or later).
  
    ![Edit Main Implementation Method settings](/assets/main-implementation-method.png)
 
-   <InlineAlert variant="warning" slots="text"/>
-   
-   Before changing these default settings, consult with Client Care to avoid affecting your current implementation.
+<InlineAlert variant="warning" slots="text"/>
 
-2. Select the desired decisioning method:
+Before changing these default settings, consult with Client Care to avoid affecting your current implementation.
+
+3. Select the desired decisioning method:
 
    * Server-side only
    * On-device only

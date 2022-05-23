@@ -40,9 +40,9 @@ For help selecting the right setup see [Non-JavaScript-Based Implementations](/s
 
 2. Create [Redirect Offers](https://experienceleague.corp.adobe.com/docs/target/using/experiences/offers/offer-redirect.html) for each alternative image.
 
-   <InlineAlert variant="info" slots="text"/>
-   
-   AdBoxes must be loaded with a Redirect Offer or the default content offer. Other offers types will not work. Because the AdBox is a URL, it can only display the URLs it receives, so only the Redirect Offer works.
+<InlineAlert variant="info" slots="text"/>
+
+AdBoxes must be loaded with a Redirect Offer or the default content offer. Other offers types will not work. Because the AdBox is a URL, it can only display the URLs it receives, so only the Redirect Offer works.
 
 3. Create the activity.
 
