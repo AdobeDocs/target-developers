@@ -37,6 +37,7 @@ The change is automatically saved when you select a different global mbox.
 
    Update the name of the custom global mbox to match the name used in Step 2, above.
 
+
 <InlineAlert variant="warning" slots="text"/>
 
 All activities in your account sync with this mbox. Ensure that the global mbox is present on your site so that activities continue functioning. Be sure to edit and re-save affected activities that were created with the Visual Experience Composer (VEC) that sync with this mbox. It is not necessary to re-save activities created in the Form-Based Experience Composer or via API.
