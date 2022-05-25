@@ -75,7 +75,7 @@ at.js 2.x enhances Adobe Target's support for SPAs and integrates with other Exp
 <!-- <https://video.tv.adobe.com/v/26250>-->
 <!-- <https://images-tv.adobe.com/mpcv3/094dce18-e23a-4532-bf3a-9558b56916f6_1550532873.854x480at800_h264.mp4>-->
 <!-- <https://images-tv.adobe.com/mpcv3/094dce18-e23a-4532-bf3a-9558b56916f6_1550532873.1280x720at2000_h264.mp4>-->
-</Understanding-How-Adobe-Target's-at.js-2.0-Works.mp4>
+<../../../../../static/Understanding-How-Adobe-Target's-at.js-2.0-Works.mp4>
 
 See [Understanding how at.js 2.x works](https://experienceleague.adobe.com/docs/target-learn/tutorials/implementation/understanding-how-atjs-20-works.html) for more information.
 
