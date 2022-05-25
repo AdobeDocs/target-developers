@@ -172,15 +172,15 @@ Use the Recommendations API.
 
 <DiscoverBlock slots="link, text"/> 
 
-[Recommendations API tutorial](api-guides/recs-api/)
+[Recommendations API tutorial](before-administer/recs-api/)
 
 Practice using the Recommendations API in this hands-on tutorial.
 
 <DiscoverBlock slots="link, text"/> 
 
-[Admin Console](https://experienceleague.adobe.com/docs/target/using/administer/administrating-target.html) 
+[Admin Console APIs](https://developer.adobe.com/umapi/) 
 
-Administer Adobe Target using the Target UI.
+Manage users and product entitlements through the Adobe User Management and User Sync APIs.
 
 
 ## Contributing 
