@@ -37,7 +37,7 @@ The following sections provide more information about the various APIs and the N
 
 ## Server Side Delivery APIs
 
-Link: [Server Side Delivery APIs](https://developers.adobetarget.com/api/delivery-api/)
+Link: [Server Side Delivery APIs](../delivery-api/index.md)
 
 `/rest/v1/delivery`
 
@@ -71,6 +71,6 @@ Check out our [Sample Apps](sdk-guides/sample-apps/) to have fun and play around
 
 ## Target Recommendations APIs
 
-Link: [Target Recommendations APIs](https://developers.adobetarget.com/api/recommendations) and [Adobe Recommendations API Overview](https://experienceleague.adobe.com/docs/target-learn/recommendations-api-tutorial/recs-api-overview.html).
+Link: [Target Recommendations APIs](https://developers.adobetarget.com/api/recommendations) and [Adobe Recommendations API Overview](../../before-administer/recs-api/index.md).
 
 The Recommendations APIs let you programmatically interact with Target recommendations servers. These APIs can be integrated with a range of application stacks to perform functions that you would typically do via the Target user interface.
