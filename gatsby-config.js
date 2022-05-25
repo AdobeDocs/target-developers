@@ -498,39 +498,39 @@ module.exports = {
       },
       {
         title: 'On-Device Decisioning',
-        path: '/implement/server-side/sdk-guides/atjs/on-device-decisioning/',
+        path: '/implement/server-side/sdk-guides/on-device-decisioning/',
         pages: [
           {
             title: 'Introduction to On-Device Decisioning',
-            path: '/implement/server-side/sdk-guides/atjs/on-device-decisioning/'
+            path: '/implement/server-side/sdk-guides/on-device-decisioning/'
           },
           {
             title: 'Rule artifact',
-            path: '/implement/server-side/sdk-guides/atjs/on-device-decisioning/rule-artifact-overview.md'
+            path: '/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md'
           },
           {
             title: 'Execute A/B tests with feature flags',
-            path: '/implement/server-side/sdk-guides/atjs/on-device-decisioning/execute-ab-tests-with-feature-flags.md'
+            path: '/implement/server-side/sdk-guides/on-device-decisioning/execute-ab-tests-with-feature-flags.md'
           },
           {
             title: 'Execute feature tests with attributes',
-            path: '/implement/server-side/sdk-guides/atjs/on-device-decisioning/execute-feature-tests-with-attributes.md'
+            path: '/implement/server-side/sdk-guides/on-device-decisioning/execute-feature-tests-with-attributes.md'
           },
           {
             title: 'Manage rollouts for feature tests',
-            path: '/implement/server-side/sdk-guides/atjs/on-device-decisioning/manage-rollouts-for-feature-tests.md'
+            path: '/implement/server-side/sdk-guides/on-device-decisioning/manage-rollouts-for-feature-tests.md'
           },
           {
             title: 'Deliver personalization',
-            path: '/implement/server-side/sdk-guides/atjs/on-device-decisioning/deliver-personalization.md'
+            path: '/implement/server-side/sdk-guides/on-device-decisioning/deliver-personalization.md'
           },
           {
             title: 'Supported features',
-            path: '/implement/server-side/sdk-guides/atjs/on-device-decisioning/supported-features.md'
+            path: '/implement/server-side/sdk-guides/on-device-decisioning/supported-features.md'
           },
           {
             title: 'Troubleshooting',
-            path: '/implement/server-side/sdk-guides/atjs/on-device-decisioning/troubleshooting.md'
+            path: '/implement/server-side/sdk-guides/on-device-decisioning/troubleshooting.md'
           }
         ]
       },
