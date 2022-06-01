@@ -382,7 +382,7 @@ Auto-Target activities are supported through at.js 2.*x* and the VEC when all mo
 |Form-based Experience Composer|Yes|
 |Visual Experience Composer (VEC)|Yes|
 |Custom code|Yes|
-|Response tokens|[Yes](#response-tokens)|
+|[Response tokens](#response-tokens)|Yes|
 |Click-tracking|Yes|
 |Multi-activity delivery|Yes|
 |targetGlobalSettings|Yes (but not x-domain)|
