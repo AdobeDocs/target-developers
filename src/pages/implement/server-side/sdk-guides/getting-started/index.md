@@ -21,7 +21,7 @@ In order to get up and running, we encourage you to create your first [on-device
 
 Enabling on-device decisioning ensures an A/B activity is executed at near-zero latency. To enable this feature, navigate to **Administration** > **Implementation** > **Account details** and enable the **On-Device Decisioning** toggle.
 
-   ![alt image](./asset-odd-toggle.png)
+   ![alt image](./assets/asset-odd-toggle.png)
 
 <InlineAlert variant="info" slots="text"/>
 
@@ -134,43 +134,43 @@ target_client = TargetClient.create(CONFIG)
 
 1. In Adobe Target, navigate to the **Activities** page, then select **Create Activity** > **A/B test**. 
 
-   ![alt image](./asset-ab.png)
+   ![alt image](./assets/asset-ab.png)
 
 2. In the **Create A/B Test Activity** modal, leave the default Web option selected (1), select **Form** as your experience composer (2), select **Default Workspace** with **No Property Restrictions**(3), then click **Next** (4).
 
-   ![alt image](./asset-form.png)
+   ![alt image](./assets/asset-form.png)
 
 3. In the **Experiences** step of activity creation, provide a name for your activity (1) and add a second experience, Experience B, by clicking **Add Experience** (2). Enter the location name of your choice (3). For example, `ondevice-featureflag` or `homepage-addtocart-featureflag` are location names indicating the destinations for feature flag testing.  In the example shown below, `ondevice-featureflag` is the location defined for Experience B. Optionally, you may add Audience Refinements (4) to restrict qualification to the activity.
 
-   ![alt image](./asset-location.png)
+   ![alt image](./assets/asset-location.png)
 
 4. In the **CONTENT** section on the same page, select **Create JSON Offer** in the drop-down (1) as shown.
 
 
-   ![alt image](./asset-offer.png)
+   ![alt image](./assets/asset-offer.png)
 
 5. In the **JSON Data** text box that appears, type your feature flag variables for each experience (1), using a valid JSON object (2).
 
    Enter the feature flag variables for Experience A.
 
-   ![alt image](./asset-json_a.png)
+   ![alt image](./assets/asset-json_a.png)
 
    Enter the feature flag variables for Experience B.
 
-   ![alt image](./asset-json_b.png)
+   ![alt image](./assets/asset-json_b.png)
 
 
 6. Click **Next** (1) to advance to the **Targeting** step of activity creation.
 
-   ![alt image](./asset-next_2_t.png)
+   ![alt image](./assets/asset-next_2_t.png)
 
 7. In the **Targeting** step example shown below, Audience Targeting (2) remains on the default set of All Visitors, for simplicity. This means the activity is untargeted. However, note Adobe recommends you always target your audiences for production activities. Click **Next** (3) to advance to the **Goals & Settings** step of activity creation.
 
-   ![alt image](./asset-next_2_g.png)
+   ![alt image](./assets/asset-next_2_g.png)
 
 8. In the **Goals & Settings** step, set **Reporting Source** to **Adobe Target** (1). Define the **Goal Metric** as **Conversion**, specifying the details based on your site's conversion metrics (2). Click **Save & Close** (3) to save the activity.
 
-   ![alt image](./asset-conv.png)
+   ![alt image](./assets/asset-conv.png)
 
 ## 5. Implement and render the feature in your application
 
@@ -354,4 +354,4 @@ target_client.send_notifications({
 
 You must have the **Approver** or **Publisher** [user role](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) to perform this step.
 
-![alt image](./asset-activate.png)
+![alt image](./assets/asset-activate.png)
