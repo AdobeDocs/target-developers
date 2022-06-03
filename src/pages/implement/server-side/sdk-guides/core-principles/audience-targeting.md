@@ -2,10 +2,67 @@
 
 ## Overview
 
-Audiences can be used to target your experimentation and personalization activities. Adobe Target supports myriad powerful audience targeting capabilities out of the box. The following rules and their corresponding attributes are available for [audience targeting](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/create-audience.html):
+Audiences can be used to target your experimentation and personalization activities. Adobe Target supports myriad powerful audience targeting capabilities out of the box. The following attributes are available for [audience targeting](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/create-audience.html):
 
+|Rule|Attributes|
+| --- | --- |
+|[Target Library](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/target-library.html)|
+Referred from Bing
+Chrome Browser
+Firefox Browser
+Referred from Google
+Internet Explorer
+Linux Operating System
+Mac OS Operating System
+New Visitors
+Returning Visitors
+Safari Browser
+Tablet Device
+Windows Operating System
+Referred from Yahoo|
+|[Geo](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html)|
+Country/Region
+State
+City
+Zip Code
+Latitude
+Longitude
+DMA
+Mobile Carrier|
+|[Network](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/network.html)|* ISP
+Domain Name
+Connection Speed|
+|[Mobile](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html)|Device Marketing Name
+Device Model
+Device Vendor
+Is Mobile Device
+Is Mobile Phone
+Is Tablet
+OS
+Screen Height (px)
+Screen Width (px)|
+|[Custom parameters](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html)|*any key / value pair*|
+|[Operating System](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/operating-system.html)|* Linux
+Macintosh
+Windows|
+|[Site pages](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html)|* Current Page
+Previous Page
+Landing Page
+HTTP Header|
+|[Browser](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html)|* Type
+Language
+Version|
+|[Visitor Profile](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html)|*any key / value pair, which is persisted*|
+|[Traffic Sources](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html)|* From Baidu
+From Bing
+From Google
+From Yahoo
+Referring Landing Page: URL
+Referring Landing Page: Domain
+Referring Landing Page: Query|
+|[Time Frame](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html)|Start Date / End Date|
 
-### Target Library
+<!--### Target Library
 
 For more information, see [Target Library](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/target-library.html).
 ​
@@ -112,6 +169,111 @@ For more information, see [Traffic Sources](https://experienceleague.adobe.com/d
 For more information, see [Time Frame](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html).
 
 * Start Date / End Date
+-->
+
+## Client Hints
+
+Adobe Target requires Client Hints for correct segmentation of Browser, Operating System, and Mobile audience attributes, as well as certain instances of Profile Scripts. For more information, see [User Agent and Client Hints](../core-principles/audience-targeting.md).
+
+### How to Pass Client Hints to Adobe Target
+
+Starting with Node.js SDK v2.4.0 and Java SDK v2.3.0, Client Hints can be sent to Target via `getOffers()` calls. Client Hints should be included on the `request.context` object, along with User Agent.
+
+<CodeBlock slots="heading, code" repeat="2" languages="js, JAVA" />
+
+#### Node.js SDK
+
+```js
+targetClient.getOffers({ 
+
+    request: { 
+
+        context: { 
+
+            channel: "mobile" 
+
+            userAgent: "Mozilla/5.0 (Linux; Android 12; Pixel 4a) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36", 
+
+            clientHints: { 
+
+                mobile: "true", 
+
+                platform: "Linux", 
+
+                platformVersion: "12.1", 
+
+                model: "Pixel 4a", 
+
+                browserUAWithMajorVersion: "\"Not A;Brand\";v=\"98\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"", 
+
+                browserUAWithFullVersion: "\" Not A;Brand\";v=\"98.0.0.0\", \"Chromium\";v=\"98.0.4844.83\", \"Google Chrome\";v=\"98.0.4758.101\"", 
+
+                bitness: "64", 
+
+                architecture: "x86" 
+
+            } 
+
+        }, 
+
+        execute: { 
+
+            mboxes: [{ 
+
+                name: "home", 
+
+                index: 1 
+
+            }] 
+
+        } 
+
+    } 
+
+});
+```
+
+#### Java SDK
+
+```java
+import com.adobe.target.delivery.v1.model.ClientHints; 
+
+import com.adobe.target.delivery.v1.model.Context; 
+
+import com.adobe.target.delivery.v1.model.ExecuteRequest; 
+
+import com.adobe.target.edge.client.model.TargetDeliveryRequest; 
+
+  
+
+ClientHints clientHints = new ClientHints(); 
+
+clientHints.setMobile(true); 
+
+clientHints.setPlatform("macOS"); 
+
+clientHints.setArchitecture("x86"); 
+
+clientHints.setPlatformVersion("11.3.1"); 
+
+clientHints.setBrowserUAWithMajorVersion( 
+
+  "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\""); 
+
+String userAgent = 
+
+  "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Safari/537.36"; 
+
+   
+
+TargetDeliveryRequest request = TargetDeliveryRequest.builder() 
+
+        .execute(new ExecuteRequest().pageLoad(pageLoad)) 
+
+        .context(new Context().clientHints(clientHints).userAgent(userAgent)) 
+
+        .build(); 
+```
 
 ## On-device decisioning
 
