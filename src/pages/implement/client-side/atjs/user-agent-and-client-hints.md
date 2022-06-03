@@ -1,5 +1,10 @@
 ---
-keywords: at.js;browser user agent;user agent;client hints;user-agent
+keywords:
+- at.js
+- browser user agent
+- user agent
+- client hints
+- user-agent
 description: Learn how Adobe Target uses the user-agent and Client Hints to qualify visitors for segmentation and personalization.
 title: User Agent and Client Hints
 feature: at.js
