@@ -112,7 +112,6 @@ For more information, see [Time Frame](https://experienceleague.adobe.com/docs/t
 
 * Start Date / End Date
 
-
 ## Client Hints
 
 Adobe Target requires Client Hints for correct segmentation of Browser, Operating System, and Mobile audience attributes, as well as certain instances of Profile Scripts. For more information, see [User Agent and Client Hints](../core-principles/audience-targeting.md).

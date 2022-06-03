@@ -50,7 +50,7 @@ However, in recent years some site owners and marketing vendors have used the us
 
 Browser developers created User-Agent Client Hints as a solution to this challenge. Client Hints still allow sites to collect necessary browser, operating system, and device information, while also providing increased protection against covert tracking methods, such as fingerprinting.
 
-## Client hints
+## Client Hints
 
 User-Agent Client Hints provide website owners the ability to access much of the same information available in the user-agent, but in a more privacy-preserving way. When modern browsers send a user-agent to a web server, the entire user-agent is sent on every request, regardless of whether it is required. Client Hints, on the other hand, enforce a model where the server must ask the browser for the additional information it wants to know about the client. Upon receiving this request, the browser can apply its own policies or user-configuration to determine what data is returned. Instead of exposing the entire user-agent by default on all requests, access is now managed in an explicit and auditable fashion.
 
@@ -132,7 +132,7 @@ The high entropy values include several additional pieces of information that ar
 
 Currently, Chromium-based browsers continue to send the user-agent along with Client Hints in the headers of requests made to web servers. However, starting in April 2022 and continuing through February 2023, the amount of data contained in the user-agent string will be reduced. Other browsers, such as Safari and Firefox, will continue to leverage the user-agent string; however, they too will be reducing the amount of information contained therein.
 
-## Target use cases that require Clint Hints
+## Target use cases that require Client Hints
 
 The following use cases in Target require Client Hints:
 
