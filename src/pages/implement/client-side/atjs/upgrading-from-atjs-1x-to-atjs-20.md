@@ -366,7 +366,7 @@ Auto-Target activities are supported through at.js 2.*x* and the VEC when all mo
 |Audiences|Yes|
 |Customer Attributes|Yes|
 |AEM Experience Fragments|Yes|
-|Adobe Experience Platform extension|[Yes](/src/pages/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md)|
+|[Adobe Experience Platform extension](/src/pages/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md)|Yes|
 |Debugger|Yes|
 |Auditor|Rules have not yet been updated for at.js 2.*x*|
 |Opt-In| No. Opt-in support for [GDPR](/src/pages/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.md) is supported in [at.js version 2.1.0](/src/pages/implement/client-side/atjs/target-atjs-versions.md).  |
