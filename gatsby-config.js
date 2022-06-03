@@ -357,6 +357,10 @@ module.exports = {
             path: '/implement/client-side/atjs/atjs-cookies.md'
           },
           {
+            title: 'User-agent and Client Hints',
+            path: '/implement/client-side/atjs/user-agent-and-client-hints.md'
+          },
+          {
             title: 'Understand the Global mbox',
             path: '/implement/client-side/atjs/global-mbox/global-mbox-overview.md',
             pages: [
