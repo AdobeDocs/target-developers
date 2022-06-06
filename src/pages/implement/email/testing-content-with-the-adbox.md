@@ -38,7 +38,7 @@ For help selecting the right setup see [Non-JavaScript-Based Implementations](/s
    
      This must be URL encoded and must be an absolute reference. You can use the [HTML URL Encoding Reference](https://www.w3schools.com/tags/ref_urlencode.asp) to quickly encode your URLs.
 
-2. Create [Redirect Offers](https://experienceleague.corp.adobe.com/docs/target/using/experiences/offers/offer-redirect.html) for each alternative image.
+2. Create [Redirect Offers](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html) for each alternative image.
 
 <InlineAlert variant="info" slots="text"/>
 

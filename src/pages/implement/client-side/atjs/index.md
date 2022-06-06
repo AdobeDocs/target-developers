@@ -17,13 +17,13 @@ exl-id: 2193c02a-2a85-4ae1-bfbd-40fa7b87f0a0
 
 To implement Adobe Target client-side, you must use the at.js JavaScript library. 
 
-In a client-side implementation of Adobe Target, Target delivers the experiences associated with an activity directly to the client browser. The browser decides which experience to display and displays it. With a client-side implementation, you can use a WYSIWYG editor, the [Visual Experience Composer](https://experienceleague.corp.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html) (VEC), or a non-visual interface, the [Form-based Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html), to create your test and personalization experiences.
+In a client-side implementation of Adobe Target, Target delivers the experiences associated with an activity directly to the client browser. The browser decides which experience to display and displays it. With a client-side implementation, you can use a WYSIWYG editor, the [Visual Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html) (VEC), or a non-visual interface, the [Form-based Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html), to create your test and personalization experiences.
 
 ## What is at.js?
 
 The at.js library is the new implementation library for Target. The at.js library improves page-load times for web implementations and provides better implementation options for single-page applications. at.js is the recommended implementation library and is updated frequently with new capabilities. We recommend that all customers implement or migrate to the [latest version of at.js](../atjs/target-atjs-versions.md).
 
-For more information, see [Target JavaScript libraries](https://experienceleague.corp.adobe.com/docs/target/using/introduction/how-target-works.html#libraries).
+For more information, see [Target JavaScript libraries](https://experienceleague.adobe.com/docs/target/using/introduction/how-target-works.html#libraries).
 
 In the Target implementation illustrated below, the following Adobe Experience Cloud solutions are implemented: Analytics, Target, and Audience Manager. In addition, the following Experience Cloud core services are implemented: Adobe Experience Platform, Audiences, and Visitor ID Service.
 

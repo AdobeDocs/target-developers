@@ -169,7 +169,7 @@ To support Safari visitors, a better X-Domain would be “disabled” (sets only
 
 ## Can I use the Target Visual Experience Composer (VEC) in my single-page applications?
 
-Yes, you can use the VEC for your SPA if you use at.js 2.x. For more information, see [Single Page (SPA) Visual Experience Composer](https://experienceleague.corp.adobe.com/docs/target/using/experiences/spa-visual-experience-composer.html).
+Yes, you can use the VEC for your SPA if you use at.js 2.x. For more information, see [Single Page (SPA) Visual Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/spa-visual-experience-composer.html).
 
 ## Can I use the Adobe Experience Cloud Debugger with at.js implementations?
 

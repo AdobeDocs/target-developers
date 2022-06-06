@@ -400,7 +400,7 @@ Auto-Target activities are supported through at.js 2.*x* and the VEC when all mo
 
 ## Response tokens
 
-at.js 2.*x*, just like at.js 1.*x*, uses the custom event `at-request-succeeded` to surface response tokens. For code examples using the `at-request-succeeded` custom event, see [Response tokens](https://experienceleague.corp.adobe.com/docs/target/using/administer/response-tokens.html).
+at.js 2.*x*, just like at.js 1.*x*, uses the custom event `at-request-succeeded` to surface response tokens. For code examples using the `at-request-succeeded` custom event, see [Response tokens](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html).
 
 ## at.js 1.*x* parameters to at.js 2.*x* payload mapping
 

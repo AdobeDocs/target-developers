@@ -20,9 +20,9 @@ List of Frequently Asked Questions (FAQs) about global mboxes.
 
 Only one global mbox is supported across your account.
 
-You can limit where your activities run by adding URL rules to your activities. For more information, see [Include the Same Experience on Similar Pages](https://experienceleague.corp.adobe.com/docs/target/using/experiences/vec/temtest.html).
+You can limit where your activities run by adding URL rules to your activities. For more information, see [Include the Same Experience on Similar Pages](https://experienceleague.adobe.com/docs/target/using/experiences/vec/temtest.html).
 
-You could also pass a parameter on the page using [targetPageParams](https://experienceleague.corp.adobe.com/docs/target/using/implement-target/client-side/at-js-implementation/functions-overview/targetpageparams.html) and then select those parameters in the "configure URL" section in the Visual Experience Composer (VEC) or by adding the parameters as "refinements" in the Form-Based Experience Composer.
+You could also pass a parameter on the page using [targetPageParams](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js-implementation/functions-overview/targetpageparams.html) and then select those parameters in the "configure URL" section in the Visual Experience Composer (VEC) or by adding the parameters as "refinements" in the Form-Based Experience Composer.
 
 ## How do I pass revenue data on a Target global mbox?
 

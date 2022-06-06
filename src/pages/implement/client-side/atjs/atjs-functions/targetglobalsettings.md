@@ -114,7 +114,7 @@ You can override the following settings:
 
   Server-side only is the default decisioning method that is set out of the box when at.js 2.5+ is implemented and deployed on your web properties.
 
-  Using server-side only as the default configuration means that all decisions are made on the Target edge network, which involves a blocking server call. This approach can introduce incremental latency, but it also provides significant benefits, such as giving you the ability to apply Target’s machine-learning capabilities that include [Recommendations](https://experienceleague.corp.adobe.com/docs/target/using/recommendations/recommendations.html), [Automated Personalization](https://experienceleague.corp.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html) (AP), and [Auto-Target](https://experienceleague.corp.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html) activities. 
+  Using server-side only as the default configuration means that all decisions are made on the Target edge network, which involves a blocking server call. This approach can introduce incremental latency, but it also provides significant benefits, such as giving you the ability to apply Target’s machine-learning capabilities that include [Recommendations](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html), [Automated Personalization](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html) (AP), and [Auto-Target](https://experienceleague.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html) activities. 
 
   Furthermore, enhancing your personalized experiences by using Target’s user profile, which is persisted across sessions and channels, can provide powerful outcomes for your business. 
 
@@ -358,7 +358,7 @@ var weatherProvider = {
         var API_KEY = "caa84fc6f5dc77b6372d2570458b8699"; 
         var lat = 44.426767399999996; 
         var lon = 26.1025384; 
-        var url = "//api.openweathermap.org/data/2.5/weather?lang=en"; 
+        var url = "//api.openweathermap.org/data/2.5/weather?"; 
         var data = { 
           lat: lat, 
           lon: lon, 

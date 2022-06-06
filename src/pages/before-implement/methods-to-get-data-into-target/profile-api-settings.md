@@ -36,11 +36,11 @@ For added security, you can require that the Bulk Update API call require a vali
 
    * At least Editor permission (or Approver)
 
-     For more information for Target Standard customers, see [Specify roles and Permissions](https://experienceleague.corp.adobe.com/docs/target/using/administer/manage-users/users/user-management.html#roles-permissions) in *Users*. For more information for Target Premium customers, see [Configure enterprise permissions](https://experienceleague.corp.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html).
+     For more information for Target Standard customers, see [Specify roles and Permissions](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/users/user-management.html#roles-permissions) in *Users*. For more information for Target Premium customers, see [Configure enterprise permissions](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html).
 
    * Admin role on the workspace/product profile level
 
-     Workspaces are available to Target Premium customers only. For more information, see [Configure enterprise permissions](https://experienceleague.corp.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html).
+     Workspaces are available to Target Premium customers only. For more information, see [Configure enterprise permissions](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html).
 
    * Admin Rights (Sysadmin permission) on the Adobe Target product level
   

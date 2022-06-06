@@ -30,7 +30,7 @@ TLS 1.2 is the default as of March 1, 2020 and TLS 1.1 will no longer be support
 
 Adobe will be moving customers in a phased manner to TLS 1.2. For those, whose domains are already 1.2 compliant, we will move them to TLS 1.2 without any changes needed from you. Most customer domains already support TLS 1.2; however, if your domain does not support TLS 1.2, we will keep those domains on TLS 1.1 like today (until March 2020).
 
-You should not face any issue during this migration phase. If the VEC has stopped loading a site that was earlier working, [open a Client Care ticket](https://experienceleague.corp.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?lang=en#reference_ACA3391A00EF467B87930A450050077C) citing this migration as a possible cause.
+You should not face any issue during this migration phase. If the VEC has stopped loading a site that was earlier working, [open a Client Care ticket](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?#reference_ACA3391A00EF467B87930A450050077C) citing this migration as a possible cause.
 
 If, however, you are one of those customers who are on TSL 1.1 without supporting TLS 1.2, then you should plan for movement of your domains/infrastructure to TLS 1.2. We will continue to support the TLS 1.1 protocol until March 1, 2020. Starting March 1, 2020, Target will not support the TLS 1.1 protocol to be used for the VEC via the Enhanced Experience Composer capability.
 

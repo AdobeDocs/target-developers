@@ -61,7 +61,7 @@ This release contains the following changes:
 This release of at.js includes the following enhancements and changes:
 
 * [On-device decisioning](/src/pages/implement/client-side/atjs/on-device-decisioning/on-device-decisioning.md) support for at.js.
-* [Preview links](https://experienceleague.corp.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html) support for Automated Personalization activities
+* [Preview links](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html) support for Automated Personalization activities
 
 This release also removes support for Microsoft Internet Explorer 10 and above versions.
 
@@ -173,7 +173,7 @@ This release includes the following features and enhancements:
 
 * **Client-side analytics logging**: Give customers full control on how they want to send analytics data to Adobe Analytics, whether on the client-side or server-side. 
 
-  For more information, see [Client-side Analytics logging](https://experienceleague.corp.adobe.com/docs/target/using/integrate/a4t/before-implement.html#client-side).
+  For more information, see [Client-side Analytics logging](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html#client-side).
 
 * **Send notifications**: Allow developers to send notifications when an experience is rendered by their code instead of using `applyOffer()` or `applyOffers()`.
 
@@ -290,7 +290,7 @@ at.js version 1.5.0 is now available.
 * The details of the `at-request-succeeded` event contain the redirect flag. This flag can be used to determine if the page will be redirected to a different URL. If you want to know the URL, subscribe to `at-content-rendering-redirect`. (TNT-29834) 
 * Fixed an issue that caused `window.targetGlobalSettings.enabled` to fail with a runtime exception if it was set to false. (TNT-29829) 
 * Fixed an issue that caused the page to fail while loading in the Visual Experience Composer (VEC) if using custom code to a fire global mbox request and using body hiding. (TNT-29795) 
-* Added support for `screenOrientation`, `devicePixelRatio`, and `webGLRenderer`. These new Target request parameters are used for iPhone X and other modern device detection. For more information, see [Mobile](https://experienceleague.corp.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html). (TNT-29781) 
+* Added support for `screenOrientation`, `devicePixelRatio`, and `webGLRenderer`. These new Target request parameters are used for iPhone X and other modern device detection. For more information, see [Mobile](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html). (TNT-29781) 
 * Fixed an issue where the Adobe Audience Manager (AAM) location hint wasn't always sent. (TNT-29695) 
 * For browsers that support it, at.js 1.5.0 switches to MutationObserver for selector polling. Versions prior to at.js 1.0.0 used a MutationObserver polyfill, which proved to be problematic. To avoid the polyfill issues, version1.5.0 uses the following pseudo code to decide which scheduling mechanism to use:
 
@@ -332,7 +332,7 @@ at.js version 1.3.0 is now available.
 
 at.js version 1.2.3 is now available.
 
-* Adds support for JSON offers. JSON offers are supported only in activities created using the Form-based Experience Composer. Currently the only way to use JSON offers is via direct API calls. See [Create JSON Offers](https://experienceleague.corp.adobe.com/docs/target/using/experiences/offers/create-json-offer.html).
+* Adds support for JSON offers. JSON offers are supported only in activities created using the Form-based Experience Composer. Currently the only way to use JSON offers is via direct API calls. See [Create JSON Offers](https://experienceleague.adobe.com/docs/target/using/experiences/offers/create-json-offer.html).
 
 ## at.js Version 1.2.2
 
@@ -370,7 +370,7 @@ at.js version 1.2 is now available as a maintenance release that contains mostly
 
 The following enhancements and fixes are included in at.js version 1.1:
 
-* Added response token handling. For more information, see [Response Tokens](https://experienceleague.corp.adobe.com/docs/target/using/administer/response-tokens.html). 
+* Added response token handling. For more information, see [Response Tokens](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html). 
 * Resolved issue so that `document.currentScript polyfill` doesn't interfere with Angular 1.X. 
 * Made changes to ensure that click tracking doesn't interfere with visibility property. Click tracking elements are marked with the `at-element-click-tracking` CSS class instead of `at-element-marker`.
 
@@ -404,7 +404,7 @@ The following enhancements and fixes are included in at.js version 0.9.7:
 
 The following enhancements and fixes are included in at.js version 0.9.6:
 
-* Redirect offer support for A4T. After you download and install at.js version 0.9.6, you can use redirect offers in activities that use Adobe Analytics as the Reporting Source for Target (A4T). Besides at.js version 0.9.6, there are other minimum requirements your implementation must meet in order to use redirect offers and A4T. For more information and additional important information you should know, see [Redirect Offers - A4T FAQ](https://experienceleague.corp.adobe.com/docs/target/using/integrate/a4t/a4t-faq/a4t-faq-redirect-offers.html). 
+* Redirect offer support for A4T. After you download and install at.js version 0.9.6, you can use redirect offers in activities that use Adobe Analytics as the Reporting Source for Target (A4T). Besides at.js version 0.9.6, there are other minimum requirements your implementation must meet in order to use redirect offers and A4T. For more information and additional important information you should know, see [Redirect Offers - A4T FAQ](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t-faq/a4t-faq-redirect-offers.html). 
 * Prior to at.js 0.9.6, when the Visitor API was present on the page and the `visitorApiTimeout` setting was too aggressive, Target could run into a situation when no MCID data was sent in the Target request. This could lead to issues like unstitched hits in Analytics when using A4T.
 
   This behavior has been changed in at.js 0.9.6, even if the `visitorApiTimeout` is set to say 1 ms, Target will try to collect SDID, tracking servers, and customer IDs data and send those in the Target request. 

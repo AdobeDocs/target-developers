@@ -220,7 +220,7 @@ Now, wherever `triggerView()` is implemented on your SPA, the Views and actions 
 
 ## Single Page App Visual Experience Composer
 
-After you have completed installing at.js 2.x and adding `triggerView()` to your site, use the VEC to run A/B and XT activities. For more information, see [Single Page App (SPA) Visual Experience Composer](https://experienceleague.corp.adobe.com/docs/target/using/experiences/spa-visual-experience-composer.html).
+After you have completed installing at.js 2.x and adding `triggerView()` to your site, use the VEC to run A/B and XT activities. For more information, see [Single Page App (SPA) Visual Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/spa-visual-experience-composer.html).
 
 <InlineAlert variant="info" slots="text"/>
 
@@ -228,7 +228,7 @@ The VEC for SPAs is really the same VEC that you use on regular web pages, but s
 
 ## Use TriggerView to ensure that A4T works correctly with at.js 2.x and SPAs
 
-To ensure that [Analytics for Target](https://experienceleague.corp.adobe.com/docs/target/using/integrate/a4t/a4t.html) (A4T) works correctly with at.js 2.x, be sure to send the same SDID in the Target request and in the Analytics request.
+To ensure that [Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) (A4T) works correctly with at.js 2.x, be sure to send the same SDID in the Target request and in the Analytics request.
 
 As best practices related to SPAs:
 

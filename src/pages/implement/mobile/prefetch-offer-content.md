@@ -22,7 +22,7 @@ This process reduces the load time, prevents multiple network calls, and allows 
 Consider the following limitations when using the prefetch method with the iOS and Android Mobile SDKs:
 
 * Prefetch content does not persist across launches. The prefetch content is cached as long as the application lives or until the `clearPrefetchCache()` method is called.
-* Prefetch functionality is not supported for Auto-Allocate and Auto-Target traffic allocation methods, for Automated Personalization or Recommendations activity types, or for [recommendations offers within an A/B or XT activity](https://experienceleague.corp.adobe.com/docs/target/using/recommendations/recommendations-as-an-offer.html).
+* Prefetch functionality is not supported for Auto-Allocate and Auto-Target traffic allocation methods, for Automated Personalization or Recommendations activity types, or for [recommendations offers within an A/B or XT activity](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-as-an-offer.html).
 
 For more information, including prefetch methods, public classes, and code samples, see:
 

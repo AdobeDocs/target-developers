@@ -13,7 +13,7 @@ The Adobe Mobile SDK contacts the Target server to get the content along with ot
 
 A *target location* is also referred to as an mbox. An identified location in the app is enabled for testing or personalization (for example, the welcome message on the home screen). These locations are identified during the test creation process.
 
-A *[success metric](https://experienceleague.corp.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html)* is an action performed by the user that identifies if a specific activity was successful (such as signing up, making a purchase, booking a ticket, and so on).
+A *[success metric](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html)* is an action performed by the user that identifies if a specific activity was successful (such as signing up, making a purchase, booking a ticket, and so on).
 
 ![alt image](assets/mobile-target-location.png)
 

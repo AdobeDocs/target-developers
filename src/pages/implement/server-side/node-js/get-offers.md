@@ -42,7 +42,7 @@ The `options` object has the following structure:
 |targetCookie|Object|Target cookie|
 |targetLocationHintCookie|Object|Target location hint cookie|
 |analyticsDetails|Array|Analytics payload, in case of client-side Analytics usage|
-|responseTokens|Array|A list of [Response tokens](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?lang=en).|
+|responseTokens|Array|A list of [Response tokens](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?).|
 |trace|Array|Aggregated trace data for all request mboxes/views|
 |status|Object|An object containing the status of the response.|
 |decisioningMethod|String|Determines which decisioning method to use ([on-device](../../sdk-guides/on-device-decisioning/index.md), server-side, hybrid)|

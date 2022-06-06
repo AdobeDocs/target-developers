@@ -60,6 +60,6 @@ Attributes in mboxCreate code:
 
 ## Links to relevant information
 
-[Profile Attributes](https://experienceleague.corp.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html?lang=en#audiences)
+[Profile Attributes](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html)
 
-[Visitor Profile](https://experienceleague.corp.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html?lang=en#audiences)
+[Visitor Profile](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html)

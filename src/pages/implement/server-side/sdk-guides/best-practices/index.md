@@ -7,7 +7,7 @@ Adobe recommends the following best practices when using on-device decisioning:
 When using "on-device" as the decisioning method, the artifact is downloaded when the visitor loads the webpage for the first time. Any activity qualification that needs to happen on the first page load (no cache) happens only after the artifact is fully downloaded. There are certain best practices you can follow to ensure that activity qualifications happen fast for a new anonymous visitor.
 
 * Deactivate "On-Device" capable activities that are not meant to be in the artifact.
-* If you have Target Premium, you can use [properties/workspaces](https://experienceleague.corp.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html) to create different artifacts files for different workspaces.
+* If you have Target Premium, you can use [properties/workspaces](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html) to create different artifacts files for different workspaces.
 * If your artifact files becomes very large due to legitimate reasons, you can use the "hybrid" decisioning method. This method allows you to download the artifact in parallel and all Target API calls go over the wire until the artifact has downloaded. Read the best practices section on "Hybrid" decisioning mode below to learn more about this approach.
 * If you have a Single Page Application (SPA), Adobe recommends that you load and initialize at.js before loading your application's main JavaScript file during first page load. This approach initiates the artifact downloading much earlier, providing a faster experience rendering.
 

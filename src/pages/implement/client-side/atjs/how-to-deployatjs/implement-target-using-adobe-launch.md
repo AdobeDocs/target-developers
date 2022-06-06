@@ -23,7 +23,7 @@ Tags in Adobe Experience Platform are the next generation of tag management capa
 
 <InlineAlert variant="info" slots="text"/>
 
-Adobe Experience Platform Launch has been rebranded as a suite of data collection technologies in Adobe Experience Platform. Several terminology changes have rolled out across the product documentation as a result. Please refer to the following [document](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en) for a consolidated reference of the terminology changes.
+Adobe Experience Platform Launch has been rebranded as a suite of data collection technologies in Adobe Experience Platform. Several terminology changes have rolled out across the product documentation as a result. Please refer to the following [document](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?) for a consolidated reference of the terminology changes.
 
 The following table lists the various sources where you can get more information:
 

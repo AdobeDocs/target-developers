@@ -19,18 +19,18 @@ The Adobe Target JS SDK gives customers the flexibility to choose between perfor
 
 ## Supported activity types
 
-The following table indicates which [activity types](https://experienceleague.corp.adobe.com/docs/target/using/activities/target-activities-guide.html) created by the [Form-based Experience Composer](https://experienceleague.corp.adobe.com/docs/target/using/experiences/form-experience-composer.html) or [Visual Experience Composer](https://experienceleague.corp.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html) (VEC) are supported or not supported for on-device decisioning.
+The following table indicates which [activity types](https://experienceleague.adobe.com/docs/target/using/activities/target-activities-guide.html) created by the [Form-based Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html) or [Visual Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html) (VEC) are supported or not supported for on-device decisioning.
 
 |Activity type|Supported?|
 | --- | --- |
-|[A/B Test](https://experienceleague.corp.adobe.com/docs/target/using/activities/abtest/test-ab.html)|Yes|
-|[Auto-Allocate](https://experienceleague.corp.adobe.com/docs/target/using/activities/auto-allocate/automated-traffic-allocation.html)|No|
-|[Auto-Target](https://experienceleague.corp.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html) ![Premium](../../../assets/premium.png)|No|
-|[Multivariate Test](https://experienceleague.corp.adobe.com/docs/target/using/activities/multivariate-test/multivariate-testing.html) (MVT)|No|
-|[Experience Targeting](https://experienceleague.corp.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html) (XT)|Yes|
-|[Automated Personalization](https://experienceleague.corp.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html) ![Premium](../../../assets/premium.png)|No|
-|[Recommendations](https://experienceleague.corp.adobe.com/docs/target/using/recommendations/recommendations.html) ![Premium](../../../assets/premium.png)|No|
-|[Activities using Analytics for Target](https://experienceleague.corp.adobe.com/docs/target/using/integrate/a4t/a4t.html?) (A4T)|Yes|
+|[A/B Test](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html)|Yes|
+|[Auto-Allocate](https://experienceleague.adobe.com/docs/target/using/activities/auto-allocate/automated-traffic-allocation.html)|No|
+|[Auto-Target](https://experienceleague.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html) ![Premium](../../../assets/premium.png)|No|
+|[Multivariate Test](https://experienceleague.adobe.com/docs/target/using/activities/multivariate-test/multivariate-testing.html) (MVT)|No|
+|[Experience Targeting](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html) (XT)|Yes|
+|[Automated Personalization](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html) ![Premium](../../../assets/premium.png)|No|
+|[Recommendations](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html) ![Premium](../../../assets/premium.png)|No|
+|[Activities using Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?) (A4T)|Yes|
 
 ## Audience targeting
 
@@ -38,16 +38,16 @@ The following table indicates which audience rules are supported or not supporte
 
 |Audience rule|Supported?|
 | --- | --- |
-|[Geo](https://experienceleague.corp.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html)|Yes|
-|[Network](https://experienceleague.corp.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/network.html)|No|
-|[Mobile](https://experienceleague.corp.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html)|No|
-|[Custom parameters](https://experienceleague.corp.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html)|Yes|
-|[Operating System](https://experienceleague.corp.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/operating-system.html)|Yes|
-|[Site Pages](https://experienceleague.corp.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html)|Yes|
-|[Browser](https://experienceleague.corp.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html)|Yes|
-|[Visitor Profile](https://experienceleague.corp.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html)|No|
-|[Traffic Sources](https://experienceleague.corp.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html)|No|
-|[Time Frame](https://experienceleague.corp.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html)|Yes|
+|[Geo](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html)|Yes|
+|[Network](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/network.html)|No|
+|[Mobile](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html)|No|
+|[Custom parameters](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html)|Yes|
+|[Operating System](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/operating-system.html)|Yes|
+|[Site Pages](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html)|Yes|
+|[Browser](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html)|Yes|
+|[Visitor Profile](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html)|No|
+|[Traffic Sources](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html)|No|
+|[Time Frame](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html)|Yes|
 |Adobe Experience Cloud Audiences<br />(Audiences from Adobe Analytics, Adobe Audience Manager, and Adobe Experience Manager|No|
 
 ### Geo targeting for on-device decisioning
@@ -99,5 +99,5 @@ The following table indicates which allocation methods are supported or not supp
 |Allocation method|Supported?|
 | --- | --- |
 |Manual|Yes|
-|[Auto-allocate to best experience](https://experienceleague.corp.adobe.com/docs/target/using/activities/auto-allocate/automated-traffic-allocation.html)|No|
-|[Auto-target for personalized experiences](https://experienceleague.corp.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html)|No|
+|[Auto-allocate to best experience](https://experienceleague.adobe.com/docs/target/using/activities/auto-allocate/automated-traffic-allocation.html)|No|
+|[Auto-target for personalized experiences](https://experienceleague.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html)|No|

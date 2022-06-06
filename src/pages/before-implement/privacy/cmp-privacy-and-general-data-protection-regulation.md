@@ -40,7 +40,7 @@ Adobe Experience Cloud provides GDPR-ready APIs for Data Controllers that allow 
 For more information, see:
 
 * [Adobe General Data Protection Regulation API website](https://www.adobe.io/apis/experienceplatform/gdpr.html) 
-* [GDPR Documentation](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=en)
+* [GDPR Documentation](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?)
 
 ## California Consumer Privacy Act (CCPA) overview
 
@@ -83,7 +83,7 @@ There are three scenarios to consider when using Opt-In:
 
 1. **The Target tag is pre-approved via Adobe Experience Platform (or the data subject previously approved Target):** The Target tag is not held for consent and functions as expected.
 2. **The Target tag is NOT pre-approved and `bodyHidingEnabled` is FALSE:** The Target tag fires only after consent is collected from the customer. Before consent is collected, default content only is available. After consent is received, Target is called and personalized content is available to the data subject (visitor). Because only default content is available before consent, it is important to use an appropriate strategy, such as a splash page that covers any portion of the page or content that might be personalized. This process ensures that the experience remains consistent for the data subject (visitor).
-3. **The Target tag is NOT pre-approved and `bodyHidingEnabled` is TRUE:** The Target tag fires only after consent is collected from the customer. Before consent is collected, default content only is available. However, because `bodyHidingEnabled` is set to true, `bodyHiddenStyle` dictates what content on the page is hidden until the Target tag is fired (or the data subject declines opt-in, in which case default content is displayed). By default, `bodyHiddenStyle` is set to `body { opacity:0;}`, which hides the HTML body tag. Adobe's recommended page configuration is below so that the entire body of the page, other than the consent manager dialog, is hidden by putting the content of the page in one container and the consent manager dialogue in a separate container. This setup configures Target so that it hides the page content container only. See the [Privacy Service overview](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=en).
+3. **The Target tag is NOT pre-approved and `bodyHidingEnabled` is TRUE:** The Target tag fires only after consent is collected from the customer. Before consent is collected, default content only is available. However, because `bodyHidingEnabled` is set to true, `bodyHiddenStyle` dictates what content on the page is hidden until the Target tag is fired (or the data subject declines opt-in, in which case default content is displayed). By default, `bodyHiddenStyle` is set to `body { opacity:0;}`, which hides the HTML body tag. Adobe's recommended page configuration is below so that the entire body of the page, other than the consent manager dialog, is hidden by putting the content of the page in one container and the consent manager dialogue in a separate container. This setup configures Target so that it hides the page content container only. See the [Privacy Service overview](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?).
 
    The recommended page setup for scenario 3 is:
 
@@ -130,7 +130,7 @@ All GDPR and CCPA requests across Experience Cloud solutions, including Target, 
 
 ### What information does Adobe enable customers to delete in response to a data subject/user request?
 
-The information related to an individual visitor within Target is contained within the Target Visitor Profile. Target lets customers delete all data associated with an ID in their Visitor Profile. For examples of the profile data Target stores, see [Visitor Profile](https://experienceleague.corp.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html).
+The information related to an individual visitor within Target is contained within the Target Visitor Profile. Target lets customers delete all data associated with an ID in their Visitor Profile. For examples of the profile data Target stores, see [Visitor Profile](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html).
 
 Aggregated or anonymized data (for example, reporting data) that does not identify a particular individual, or data that is unrelated to a specific individual (for example, content data), is outside the scope of a user-deletion request.
 
@@ -158,7 +158,7 @@ Adobe does not currently offer a Consent Management Solution, but there are vari
 
 Target does provide opt-in functionality support via Adobe Experience Platform to support your consent management strategy. Opt-in functionality lets customers control how and when the Target tag is fired. There is also an option via Adobe Experience Platform to pre-approve the Target tag. Using Adobe Experience Platform to manage opt-in is the recommended approach. Further granular control exists in Adobe Experience Platform to hide select elements of your page before the Target firing that might be helpful to use as part of your consent strategy.
 
-For more information on GDPR, CCPA, and Adobe Experience Platform, see [The Adobe Privacy JavaScript Library and GDPR](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=en). Also, see the *Adobe Target and Adobe Experience Platform opt-in* section above.
+For more information on GDPR, CCPA, and Adobe Experience Platform, see [The Adobe Privacy JavaScript Library and GDPR](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?). Also, see the *Adobe Target and Adobe Experience Platform opt-in* section above.
 
 ### Does `AdobePrivacy.js` submit information to the GDPR API?
 
@@ -299,7 +299,7 @@ The following table contains description of the illustrative profile JSON fields
 |Sample_Parameter|Many pieces of information in the Target profile are uploaded or directly provided by the Data Controller. In this example, a parameter was uploaded into the Target profile using the Profile Update API. For more information, see [Methods to get Data into Target](/methods-to-get-data-into-target/methods-to-get-data-into-target.md).|
 |user.ReturnTimeOfDay|This standard field includes the time of day of a user’s most recent return visit.|
 |firstSessionStart|This standard field includes the time of day the user’s first session began.|
-|user.sessionCountScript|Many pieces of information in the Target profile are uploaded or directly provided by the Data Controller. In this example, a profile script is incrementing the number of sessions this visitor has made to the Data Controller’s site. For more information, see [Profile Script Attributes](https://experienceleague.corp.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html).|
+|user.sessionCountScript|Many pieces of information in the Target profile are uploaded or directly provided by the Data Controller. In this example, a profile script is incrementing the number of sessions this visitor has made to the Data Controller’s site. For more information, see [Profile Script Attributes](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html).|
 
 <InlineAlert variant="info" slots="text"/>
 

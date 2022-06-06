@@ -17,7 +17,7 @@ exl-id: 5ad6032b-9865-4c80-8800-705673657286
 ---
 # On-device decisioning for at.js
 
-Starting with version 2.5.0, at.js offers on-device decisioning. On-device decisioning lets you cache your [A/B Test](https://experienceleague.corp.adobe.com/docs/target/using/activities/abtest/test-ab.html) and [Experience Targeting](https://experienceleague.corp.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html) (XT) activities on the browser to perform in-memory decisioning without a blocking network request to the Adobe Target Edge Network. 
+Starting with version 2.5.0, at.js offers on-device decisioning. On-device decisioning lets you cache your [A/B Test](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html) and [Experience Targeting](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html) (XT) activities on the browser to perform in-memory decisioning without a blocking network request to the Adobe Target Edge Network. 
 
 Target also offers the flexibility of delivering the most relevant and up-to-date experience from your experimentation and Machine Learning-driven (ML-driven) personalization activities via a live server call. In other words, when performance is most important, you can choose to use on-device decisioning. However, when the most relevant, up-to-date, and ML-driven experience is needed, a server call can be made instead.
 
@@ -28,7 +28,7 @@ The benefits of on-device decisioning include:
 * **Deliver blazing fast decisions and experiences.** Bucketing and decisioning are performed in-memory and on the browser to avoid blocking network requests. 
 * **Enhance application performance.** Run experiments and deliver personalization to your customers and users without compromising end-user experiences. 
 * **Improve Google Site Quality Score.** With decisioning happening in-memory, improve the Google Site Quality score of your online business to make it more discoverable by consumers. 
-* **Learn from real-time analytics.** Gain insights from your activity performance in real time via [Analytics for Target](https://experienceleague.corp.adobe.com/docs/target/using/integrate/a4t/a4t.html) (A4T) reporting. A4T allows you to pivot your strategy at critical moments.
+* **Learn from real-time analytics.** Gain insights from your activity performance in real time via [Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) (A4T) reporting. A4T allows you to pivot your strategy at critical moments.
 
 ## Supported features
 
@@ -56,7 +56,7 @@ With on-device decisioning, Target introduces a new setting called Decisioning M
 
 Server-side only is the default decisioning method that is set out of the box when at.js 2.5.0+ is implemented and deployed on your web properties.
 
-Using server-side only as the default configuration means that all decisions are made on the Target edge network, which involves a blocking server call. This approach can introduce incremental latency, but it also provides significant benefits, such as giving you the ability to apply Target’s machine-learning capabilities that include [Recommendations](https://experienceleague.corp.adobe.com/docs/target/using/recommendations/recommendations.html), [Automated Personalization](https://experienceleague.corp.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html) (AP), and [Auto-Target](https://experienceleague.corp.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html) activities. 
+Using server-side only as the default configuration means that all decisions are made on the Target edge network, which involves a blocking server call. This approach can introduce incremental latency, but it also provides significant benefits, such as giving you the ability to apply Target’s machine-learning capabilities that include [Recommendations](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html), [Automated Personalization](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html) (AP), and [Auto-Target](https://experienceleague.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html) activities. 
 
 Furthermore, enhancing your personalized experiences by using Target’s user profile, which is persisted across sessions and channels, can provide powerful outcomes for your business. 
 
@@ -70,7 +70,7 @@ The following list corresponds to the numbers in the diagram:
 
 |Step|Description|
 | --- | --- |
-|1|The Experience Cloud Visitor ID is retrieved from the [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=en).|
+|1|The Experience Cloud Visitor ID is retrieved from the [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?).|
 |2|The at.js library loads synchronously and hides the document body.<br />   The at.js library can also be loaded asynchronously with an optional pre-hiding snippet implemented on the page.|
 |3|The at.js library hides the body to prevent flickering.|
 |4|A page-load request is made that includes all configured parameters, such as (ECID, Customer ID, Custom Parameters, User Profile, and so forth.)|

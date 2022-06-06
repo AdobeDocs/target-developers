@@ -56,13 +56,13 @@ Before you can use a redirector, you must create it.
 
 <InlineAlert variant="warning" slots="text"/>
 
-Note that with Redirector you can be exposed to a risk of an Open Redirect Vulnerability. To avoid the unauthorized use of Redirector links by third parties, Adobe recommends you use "authorized hosts" to allowlist the default redirect URL domains. Target uses hosts to allowlist domains to which you want to allow redirects. For more information, see [Create Allowlists that specify hosts that are authorized to send mbox calls to Target](https://experienceleague.corp.adobe.com/docs/target/using/administer/hosts.html#allowlist) in *Hosts*.
+Note that with Redirector you can be exposed to a risk of an Open Redirect Vulnerability. To avoid the unauthorized use of Redirector links by third parties, Adobe recommends you use "authorized hosts" to allowlist the default redirect URL domains. Target uses hosts to allowlist domains to which you want to allow redirects. For more information, see [Create Allowlists that specify hosts that are authorized to send mbox calls to Target](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html#allowlist) in *Hosts*.
 
 3. Validate the Redirector.
    1. *Security best practice*: Ensure that the domain used in the Redirector is allowlisted, as indicated above. If you use a domain that is not allowlisted, Adobe will block any calls to that domain to prevent malicious actors from using the Redirector to redirect to potentially malicious domains.
    2. Insert the Redirector URL into a browser and refresh.
    3. Log in to your account, refresh your mbox list and verify the new Redirector is listed as an mbox.
-4. If you will test different destinations for one ad, create [Redirect Offers](https://experienceleague.corp.adobe.com/docs/target/using/experiences/vec/redirect-offer.html) for each version.
+4. If you will test different destinations for one ad, create [Redirect Offers](https://experienceleague.adobe.com/docs/target/using/experiences/vec/redirect-offer.html) for each version.
 5. Create the campaign.
 
    See [Non-JavaScript-Based Implementations](/src/pages/implement/email/index.md) for the right setup to meet your goals. 

@@ -8,17 +8,17 @@ Adobe Target's server-side SDKs give developers the flexibility to choose betwee
 
 ## Activity types
 
-The following table indicates which [activity types](https://experienceleague.adobe.com/docs/target/using/activities/target-activities-guide.html) created using the [Form-based Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?lang=en) are supported or not supported for on-device decisioning.
+The following table indicates which [activity types](https://experienceleague.adobe.com/docs/target/using/activities/target-activities-guide.html) created using the [Form-based Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?) are supported or not supported for on-device decisioning.
 
 |Activity Type|Supported|
 | --- | --- |
-|[A/B Test](https://experienceleague.corp.adobe.com/docs/target/using/activities/abtest/test-ab.html)|Yes|
+|[A/B Test](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html)|Yes|
 |[Auto-Allocate](https://experienceleague.adobe.com/docs/target/using/activities/auto-allocate/automated-traffic-allocation.html)|No|
-|[Auto-Target](https://experienceleague.corp.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html)|No|
-|[Analytics for Target](https://experienceleague.corp.adobe.com/docs/target/using/integrate/a4t/a4t.html) (A4T)|Yes|
+|[Auto-Target](https://experienceleague.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html)|No|
+|[Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) (A4T)|Yes|
 |[Multivariate Test](https://experienceleague.adobe.com/docs/target/using/activities/multivariate-test/multivariate-testing.html) (MVT)|No|
-|[Experience Targeting](https://experienceleague.corp.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html) (XT)|Yes|
-|[Automated Personalization](https://experienceleague.corp.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html) (AP)|No|
+|[Experience Targeting](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html) (XT)|Yes|
+|[Automated Personalization](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html) (AP)|No|
 |[Recommendations](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html)|No|
 
 
