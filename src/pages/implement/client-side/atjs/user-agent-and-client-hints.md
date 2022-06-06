@@ -44,7 +44,7 @@ Over the years, the amount of browser and device information included in the use
 
 ## User-agent use cases
 
-User-agents have long been used to provide marketing and developer teams with important insights into how browsers, operating systems. and devices display site content, as well as how users interact with websites. User-agents are also used to block spam and filter bots that crawl sites for a variety of additional purposes. 
+User-agents have long been used to provide marketing and developer teams with important insights into how browsers, operating systems, and devices display site content, as well as how users interact with websites. User-agents are also used to block spam and filter bots that crawl sites for a variety of additional purposes. 
 
 However, in recent years some site owners and marketing vendors have used the user-agent along with other information included in request headers to create digital fingerprints that can be used as a means of identifying users without their knowledge. Despite the important purpose the user-agent serves for site owners, browser developers have decided to make changes to how user-agents operate to limit potential privacy issues for site visitors.
 
@@ -177,8 +177,10 @@ The following sections contain more information about how to pass Client Hints, 
 
 Starting with at.js 2.9.0, User Agent Client Hints will be collected automatically from the browser and sent to Target when `getOffer/getOffers()` is called. By default, at.js collects only "Low Entropy" Client Hints. If performing audience segmentation or using profile scripts based on data categorized as "High Entropy" from the preceding sections, you need to configure at.js to collect "High Entropy" Client Hints from the browser via `targetGlobalSettings`. 
 
-`window.targetGlobalSettings = { allowHighEntropyClientHints: true };`
+```
+window.targetGlobalSettings = { allowHighEntropyClientHints: true };
+```
 
 ### Server-side SDKs
 
-For more information on how to pass client hints via server-side SDKs, see [Client Hints](../../server-side/sdk-guides/core-principles/audience-targeting.md#client-hints)in the *Adobe Target Developer Guide*.
+For more information on how to pass Client Hints via server-side SDKs, see [Client Hints](../../server-side/sdk-guides/core-principles/audience-targeting.md#client-hints) under Server-side Implementation documentation.
