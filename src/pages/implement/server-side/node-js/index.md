@@ -8,7 +8,7 @@ All currently maintained versions of Node.js are supported (including LTS versio
 
 ## Getting Started
 
-To see how you can get started with using the Node.js SDK, navigate to the [Node.js SDK Getting Started Guide](../../sdk-guides/getting-started/node-js.md).
+To see how you can get started with using the Node.js SDK, navigate to the [Target SDK Getting Started Guide](../sdk-guides/getting-started/index.md).
 
 ## Sample App
 
