@@ -4,7 +4,7 @@ This reference guide shows how Adobe Target customers can install, initialize, a
 
 ## Pre-requisites
 
-* At a minimum [.NET Standard 2.0](https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md)
+* At a minimum [.NET Standard 2.0](https://github.com/dotnet/standard/blob/v2.1.0/docs/versions/netstandard2.0.md)
 * Recommended [.NET 5](https://github.com/dotnet/core/blob/main/release-notes/5.0/README.md)
 
 ## Getting Started
