@@ -5,7 +5,7 @@ description: Overview of the different Adobe Target APIs, including delivery api
 
 # Target API Overview
 
-This article describes the different Target APIs in general, before focusing on requirements specific to the Admin and Profile APIs.
+This article describes the different Target APIs in general, before focusing on requirements specific to the Admin and Profile APIs. If you wish to administer Target via the UI, see the [administration section of the *Adobe Target Business User Guide*](https://experienceleague.adobe.com/docs/target/using/administer/administrating-target.html?lang=en).
 
 ## API Types
 
