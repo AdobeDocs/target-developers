@@ -22,11 +22,11 @@ For added security, you can require that the Bulk Update API call require a vali
 **To require authentication and to generate an access token using the Target UI:**
 
 1. Click **Administration** > **Implementation**. 
-1. Under **Profile API** slide the **Require Authentication** toggle to the enabled or disabled position.
+2. Under **Profile API** slide the **Require Authentication** toggle to the enabled or disabled position.
 
    ![alt image](assets/profile_api_settings.png)
 
-1. (Conditional) If you enabled authentication requirements, click **Generate New Profile Authentication Token**.
+3. (Conditional) If you enabled authentication requirements, click **Generate New Profile Authentication Token**.
 
    ![alt image](assets/profile_api_settings_2.png)
 
@@ -44,7 +44,7 @@ For added security, you can require that the Bulk Update API call require a vali
 
    * Admin Rights (Sysadmin permission) on the Adobe Target product level
   
-  You can also generate a profile authentication token via API. For more information, see [Profiles](https://developers.adobetarget.com/api/#profiles) in the Adobe Target Admin and Profile API guide.
+  You can also generate a profile authentication token via API. For more information, see "Profiles" in the [Adobe Target Admin and Profile API guide](../../administer/admin-api/index.md).
 
 4. Copy the token and include it in the header of the request in the format: "Authorization" : "Bearer."
 
