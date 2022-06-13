@@ -8,7 +8,7 @@ In order to track events through Adobe Target's SDKs, follow this 2-step process
 
 1. Create and activate an Adobe Target activity with a goal metric in the UI.
 
-   *Insert image-report-settings.png*
+   ![alt image](./assets/report-settings.png)
 
 ## Goal Metrics and Events
 
@@ -27,7 +27,9 @@ Target SDKs call the underlying [Delivery API](../../../delivery-api/index.md). 
 * getOffers()
 * getAttributes()
 
-**NOTE**: When a prefetch object is passed within the request, the impression is not automatically incremented for the activities with mboxes within the prefetch object.
+<InlineAlert variant="info" slots="text"/>
+
+When a prefetch object is passed within the request, the impression is not automatically incremented for the activities with mboxes within the prefetch object.
 
 The `sendNotifications` method can be used to manually send events to Adobe Target and trigger an impression.
 
