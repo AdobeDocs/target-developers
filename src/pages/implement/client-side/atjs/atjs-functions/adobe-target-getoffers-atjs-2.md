@@ -32,7 +32,7 @@ This function was introduced with at.js 2.x. This function is not available for 
 
 <InlineAlert variant="info" slots="text"/>
 
-Consult the [Delivery API documentation](https://developers.adobetarget.com/api/delivery-api/#tag/Delivery-API) for information about the acceptable types for all fields listed below.
+Consult the [Delivery API documentation](../../../delivery-api/index.md) for information about the acceptable types for all fields listed below.
 
 |Field name|Required?|Limitations|Description|
 | --- | --- | --- | --- |
