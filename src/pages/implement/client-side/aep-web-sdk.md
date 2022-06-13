@@ -26,7 +26,7 @@ For more information, see the following links in the *Adobe Experience Platform 
 
 ## Tutorial: Implement Adobe Experience Cloud with Platform Web SDK
 
-Learn how to [implement Experience Cloud applications using Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html). For information specific to Target, see [Set up Target with Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html) within the tutorial.
+Learn how to implement Experience Cloud applications using Adobe Experience Platform Web SDK with [this tutorial](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html). For information specific to Target, see the tutorial section titled [Set up Target with Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html).
 
 ## Recommended documentation
 
