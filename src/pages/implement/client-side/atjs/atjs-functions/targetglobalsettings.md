@@ -236,9 +236,9 @@ The deviceIdLifetime setting is overrideable in at.js version 2.3.1 or later.
 
 ### serverState
 
-* **Type**: See [Hybrid personalization](#server-state) below.
-* **Default Value**: See [Hybrid personalization](#server-state) below.
-* **Description**: See [Hybrid personalization](#server-state) below.
+* **Type**: See [Hybrid personalization](#Hybrid-personalization) below.
+* **Default Value**: See [Hybrid personalization](#Hybrid-personalization) below.
+* **Description**: See [Hybrid personalization](#Hybrid-personalization) below.
 
 ### telemetryEnabled
 
