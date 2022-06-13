@@ -13,7 +13,10 @@ To see how you can get started with using the Java SDK, navigate to the [Target 
 
 ## Sample App
 
-Test drive the Java SDK in a [sample application](../sdk-guides/sample-apps/).
+Test drive the Java SDK:
+
+* By visiting the [Adobe Target On-device decisioning demo site](https://github.com/adobe/on-device-decisioning-demo-site)
+* In a [sample application](../sdk-guides/sample-apps/).
 
 ## Reference
 

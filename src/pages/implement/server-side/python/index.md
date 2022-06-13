@@ -12,7 +12,10 @@ To see how you can get started with using the Python SDK, navigate to the [Targe
 
 ## Sample App
 
-Test drive the Python SDK in a [sample application](../sdk-guides/sample-apps/).
+Test drive the Python SDK:
+
+* By visiting the [Adobe Target On-device decisioning demo site](https://github.com/adobe/on-device-decisioning-demo-site)
+* In a [sample application](../sdk-guides/sample-apps/).
 
 ## Reference
 
