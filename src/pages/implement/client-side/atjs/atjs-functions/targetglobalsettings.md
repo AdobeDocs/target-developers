@@ -83,15 +83,15 @@ You can override the following settings:
 
 ### cspScriptNonce
 
-* **Type**: See [Content Security Policy](#content-security) below.
-* **Default Value**: See [Content Security Policy](#content-security) below.
-* **Description**: See [Content Security Policy](#content-security) below.
+* **Type**: See [Content Security Policy](#content-security-policy) below.
+* **Default Value**: See [Content Security Policy](#content-security-policy) below.
+* **Description**: See [Content Security Policy](#content-security-policy) below.
 
 ### cspStyleNonce
 
-* **Type**: See [Content Security Policy](#content-security) below.
-* **Default Value**: See [Content Security Policy](#content-security) below.
-* **Description**: See [Content Security Policy](#content-security) below.
+* **Type**: See [Content Security Policy](#content-security-policy) below.
+* **Default Value**: See [Content Security Policy](#content-security-policy) below.
+* **Description**: See [Content Security Policy](#content-security-policy) below.
 
 ### dataProviders
 
