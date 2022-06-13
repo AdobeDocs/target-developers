@@ -118,7 +118,7 @@ adobe.target.getOffers({...})
 .catch(error => console.log("Error", error));
 ```
 
-For more examples on how to use getOffers(), please refer the getOffers [documentation](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js-implementation/functions-overview/adobe-target-getoffers-atjs-2.html)
+For more examples on how to use getOffers(), please refer to the getOffers [documentation](adobe-target-getoffers-atjs-2.md)
 
 ### Page Load Request Example
 
