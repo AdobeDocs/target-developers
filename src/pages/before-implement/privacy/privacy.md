@@ -64,7 +64,7 @@ You can add an opt-out link to your sites to enable visitors to opt-out of all c
    `<a href="https://clientcode.tt.omtrdc.net/optout"> Your Opt Out Language Here</a>` 
 
 1. (Conditional) If you are using CNAME, the link should contain the "client=`clientcode` parameter, for example:
-https://my.cname.domain/optout?client=clientcode.
+`https://my.cname.domain/optout?client=clientcode`.
 
 1. Replace `clientcode` with your client code, and add the text or image to be linked to the opt-out URL.
 
