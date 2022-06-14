@@ -77,7 +77,7 @@ module.exports = {
         path: '/before-implement/',
         pages: [
           {
-            title: 'Before you implement',
+            title: 'Overview',
             path: '/before-implement/'
           },
           {
