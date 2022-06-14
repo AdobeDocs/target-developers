@@ -20,7 +20,7 @@ exl-id: 36005236-ce18-4845-b4fb-e52056018bc7
 
 This function fires a request to report user actions, such as clicks and conversions. It does not deliver activities in the response.
 
-These event-tracking mbox calls can then be used to define metrics in activities. For more information, see [Success Metrics](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html) and [Track Conversions](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js-implementation/deploy-at-js/implementing-target-without-a-tag-manager.html#task_E85D2F64FEB84201A594F2288FABF053).
+These event-tracking mbox calls can then be used to define metrics in activities. For more information, see [Success Metrics](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html) and [Track Conversions](../how-to-deployatjs/implement-target-without-a-tag-manager.md#track-conversions).
 
 Here are the API details:
 

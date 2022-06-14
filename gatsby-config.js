@@ -40,6 +40,11 @@ module.exports = {
             path: '/implement/hybrid/'
           },
           {
+            title: 'Recommendations',
+            description: 'Implement Recommendations',
+            path: '/implement/recommendations/'
+          },
+          {
             title: 'Mobile',
             description: 'AEP Mobile SDK',
             path: '/implement/mobile/'
@@ -451,6 +456,10 @@ module.exports = {
             path: '/implement/server-side/transition-from-target-legacy-apis.md'
           }
         ]
+      },
+      {
+        title: 'Implement Recommendations',
+        path: '/implement/recommendations/',
       },
       {
         title: 'Core Principles',
