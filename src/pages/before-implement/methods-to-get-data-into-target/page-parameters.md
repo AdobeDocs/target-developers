@@ -70,6 +70,6 @@ targetPageParams (appends the parameters to the global mbox on the page):
 
 Recommendations: [Implementation According to Page Type](https://experienceleague.adobe.com/docs/target/using/recommendations/plan-implement.html)
 
-Order confirmation: [Track Conversions](../../implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager.md)
+Order confirmation: [Track Conversions](../../implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager.md#track-conversions)
 
 Category affinity: [Category Affinity](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/category-affinity.html)
