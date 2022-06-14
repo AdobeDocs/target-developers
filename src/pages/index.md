@@ -91,7 +91,6 @@ How to use the Target Python SDK.
 
 
 
-
 <DiscoverBlock slots= "heading, link, text"/>
 
 ### Hybrid Implementation
@@ -99,6 +98,16 @@ How to use the Target Python SDK.
 [Hybrid Deployment](implement/hybrid/)
 
 Implement Target using a combination of client- and server-side implementation.
+
+
+<DiscoverBlock slots= "heading, link, text"/>
+
+### Recommendations Implementation
+
+[Recommendations Implementation](implement/recommendations/)
+
+Plan and implement Adobe Target Recommendations.
+
 
 
 <DiscoverBlock slots="heading, link, text"/>
