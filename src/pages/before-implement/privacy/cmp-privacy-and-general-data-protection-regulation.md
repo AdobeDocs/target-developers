@@ -39,8 +39,9 @@ Adobe Experience Cloud provides GDPR-ready APIs for Data Controllers that allow 
 
 For more information, see:
 
-* [Adobe General Data Protection Regulation API website](https://www.adobe.io/apis/experienceplatform/gdpr.html) 
-* [GDPR Documentation](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?)
+* [Adobe Privacy Service overview](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html)
+* [Privacy Service API guide](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html)
+* [Privacy Service UI overview](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html)
 
 ## California Consumer Privacy Act (CCPA) overview
 
