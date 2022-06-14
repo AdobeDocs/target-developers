@@ -38,4 +38,4 @@ The objectives of the technical RFI document are as follows:
 * Understand the technical platform and any limitations 
 * Understand the technical environment as it pertains to people and processes.
 
-Download the [Technical Request for Information](/business-rfi.docx) document.
+Download the [Technical Request for Information](/technical-rfi.docx) document.
