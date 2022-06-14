@@ -19,6 +19,11 @@ Adobe Target supports both at.js 1.*x* and at.js 2.*x*. Please upgrade to the mo
 
 Tags in [Adobe Experience Platform](/src/pages/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) are the preferred method to upgrade at.js. Extension developers continually add new features to their extensions, and frequently fix bugs. These updates are packaged into new versions of an extension and made available in the Adobe Experience Platform catalog as upgrades. For more information, see [Extension upgrades](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/extension-upgrade.html) in the *Tags overview* guide.
 
+## at.js version 2.9.0 (May 27, 2022)
+
+* Added [User Agent Client Hints](user-agent-and-client-hints.md) support.
+* Fixed a bug where multiple mbox requests on the same page have different impression IDs.
+
 ## at.js version 2.8.1 (January 28, 2022)
 
 * Fixed `pageLoad` not being mapped to target-global-mbox in On Device Decisioning (ODD) hybrid execution mode.

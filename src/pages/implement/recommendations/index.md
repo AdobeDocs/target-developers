@@ -103,7 +103,7 @@ On a cart page, you can recommend items based on the contents of the visitor's c
 ```js
 function targetPageParams() {
    return {
-      "cartIds": ["352", "223", "23432", "432", "553"]
+      "cartIds": "352,223,23432,432,553"
       }
 }
 ```
@@ -121,7 +121,7 @@ On pages throughout your site, you can exclude some items from recommendations. 
 ```js
 function targetPageParams() {
    return {
-      "excludedIds": ["352", "223", "23432", "432", "553"]
+      "excludedIds": "352,223,23432,432,553"
       }
 }
 ```
