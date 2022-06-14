@@ -13,7 +13,7 @@ title: How Do I Implement Recommendations Activities?
 feature: Recommendations
 exl-id: b6edb504-a8b6-4379-99c1-6907e71601f9
 ---
-# ![alt image](./../assets/premium.png) Plan and implement Recommendations 
+# Plan and implement Recommendations 
 
 Before setting up your first Recommendations activity in Adobe Target, complete the following steps:
 
