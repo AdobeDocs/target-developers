@@ -262,11 +262,11 @@ module.exports = {
           },
           {
             title: 'at.js functions',
-            path: '/implement/client-side/atjs/atjs-functions/atjs.md',
+            path: '/implement/client-side/atjs/atjs-functions/atjs-functions.md',
             pages: [
               {
                 title: 'at.js functions overview',
-                path: '/implement/client-side/atjs/atjs-functions/atjs.md'
+                path: '/implement/client-side/atjs/atjs-functions/atjs-functions.md'
               },
               {
                 title: 'adobe.target.getOffer()',
