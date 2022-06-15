@@ -197,14 +197,15 @@ module.exports = {
       },
       {
         title: 'at.js implementation',
-        path: '/implement/client-side/atjs/how-atjs-works/how-atjs-works.md',
+        path: '/implement/client-side/atjs/',
+        header: true,
         pages: [
           {
             title: 'How at.js works',
-            path: '/implement/client-side/atjs/how-atjs-works/how-atjs-works.md',
+            path: '/implement/client-side/atjs/how-atjs-works/index.md',
             pages: [
               {
-                title: 'How at.js works',
+                title: 'Overview',
                 path: '/implement/client-side/atjs/how-atjs-works/how-atjs-works.md'
               },
               {
