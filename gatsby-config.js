@@ -12,11 +12,11 @@
 
 module.exports = {
   siteMetadata: {
-    home: {
-      title: 'Adobe Target Developer Guide',
-      path: '/target/'
-    },
     pages: [
+      {
+        title: 'Adobe Target Developer Guide',
+        path: '/target/'
+      },
       {
         title: 'Before You Implement',
         path: '/before-implement/'

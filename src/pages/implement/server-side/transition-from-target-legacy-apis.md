@@ -2,15 +2,16 @@
 keywords:
 - api
 - adobe i/o
-description: Learn how to transition from the Adobe Target Classic legacy APIs to the new APIs on Adobe I/O.
-title: How Do I Transition From Legacy APIs to Adobe I/O?
+- classic
+description: Learn how to transition from the Adobe Target Classic APIs to the Target APIs on Adobe I/O.
+title: How Do I Transition From Target Classic APIs to Target APIs on Adobe I/O?
 feature: Implement Server-side
 role: Developer
 exl-id: 4b4274a9-b91a-4a79-9b40-8b1909a2d1d1
 ---
 # Transition from Target legacy APIs to Adobe I/O
 
-Information to help you transition from the Target legacy APIs to the new APIs on Adobe I/O.
+Information to help you transition from the Target Classic APIs to the Target APIs on Adobe I/O.
 
 With the decommissioning of Adobe Target Classic, the APIs connected to your Target Classic account have also been made unavailable. This document will help you transition your legacy API-based integrations to the Target APIs powered by Adobe I/O.
 
