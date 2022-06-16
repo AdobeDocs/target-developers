@@ -201,11 +201,11 @@ module.exports = {
         header: true,
         pages: [
           {
-            title: 'How at.js works',
+            title: 'Overview of at.js',
             path: '/implement/client-side/atjs/how-atjs-works/index.md',
             pages: [
               {
-                title: 'Overview',
+                title: 'How at.js works',
                 path: '/implement/client-side/atjs/how-atjs-works/how-atjs-works.md'
               },
               {
