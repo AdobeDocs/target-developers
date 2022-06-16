@@ -393,7 +393,7 @@ The following enhancements and fixes are included at.js version 1.0:
 * Bug/error reporting for custom events during activity delivery. 
 * Fix for performance issues in Microsoft Internet Explorer 11. 
 * Fix for `getOffer()` function giving an error on some websites. 
-* Load the Target library asynchronously. For more information, see [at.js Frequently Asked Questions](/src/pages/implement/client-side/atjs/target-atjs-faq/target-atjs-faq.md).
+* Load the Target library asynchronously. For more information, see [at.js Frequently Asked Questions](/src/pages/implement/client-side/atjs/target-atjs-faq.md).
 
 ## at.js Version 0.9.7
 

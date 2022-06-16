@@ -341,14 +341,8 @@ module.exports = {
             ]
           },
           {
-            title: 'at.js frequently asked questions',
-            path: '/implement/client-side/atjs/target-atjs-faq/',
-            pages: [
-              {
-                title: 'at.js FAQs',
-                path: '/implement/client-side/atjs/target-atjs-faq/target-atjs-faq.md'
-              }
-            ]
+            title: 'at.js FAQs',
+            path: '/implement/client-side/atjs/target-atjs-faq.md'
           },
           {
             title: 'at.js version details',
