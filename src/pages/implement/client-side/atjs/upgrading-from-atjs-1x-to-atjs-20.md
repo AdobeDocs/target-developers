@@ -766,6 +766,10 @@ Version is sent as a query string parameter via the version parameter.
 
 at.js 2.*x* enhances Adobe Target's support for SPAs and integrates with other Experience Cloud solutions. This video explains how everything comes together.
 
-<iframe src="https://video.tv.adobe.com/v/26250"></iframe>
+<Media slots="video"/>
+
+</target/Understanding-How-Adobe-Target-atjs-20-Works.mp4>
+
+<!-- <iframe src="https://video.tv.adobe.com/v/26250"></iframe> -->
 
 See [Understanding how at.js 2.*x* works](https://experienceleague.adobe.com/docs/target-learn/tutorials/implementation/understanding-how-atjs-20-works.html) for more information.
