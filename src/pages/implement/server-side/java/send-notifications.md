@@ -17,9 +17,9 @@ When a `prefetch` object is passed within the request, the impression is not aut
 
 ## Method
 
-### create
-
 <CodeBlock slots="heading, code" repeat="1" languages="JAVA" />
+
+### create
 
 ```java
 ResponseStatus TargetClient.sendNotifications(TargetDeliveryRequest request)
