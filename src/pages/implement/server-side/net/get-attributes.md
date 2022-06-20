@@ -18,7 +18,7 @@ TargetAttributes TargetClient.GetAttributes(TargetDeliveryRequest targetRequest,
 
 |Name|Type|Required|Default|Description|
 | --- | --- | --- | --- | --- |
-|targetRequest|TargetDeliveryRequest|No|null|The same target request as used for [Get Offers​](../get-offers.html)|
+|targetRequest|TargetDeliveryRequest|No|null|The same target request as used for [Get Offers​](/get-offers.md)|
 |mboxNames|params string[]|No|null|A parameter array of mbox names
 
 ## Result
@@ -27,7 +27,7 @@ A `TargetAttributes` object is returned from `TargetClient.GetAttributes()` whic
 
 |Property/Method|Return Type|Description
 | --- | --- | --- |
-|Response|TargetDeliveryResponse|Returns the response object normally returned by [Get Offers​](../get-offers.html)|
+|Response|TargetDeliveryResponse|Returns the response object normally returned by [Get Offers​](/get-offers.md)|
 |ToDictionary|IReadOnlyDictionary|Returns a dictionary of dictionaries with key value pairs grouped by mbox names|
 |ToMboxDictionary(mboxName)|IReadOnlyDictionary|Returns a dictionary with key value pairs for the provided mbox|
 |GetBoolean(mboxName, key, defaultValue)|bool|Returns the value for a specified mbox name and attribute key|
