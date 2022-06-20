@@ -20,7 +20,7 @@ Test drive the.NET SDK:
 
 ### Reference
 
-To read and understand the .NET SDK reference documentation, begin at [Install SDK](../sdk/net/install-sdk.md).
+To read and understand the .NET SDK reference documentation, begin at [Install SDK](install-sdk.md).
 
 ## Source Files
 

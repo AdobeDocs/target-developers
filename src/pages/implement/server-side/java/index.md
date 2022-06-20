@@ -20,7 +20,7 @@ Test drive the Java SDK:
 
 ## Reference
 
-To read and understand the Java SDK reference documentation, begin at [Install SDK](../sdk/java/install-sdk.md).
+To read and understand the Java SDK reference documentation, begin at [Install SDK](install-sdk.md).
 
 ## Source Files
 

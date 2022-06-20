@@ -19,7 +19,7 @@ Test drive the Node.js SDK:
 
 ## Reference
 
-To read and understand the Node.js SDK reference documentation, begin at [Install SDK](../node-js/install-sdk.md).
+To read and understand the Node.js SDK reference documentation, begin at [Install SDK](install-sdk.md).
 
 ## Source Files
 
