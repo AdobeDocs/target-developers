@@ -125,9 +125,15 @@ More than ever, marketers, product owners and developers are being tasked with o
 
 In this recorded webinar, Adobe Target product experts discuss how moving critical experience optimization decisions on-device to execute locally with near-zero latency can open doors to exciting new use cases while improving site performance for your customers.
 
-<Media slots="video"/>
-
-<https://video.tv.adobe.com/v/328148>
+<iframe
+src="https://video.tv.adobe.com/v/328148"
+frameBorder="0"
+height="270"
+width="480"
+webkitallowfullscreen="true"
+mozallowfullscreen="true"
+allowFullScreen>
+</iframe>
 
 
 ### Tutorial: On-device decisioning
@@ -142,9 +148,15 @@ This 7-minute video:
 * Shows sample Node.JS SDK code containing key configuration required for on-device decisioning
 * Demonstrates results in a browser
 
-<Media slots="video"/>
-
-<https://video.tv.adobe.com/v/329032>
+<iframe
+src="https://video.tv.adobe.com/v/329032"
+frameBorder="0"
+height="270"
+width="480"
+webkitallowfullscreen="true"
+mozallowfullscreen="true"
+allowFullScreen>
+</iframe>
 
 For more videos and tutorials, see the [Adobe Target Tutorials](https://experienceleague.adobe.com/docs/target-learn/tutorials/overview.html) guide.
 

@@ -28,18 +28,36 @@ The following videos step you through the debugging process:
 
 ### Add the Adobe Experience Cloud Debugger Extension ![Overview badge](../../assets/overview.png)
 
-<Media slots="video"/>
-
-<https://video.tv.adobe.com/v/23114/>
+<iframe
+src="https://video.tv.adobe.com/v/23114"
+frameBorder="0"
+height="270"
+width="480"
+webkitallowfullscreen="true"
+mozallowfullscreen="true"
+allowFullScreen>
+</iframe>
 
 ### Basic Adobe Target Debugging Using the Adobe Experience Cloud Debugger ![Overview badge](../../assets/overview.png)
 
-<Media slots="video"/>
-
-<https://video.tv.adobe.com/v/23115/>
+<iframe
+src="https://video.tv.adobe.com/v/23115"
+frameBorder="0"
+height="270"
+width="480"
+webkitallowfullscreen="true"
+mozallowfullscreen="true"
+allowFullScreen>
+</iframe>
 
 ### Mbox Trace ![Overview badge](../../assets/overview.png)
 
-<Media slots="video"/>
-
-<https://video.tv.adobe.com/v/23113/>
+<iframe
+src="https://video.tv.adobe.com/v/23113"
+frameBorder="0"
+height="270"
+width="480"
+webkitallowfullscreen="true"
+mozallowfullscreen="true"
+allowFullScreen>
+</iframe>

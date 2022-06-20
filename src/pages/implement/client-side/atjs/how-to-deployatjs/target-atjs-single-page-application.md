@@ -309,24 +309,42 @@ The following videos contain more information:
 
 ### Understanding how at.js 2.x works ![Overview badge](../../../assets/overview.png)
 
-<Media slots="video"/>
-
-<https://video.tv.adobe.com/v/26250>
+<iframe
+src="https://video.tv.adobe.com/v/26250"
+frameBorder="0"
+height="270"
+width="480"
+webkitallowfullscreen="true"
+mozallowfullscreen="true"
+allowFullScreen>
+</iframe>
 
 See [Understanding how at.js 2.x works](https://experienceleague.adobe.com/docs/target-learn/tutorials/implementation/understanding-how-atjs-20-works.html) for more information.
 
 ### Implement at.js 2.x in a SPA ![Tutorial badge](../../../assets/tutorial.png)
 
-<Media slots="video"/>
-
-<https://video.tv.adobe.com/v/26248>
+<iframe
+src="https://video.tv.adobe.com/v/26248"
+frameBorder="0"
+height="270"
+width="480"
+webkitallowfullscreen="true"
+mozallowfullscreen="true"
+allowFullScreen>
+</iframe>
 
 See [Implement Adobe Target's at.js 2.x in a Single Page Application (SPA)](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer-for-single-page-applications.html) for more information.
 
 ### Using the VEC for SPAs in Adobe Target ![Tutorial badge](../../../assets/tutorial.png)
 
-<Media slots="video"/>
-
-<https://video.tv.adobe.com/v/26249>
+<iframe
+src="https://video.tv.adobe.com/v/26249"
+frameBorder="0"
+height="270"
+width="480"
+webkitallowfullscreen="true"
+mozallowfullscreen="true"
+allowFullScreen>
+</iframe>
 
 See [Using the Visual Experience Composer for Single Page Application (SPA VEC) in Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer-for-single-page-applications.html) for more information.

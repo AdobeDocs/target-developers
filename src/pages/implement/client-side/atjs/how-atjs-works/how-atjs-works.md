@@ -70,9 +70,15 @@ Now, wherever `triggerView()` is implemented on your SPA, the Views and actions 
 
 at.js 2.x enhances Adobe Target's support for SPAs and integrates with other Experience Cloud solutions. This video explains how everything comes together.
 
-<Media slots="video"/>
-
-<https://video.tv.adobe.com/v/26250>
+<iframe
+src="https://video.tv.adobe.com/v/26250"
+frameBorder="0"
+height="270"
+width="480"
+webkitallowfullscreen="true"
+mozallowfullscreen="true"
+allowFullScreen>
+</iframe>
 
 See [Understanding how at.js 2.x works](https://experienceleague.adobe.com/docs/target-learn/tutorials/implementation/understanding-how-atjs-20-works.html) for more information.
 
@@ -98,9 +104,15 @@ This video is a recording of "Office Hours," an initiative led by the Adobe Cust
 * Known issues
 * FAQ
 
-<Media slots="video"/>
-
-<https://video.tv.adobe.com/v/27959>
+<iframe
+src="https://video.tv.adobe.com/v/27959"
+frameBorder="0"
+height="270"
+width="480"
+webkitallowfullscreen="true"
+mozallowfullscreen="true"
+allowFullScreen>
+</iframe>
 
 ## How at.js renders offers with HTML content
 
