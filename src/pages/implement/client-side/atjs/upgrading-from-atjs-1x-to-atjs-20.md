@@ -773,6 +773,8 @@ at.js 2.*x* enhances Adobe Target's support for SPAs and integrates with other E
 <iframe
 src="https://video.tv.adobe.com/v/26250"
 frameBorder="0"
+height="270"
+width="480"
 webkitallowfullscreen="true"
 mozallowfullscreen="true"
 allowFullScreen>
