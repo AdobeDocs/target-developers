@@ -101,9 +101,6 @@ TargetDeliveryRequest request = TargetDeliveryRequest.builder()
   AT: LD.ArtifactProvider artifact received - status=200
 ```
 
-**Java SDK**
-
-TBD
 
 1. Wait the duration of the polling interval (default is 5 minutes) and ensure that the artifact is being fetched by the SDK. The same terminal logs will be output.
 
