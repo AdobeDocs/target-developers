@@ -17,7 +17,7 @@ Almost identical to the Bulk Profile Update API, but one visitor profile is upda
 
 ## Format
 
-The visitor must be identified via the Target mboxPC value or mboxThirdPartyId value. The Experience Cloud ID (ECID) is not supported.
+The visitor must be identified via the Target mboxPC value or `mbox3rdPartyId` value. The Experience Cloud ID (ECID) is not supported.
 
 ## Example Use Cases
 

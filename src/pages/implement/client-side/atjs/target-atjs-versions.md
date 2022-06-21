@@ -165,7 +165,7 @@ This release of at.js is a maintenance release and includes the following enhanc
 * Fixed an issue that prevented Recommendations offers from displaying on websites for a few customers. Customers could see the offer content in the delivery API call but the offer was not applied on the website. (TNT-32680)
 * Fixed an issue that caused click-tracking across multiple experiences to not work as expected. (TNT-32644)
 * Fixed an issue that prevented at.js from applying the second metric after the rendering of the first metric fails. (TNT-32628)
-* Fixed an issue when passing `mboxThirdPartyId` using the `targetPageParams` function that caused the request payload to not be present in either the query parameters or in the request payload. (TNT-32613)
+* Fixed an issue when passing `mbox3rdPartyId` using the `targetPageParams` function that caused the request payload to not be present in either the query parameters or in the request payload. (TNT-32613)
 * Fixed an issue that caused display and click notification responses to be blocked in Chromium-based browsers (including Google Chrome). (TNT-32290)
 
 ## at.js version 2.1.0 (June 3, 2019)

@@ -21,12 +21,12 @@ This option is similar to Customer Attributes with a few differences:
 * Customer Attributes data can be shared with Analytics. Bulk Profile Update is useable only in Target.
 * Customer Attributes support creating a profile for a user Target has not yet seen. The Bulk Profile Update API updates existing Target profiles only.
 * Customer Attributes require the use of the Experience Cloud ID (ECID) and the use of a source ID, such as the CRM ID or the Loyalty ID.
-* The Bulk Profile Update API requires either the TNT ID or the mbox3rdPartyId.
+* The Bulk Profile Update API requires either the TNT ID or the `mbox3rdPartyId`.
 * You cannot send the following characters in `mbox3rdPartyID`: plus sign (+) and forward slash (/).
 
 ## Format
 
-The .csv file must refer to each visitor via his or her Target PCID or mboxThirdPartyId . The Experience Cloud ID (ECID) is not supported. All profile attributes/values are created and updated via the API. Format details are available in the API documentation.
+The .csv file must refer to each visitor via his or her Target PCID or `mbox3rdPartyId`. The Experience Cloud ID (ECID) is not supported. All profile attributes/values are created and updated via the API. Format details are available in the API documentation.
 
 ## Example use cases
 
