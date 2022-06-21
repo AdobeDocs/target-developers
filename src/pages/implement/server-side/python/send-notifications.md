@@ -31,7 +31,7 @@ target_client.send_notifications(options)
 
 |Name|Type|Required|Default|Description|
 | --- | --- | --- | --- | --- |
-|request|DeliveryRequest|Yes|None|Conforms to the [Target Delivery API](../../api/delivery-api/index.md) request|
+|request|DeliveryRequest|Yes|None|Conforms to the [Target Delivery API](/src/pages/implement/delivery-api/index.md) request|
 |target_cookie|str|no|None|Target cookie|
 |target_location_hint|str|no|None|Target location hint|
 |consumer_id|str|no|None|When stitching multiple calls, different consumer IDs should be provided|
@@ -46,7 +46,7 @@ target_client.send_notifications(options)
 
 |Name|Type|Description|
 | --- | --- | --- |
-|response|DeliveryResponse|Conforms to the [Target Delivery API](../api/delivery-api/index.md) response|
+|response|DeliveryResponse|Conforms to the [Target Delivery API](/src/pages/implement/delivery-api/index.md) response|
 |target_cookie|dict|Target cookie|
 |target_location_hint_cookie|dict|Target location hint cookie|
 |analytics_details|list[AnalyticsResponse]|Analytics payload, in case of client side Analytics usage|

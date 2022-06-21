@@ -21,7 +21,7 @@ The `options` dict has the following structure:
 
 |Name|Type|Required|Default|Description|
 | --- | --- | --- | --- | --- |
-|request|DeliveryRequest|Yes|None|Conforms to the [Target Delivery API](../../api/delivery-api/index.md) request|
+|request|DeliveryRequest|Yes|None|Conforms to the [Target Delivery API](/src/pages/implement/delivery-api/index.md) request|
 |target_cookie|str|no|None|Target cookie|
 |target_location_hint|str|no|None|Target location hint|
 |consumer_id|str|no|None|When stitching multiple calls, different consumer IDs should be provided|
@@ -36,7 +36,7 @@ Returns a `TargetDeliveryResponse` if called synchronously (default), or an `Asy
 
 |Name|Type|Description|
 | --- | --- | --- |
-|response|DeliveryResponse|Conforms to the [Target Delivery API](../../api/delivery-api/index.md) response|
+|response|DeliveryResponse|Conforms to the [Target Delivery API](/src/pages/implement/delivery-api/index.md) response|
 |target_cookie|dict|Target cookie|
 |target_location_hint_cookie|dict|Target location hint cookie|
 |analytics_details|list[AnalyticsResponse]|Analytics payload, in case of client side Analytics usage|
@@ -57,8 +57,8 @@ The `meta` object used for indicating the status of the target response has the 
 |Name|Type|Description|
 | --- | --- | --- |
 |decisioning_method|str|Which decisioning method was used: on-device or server-side|
-|remote_mboxes|list[str]|When decisioning Method is `on-device`, an array of mbox names that could not be fully decided on-device is given. In other words, a [Target Delivery API](../../api/delivery-api/index.md) request is needed.
-|remote_views|list[str]|When decisioning Method is on-device, an array of view names that could not be fully decided on-device is given. In other words, a [Target Delivery API](../../api/delivery-api/index.md) request is needed.|
+|remote_mboxes|list[str]|When decisioning Method is `on-device`, an array of mbox names that could not be fully decided on-device is given. In other words, a [Target Delivery API](/src/pages/implement/delivery-api/index.md) request is needed.
+|remote_views|list[str]|When decisioning Method is on-device, an array of view names that could not be fully decided on-device is given. In other words, a [Target Delivery API](/src/pages/implement/delivery-api/index.md) request is needed.|
 
 ## Example
 

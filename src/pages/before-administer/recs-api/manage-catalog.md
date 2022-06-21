@@ -19,7 +19,7 @@ You can use the [Recommendations APIs](https://developers.adobetarget.com/api/re
 
 <InlineAlert variant="info" slots="text"/>
 
-Send the **IMS: JWT Generate + Auth via User Token** request whenever you need to refresh your access token for authentication, since it expires after 24 hours. See [Configure Adobe API Authentication](../apis/configure-io-target-integration.md) for instructions.
+Send the **IMS: JWT Generate + Auth via User Token** request whenever you need to refresh your access token for authentication, since it expires after 24 hours. See [Configure Adobe API Authentication](../configure-authentication.md) for instructions.
 
 ![JWT3ff](/assets/configure-io-target-jwt3ff.png)
 

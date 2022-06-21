@@ -21,7 +21,7 @@ The `options` object has the following structure:
 
 |Name|Type|Required|Default|Description|
 | --- |--- | --- | --- | --- |
-|Request|Object|Yes|None|Conforms to the [Target Delivery API](../../api/delivery-api/index.md) request|
+|Request|Object|Yes|None|Conforms to the [Target Delivery API](/src/pages/implement/delivery-api/index.md) request|
 |visitorCookie|String|No|None|ECID (VisitorId) cookie|
 |targetCookie|String|No|None|Target cookie|
 |targetLocationHint|String|No|None|Target location hint|
@@ -36,8 +36,8 @@ The `options` object has the following structure:
 
 |Name|Type|Description|
 | --- | --- | --- |
-|request|Object|[Target Delivery API](../../api/delivery-api/index.md) request|
-|response|Object|[Target Delivery API](../../api/delivery-api/index.md) response|
+|request|Object|[Target Delivery API](/src/pages/implement/delivery-api/index.md) request|
+|response|Object|[Target Delivery API](/src/pages/implement/delivery-api/index.md) response|
 |visitorState|Object|Object that should be passed to Visitor API `getInstance()`|
 |targetCookie|Object|Target cookie|
 |targetLocationHintCookie|Object|Target location hint cookie|
@@ -61,7 +61,7 @@ The `status` object used for indicating the status of the target response has th
 | --- | --- | --- |
 |status|Number|HTTP status code|
 |message|String|A message about the response. For instance, it may indicate if the response was decided [on-device](../../sdk-guides/on-device-decisioning/index.md) or server-side|
-|remoteMboxes|Array|When decisioning Method is `on-device`, an array of mbox names that could not be fully decided on-device is given. In other words, a [Target Delivery API](../../api/delivery-api/index.md) request is needed.|
+|remoteMboxes|Array|When decisioning Method is `on-device`, an array of mbox names that could not be fully decided on-device is given. In other words, a [Target Delivery API](/src/pages/implement/delivery-api/index.md) request is needed.|
 
 ## Example
 
