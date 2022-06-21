@@ -78,7 +78,7 @@ TargetClient targetClient = TargetClient.create(config);
 
 1. Both client and organizationId can be retrieved from Adobe Target by navigating to **Administration** > **Implementation**, as shown here.
 
-   *Insert image-client_code.png*
+   ![alt image](./assets/asset-client_code.png)
 
 ## Store and Use the Rule Artifact
 

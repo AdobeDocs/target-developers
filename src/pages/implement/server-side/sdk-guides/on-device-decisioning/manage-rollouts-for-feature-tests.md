@@ -26,33 +26,33 @@ After enabling the On-Device Decisioning toggle, Adobe Target begins generating 
 
 1. In Adobe Target, navigate to the **Activities** page, then select **Create Activity** > **A/B test**.
 
-   *Insert image-ab.png*
+   ![alt image](./assets/asset-ab.png)
 
 1. In the **Create A/B Test Activity** modal, leave the default **Web** option selected (1), select **Form** as your experience composer (2), select **Default Workspace** with **No Property Restrictions** (3), and click **Next** (4).
 
-   *Insert image-form.png*
+   ![alt image](./assets/asset-form.png)
 
 ## Define your feature and rollout settings
 
 In the **Experiences** step of activity creation, provide a name for your activity (1). Enter the name of the location (2) within your application where you want to manage rollouts for your feature. For example,  `ondevice-rollout` or `homepage-addtocart-rollout` are location names indicating the destinations for managing feature rollouts. In the example shown below, `ondevice-rollout` is the location defined for Experience A. You can optionally add Audience refinements (4) to restrict qualification to the activity.
 
-*Insert image-location-rollout.png*
+![alt image](./assets/asset-location-rollout.png)
 
 1. In the **Content** section on the same page, select **Create JSON Offer** in the drop-down (1) as shown.
 
-   *Insert image-offer.png*
+   ![alt image](./assets/asset-offer.png)
 
 1. In the **JSON Data** text box that appears, enter the feature flag variable for the feature you intend to roll out with this activity in Experience A (1), using a valid JSON object (2).
 
-   *Insert image-json_a_rollout*
+   ![alt image](./assets/asset-json_a_rollout*
 
 1. Click **Next** (1) to advance to the **Targeting** step of activity creation.
 
-   *Insert image-next_2_t_rollout*
+   ![alt image](./assets/asset-next_2_t_rollout*
 
 1. In the **Targeting** step, keep the **All Visitors** audience (1), for simplicity. But adjust the traffic allocation (2) to 10%. This will restrict the feature to only 10% of your site visitors. Click Next (3) to advance to the **Goals & Settings** step.
 
-   *Insert image-next_2_g_rollout.png.*
+   ![alt image](./assets/asset-next_2_g_rollout.png.*
 
 1. In the **Goals & Settings** step, choose **Adobe Target** (1) as the **Reporting Source** to view your activity results in the Adobe Target UI.
 
@@ -60,7 +60,7 @@ In the **Experiences** step of activity creation, provide a name for your activi
 
 1. Click **Save & Close** (3) to save the activity.
 
-   *Insert image-conv_rollout.png.*
+   ![alt image](./assets/asset-conv_rollout.png.*
 
 ## Implement and render the feature in your application
 
@@ -137,7 +137,7 @@ else {
 
 ## Activate your rollout activity
 
-*Insert image-activate_rollout.png"
+![alt image](./assets/asset-activate_rollout.png"
 
 ## Adjust rollout and traffic allocation as needed
 
@@ -145,4 +145,4 @@ Once you have activated your activity, edit it any time to increase or decrease 
 
 Increasing the traffic allocation from 10% to 50% due to the success of the initial rollout.
 
-*Insert image-adjust_rollout.png*
+![alt image](./assets/asset-adjust_rollout.png)

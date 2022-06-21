@@ -425,7 +425,6 @@ Look at the `artifactLastRetrieved` date of the artifact and ensure that you hav
 
 (4) Review the `campaignId` to ensure the activity or activities you are expecting to execute are evaluated. The `campaignId` will match the activity ID on the activity overview tab in the Target UI:
 
-*Insert image-activity-id-target-ui.png*
 ![alt image](assets/asset-activity-id-target-ui.png)
 
 (5) Review the `matchedRuleConditions` and `unmatchedRuleConditions` to identify issues with qualifying for the audience rules for a given activity.

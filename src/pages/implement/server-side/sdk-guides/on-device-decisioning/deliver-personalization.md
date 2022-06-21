@@ -28,41 +28,42 @@ Suppose you are a touring company. You want to deliver a personalized offer of 2
 
 1. In Adobe Target, navigate to the **Activities** page, then select **Create Activity** > **Experience Targeting**.
 
-  *Insert image-xt.png*
+  ![alt image](./assets/asset-xt.png)
+
 
 1. In the **Create Experience Targeting Activity** modal, leave the default **Web** option selected (1), select **Form** as your experience composer (2), select a workspace and property (3), and click **Next** (4).
 
-   *Insert image-xt-next.png*
+   ![alt image](./assets/asset-xt-next.png)
 
 ## Define a personalized experience per audience
 
 1. In the **Experiences** step of activity creation, click **Change Audience** to create an audience of those visitors who want to travel to San Francisco, California.
 
-   *Insert image-change-audience.png*
+   ![alt image](./assets/asset-change-audience.png)
 
 1. In the **Create Audience** modal, define a custom rule where `destinationCity = San Francisco`. This defines the group of users who want to travel to San Francisco.
 
-   *Insert image-audience-sf.png*
+   ![alt image](./assets/asset-audience-sf.png)
 
 1. Still in the **Experiences** step, enter the name of the location (1) within your application where you want to render a special offer regarding the Golden Gate Bridge, but only for those headed to San Francisco. In the example shown here, homepage is the location selected for the HTML offer (2), which is defined in the **Content** area.
 
-   *Insert image-content-sf.png*
+   ![alt image](./assets/asset-content-sf.png)
 
 1. Add another targeting audience by clicking **Add Experience Targeting**. This time, target an audience that would like to travel to New York by defining an audience rule where `destinationCity = New York`. Define the location within your application where you want to render a special offer regarding the Empire State Building. In the example shown here, `homepage` is the location selected for the HTML offer (2), which is defined in the **Content** area.
 
-   *Insert image-content-ny.png*
+   ![alt image](./assets/asset-content-ny.png)
 
 ## Verify personalized experience per audience
 
 In the **Targeting** step, verify you have configured the desired personalized experience per audience.
 
-  *Insert image-verify-sf-ny.png*
+  ![alt image](./assets/asset-verify-sf-ny.png)
 
 ## Set up reporting
 
 In the **Goals & Settings** step, choose **Adobe Target** as the **Reporting Source** to view activity results in the Adobe Target UI, or choose **Adobe Analytics** to view them in the Adobe Analytics UI.
 
-*Insert image-reporting-sf-ny.png*
+![alt image](./assets/asset-reporting-sf-ny.png)
 
 ## Add metrics for tracking KPIs
 
@@ -199,4 +200,4 @@ notificationDeliveryService.sendNotification(request);
 
 ## Activate your experience targeting (XT) activity
 
-*Insert image-xt-activate.png*
+![alt image](./assets/asset-xt-activate.png)
