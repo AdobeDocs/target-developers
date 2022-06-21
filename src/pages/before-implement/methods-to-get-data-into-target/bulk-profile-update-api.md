@@ -20,7 +20,8 @@ This option is similar to Customer Attributes with a few differences:
 * Customer Attributes use an FTP upload while the Target Bulk Profile Update API uses an HTTP POST API.
 * Customer Attributes data can be shared with Analytics. Bulk Profile Update is useable only in Target.
 * Customer Attributes support creating a profile for a user Target has not yet seen. The Bulk Profile Update API updates existing Target profiles only.
-* Customer Attributes require the use of the Experience Cloud ID (ECID). The Bulk Profile Update API requires either the TNT ID or the `mbox3rdPartyId`.
+* Customer Attributes require the use of the Experience Cloud ID (ECID) and the use of a source ID, such as the CRM ID or the Loyalty ID.
+* The Bulk Profile Update API requires either the TNT ID or the mbox3rdPartyId.
 * You cannot send the following characters in `mbox3rdPartyID`: plus sign (+) and forward slash (/).
 
 ## Format
