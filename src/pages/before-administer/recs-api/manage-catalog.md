@@ -149,7 +149,7 @@ Entity details can only be retrieved for a single entity at a time. You can use 
 
 <InlineAlert variant="info" slots="text"/>
     
-If no environment is explicitly specified, Get Entity attempts to get the entity from your [default environment](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html#section_4F8539B07C0C45E886E8525C344D5FB0) only. If you wish to pull from any environment other than your default environment, you must specify the environment ID.
+If no environment is explicitly specified, Get Entity attempts to get the entity from your [default environment](https://experienceleague.adobe.com/docs/target/using/administer/environments.html) only. If you wish to pull from any environment other than your default environment, you must specify the environment ID.
 
 4. If necessary, add the `environmentId` parameter, and re-send the request.
 
