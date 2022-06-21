@@ -135,7 +135,7 @@ else {
 
 ## Activate your rollout activity
 
-![alt image](assets/asset-activate_rollout.png)
+![alt image](assets/asset-activate-rollout.png)
 
 ## Adjust rollout and traffic allocation as needed
 
@@ -143,4 +143,4 @@ Once you have activated your activity, edit it any time to increase or decrease 
 
 Increasing the traffic allocation from 10% to 50% due to the success of the initial rollout.
 
-![alt image](assets/asset-adjust_rollout.png)
+![alt image](assets/asset-adjust-rollout.png)
