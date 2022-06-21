@@ -232,7 +232,7 @@ For more information, see [Upgrading from at.js 1.x to at.js 2.x](/src/pages/imp
 
 <InlineAlert variant="info" slots="text"/>
 
-If you require Adobe Opt-in support for the [General Data Protection Regulation](/src/pages/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.md) (GDPR), you must currently use at.js 1.7.0 or at.js 2.1.0.
+If you require Adobe Opt-in support for the [General Data Protection Regulation](/src/pages/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.md) (GDPR), you must currently use at.js 1.7.0, or at.js 2.1.0 or later.
 
 ## at.js Version 1.7.0
 
@@ -244,7 +244,7 @@ This release also fixes an issue where Target might override redirect URL parame
 
 <InlineAlert variant="info" slots="text"/>
 
-If you require Adobe Opt-in support for GDPR, you must currently use at.js 1.7.0 or 2.1.0.<br />For a list of all versions, see [at.js version details](/src/pages/implement/client-side/atjs/target-atjs-versions.md).
+If you require Adobe Opt-in support for GDPR, you must currently use at.js 1.7.0, or at.js 2.1.0 or later.
 
 ## at.js Version 1.6.4
 
