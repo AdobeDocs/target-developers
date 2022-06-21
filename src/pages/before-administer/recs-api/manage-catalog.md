@@ -147,8 +147,10 @@ Entity details can only be retrieved for a single entity at a time. You can use 
     ![GetEntity3](/assets/GetEntity3.png)
     If you receive an error stating the entity was not found, as shown in the example above, verify you are submitting the request to the correct Target environment.
 
+
+
 <InlineAlert variant="info" slots="text"/>
-    
+
 If no environment is explicitly specified, Get Entity attempts to get the entity from your [default environment](https://experienceleague.adobe.com/docs/target/using/administer/environments.html) only. If you wish to pull from any environment other than your default environment, you must specify the environment ID.
 
 4. If necessary, add the `environmentId` parameter, and re-send the request.

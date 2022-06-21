@@ -30,17 +30,17 @@ After enabling the **On-Device Decisioning** toggle, Adobe Target begins generat
 
 1. In Adobe Target, navigate to the **Activities** page, then select **Create Activity** > **A/B test**. 
 
-   ![alt image](./assets/asset-ab.png)
+   ![alt image](assets/asset-ab.png)
 
 1. In the **Create A/B Test Activity** modal, leave the default **Web** option selected (1), select **Form** as your experience composer (2), select **Default Workspace** with **No Property Restrictions** (3), and click **Next** (4).
 
-   ![alt image](./assets/asset-form.png)
+   ![alt image](assets/asset-form.png)
 
 ## Define your feature flag and attribute values
 
 1. In the **Experiences** step of activity creation, provide a name for your activity (1) and add a second experience, Experience B, by clicking the **Add Experience** (2) button. Enter the name of the location (3) within your application where you want to execute your feature test with attributes. In the example shown below, `product-results-page` is the location defined for Experience A. (It is also the location defined for Experience B.)
 
-   ![alt image](./assets/asset-location.png)
+   ![alt image](assets/asset-location.png)
 
    **Experience A** will contain the JSON that signals your business logic to do the following:
 
@@ -50,13 +50,13 @@ After enabling the **On-Device Decisioning** toggle, Adobe Target begins generat
 
 1. In Experience A, click to change the content from **Default Content** to the JSON by selecting **Create JSON Offer** as shown below (1).
 
-   ![alt image](./assets/asset-offer.png)
+   ![alt image](assets/asset-offer.png)
 
 1. Define the JSON with `test_sorting`, `sorting_algorithm`, and `pagination_limit` flags and attributes that will be used to initiate the recommended sorting algorithm with a pagination limit of 50 products.
 
    **NOTE**: When Adobe Target buckets a user to see Experience A, the JSON with the defined attributes in the example will be returned. In your code, you will need to check the value of the feature flag `test_sorting` to see whether the sorting feature should be turned on. If so, you will use the recommended value of the `sorting_algorithm` attribute to show recommended products in the product list view. The limit of products to show for your application will be 50, since that is the value of the `pagination_limit` attribute.
 
-   ![alt image](./assets/asset-sorting.png)
+   ![alt image](assets/asset-sorting.png)
 
    **Experience B** will define the JSON that signals your business logic to do the following:
 
@@ -66,7 +66,7 @@ After enabling the **On-Device Decisioning** toggle, Adobe Target begins generat
 
    **NOTE**: When Adobe Target buckets a user to see Experience B, the JSON with the defined attributes in the example will be returned. In your code, you will need to check the value of the feature flag `test_sorting` to see whether the sorting feature should be turned on. If so, you will use the `best_sellers` value of the `sorting_algorithm` attribute to show best selling products in the product list view. The limit of products to show for your application will be 50, since that is the value of the `pagination_limit` attribute.
 
-   ![alt image](./assets/asset-sorting-b.png)
+   ![alt image](assets/asset-sorting-b.png)
 
 ## Add an audience
 
@@ -78,19 +78,19 @@ In the **Targeting** step, keep the **All Visitors** audience. This will enable 
 
 Define the percentage of your visitors against which you want to test your sorting algorithms and pagination strategy. In other words, to what percentage of your users do you want to roll out this test? In this example, to deploy this test to all logged-in users, keep the traffic allocation at 100%.
 
-![alt image](./assets/asset-allocation-100.png)
+![alt image](assets/asset-allocation-100.png)
 
 ## Set traffic distribution to variations
 
 Define the percentage of your visitors that will see the recommended versus the best sellers sorting algorithm, with a limit of 50 products per page. In this example, keep the traffic distribution as a 50/50 split between Experiences A and B.
 
-![alt image](./assets/asset-variations-50.png)
+![alt image](assets/asset-variations-50.png)
 
 ## Set up reporting
 
 In the **Goals & Settings** step, choose **Adobe Target** as the **Reporting Source** to view your A/B test results in the Adobe Target UI, or choose **Adobe Analytics** to view them in the Adobe Analytics UI.
 
-![alt image](./assets/asset-reporting-b.png)
+![alt image](assets/asset-reporting-b.png)
 
 ## Add metrics for tracking KPIs
 
@@ -216,4 +216,4 @@ String paginationLimit = attributes.getString("product-results-page", "paginatio
 
 ## Activate your feature tests with attributes
 
-![alt image](./assets/asset-activate.png)
+![alt image](assets/asset-activate.png)
