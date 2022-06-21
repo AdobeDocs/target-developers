@@ -81,7 +81,7 @@ This release of at.js is a maintenance release and includes the following enhanc
 
 This release of at.js is a maintenance release and includes the following fixes:
 
-* Adds support for unified profile/platform id to delivery API customerIds.
+* Adds support for unified profile/platform id to Delivery API customerIds.
 * Fixes invalid style tag injection.
 
 ## at.js 2.3.3 (November 13, 2020)
@@ -137,7 +137,7 @@ This release of at.js includes the following enhancements and fixes:
 
 Upgrade your ECID Extension to v4.4 to take advantage of this performance enhancement.
 
-* at.js version 2.2 also provides a new setting called `serverState`. This setting can be used to optimize page performance when a hybrid integration of Target is implemented. Hybrid integration means that you are using both at.js v2.2+ on the client-side and the delivery API or a Target SDK on the server-side to deliver experiences. `serverState` gives at.js v2.2+ the ability to apply experiences directly from content fetched on the server side and returned to the client as part of the page being served. For more information, see "serverState" in [targetGlobalSettings](/src/pages/implement/client-side/atjs/atjs-functions/targetglobalsettings.md#serverstate).
+* at.js version 2.2 also provides a new setting called `serverState`. This setting can be used to optimize page performance when a hybrid integration of Target is implemented. Hybrid integration means that you are using both at.js v2.2+ on the client-side and the Delivery API or a Target SDK on the server-side to deliver experiences. `serverState` gives at.js v2.2+ the ability to apply experiences directly from content fetched on the server side and returned to the client as part of the page being served. For more information, see "serverState" in [targetGlobalSettings](/src/pages/implement/client-side/atjs/atjs-functions/targetglobalsettings.md#serverstate).
 
 ## at.js version 1.8.0 (October 10, 2019)
 
@@ -162,7 +162,7 @@ This release of at.js is a maintenance release and includes the following enhanc
 * Fixed an issue that prevented the `triggerView()` notification to fire even if there are no saved views. (TNT-32614)
 * Fixed an issue that caused an error due to the use of decodeURIcomponent that caused issues when the URL contains a malformed query string parameter. (TNT-32710)
 * The beacon flag is now set to "true" in the context of delivery requests sent via the `Navigator.sendBeacon()` API. (TNT-32683)
-* Fixed an issue that prevented Recommendations offers from displaying on websites for a few customers. Customers could see the offer content in the delivery API call but the offer was not applied on the website. (TNT-32680)
+* Fixed an issue that prevented Recommendations offers from displaying on websites for a few customers. Customers could see the offer content in the Delivery API call but the offer was not applied on the website. (TNT-32680)
 * Fixed an issue that caused click-tracking across multiple experiences to not work as expected. (TNT-32644)
 * Fixed an issue that prevented at.js from applying the second metric after the rendering of the first metric fails. (TNT-32628)
 * Fixed an issue when passing `mbox3rdPartyId` using the `targetPageParams` function that caused the request payload to not be present in either the query parameters or in the request payload. (TNT-32613)

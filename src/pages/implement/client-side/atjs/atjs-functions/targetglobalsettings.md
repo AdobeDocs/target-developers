@@ -420,13 +420,13 @@ After `cspScriptNonce` and `cspStyleNonce` settings are specified, at.js 2.3.0+ 
 
 ## Hybrid personalization
 
-`serverState` is a setting available in at.js v2.2+ that can be used to optimize page performance when a hybrid integration of Target is implemented. Hybrid integration means that you are using both at.js v2.2+ on the client-side and the delivery API or a Target SDK on the server-side to deliver experiences. `serverState` gives at.js v2.2+ the ability to apply experiences directly from content fetched on the server side and returned to the client as part of the page being served.
+`serverState` is a setting available in at.js v2.2+ that can be used to optimize page performance when a hybrid integration of Target is implemented. Hybrid integration means that you are using both at.js v2.2+ on the client-side and the Delivery API or a Target SDK on the server-side to deliver experiences. `serverState` gives at.js v2.2+ the ability to apply experiences directly from content fetched on the server side and returned to the client as part of the page being served.
 
 ### Pre-requisites
 
 You must have a hybrid integration of Target.
   
-* **Server-side**:  You must use the new [delivery API](../../implement/delivery-api/) or [Target SDKs](../../implement/server-side/sdk-guides/).
+* **Server-side**:  You must use the [Delivery API](/src/pages/implement/delivery-api/index.md) or [Target SDKs](../../implement/server-side/sdk-guides/).
 * **Client-side**: You must use [at.js version 2.2 or later](/src/pages/implement/client-side/atjs/target-atjs-versions.md).
 
 ### Code samples

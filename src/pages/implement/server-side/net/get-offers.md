@@ -44,7 +44,7 @@ The `TargetDeliveryRequest.Builder` object has the following structure:
 |impressionId|String|No|If present,  second and subsequent requests with the same id will not increment impressions to activities/metrics. Generated automatically if not present.|
 |environmentId|Long|No|Valid client environment id. If not specified host will be determined base on the provided host.|
 |property|Property|No|Specifies the at_property via the token field. It can be used to control the scope for the delivery.|
-|trace|Trace|No|Enables trace for delivery API.|
+|trace|Trace|No|Enables trace for Delivery API.|
 |qaMode|QAMode|No|Use this object to enable the QA mode in the request.|
 |locationHint|String|No|Target edge cluster location hint. Used to target given edge cluster for this request.|
 |visitor|Visitor|No|Used to provide custom Visitor API object.|
@@ -56,7 +56,7 @@ The `TargetDeliveryRequest.Builder` object has the following structure:
 |trackingServerSecure|String|No|The Adobe Analytics Secure Server in order for Adobe Target and Adobe Analytics to correctly stitch the data together.|
 |decisioningMethod|DecisioningMethod|No|Can be used to explicitly set ON_DEVICE or HYBRID decisioning method for on-device decisioning|
 
-The values of each field should conform to [Target View Delivery API](../../delivery-api/index.md) request specification.
+The values of each field should conform to [Target Delivery API](../../delivery-api/index.md) request specification.
 
 ## Response
 
@@ -64,8 +64,8 @@ The `TargetDeliveryResponse` returned by `TargetClient.GetOffers()` has the foll
 
 |Name|Type|Description|
 | --- | --- | --- |
-|Request|TargetDeliveryRequest​|[Target View Delivery API](../../delivery-api/index.md) request|
-|Response|DeliveryResponse​|[Target View Delivery API](../../delivery-api/index.md)* response|
+|Request|TargetDeliveryRequest​|[Target Delivery API](../../delivery-api/index.md) request|
+|Response|DeliveryResponse​|[Target Delivery API](../../delivery-api/index.md)* response|
 |Status|HttpStatusCode|Response HTTP status code|
 |Message|string|Response status message or error message|
 |Locations|Locations|Target location names, including global mbox name and mboxes/views for which only remote decisioning is available|

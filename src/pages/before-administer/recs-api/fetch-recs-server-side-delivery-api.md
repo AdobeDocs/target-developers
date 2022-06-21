@@ -62,7 +62,7 @@ The syntax for the [Delivery API](/src/pages/implement/delivery-api/index.md) is
 
 1. Note the client code is required. As a reminder, your client code may be found in Adobe Target by navigating to **Recommendations > Settings**. Note the **Client Code** value in the **Recommendation API Token** section.
    ![client-code.png](/assets/client-code.png)
-2. Once you have your client code, construct your Delivery API call. The example below begins with the **Web Batched Mboxes Delivery API Call** provided in the [Delivery API Postman collection](https://developers.adobetarget.com/api/delivery-api/#section/Getting-Started/Postman-Collection), making relevant modifications. For example:
+2. Once you have your client code, construct your Delivery API call. The example below begins with the **Web Batched Mboxes Delivery API Call** provided in the [Delivery API Postman collection](../../implement/delivery-api/index.md/#section/Getting-Started/Postman-Collection), making relevant modifications. For example:
    * the **browser** and **address** objects were removed from the **Body**, since they are not required for non-HTML use cases
    * *api_charter* is listed as the location name in this example
    * the entity.id is specified, since this recommendation is based on Content Similarity, which requires a current item key to be passed to Target.
@@ -90,7 +90,7 @@ The following resources provide examples of various non-HTML focused implementat
 |[How Adobe Target Works in Mobile Apps](../../implement/mobile/how-target-works-mobile-apps.md)|How Target works with the Mobile SDK|
 |[Configuring the Target extension in Experience Platform Launch and Implementing Target APIs](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-target)|Steps for configuring the Target extension in Experience Platform Launch, adding the Target Extension to your app, and implementing Target APIs to request activities, prefetch offers, and Enter visual preview mode.|
 |[Adobe Target Node Client](https://www.npmjs.com/package/@adobe/target-nodejs-sdk)|Open-sourced Target Node.js SDK v1.0|
-|[Server Side overview](../../implement/server-side/)|Information about Adobe Target Server Side delivery APIs, Server Side Batch Delivery APIs, Node.js SDK, and Adobe Target Recommendations APIs.|
+|[Server Side overview](../../implement/server-side/)|Information about Adobe Target Server Side Delivery APIs, Server Side Batch Delivery APIs, Node.js SDK, and Adobe Target Recommendations APIs.|
 |[Adobe Campaign Content Recommendations in Email](https://medium.com/adobetech/adobe-campaign-content-recommendations-in-email-b51ced771d7f )|Blog that describes how to leverage content recommendations in email via Adobe Target and Adobe I/O Runtime in Adobe Campaign.|
 
 ## Managing Recommendations Setup with APIs

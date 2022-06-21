@@ -1,6 +1,6 @@
 ---
 title: What is the Adobe Recommendations API?
-description: This tutorial walks developers through hands-on practice using the Adobe Target Recommendations APIs to configure and manage Recommendations catalogs and custom criteria, as well as using the delivery API to retrieve recommendations content.
+description: This tutorial walks developers through hands-on practice using the Adobe Target Recommendations APIs to configure and manage Recommendations catalogs and custom criteria, as well as using the Delivery API to retrieve recommendations content.
 role: Developer
 level: Intermediate
 topic: Personalization, Administration, Integrations, Development
@@ -13,18 +13,18 @@ exl-id: 10f80056-fb71-4362-86bc-d161f596cb91
 ---
 # Adobe Recommendations API Overview
 
-APIs relevant for Recommendations include [admin APIs](../../before-administer/) that allow you to:
+APIs relevant for Recommendations include [Admin APIs](../../before-administer/) that allow you to:
 
 * Manage your catalog of recommendable products or content
 * Manage your Recommendations algorithms and activities
 
-Using the Target [delivery API](../../implement/delivery-api/) with Recommendations, you can also:
+Using the Target [Delivery API](../../implement/delivery-api/) with Recommendations, you can also:
 
 * Retrieve recommendations in JSON, HTML, or XML objects so they can be displayed in web, mobile, email, Internet of Things (IOT), and other channels.
 
 ## Tutorial Description
 
-This tutorial walks developers through hands-on practice using the Recommendations APIs to configure and manage Recommendations catalogs and custom criteria, as well as using the delivery API to retrieve recommendations content. By the end of this tutorial, you will be able to:
+This tutorial walks developers through hands-on practice using the Recommendations APIs to configure and manage Recommendations catalogs and custom criteria, as well as using the Delivery API to retrieve recommendations content. By the end of this tutorial, you will be able to:
 
 * Configure and manage entities using the Recommendations API
 * Configure and manage custom criteria using the Recommendations API

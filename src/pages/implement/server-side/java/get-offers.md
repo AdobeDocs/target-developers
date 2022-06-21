@@ -46,7 +46,7 @@ The `TargetDeliveryRequestBuilder` object has the following structure:
 |impressionId|String|No|If present,  second and subsequent requests with the same id will not increment impressions to activities/metrics. Generated automatically if not present.|
 |environmentId|Long|No|Valid client environment id. If not specified host will be determined base on the provided host.|
 |property|Property|No|Specifies the at_property via the token field. It can be used to control the scope for the delivery.|
-|trace|Trace|No|Enables trace for delivery API.|
+|trace|Trace|No|Enables trace for Delivery API.|
 |qaMode|QAMode|No|Use this object to enable the QA mode in the request.|
 |locationHint|String|No|Target edge cluster location hint. Used to target given edge cluster for this request.|
 |visitor|Visitor|No|Used to provide custom Visitor API object.|
