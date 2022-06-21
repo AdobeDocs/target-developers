@@ -42,15 +42,15 @@ In the **Experiences** step of activity creation, provide a name for your activi
 
 1. In the **JSON Data** text box that appears, enter the feature flag variable for the feature you intend to roll out with this activity in Experience A (1), using a valid JSON object (2).
 
-   ![alt image](assets/asset-json_a_rollout)
+   ![alt image](assets/asset-json-a-rollout)
 
 1. Click **Next** (1) to advance to the **Targeting** step of activity creation.
 
-   ![alt image](assets/asset-next_2_t_rollout)
+   ![alt image](assets/asset-next-2-t-rollout)
 
 1. In the **Targeting** step, keep the **All Visitors** audience (1), for simplicity. But adjust the traffic allocation (2) to 10%. This will restrict the feature to only 10% of your site visitors. Click Next (3) to advance to the **Goals & Settings** step.
 
-   ![alt image](assets/asset-next_2_g_rollout.png)
+   ![alt image](assets/asset-next-2-g-rollout.png)
 
 1. In the **Goals & Settings** step, choose **Adobe Target** (1) as the **Reporting Source** to view your activity results in the Adobe Target UI.
 
@@ -58,7 +58,7 @@ In the **Experiences** step of activity creation, provide a name for your activi
 
 1. Click **Save & Close** (3) to save the activity.
 
-   ![alt image](assets/asset-conv_rollout.png)
+   ![alt image](assets/asset-conv-rollout.png)
 
 ## Implement and render the feature in your application
 
