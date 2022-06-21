@@ -20,7 +20,7 @@
 
 Enabling on-device decisioning ensures an A/B activity is executed at near-zero latency. To enable this feature, navigate to **Administration** > **Implementation** > **Account details** in Adobe Target, and enable the **On-Device Decisioning** toggle.
 
-![alt image](./assets/asset-ood4.png)
+![alt image](assets/asset-ood4.png)
 
 **NOTE**: You must have the Admin or Approver [user role](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) to enable or disable the **On-Device Decisioning** toggle.
 
@@ -72,7 +72,7 @@ After enabling the **On-Device Decisioning** toggle, Adobe Target begins generat
 
 In the **Targeting** step, keep the **All Visitors** audience. This will enable you to understand the impact of your sorting feature, as well as which algorithm and number of items best influence the results.
 
-![alt image](./assets/asset-audiences-b.png)
+![alt image](assets/asset-audiences-b.png)
 
 ## Set traffic allocation
 
