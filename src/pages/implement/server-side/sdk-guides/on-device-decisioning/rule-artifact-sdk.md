@@ -10,15 +10,17 @@ This approach is best when you are able to initialize the Adobe Target SDK at th
 
 ## Install the SDK
 
-**NPM**
+<CodeBlock slots="heading, code" repeat="2" />
+
+### NPM
 
 ```
 npm i @adobe/target-nodejs-sdk -P
 ```
 
-**MVN**
+### MVN
 
-```
+```javascript
 <dependency>
     <groupId>com.adobe.target</groupId>
     <artifactId>java-sdk</artifactId>
@@ -30,24 +32,28 @@ npm i @adobe/target-nodejs-sdk -P
 
 1. First, import the SDK. Import to the same file from which you can control your server start-up.
 
-**Node.js**
+<CodeBlock slots="heading, code" repeat="2" />
 
-```
+### Node.js
+
+```javascript
 const TargetClient = require("@adobe/target-nodejs-sdk");
 ```
 
-**Java**
+### Java
 
-```
+```javascript
 import com.adobe.target.edge.client.ClientConfig;
 import com.adobe.target.edge.client.TargetClient;
 ```
 
 1. To configure the SDK, use the create method.
 
-**Node.js**
+<CodeBlock slots="heading, code" repeat="2" />
 
-```
+### Node.js
+
+```javascript
 const CONFIG = {
     client: "<your target client code>",
     organizationId: "your EC org id",
@@ -66,9 +72,9 @@ function startWebServer() {
 }
 ```
 
-**Java**
+### Java
 
-```
+```javascript
 ClientConfig config = ClientConfig.builder()
     .client("<you target client code>")
     .organizationId("<your EC org id>")
@@ -85,9 +91,11 @@ TargetClient targetClient = TargetClient.create(config);
 
 You do not need to manage the rule artifact yourself and calling the SDK methods should be straightforward.
 
-**Node.js**
+<CodeBlock slots="heading, code" repeat="2" />
 
-```
+### Node.js
+
+```javascript
 //req is the request object from the server request listener method
 const targetCookie = req.cookies[TargetClient.TargetCookieName];
 const request = {
@@ -113,7 +121,7 @@ TargetClient.getOffers({
 })
 ```
 
-**Java**
+### Java
 
 ```
 MboxRequest mbox = new MboxRequest().name("homepage").index(0);
@@ -124,13 +132,17 @@ TargetDeliveryRequest request = TargetDeliveryRequest.builder()
 TargetDeliveryResponse response = targetClient.getOffers(request);
 ```
 
-**NOTE**: In the code sample above, the `TargetClient` object holds a reference to the in-memory rule artifact. When you use this object for invoking standard SDK methods, it uses the in-memory rule artifact for decisioning. If your application is structured such that you need to call the SDK methods in files other than the one that initializes and listens to client requests, and if those files do not have access to the TargetClient object, then you can download the JSON payload and store it in a local JSON file to be consumed on other files, which need to initialize the SDK. This is explained in the next *section*.
+<InlineAlert variant="info" slots="text"/>
+
+In the code sample above, the `TargetClient` object holds a reference to the in-memory rule artifact. When you use this object for invoking standard SDK methods, it uses the in-memory rule artifact for decisioning. If your application is structured such that you need to call the SDK methods in files other than the one that initializes and listens to client requests, and if those files do not have access to the TargetClient object, then you can download the JSON payload and store it in a local JSON file to be consumed on other files, which need to initialize the SDK. This is explained in the next section, regarding [downloading the rule artifact using a JSON payload](rule-artifact-json.md).
 
 Here is an example that starts a web application after initializing the Adobe Target SDK.
 
-**Node.js**
+<CodeBlock slots="heading, code" repeat="2" />
 
-```
+### Node.js
+
+```javascript
 const express = require("express");
 const cookieParser = require("cookie-parser");
 const TargetClient = require("@adobe/target-nodejs-sdk");
@@ -199,9 +211,9 @@ function startWebServer() {
 }
 ```
 
-**Java**
+### Java
 
-```
+```javascript
 import com.adobe.target.edge.client.ClientConfig;
 import com.adobe.target.edge.client.TargetClient;
 import com.adobe.target.delivery.v1.model.ChannelType;

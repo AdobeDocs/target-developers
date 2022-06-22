@@ -514,7 +514,25 @@ module.exports = {
           },
           {
             title: 'Rule artifact',
-            path: '/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md'
+            path: '/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md',
+            pages: [
+              {
+                title: 'Rule artifact overview',
+                path: '/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md'
+              },
+              {
+                title: 'Download via Adobe Target SDK',
+                path: '/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-sdk.md'
+              },
+              {
+                title: 'Download via JSON payload',
+                path: '/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-json.md'
+              },
+              {
+                title: 'Example rule artifact',
+                path: '/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-example.md'
+              }
+            ]
           },
           {
             title: 'Execute A/B tests with feature flags',

@@ -1,6 +1,6 @@
 # Example rule artifact
 
-```
+```json
 {
 	"version": "1.0.0",
 	"meta": {

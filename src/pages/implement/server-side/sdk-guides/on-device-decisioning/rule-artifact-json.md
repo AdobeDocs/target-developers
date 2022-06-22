@@ -2,7 +2,7 @@
 
 This approach is best if your application is structured in a way that requires the SDK to be initialized on each file in which it uses SDK methods. Before your web application can use the JSON payload of the rule artifact during SDK initialization, you should ensure the JSON payload is downloaded and is available for your application to use.
 
-### Summary of steps
+## Summary of steps
 
 1. Install the SDK
 1. Initialize the SDK
@@ -10,15 +10,17 @@ This approach is best if your application is structured in a way that requires t
 
 ## Install the SDK
 
-**NPN**
+<CodeBlock slots="heading, code" repeat="2" />
+
+### NPM
 
 ```
 npm i @adobe/target-nodejs-sdk -P
 ```
 
-**MVN**
+### MVN
 
-```
+```javascript
 <dependency>
     <groupId>com.adobe.target</groupId>
     <artifactId>java-sdk</artifactId>
@@ -30,24 +32,28 @@ npm i @adobe/target-nodejs-sdk -P
 
 1. First, import the SDK. Import to the same file from which you can control your server start-up.
 
-**Node.js**
+<CodeBlock slots="heading, code" repeat="2" />
 
-```
+### Node.js
+
+```javascript
 const TargetClient = require("@adobe/target-nodejs-sdk");
 ```
 
-**Java**
+### Java
 
-```
+```javascript
 import com.adobe.target.edge.client.ClientConfig;
 import com.adobe.target.edge.client.TargetClient;
 ```
 
 1. To configure the SDK, use the create method.
 
-**Node.js**
+<CodeBlock slots="heading, code" repeat="2" />
 
-```
+### Node.js
+
+```javascript
 const CONFIG = {
     client: "<your target client code>",
     organizationId: "your EC org id",
@@ -74,9 +80,9 @@ function onArtifactDownloadFailed(event) {
 }
 ```
 
-**Java**
+### Java
 
-```
+```javascript
 package com.adobe.target.edge.client.model.ondevice.OnDeviceDecisioningHandler;
 
 ClientConfig config = ClientConfig.builder()
@@ -106,9 +112,11 @@ TargetClient targetClient = TargetClient.create(config);
 
 The mechanism you use to store the JSON payload depends on your system architecture. You can use a local file, a database, or a memory object caching system such as Memcached . You need to be able to read this JSON from your application for consumption. In this guide, we use a local file as the storage.
 
-**Node.js**
+<CodeBlock slots="heading, code" repeat="2" />
 
-```
+### Node.js
+
+```javascript
 //... Code removed for brevity
 
 function onArtifactDownloadSucceeded(event) {
@@ -129,9 +137,9 @@ function onArtifactDownloadFailed(event) {
 //... Code removed for brevity
 ```
 
-**Java**
+### Java
 
-```
+```javascript
 MboxRequest mbox = new MboxRequest().name("homepage").index(0);
 TargetDeliveryRequest request = TargetDeliveryRequest.builder()
     .context(new Context().channel(ChannelType.WEB))
@@ -140,13 +148,17 @@ TargetDeliveryRequest request = TargetDeliveryRequest.builder()
 TargetDeliveryResponse response = targetClient.getOffers(request);
 ```
 
-**NOTE**:: By initializing the Adobe Target SDK via the JSON payload, your server is ready to serve requests immediately with on-device decisioning activities, since the Adobe Target SDK does not need to wait for the rule artifact to be downloaded.
+<InlineAlert variant="info" slots="text"/>
+
+By initializing the Adobe Target SDK via the JSON payload, your server is ready to serve requests immediately with on-device decisioning activities, since the Adobe Target SDK does not need to wait for the rule artifact to be downloaded.
 
 Here is an example demonstrating the JSON payload-initializing capability.
 
-**Node.js**
+<CodeBlock slots="heading, code" repeat="2" />
 
-```
+### Node.js
+
+```javascript
 const express = require("express");
 const cookieParser = require("cookie-parser");
 const TargetClient = require("@adobe/target-nodejs-sdk");
@@ -231,9 +243,9 @@ function startWebServer() {
 }
 ```
 
-**Java**
+### Java
 
-```
+```javascript
 import com.adobe.target.edge.client.ClientConfig;
 import com.adobe.target.edge.client.TargetClient;
 import com.adobe.target.delivery.v1.model.ChannelType;
