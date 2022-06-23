@@ -36,7 +36,7 @@ This tutorial is intended for developers new to Target APIs or Recommendations A
 
 ## Pre-requisites
 
-Using the Target admin APIs requires [Adobe authentication setup](../index.md). Make sure you have this configured prior to beginning this tutorial.
+Using the Target admin APIs requires [Adobe authentication setup](../configure-authentication.md). Make sure you have this configured prior to beginning this tutorial.
 
 ## Resources
 
