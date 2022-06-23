@@ -47,9 +47,9 @@ p1=v1&p2=v2&p3=hello%20world
 
   In this example, p3 has the value `hello world`, which is URL encoded.
 
-The following is an example of how the code for the page might look:
+Consider the following example page code:
 
-```
+```javascript
 <html> 
   <head> 
     <title>Title here..</title> 
@@ -73,7 +73,7 @@ This example sends the following data to the mbox edge:
 
 ## Array
 
-```
+```javascript
 <!--window.-->targetPageParams = function() { 
   return ["a=1", "b=2", "c=hello world"]; 
 }; 
@@ -92,7 +92,7 @@ This example sends the following data to the mbox edge:
 
 JSON is a powerful way to pass parameters. Target uses the JSON object keys to flatten complicated structures into simple parameters.
 
-```
+```json
 <!--window.-->targetPageParams = function() { 
   return { 
     "a": 1, 
