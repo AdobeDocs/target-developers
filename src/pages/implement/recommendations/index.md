@@ -22,7 +22,7 @@ Before setting up your first Recommendations activity in Adobe Target, complete 
 3. [Pass behavioral information and context](#pass-behavioral-information-and-context) to Target Recommendations to allow it to deliver personalized recommendations.
 4. [Configure global exclusions](#configure-global-exclusions).
 5. [Configure Recommendations settings](#configure-recommendations-settings).
-6. (Optional) [Administer Recommendations using Admin APIs](#administer-recommendations-using-admin-apis)
+6. (Optional) [Administer Recommendations using Admin APIs](#administer-recommendations-using-admin-apis).
 
 ## Implement Target
 

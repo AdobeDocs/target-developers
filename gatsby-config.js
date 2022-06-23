@@ -447,8 +447,8 @@ module.exports = {
             path: '/implement/server-side/sdk-guides/sample-apps/'
           },
           {
-            title: 'Transition from Target legacy APIs to Adobe I/O',
-            path: '/implement/server-side/transition-from-target-legacy-apis.md'
+            title: 'Transition from Target Classic APIs to Adobe I/O',
+            path: '/implement/server-side/transition-from-target-classic-apis.md'
           }
         ]
       },

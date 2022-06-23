@@ -65,4 +65,4 @@ If you require an exception, please contact your Customer Success Manager.
 
 ## Help
 
-Please contact Adobe Target Client Care (tt-support@adobe.com) if you have any questions or need help transitioning from the Classic APIs to Target APIs on Adobe I/O.
+Please contact Adobe Target Client Care (tt-support@adobe.com) if you have any questions or need help transitioning from the Classic APIs to the Target APIs on Adobe I/O.
