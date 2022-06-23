@@ -18,14 +18,14 @@ exl-id: b6edb504-a8b6-4379-99c1-6907e71601f9
 Before setting up your first Recommendations activity in Adobe Target, complete the following steps:
 
 1. [Implement Target](#implement-target) on the web and mobile app surfaces that you want to use for capturing user behavior and delivering recommendations.
-2. [Set up your Recommendations catalog](#set-up-your-recommendadtions-catalog) of products or content that you want to recommend to your users.
+2. [Set up your Recommendations catalog](#set-up-your-recommendations-catalog) of products or content that you want to recommend to your users.
 3. [Pass behavioral information and context](#pass-behavioral-information-and-context) to Target Recommendations to allow it to deliver personalized recommendations.
 4. [Configure global exclusions](#configure-global-exclusions).
 5. [Configure Recommendations settings](#configure-recommendations-settings).
 
 ## Implement Target
 
-Target Recommendations requires you to implement the Adobe Experience Platform Web SDK or at.js 0.9.2 (or later). See [Implement Target](../implementing-target.md) for more information.
+Target Recommendations requires you to implement the Adobe Experience Platform Web SDK or at.js 0.9.2 (or later). See the [Target client-side implementation guides](../client-side/) for more information.
 
 ## Set up your Recommendations catalog
 
@@ -128,7 +128,7 @@ function targetPageParams() {
 
 ### Purchases/order confirmation pages
 
-When a purchase event occurs, pass the identity of the purchased item or items. See [Track Conversions](../client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager.md#track-conversions).
+When a purchase event occurs, pass the identity of the purchased item or items. See [Track Conversions](../client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager.md#track-conversions) in the the [How to Deploy at.js > Implement Target without a tag manager](../client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager.md) article.
 
 ## Configure global exclusions
 
