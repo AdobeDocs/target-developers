@@ -49,7 +49,7 @@ p1=v1&p2=v2&p3=hello%20world
 
 Consider the following example page code:
 
-```javascript
+```html
 <html> 
   <head> 
     <title>Title here..</title> 
