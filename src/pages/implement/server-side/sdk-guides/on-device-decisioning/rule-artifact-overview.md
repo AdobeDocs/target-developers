@@ -7,7 +7,7 @@ The rule artifact is a JSON representation of your Adobe Target on-device decisi
 
 ## Example rule artifact
 
-Click here for an example of the [rule artifact](rule-artifact-sdk.md).
+Click here for an example of the [rule artifact](rule-artifact-example.md).
 
 ## How to view the rule artifact for your client
 
