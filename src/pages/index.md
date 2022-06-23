@@ -16,9 +16,14 @@ Resources and Guides for Adobe Target Developers
 
 ## Resources
 
-* [Adobe Target GitHub Repo](https://github.com/AdobeDocs/target-developers)
-* [Adobe Target Implementation](./before-implement/index.md)
-* [Adobe Target Administration](https://experienceleague.adobe.com/docs/target/using/administer/administrating-target.html)
+* [Adobe open source repo](https://github.com/adobe)
+* [Target Node JS SDK Source](https://github.com/adobe/target-nodejs-sdk)
+* [Target Node JS SDK Examples Repo](https://github.com/adobe/target-nodejs-sdk-samples)
+* [Target Java SDK Source](https://github.com/adobe/target-java-sdk)
+* [Target Java SDK Example Repo](https://github.com/adobe/target-java-sdk-samples)
+* [Target Implementation](./before-implement/)
+* [Target Administration](./before-administer/)
+* [Adobe Target Dev Docs GitHub Repo](https://github.com/AdobeDocs/target-developers)
 * [Adobe Target Release Notes](https://experienceleague.adobe.com/docs/target/using/release-notes/release-notes.html)
 * [Adobe Target Business User Guide](https://experienceleague.adobe.com/docs/target/using/target-home.html)
 
