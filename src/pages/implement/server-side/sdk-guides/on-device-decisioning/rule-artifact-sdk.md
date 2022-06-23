@@ -10,7 +10,7 @@ This approach is best when you are able to initialize the Adobe Target SDK at th
 
 ## Install the SDK
 
-<CodeBlock slots="heading, code" repeat="2" languages="js, js" />
+<CodeBlock slots="heading, code" repeat="2" languages="js, Java" />
 
 ### NPM
 
@@ -32,7 +32,7 @@ npm i @adobe/target-nodejs-sdk -P
 
 1. First, import the SDK. Import to the same file from which you can control your server start-up.
 
-<CodeBlock slots="heading, code" repeat="2" languages="js, js" />
+<CodeBlock slots="heading, code" repeat="2" languages="js, Java" />
 
 ### Node.js
 
@@ -49,7 +49,7 @@ import com.adobe.target.edge.client.TargetClient;
 
 1. To configure the SDK, use the create method.
 
-<CodeBlock slots="heading, code" repeat="2" languages="js, js" />
+<CodeBlock slots="heading, code" repeat="2" languages="js, Java" />
 
 ### Node.js
 
@@ -91,7 +91,7 @@ TargetClient targetClient = TargetClient.create(config);
 
 You do not need to manage the rule artifact yourself and calling the SDK methods should be straightforward.
 
-<CodeBlock slots="heading, code" repeat="2" languages="js, js" />
+<CodeBlock slots="heading, code" repeat="2" languages="js, Java" />
 
 ### Node.js
 
@@ -138,7 +138,7 @@ In the code sample above, the `TargetClient` object holds a reference to the in-
 
 Here is an example that starts a web application after initializing the Adobe Target SDK.
 
-<CodeBlock slots="heading, code" repeat="2" languages="js, js" />
+<CodeBlock slots="heading, code" repeat="2" languages="js, Java" />
 
 ### Node.js
 
