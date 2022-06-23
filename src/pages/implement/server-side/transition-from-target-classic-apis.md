@@ -3,17 +3,18 @@ keywords:
 - api
 - adobe i/o
 - classic
-description: Learn how to transition from the Adobe Target Classic APIs to the Target APIs on Adobe I/O.
-title: How Do I Transition From Target Classic APIs to Target APIs on Adobe I/O?
+- adobe developer console
+description: Learn how to transition from the Adobe Target Classic APIs to the Target APIs on the Adobe Developer Console.
+title: How Do I Transition From Target Classic APIs to Target APIs on the Adobe Developer Console?
 feature: Implement Server-side
 role: Developer
 exl-id: 4b4274a9-b91a-4a79-9b40-8b1909a2d1d1
 ---
-# Transition from Target Classic APIs to Adobe I/O
+# Transition from Target Classic APIs to Target APIs on the Adobe Developer Console
 
-Information to help you transition from the Target Classic APIs to the Target APIs on Adobe I/O.
+Information to help you transition from the Target Classic APIs to the Target APIs on the [Adobe Developer Console](https://developer.adobe.com/console/home).
 
-With the decommissioning of Adobe Target Classic, the APIs connected to your Target Classic account have also been made unavailable. This document will help you transition your Target Classic API-based integrations to the Target APIs powered by Adobe I/O.
+With the decommissioning of Adobe Target Classic, the APIs connected to your Target Classic account have also been made unavailable. This document will help you transition your Target Classic API-based integrations to the Target APIs powered by the [Adobe Developer Console](https://developer.adobe.com/console/home).
 
 For more information about Target APIs, see [Target APIs](/src/pages/before-administer/index.md). For more information about Target SDKs, see [Target Server-side Implementation](/src/pages/implement/server-side/index.md)
 
@@ -21,8 +22,8 @@ For more information about Target APIs, see [Target APIs](/src/pages/before-admi
 
 | Term | Description |
 |--- |--- |
-|Classic API|APIs that are linked to your Target Classic account. These API calls are based on a username and password-based authentication and use the hostname `testandtarget.omniture.com`. If your API calls contain a user name and password in the request URL, you must transition to Adobe I/O APIs.|
-|Adobe I/O|Adobe I/O is the gateway for Target APIs. These APIs are connected to your Target Standard/Premium account. The Target APIs on Adobe I/O use a [JWT-based authentication](../../before-administer/configure-authentication.md), which is the industry standard for secure enterprise APIs.|
+|Classic API|APIs that are linked to your Target Classic account. These API calls are based on a username and password-based authentication and use the hostname `testandtarget.omniture.com`. If your API calls contain a user name and password in the request URL, you must transition to the Adobe Developer Console APIs.|
+|[Adobe Developer Console](https://developer.adobe.com/console/home)|The Adobe Developer Console is the gateway for Target APIs. These APIs are connected to your Target Standard/Premium account. The Target APIs on the Adobe Developer Console use a [JWT-based authentication](../../before-administer/configure-authentication.md), which is the industry standard for secure enterprise APIs.|
 
 ## Timeline
 
@@ -37,11 +38,11 @@ Recommendations Classic APIs were not impacted by this timeline.
 
 ## Equivalent Methods
 
-The following table lists the equivalent Adobe I/O API methods for the Classic API methods. The Adobe I/O APIs return JSON when compared to the XML response provided by the Classic APIs.
+The following table lists the equivalent Adobe Developer Console API methods for the Classic API methods. The Adobe Developer Console APIs return JSON, whereas the Classic APIs return XML.
 
-The Adobe I/O API methods are linked to the corresponding section in the API documentation site. An example is provided for each API method. You can also use the Target Admin API Postman Collection that contains sample API calls for all the Adobe API methods on Adobe I/O.
+The Adobe Developer Console API methods are linked to the corresponding section in the API documentation site. An example is provided for each API method. You can also use the Target Admin API Postman Collection that contains sample API calls for all the Adobe API methods on the Adobe Developer Console.
 
-| Grouping | Classic API Method | Adobe I/O API Method | Notes |
+| Grouping | Classic API Method | Adobe Developer Console API Method | Notes |
 |--- |--- |--- |--- |
 |Campaign/Activity|Campaign Create|[Create AB Activity](https://developers.adobetarget.com/api/#create-ab-activity)<br />[Create XT Activity](https://developers.adobetarget.com/api/#create-xt-activity)|The new APIs provide separate create methods for AB and XT|
 ||Campaign Update|[Update AB Activity](https://developers.adobetarget.com/api/#update-ab-activity)<br />[Update XT Activity](https://developers.adobetarget.com/api/#update-xt-activity)||
@@ -65,4 +66,4 @@ If you require an exception, please contact your Customer Success Manager.
 
 ## Help
 
-Please contact Adobe Target Client Care (tt-support@adobe.com) if you have any questions or need help transitioning from the Classic APIs to the Target APIs on Adobe I/O.
+Please contact Adobe Target Client Care (tt-support@adobe.com) if you have any questions or need help transitioning from the Classic APIs to the Target APIs on the Adobe Developer Console.

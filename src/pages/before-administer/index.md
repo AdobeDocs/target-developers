@@ -32,4 +32,4 @@ There are important distinctions between Target Admin APIs (including the Recomm
 
 * Delivery APIs let you retrieve content. Delivery APIs do not require authentication.
 
-To use Target Admin APIs, you must configure authentication using Adobe I/O. For more information, see [How to Configure Authentication](../before-administer/configure-authentication.md).
+To use Target Admin APIs, you must configure authentication using the [Adobe Developer Console](https://developer.adobe.com/console/home). For more information, see [How to Configure Authentication](../before-administer/configure-authentication.md).
