@@ -120,7 +120,7 @@ Adobe Target requires Client Hints for correct segmentation of Browser, Operatin
 
 Starting with Node.js SDK v2.4.0 and Java SDK v2.3.0, Client Hints can be sent to Target via `getOffers()` calls. Client Hints should be included on the `request.context` object, along with User Agent.
 
-<CodeBlock slots="heading, code" repeat="2" languages="js, JAVA" />
+<CodeBlock slots="heading, code" repeat="2" languages="js, Java" />
 
 #### Node.js SDK
 
@@ -153,7 +153,7 @@ targetClient.getOffers({
 
 #### Java SDK
 
-```java
+```javascript
 import com.adobe.target.delivery.v1.model.ClientHints; 
 import com.adobe.target.delivery.v1.model.Context; 
 import com.adobe.target.delivery.v1.model.ExecuteRequest; 
@@ -232,7 +232,7 @@ targetClient.getOffers({
 
 #### Java
 
-```java
+```javascript
 public class TargetRequestUtils {
 
     public static Context getContext(HttpServletRequest request) {
@@ -285,7 +285,7 @@ targetClient.getOffers({
 
 #### Java
 
-```java
+```javascript
 public class TargetRequestUtils {
 
     public static Context getContext(HttpServletRequest request) {

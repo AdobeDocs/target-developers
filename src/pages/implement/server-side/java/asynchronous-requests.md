@@ -6,11 +6,11 @@ One benefit of server-side integration is that you can leverage the huge bandwid
 
 ## Supported Methods
 
-<CodeBlock slots="heading, code" repeat="1" languages="JAVA" />
+<CodeBlock slots="heading, code" repeat="1" languages="Java" />
 
 ### Methods
 
-```java
+```javascript
 CompletableFuture<TargetDeliveryResponse> getOffersAsync(TargetDeliveryRequest request);
 CompletableFuture<ResponseStatus> sendNotificationsAsync(TargetDeliveryRequest request);
 CompletableFuture<Attributes> getAttributesAsync(TargetDeliveryRequest targetRequest, String ...mboxes);
@@ -20,11 +20,11 @@ CompletableFuture<Attributes> getAttributesAsync(TargetDeliveryRequest targetReq
 
 A sample `Spring` application Controller could look like this:
 
-<CodeBlock slots="heading, code" repeat="1" languages="JAVA" />
+<CodeBlock slots="heading, code" repeat="1" languages="Java" />
 
 ### Sample Controller
 
-```java
+```javascript
 @RestController
 public class TargetRestController {
 

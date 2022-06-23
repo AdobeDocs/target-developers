@@ -2,11 +2,11 @@
 
 These helper methods are reusable across controllers and can be moved to a separate utility class.
 
-<CodeBlock slots="heading, code" repeat="1" languages="JAVA" />
+<CodeBlock slots="heading, code" repeat="1" languages="Java" />
 
 ### Methods
 
-```java
+```javascript
 public class TargetRequestUtils {
 
     public static Context getContext(HttpServletRequest request) {

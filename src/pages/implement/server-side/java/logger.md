@@ -15,17 +15,17 @@ Target Java SDK uses `slf4j` logging. You need to provide your implementation of
 
 Add the `slf4j` dependency.
 
-<CodeBlock slots="heading, code" repeat="2" languages="JAVA, JAVA" />
+<CodeBlock slots="heading, code" repeat="2" languages="Java, Java" />
 
 ### Gradle
 
-```java
+```javascript
 compile 'org.slf4j:slf4j-simple:2.0.0-alpha0'
 ```
 
 ### Maven
 
-```java
+```javascript
 <dependency>
     <groupId>org.slf4j</groupId>
     <artifactId>slf4j-simple</artifactId>
@@ -35,11 +35,11 @@ compile 'org.slf4j:slf4j-simple:2.0.0-alpha0'
 
 Enable the `DEBUG` logs based on your implementation, and mark the request logging flags.
 
-<CodeBlock slots="heading, code" repeat="1" languages="JAVA" />
+<CodeBlock slots="heading, code" repeat="1" languages="Java" />
 
 ### Debug
 
-```java
+```javascript
 System.setProperty(SimpleLogger.DEFAULT_LOG_LEVEL_KEY, "DEBUG");
 ClientConfig config = ClientConfig.builder()
         .client("acmeclient")

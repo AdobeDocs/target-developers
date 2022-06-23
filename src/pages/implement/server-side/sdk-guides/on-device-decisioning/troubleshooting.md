@@ -30,7 +30,7 @@ const CONFIG = {
 
 For Java SDK `logRequests` on the `ClientConfig` should be enabled.
 
-```java
+```javascript
 ClientConfig config = ClientConfig.builder()
   .client("<your client code>")
   .organizationId("<your organization ID>")
@@ -40,7 +40,7 @@ ClientConfig config = ClientConfig.builder()
 
 Also the JVM should be started with the following command line parameter:
 
-```java
+```javascript
 $ java -Dorg.slf4j.simpleLogger.defaultLogLevel=DEBUG ...
 ```
 
@@ -74,7 +74,7 @@ const request = {
 
 **Java SDK**
 
-```java
+```javascript
 Trace trace = new Trace()
   .authorizationToken("88f1a924-6bc5-4836-8560-2f9c86aeb36b");
 Context context = new Context()
@@ -272,7 +272,7 @@ If an on-device decisioning activity is not executing, but you have verified tha
 
 **Java SDK**
 
-```java
+```javascript
 Context context = new Context()
   .channel(ChannelType.WEB);
 MboxRequest mbox = new MboxRequest()

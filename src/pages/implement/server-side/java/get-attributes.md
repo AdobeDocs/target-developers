@@ -6,11 +6,11 @@
 
 ## Method
 
-<CodeBlock slots="heading, code" repeat="1" languages="JAVA" />
+<CodeBlock slots="heading, code" repeat="1" languages="Java" />
 
 ### getAttributes
 
-```java
+```javascript
 Attributes TargetClient.getAttributes(TargetDeliveryRequest targetRequest, String ...mboxes)
 ```
 
@@ -37,11 +37,11 @@ An `Attributes` object is returned from `TargetClient.getAttributes()` which has
 
 ## Example
 
-<CodeBlock slots="heading, code" repeat="1" languages="JAVA" />
+<CodeBlock slots="heading, code" repeat="1" languages="Java" />
 
 #### Java
 
-```java
+```javascript
 ClientConfig clientConfig = ClientConfig.builder()
         .client("acmeclient")
         .organizationId("1234567890@AdobeOrg")

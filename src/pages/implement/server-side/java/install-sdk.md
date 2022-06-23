@@ -2,11 +2,11 @@
 
 The Java SDK is distributed by [Maven Central](https://search.maven.org/artifact/com.adobe.target/target-java-sdk). To get started, add it as a dependency by installing in `gradle` or `maven`:
 
-<CodeBlock slots="heading, code" repeat="2" languages="JAVA, MARKUP" />
+<CodeBlock slots="heading, code" repeat="2" languages="Java, MARKUP" />
 
 ### Gradle
 
-```java
+```javascript
 compile 'com.adobe.target:java-sdk:1.0'
 ```
 

@@ -75,7 +75,7 @@ targetClient.getOffers({
 
 **Java**
 
-```java
+```javascript
 public class TargetRequestUtils {
 
     public static Context getContext(HttpServletRequest request) {
@@ -127,7 +127,7 @@ targetClient.getOffers({
 
 **Java**
 
-```java
+```javascript
 public class TargetRequestUtils {
 
     public static Context getContext(HttpServletRequest request) {

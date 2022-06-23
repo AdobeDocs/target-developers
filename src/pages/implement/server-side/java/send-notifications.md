@@ -17,11 +17,11 @@ When a `prefetch` object is passed within the request, the impression is not aut
 
 ## Method
 
-<CodeBlock slots="heading, code" repeat="1" languages="JAVA" />
+<CodeBlock slots="heading, code" repeat="1" languages="Java" />
 
 ### create
 
-```java
+```javascript
 ResponseStatus TargetClient.sendNotifications(TargetDeliveryRequest request)
 ```
 
@@ -29,11 +29,11 @@ ResponseStatus TargetClient.sendNotifications(TargetDeliveryRequest request)
 
 First, let's build the Target Delivery API request for prefetching content for the `home` and `product1` mboxes.
 
-<CodeBlock slots="heading, code" repeat="1" languages="JAVA" />
+<CodeBlock slots="heading, code" repeat="1" languages="Java" />
 
 ### Prefetch 
 
-```java
+```javascript
 List<MboxRequest> mboxRequests = new ArrayList<>();
 mboxRequests.add((MboxRequest) new MboxRequest().name("home").index(1));
 mboxRequests.add((MboxRequest) new MboxRequest().name("product1").index(2));
@@ -45,11 +45,11 @@ TargetDeliveryResponse targetResponse = targetJavaClient.getOffers(targetDeliver
 
 A successful response will contain a Target Delivery API response object, which contains prefetched content for the requested mboxes. A sample `targetResponse.response` object may look as follows:
 
-<CodeBlock slots="heading, code" repeat="1" languages="JAVA" />
+<CodeBlock slots="heading, code" repeat="1" languages="Java" />
 
 ### Response
 
-```java
+```javascript
 {
   "status": 200,
   "requestId": "e8ac2dbf5f7d4a9f9280f6071f24a01e",
@@ -105,11 +105,11 @@ A successful response will contain a Target Delivery API response object, which 
 
 Note the mbox `name` and `state` fields, as well as the `eventToken` field, in each of the Target content options. These should be provided in the `sendNotifications()` request, as soon as each content option is displayed. Let's suppose the `product1` mbox has been displayed on a non-browser device. The notifications request will look like this:
 
-<CodeBlock slots="heading, code" repeat="1" languages="JAVA" />
+<CodeBlock slots="heading, code" repeat="1" languages="Java" />
 
 ### Request
 
-```java
+```javascript
 TargetDeliveryRequest mboxNotificationRequest = TargetDeliveryRequest.builder().notifications(new ArrayList() {{
     add(new Notification()
             .id("1")
@@ -126,10 +126,10 @@ TargetDeliveryRequest mboxNotificationRequest = TargetDeliveryRequest.builder().
 
 Notice that we've included both the mbox state and the event token corresponding to the Target offer delivered in the prefetch response. Having built the notifications request, we can send it to Target via `sendNotifications()` API method:
 
-<CodeBlock slots="heading, code" repeat="1" languages="JAVA" />
+<CodeBlock slots="heading, code" repeat="1" languages="Java" />
 
 ### Response
 
-```java
+```javascript
 ResponseStatus notificationResponse = targetJavaClient.sendNotifications(mboxNotificationRequest);
 ```

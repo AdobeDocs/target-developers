@@ -8,17 +8,17 @@ Use the `create` method in order to initialize the Java SDK and instantiate the 
 
 TargetClient is created using `TargetClient.create`.
 
-<CodeBlock slots="heading, code" repeat="1" languages="JAVA" />
+<CodeBlock slots="heading, code" repeat="1" languages="Java" />
 
 ### create
 
-```java
+```javascript
 TargetClient TargetClient.create(ClientConfig clientConfig)
 ```
 
 ClientConfig is created using `ClientConfig.builder`.
 
-```java
+```javascript
 ClientConfigBuilder ClientConfig.builder()
 ```
 
@@ -50,11 +50,11 @@ ClientConfigBuilder ClientConfig.builder()
 
 ## Example
 
-<CodeBlock slots="heading, code" repeat="1" languages="JAVA" />
+<CodeBlock slots="heading, code" repeat="1" languages="Java" />
 
 ### Java
 
-```java
+```javascript
 ClientConfig clientConfig = ClientConfig.builder()
         .client("acmeclient")
         .organizationId("1234567890@AdobeOrg")

@@ -16,11 +16,11 @@ The `OnDeviceDecisioningHandler` object contains the following callbacks, which 
 
 ## Example
 
-<CodeBlock slots="heading, code" repeat="1" languages="JAVA" />
+<CodeBlock slots="heading, code" repeat="1" languages="Java" />
 
 ### SDK Events
 
-```java
+```javascript
 ClientConfig clientConfig = ClientConfig.builder()
         .client("acmeclient")
         .organizationId("1234567890@AdobeOrg")
