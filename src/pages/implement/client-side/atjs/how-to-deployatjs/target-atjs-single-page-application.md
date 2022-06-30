@@ -249,7 +249,7 @@ To make sure that A4T works with at.js 2.x,
 
 The view start handler should look something like this:
 
-```
+```react
 document.addEventListener("at-view-start", function(e) {
   var visitor = Visitor.getInstance("<your Adobe Org ID>");
   
@@ -260,7 +260,7 @@ document.addEventListener("at-view-start", function(e) {
 
 The view end handler should look something like this:
 
-```
+```react
 document.addEventListener("at-view-end", function(e) {
   // s - is the AppMeasurement tracker object
   s.t();
