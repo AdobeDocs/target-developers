@@ -453,6 +453,20 @@ module.exports = {
         ]
       },
       {
+        title: 'Delivery API',
+        path: '/implement/delivery-api/',
+        pages: [
+          {
+            title: 'Delivery API guide',
+            path: '/implement/delivery-api/index.md'
+          },
+          {
+            title: 'Client Hints',
+            path: '/implement/delivery-api/client-hints.md'
+          }
+        ]
+      },
+      {
         title: 'Implement Recommendations',
         path: '/implement/recommendations/',
       },
