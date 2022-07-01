@@ -31,7 +31,7 @@ The experience does not need to display in a browser. The experience can display
 
 <InlineAlert variant="info" slots="text"/>
 
-A first-time visitor can be initialized only on the client-side. A first-time visitor *cannot* be initialized on the server-side.
+A first-time visitor can be initialized only on the client-side. A first-time visitor *cannot* be initialized on the server-side. This is due to the ECID, which depends on the third-party demdex cookie and therefore needs to be initialized via Visitor API.js on an implementation where the browser is involved.
 
 The following sections provide more information about the various APIs and the NodeJS SDK:
 
