@@ -453,18 +453,56 @@ module.exports = {
         ]
       },
       {
+        title: 'Introduction',
+        path: '/implement/delivery-api/introduction.md'
+      },
+      {
+        title: 'Changelog',
+        path: '/implement/delivery-api/changelog.md'
+      },
+      {
+        title: 'SDKs',
+        path: '/implement/delivery-api/sdks.md'
+      },
+      {
+        title: 'Getting Started',
+        path: '/implement/delivery-api/getting-started.md'
+      },
+      {
+        title: 'User Permissions (Premium)',
+        path: '/implement/delivery-api/user-permissions.md'
+      },
+      {
+        title: 'Identifying Visitors',
+        path: '/implement/delivery-api/identifying-visitors.md'
+      },
+      {
+        title: 'Single or Batch Delivery',
+        path: '/implement/delivery-api/single-or-batch-delivery.md'
+      },
+      {
+        title: 'Prefetch',
+        path: '/implement/delivery-api/prefetch.md'
+      },
+      {
+        title: 'Notifications',
+        path: '/implement/delivery-api/notifications.md'
+      },
+      {
+        title: 'Integration with Experience Cloud',
+        path: '/implement/delivery-api/integration.md'
+      },
+      {
+        title: 'Known Limitations',
+        path: '/implement/delivery-api/known-limitations.md'
+      },
+      {
+        title: 'Client Hints',
+        path: '/implement/delivery-api/client-hints.md'
+      },
+      {
         title: 'Delivery API',
-        path: '/implement/delivery-api/',
-        pages: [
-          {
-            title: 'Delivery API guide',
-            path: '/implement/delivery-api/index.md'
-          },
-          {
-            title: 'Client Hints',
-            path: '/implement/delivery-api/client-hints.md'
-          }
-        ]
+        path: '/implement/delivery-api/index.md'
       },
       {
         title: 'Implement Recommendations',
