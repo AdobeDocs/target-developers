@@ -5,15 +5,13 @@ description: Adobe Target Delivery API Client Hints
 
 # Client Hints and the Target Delivery API
 
-For an overview of Client Hints, see [User-agent and Client Hints](../client-side/atjs/user-agent-and-client-hints.md) in the [Client-side Implementation](../../implement/client-side/) section.
-
-Client Hints must be sent to Target on the offers request. Generally it is recommended to send all available Client Hints to Target.
+Client Hints must be sent to Target on the offers request. Generally, it is recommended to send all available Client Hints to Target. For more information, see [User-agent and Client Hints](../client-side/atjs/user-agent-and-client-hints.md) in the [Client-side Implementation](../../implement/client-side/) section.
 
 ## Delivery API direct calls
 
 ### From the browser
 
-In this case the browser will send low-entropy Client Hints to Target automatically via request headers.  But there are a couple browser-level limitations with this implementation.  First - no Client Hints headers will be sent from the browser unless the request is being made over https.  Second - Client Hints will not be sent on the first request to Target on the page.  Client Hints headers will only be sent on the second request and all requests thereafter.  This means that audience segmentation and personalization cannot be performed by Target on the first page visit.  In order to get around both of these limitations, we strongly recommend using the User Agent Client Hints API in the browser to collect the Client Hints directly, and send them on the request payload.
+In this case, the browser will send low-entropy Client Hints to Target automatically via request headers. But there are a couple browser-level limitations with this implementation. First - no Client Hints headers will be sent from the browser unless the request is being made over https. Second - Client Hints will not be sent on the first request to Target on the page. Client Hints headers will only be sent on the second request and all requests thereafter. This means that audience segmentation and personalization cannot be performed by Target on the first page visit. In order to get around both of these limitations, we strongly recommend using the User Agent Client Hints API in the browser to collect the Client Hints directly, and send them on the request payload.
 
 ### From a server
 
