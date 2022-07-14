@@ -502,7 +502,7 @@ module.exports = {
       },
       {
         title: 'Delivery API',
-        path: '/implement/delivery-api/index.md'
+        path: '/implement/delivery-api/index.md/#tag/Delivery-API'
       },
       {
         title: 'Implement Recommendations',
