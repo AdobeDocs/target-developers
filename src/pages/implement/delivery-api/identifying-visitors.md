@@ -22,7 +22,7 @@ Target uses three identifiers:
 
 The Target ID or `tntId` can be seen as a device ID. This `tntId` is generated automatically by Adobe Target if it isn't provided in the request. Thereafter, subsequent requests need to include this `tntId` in order for the right content to be delivered to a device used by the user.
 
-```
+```http
 curl -X POST \
 'https://demo.tt.omtrdc.net/rest/v1/delivery?client=demo&sessionId=10abf6304b2714215b1fd39a870f01afc#1555632114' \
 -H 'Content-Type: application/json' \
@@ -54,7 +54,7 @@ curl -X POST \
 
 The example call above demonstrates that a `tntId` does not need to be passed in. In this scenario, Adobe Target will generate a `tntId` and provide it in the response, as shown here:
 
-```
+```URI
 {
   "status": 200,
   "requestId": "5b586f83-890c-46ae-93a2-610b1caa43ef",
