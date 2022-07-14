@@ -478,7 +478,7 @@ module.exports = {
       },
       {
         title: 'Single or Batch Delivery',
-        path: '/implement/delivery-api/single-or-batch-delivery.md'
+        path: '/implement/delivery-api/single-or-batch.md'
       },
       {
         title: 'Prefetch',
