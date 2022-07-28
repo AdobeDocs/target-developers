@@ -186,12 +186,6 @@ Use the Recommendations API.
 
 <DiscoverBlock slots="link, text"/> 
 
-[Recommendations API tutorial](before-administer/recs-api/)
-
-Practice using the Recommendations API in this hands-on tutorial.
-
-<DiscoverBlock slots="link, text"/> 
-
 [Admin Console APIs](https://developer.adobe.com/umapi/) 
 
 Manage users and product entitlements through the Adobe User Management and User Sync APIs.

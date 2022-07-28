@@ -1,11 +1,10 @@
 ---
 title: How to Configure Authentication for Adobe Target APIs
-description: This tutorial guides developers through the steps required to generate authentication tokens needed to successfully interact with Adobe Target APIs. Follow these steps to use the Adobe Developer Console to generate and test the bearer access token, which is needed to use the Target APIs.
+description: This article guides developers through the steps required to generate authentication tokens needed to successfully interact with Adobe Target APIs. Follow these steps to use the Adobe Developer Console to generate and test the bearer access token, which is needed to use the Target APIs.
 role: Developer, Administrator, Architect
 level: Intermediate
 topic: Personalization, Administration, Integrations, Development
 feature: APIs/SDKs, Administration & Configuration
-doc-type: tutorial
 kt:
 thumbnail:
 author: Judy Kim
@@ -15,7 +14,7 @@ exl-id: 8a1e93e4-67b2-4942-a8da-fc0f2cbb2df2
 
 The Adobe Target Admin APIs, including Recommendations Admin APIs, are secured by authentication to ensure only authorized users use them to access Adobe Target. Use the [Adobe Developer Console](https://developer.adobe.com/console/home) to manage this authentication for all Adobe Experience Cloud solutions, including Adobe Target.
 
-This lesson walks through the preliminary steps required to generate authentication tokens needed to successfully interact with Adobe Target APIs. In the sections that follow, you will:
+Here are the preliminary steps required to generate authentication tokens needed to successfully interact with Adobe Target APIs. In the sections that follow, you will:
 
 1. Create a project (previously called integration) in the Adobe Developer Console.
 2. Export project details to Postman.
@@ -26,14 +25,14 @@ This lesson walks through the preliminary steps required to generate authenticat
 
 |Resource|Details|
 | --- | --- |
-|Postman|In order to complete these steps successfully, get the [Postman app](https://www.postman.com/downloads/) for your operating system. Postman basic is free with account creation. While not required in order to use Adobe Target APIs in general, Postman makes API workflows easier, and Adobe Target provides several Postman collections to help execute its APIs and learn how they operate. The rest of this tutorial assumes working knowledge of Postman. For assistance, please reference the [Postman documentation](https://learning.getpostman.com/).  |
-|References|Familiarity with the following resources is assumed throughout the rest of this tutorial:<ul><li>[Adobe I/O Github](https://github.com/adobeio)</li><li>[Target Admin and Profile API documentation](../administer/admin-api/index.md)</li><li>[Recommendations API documentation](https://developers.adobetarget.com/api/recommendations/)</li></ul>|
+|Postman|In order to complete these steps successfully, get the [Postman app](https://www.postman.com/downloads/) for your operating system. Postman basic is free with account creation. While not required in order to use Adobe Target APIs in general, Postman makes API workflows easier, and Adobe Target provides several Postman collections to help execute its APIs and learn how they operate. The rest of this guide assumes working knowledge of Postman. For assistance, please reference the [Postman documentation](https://learning.getpostman.com/).  |
+|References|Familiarity with the following resources is assumed throughout the rest of this guide:<ul><li>[Adobe I/O Github](https://github.com/adobeio)</li><li>[Target Admin and Profile API documentation](../administer/admin-api/index.md)</li><li>[Recommendations API documentation](https://developers.adobetarget.com/api/recommendations/)</li></ul>|
 
 ## Create an Adobe I/O project
 
 In this section, you will access the Adobe Developer Console and create a project for Adobe Target. For more information, reference the [documentation on projects](https://developer.adobe.com/developer-console/docs/guides/projects/).
 
-<!---(1. Generate your private key and public certificate, per the [documentation on authentication](https://developer.adobe.com/developer-console/docs/guides/authentication/). // [//]: # (as described in **Step 1** of [How to set up Adobe IO: Authentication - Step by Step](https://helpx.adobe.com/marketing-cloud-core/kb/adobe-io-authentication-step-by-step.html). After completing Step 1, return to this tutorial and resume with Step 2, below. // The outcome of this step should be the creation of a `private.key` file and a `certificate_pub.crt` file. Return to this tutorial once you have generated these two files.)--->
+<!---(1. Generate your private key and public certificate, per the [documentation on authentication](https://developer.adobe.com/developer-console/docs/guides/authentication/). // [//]: # (as described in **Step 1** of [How to set up Adobe IO: Authentication - Step by Step](https://helpx.adobe.com/marketing-cloud-core/kb/adobe-io-authentication-step-by-step.html). After completing Step 1, return to this guide and resume with Step 2, below. // The outcome of this step should be the creation of a `private.key` file and a `certificate_pub.crt` file. Return to this guide once you have generated these two files.)--->
 
 1. In the [Adobe Admin Console](https://adminconsole.adobe.com/), ensure your Adobe user account has been granted both [Product Admin](https://helpx.adobe.com/enterprise/using/admin-roles.html) and [Developer](https://helpx.adobe.com/enterprise/using/manage-developers.html) level access to Target.
 
@@ -53,7 +52,7 @@ In this section, you will access the Adobe Developer Console and create a projec
 
    ![configure-io-target-createproject5](assets/configure-io-target-createproject5.png)
 
-6. Select an option for associating public and private keys with the service account integration you are creating for Target. For this tutorial, select **Option 1: Generate a key pair** and click **Generate keypair**.
+6. Select an option for associating public and private keys with the service account integration you are creating for Target. For this example, select **Option 1: Generate a key pair** and click **Generate keypair**.
    ![configure-io-target-createproject6](assets/configure-io-target-createproject6.png)
 
 7. Note the results! As instructed, make note of the automatically downloaded configuration file (`config`), which contains your private key. Click **Next**.
@@ -71,7 +70,7 @@ In this section, you will access the Adobe Developer Console and create a projec
 
 <InlineAlert variant="info" slots="text"/>
 
-In this tutorial, we name our project "Target Integration." If you anticipate using your project for more than just Adobe Target, you may want to name it accordingly. For example, you might choose to name it "Adobe APIs" or "Experience Cloud APIs," since it may be used with other solutions in the Adobe Experience Cloud.
+In this example, we name our project "Target Integration." If you anticipate using your project for more than just Adobe Target, you may want to name it accordingly. For example, you might choose to name it "Adobe APIs" or "Experience Cloud APIs," since it may be used with other solutions in the Adobe Experience Cloud.
 
 ## Export project details
 
