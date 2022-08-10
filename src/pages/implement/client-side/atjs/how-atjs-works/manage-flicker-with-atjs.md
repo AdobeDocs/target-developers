@@ -27,7 +27,7 @@ If you enable the setting when configuring at.js, at.js will set HTML BODY style
 
 Opacity set to 0 keeps the page content hidden to prevent flicker, but the browser still renders the page and loads all the necessary assets like CSS, images, etc.
 
-If opacity 0 does not work in your implementation, you can also manage flicker by customizing `bodyHiddenStyle` and set it to `body {visibility:hidden !important}`. You can use either value body `{opacity:0 !important}` or `body {visibility:hidden !important}`, whichever works best for your specific circumstance.
+If `opacity: 0` does not work in your implementation, you can also manage flicker by customizing `bodyHiddenStyle` and set it to `body {visibility:hidden !important}`. You can use either `body {opacity:0 !important}` or `body {visibility:hidden !important}`, whichever works best for your specific circumstance.
 
 The following illustration shows the Hide Body and Show Body calls in both at.js 1.*x* and at.js 2.x.
 
