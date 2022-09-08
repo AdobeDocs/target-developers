@@ -3,11 +3,7 @@
   "info": {
     "version": "1.0.0",
     "title": "Adobe Target Delivery API",
-    "termsOfService": "https://www.adobe.com/legal/terms.html",
-    "x-logo": {
-      "url": "http://developers.adobetarget.com/api/recommendations/adobe_target-logo.png",
-      "altText": "Adobe Target Delivery API"
-    }
+    "termsOfService": "https://www.adobe.com/legal/terms.html"
   },
   "servers": [
     {
