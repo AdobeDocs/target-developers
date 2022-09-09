@@ -15,9 +15,6 @@
       "post": {
         "summary": "Retrieve Target offers",
         "operationId": "execute",
-        "tags": [
-          "Delivery API"
-        ],
         "parameters": [
           {
             "name": "client",
