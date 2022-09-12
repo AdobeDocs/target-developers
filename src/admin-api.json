@@ -28,14 +28,6 @@
               "type": "integer",
               "format": "int64"
             }
-          },
-          {
-            "name": "includeMarketingCloudMetadata",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "boolean"
-            }
           }
         ],
         "responses": {
@@ -136,14 +128,6 @@
             "schema": {
               "type": "integer",
               "format": "int64"
-            }
-          },
-          {
-            "name": "includeMarketingCloudMetadata",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "boolean"
             }
           }
         ],
@@ -256,14 +240,6 @@
               "type": "integer",
               "format": "int64"
             }
-          },
-          {
-            "name": "includeMarketingCloudMetadata",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "boolean"
-            }
           }
         ],
         "responses": {
@@ -366,14 +342,6 @@
             "schema": {
               "type": "integer",
               "format": "int64"
-            }
-          },
-          {
-            "name": "includeMarketingCloudMetadata",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "boolean"
             }
           }
         ],
@@ -480,14 +448,6 @@
             "schema": {
               "type": "integer",
               "format": "int64"
-            }
-          },
-          {
-            "name": "includeMarketingCloudMetadata",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "boolean"
             }
           }
         ],
@@ -610,14 +570,6 @@
               "type": "integer",
               "format": "int64"
             }
-          },
-          {
-            "name": "includeMarketingCloudMetadata",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "boolean"
-            }
           }
         ],
         "responses": {
@@ -726,14 +678,6 @@
               "type": "integer",
               "format": "int64"
             }
-          },
-          {
-            "name": "includeMarketingCloudMetadata",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "boolean"
-            }
           }
         ],
         "responses": {
@@ -839,14 +783,6 @@
             "schema": {
               "type": "integer",
               "format": "int64"
-            }
-          },
-          {
-            "name": "includeMarketingCloudMetadata",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "boolean"
             }
           }
         ],
@@ -969,14 +905,6 @@
               "type": "integer",
               "format": "int64"
             }
-          },
-          {
-            "name": "includeMarketingCloudMetadata",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "boolean"
-            }
           }
         ],
         "responses": {
@@ -1084,14 +1012,6 @@
             "schema": {
               "type": "integer",
               "format": "int64"
-            }
-          },
-          {
-            "name": "includeMarketingCloudMetadata",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "boolean"
             }
           }
         ],
@@ -1203,14 +1123,6 @@
             "schema": {
               "type": "integer",
               "format": "int64"
-            }
-          },
-          {
-            "name": "includeMarketingCloudMetadata",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "boolean"
             }
           }
         ],
@@ -1342,14 +1254,6 @@
             "schema": {
               "type": "integer",
               "format": "int64"
-            }
-          },
-          {
-            "name": "includeMarketingCloudMetadata",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "boolean"
             }
           }
         ],
@@ -2931,14 +2835,6 @@
               "type": "integer",
               "format": "int64"
             }
-          },
-          {
-            "name": "includeMarketingCloudMetadata",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "boolean"
-            }
           }
         ],
         "responses": {
@@ -3044,14 +2940,6 @@
             "schema": {
               "type": "integer",
               "format": "int64"
-            }
-          },
-          {
-            "name": "includeMarketingCloudMetadata",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "boolean"
             }
           }
         ],
@@ -3174,14 +3062,6 @@
               "type": "integer",
               "format": "int64"
             }
-          },
-          {
-            "name": "includeMarketingCloudMetadata",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "boolean"
-            }
           }
         ],
         "responses": {
@@ -3303,14 +3183,6 @@
                 "abt"
               ]
             }
-          },
-          {
-            "name": "includeMarketingCloudMetadata",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "boolean"
-            }
           }
         ],
         "responses": {
@@ -3421,14 +3293,6 @@
             "schema": {
               "type": "integer",
               "format": "int64"
-            }
-          },
-          {
-            "name": "includeMarketingCloudMetadata",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "boolean"
             }
           }
         ],
@@ -3600,14 +3464,6 @@
               "type": "integer",
               "format": "int64"
             }
-          },
-          {
-            "name": "includeMarketingCloudMetadata",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "boolean"
-            }
           }
         ],
         "requestBody": {
@@ -3748,14 +3604,6 @@
                 "abt"
               ]
             }
-          },
-          {
-            "name": "includeMarketingCloudMetadata",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "boolean"
-            }
           }
         ],
         "responses": {
@@ -3866,14 +3714,6 @@
             "schema": {
               "type": "integer",
               "format": "int64"
-            }
-          },
-          {
-            "name": "includeMarketingCloudMetadata",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "boolean"
             }
           }
         ],
@@ -4045,14 +3885,6 @@
               "type": "integer",
               "format": "int64"
             }
-          },
-          {
-            "name": "includeMarketingCloudMetadata",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "boolean"
-            }
           }
         ],
         "requestBody": {
@@ -4171,16 +4003,7 @@
         "summary": "Create a new recs offer",
         "description": "Creates a new recs offer as defined by the request data.",
         "operationId": "createOffer",
-        "parameters": [
-          {
-            "name": "includeMarketingCloudMetadata",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "boolean"
-            }
-          }
-        ],
+        "parameters": [],
         "requestBody": {
           "content": {
             "application/vnd.adobe.target.v1+json": {
@@ -4283,16 +4106,7 @@
         "summary": "Create a new json offer",
         "description": "Creates a new json offer as defined by the request data.",
         "operationId": "createOffer_1_1",
-        "parameters": [
-          {
-            "name": "includeMarketingCloudMetadata",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "boolean"
-            }
-          }
-        ],
+        "parameters": [],
         "requestBody": {
           "content": {
             "application/vnd.adobe.target.v2+json": {
@@ -4405,16 +4219,7 @@
         "summary": "Create a new content offer",
         "description": "Creates a new content offer as defined by the request data.",
         "operationId": "createOffer_1_2",
-        "parameters": [
-          {
-            "name": "includeMarketingCloudMetadata",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "boolean"
-            }
-          }
-        ],
+        "parameters": [],
         "requestBody": {
           "content": {
             "application/vnd.adobe.target.v2+json": {
@@ -4527,24 +4332,7 @@
         "summary": "List audiences",
         "description": "List all available audiences with options to filter and sort by each available field.",
         "operationId": "getAudiences_1_1",
-        "parameters": [
-          {
-            "name": "parameters",
-            "in": "query",
-            "required": true,
-            "schema": {
-              "$ref": "#/components/schemas/MultiValueMapStringString"
-            }
-          },
-          {
-            "name": "includeMarketingCloudMetadata",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "boolean"
-            }
-          }
-        ],
+        "parameters": [],
         "responses": {
           "407": {
             "description": "Proxy Authentication Required",
@@ -4645,16 +4433,7 @@
         "summary": "Create an audience",
         "description": "Create a new audience as specified by the contents of the request and return the newly-created audience definition.",
         "operationId": "createAudience_1_1",
-        "parameters": [
-          {
-            "name": "includeMarketingCloudMetadata",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "boolean"
-            }
-          }
-        ],
+        "parameters": [],
         "requestBody": {
           "content": {
             "application/vnd.adobe.target.v3+json": {
@@ -4777,16 +4556,7 @@
         "summary": "Create a Behavior Targeted activity",
         "description": "Creates a new Behavior Targeted activity with the specified contents and returns the created activity.",
         "operationId": "createActivity_2",
-        "parameters": [
-          {
-            "name": "includeMarketingCloudMetadata",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "boolean"
-            }
-          }
-        ],
+        "parameters": [],
         "requestBody": {
           "content": {
             "application/vnd.adobe.target.v2+json": {
@@ -4891,371 +4661,6 @@
         }
       }
     },
-    "/{tenant}/target/activities/abt/{id}/qamode": {
-      "post": {
-        "tags": [
-          "activities"
-        ],
-        "summary": "documentation.operation.activities.abt.qamode.createABTActivityQAModeResponse",
-        "description": "documentation.description.activities.abt.qamode.createABTActivityQAModeResponse",
-        "operationId": "createABTActivityQAModeResponse",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int64"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/vnd.adobe.target.v2+json": {
-              "schema": {
-                "$ref": "#/components/schemas/QAModeRequest"
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "Bad Request",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "401": {
-            "description": "Unauthorized",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "405": {
-            "description": "Method Not Allowed",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "406": {
-            "description": "Not Acceptable",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "415": {
-            "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/vnd.adobe.target.v2+json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ABTQAModeResponseDTO"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/{tenant}/target/activities/ab/{id}/qamode": {
-      "post": {
-        "tags": [
-          "activities"
-        ],
-        "summary": "documentation.operation.activities.ab.qamode.createABActivityQAModeResponse",
-        "description": "documentation.description.activities.ab.qamode.createABActivityQAModeResponse",
-        "operationId": "createABActivityQAModeResponse",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int64"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/vnd.adobe.target.v3+json": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "qaModeRequest": {
-                    "$ref": "#/components/schemas/QAModeRequest"
-                  },
-                  "activityType": {
-                    "type": "string",
-                    "enum": [
-                      "ab",
-                      "xt",
-                      "abt"
-                    ]
-                  }
-                }
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "Bad Request",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "401": {
-            "description": "Unauthorized",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "405": {
-            "description": "Method Not Allowed",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "406": {
-            "description": "Not Acceptable",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "415": {
-            "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/vnd.adobe.target.v3+json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ABQAModeResponseDTO"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/{tenant}/target/activities/xt/{id}/qamode": {
-      "post": {
-        "tags": [
-          "activities"
-        ],
-        "summary": "documentation.operation.activities.ab.qamode.createABActivityQAModeResponse",
-        "description": "documentation.description.activities.ab.qamode.createABActivityQAModeResponse",
-        "operationId": "createABActivityQAModeResponse_1",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int64"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/vnd.adobe.target.v3+json": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "qaModeRequest": {
-                    "$ref": "#/components/schemas/QAModeRequest"
-                  },
-                  "activityType": {
-                    "type": "string",
-                    "enum": [
-                      "ab",
-                      "xt",
-                      "abt"
-                    ]
-                  }
-                }
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "Bad Request",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "401": {
-            "description": "Unauthorized",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "405": {
-            "description": "Method Not Allowed",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "406": {
-            "description": "Not Acceptable",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "415": {
-            "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/vnd.adobe.target.v3+json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ABQAModeResponseDTO"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
     "/{tenant}/target/activities/ab": {
       "post": {
         "tags": [
@@ -5264,16 +4669,7 @@
         "summary": "Create an AB activity",
         "description": "Creates a new AB activity with the specified contents and returns the created activity.",
         "operationId": "createActivity_4_1",
-        "parameters": [
-          {
-            "name": "includeMarketingCloudMetadata",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "boolean"
-            }
-          }
-        ],
+        "parameters": [],
         "requestBody": {
           "content": {
             "application/vnd.adobe.target.v3+json": {
@@ -5435,16 +4831,7 @@
         "summary": "Create an AB activity",
         "description": "Creates a new AB activity with the specified contents and returns the created activity.",
         "operationId": "createActivity_3_1_1",
-        "parameters": [
-          {
-            "name": "includeMarketingCloudMetadata",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "boolean"
-            }
-          }
-        ],
+        "parameters": [],
         "requestBody": {
           "content": {
             "application/vnd.adobe.target.v3+json": {
@@ -5606,24 +4993,7 @@
         "summary": "List offers",
         "description": "Retrieve the list of previously-created content/json/recs offers. The parameters passed through the query string are optional and are used to indicate the sorting and filtering options.",
         "operationId": "getOffers_1",
-        "parameters": [
-          {
-            "name": "parametersMap",
-            "in": "query",
-            "required": true,
-            "schema": {
-              "$ref": "#/components/schemas/MultiValueMapStringString"
-            }
-          },
-          {
-            "name": "includeMarketingCloudMetadata",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "boolean"
-            }
-          }
-        ],
+        "parameters": [],
         "responses": {
           "407": {
             "description": "Proxy Authentication Required",
@@ -5721,16 +5091,7 @@
         "summary": "List offer templates",
         "description": "Retrieve the list of previously-created offer templates.",
         "operationId": "getOfferTemplates",
-        "parameters": [
-          {
-            "name": "parametersMap",
-            "in": "query",
-            "required": true,
-            "schema": {
-              "$ref": "#/components/schemas/MultiValueMapStringString"
-            }
-          }
-        ],
+        "parameters": [],
         "responses": {
           "407": {
             "description": "Proxy Authentication Required",
@@ -5926,24 +5287,7 @@
         "summary": "List activities",
         "description": "Get a list of AB and Experience Targeted activities created in Target, with the ability to filter and sort by attributes.",
         "operationId": "getActivities_1_1",
-        "parameters": [
-          {
-            "name": "parameters",
-            "in": "query",
-            "required": true,
-            "schema": {
-              "$ref": "#/components/schemas/MultiValueMapStringString"
-            }
-          },
-          {
-            "name": "includeMarketingCloudMetadata",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "boolean"
-            }
-          }
-        ],
+        "parameters": [],
         "responses": {
           "407": {
             "description": "Proxy Authentication Required",
@@ -6041,7 +5385,7 @@
     "/{tenant}/target/activities/{id}/changelog": {
       "get": {
         "tags": [
-          "/{tenant}/target/activities/{id}/changelog"
+          "activities"
         ],
         "summary": "List activity changelog",
         "description": "documentation.description.activities.changelog.getChangelog",
@@ -6054,14 +5398,6 @@
             "schema": {
               "type": "integer",
               "format": "int64"
-            }
-          },
-          {
-            "name": "parametersMap",
-            "in": "query",
-            "required": true,
-            "schema": {
-              "$ref": "#/components/schemas/MultiValueMapStringString"
             }
           }
         ],
@@ -6152,7 +5488,7 @@
     "/{tenant}/target/activities/abt/{id}/report/performance": {
       "get": {
         "tags": [
-          "activities"
+          "reports"
         ],
         "summary": "Behavior Targeted activity performance report",
         "description": "Retrieve the performance report data for the Behavior Targeted activity referenced by the provided id.",
@@ -6165,14 +5501,6 @@
             "schema": {
               "type": "integer",
               "format": "int64"
-            }
-          },
-          {
-            "name": "parameters",
-            "in": "query",
-            "required": true,
-            "schema": {
-              "$ref": "#/components/schemas/MultiValueMapStringString"
             }
           }
         ],
@@ -6263,7 +5591,7 @@
     "/{tenant}/target/activities/abt/{id}/report/orders": {
       "get": {
         "tags": [
-          "activities"
+          "reports"
         ],
         "summary": "Behavior Targeted activity orders report",
         "description": "Retrieve the orders report data for the Behavior Targeted activity referenced by the provided id.",
@@ -6276,14 +5604,6 @@
             "schema": {
               "type": "integer",
               "format": "int64"
-            }
-          },
-          {
-            "name": "parameters",
-            "in": "query",
-            "required": true,
-            "schema": {
-              "$ref": "#/components/schemas/MultiValueMapStringString"
             }
           }
         ],
@@ -6374,7 +5694,7 @@
     "/{tenant}/target/activities/ab/{id}/report/performance": {
       "get": {
         "tags": [
-          "activities"
+          "reports"
         ],
         "summary": "AB activity performance report",
         "description": "Retrieve the performance report data for the AB activity referenced by the provided id.",
@@ -6387,14 +5707,6 @@
             "schema": {
               "type": "integer",
               "format": "int64"
-            }
-          },
-          {
-            "name": "parameters",
-            "in": "query",
-            "required": true,
-            "schema": {
-              "$ref": "#/components/schemas/MultiValueMapStringString"
             }
           }
         ],
@@ -6485,7 +5797,7 @@
     "/{tenant}/target/activities/xt/{id}/report/performance": {
       "get": {
         "tags": [
-          "activities"
+          "reports"
         ],
         "summary": "AB activity performance report",
         "description": "Retrieve the performance report data for the AB activity referenced by the provided id.",
@@ -6498,14 +5810,6 @@
             "schema": {
               "type": "integer",
               "format": "int64"
-            }
-          },
-          {
-            "name": "parameters",
-            "in": "query",
-            "required": true,
-            "schema": {
-              "$ref": "#/components/schemas/MultiValueMapStringString"
             }
           }
         ],
@@ -6596,7 +5900,7 @@
     "/{tenant}/target/activities/ab/{id}/report/orders": {
       "get": {
         "tags": [
-          "activities"
+          "reports"
         ],
         "summary": "AB activity orders report",
         "description": "Retrieve the orders report data for the AB activity referenced by the provided id.",
@@ -6609,14 +5913,6 @@
             "schema": {
               "type": "integer",
               "format": "int64"
-            }
-          },
-          {
-            "name": "parameters",
-            "in": "query",
-            "required": true,
-            "schema": {
-              "$ref": "#/components/schemas/MultiValueMapStringString"
             }
           }
         ],
@@ -6707,7 +6003,7 @@
     "/{tenant}/target/activities/xt/{id}/report/orders": {
       "get": {
         "tags": [
-          "activities"
+          "reports"
         ],
         "summary": "AB activity orders report",
         "description": "Retrieve the orders report data for the AB activity referenced by the provided id.",
@@ -6720,14 +6016,6 @@
             "schema": {
               "type": "integer",
               "format": "int64"
-            }
-          },
-          {
-            "name": "parameters",
-            "in": "query",
-            "required": true,
-            "schema": {
-              "$ref": "#/components/schemas/MultiValueMapStringString"
             }
           }
         ],
@@ -6859,50 +6147,6 @@
         },
         "description": ""
       },
-      "OfferMarketingCloudMetadata": {
-        "type": "object",
-        "properties": {
-          "sourceProductName": {
-            "type": "string",
-            "enum": [
-              "Adobe Audience Manager",
-              "Adobe Experience Manager",
-              "Adobe Experience Platform",
-              "Adobe Mobile Services",
-              "Adobe Target",
-              "Adobe Target Classic"
-            ]
-          },
-          "editURL": {
-            "type": "string"
-          },
-          "remoteModifiedBy": {
-            "type": "string"
-          },
-          "aem.fragmentPath": {
-            "type": "string"
-          },
-          "aem.lastUpdatedBy": {
-            "type": "string"
-          },
-          "aem.lastUpdatedTime": {
-            "type": "string"
-          },
-          "aem.offerType": {
-            "type": "string"
-          },
-          "aem.offerURL": {
-            "type": "string"
-          },
-          "aem.previewImageURL": {
-            "type": "string"
-          },
-          "aem.tags": {
-            "type": "string"
-          }
-        },
-        "description": ""
-      },
       "PromotionSlotConfiguration": {
         "type": "object",
         "properties": {
@@ -6970,9 +6214,6 @@
           "modifiedAt": {
             "type": "string",
             "format": "date-time"
-          },
-          "marketingCloudMetadata": {
-            "$ref": "#/components/schemas/OfferMarketingCloudMetadata"
           }
         },
         "description": ""
@@ -7012,9 +6253,6 @@
           "modifiedAt": {
             "type": "string",
             "format": "date-time"
-          },
-          "marketingCloudMetadata": {
-            "$ref": "#/components/schemas/OfferMarketingCloudMetadata"
           }
         },
         "description": ""
@@ -7038,9 +6276,6 @@
           "modifiedAt": {
             "type": "string",
             "format": "date-time"
-          },
-          "marketingCloudMetadata": {
-            "$ref": "#/components/schemas/OfferMarketingCloudMetadata"
           }
         },
         "description": ""
@@ -7150,29 +6385,6 @@
       "TargetRule": {
         "type": "object"
       },
-      "MarketingCloudMetadata": {
-        "type": "object",
-        "properties": {
-          "sourceProductName": {
-            "type": "string",
-            "enum": [
-              "Adobe Audience Manager",
-              "Adobe Experience Manager",
-              "Adobe Experience Platform",
-              "Adobe Mobile Services",
-              "Adobe Target",
-              "Adobe Target Classic"
-            ]
-          },
-          "editURL": {
-            "type": "string"
-          },
-          "remoteModifiedBy": {
-            "type": "string"
-          }
-        },
-        "description": ""
-      },
       "ActivityDescription": {
         "type": "object",
         "properties": {
@@ -7211,9 +6423,6 @@
           "modifiedAt": {
             "type": "string",
             "format": "date-time"
-          },
-          "marketingCloudMetadata": {
-            "$ref": "#/components/schemas/MarketingCloudMetadata"
           }
         },
         "description": ""
@@ -7259,9 +6468,6 @@
           "locations": {
             "$ref": "#/components/schemas/Locations"
           },
-          "deviceGraphEnabled": {
-            "type": "boolean"
-          },
           "options": {
             "type": "array",
             "items": {
@@ -7305,9 +6511,6 @@
           "modifiedAt": {
             "type": "string",
             "format": "date-time"
-          },
-          "marketingCloudMetadata": {
-            "$ref": "#/components/schemas/MarketingCloudMetadata"
           },
           "analytics": {
             "$ref": "#/components/schemas/Analytics"
@@ -7807,9 +7010,6 @@
           "name": {
             "type": "string"
           },
-          "deviceGraphEnabled": {
-            "type": "boolean"
-          },
           "startsAt": {
             "type": "string",
             "format": "date-time"
@@ -7882,9 +7082,6 @@
           "modifiedAt": {
             "type": "string",
             "format": "date-time"
-          },
-          "marketingCloudMetadata": {
-            "$ref": "#/components/schemas/MarketingCloudMetadata"
           },
           "views": {
             "type": "array",
@@ -8021,88 +7218,6 @@
         },
         "description": ""
       },
-      "QAModeRequest": {
-        "type": "object",
-        "properties": {
-          "url": {
-            "type": "string"
-          },
-          "currentActivityOnly": {
-            "type": "boolean"
-          },
-          "audienceIdsEvaluatedAsTrue": {
-            "type": "array",
-            "items": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
-          "audienceIdsEvaluatedAsFalse": {
-            "type": "array",
-            "items": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        },
-        "description": ""
-      },
-      "ABTQAModeExperienceDTO": {
-        "type": "object",
-        "properties": {
-          "url": {
-            "type": "string"
-          },
-          "experienceLocalId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "locationOptions": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/LocationOptionDTO"
-            }
-          }
-        },
-        "description": ""
-      },
-      "ABTQAModeResponseDTO": {
-        "type": "object",
-        "properties": {
-          "qaModeExperiences": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ABTQAModeExperienceDTO"
-            }
-          }
-        },
-        "description": ""
-      },
-      "ABQAModeExperienceDTO": {
-        "type": "object",
-        "properties": {
-          "url": {
-            "type": "string"
-          },
-          "experienceLocalId": {
-            "type": "integer",
-            "format": "int32"
-          }
-        },
-        "description": ""
-      },
-      "ABQAModeResponseDTO": {
-        "type": "object",
-        "properties": {
-          "qaModeExperiences": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ABQAModeExperienceDTO"
-            }
-          }
-        },
-        "description": ""
-      },
       "AudiencePatch": {
         "type": "object",
         "properties": {
@@ -8115,27 +7230,6 @@
           }
         },
         "description": ""
-      },
-      "MultiValueMapStringString": {
-        "type": "object",
-        "properties": {
-          "all": {
-            "type": "object",
-            "additionalProperties": {
-              "type": "string"
-            },
-            "writeOnly": true
-          },
-          "empty": {
-            "type": "boolean"
-          }
-        },
-        "additionalProperties": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        }
       },
       "OfferList": {
         "type": "object",
@@ -8182,9 +7276,6 @@
           "modifiedAt": {
             "type": "string",
             "format": "date-time"
-          },
-          "marketingCloudMetadata": {
-            "$ref": "#/components/schemas/MarketingCloudMetadata"
           },
           "workspace": {
             "type": "string"
@@ -8322,9 +7413,6 @@
           },
           "workspace": {
             "type": "string"
-          },
-          "marketingCloudMetadata": {
-            "$ref": "#/components/schemas/MarketingCloudMetadata"
           },
           "modifiedAt": {
             "type": "string",
@@ -8500,9 +7588,6 @@
             "type": "integer",
             "format": "int32"
           },
-          "marketingCloudMetadata": {
-            "$ref": "#/components/schemas/MarketingCloudMetadata"
-          },
           "modifiedAt": {
             "type": "string",
             "format": "date-time"
@@ -8599,11 +7684,11 @@
       "DateTimeZone": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "string"
-          },
           "fixed": {
             "type": "boolean"
+          },
+          "id": {
+            "type": "string"
           }
         },
         "description": ""
@@ -8619,6 +7704,9 @@
             "type": "integer",
             "format": "int64"
           },
+          "chronology": {
+            "$ref": "#/components/schemas/Chronology"
+          },
           "start": {
             "type": "string",
             "format": "date-time"
@@ -8626,9 +7714,6 @@
           "end": {
             "type": "string",
             "format": "date-time"
-          },
-          "chronology": {
-            "$ref": "#/components/schemas/Chronology"
           },
           "afterNow": {
             "type": "boolean"
