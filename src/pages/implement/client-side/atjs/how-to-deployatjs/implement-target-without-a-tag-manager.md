@@ -80,6 +80,7 @@ In addition to the settings explained above, the following specific at.js settin
 
 | Setting | Description |
 |--- |--- |
+|Cross-Domain|Specify whether browsers set cookies in your domain (first-party cookies), Target's domain, or both.|
 |Custom Library Header|Add any custom JavaScript to include at the top of the library.|
 |Custom Library Footer|Add any custom JavaScript to include at the bottom of the library.|
 
