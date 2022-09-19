@@ -283,17 +283,21 @@ Cross-domain tracking makes it possible to stitch visitors across different doma
 
 <InlineAlert variant="info" slots="text"/>
 
-Cross-domain tracking is not supported out of the box in at.js 2.*x*. Cross-domain tracking is supported in at.js 2.*x* via the Experience Cloud ID (ECID) library v4.3.0+.
+Cross-domain tracking is supported as of at.js 2.10, but not supported out-of-the-box in at.js 2.*x* prior to 2.10. Cross-domain tracking is supported in at.js 2.*x* via the Experience Cloud ID (ECID) library v4.3.0+.
 
 In Target, the third-party cookie is stored in `<CLIENTCODE>.tt.omtrdc.net`. The first-party cookie is stored in `clientdomain.com`. The first request returns HTTP response headers that attempt to set third-party cookies named `mboxSession` and `mboxPC`, whereas a redirect request is sent back with an extra parameter (`mboxXDomainCheck=true`). If the browser accepts third-party cookies, the redirect request includes those cookies, and the experience is returned. This workflow is possible because we use the HTTP GET method.
 
-However, in at.js 2.*x*, HTTP GET is no longer used and instead we use HTTP POST. HTTP POST is now used via at.js 2.*x* to send JSON payloads to Target Edge servers. This means that the redirect request to check whether a browser supports third-party cookies now breaks. This is because HTTP GET requests are idempotent transactions, while HTTP POST is non-idempotent and must not be arbitrarily repeated. Therefore, cross-domain tracking in at.js 2.*x* is no longer supported out of the box. Only at.js 1.*x* has out-of-the-box support for cross-domain tracking.
+However, in at.js 2.*x*, HTTP GET is not used. Instead, HTTP POST is used via at.js 2.*x* to send JSON payloads to Target Edge servers. Using HTTP POST means the redirect request to check whether a browser supports third-party cookies will break. This is because HTTP GET requests are idempotent transactions, while HTTP POST is non-idempotent and must not be arbitrarily repeated. Therefore, cross-domain tracking in at.js 2.*x* (prior to 2.10) is not supported out of the box. Only at.js 1.*x* has out-of-the-box support for cross-domain tracking.
 
-If you want to use cross-domain tracking, you must install the [ECID library v4.3.0+](https://experienceleague.adobe.com/docs/id-service/using/release-notes/release-notes.html) in conjunction with at.js 2.*x*. The ECID library exists to manage persistent IDs that are used to identify a visitor even across domains. 
+To use cross-domain tracking for at.js v2.10 or later, you may do either of the following:
 
-<InlineAlert variant="info" slots="text"/>
+1. Install the [ECID library v4.3.0+](https://experienceleague.adobe.com/docs/id-service/using/release-notes/release-notes.html) in conjunction with at.js 2.*x*. The ECID library exists to manage persistent IDs that are used to identify a visitor even across domains. 
 
-After installing the ECID library v4.3.0+ and at.js 2.*x*, you will be able to create activities that span unique domains as well as track users. It is important to note that this functionality works only after the session expires.
+    After installing the ECID library v4.3.0+ and at.js 2.*x*, you will be able to create activities that span unique domains as well as track users. It is important to note that this functionality works only after the session expires.
+
+2. Instead of installing the ECID library, if you have at.js v2.10 or later, you may enable the Cross-Domain setting in the Target UI in **Administration** > **Implementation**. (Alternatively, you may set the _crossDomain_ option to _enabled_ in the at.js code.)
+
+To use cross-domain tracking for versions of at.js v2.*x* prior to 2.10, you may implement option #1 above (install the ECID library).
 
 ### Auto Create Global Mbox is supported
 

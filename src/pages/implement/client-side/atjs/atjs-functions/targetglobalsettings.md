@@ -79,7 +79,7 @@ You can override the following settings:
 
 * **Type**: String
 * **Default Value**: Value set via UI.
-* **Description**: Indicates whether cross-domain tracking is enabled or not. The allowed values are: disabled, enabled,or x-only.
+* **Description**: Indicates whether cross-domain tracking is enabled or not. The allowed values depend on your at.js version. For at.js v1.*x*, specify whether cross-domain capabilities are `disabled` (browsers set cookies in your domain (first-party cookies) only), `x only` (browsers set cookies in Target's domain only), or both, by selecting `enabled` (browsers set both 1st and 3rd party cookies). For at.js v2.10 and later, specify whether cross-domain capabilities are `enabled` (browsers set both 1st and 3rd party cookies) or `disabled` (browsers do not set 3rd party cookies).
 
 ### cspScriptNonce
 

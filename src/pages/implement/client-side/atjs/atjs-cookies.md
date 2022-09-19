@@ -30,17 +30,9 @@ For at.js versions 2.10.0 and later, both first-party and cross-domain cookies a
 
 Cross-domain tracking makes it possible to see sessions on two related sites, but with different domains, as a single session. You could create a Target activity that spans `siteA.com` and `siteB.com` and the visitor would remain in the same experience when they crossed domains. This functionality ties into at.js 1.*x* third-party and first-party cookie behavior.
 
-In at.js 1.*x*, the third-party cookie was stored in the `[CLIENTCODE].tt.omtrdc.net` domain and the first-party cookie was stored in `clientdomain.com`. The first request returned HTTP response headers that attempted to set third-party cookies named `mboxSession` and `mboxPC`, whereas a redirect request is sent back with an extra parameter (`mboxXDomainCheck=true`). If the browser accepted third-party cookies, the redirect request includes those cookies, and the offer was returned. This workflow was possible because at.js 1.*x* used the HTTP GET method.
-
-However, in at.js 2.x (up to, but not including, versions 2.10.0 and later), HTTP GET is no longer used and instead uses HTTP POST. HTTP POST is now used via at.js in order to send JSON payloads to Target edge servers instead of key-value parameters. This means that the redirect request to check whether a browser supports third-party cookies now breaks. This is because HTTP GET requests are idempotent transactions while HTTP POST is non-idempotent and mustn’t be arbitrarily repeated.
-
-Therefore, neither third-party cookies nor cross-domain tracking are supported in at.js 2.0.0.
-
-However, third-party cookies and cross-domain tracking are supported in at.js 2.10.0 and later.
-
 <InlineAlert variant="info" slots="text"/>
 
-For at.js versions 2.10.0 and later, third-party cookies and cross-domain tracking are supported. 
+For at.js versions 2.10.0 and later, both third-party cookies and cross-domain tracking are supported. 
 
 ## at.js 1.*x* cookie behavior
 

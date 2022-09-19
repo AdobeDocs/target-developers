@@ -19,9 +19,9 @@ Adobe Target supports both at.js 1.*x* and at.js 2.*x*. Please upgrade to the mo
 
 Tags in [Adobe Experience Platform](/src/pages/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) are the preferred method to upgrade at.js. Extension developers continually add new features to their extensions, and frequently fix bugs. These updates are packaged into new versions of an extension and made available in the Adobe Experience Platform catalog as upgrades. For more information, see [Extension upgrades](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/extension-upgrade.html) in the *Tags overview* guide.
 
-## at.js version 2.10.0 (September 13, 2022)
+## at.js version 2.10.0 (September 19, 2022)
 
-* Added a Cross-Domain option when downloading at.js 2.10.0 (and later) to allow or disable setting 3rd-party cookies. (TGT-43674)
+* Added third-party cookie support.
 
 ## at.js version 2.9.0 (May 27, 2022)
 
