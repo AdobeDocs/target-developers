@@ -188,6 +188,56 @@ module.exports = {
         path: '/before-implement/implement-cname-support-in-target.md'
       },
       {
+        title: 'Delivery API Overview',
+        path: '/before-implement/delivery-api-overview/introduction.md',
+        pages: [
+          {
+            title: 'Introduction',
+            path: '/before-implement/delivery-api-overview/introduction.md'
+          },
+          {
+            title: 'SDKs',
+            path: '/before-implement/delivery-api-overview/sdks.md'
+          },
+          {
+            title: 'Getting Started',
+            path: '/before-implement/delivery-api-overview/getting-started.md'
+          },
+          {
+            title: 'User Permissions (Premium)',
+            path: '/before-implement/delivery-api-overview/user-permissions.md'
+          },
+          {
+            title: 'Identifying Visitors',
+            path: '/before-implement/delivery-api-overview/identifying-visitors.md'
+          },
+          {
+            title: 'Single or Batch Delivery',
+            path: '/before-implement/delivery-api-overview/single-or-batch.md'
+          },
+          {
+            title: 'Prefetch',
+            path: '/before-implement/delivery-api-overview/prefetch.md'
+          },
+          {
+            title: 'Notifications',
+            path: '/before-implement/delivery-api-overview/notifications.md'
+          },
+          {
+            title: 'Integration with Experience Cloud',
+            path: '/before-implement/delivery-api-overview/integration.md'
+          },
+          {
+            title: 'Known Limitations',
+            path: '/before-implement/delivery-api-overview/known-limitations.md'
+          },
+          {
+            title: 'Client Hints',
+            path: '/before-implement/delivery-api-overview/client-hints.md'
+          }
+        ]
+      },
+      {
         title: 'Overview: implement Target for client-side web',
         path: '/implement/client-side/'
       },
@@ -451,58 +501,6 @@ module.exports = {
             path: '/implement/server-side/transition-from-target-classic-apis.md'
           }
         ]
-      },
-      {
-        title: 'Introduction',
-        path: '/implement/delivery-api/introduction.md'
-      },
-      {
-        title: 'Changelog',
-        path: '/implement/delivery-api/changelog.md'
-      },
-      {
-        title: 'SDKs',
-        path: '/implement/delivery-api/sdks.md'
-      },
-      {
-        title: 'Getting Started',
-        path: '/implement/delivery-api/getting-started.md'
-      },
-      {
-        title: 'User Permissions (Premium)',
-        path: '/implement/delivery-api/user-permissions.md'
-      },
-      {
-        title: 'Identifying Visitors',
-        path: '/implement/delivery-api/identifying-visitors.md'
-      },
-      {
-        title: 'Single or Batch Delivery',
-        path: '/implement/delivery-api/single-or-batch.md'
-      },
-      {
-        title: 'Prefetch',
-        path: '/implement/delivery-api/prefetch.md'
-      },
-      {
-        title: 'Notifications',
-        path: '/implement/delivery-api/notifications.md'
-      },
-      {
-        title: 'Integration with Experience Cloud',
-        path: '/implement/delivery-api/integration.md'
-      },
-      {
-        title: 'Known Limitations',
-        path: '/implement/delivery-api/known-limitations.md'
-      },
-      {
-        title: 'Client Hints',
-        path: '/implement/delivery-api/client-hints.md'
-      },
-      {
-        title: 'Delivery API',
-        path: '/implement/delivery-api/index.md/#tag/Delivery-API'
       },
       {
         title: 'Implement Recommendations',
