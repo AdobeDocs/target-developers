@@ -47,6 +47,6 @@ Before making a Target Delivery API call, follow these steps to ensure a respons
 1. Use the Delivery API to get a response for the mboxes used in the Target Activity created in step 2.
 1. Present the experience to the visitor.
 
-## Postman Colleciton
+## Postman Collection
 
 Postman is an application that makes it easy to fire API calls. [This Postman collection](https://run.pstmn.io/button.svg) contains sample Delivery API calls. 

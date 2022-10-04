@@ -5,7 +5,9 @@ description: Adobe Target Delivery API Client Hints
 
 # Client Hints and the Target Delivery API
 
-Client Hints must be sent to Target on the offers request. Generally, it is recommended to send all available Client Hints to Target. For more information, see [User-agent and Client Hints](../client-side/atjs/user-agent-and-client-hints.md) in the [Client-side Implementation](../../implement/client-side/) section.
+Client Hints must be sent to Target on the offers request.
+
+Generally, it is recommended to send all available Client Hints to Target. For more information, see [User-agent and Client Hints](../client-side/atjs/user-agent-and-client-hints.md) in the [Client-side Implementation](../../implement/client-side/) section.
 
 ## Delivery API direct calls
 

@@ -7,7 +7,9 @@ keywords:
 
 # SDKs
 
-Adobe Target offers SDKs to interact with the Target Delivery API and help ease the Adobe Target integration with other Experience Cloud solutions such as Adobe Analytics and Adobe Audience Manager by helping you follow best practices in managing sessions and cookies. Therefore, it is highly recommended to leverage a SDK to mask away these complexities and prevent incorrect utilization of the API.
+Adobe Target offers [server-side SDKs](../../implement/server-side/) to interact with the Target Delivery API and help ease the Adobe Target integration with other Experience Cloud solutions such as Adobe Analytics and Adobe Audience Manager
+
+The SDKs help you to follow best practices in managing sessions and cookies. It is highly recommended to leverage an SDK to smooth away any complexities and prevent incorrect utilization of the API.
 
 ## Node.js SDK
 
@@ -21,5 +23,6 @@ The [Java SDK](https://github.com/adobe/target-java-sdk) is open sourced and mai
 
 Read the [changelog](https://github.com/adobe/target-java-sdk/blob/main/CHANGELOG.md) for the Java SDK.
 
-<!--- Judy: remove or modify this page? adequately covered elsewhere? --->
+
+<!--- Judy: remove or modify this page? adequately covered elsewhere? Or, add links to analogous info for the .NET and Python SDKs? --->
 

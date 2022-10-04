@@ -2,7 +2,8 @@
   "openapi": "3.0.1",
   "info": {
     "title": "Adobe Target Admin and Reporting APIs",
-    "version": "v1.0"
+    "version": "v1.0",
+    "termsOfService": "https://www.adobe.com/legal/terms.html"
   },
   "servers": [
     {

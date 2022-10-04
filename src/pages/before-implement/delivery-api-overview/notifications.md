@@ -7,7 +7,9 @@ keywords:
 
 # Notifications
 
-Notifications should be fired when a prefetched mbox or view has been visited or rendered to the end user. In order for notifications to be fired off for the right mbox or view, please be sure to keep track of the corresponding `eventToken` for each mbox or view. Notifications with the right `eventToken` for the corresponding mboxes or views are required to be fired in order for reporting to be reflected correctly.
+Notifications should be fired when a prefetched mbox or view has been visited or rendered to the end user.
+
+In order for notifications to be fired off for the right mbox or view, be sure to keep track of the corresponding `eventToken` for each mbox or view. Notifications with the correct `eventToken` for the corresponding mboxes or views are required to be fired in order for reporting to be reflected correctly.
 
 ## Notifications for Prefetched Mboxes
 

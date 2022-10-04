@@ -7,7 +7,9 @@ keywords:
 
 # Prefetch
 
-Prefetching allows clients like mobile apps and servers to fetch content for multiple mboxes or views in one request, cache it locally, and later notify Target when the user visits those mboxes or views. When utilizing prefetch, it's important to be familiar with the following terms:
+Prefetching allows clients like mobile apps and servers to fetch content for multiple mboxes or views in one request, cache it locally, and later notify Target when the user visits those mboxes or views.
+
+When utilizing prefetch, it's important to be familiar with the following terms:
 
 |Field Name|Description|
 | --- | --- |

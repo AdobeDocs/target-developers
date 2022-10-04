@@ -7,7 +7,9 @@ keywords:
 
 # Single or Batch Delivery
 
-The Adobe Target Delivery API supports a single or batch delivery call. One can make a server request for content for single or multiple mboxes. Please make sure to outweigh the performance costs when making a single call vs a batched call. If you know all of the content that needs to be shown for a user, it is best practice to retrieve content for all mboxes with a single batch delivery call so that you avoid making multiple single delivery calls.
+The Adobe Target Delivery API supports a single or batch delivery call. One can make a server request for content for single or multiple mboxes.
+
+Weigh performance costs when deciding to make a single call versus a batched call. If you know all the content that needs to be shown for a user, the best practice is to retrieve content for all mboxes with a single batch delivery call, in order to avoid making multiple single delivery calls.
 
 ## Single Delivery Call
 

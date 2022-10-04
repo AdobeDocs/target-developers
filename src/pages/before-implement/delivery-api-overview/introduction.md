@@ -7,9 +7,9 @@ keywords:
 
 # Introduction
 
-Welcome to the documentation for the Adobe Target Delivery API!
+Overview of the Adobe Target Delivery API.
 
-The Adobe Target Delivery API is based on REST. This documentation describes the resources that make up the Adobe Target Delivery API. HTTP methods are utilized to execute operations on those resources.
+The [Adobe Target Delivery API](../../implement/delivery-api/) is based on REST. The documentation on this site describes the resources that make up the Adobe Target Delivery API. HTTP methods are utilized to execute operations on those resources.
 
 Through Adobe Target's Delivery API, you can:
 
