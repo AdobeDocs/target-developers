@@ -141,7 +141,7 @@ Overview of how to implement Adobe Target in emails.
 
 <DiscoverBlock slots="heading, link, text"/>
 
-### Target APIs for implementation
+### APIs for implementation
 
 [Introduction](before-administer/)
     
@@ -149,10 +149,15 @@ Overview of Adobe Target APIs.
 
 <DiscoverBlock slots="link, text"/>
 
-[Delivery API](implement/delivery-api/)
+[Target Delivery API](implement/delivery-api/)
 
 Use Adobe Target's Delivery APIs to deliver experiences across web and mobile channels as well as non-browser based IoT devices such as a connected TV, kiosk, or in-store digital screen.
 
+<DiscoverBlock slots="link, text"/>
+
+[AEP Edge Network Server API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html)
+
+Use the AEP Edge Network Server API for a variety of data collection, personalization, advertising and marketing use cases.
 
 ## Administration Guides
 
@@ -168,15 +173,21 @@ Overview and configuration requirements for Adobe Target Admin and Profile APIs,
 
 ### Admin APIs
 
-[Admin and Profile API](administer/admin-api/) 
+[Admin API](administer/admin-api/) 
 
-Use Adobe Target’s Admin and Profile APIs to manage activities, audiences, offers, properties, reports, mboxes, environments, and profiles.
+Use Adobe Target’s Admin API to manage properties, activities, audiences, offers, properties, reports, mboxes, hosts, environments, and more.
 
 <DiscoverBlock slots="link, text"/> 
 
-[Reporting API](http://developers.adobetarget.com/api/#reports) 
+[Profile API](https://developers.adobetarget.com/api/#profiles) 
 
-Retrieve A/B activity report data.
+Retrieve Adobe Target user profile information.
+
+<DiscoverBlock slots="link, text"/> 
+
+[Reporting API](/administer/admin-api/#tag/Reports) 
+
+Retrieve A/B and AP activity report data.
 
 <DiscoverBlock slots="link, text"/> 
 

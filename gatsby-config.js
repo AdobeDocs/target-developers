@@ -69,8 +69,8 @@ module.exports = {
         title: 'Administer',
         menu: [
           {
-          title: 'Admin and Profile API',
-          description: 'Adobe Target Admin and Profile API',
+          title: 'Admin and Reporting APIs',
+          description: 'Adobe Target Admin and Reporting APIs',
           path: '/administer/admin-api/'
           }
         ]
