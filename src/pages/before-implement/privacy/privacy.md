@@ -33,21 +33,19 @@ The IP address of a visitor to your website is transmitted to an Adobe Data Proc
 
 ## Replacement of last octet of IP addresses
 
-Adobe has developed a new “privacy by design” setting that can be enabled by Adobe Client Care for Adobe Target. When this setting is enabled, the last octet (the last portion) of the IP address is immediately hidden when the IP address is collected by Adobe. This anonymization is performed before any processing of the IP address, including before an optional geo-lookup of the IP address.
+Adobe has developed a “privacy by design” setting that users can enable for Adobe Target. When enabled, Adobe Target immediately obfuscates the last octet (the last portion) of the IP address at the time the IP address is collected. This anonymization is performed before any processing of the IP address, including before an optional geo-lookup of the IP address.
 
 When this feature is enabled, the IP address is made sufficiently anonymous so it is no longer identifiable as personal information. As a result, Adobe Target can be used in compliance with data privacy laws in countries that do not permit the collection of personal information. Obtaining city-level information will likely be significantly impacted by the obfuscation of the IP address. Obtaining region- and country-level information should only be slightly impacted.
 
-The following settings are available:
+The following settings are available in the Target UI by navigating to **Administration** > **Implementation**:
 
-* No obfuscation: Target does not hide any part of the IP address.
-* Last octet: Target hides the last octet of the IP address.
-* Full IP: Target hides the entire IP address.
+* Last octet obfuscation: Target hides the last octet of the IP address.
+* Entire IP obfuscation: Target hides the entire IP address.
+* None: Target does not hide any part of the IP address.
 
-Target receives the full IP address and obfuscates it (if set to Last octet or Full IP) as specified. Target then holds the obfuscated IP address in memory during the session.
+![alt image](./obfuscate-ip.png)
 
-<InlineAlert variant="info" slots="text"/>
-
-[Contact Adobe Client Care](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html#reference_ACA3391A00EF467B87930A450050077C) to determine which setting you are currently using or to enable the IP obfuscation feature.
+Target receives the full IP address and obfuscates it (if set to Last octet or Entire IP) as specified. Target then holds the obfuscated IP address in memory during the session.
 
 ## GeoSegmentation
 
