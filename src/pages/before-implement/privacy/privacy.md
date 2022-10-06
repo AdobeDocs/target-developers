@@ -43,7 +43,7 @@ The following settings are available in the Target UI by navigating to **Adminis
 * Entire IP obfuscation: Target hides the entire IP address.
 * None: Target does not hide any part of the IP address.
 
-![alt image](./obfuscate-ip.png)
+![obfuscate-ip-options](../assets/obfuscate-ip.png)
 
 Target receives the full IP address and obfuscates it (if set to Last octet or Entire IP) as specified. Target then holds the obfuscated IP address in memory during the session.
 
