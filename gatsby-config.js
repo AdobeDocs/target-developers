@@ -849,6 +849,10 @@ module.exports = {
             path: '/before-administer/recs-api/fetch-recs-server-side-delivery-api.md'
           }
         ]
+      },
+      {
+        title: 'Admin API Overview',
+        path: '/before-administer/admin-api-overview/',
       }
     ]
   },
