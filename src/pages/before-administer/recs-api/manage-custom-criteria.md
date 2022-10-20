@@ -1,11 +1,10 @@
 ---
 title: How to Manage Custom Criteria
-description: This part of the tutorial guides developers through the steps required to use Adobe Target APIs to manage, create, list, edit, get, and delete Adobe Target Recommendations criteria.
+description: Steps required to use Adobe Target APIs to manage, create, list, edit, get, and delete Adobe Target Recommendations criteria.
 role: Developer
 level: Intermediate
 topic: Personalization, Administration, Integrations, Development
 feature: APIs/SDKs, Recommendations, Administration & Configuration
-doc-type: tutorial
 kt: 3815
 thumbnail:
 author: Judy Kim
@@ -13,7 +12,9 @@ exl-id: ee63bd3e-200a-4c08-b364-9f17a479033b
 ---
 # Manage Custom Criteria
 
-Sometimes the algorithms provided by Recommendations are not able to surface particular items you would like to promote. In such a situation, custom criteria provide a way for you to deliver a specific set of recommended items for a given key item or category. You define the mapping between the key item or category and the recommended items, and import that mapping as a custom criteria. This process is described in the [custom criteria documentation](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/recommendations-csv.html). As noted in that documentation, you are able to create, edit, and delete custom criteria through the Target user interface (UI). However, Target also provides a set of Custom Criteria APIs that allow for more detailed management of your custom criteria.
+Sometimes the algorithms provided by Recommendations are not able to surface particular items you would like to promote. In such a situation, custom criteria provide a way for you to deliver a specific set of recommended items for a given key item or category.
+
+To create custom criteria, define and import the desired mapping between the key item or category and the recommended items. This process is described in the [custom criteria documentation](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/recommendations-csv.html). As noted in that documentation, you are able to create, edit, and delete custom criteria through the Target user interface (UI). However, Target also provides a set of Custom Criteria APIs that allow for more detailed management of your custom criteria.
 
 <InlineAlert variant="warning" slots="text"/>
 
@@ -29,7 +30,7 @@ To create custom criteria using the [Create Custom Criteria API](https://develop
 
 Custom criteria created using the Create Custom Criteria API, as described in this exercise, will appear in the UI, where they will persist. You will not be able to edit or delete them from the UI. You may edit or delete them **via API**, but either way, they will continue to appear in the Target UI. To maintain the option of editing or deleting from the UI, create the custom criteria using the UI per [the documentation](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/recommendations-csv.html), as opposed to using the Create Custom Criteria API.
 
-Only proceed with this tutorial after you have read the warning above and are comfortable creating new custom criteria that cannot subsequently be deleted from the UI.
+Only proceed with the following steps after you have read the warning above and are comfortable creating new custom criteria that cannot subsequently be deleted from the UI.
 
 1. Verify `TENANT_ID` and `API_KEY` for **Create custom criteria** reference the Postman environment variables established earlier. Use the image below for comparison.
 

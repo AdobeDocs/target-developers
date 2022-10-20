@@ -1,11 +1,10 @@
 ---
 title: How to Fetch Recommendations with the Delivery API
-description: This part of the tutorial guides developers through the steps required to fetch recommendations content using the Adobe Target Delivery API.
+description: This article guides developers through the steps required to fetch recommendations content using the Adobe Target Delivery API.
 role: Developer
 level: Intermediate
 topic: Personalization, Administration, Integrations, Development
 feature: APIs/SDKs, Recommendations, Administration & Configuration
-doc-type: tutorial
 kt: 3815
 thumbnail:
 author: Judy Kim
@@ -13,7 +12,7 @@ exl-id: 553d1208-647f-479d-acc7-d7760469d642
 ---
 # Fetching Recommendations with the Delivery API
 
-The Adobe Target and Adobe Target Recommendations APIs can be used to deliver responses to web pages, but can also be used in non-HTML based experiences including apps, screens, consoles, emails, kiosks and other display devices. In other words, when Target libraries and JavaScript cannot be used, the [Target Delivery API](/src/pages/implement/delivery-api/index.md) still allows us to access the full range of Target functionality to deliver personalized experiences.
+The Adobe Target and Adobe Target Recommendations APIs can be used to deliver responses to web pages, but can also be used in non-HTML based experiences including apps, screens, consoles, emails, kiosks and other display devices. In other words, when Target libraries and JavaScript cannot be used, the [Target Delivery API](/src/pages/implement/delivery-api/index.md) still enables access to the full range of Target functionality, to deliver personalized experiences.
 
 <InlineAlert variant="info" slots="text"/>
 
@@ -76,7 +75,7 @@ The syntax for the [Delivery API](/src/pages/implement/delivery-api/index.md) is
 
  Using the Delivery API with Recommendations in this way enables you to perform additional steps prior to displaying recommendations to the visitor on the non-HTML device. For example, you can take the response from the Delivery API to perform an additional, real-time lookup of entity attribute details (inventory, price, rating, and so on) from another system (such as a CMS, PIM or ecommerce platform), before displaying final results.
  
- Using the approach outlined in this tutorial, you can get any application to leverage the response from Target to provide personalized recommendations!
+ Using the approach outlined in this guide, you can get any application to leverage the response from Target to provide personalized recommendations!
 
 ## Example Implementations
 
@@ -121,7 +120,7 @@ We learned in an [earlier section](manage-catalog.md) how to manage Adobe Target
 
 ## Summary and Review
 
-Congratulations! By finishing this tutorial, you have learned how to:
+Congratulations! By completing this guide, you have learned how to:
 * [Manage your catalog using the Recommendations API](manage-catalog.md)
 * [Manage custom criteria using the Recommendations API](manage-custom-criteria.md)
 * [Use the Delivery API with Recommendations](fetch-recs-server-side-delivery-api.md)

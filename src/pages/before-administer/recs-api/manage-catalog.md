@@ -1,11 +1,10 @@
 ---
 title: How to Manage your Recommendations catalog using APIs
-description: This part of the tutorial guides developers through the steps required to use Adobe Target APIs to create, update, save, get, and delete entities in your Recommendations catalog.
+description: Steps required to use Adobe Target APIs to create, update, save, get, and delete entities in your Recommendations catalog.
 role: Developer
 level: Intermediate
 topic: Personalization, Administration, Integrations, Development
 feature: APIs/SDKs, Recommendations, Administration & Configuration
-doc-type: tutorial
 kt: 3815
 thumbnail:
 author: Judy Kim
@@ -13,9 +12,9 @@ exl-id: 8060b69b-e8e5-4fe7-895f-742410d8ed45
 ---
 # Manage Your Recommendations Catalog using APIs
 
-At this point, you have learned how to generate an access token, using the JWT authentication flow, to use the Adobe Target Admin APIs on the [Adobe Developer Console](https://developer.adobe.com/console/home).
+At this point, you have learned how to generate an access token, using the JWT authentication flow, to use the Adobe Target Admin APIs on the [Adobe Developer Console](https://developer.adobe.com/console/home), because you have [configured authentication](../configure-authentication.md).
   
-You can use the [Recommendations APIs](https://developers.adobetarget.com/api/recommendations/) to add, update, or delete items in your recommendations catalog. As with the rest of the Adobe Target Admin APIs, the Recommendations APIs require authentication.
+You can now use the [Recommendations APIs](https://developers.adobetarget.com/api/recommendations/) to add, update, or delete items in your recommendations catalog. As with the rest of the Adobe Target Admin APIs, the Recommendations APIs require authentication.
 
 <InlineAlert variant="info" slots="text"/>
 

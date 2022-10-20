@@ -158,7 +158,7 @@ mozallowfullscreen="true"
 allowFullScreen>
 </iframe>
 
-For more videos and tutorials, see the [Adobe Target Tutorials](https://experienceleague.adobe.com/docs/target-learn/tutorials/overview.html) guide.
+For more videos and tutorials, see the [Adobe Target Tutorials](https://experienceleague.adobe.com/docs/target-learn/tutorials/overview.html).
 
 ### Adobe Tech Blog - Part 1: Run Adobe Target NodeJS SDK for experimentation and personalization on edge platforms (Akamai Edge Workers)
 

@@ -120,7 +120,7 @@ That's right, it's in the `config` file downloaded earlier from the Adobe Develo
 
 ## Generate the bearer access token
 
-In this section, you generate your bearer access token, which is required for authenticating your interaction with Adobe Target APIs. To generate your bearer access token, you need to send your integration details (established in the preceding sections) to the [Adobe Identity Management Service (IMS)](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/AuthenticationGuide.md). There are a few different ways to do this, but in this tutorial we have you build a bespoke POST request to the IMS API. Just kidding. In this tutorial, we take advantage of a Postman collection containing a pre-built IMS call that makes the process direct and easy. Once you import the collection, you may reuse it whenever needed, to generate new tokens not only for Adobe Target, but other Adobe APIs as well.
+In this section, you generate your bearer access token, which is required for authenticating your interaction with Adobe Target APIs. To generate your bearer access token, you need to send your integration details (established in the preceding sections) to the [Adobe Identity Management Service (IMS)](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/AuthenticationGuide.md). There are a few different ways to do this, but in this guide, we have you build a bespoke POST request to the IMS API. Just kidding. In this guide, we take advantage of a Postman collection containing a pre-built IMS call that makes the process direct and easy. Once you import the collection, you may reuse it whenever needed, to generate new tokens not only for Adobe Target, but other Adobe APIs as well.
 
 1. Navigate to the [Adobe Identity Management Service API sample calls](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims).
    ![token1](assets/configure-io-target-generatetoken1.png)
@@ -159,7 +159,7 @@ In this exercise, you will use your new bearer access token by sending an API re
    ![testtoken1](assets/configure-io-target-testtoken0.png)
 1. Expand the collection, and note the **List activities** request.
    ![testtoken1](assets/configure-io-target-testtoken1.png)
-1. Note that variables such as `{{access_token}}` are initially unresolved. You could resolve this in several different ways—for example, you could define a new collection variable called `{{access_token}}`—but in this tutorial, you will instead change the API request to leverage the Postman environment you were previously using. This will enable the environment to continue to serve as a single, consistent consolidation of all variables common across Adobe APIs.
+1. Note that variables such as `{{access_token}}` are initially unresolved. You could resolve this in several different ways—for example, you could define a new collection variable called `{{access_token}}`—but in this guide, you will instead change the API request to leverage the Postman environment you were previously using. This will enable the environment to continue to serve as a single, consistent consolidation of all variables common across Adobe APIs.
    ![testtoken2](assets/configure-io-target-testtoken2.png)
 1. Type to replace `{{access_token}}` with `{{ACCESS_TOKEN}}`.
    ![testtoken3](assets/configure-io-target-testtoken3.png)
