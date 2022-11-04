@@ -5,4 +5,4 @@ contributors:
   - https://github.com/icaraps
 --- 
 
-Placeholder: Adobe Target Profile API Overview page
+Placeholder / This page is not currently used: Adobe Target Profile API Overview page
