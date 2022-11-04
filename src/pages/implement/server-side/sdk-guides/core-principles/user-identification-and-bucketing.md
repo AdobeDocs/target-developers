@@ -85,7 +85,7 @@ In this example, the generated `tntId` is `10abf6304b2714215b1fd39a870f01afc.35_
 
 ## Third Party ID (thirdPartyId)
 
-If your organization uses an ID to identify your visitor, you can use `thirdPartyID` to deliver content. At `hirdPartyID` is a persistent ID that your business utilizes to identify an end user, regardless of whether they interact with your business from web, mobile, or IoT channels. In other words, the `thirdPartyId` references user profile data that can be utilized across channels. However, you must provide the `thirdPartyID` for every Adobe Target Delivery API call you make.
+If your organization uses an ID to identify your visitor, you can use `thirdPartyID` to deliver content. A `thirdPartyID` is a persistent ID that your business utilizes to identify an end user, regardless of whether they interact with your business from web, mobile, or IoT channels. In other words, the `thirdPartyId` references user profile data that can be utilized across channels. However, you must provide the `thirdPartyID` for every Adobe Target Delivery API call you make.
 
 The following sample call demonstrates the use of a `thirdPartyId`.
 
@@ -283,7 +283,7 @@ TargetDeliveryRequest request = TargetDeliveryRequest.builder()
 TargetDeliveryResponse offers = targetClient.getOffers(request);
 ```
 
-The example above demonstrates how to send a `customerId` with an `authenticatedState`. When sending a `customerId`, the i`ntegrationCode`, `id`, and `authenticatedState` as well as the `marketingCloudVisitorId` are required. The `integrationCode` is the alias of the [customer attributes file](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html) you provided through CRS.
+The example above demonstrates how to send a `customerId` with an `authenticatedState`. When sending a `customerId`, the `integrationCode`, `id`, and `authenticatedState` as well as the `marketingCloudVisitorId` are required. The `integrationCode` is the alias of the [customer attributes file](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html) you provided through CRS.
 
 ## Merged Profile
 
