@@ -181,7 +181,7 @@ targetClient.getOffers({
 
 ### Java SDK
 
-```
+```Java
 ClientConfig config = ClientConfig.builder()
   .client("acmeclient")
   .organizationId("1234567890@AdobeOrg")
@@ -221,7 +221,7 @@ Please note that only when the `customerId` is in an authenticated state will Ta
 
 ### Node.js SDK
 
-```
+```Javascript
 const TargetClient = require("@adobe/target-nodejs-sdk");
 
 const CONFIG = {

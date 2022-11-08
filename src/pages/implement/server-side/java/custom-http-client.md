@@ -4,9 +4,9 @@ If the application running the SDK requires a custom HTTP Client, to enable feat
 
 <CodeBlock slots="heading, code" repeat="1" languages="Java" />
 
-### Basic Custom HTTP Client Config
+## Basic Custom HTTP Client Config
 
-```javascript
+```Java
 CloseableHttpClient httpClient = HttpClients.custom().build();
 ClientConfig clientConfig = ClientConfig.builder()
     .client("acmeclient")
@@ -16,9 +16,9 @@ ClientConfig clientConfig = ClientConfig.builder()
 TargetClient targetClient = TargetClient.create(clientConfig);
 ```
 
-### Custom HTTP Client Config with SSL Configuration
+## Custom HTTP Client Config with SSL Configuration
 
-```javascript
+```Java
 SSLContext context = SSLContextBuilder.create().build();
 SSLConnectionSocketFactory sslSocketFactory = new SSLConnectionSocketFactory(context);
 CloseableHttpClient httpClient = HttpClients.custom().setSSLSocketFactory(sslSocketFactory).build();
@@ -29,7 +29,3 @@ ClientConfig clientConfig = ClientConfig.builder()
     .build();
 TargetClient targetClient = TargetClient.create(clientConfig);
 ```
-
-
-
-
