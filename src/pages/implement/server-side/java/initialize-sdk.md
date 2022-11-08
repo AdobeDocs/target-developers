@@ -59,7 +59,7 @@ ClientConfigBuilder ClientConfig.builder()
 
 ### Java
 
-```javascript
+```java
 ClientConfig clientConfig = ClientConfig.builder()
         .client("acmeclient")
         .organizationId("1234567890@AdobeOrg")

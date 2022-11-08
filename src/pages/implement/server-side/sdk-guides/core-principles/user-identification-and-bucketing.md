@@ -19,7 +19,7 @@ The following sample call demonstrates a situation in which a `tntId` is not pas
 
 ### Node.js SDK
 
-```
+```Javascript
 const TargetClient = require("@adobe/target-nodejs-sdk");
 
 const CONFIG = {
@@ -30,12 +30,12 @@ const CONFIG = {
 const targetClient = TargetClient.create(CONFIG);
 
 targetClient.getOffers({
-  request: {      
+  request: {
     execute: {
       mboxes: [{
         name: "some-mbox"
       }]
-    }       
+    }
   }
 })
 .then(console.log)
@@ -44,7 +44,7 @@ targetClient.getOffers({
 
 ### Java SDK
 
-```
+```Java
 ClientConfig config = ClientConfig.builder()
   .client("acmeclient")
   .organizationId("1234567890@AdobeOrg")
@@ -68,7 +68,7 @@ TargetDeliveryResponse offers = targetClient.getOffers(request);
 
 In the absence of a `tntId`, Adobe Target generates a `tntId` and provides it in the response, as follows.
 
-```
+```JSON
 {
   "status": 200,
   "requestId": "5b586f83-890c-46ae-93a2-610b1caa43ef",
@@ -91,7 +91,7 @@ The following sample call demonstrates the use of a `thirdPartyId`.
 
 ### Node.js SDK
 
-```
+```Javascript
 const TargetClient = require("@adobe/target-nodejs-sdk");
 
 const CONFIG = {
@@ -102,15 +102,15 @@ const CONFIG = {
 const targetClient = TargetClient.create(CONFIG);
 
 targetClient.getOffers({
-  request: {     
+  request: {
     id: {
       thirdPartyId: "B234A029348"
-    }, 
+    },
     execute: {
       mboxes: [{
         name: "some-mbox"
       }]
-    }       
+    }
   }
 })
 .then(console.log)
@@ -119,7 +119,7 @@ targetClient.getOffers({
 
 ### Java SDK
 
-```
+```Java
 ClientConfig config = ClientConfig.builder()
   .client("acmeclient")
   .organizationId("1234567890@AdobeOrg")
@@ -153,7 +153,7 @@ The following sample call demonstrates how a `marketingCloudVisitorId` that was 
 
 ### Node.js SDK
 
-```
+```Javascript
 const TargetClient = require("@adobe/target-nodejs-sdk");
 
 const CONFIG = {
@@ -164,15 +164,15 @@ const CONFIG = {
 const targetClient = TargetClient.create(CONFIG);
 
 targetClient.getOffers({
-  request: {     
+  request: {
     id: {
       marketingCloudVisitorId: "10527837386392355901041112038610706884"
-    }, 
+    },
     execute: {
       mboxes: [{
         name: "some-mbox"
       }]
-    }       
+    }
   }
 })
 .then(console.log)
@@ -232,7 +232,7 @@ const CONFIG = {
 const targetClient = TargetClient.create(CONFIG);
 
 targetClient.getOffers({
-  request: {     
+  request: {
     id: {
       marketingCloudVisitorId : "10527837386392355901041112038610706884",
       customerIds: [{
@@ -240,12 +240,12 @@ targetClient.getOffers({
         integrationCode : "crm_data",
         authenticatedState : "authenticated"
       }]
-    }, 
+    },
     execute: {
       mboxes: [{
         name: "some-mbox"
       }]
-    }       
+    }
   }
 })
 .then(console.log)
@@ -254,7 +254,7 @@ targetClient.getOffers({
 
 ### Java SDK
 
-```
+```Java
 ClientConfig config = ClientConfig.builder()
   .client("acmeclient")
   .organizationId("1234567890@AdobeOrg")
@@ -291,7 +291,7 @@ You can combine `tntId`, `thirdPartyID`, and `marketingCloudVisitorId` in the sa
 
 ### Node JS SDK
 
-```
+```Javascript
 const TargetClient = require("@adobe/target-nodejs-sdk");
 
 const CONFIG = {
@@ -302,17 +302,17 @@ const CONFIG = {
 const targetClient = TargetClient.create(CONFIG);
 
 targetClient.getOffers({
-  request: {     
+  request: {
     id: {
       tntId: "d359234570e044f14e1faeeba02d6ab23439914e.35_0",
       thirdPartyId: "B234A029348",
       marketingCloudVisitorId : "10527837386392355901041112038610706884"
-    }, 
+    },
     execute: {
       mboxes: [{
         name: "some-mbox"
       }]
-    }       
+    }
   }
 })
 .then(console.log)
@@ -321,7 +321,7 @@ targetClient.getOffers({
 
 ### Java SDK
 
-```
+```Java
 ClientConfig config = ClientConfig.builder()
   .client("acmeclient")
   .organizationId("1234567890@AdobeOrg")
@@ -360,12 +360,12 @@ Your users are bucketed into seeing an experience depending on how you set up yo
 
 Before diving into the actual bucketing algorithm, it is important to highlight that similar steps are used both to select activities based on their traffic allocation percentage, as well as to select an experience within an activity.
 
-### Activity selection steps: 
+### Activity selection steps
 
 1. Generate a device ID, usually a UUID
 1. Get the client code
-1. Get the activity ID 
-1. Get the salt, which is usually some string like "activity" 
+1. Get the activity ID
+1. Get the salt, which is usually some string like "activity"
 1. Compute the hash using MurmurHash3
 1. Get the absolute value of the hash
 1. Divide the hash absolute value by 10000
@@ -373,7 +373,7 @@ Before diving into the actual bucketing algorithm, it is important to highlight 
 1. Multiply the result by 100%
 1. Compare activity traffic allocation percentage against the obtained percentage. If the traffic allocation percentage is lower, then the activity is selected. Otherwise, the activity is skipped.
 
-### Experience selection steps: 
+### Experience selection steps
 
 1. Generate a device ID, usually a UUID
 1. Get the client code
