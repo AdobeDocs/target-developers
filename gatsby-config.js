@@ -703,6 +703,10 @@ module.exports = {
             path: '/implement/server-side/java/proxy-configuration.md'
           },
           {
+            title: 'Custom HTTP Client Configuration',
+            path: '/implement/server-side/java/custom-http-client.md'
+          },
+          {
             title: 'Utility Methods',
             path: '/implement/server-side/java/utility-methods.md'
           }
