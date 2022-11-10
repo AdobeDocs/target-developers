@@ -21,7 +21,7 @@ The visitor must be identified via the Target mboxPC value or `mbox3rdPartyId` v
 
 ## Example Use Cases
 
-You want to update Target in real time when a visitor performs some offline action. Actions can include reaching a call center, a loan is funded, using a loyalty card in store, accessing a kiosk, and so forth.
+You want to update the profile of a single visitor who performs some offline action. Actions can include reaching a call center, a loan is funded, using a loyalty card in store, accessing a kiosk, and so forth.
 
 ## Benefits of method
 
@@ -34,6 +34,8 @@ Profile attributes sent via the site can be updated via the API and vice versa.
 Limit of 1,000,000 API calls (1 million) per 24-hour period
 
 Updates profiles only. Cannot create a profile for a potential user Target has yet to see.
+
+Updates generally occur in under 1 hour, but may take as long as 24 hours to be reflected.
 
 ## Code examples
 
