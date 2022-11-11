@@ -1,3 +1,15 @@
+---
+title: Integration with Experience Cloud AAM Segments
+description: Integration with Experience Cloud, Audience Manager integration
+keywords:
+- delivery api
+- server-side
+- serverside
+- integration
+- audience manager
+- aam
+--- 
+
 # AAM segments
 
 Adobe Audience Manager segments can be leveraged via Adobe Target SDKs. In order to leverage AAM segments, the following fields need to be provided:

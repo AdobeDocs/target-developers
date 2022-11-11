@@ -1,3 +1,14 @@
+---
+title: Integration with Experience Cloud A4T Reporting
+description: Integration with Experience Cloud, A4T Reporting, Analytics for Target integration
+keywords:
+- delivery api
+- server-side
+- serverside
+- integration
+- a4t
+--- 
+
 # Analytics for Target (A4T) reporting
 
 Adobe Target supports A4T reporting for both on-device decisioning and server-side Target activities. There are two configuration options for enabling A4T reporting:
@@ -171,7 +182,7 @@ Once you have specified `logging = client_side`, you will receive the payload in
 If the response from Target contains anything in the `analytics -> payload` property, forward it as it is to Adobe Analytics. Adobe Analytics knows how to process this payload. This can be done in a GET request using the following format:
 
 ```
-https://{datacollectionhost.sc.omtrdc.net}/b/ss/{rsid}/0/CODEVERSION?pe=tnt&tnta={payload}&mcid={mcid}&vid={vid}&aid={aid}
+https://{datacollectionhost.sc.omtrdc.net}/b/ss/{rsid}/0/CODEVERSION?pe=tnt&tnta={payload}&mid={mid}&vid={vid}&aid={aid}
 ```
 
 ### Query String Parameters and Variables
@@ -181,7 +192,7 @@ https://{datacollectionhost.sc.omtrdc.net}/b/ss/{rsid}/0/CODEVERSION?pe=tnt&tnta
 |`rsid`|Yes|The report suite ID|
 |`pe`|Yes|Page event. Always set to `tnt`|
 |`tnta`|Yes|Analytics payload returned by Target server in `analytics -> payload -> tnta`|
-|`marketingCloudVisitorId`|Yes|Marketing Cloud Visitor ID|
+|`mid`|Yes|Marketing Cloud Visitor ID|
 
 ### Required Header Values
 
@@ -192,5 +203,5 @@ https://{datacollectionhost.sc.omtrdc.net}/b/ss/{rsid}/0/CODEVERSION?pe=tnt&tnta
 ### Sample A4T Data Insertion HTTP Get Call
 
 ```
-https://demo.sc.omtrdc.net/b/ss/myCustomRsid/0/MOBILE-1.0?pe=tnt&tnta=285408:0:0|2&mcid=2304820394812039
+https://demo.sc.omtrdc.net/b/ss/myCustomRsid/0/MOBILE-1.0?pe=tnt&tnta=285408:0:0|2&mid=2304820394812039
 ```
