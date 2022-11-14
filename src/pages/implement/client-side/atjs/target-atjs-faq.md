@@ -241,6 +241,25 @@ Secure can be set via JavaScript only when the page has been loaded via HTTPS. I
 
 To ensure that Target can properly track users, and because the cookies are generated client-side, Target doesn't use either of these flags except in the situations mentioned above.
 
+## How does at.js handle security issues like XSS and MITM attacks?
+
+Communication with the Adobe's EDGE network, enabled by at.js, happens only over HTTPS as long as the secureOnly option is set to true in the targetGlobalSettings() function ([targetGlobalSettings](/src/pages/implement/client-side/atjs/atjs-functions/targetglobalsettings.md)), otherwise at.js is allowed to switch between HTTP and HTTPS based on the page protocol.
+
+The following headers are enforced by default:
+* HTTP Strict Transport Security (HSTS)
+* X-XSS Protection
+* X Content Type Options
+* Referrer-Policy
+
+All the Headers already used in client pages can be enforced and one of the common methods of doing this is through "HTTP Request Header Authorization". Customer care can advise furthermore on the best method and ways to do this.
+
+Moreover, requests to Adobe's EDGE network are public (as they are designed to be made from visitors’ browsers), they do not contain visible visitors’ details (they contain only a visitor id). These requests deliver experiences to visitors, and they contain details on what a visitor should see on the page.  
+Response tokens and session id transmitted in these requests have the purpose of tracking a communication session. They are composed of random characters, session ids are valid for 30 minutes, response tokens can be disabled ([Response tokens](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?)), and overall, these ids are useful only in the environment of Adobe solutions.
+
+It is expected to see "Access-Control-Allow-Origin" header with value "*" in the at.js requests due to the fact that they are public, authentication is not required, and Adobe's EDGE network needs to be accessed from any domain via JavaScript calls.
+
+Content Security Policy (CSP) however, needs to be enforced on the page. For more information on CSP requirements for at.js see [Content Security Policy](src/pages/before-implement/privacy/content-security-policy.md) and [targetGlobalSettings](/src/pages/implement/client-side/atjs/atjs-functions/targetglobalsettings.md).
+
 ## How often does at.js fire a network request?
 
 Target executes all of its decisioning on the server side. This means that at.js fires a network request every time the page reloads or an at.js public API is invoked.
