@@ -157,14 +157,14 @@ Note that `blockedFeatureSources` are sources for features. For the purposes of 
 
 |Prefix|Description|
 | --- | --- |
-|BOX|||
-|URL|||
-|SEG|||
-|AAM|Adobe Audience Manager||
-|CRS|||
-|UPA|||
-|IAC|||
-|CUMULATIVE_ACTION|||
+|BOX||
+|URL||
+|SEG||
+|AAM|Adobe Audience Manager|
+|CRS||
+|UPA||
+|IAC||
+|CUMULATIVE_ACTION||
 
 **QUESTION A: Please provide list of descriptions**
 **QUESTION B: What is the "SES" prefix, which was shown in demos?"**
