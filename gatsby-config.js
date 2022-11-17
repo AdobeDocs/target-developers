@@ -857,6 +857,10 @@ module.exports = {
       {
         title: 'Admin API Overview',
         path: '/before-administer/admin-api-overview/',
+      },
+      {
+        title: 'Models API (Blocklisting) Overview',
+        path: '/before-administer/model-api.md'
       }
     ]
   },
