@@ -16,18 +16,25 @@ A **blocklist** defines the set of features that will be excluded by Adobe Targe
 
 Blocklists may be defined per activity (activity level), or for all activities within a Target account (global level).
 
-To get started with the Models API in order to create and manage your blocklist, download the Postman Collection [here].
+<!-- To get started with the Models API in order to create and manage your blocklist, download the Postman Collection [here](https://git.corp.adobe.com/target/ml-configuration-management-service/tree/nextRelease/rest_api_library). Note this is an Adobe internal link. Need to publish this publicly if want to share with customers. -->
 
-**QUESTION 2**: what is the link to the postman collection? https://git.corp.adobe.com/target/ml-configuration-management-service/tree/nextRelease/rest_api_library ---- note this is internal. Need to publish this publicly if want to share with customers.
+## Models API specification
 
-**JUDY**: Vadim to check with Daniel re: public Postman collection link.
-**JUDY**: Cross-link to the spec so they have direct code they can copy.
+View the Models API specification [here](../administer/models-api/index.md).
+
+## Prerequisites
+
+To use the Models API, you must configure authentication using the [Adobe Developer Console](https://developer.adobe.com/console/home), just as you would with the [Target Admin API](../administer/admin-api/index.md). For more information, see [How to Configure Authentication](../before-administer/configure-authentication.md).
+
+<!-- JUDY: update https://developer.adobe.com/target/before-administer/ with Models API info as necessary. i.e. Add this new "type" to the list of API types. -->
+
+## Models API usage guidelines
 
 <InlineAlert variant="info" slots="header, text1, text2, text3, text4, text5"/>
 
 How to manage blocklists
 
-**Step 1:** View full list of features for an activity
+**Step 1:** View list of features for an activity
 
 **Step 2:** Check the blocklist of the activity
 
@@ -38,9 +45,9 @@ How to manage blocklists
 **Step 5:** (Optional) Manage the global blocklist
 
 
-## Step 1: View full list of features for an activity {#step1}
+## Step 1: View list of features for an activity {#step1}
 
-Before blocklisting a feature, check the full list of available activity features, regardless of whether or not they are blocked from inclusion in the models. **JUDY** False. This should be the list of features that are currently used in the model. Note: difference between saying features that are "allowed" versus "used."
+Before blocklisting a feature, view the list of features that are currently being included in the models for that activity.
 
 <CodeBlock slots="heading, code" repeat="2" languages="JSON, JSON" />
 
@@ -83,9 +90,9 @@ GET https://mc.adobe.io/<tenant>/target/models/features/<campaignId>
 }
 ```
 
-JUDY: Update codeblock above once you have the complete Response.
+<!-- JUDY: Update codeblock above once you have the complete Response. -->
 
-In the example shown here, the user is checking to see the full list of features for the activity whose Activity ID is 260840.
+In the example shown here, the user is checking to see the list of features being used in the model for the activity whose Activity ID is 260840.
 
 ![Step 1](assets/models-api-step-1.png)
 
@@ -97,15 +104,14 @@ To find your activity's Activity ID, navigate to the Activities List in the Targ
 
 Definition
 
-The **externalName** is a user-friendly name for the feature that is created by Target. It is possible that this value may change over time. - Users can view these user-friendly names in the Model Insights report by downloading a CSV - double check with Muti **JUDY**
+The **externalName** is a user-friendly name for a feature. It is created by Target, and it is possible this value may change over time. Users can view these user-friendly names in the [Personalization Insights report](https://experienceleague.adobe.com/docs/target/using/reports/insights/personalization-insights-reports.html).
 
-The **internalName** is the feature's actual identifier. It cannot be changed. This is the value you will need to reference in order to identify the feature(s) you would like to blocklist.
+The **internalName** is the feature's actual identifier. It is also created by Target, but it cannot be changed. This is the value you will need to reference in order to identify the feature(s) you would like to blocklist.
 
-**QUESTION 3**: Where/how can a user rename a feature? It's not possible. This API is not part of the regular flow - create an activity, data comes in, model training job checks data and uses what it has in configuration. No options to change. There is an internal service that does the mapping of extneralName and internalName. Model Insights report can show.... csv - user ....
+Note that in order for the features list to populate with values (i.e. in order for it to be non-null), an activity must:
 
-**QUESTION 4**: What are the exact conditions under which you will get a non-null list of features returned? For example, does the campaign have to be ACTIVATED? Does it have to have been running for a certain amount of time? Or will a SAVED BUT INACTIVE automated personalization campaign also return a non-null list of features from this GET request? Or is the activity status inconsequential, and in fact the only thing that matters in terms of populating the blocklist is whether or not you, well, populate the blocklist? (in other words, could you have a saved but never-before-run activity, for which you define a blocklist of 3 features, which would then show up from this GET request?)  ANSWER: campaign must be activated, and it must have been running for some time, and thre must have been some activity on the campapign (so that the ML model will have had some data to run against). Also there is a separate job that needs to run for the report. That being said, the blocklist is agnostic... so yes you can actually populate the blocklist using the api, even ifi the campaign is inactivated. The blocklist only cares that the activity exists.
-
-**QUESTION 5**: What are the exact conditions under which you get NO features returned? (For example, what if you put in the wrong campaign id (for a campaign that doesn't exist), or what if the blocklist has never been populated before, or what if you enter a campaign id for a regular AB test instead of an AP test?) What will those results look like?
+1. be live, or must have been activated previously
+2. have been running long enough for there to be campaign activity, so that the model has had data to run against.
 
 ## Step 2: Check the blocklist of the activity {#step2}
 
@@ -135,11 +141,33 @@ In the example shown here, the user is checking the list of blocked features for
 
 <InlineAlert variant="info" slots="text"/>
 
-You may see empty results like this, the first time you check the full blocklist, before adding any features to it. However, once you have added (and subsequently removed) features from a blocklist, you may see slightly different results, in which placeholders for blocklisted features are returned, but those placeholders will be empty (devoid of values). Continue reading to see an example of this in [Step 4](#step4).
+You may see empty results like this, the first time you check the full blocklist, before adding any features to it. However, once you have added (and subsequently removed) features from a blocklist, you may see slightly different results, in which an empty blocklisted features array is returned. Continue reading to see an example of this in [Step 4](#step4).
 
-## Step 3: Add features to the blocklist of the activity
+## Step 3: Add features to the blocklist of the activity {#step3}
 
-To add features to the blocklist, change the request from GET to PUT, and modify the body of the request to specify the `blockedFeatureSources` and `blockedFeatures` as desired. Refer back to Step 1 to know which exact values to use: `blockedFeatures` should be populated with values taken from `internalName` from [Step 1](#step1).
+To add features to the blocklist, change the request from GET to PUT, and modify the body of the request to specify the `blockedFeatureSources` or `blockedFeatures` as desired.
+
+* The body of the request requires either `blockedFeatures` or `blockedFeatureSources` (or both).
+* Populate `blockedFeatures` with values identified from `internalName`. See [Step 1](#step1).
+* Populate `blockedFeatureSources` with values from the table below.
+
+Note that `blockedFeatureSources` are sources for features. For the purposes of blocklisting, they serve as groups or categories of features, which enable users to block entire sets of features at once. The values of `blockedFeatureSources` match the first characters of a feature's identifier (`blockedFeatures` or `internalName` values); therefore they may also be considered "feature prefixes."
+
+**Table of `blockedFeatureSources` values:**
+
+|Prefix|Description|
+| --- | --- |
+|BOX|||
+|URL|||
+|SEG|||
+|AAM|Adobe Audience Manager||
+|CRS|||
+|UPA|||
+|IAC|||
+|CUMULATIVE_ACTION|||
+
+**QUESTION A: Please provide list of descriptions**
+**QUESTION B: What is the "SES" prefix, which was shown in demos?"**
 
 <CodeBlock slots="heading, code" repeat="2" languages="JSON, JSON" />
 
@@ -169,17 +197,13 @@ PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/<campaignId>
 
 ````
 
-In the example shown here, the user is blocking two features, `SES_PREVIOUS_VISIT_COUNT` and `SES_TOTAL_SESSIONS`, which they previously identified by querying the full list of features for the activity whose Activity ID is 260480, as described in [Step 1](#step1).
+In the example shown here, the user is blocking two features, `SES_PREVIOUS_VISIT_COUNT` and `SES_TOTAL_SESSIONS`, which they previously identified by querying the full list of features for the activity whose Activity ID is 260480, as described in [Step 1](#step1). They are also blocking all features whose source is Adobe Audience Manager, achieved by blocking features with the prefix of "AAM."
 
 ![Step 3](assets/models-api-step-3.png)
 
-**QUESTION 6**: Will the Body of the results show the FULL list of blocked features, or will it only display the features you just blocked, within that specific PUT request?
+**QUESTION B**: Will the Body of the results show the FULL list of blocked features, or will it only display the features you just blocked, within that specific PUT request?
 
 <InlineAlert variant="help" slots="header, text" />
-
-Q: How do I know which values to use for the blockedFeatureSources?
-
-A: **QUESTION 7**: NEED LIST OF BLOCKED FEATURE SOURCES.
 
 Note that after blocklisting a feature, it is recommended that you verify the updated blocklist by performing [Step 2](#step2) again (GET the blocklist). Verify that the results appear as expected, including the features that you added from the latest PUT request.
 
@@ -210,15 +234,19 @@ PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/<campaignId>
 
 ````
 
-In the example shown here, the user is clearing their blocklist for the activity whose Activity ID is 260840. Note that the response shows placeholders for blocked features and their sources—`blockedFeatureSources` and `blockedFeatures`, respectively—but those placeholders are empty.
+In the example shown here, the user is clearing their blocklist for the activity whose Activity ID is 260840. Note that the response shows empty arrays for both blocked features and their sources—`blockedFeatureSources` and `blockedFeatures`, respectively.
 
 ![Step 4](assets/models-api-step-4.png)
 
-As always, after modifying the blocklist, it is recommended that you perform [Step 2](#step2) again (GET the blocklist to verify the results appear as expected). In the example shown here, the user is verifying that their blocklist is now empty.
+As always, after modifying the blocklist, it is recommended that you perform [Step 2](#step2) again (GET the blocklist to verify the list includes features as expected). In the example shown here, the user is verifying that their blocklist is now empty.
 
 ![Step 4b](assets/models-api-step-4b.png)
 
-**QUESTION 8**: T/F: To remove a single item from a multi-item blockList, the customer needs to delete the ENTIRE list, then re-add the desired features BACK ONTO the blockList? Is there a way to just remove a single feature without deleting everything first, and then having to rebuild the list?
+<InlineAlert variant="info" slots="header, text1, text2"/>
+
+Question: How can I delete some, but not all, of a blocklist?
+
+Answer: To remove a discrete subset of blocklisted features from a multi-feature blocklist, users can simply send the updated list in [the blocklist request](#step3), as opposed to clearing the entire blocklist and re-adding the desired features. In other words, send the updated feature list (as shown in [Step 3](#step3)), making sure to exclude the features you wish to "delete" from the blocklist.
 
 ## Step 5: (Optional) Manage the global blocklist
 
@@ -229,7 +257,7 @@ The examples above were all in the context of a single activity. You may also bl
 #### Request
 
 ```json
-GET https://mc.adobe.io/<tenant>/target/models/features/blockList/global
+PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/global
 
 {
     "blockedFeatureSources": ["AAM"],
@@ -246,27 +274,22 @@ GET https://mc.adobe.io/<tenant>/target/models/features/blockList/global
         "AAM_FEATURE_2"
     ],
     "blockedFeatureSources": [
-        "AAM",
-        "PRO",
-        "ENV"
+        "AAM"
     ]
 }
 
 ````
 
-In the example shown here, the user is blocking two features, `AAM_FEATURE_1` and `AAM_FEATURE_2`, for all activities in their Target account. This means that regardless of the activity, `AAM_FEATURE_1` and `AAM_FEATURE_2` will not be included in the machine learning models for this account.
+In the sample Request shown above, the user is blocking two features, `AAM_13105408` and `AAM_8136222`, for all activities in their Target account. This means that, regardless of the activity, `AAM_13105408` and `AAM_8136222` will not be included in the machine learning models for this account. Furthermore, the user is also globally blocking all features whose prefix is `AAM.`
+
+<InlineAlert variant="info" slots="header, text1, text2"/>
+
+Question: Isn't the code sample above, redundant?
+
+Answer: Yes. It is redundant to block features with values beginning with "AAM_," while also blocking all features whose source is "AAM." The net result is that all features sourced from AAM will be blocked. Therefore, individually specifying the features beginning with "AAM_" is unnecessary in the example above.
+
+Whether at the activity- or global-level, it is recommended that you verify your blocklist after modifying it, to ensure it contains the values you expect. Do this by changing the `PUT` to a `GET`.
+
+In the sample Response shown below, we see that Target is not only blocking the two individual features, plus all features sourced from "AAM," as specified in the previous `PUT`, but it is also blocking features sourced from "PRO" and "ENV." Note this means that "PRO" and "ENV" features must have been blocked globally in a prior call.
 
 ![Step 5](assets/models-api-step-5.png)
-
-**QUESTION 9**: Why do 3 Sources appear in the response above, which involves only 2 Features? Can a single Feature belong to more than one Source?
-
-**QUESTION 10**: Global blocking uses a GET, not a PUT ??? Is this screenshot actually showing how to retrieve a global list of blocked features, as opposed to updating it? Or do we only strictly allow GETting the blocklist on a per-campaign basis?
-
-**QUESTION 11**: Does the Models API require authentication?
-
-JUDY modify the following text, based on the answer:
-
-To use the Models API, you must configure authentication using the [Adobe Developer Console](https://developer.adobe.com/console/home), just as you would with the [Target Admin API](../administer/admin-api/index.md). For more information, see [How to Configure Authentication](../before-administer/configure-authentication.md).
-
-JUDY: update https://developer.adobe.com/target/before-administer/ with Models API info as necessary. i.e. Add this new "type" to the list of API types.
-

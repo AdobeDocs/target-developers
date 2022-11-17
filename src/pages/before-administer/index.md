@@ -19,16 +19,17 @@ The Admin APIs and Profile APIs are often referred to collectively ("Admin and P
  
 |API type|What it enables you to do|Download link|Other helpful links|
 | --- | --- | --- |--- |
-|Admin|Create, modify, and delete activities, audiences, offers, and other objects (including Recommendations entities, criteria, designs, and so on. The Recommendations APIs are a type of admin API.)|<UL><li>[Target Admin API Postman Collection](https://developers.adobetarget.com/api/#admin-postman-collection)</li><li>[Recommendations API Postman Collection](https://developers.adobetarget.com/api/recommendations/#section/Postman)</li></UL>|[Use Recommendations APIs](../before-administer/recs-api/)|
+|[Admin](../administer/admin-api/index.md)|Create, modify, and delete activities, audiences, offers, and other objects (including Recommendations entities, criteria, designs, and so on. The Recommendations APIs are a type of Admin API.)|<UL><li>[Target Admin API Postman Collection](https://developers.adobetarget.com/api/#admin-postman-collection)</li><li>[Recommendations API Postman Collection](https://developers.adobetarget.com/api/recommendations/#section/Postman)</li></UL>|[Use Recommendations APIs](../before-administer/recs-api/)|
 |Profile|Retrieve and modify user profiles stored in Adobe Target.|[Target Profile API Postman Collection](https://developers.adobetarget.com/api/#profiles)||
-|Delivery|Retrieve optimized and personalized content from Target for delivery to an end user.|[Target Delivery API Postman Collection](../implement/delivery-api/index.md/#section/Getting-Started/Postman-Collection)||
-|Reporting|Export activity results and other reporting results.|Reporting APIs are included within the [Target Admin API Postman collection](https://developers.adobetarget.com/api/#admin-postman-collection).||
+|[Delivery](../implement/delivery-api/index.md)|Retrieve optimized and personalized content from Target for delivery to an end user.|[Target Delivery API Postman Collection](../implement/delivery-api/index.md/#section/Getting-Started/Postman-Collection)||
+|[Reporting](../administer/admin-api/index.md)|Export activity results and other reporting results.|Reporting APIs are included within the [Target Admin API Postman collection](https://developers.adobetarget.com/api/#admin-postman-collection).||
+|[Models](../administer/models-api/index.md)|Manage the list of features you want Target to exclude from its machine-learning models (the "blocklist"). The Models API is a type of Admin API, but it is listed here separately due to its unique operations against objects (blocklists) not accessible through the UI.|||
 
 ## API Differences
 
 There are important distinctions between Target Admin APIs (including the Recommendations APIs) and Target Delivery APIs:
 
-* Admin APIs let you configure various aspects of Target that you could also configure in the Target UI. **Admin APIs require authentication.**
+* Admin APIs let you configure various aspects of Target that you can also configure in the Target UI. The exception to this is the Models API, which lets you configure aspects of Target not available in the UI. Regardless, **all Admin APIs require authentication.**
 
 * Delivery APIs let you retrieve content. Delivery APIs do not require authentication.
 
