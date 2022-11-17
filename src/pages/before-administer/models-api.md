@@ -8,8 +8,6 @@ description: Overview of the Models API, which users can use to block features f
 
 The Models API, also called the Blocklist API, enables users to view and manage the list of features used in machine learning models for Automated Personalization (AP) and Auto-Target (AT) activities. If a user would like to exclude a feature from being used by the models for AP or AT activities, they can use the Models API to add that feature to the "blocklist."
 
-**QUESTION 1**: Verify: AP and AT are the only activity types that have ML models and are therefore the only activity types for which blocklists are relevant, right? Not AA or any other activity types, yeah?
-
 <InlineAlert variant="info" slots="header, text"/>
 
 Definition
@@ -18,9 +16,12 @@ A **blocklist** defines the set of features that will be excluded by Adobe Targe
 
 Blocklists may be defined per activity (activity level), or for all activities within a Target account (global level).
 
-To get started with the Models API in order to create and manage your blocklist, download the Postman Collection here.
+To get started with the Models API in order to create and manage your blocklist, download the Postman Collection [here].
 
-**QUESTION 2**: what is the link to the postman collection?
+**QUESTION 2**: what is the link to the postman collection? https://git.corp.adobe.com/target/ml-configuration-management-service/tree/nextRelease/rest_api_library ---- note this is internal. Need to publish this publicly if want to share with customers.
+
+**JUDY**: Vadim to check with Daniel re: public Postman collection link.
+**JUDY**: Cross-link to the spec so they have direct code they can copy.
 
 <InlineAlert variant="info" slots="header, text1, text2, text3, text4, text5"/>
 
@@ -39,7 +40,7 @@ How to manage blocklists
 
 ## Step 1: View full list of features for an activity {#step1}
 
-Before blocklisting a feature, check the full list of available activity features, regardless of whether or not they are blocked from inclusion in the models.
+Before blocklisting a feature, check the full list of available activity features, regardless of whether or not they are blocked from inclusion in the models. **JUDY** False. This should be the list of features that are currently used in the model. Note: difference between saying features that are "allowed" versus "used."
 
 <CodeBlock slots="heading, code" repeat="2" languages="JSON, JSON" />
 
@@ -96,13 +97,13 @@ To find your activity's Activity ID, navigate to the Activities List in the Targ
 
 Definition
 
-The **externalName** is the user-friendly name that you used to name the feature. This value may change over time, if you rename the feature.
+The **externalName** is a user-friendly name for the feature that is created by Target. It is possible that this value may change over time. - Users can view these user-friendly names in the Model Insights report by downloading a CSV - double check with Muti **JUDY**
 
 The **internalName** is the feature's actual identifier. It cannot be changed. This is the value you will need to reference in order to identify the feature(s) you would like to blocklist.
 
-**QUESTION 3**: Where/how can a user rename a feature?
+**QUESTION 3**: Where/how can a user rename a feature? It's not possible. This API is not part of the regular flow - create an activity, data comes in, model training job checks data and uses what it has in configuration. No options to change. There is an internal service that does the mapping of extneralName and internalName. Model Insights report can show.... csv - user ....
 
-**QUESTION 4**: What are the exact conditions under which you will get a non-null list of features returned? For example, does the campaign have to be ACTIVATED? Does it have to have been running for a certain amount of time? Or will a SAVED BUT INACTIVE automated personalization campaign also return a non-null list of features from this GET request? Or is the activity status inconsequential, and in fact the only thing that matters in terms of populating the blocklist is whether or not you, well, populate the blocklist? (in other words, could you have a saved but never-before-run activity, for which you define a blocklist of 3 features, which would then show up from this GET request?)
+**QUESTION 4**: What are the exact conditions under which you will get a non-null list of features returned? For example, does the campaign have to be ACTIVATED? Does it have to have been running for a certain amount of time? Or will a SAVED BUT INACTIVE automated personalization campaign also return a non-null list of features from this GET request? Or is the activity status inconsequential, and in fact the only thing that matters in terms of populating the blocklist is whether or not you, well, populate the blocklist? (in other words, could you have a saved but never-before-run activity, for which you define a blocklist of 3 features, which would then show up from this GET request?)  ANSWER: campaign must be activated, and it must have been running for some time, and thre must have been some activity on the campapign (so that the ML model will have had some data to run against). Also there is a separate job that needs to run for the report. That being said, the blocklist is agnostic... so yes you can actually populate the blocklist using the api, even ifi the campaign is inactivated. The blocklist only cares that the activity exists.
 
 **QUESTION 5**: What are the exact conditions under which you get NO features returned? (For example, what if you put in the wrong campaign id (for a campaign that doesn't exist), or what if the blocklist has never been populated before, or what if you enter a campaign id for a regular AB test instead of an AP test?) What will those results look like?
 

@@ -72,6 +72,11 @@ module.exports = {
           title: 'Admin and Reporting APIs',
           description: 'Adobe Target Admin and Reporting APIs',
           path: '/administer/admin-api/'
+          },
+          {
+            title: 'Models APIs',
+            description: 'Adobe Target Blocklisting APIs',
+            path: '/administer/models-api/'
           }
         ]
       }
@@ -860,7 +865,7 @@ module.exports = {
       },
       {
         title: 'Models API (Blocklisting) Overview',
-        path: '/before-administer/model-api.md'
+        path: '/before-administer/models-api.md'
       }
     ]
   },
