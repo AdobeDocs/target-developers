@@ -37,7 +37,7 @@ How to manage blocklists
 **Step 5:** (Optional) Manage the global blocklist
 
 
-## Step 1: View full list of features for an activity
+## Step 1: View full list of features for an activity {#step1}
 
 Before blocklisting a feature, check the full list of available activity features, regardless of whether or not they are blocked from inclusion in the models.
 
@@ -106,13 +106,13 @@ The **internalName** is the feature's actual identifier. It cannot be changed. T
 
 **QUESTION 5**: What are the exact conditions under which you get NO features returned? (For example, what if you put in the wrong campaign id (for a campaign that doesn't exist), or what if the blocklist has never been populated before, or what if you enter a campaign id for a regular AB test instead of an AP test?) What will those results look like?
 
-## Step 2: Check the blocklist of the activity
+## Step 2: Check the blocklist of the activity {#step2}
 
 Next, view the blocklist. In other words, check to see which features, if any, are currently being blocked from inclusion in the models for this activity.
 
 <InlineAlert variant="error" slots="text"/>
 
-Note that `/blockList/` is case sensitive.
+Note that `/blockList/` is case sensitive in the request.
 
 <CodeBlock slots="heading, code" repeat="2" languages="JSON, JSON" />
 
@@ -134,11 +134,11 @@ In the example shown here, the user is checking the list of blocked features for
 
 <InlineAlert variant="info" slots="text"/>
 
-You may see empty results like this, the first time you check the full blocklist, before adding any features to it. However, once you have added (and subsequently removed) features from a blocklist, you may see slightly different results, in which placeholders for blocklisted features are returned, but those placeholders will be empty (devoid of values). Continue reading to see an example of this.
+You may see empty results like this, the first time you check the full blocklist, before adding any features to it. However, once you have added (and subsequently removed) features from a blocklist, you may see slightly different results, in which placeholders for blocklisted features are returned, but those placeholders will be empty (devoid of values). Continue reading to see an example of this in [Step 4](#step4).
 
 ## Step 3: Add features to the blocklist of the activity
 
-To add features to the blocklist, change the request from GET to PUT, and modify the body of the request to specify the `blockedFeatureSources` and `blockedFeatures` as desired. Refer back to Step 1 to know which exact values to use, noting that `blockedFeatures` = `internalName`.
+To add features to the blocklist, change the request from GET to PUT, and modify the body of the request to specify the `blockedFeatureSources` and `blockedFeatures` as desired. Refer back to Step 1 to know which exact values to use: `blockedFeatures` should be populated with values taken from `internalName` from [Step 1](#step1).
 
 <CodeBlock slots="heading, code" repeat="2" languages="JSON, JSON" />
 
@@ -168,7 +168,7 @@ PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/<campaignId>
 
 ````
 
-In the example shown here, the user is blocking two features, `SES_PREVIOUS_VISIT_COUNT` and `SES_TOTAL_SESSIONS`, which they previously identified by querying the full list of features for the activity, as described in Step 1.
+In the example shown here, the user is blocking two features, `SES_PREVIOUS_VISIT_COUNT` and `SES_TOTAL_SESSIONS`, which they previously identified by querying the full list of features for the activity whose Activity ID is 260480, as described in [Step 1](#step1).
 
 ![Step 3](assets/models-api-step-3.png)
 
@@ -180,9 +180,9 @@ Q: How do I know which values to use for the blockedFeatureSources?
 
 A: **QUESTION 7**: NEED LIST OF BLOCKED FEATURE SOURCES.
 
-Note that after blocklisting a feature, it is recommended that you verify the updated blocklist by performing Step 2 again (GET the blocklist). Verify that the results appear as expected, including the features that you added from the latest PUT request.
+Note that after blocklisting a feature, it is recommended that you verify the updated blocklist by performing [Step 2](#step2) again (GET the blocklist). Verify that the results appear as expected, including the features that you added from the latest PUT request.
 
-## Step 4: (Optional) Unblock
+## Step 4: (Optional) Unblock {#step4}
 
 To unblock, clear the values from both `blockedFeatureSources` and `blockedFeatures`.
 
@@ -209,11 +209,11 @@ PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/<campaignId>
 
 ````
 
-In the example shown here, the user is clearing their blocklist for the activity whose Activity ID is 260840. Note that the response shows placeholders for blocked features and their sources -- `blockedFeatureSources` and `blockedFeatures`, respectively -- but those placeholders are empty.
+In the example shown here, the user is clearing their blocklist for the activity whose Activity ID is 260840. Note that the response shows placeholders for blocked features and their sources—`blockedFeatureSources` and `blockedFeatures`, respectively—but those placeholders are empty.
 
 ![Step 4](assets/models-api-step-4.png)
 
-As always, after modifying the blocklist, it is recommended that you perform Step 2 again (GET the blocklist to verify the results appear as expected). In the example shown here, the user is verifying that their blocklist is now empty.
+As always, after modifying the blocklist, it is recommended that you perform [Step 2](#step2) again (GET the blocklist to verify the results appear as expected). In the example shown here, the user is verifying that their blocklist is now empty.
 
 ![Step 4b](assets/models-api-step-4b.png)
 
