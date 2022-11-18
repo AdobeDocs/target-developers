@@ -21,7 +21,13 @@ exl-id: ae782511-6f32-4123-be76-838584e05b39
 
 # Introduction to on-device decisioning
 
-The next-generation Adobe Target SDKs now offer on-device decisioning, which provides the ability to cache your A/B and Experience Targeting (XT) campaigns on your server and perform in-memory decisioning at near-zero latency, without blocking network requests to Adobe Target's Edge Network. Adobe Target also offers the flexibility of delivering the most relevant and up-to-date experience from your experimentation and ML-driven personalization campaigns via a live server call. In other words, when performance is most important, you can choose to utilize on-device decisioning, but when the most relevant and up-to-date experience is needed, a server call can be made instead. See [when to use on-device vs. edge decisioning](../../sdk-guides/on-device-decisioning/index.md) to learn about use cases that warrant using one over the other.
+The next-generation Adobe Target SDKs now offer on-device decisioning, which provides the ability to cache your A/B and Experience Targeting (XT) campaigns on your server and perform in-memory decisioning at near-zero latency, without blocking network requests to Adobe Target's Edge Network.
+
+Adobe Target also offers the flexibility of delivering the most relevant and up-to-date experience from your experimentation and ML-driven personalization campaigns via a live server call. In other words, when performance is most important, you can choose to utilize on-device decisioning, but when the most relevant and up-to-date experience is needed, a server call can be made instead. See [when to use on-device vs. edge decisioning](../../sdk-guides/on-device-decisioning/index.md) to learn about use cases that warrant using one over the other.
+
+<InlineAlert variant="info" slots="text"/>
+
+On-device decisioning is available for both client-side as well as server-side implementations. This article describes on-device decisioning for server-side. For information regarding on-device decisioning for client-side, reference the client-side implementation documentation [here](../../../client-side/atjs/on-device-decisioning/on-device-decisioning.md).
 
 ## How does it work?
 

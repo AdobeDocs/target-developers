@@ -19,6 +19,10 @@ exl-id: 5ad6032b-9865-4c80-8800-705673657286
 
 Starting with version 2.5.0, at.js offers on-device decisioning. On-device decisioning lets you cache your [A/B Test](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html) and [Experience Targeting](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html) (XT) activities on the browser to perform in-memory decisioning without a blocking network request to the Adobe Target Edge Network. 
 
+<InlineAlert variant="info" slots="text"/>
+
+On-device decisioning is available for both client-side as well as server-side implementations. This article describes on-device decisioning for client-side. For information regarding on-device decisioning for server-side, reference the server-side implementation documentation [here](../../../server-side/sdk-guides/on-device-decisioning/).
+
 Target also offers the flexibility of delivering the most relevant and up-to-date experience from your experimentation and Machine Learning-driven (ML-driven) personalization activities via a live server call. In other words, when performance is most important, you can choose to use on-device decisioning. However, when the most relevant, up-to-date, and ML-driven experience is needed, a server call can be made instead.
 
 ## What are the benefits of on-device decisioning?
