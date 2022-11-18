@@ -106,10 +106,10 @@ The **externalName** is a user-friendly name for a feature. It is created by Tar
 
 The **internalName** is the feature's actual identifier. It is also created by Target, but it cannot be changed. This is the value you will need to reference in order to identify the feature(s) you would like to blocklist.
 
-Note that in order for the features list to populate with values (i.e. in order for it to be non-null), an activity must:
+Note that in order for the features list to populate with values (that is, in order for it to be non-null), an activity:
 
-1. be live, or must have been activated previously
-2. have been running long enough for there to be campaign activity, so that the model has had data to run against.
+1. Must have Status = Live, or must have been activated previously
+2. Must have been running long enough for there to be campaign activity, so that the model has had data to run against.
 
 ## Step 2: Check the blocklist of the activity {#step2}
 
@@ -145,7 +145,7 @@ You may see empty results like this, the first time you check the full blocklist
 
 To add features to the blocklist, change the request from GET to PUT, and modify the body of the request to specify the `blockedFeatureSources` or `blockedFeatures` as desired.
 
-* The body of the request requires either `blockedFeatures` or `blockedFeatureSources` (or both).
+* The body of the request requires either `blockedFeatures` or `blockedFeatureSources`. Both may be included.
 * Populate `blockedFeatures` with values identified from `internalName`. See [Step 1](#step1).
 * Populate `blockedFeatureSources` with values from the table below.
 
@@ -165,6 +165,7 @@ Note that `blockedFeatureSources` are sources for features. For the purposes of 
 |CUMULATIVE_ACTION||
 
 **QUESTION A: Please provide list of descriptions**
+
 **QUESTION B: What is the "SES" prefix, which was shown in demos?"**
 
 <CodeBlock slots="heading, code" repeat="2" languages="JSON, JSON" />
@@ -201,13 +202,13 @@ In the example shown here, the user is blocking two features, `SES_PREVIOUS_VISI
 
 **QUESTION C**: Will the Body of the Response of a blocklist request show the FULL list of blocked features, or will it only display the features you just blocked, within that specific PUT request?
 
-<InlineAlert variant="help" slots="header, text" />
+<InlineAlert variant="help" slots="text" />
 
-Note that after blocklisting a feature, it is recommended that you verify the updated blocklist by performing [Step 2](#step2) again (GET the blocklist). Verify that the results appear as expected, including the features that you added from the latest PUT request.
+Note that after blocklisting a feature, it is recommended that you verify the updated blocklist by performing [Step 2](#step2) again (GET the blocklist). Verify that the results appear as expected (verify that the results include the features added from the latest PUT request).
 
 ## Step 4: (Optional) Unblock {#step4}
 
-To unblock, clear the values from both `blockedFeatureSources` and `blockedFeatures`.
+To unblock, clear the values from `blockedFeatureSources` or `blockedFeatures`.
 
 <CodeBlock slots="heading, code" repeat="2" languages="JSON, JSON" />
 
@@ -240,7 +241,7 @@ As always, after modifying the blocklist, it is recommended that you perform [St
 
 ![Step 4b](assets/models-api-step-4b.png)
 
-<InlineAlert variant="info" slots="header, text1, text2"/>
+<InlineAlert variant="info" slots="header, text"/>
 
 Question: How can I delete some, but not all, of a blocklist?
 
@@ -278,16 +279,16 @@ PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/global
 
 ````
 
-In the sample Request shown above, the user is blocking two features, `AAM_13105408` and `AAM_8136222`, for all activities in their Target account. This means that, regardless of the activity, `AAM_13105408` and `AAM_8136222` will not be included in the machine learning models for this account. Furthermore, the user is also globally blocking all features whose prefix is `AAM.`
+In the sample Request shown above, the user is blocking two features, `AAM_FEATURE_1` and `AAM_FEATURE_2`, for all activities in their Target account. This means that, regardless of the activity, `AAM_FEATURE_1` and `AAM_FEATURE_2` will not be included in the machine learning models for this account. Furthermore, the user is also globally blocking all features whose prefix is `AAM.`
 
-<InlineAlert variant="info" slots="header, text1, text2"/>
+<InlineAlert variant="info" slots="header, text"/>
 
 Question: Isn't the code sample above, redundant?
 
-Answer: Yes. It is redundant to block features with values beginning with "AAM_," while also blocking all features whose source is "AAM." The net result is that all features sourced from AAM will be blocked. Therefore, individually specifying the features beginning with "AAM_" is unnecessary in the example above.
+Answer: Yes. It is redundant to block features with values beginning with "AAM," while also blocking all features whose source is "AAM." The net result is that all features sourced from AAM will be blocked. Therefore, if the goal is to block all features from Audience Manager, individually specifying certain features beginning with "AAM" is unnecessary, in the example above.
 
 Whether at the activity- or global-level, it is recommended that you verify your blocklist after modifying it, to ensure it contains the values you expect. Do this by changing the `PUT` to a `GET`.
 
-In the sample Response shown below, we see that Target is not only blocking the two individual features, plus all features sourced from "AAM," as specified in the previous `PUT`, but it is also blocking features sourced from "PRO" and "ENV." Note this means that "PRO" and "ENV" features must have been blocked globally in a prior call.
+In the sample Response shown below, we see that Target is not only blocking the two individual features, plus all features sourced from "AAM," as specified in the previous `PUT`, but it is also blocking features sourced from "PRO" and "ENV." Note this means that "PRO" and "ENV" features must have been blocked globally in a prior request.
 
 ![Step 5](assets/models-api-step-5.png)
