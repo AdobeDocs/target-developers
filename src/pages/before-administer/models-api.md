@@ -26,8 +26,6 @@ View the Models API specification [here](../administer/models-api/index.md).
 
 To use the Models API, you must configure authentication using the [Adobe Developer Console](https://developer.adobe.com/console/home), just as you would with the [Target Admin API](../administer/admin-api/index.md). For more information, see [How to Configure Authentication](../before-administer/configure-authentication.md).
 
-<!-- JUDY: update https://developer.adobe.com/target/before-administer/ with Models API info as necessary. i.e. Add this new "type" to the list of API types. -->
-
 ## Models API usage guidelines
 
 <InlineAlert variant="info" slots="header, text1, text2, text3, text4, text5"/>
@@ -201,7 +199,7 @@ In the example shown here, the user is blocking two features, `SES_PREVIOUS_VISI
 
 ![Step 3](assets/models-api-step-3.png)
 
-**QUESTION B**: Will the Body of the results show the FULL list of blocked features, or will it only display the features you just blocked, within that specific PUT request?
+**QUESTION C**: Will the Body of the Response of a blocklist request show the FULL list of blocked features, or will it only display the features you just blocked, within that specific PUT request?
 
 <InlineAlert variant="help" slots="header, text" />
 
