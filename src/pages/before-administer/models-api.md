@@ -2,8 +2,6 @@
 title: Adobe Models API Overview
 description: Overview of the Models API, which users can use to block features from being included in machine learning models.
 ---
-# DRAFT - UNDER REVIEW
-
 # Models API Overview
 
 The Models API, also called the Blocklist API, enables users to view and manage the list of features used in machine learning models for Automated Personalization (AP) and Auto-Target (AT) activities. If a user would like to exclude a feature from being used by the models for AP or AT activities, they can use the Models API to add that feature to the "blocklist."
