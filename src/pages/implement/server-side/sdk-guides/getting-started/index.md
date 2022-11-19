@@ -157,7 +157,7 @@ target_client = TargetClient.create(CONFIG)
 
    <CodeBlock slots="heading, code" repeat="1" languages="JSON" />
    
-   #### Sample JSON
+   #### (Sample JSON for Experience A, above)
 
    ```json
    {
@@ -172,7 +172,7 @@ target_client = TargetClient.create(CONFIG)
 
    <CodeBlock slots="heading, code" repeat="1" languages="JSON" />
    
-   #### Sample JSON
+   #### (Sample JSON for Experience B, above)
 
    ```json
    {

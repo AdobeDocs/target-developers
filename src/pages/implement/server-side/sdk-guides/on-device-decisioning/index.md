@@ -116,9 +116,9 @@ After creating and activating an activity that is on-device decisioning capable,
 1. Access the Adobe Target UI and navigate to **Administration** > **Implementation** > **Account details** to enable the **On-Device Decisioning** toggle.
 1. Enable the **Include all existing on-device decisioning qualified activities in the artifact** toggle.
 1. Create and activate an activity type that is supported by on-device decisioning, and verify that the **Decisioning Method** is **On-Device Decisioning** for that activity.
-1. Install and initialize the [Node.js](../sdk/node-js/index.md) or [Java](../sdk/java/index.md) SDK with `decisioningMethod = on-device`.
-1. Implement `getOffers()` or `getAttributes()` in your code to retrieve an experience on-device.
-1. Deploy your code.
+2. Install and initialize the [Node.js](../../node-js/index.md) or [Java](../../java/index.md) SDK with `decisioningMethod = on-device`.
+3. Implement `getOffers()` or `getAttributes()` in your code to retrieve an experience on-device.
+4. Deploy your code.
 
 For examples demonstrating how to get started with steps 1-3 above, see the [Getting started](../getting-started/index.md) section.
 
