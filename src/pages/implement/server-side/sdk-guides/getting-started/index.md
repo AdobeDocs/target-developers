@@ -155,20 +155,41 @@ target_client = TargetClient.create(CONFIG)
 
    ![alt image](assets/asset-json_a.png)
 
+   <CodeBlock slots="heading, code" repeat="1" languages="JSON" />
+   
+   #### Sample JSON
+
+   ```json
+   {
+      "enabled" : true,
+      "flag" : "expA"
+   }
+   ```
+
    Enter the feature flag variables for Experience B.
 
    ![alt image](assets/asset-json_b.png)
 
+   <CodeBlock slots="heading, code" repeat="1" languages="JSON" />
+   
+   #### Sample JSON
 
-6. Click **Next** (1) to advance to the **Targeting** step of activity creation.
+   ```json
+   {
+      "enabled" : true,
+      "flag" : "expB"
+   }
+   ```
+
+1. Click **Next** (1) to advance to the **Targeting** step of activity creation.
 
    ![alt image](assets/asset-next_2_t.png)
 
-7. In the **Targeting** step example shown below, Audience Targeting (2) remains on the default set of All Visitors, for simplicity. This means the activity is untargeted. However, note Adobe recommends you always target your audiences for production activities. Click **Next** (3) to advance to the **Goals & Settings** step of activity creation.
+2. In the **Targeting** step example shown below, Audience Targeting (2) remains on the default set of All Visitors, for simplicity. This means the activity is untargeted. However, note Adobe recommends you always target your audiences for production activities. Click **Next** (3) to advance to the **Goals & Settings** step of activity creation.
 
    ![alt image](assets/asset-next_2_g.png)
 
-8. In the **Goals & Settings** step, set **Reporting Source** to **Adobe Target** (1). Define the **Goal Metric** as **Conversion**, specifying the details based on your site's conversion metrics (2). Click **Save & Close** (3) to save the activity.
+3. In the **Goals & Settings** step, set **Reporting Source** to **Adobe Target** (1). Define the **Goal Metric** as **Conversion**, specifying the details based on your site's conversion metrics (2). Click **Save & Close** (3) to save the activity.
 
    ![alt image](assets/asset-conv.png)
 
