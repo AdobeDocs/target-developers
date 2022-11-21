@@ -21,7 +21,13 @@ exl-id: ae782511-6f32-4123-be76-838584e05b39
 
 # Introduction to on-device decisioning
 
-The next-generation Adobe Target SDKs now offer on-device decisioning, which provides the ability to cache your A/B and Experience Targeting (XT) campaigns on your server and perform in-memory decisioning at near-zero latency, without blocking network requests to Adobe Target's Edge Network. Adobe Target also offers the flexibility of delivering the most relevant and up-to-date experience from your experimentation and ML-driven personalization campaigns via a live server call. In other words, when performance is most important, you can choose to utilize on-device decisioning, but when the most relevant and up-to-date experience is needed, a server call can be made instead. See [when to use on-device vs. edge decisioning](../../sdk-guides/on-device-decisioning/index.md) to learn about use cases that warrant using one over the other.
+The next-generation Adobe Target SDKs now offer on-device decisioning, which provides the ability to cache your A/B and Experience Targeting (XT) campaigns on your server and perform in-memory decisioning at near-zero latency, without blocking network requests to Adobe Target's Edge Network.
+
+Adobe Target also offers the flexibility of delivering the most relevant and up-to-date experience from your experimentation and ML-driven personalization campaigns via a live server call. In other words, when performance is most important, you can choose to utilize on-device decisioning, but when the most relevant and up-to-date experience is needed, a server call can be made instead. See [when to use on-device vs. edge decisioning](../../sdk-guides/on-device-decisioning/index.md) to learn about use cases that warrant using one over the other.
+
+<InlineAlert variant="info" slots="text"/>
+
+On-device decisioning is available for both client-side as well as server-side implementations. This article describes on-device decisioning for server-side. For information regarding on-device decisioning for client-side, reference the client-side implementation documentation [here](../../../client-side/atjs/on-device-decisioning/on-device-decisioning.md).
 
 ## How does it work?
 
@@ -110,9 +116,9 @@ After creating and activating an activity that is on-device decisioning capable,
 1. Access the Adobe Target UI and navigate to **Administration** > **Implementation** > **Account details** to enable the **On-Device Decisioning** toggle.
 1. Enable the **Include all existing on-device decisioning qualified activities in the artifact** toggle.
 1. Create and activate an activity type that is supported by on-device decisioning, and verify that the **Decisioning Method** is **On-Device Decisioning** for that activity.
-1. Install and initialize the [Node.js](../sdk/node-js/index.md) or [Java](../sdk/java/index.md) SDK with `decisioningMethod = on-device`.
-1. Implement `getOffers()` or `getAttributes()` in your code to retrieve an experience on-device.
-1. Deploy your code.
+2. Install and initialize the [Node.js](../../node-js/index.md) or [Java](../../java/index.md) SDK with `decisioningMethod = on-device`.
+3. Implement `getOffers()` or `getAttributes()` in your code to retrieve an experience on-device.
+4. Deploy your code.
 
 For examples demonstrating how to get started with steps 1-3 above, see the [Getting started](../getting-started/index.md) section.
 

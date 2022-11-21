@@ -12,10 +12,10 @@
     }
   ],
   "paths": {
-    "/api/{clientCode}/target/models/features/blockList/{campaignId}": {
+    "/{tenant}/target/models/features/blockList/{campaignId}": {
       "get": {
         "tags": [
-          "blocked-features-controller"
+          "models"
         ],
         "operationId": "getBlockedFeaturesByCampaignId",
         "parameters": [
@@ -82,7 +82,7 @@
       },
       "put": {
         "tags": [
-          "blocked-features-controller"
+          "models"
         ],
         "operationId": "putBlockedFeaturesByCampaignId",
         "parameters": [
@@ -158,10 +158,10 @@
         }
       }
     },
-    "/api/{clientCode}/target/models/features/blockList/global": {
+    "/{tenant}/target/models/features/blockList/global": {
       "get": {
         "tags": [
-          "blocked-features-controller"
+          "models"
         ],
         "operationId": "getGlobalBlockedFeatures",
         "parameters": [
@@ -219,7 +219,7 @@
       },
       "put": {
         "tags": [
-          "blocked-features-controller"
+          "models"
         ],
         "operationId": "putBlockedFeaturesGlobal",
         "parameters": [
@@ -286,10 +286,10 @@
         }
       }
     },
-    "/api/{clientCode}/target/models/features/{campaignId}": {
+    "/{tenant}/target/models/features/{campaignId}": {
       "get": {
         "tags": [
-          "feature-controller"
+          "models"
         ],
         "operationId": "getFeatures",
         "parameters": [

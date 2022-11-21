@@ -2,8 +2,6 @@
 title: Adobe Models API Overview
 description: Overview of the Models API, which users can use to block features from being included in machine learning models.
 ---
-# DRAFT - UNDER REVIEW
-
 # Models API Overview
 
 The Models API, also called the Blocklist API, enables users to view and manage the list of features used in machine learning models for Automated Personalization (AP) and Auto-Target (AT) activities. If a user would like to exclude a feature from being used by the models for AP or AT activities, they can use the Models API to add that feature to the "blocklist."
@@ -32,15 +30,15 @@ To use the Models API, you must configure authentication using the [Adobe Develo
 
 How to manage blocklists
 
-**Step 1:** View list of features for an activity
+[**Step 1:**](#step1) View list of features for an activity
 
-**Step 2:** Check the blocklist of the activity
+[**Step 2:**](#step2) Check the blocklist of the activity
 
-**Step 3:** Add features to the blocklist of the activity
+[**Step 3:**](#step3) Add features to the blocklist of the activity
 
-**Step 4:** (Optional) Unblock
+[**Step 4:**](#step4) (Optional) Unblock
 
-**Step 5:** (Optional) Manage the global blocklist
+[**Step 5:**](#step5) (Optional) Manage the global blocklist
 
 
 ## Step 1: View list of features for an activity {#step1}
@@ -149,24 +147,24 @@ To add features to the blocklist, change the request from GET to PUT, and modify
 * Populate `blockedFeatures` with values identified from `internalName`. See [Step 1](#step1).
 * Populate `blockedFeatureSources` with values from the table below.
 
-Note that `blockedFeatureSources` are sources for features. For the purposes of blocklisting, they serve as groups or categories of features, which enable users to block entire sets of features at once. The values of `blockedFeatureSources` match the first characters of a feature's identifier (`blockedFeatures` or `internalName` values); therefore they may also be considered "feature prefixes."
+Note that `blockedFeatureSources` indicates where a feature came from. For the purposes of blocklisting, they serve as groups or categories of features, which enable users to block entire sets of features at once. The values of `blockedFeatureSources` match the first characters of a feature's identifier (`blockedFeatures` or `internalName` values); therefore they may also be considered "feature prefixes."
 
-**Table of `blockedFeatureSources` values:**
+### Table of `blockedFeatureSources` values {#table}
 
 |Prefix|Description|
 | --- | --- |
-|BOX||
-|URL||
-|SEG||
-|AAM|Adobe Audience Manager|
-|CRS||
-|UPA||
-|IAC||
-|CUMULATIVE_ACTION||
-
-**QUESTION A: Please provide list of descriptions**
-
-**QUESTION B: What is the "SES" prefix, which was shown in demos?"**
+|BOX|Mbox parameter|
+|URL|Custom - URL Parameter|
+|ENV|Environment|
+|SES|Visitor Profile|
+|GEO|Geo location|
+|PRO|Custom - Profile|
+|SEG|Custom - Reporting Segment|
+|AAM|Custom - Experience Cloud Segment|
+|MOB|Mobile|
+|CRS|Custom - Customer Attributes|
+|UPA|Custom - RT-CDP Profile Attribute|
+|IAC|Visitor Interest Areas||
 
 <CodeBlock slots="heading, code" repeat="2" languages="JSON, JSON" />
 
@@ -196,11 +194,9 @@ PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/<campaignId>
 
 ````
 
-In the example shown here, the user is blocking two features, `SES_PREVIOUS_VISIT_COUNT` and `SES_TOTAL_SESSIONS`, which they previously identified by querying the full list of features for the activity whose Activity ID is 260480, as described in [Step 1](#step1). They are also blocking all features whose source is Adobe Audience Manager, achieved by blocking features with the prefix of "AAM."
+In the example shown here, the user is blocking two features, `SES_PREVIOUS_VISIT_COUNT` and `SES_TOTAL_SESSIONS`, which they previously identified by querying the full list of features for the activity whose Activity ID is 260480, as described in [Step 1](#step1). They are also blocking all features coming from Experience Cloud Segments, which is achieved by blocking features with the prefix of "AAM," as described in the [table](#table) above.
 
 ![Step 3](assets/models-api-step-3.png)
-
-**QUESTION C**: Will the Body of the Response of a blocklist request show the FULL list of blocked features, or will it only display the features you just blocked, within that specific PUT request?
 
 <InlineAlert variant="help" slots="text" />
 
@@ -208,7 +204,7 @@ Note that after blocklisting a feature, it is recommended that you verify the up
 
 ## Step 4: (Optional) Unblock {#step4}
 
-To unblock, clear the values from `blockedFeatureSources` or `blockedFeatures`.
+To unblock all blocklisted features, clear the values from `blockedFeatureSources` or `blockedFeatures`.
 
 <CodeBlock slots="heading, code" repeat="2" languages="JSON, JSON" />
 
@@ -233,7 +229,7 @@ PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/<campaignId>
 
 ````
 
-In the example shown here, the user is clearing their blocklist for the activity whose Activity ID is 260840. Note that the response shows empty arrays for both blocked features and their sources—`blockedFeatureSources` and `blockedFeatures`, respectively.
+In the example shown here, the user is clearing their blocklist for the activity whose Activity ID is 260840. Note that the response confirms empty arrays for both blocked features and their sources—`blockedFeatureSources` and `blockedFeatures`, respectively.
 
 ![Step 4](assets/models-api-step-4.png)
 
@@ -245,11 +241,11 @@ As always, after modifying the blocklist, it is recommended that you perform [St
 
 Question: How can I delete some, but not all, of a blocklist?
 
-Answer: To remove a discrete subset of blocklisted features from a multi-feature blocklist, users can simply send the updated list in [the blocklist request](#step3), as opposed to clearing the entire blocklist and re-adding the desired features. In other words, send the updated feature list (as shown in [Step 3](#step3)), making sure to exclude the features you wish to "delete" from the blocklist.
+Answer: To remove a discrete subset of blocklisted features from a multi-feature blocklist, users can simply send the updated list of features they would like to block in [the blocklist request](#step3), as opposed to clearing the entire blocklist and re-adding the desired features. In other words, send the updated feature list (as shown in [Step 3](#step3)), making sure to exclude the features you wish to "delete" from the blocklist.
 
-## Step 5: (Optional) Manage the global blocklist
+## Step 5: (Optional) Manage the global blocklist {#step5}
 
-The examples above were all in the context of a single activity. You may also block features for all activities across a given client (tenant), instead of having to specify the blocklist for each activity. To perform a global blocklist, use the `/blockList/global` call, instead of `blockList/<campaignId>`.
+The examples above were all in the context of a single activity. You may also block features for all activities across a given client (tenant), instead of having to specify the blocklist for each activity individually. To perform a global blocklist, use the `/blockList/global` call, instead of `blockList/<campaignId>`.
 
 <CodeBlock slots="heading, code" repeat="2" languages="JSON, JSON" />
 
@@ -259,7 +255,7 @@ The examples above were all in the context of a single activity. You may also bl
 PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/global
 
 {
-    "blockedFeatureSources": ["AAM"],
+    "blockedFeatureSources": ["AAM", "PRO", "ENV"],
     "blockedFeatures": ["AAM_FEATURE_1", "AAM_FEATURE_2"]
 }
 ```
@@ -273,22 +269,24 @@ PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/global
         "AAM_FEATURE_2"
     ],
     "blockedFeatureSources": [
-        "AAM"
+        "AAM",
+        "PRO",
+        "ENV"
     ]
 }
 
 ````
 
-In the sample Request shown above, the user is blocking two features, `AAM_FEATURE_1` and `AAM_FEATURE_2`, for all activities in their Target account. This means that, regardless of the activity, `AAM_FEATURE_1` and `AAM_FEATURE_2` will not be included in the machine learning models for this account. Furthermore, the user is also globally blocking all features whose prefix is `AAM.`
+In the sample Request shown above, the user is blocking two features, "AAM_FEATURE_1" and "AAM_FEATURE_2," for all activities in their Target account. This means that, regardless of the activity, "AAM_FEATURE_1" and "AAM_FEATURE_2" will not be included in the machine learning models for this account. Furthermore, the user is also globally blocking all features whose prefix is "AAM," "PRO," or "ENV."
 
 <InlineAlert variant="info" slots="header, text"/>
 
 Question: Isn't the code sample above, redundant?
 
-Answer: Yes. It is redundant to block features with values beginning with "AAM," while also blocking all features whose source is "AAM." The net result is that all features sourced from AAM will be blocked. Therefore, if the goal is to block all features from Audience Manager, individually specifying certain features beginning with "AAM" is unnecessary, in the example above.
+Answer: Yes. It is redundant to block features with values beginning with "AAM," while also blocking all features whose source is "AAM." The net result is that all features sourced from AAM (Experience Cloud Segments) will be blocked. Therefore, if the goal is to block all features from Experience Cloud Segments, individually specifying certain features beginning with "AAM" is unnecessary, in the example above.
 
-Whether at the activity- or global-level, it is recommended that you verify your blocklist after modifying it, to ensure it contains the values you expect. Do this by changing the `PUT` to a `GET`.
+Final step: Whether at the activity- or global-level, it is recommended that you verify your blocklist after modifying it, to ensure it contains the values you expect. Do this by changing the `PUT` to a `GET`.
 
-In the sample Response shown below, we see that Target is not only blocking the two individual features, plus all features sourced from "AAM," as specified in the previous `PUT`, but it is also blocking features sourced from "PRO" and "ENV." Note this means that "PRO" and "ENV" features must have been blocked globally in a prior request.
+The sample response shown below indicates Target is blocking two individual features, plus all features sourced from "AAM," "PRO," and "ENV."
 
 ![Step 5](assets/models-api-step-5.png)
