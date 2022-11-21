@@ -241,7 +241,7 @@ As always, after modifying the blocklist, it is recommended that you perform [St
 
 Question: How can I delete some, but not all, of a blocklist?
 
-Answer: To remove a discrete subset of blocklisted features from a multi-feature blocklist, users can simply send the updated list of features you would like to block in [the blocklist request](#step3), as opposed to clearing the entire blocklist and re-adding the desired features. In other words, send the updated feature list (as shown in [Step 3](#step3)), making sure to exclude the features you wish to "delete" from the blocklist.
+Answer: To remove a discrete subset of blocklisted features from a multi-feature blocklist, users can simply send the updated list of features they would like to block in [the blocklist request](#step3), as opposed to clearing the entire blocklist and re-adding the desired features. In other words, send the updated feature list (as shown in [Step 3](#step3)), making sure to exclude the features you wish to "delete" from the blocklist.
 
 ## Step 5: (Optional) Manage the global blocklist {#step5}
 
