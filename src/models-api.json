@@ -1,9 +1,9 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "Ml Configuration Management Service",
-    "description": "Ml Configuration Management Service",
-    "version": "1.1.0"
+    "title": "Models API",
+    "description": "Models API",
+    "version": "1.0.0"
   },
   "servers": [
     {
@@ -15,7 +15,7 @@
     "/{tenant}/target/models/features/blockList/{campaignId}": {
       "get": {
         "tags": [
-          "models"
+          "features"
         ],
         "operationId": "getBlockedFeaturesByCampaignId",
         "parameters": [
@@ -82,7 +82,7 @@
       },
       "put": {
         "tags": [
-          "models"
+          "blockList"
         ],
         "operationId": "putBlockedFeaturesByCampaignId",
         "parameters": [
@@ -161,7 +161,7 @@
     "/{tenant}/target/models/features/blockList/global": {
       "get": {
         "tags": [
-          "models"
+          "blockList"
         ],
         "operationId": "getGlobalBlockedFeatures",
         "parameters": [
@@ -219,7 +219,7 @@
       },
       "put": {
         "tags": [
-          "models"
+          "blockList"
         ],
         "operationId": "putBlockedFeaturesGlobal",
         "parameters": [
@@ -289,7 +289,7 @@
     "/{tenant}/target/models/features/{campaignId}": {
       "get": {
         "tags": [
-          "models"
+          "blockList"
         ],
         "operationId": "getFeatures",
         "parameters": [
