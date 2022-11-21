@@ -23,7 +23,7 @@ The `options` object has the following structure:
 | --- |--- | --- | --- | --- |
 |Request|Object|Yes|None|Conforms to the [Target Delivery API](/src/pages/implement/delivery-api/index.md) request|
 |visitorCookie|String|No|None|ECID (VisitorId) cookie|
-|targetCookie|String|No|None|Target cookie|
+|targetCookie|String|No|None|Target cookie |
 |targetLocationHint|String|No|None|Target location hint|
 |consumerId|Sting|No|None|consumerIds for Analytics for Target (A4T) stitching|
 |CustomerIds|Array|No|None|Customer IDs in VisitorId-compatible format|
