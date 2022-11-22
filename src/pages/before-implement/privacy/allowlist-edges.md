@@ -42,7 +42,7 @@ List of IP addresses of Target edges. Allowlist these IPs if you want to make AP
 
 <InlineAlert variant="warning" slots="text" />
 
-This list will change often, as the load balancers scale up and down based on traffic profiles.
+This list will change often, as the load balancers scale up and down based on traffic profiles. See below for script.
 
 |Edge Location|Domain|IP Addresses|
 | --- | --- | --- |
@@ -61,9 +61,9 @@ Here is a script that can be run to get the latest public IPs per load balancer,
 
 <CodeBlock slots="heading, code" repeat="1" languages="CURL" />
 
-#### Latest Public IPs per Load Balancer
+#### Script: Latest Public IPs per Load Balancer
 
-```curl
+```
 # the script will iterate over all regions of AWS
 regions=" ap-south-1 ap-northeast-1 us-east-1 us-west-2 ap-southeast-2  eu-west-1 ap-southeast-1"
  
