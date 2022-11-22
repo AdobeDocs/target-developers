@@ -40,13 +40,36 @@ List of egress IP addresses of Target edges. Allowlist these IPs if you plan to 
 
 List of IP addresses of Target edges. Allowlist these IPs if you want to make API calls to Target edges.
 
+<InlineAlert variant="warning" slots="text" />
+
+This list will change often, as the load balancers scale up and down based on traffic profiles.
+
 |Edge Location|Domain|IP Addresses|
 | --- | --- | --- |
 ||`CLIENTCODE.tt.omtrdc.net`<br />(where CLIENTCODE is your Target client ID)||
-|Edge31 (Mumbai)|`mboxedge31.tt.omtrdc.net`|15.207.157.131<br />15.206.8.201|
-|Edge32 (Tokyo)|`mboxedge32.tt.omtrdc.net`|54.199.66.101<br />54.64.93.37|
-|Edge34 (East Coast US)|`mboxedge34.tt.omtrdc.net`|3.225.56.36<br />3.230.207.249<br />34.198.55.51<br />52.3.14.12<br />52.21.222.93<br />52.55.235.132<br />52.70.52.52<br />54.165.204.89|
-|Edge35 (West Coast US)|`mboxedge35.tt.omtrdc.net`|52.10.244.20<br />52.36.232.38<br />52.88.209.29<br />54.214.180.56<br />35.162.74.35<br />34.214.12.211<br />52.42.35.202<br />54.148.71.13|
-|Edge36 (Sydney)|`mboxedge36.tt.omtrdc.net`|13.238.34.185<br />3.24.250.17<br />3.104.234.91<br />13.211.248.241|
-|Edge37 (Ireland)|`mboxedge37.tt.omtrdc.net`|52.212.193.208<br />52.19.133.54<br />52.51.251.137<br />34.252.156.174<br />52.213.168.74<br />34.252.166.160<br />52.18.150.20<br />18.203.205.32|
-|Edge38 (Singapore)|`mboxedge38.tt.omtrdc.net`|52.221.145.65<br />52.220.44.99<br />13.250.75.226<br />54.151.139.123|
+|Edge31 (Mumbai)|`mboxedge31.tt.omtrdc.net`|3.7.179.87<br />65.1.98.82<br />43.204.137.245<br />13.126.50.65<br />3.6.96.116<br />13.235.102.129<br />3.6.127.130<br />43.204.67.50|
+|Edge32 (Tokyo)|`mboxedge32.tt.omtrdc.net`|54.248.72.30<br />52.192.54.119<br />52.192.207.52<br />54.249.57.5<br />54.249.22.53<br />52.198.124.140<br />3.115.46.158<br />35.78.21.7<br />54.95.120.169<br />54.178.165.87|
+|Edge34 (East Coast US)|`mboxedge34.tt.omtrdc.net`|54.205.65.144<br />3.223.74.175<br />34.232.170.91<br />18.209.206.16<br />34.192.211.137<br />34.205.91.25<br />54.198.103.180<br />52.45.28.116<br />52.206.181.199<br />54.90.36.247<br />18.208.8.140<br />34.234.114.189<br />54.145.130.7<br />3.226.2.172<br />34.197.227.119<br />44.199.123.230<br />23.23.171.149<br />35.171.14.20<br />3.217.136.91<br />54.87.210.38|
+|Edge35 (West Coast US)|`mboxedge35.tt.omtrdc.net`|52.34.236.224<br />50.112.213.253<br />44.236.102.163<br />52.37.120.184<br />35.85.140.233<br />54.69.225.41<br />52.27.151.121<br />35.85.66.43<br />34.208.12.211<br />52.36.135.150|
+|Edge36 (Sydney)|`mboxedge36.tt.omtrdc.net`|54.79.65.139<br />54.66.111.75|
+|Edge37 (Ireland)|`mboxedge37.tt.omtrdc.net`|54.194.132.43<br />99.80.194.24|
+|Edge38 (Singapore)|`mboxedge38.tt.omtrdc.net`|54.255.130.26<br />13.213.179.132|
+
+As the load balancers detect changes in the traffic profile, it will scale up or down. The time required for Elastic Load Balancing to scale can range from 1 to 7 minutes, depending on the changes detected. When the load balancers scale, they update the DNS record with the new list of IP addresses. To ensure you are taking advantage of the increased capacity, Elastic Load Balancing uses a TTL setting on the DNS record of 60 seconds.
+
+Here is a script that can be run to get the latest public IPs per load balancer, using Prod KLAM CLI credentials:
+
+<CodeBlock slots="heading, code" repeat="1" languages="CURL" />
+
+#### Latest Public IPs per Load Balancer
+
+```curl
+# the script will iterate over all regions of AWS
+regions=" ap-south-1 ap-northeast-1 us-east-1 us-west-2 ap-southeast-2  eu-west-1 ap-southeast-1"
+ 
+for region in $regions
+do
+     echo "\nListing IP's by Edge ALB in region:'$region'..."
+     aws ec2 describe-network-interfaces --filters Name=description,Values="*-ingressnginx-albd-*" --query 'NetworkInterfaces[*].PrivateIpAddresses[*].Association.PublicIp' --output text --region $region
+done
+```
