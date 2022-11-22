@@ -20,8 +20,8 @@ TargetClient.create(options: Object): TargetClient
 
 |Name|Type|Required|Default|Description|
 | --- | --- | --- | --- | --- |
-|Client|String|Yes|None|Adobe Target client ID|
-|organizationID|String|Yes|None|Experience Cloud Organization ID|
+|client|String|Yes|None|Adobe Target Client ID|
+|organizationId|String|Yes|None|Experience Cloud Organization ID|
 |timeout|Number|No|3000|Timeout in milliseconds|
 |serverDomain|String|No|*client*.tt.omtrdc.net|Overrides default hostname|
 |secure|Boolean|No|true|Unset to enforce HTTP scheme|
