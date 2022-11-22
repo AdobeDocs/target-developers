@@ -163,7 +163,7 @@
         "tags": [
           "blockList"
         ],
-        "operationId": "getGlobalBlockedFeatures",
+        "operationId": "getBlockedFeaturesGlobal",
         "parameters": [
           {
             "name": "tenant",
