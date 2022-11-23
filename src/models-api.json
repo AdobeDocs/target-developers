@@ -12,12 +12,12 @@
     }
   ],
   "paths": {
-    "/{tenant}/target/models/features/blockList/{campaignId}": {
+    "/{tenant}/target/models/features/blockList/{activityId}": {
       "get": {
         "tags": [
-          "features"
+          "Features"
         ],
-        "operationId": "getBlockedFeaturesByCampaignId",
+        "operationId": "List the features used by an activity",
         "parameters": [
           {
             "name": "tenant",
@@ -28,7 +28,7 @@
             }
           },
           {
-            "name": "campaignId",
+            "name": "activityId",
             "in": "path",
             "required": true,
             "schema": {
@@ -82,9 +82,9 @@
       },
       "put": {
         "tags": [
-          "blockList"
+          "Blocklists"
         ],
-        "operationId": "putBlockedFeaturesByCampaignId",
+        "operationId": "Update client blocked features",
         "parameters": [
           {
             "name": "tenant",
@@ -95,7 +95,7 @@
             }
           },
           {
-            "name": "campaignId",
+            "name": "activityId",
             "in": "path",
             "required": true,
             "schema": {
@@ -161,9 +161,9 @@
     "/{tenant}/target/models/features/blockList/global": {
       "get": {
         "tags": [
-          "blockList"
+          "Blocklists"
         ],
-        "operationId": "getBlockedFeaturesGlobal",
+        "operationId": "Get client blocked features",
         "parameters": [
           {
             "name": "tenant",
@@ -219,9 +219,9 @@
       },
       "put": {
         "tags": [
-          "blockList"
+          "Blocklists"
         ],
-        "operationId": "putBlockedFeaturesGlobal",
+        "operationId": "Update activity blocked features",
         "parameters": [
           {
             "name": "tenant",
@@ -286,12 +286,12 @@
         }
       }
     },
-    "/{tenant}/target/models/features/{campaignId}": {
+    "/{tenant}/target/models/features/{activityId}": {
       "get": {
         "tags": [
-          "blockList"
+          "Blocklists"
         ],
-        "operationId": "getFeatures",
+        "operationId": "Get activity blocked features",
         "parameters": [
           {
             "name": "tenant",
@@ -302,7 +302,7 @@
             }
           },
           {
-            "name": "campaignId",
+            "name": "activityId",
             "in": "path",
             "required": true,
             "schema": {
