@@ -15,7 +15,7 @@ exl-id: 1c4e5b0b-8ae4-4526-aea0-318a33f4d247
 ---
 # Target cookies
 
-The cookie behavior depends on whether it is a first-party cookie, a third-party cookie with a first-party cookie, or a third-party cookie alone.
+The Target cookie behavior depends on whether it is a first-party cookie, a third-party cookie with a first-party cookie, or a third-party cookie alone.
 
 <InlineAlert variant="info" slots="text"/>
 
