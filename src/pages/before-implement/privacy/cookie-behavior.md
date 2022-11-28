@@ -33,14 +33,14 @@ There are three main use cases for cookies:
 
    All of your testing takes place within one top-level domain (`www.domain.com`, `store.domain.com`, `anysub.domain.com`, and so forth).
 
-   Approach: Use only first-party cookies (the default). 
+   Approach: Use only first-party cookies (the default).
 
 2. Users cross domains and you want to track and test their behavior across these domains.
 
    Example: A user comes to your site to shop but checks out through Yahoo stores. Three approaches (work with your account representative to determine the best approach):
 
-    * Enable first- and third-party cookies. 
-    * Enable third-party only (rare, but has the benefit of keeping the mbox cookie out of your domain). 
+    * Enable first- and third-party cookies.
+    * Enable third-party only (rare, but has the benefit of keeping the mbox cookie out of your domain).
     * Enable only first-party cookies and pass `mboxSession` parameter when crossing domain.
 
       The `mboxSession` parameter must be passed to a landing page and referenced from the JavaScript library (Adobe Experience Platform Web SDK or at.js). It cannot be an intermediate redirector page.
