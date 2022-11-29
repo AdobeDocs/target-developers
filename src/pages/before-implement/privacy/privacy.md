@@ -59,7 +59,7 @@ You can add an opt-out link to your sites to enable visitors to opt-out of all c
 
 1. Add the following link to your site:
 
-   `<a href="https://clientcode.tt.omtrdc.net/optout"> Your Opt Out Language Here</a>` 
+   `<a href="https://clientcode.tt.omtrdc.net/optout"> Your Opt Out Language Here</a>`
 
 1. (Conditional) If you are using CNAME, the link should contain the "client=`clientcode` parameter, for example:
 `https://my.cname.domain/optout?client=clientcode`.
@@ -68,7 +68,7 @@ You can add an opt-out link to your sites to enable visitors to opt-out of all c
 
 Any visitor who clicks this link is not included in any mbox requests called from their browsing sessions until they delete their cookies, or for two years, whichever comes first. This works by setting a cookie for the visitor called `disableClient` in the `clientcode.tt.omtrdc.net` domain.
 
-Even if you use a first-party cookie implementation, the provided opt-out is set via a 3rd-party cookie. If the client is using a first-party cookie only, Target checks whether an opt-out cookie is set. 
+Even if you use a first-party cookie implementation, the provided opt-out is set via a 3rd-party cookie. If the client is using a first-party cookie only, Target checks whether an opt-out cookie is set.
 
 ## Privacy and data protection regulations
 
