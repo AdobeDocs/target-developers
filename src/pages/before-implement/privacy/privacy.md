@@ -29,13 +29,13 @@ You can opt out of reporting usage data in our SDKs by setting `telemetryEnabled
 
 ## Collection of IP addresses
 
-The IP address of a visitor to your website is transmitted to an Adobe Data Processing Center (DPC). Depending on the network configuration for the visitor, the IP address does not necessarily represent the IP address of the visitor’s computer. For example, the IP address could be the external IP address of a Network Address Translation (NAT) firewall, HTTP proxy, or Internet gateway. Target doesn't store any IP addresses of the user or any Personally Identifiable Information (PII). IP addresses are used only by Target during the session (in-memory, never persisted).
+The IP address of a visitor to your website is transmitted to an Adobe Data Processing Center (DPC). Depending on the network configuration for the visitor, the IP address does not necessarily represent the IP address of the visitor's computer. For example, the IP address could be the external IP address of a Network Address Translation (NAT) firewall, HTTP proxy, or Internet gateway. Target doesn't store any IP addresses of the user or any Personally Identifiable Information (PII). IP addresses are used only by Target during the session (in-memory, never persisted).
 
 ## Replacement of last octet of IP addresses
 
-Adobe has developed a “privacy by design” setting that users can enable for Adobe Target. When enabled, Adobe Target immediately obfuscates the last octet (the last portion) of the IP address at the time the IP address is collected. This anonymization is performed before any processing of the IP address, including before an optional geo-lookup of the IP address.
+Adobe has developed a "privacy by design" setting that users can enable for Adobe Target. When enabled, Adobe Target immediately obfuscates the last octet (the last portion) of the IP address at the time the IP address is collected. This anonymization is performed before any processing of the IP address, including before an optional geo-lookup of the IP address.
 
-When this feature is enabled, the IP address is made sufficiently anonymous so it is no longer identifiable as personal information. As a result, Adobe Target can be used in compliance with data privacy laws in countries that do not permit the collection of personal information. Obtaining city-level information will likely be significantly impacted by the obfuscation of the IP address. Obtaining region- and country-level information should only be slightly impacted.
+When this feature is enabled, the IP address is made sufficiently anonymous so it is no longer identifiable as personal information. As a result, Adobe Target can be used in compliance with data privacy laws in countries that do not permit the collection of personal information. Obtaining city-level information will likely be significantly impacted by the obfuscation of the IP address. Obtaining region-level and country-level information will *not* be impacted.
 
 The following settings are available in the Target UI by navigating to **Administration** > **Implementation**:
 
