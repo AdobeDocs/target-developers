@@ -513,7 +513,7 @@
                                 "name": {
                                   "type": "string",
                                   "maxLength": 128,
-                                  "description": "View Name - Unique view name. If the activity has a metric with a view with this name it will be matched,\nproviding the Key matches as well or is null and view and metric targeting is matched.\n"
+                                  "description": "View Name - Unique view name (case-sensitive). If the activity has a metric with a view with this name it will be matched,\nproviding the Key matches as well or is null and view and metric targeting is matched.\n"
                                 },
                                 "key": {
                                   "type": "string",
@@ -606,7 +606,7 @@
                                 "name": {
                                   "type": "string",
                                   "maxLength": 128,
-                                  "description": "View Name - Unique view name. If the activity has a metric with a view with this name it will be matched,\nproviding the Key matches as well or is null and view and metric targeting is matched.\n"
+                                  "description": "View Name - Unique view name (case-sensitive). If the activity has a metric with a view with this name it will be matched,\nproviding the Key matches as well or is null and view and metric targeting is matched.\n"
                                 },
                                 "key": {
                                   "type": "string",
@@ -929,7 +929,7 @@
                               "name": {
                                 "type": "string",
                                 "maxLength": 128,
-                                "description": "View Name - Unique view name. If the activity has a metric with a view with this name it will be matched,\nproviding the Key matches as well or is null and view and metric targeting is matched.\n"
+                                "description": "View Name - Unique view name (case-sensitive). If the activity has a metric with a view with this name it will be matched,\nproviding the Key matches as well or is null and view and metric targeting is matched.\n"
                               },
                               "key": {
                                 "type": "string",
