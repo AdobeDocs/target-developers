@@ -322,6 +322,44 @@
                         "description": "User-Agent should be sent only via this property. HTTP header User-Agent is ignored.",
                         "type": "string"
                       },
+                      "clientHints": {
+                        "type": "object",
+                        "description": "A set of HTTP request header fields that can be used, along with userAgent,\n to send information about the user's device.  These are not supported by all browsers.",
+                        "properties": {
+                          "model": {
+                            "type": "string",
+                            "description": "Sec-CH-UA-Model"
+                          },
+                          "mobile": {
+                            "type": "boolean",
+                            "description": "Sec-CH-UA-Mobile (low entropy)"
+                          },
+                          "platform": {
+                            "type": "string",
+                            "description": "Sec-CH-UA-Platform (low entropy)"
+                          },
+                          "platformVersion": {
+                            "type": "string",
+                            "description": "Sec-CH-UA-Platform-Version"
+                          },
+                          "browserUAWithMajorVersion": {
+                            "type": "string",
+                            "description": "Sec-CH-UA (low entropy)"
+                          },
+                          "browserUAWithFullVersion": {
+                            "type": "string",
+                            "description": "Sec-CH-UA-Full-Version-List"
+                          },
+                          "architecture": {
+                            "type": "string",
+                            "description": "Sec-CH-UA-Arch"
+                          },
+                          "bitness": {
+                            "type": "string",
+                            "description": "Sec-CH-UA-Bitness"
+                          }
+                        }
+                      },
                       "beacon": {
                         "type": "boolean",
                         "default": false,
