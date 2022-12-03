@@ -2,8 +2,8 @@
   "openapi": "3.0.1",
   "info": {
     "title": "Adobe Target Admin and Reporting APIs",
-    "version": "v1.0",
-    "termsOfService": "https://www.adobe.com/legal/terms.html"
+    "termsOfService": "https://www.adobe.com/legal/terms.html",
+    "version": "v1.0"
   },
   "servers": [
     {
@@ -9628,6 +9628,10 @@
   },
   "components": {
     "schemas": {
+      "workspace": {
+        "type": "string",
+        "description": "In case of premium customers (customers with multiple workspaces), it\u0027s essential to add the workspace id in every request\u0027s payload. If one is not stated, the default workspace will be used. The API consumer must have \"approver\" privilege on the workspace used in the request, if not the API will respond with an error indicating the lack of sufficient privileges to perform the operation."
+      },
       "Error": {
         "type": "object",
         "properties": {
@@ -9824,7 +9828,7 @@
             "$ref": "#/components/schemas/JsonNode"
           },
           "workspace": {
-            "type": "string"
+            "$ref": "#/components/schemas/workspace"
           },
           "modifiedAt": {
             "type": "string",
@@ -9847,7 +9851,7 @@
             "type": "string"
           },
           "workspace": {
-            "type": "string"
+            "$ref": "#/components/schemas/workspace"
           },
           "modifiedAt": {
             "type": "string",
@@ -10079,7 +10083,7 @@
             "$ref": "#/components/schemas/PlatformMetadata"
           },
           "workspace": {
-            "type": "string"
+            "$ref": "#/components/schemas/workspace"
           },
           "createdAt": {
             "type": "string",
@@ -10304,7 +10308,7 @@
             }
           },
           "workspace": {
-            "type": "string"
+            "$ref": "#/components/schemas/workspace"
           },
           "modifiedAt": {
             "type": "string",
@@ -10875,7 +10879,7 @@
             }
           },
           "workspace": {
-            "type": "string"
+            "$ref": "#/components/schemas/workspace"
           },
           "modifiedAt": {
             "type": "string",
@@ -11191,7 +11195,7 @@
             "format": "int64"
           },
           "workspace": {
-            "type": "string"
+            "$ref": "#/components/schemas/workspace"
           }
         },
         "description": ""
@@ -11851,11 +11855,11 @@
       "DateTimeZone": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "string"
-          },
           "fixed": {
             "type": "boolean"
+          },
+          "id": {
+            "type": "string"
           }
         },
         "description": ""
@@ -11871,9 +11875,6 @@
             "type": "integer",
             "format": "int64"
           },
-          "chronology": {
-            "$ref": "#/components/schemas/Chronology"
-          },
           "start": {
             "type": "string",
             "format": "date-time"
@@ -11881,6 +11882,9 @@
           "end": {
             "type": "string",
             "format": "date-time"
+          },
+          "chronology": {
+            "$ref": "#/components/schemas/Chronology"
           },
           "afterNow": {
             "type": "boolean"
