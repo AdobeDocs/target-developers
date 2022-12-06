@@ -9629,8 +9629,19 @@
   "components": {
     "schemas": {
       "workspace": {
+        "maxLength": 250,
         "type": "string",
         "description": "In case of premium customers (customers with multiple workspaces), it\u0027s essential to add the workspace id in every request\u0027s payload. If one is not stated, the default workspace will be used. The API consumer must have \"approver\" privilege on the workspace used in the request, if not the API will respond with an error indicating the lack of sufficient privileges to perform the operation."
+      },
+      "ActivityState": {
+        "type": "string",
+        "description": "\u003cp\u003eThere are four valid activity states: approved, saved, deactivated, and deleted.\u003c/p\u003e\u003cp\u003eThe \"Approved\" state has two attributes called startAt and endAt that play a vital role in what happens when you update the activity state to \"Approved.\" startAt is the date and time that the activity is/was scheduled to begin. endAt is the date and time that the activity is/was scheduled to end.\u003c/p\u003e\u003cp\u003eCaution: There is approximately a 15-minute latency between the API and the UI, so when setting dates give it time.\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cdiv\u003e\u003ctable\u003e\u003ctbody\u003e\u003ctr\u003e\u003cth\u003eAPI State\u003c/th\u003e\u003cth\u003eStart At\u003c/th\u003e\u003cth\u003eEnd At\u003c/th\u003e\u003cth\u003eUI Status\u003c/th\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eApproved\u003c/td\u003e\u003ctd\u003ein the past\u003c/td\u003e\u003ctd\u003ein the future\u003c/td\u003e\u003ctd\u003eLive\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eApproved\u003c/td\u003e\u003ctd\u003ein the past\u003c/td\u003e\u003ctd\u003ein the past\u003c/td\u003e\u003ctd\u003eEnded\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eApproved\u003c/td\u003e\u003ctd\u003ein the future\u003c/td\u003e\u003ctd\u003ein the future\u003c/td\u003e\u003ctd\u003eScheduled\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eSaved\u003c/td\u003e\u003ctd\u003e-\u003c/td\u003e\u003ctd\u003e-\u003c/td\u003e\u003ctd\u003eInactive\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eDeactivated\u003c/td\u003e\u003ctd\u003e-\u003c/td\u003e\u003ctd\u003e-\u003c/td\u003e\u003ctd\u003eArchived\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eDeleted\u0026nbsp;\u003c/td\u003e\u003ctd\u003e-\u003c/td\u003e\u003ctd\u003e-\u003c/td\u003e\u003ctd\u003eDoes Not Appear in the UI\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003c/div\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003eNote: When setting an activity to any state using the API, the activity will stay the state that you set it to be even while the status in the UI changes. So if you set an activity to Approved and it passes the end date, the UI will show that it has ended, but the state will still be Approved.\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003c/div\u003e ",
+        "enum": [
+          "approved",
+          "saved",
+          "deactivated",
+          "deleted"
+        ]
       },
       "Error": {
         "type": "object",
@@ -10201,14 +10212,7 @@
             "type": "string"
           },
           "state": {
-            "type": "string",
-            "enum": [
-              "approved",
-              "deactivated",
-              "deleted",
-              "paused",
-              "saved"
-            ]
+            "$ref": "#/components/schemas/ActivityState"
           },
           "startsAt": {
             "type": "string",
@@ -10251,14 +10255,7 @@
             "format": "date-time"
           },
           "state": {
-            "type": "string",
-            "enum": [
-              "approved",
-              "deactivated",
-              "deleted",
-              "paused",
-              "saved"
-            ]
+            "$ref": "#/components/schemas/ActivityState"
           },
           "priority": {
             "type": "integer",
@@ -10821,14 +10818,7 @@
             "format": "date-time"
           },
           "state": {
-            "type": "string",
-            "enum": [
-              "approved",
-              "deactivated",
-              "deleted",
-              "paused",
-              "saved"
-            ]
+            "$ref": "#/components/schemas/ActivityState"
           },
           "priority": {
             "type": "integer",
@@ -11548,14 +11538,7 @@
             ]
           },
           "state": {
-            "type": "string",
-            "enum": [
-              "approved",
-              "deactivated",
-              "deleted",
-              "paused",
-              "saved"
-            ]
+            "$ref": "#/components/schemas/ActivityState"
           },
           "name": {
             "type": "string"
@@ -11735,14 +11718,7 @@
             ]
           },
           "state": {
-            "type": "string",
-            "enum": [
-              "approved",
-              "deactivated",
-              "deleted",
-              "paused",
-              "saved"
-            ]
+            "$ref": "#/components/schemas/ActivityState"
           },
           "name": {
             "type": "string"
@@ -11875,6 +11851,9 @@
             "type": "integer",
             "format": "int64"
           },
+          "chronology": {
+            "$ref": "#/components/schemas/Chronology"
+          },
           "start": {
             "type": "string",
             "format": "date-time"
@@ -11882,9 +11861,6 @@
           "end": {
             "type": "string",
             "format": "date-time"
-          },
-          "chronology": {
-            "$ref": "#/components/schemas/Chronology"
           },
           "afterNow": {
             "type": "boolean"
