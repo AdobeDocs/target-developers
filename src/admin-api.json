@@ -3510,7 +3510,7 @@
           "Activities"
         ],
         "summary": "Update activity state",
-        "description": "Update the state of the activity referenced by the provided ID. Valid values are approved, deactivated, deleted, paused, and saved.",
+        "description": "Update the state of the activity referenced by the provided ID. Valid values are approved, deactivated, deleted and saved.",
         "operationId": "updateState",
         "parameters": [
           {
@@ -3527,7 +3527,7 @@
           "content": {
             "application/vnd.adobe.target.v1+json": {
               "schema": {
-                "$ref": "#/components/schemas/ActivityDescription"
+                "$ref": "#/components/schemas/State"
               }
             }
           },
@@ -3623,7 +3623,7 @@
           "Activities"
         ],
         "summary": "Update AB activity state",
-        "description": "Update the state of the AB activity referenced by the provided ID. Valid values are approved, deactivated, deleted, paused, and saved.",
+        "description": "Update the state of the AB activity referenced by the provided ID. Valid values are approved, deactivated, deleted and saved.",
         "operationId": "updateState_1",
         "parameters": [
           {
@@ -3640,7 +3640,7 @@
           "content": {
             "application/vnd.adobe.target.v1+json": {
               "schema": {
-                "$ref": "#/components/schemas/ActivityDescription"
+                "$ref": "#/components/schemas/State"
               }
             }
           },
@@ -3736,7 +3736,7 @@
           "Activities"
         ],
         "summary": "Update XT activity state",
-        "description": "Update the state of the Experience Targeting activity referenced by the provided ID. Valid values are approved, deactivated, deleted, paused, and saved.",
+        "description": "Update the state of the Experience Targeting activity referenced by the provided ID. Valid values are approved, deactivated, deleted and saved.",
         "operationId": "updateState_2",
         "parameters": [
           {
@@ -3753,7 +3753,7 @@
           "content": {
             "application/vnd.adobe.target.v1+json": {
               "schema": {
-                "$ref": "#/components/schemas/ActivityDescription"
+                "$ref": "#/components/schemas/State"
               }
             }
           },
@@ -3866,7 +3866,7 @@
           "content": {
             "application/vnd.adobe.target.v1+json": {
               "schema": {
-                "$ref": "#/components/schemas/ActivityDescription"
+                "$ref": "#/components/schemas/Schedule"
               }
             }
           },
@@ -3979,7 +3979,7 @@
           "content": {
             "application/vnd.adobe.target.v1+json": {
               "schema": {
-                "$ref": "#/components/schemas/ActivityDescription"
+                "$ref": "#/components/schemas/Schedule"
               }
             }
           },
@@ -4092,7 +4092,7 @@
           "content": {
             "application/vnd.adobe.target.v1+json": {
               "schema": {
-                "$ref": "#/components/schemas/ActivityDescription"
+                "$ref": "#/components/schemas/Schedule"
               }
             }
           },
@@ -4205,7 +4205,7 @@
           "content": {
             "application/vnd.adobe.target.v1+json": {
               "schema": {
-                "$ref": "#/components/schemas/ActivityDescription"
+                "$ref": "#/components/schemas/Priority"
               }
             }
           },
@@ -4318,7 +4318,7 @@
           "content": {
             "application/vnd.adobe.target.v1+json": {
               "schema": {
-                "$ref": "#/components/schemas/ActivityDescription"
+                "$ref": "#/components/schemas/Priority"
               }
             }
           },
@@ -4431,7 +4431,7 @@
           "content": {
             "application/vnd.adobe.target.v1+json": {
               "schema": {
-                "$ref": "#/components/schemas/ActivityDescription"
+                "$ref": "#/components/schemas/Priority"
               }
             }
           },
@@ -4544,7 +4544,7 @@
           "content": {
             "application/vnd.adobe.target.v1+json": {
               "schema": {
-                "$ref": "#/components/schemas/ActivityDescription"
+                "$ref": "#/components/schemas/Name"
               }
             }
           },
@@ -4657,7 +4657,7 @@
           "content": {
             "application/vnd.adobe.target.v1+json": {
               "schema": {
-                "$ref": "#/components/schemas/ActivityDescription"
+                "$ref": "#/components/schemas/Name"
               }
             }
           },
@@ -4770,7 +4770,7 @@
           "content": {
             "application/vnd.adobe.target.v1+json": {
               "schema": {
-                "$ref": "#/components/schemas/ActivityDescription"
+                "$ref": "#/components/schemas/Name"
               }
             }
           },
@@ -5342,20 +5342,7 @@
           "content": {
             "application/vnd.adobe.target.v3+json": {
               "schema": {
-                "type": "object",
-                "properties": {
-                  "abActivity": {
-                    "$ref": "#/components/schemas/ABActivity"
-                  },
-                  "activityType": {
-                    "type": "string",
-                    "enum": [
-                      "ab",
-                      "xt",
-                      "abt"
-                    ]
-                  }
-                }
+                "$ref": "#/components/schemas/ABActivity"
               }
             },
             "application/vnd.adobe.target.v2+json": {
@@ -5763,20 +5750,7 @@
           "content": {
             "application/vnd.adobe.target.v3+json": {
               "schema": {
-                "type": "object",
-                "properties": {
-                  "abActivity": {
-                    "$ref": "#/components/schemas/ABActivity"
-                  },
-                  "activityType": {
-                    "type": "string",
-                    "enum": [
-                      "ab",
-                      "xt",
-                      "abt"
-                    ]
-                  }
-                }
+                "$ref": "#/components/schemas/ABActivity"
               }
             },
             "application/vnd.adobe.target.v2+json": {
@@ -7617,20 +7591,7 @@
           "content": {
             "application/vnd.adobe.target.v3+json": {
               "schema": {
-                "type": "object",
-                "properties": {
-                  "abActivity": {
-                    "$ref": "#/components/schemas/ABActivity"
-                  },
-                  "activityType": {
-                    "type": "string",
-                    "enum": [
-                      "ab",
-                      "xt",
-                      "abt"
-                    ]
-                  }
-                }
+                "$ref": "#/components/schemas/ABActivity"
               }
             },
             "application/vnd.adobe.target.v2+json": {
@@ -7779,20 +7740,7 @@
           "content": {
             "application/vnd.adobe.target.v3+json": {
               "schema": {
-                "type": "object",
-                "properties": {
-                  "abActivity": {
-                    "$ref": "#/components/schemas/ABActivity"
-                  },
-                  "activityType": {
-                    "type": "string",
-                    "enum": [
-                      "ab",
-                      "xt",
-                      "abt"
-                    ]
-                  }
-                }
+                "$ref": "#/components/schemas/ABActivity"
               }
             },
             "application/vnd.adobe.target.v2+json": {
@@ -9635,7 +9583,7 @@
       },
       "ActivityState": {
         "type": "string",
-        "description": "\u003cp\u003eThere are four valid activity states: approved, saved, deactivated, and deleted.\u003c/p\u003e\u003cp\u003eThe \"Approved\" state has two attributes called startAt and endAt that play a vital role in what happens when you update the activity state to \"Approved.\" startAt is the date and time that the activity is/was scheduled to begin. endAt is the date and time that the activity is/was scheduled to end.\u003c/p\u003e\u003cp\u003eCaution: There is approximately a 15-minute latency between the API and the UI, so when setting dates give it time.\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cdiv\u003e\u003ctable\u003e\u003ctbody\u003e\u003ctr\u003e\u003cth\u003eAPI State\u003c/th\u003e\u003cth\u003eStart At\u003c/th\u003e\u003cth\u003eEnd At\u003c/th\u003e\u003cth\u003eUI Status\u003c/th\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eApproved\u003c/td\u003e\u003ctd\u003ein the past\u003c/td\u003e\u003ctd\u003ein the future\u003c/td\u003e\u003ctd\u003eLive\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eApproved\u003c/td\u003e\u003ctd\u003ein the past\u003c/td\u003e\u003ctd\u003ein the past\u003c/td\u003e\u003ctd\u003eEnded\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eApproved\u003c/td\u003e\u003ctd\u003ein the future\u003c/td\u003e\u003ctd\u003ein the future\u003c/td\u003e\u003ctd\u003eScheduled\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eSaved\u003c/td\u003e\u003ctd\u003e-\u003c/td\u003e\u003ctd\u003e-\u003c/td\u003e\u003ctd\u003eInactive\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eDeactivated\u003c/td\u003e\u003ctd\u003e-\u003c/td\u003e\u003ctd\u003e-\u003c/td\u003e\u003ctd\u003eArchived\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eDeleted\u0026nbsp;\u003c/td\u003e\u003ctd\u003e-\u003c/td\u003e\u003ctd\u003e-\u003c/td\u003e\u003ctd\u003eDoes Not Appear in the UI\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003c/div\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003eNote: When setting an activity to any state using the API, the activity will stay the state that you set it to be even while the status in the UI changes. So if you set an activity to Approved and it passes the end date, the UI will show that it has ended, but the state will still be Approved.\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003c/div\u003e ",
+        "description": "\u003cp\u003eThere are four valid activity states: approved, saved, deactivated, and deleted.\u003c/p\u003e\u003cp\u003eThe \"Approved\" state has two attributes called startAt and endAt that play a vital role in what happens when you update the activity state to \"Approved\". startAt is the date and time that the activity is/was scheduled to begin. endAt is the date and time that the activity is/was scheduled to end.\u003c/p\u003e\u003cp\u003e\u003cb\u003eCaution\u003c/b\u003e: There is approximately a 15-minute latency between the API and the UI, so when setting dates give it time.\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cdiv\u003e\u003ctable\u003e\u003ctbody\u003e\u003ctr\u003e\u003cth\u003eAPI State\u003c/th\u003e\u003cth\u003eStart At\u003c/th\u003e\u003cth\u003eEnd At\u003c/th\u003e\u003cth\u003eUI Status\u003c/th\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eApproved\u003c/td\u003e\u003ctd\u003ein the past\u003c/td\u003e\u003ctd\u003ein the future\u003c/td\u003e\u003ctd\u003eLive\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eApproved\u003c/td\u003e\u003ctd\u003ein the past\u003c/td\u003e\u003ctd\u003ein the past\u003c/td\u003e\u003ctd\u003eEnded\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eApproved\u003c/td\u003e\u003ctd\u003ein the future\u003c/td\u003e\u003ctd\u003ein the future\u003c/td\u003e\u003ctd\u003eScheduled\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eSaved\u003c/td\u003e\u003ctd\u003e-\u003c/td\u003e\u003ctd\u003e-\u003c/td\u003e\u003ctd\u003eInactive\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eDeactivated\u003c/td\u003e\u003ctd\u003e-\u003c/td\u003e\u003ctd\u003e-\u003c/td\u003e\u003ctd\u003eArchived\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eDeleted\u0026nbsp;\u003c/td\u003e\u003ctd\u003e-\u003c/td\u003e\u003ctd\u003e-\u003c/td\u003e\u003ctd\u003eDoes Not Appear in the UI\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003c/div\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cb\u003eNote\u003c/b\u003e: When setting an activity to any state using the API, the activity will stay the state that you set it to be even while the status in the UI changes. So if you set an activity to Approved and it passes the end date, the UI will show that it has ended, but the state will still be Approved.\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003c/div\u003e ",
         "enum": [
           "approved",
           "saved",
@@ -10198,6 +10146,15 @@
         },
         "description": ""
       },
+      "State": {
+        "type": "object",
+        "properties": {
+          "state": {
+            "$ref": "#/components/schemas/ActivityState"
+          }
+        },
+        "description": ""
+      },
       "ActivityDescription": {
         "type": "object",
         "properties": {
@@ -10229,6 +10186,39 @@
           "modifiedAt": {
             "type": "string",
             "format": "date-time"
+          }
+        },
+        "description": ""
+      },
+      "Schedule": {
+        "type": "object",
+        "properties": {
+          "startsAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "endsAt": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "description": ""
+      },
+      "Priority": {
+        "type": "object",
+        "properties": {
+          "priority": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "description": ""
+      },
+      "Name": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
           }
         },
         "description": ""
@@ -11831,11 +11821,11 @@
       "DateTimeZone": {
         "type": "object",
         "properties": {
-          "fixed": {
-            "type": "boolean"
-          },
           "id": {
             "type": "string"
+          },
+          "fixed": {
+            "type": "boolean"
           }
         },
         "description": ""
