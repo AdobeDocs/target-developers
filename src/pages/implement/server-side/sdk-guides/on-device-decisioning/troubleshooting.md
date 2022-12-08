@@ -1,4 +1,4 @@
-# Troubleshooting
+# Troubleshooting on-device decisioning
 
 ## Validating Configuration
 
@@ -12,7 +12,6 @@
 ## Ensure the logger is configured
 
 When initializing the SDK, ensure that you enable logging.
-
 
 **Node.js**
 
@@ -431,3 +430,11 @@ Look at the `artifactLastRetrieved` date of the artifact and ensure that you hav
 (7) Ensure you are using the same mbox names in your request and activities.
 
 (8) Ensure you are using supported audience rules and supported activity types.
+
+### A server call is made even though the activity setup under an mbox says "On Device Decisioning Eligible" in the Target user interface.
+
+There are a few reasons why a server call is made even though the device is eligible for on-device decisioning:
+
+* When the mbox used for an "On Device Decisioning Eligible" activity is also used for other activities that are not "On Device Decisioning Eligible," the mbox is listed under the `remoteMboxes` section in the `rules.json` artifact. When an mbox is listed under `remoteMboxes`, any `getOffer(s)` calls to that mbox result in a server call.
+
+*  If you set up an activity under a workspace/property and do not include the same when configuring the SDK, this can cause the `rules.josn` of the default workspace to be downloaded, which can use the mbox under the `remoteMboxes` section.
