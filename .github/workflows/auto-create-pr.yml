@@ -1,20 +1,45 @@
-name: Sync
+name: Auto-create PR
 on:
   push:
     branches:
       - adobe
 
 jobs:
-  sync-branches:
+  create-pr:
     runs-on: ubuntu-latest
-    name: Syncing branches
+    name: Auto-create documentation PR for changes authored by Adobe employees
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Opening pull request
-        id: pull
+        id: open-pr
         uses: tretuna/sync-branches@1.4.0
         with:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           FROM_BRANCH: "adobe"
           TO_BRANCH: "main"
+          PULL_REQUEST_TITLE: ${{github.event.head_commit.message}}
+          PULL_REQUEST_BODY: "New documentation changes by Adobe employees"
+#  auto-approve:
+#    runs-on: ubuntu-latest
+#    name: Auto-approve automated documentation PR
+#    needs: create-pr
+#    steps:
+      - name: Auto-approve
+        uses: hmarr/auto-approve-action@v3
+        if: github.actor == 'dplacinta'
+        with:
+          github-token: ${{ secrets.PLACINTA_TOKEN }}
+          review-message: "Auto-approved automatically created pull request"
+          pull-request-number: ${{steps.open-pr.outputs.PULL_REQUEST_NUMBER}}
+#  auto-merge:
+#    name: Auto merge after successful checks
+#    needs: auto-approve
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Auto merge
+#        uses: pascalgn/automerge-action@v0.15.5
+#        if: github.actor == 'dplacinta'
+#        env:
+#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#          MERGE_METHOD: rebase
