@@ -1,4 +1,4 @@
-name: Sync
+name: Auto-create PR
 on:
   push:
     branches:
@@ -7,7 +7,7 @@ on:
 jobs:
   sync-branches:
     runs-on: ubuntu-latest
-    name: Syncing branches
+    name: Auto-create documentation PR for changes authored by Adobe employees
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -18,3 +18,5 @@ jobs:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           FROM_BRANCH: "adobe"
           TO_BRANCH: "main"
+          PULL_REQUEST_TITLE: ${{github.event.head_commit.message}}
+          PULL_REQUEST_BODY: "New documentation changes by Adobe employees"
