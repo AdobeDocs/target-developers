@@ -5212,19 +5212,6 @@
               "type": "integer",
               "format": "int64"
             }
-          },
-          {
-            "name": "activityType",
-            "in": "query",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "enum": [
-                "ab",
-                "xt",
-                "abt"
-              ]
-            }
           }
         ],
         "responses": {
@@ -5347,38 +5334,12 @@
             },
             "application/vnd.adobe.target.v2+json": {
               "schema": {
-                "type": "object",
-                "properties": {
-                  "abActivity": {
-                    "$ref": "#/components/schemas/ABActivity"
-                  },
-                  "activityType": {
-                    "type": "string",
-                    "enum": [
-                      "ab",
-                      "xt",
-                      "abt"
-                    ]
-                  }
-                }
+                "$ref": "#/components/schemas/ABActivity"
               }
             },
             "application/vnd.adobe.target.v1+json": {
               "schema": {
-                "type": "object",
-                "properties": {
-                  "abActivity": {
-                    "$ref": "#/components/schemas/ABActivity"
-                  },
-                  "activityType": {
-                    "type": "string",
-                    "enum": [
-                      "ab",
-                      "xt",
-                      "abt"
-                    ]
-                  }
-                }
+                "$ref": "#/components/schemas/ABActivity"
               }
             }
           },
@@ -5495,20 +5456,6 @@
             }
           }
         ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "string",
-                "enum": [
-                  "ab",
-                  "xt",
-                  "abt"
-                ]
-              }
-            }
-          }
-        },
         "responses": {
           "407": {
             "description": "Proxy Authentication Required",
@@ -5619,19 +5566,6 @@
             "schema": {
               "type": "integer",
               "format": "int64"
-            }
-          },
-          {
-            "name": "activityType",
-            "in": "query",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "enum": [
-                "ab",
-                "xt",
-                "abt"
-              ]
             }
           }
         ],
@@ -5755,38 +5689,12 @@
             },
             "application/vnd.adobe.target.v2+json": {
               "schema": {
-                "type": "object",
-                "properties": {
-                  "abActivity": {
-                    "$ref": "#/components/schemas/ABActivity"
-                  },
-                  "activityType": {
-                    "type": "string",
-                    "enum": [
-                      "ab",
-                      "xt",
-                      "abt"
-                    ]
-                  }
-                }
+                "$ref": "#/components/schemas/ABActivity"
               }
             },
             "application/vnd.adobe.target.v1+json": {
               "schema": {
-                "type": "object",
-                "properties": {
-                  "abActivity": {
-                    "$ref": "#/components/schemas/ABActivity"
-                  },
-                  "activityType": {
-                    "type": "string",
-                    "enum": [
-                      "ab",
-                      "xt",
-                      "abt"
-                    ]
-                  }
-                }
+                "$ref": "#/components/schemas/ABActivity"
               }
             }
           },
@@ -5903,20 +5811,6 @@
             }
           }
         ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "string",
-                "enum": [
-                  "ab",
-                  "xt",
-                  "abt"
-                ]
-              }
-            }
-          }
-        },
         "responses": {
           "407": {
             "description": "Proxy Authentication Required",
@@ -7596,38 +7490,12 @@
             },
             "application/vnd.adobe.target.v2+json": {
               "schema": {
-                "type": "object",
-                "properties": {
-                  "abActivity": {
-                    "$ref": "#/components/schemas/ABActivity"
-                  },
-                  "activityType": {
-                    "type": "string",
-                    "enum": [
-                      "ab",
-                      "xt",
-                      "abt"
-                    ]
-                  }
-                }
+                "$ref": "#/components/schemas/ABActivity"
               }
             },
             "application/vnd.adobe.target.v1+json": {
               "schema": {
-                "type": "object",
-                "properties": {
-                  "abActivity": {
-                    "$ref": "#/components/schemas/ABActivity"
-                  },
-                  "activityType": {
-                    "type": "string",
-                    "enum": [
-                      "ab",
-                      "xt",
-                      "abt"
-                    ]
-                  }
-                }
+                "$ref": "#/components/schemas/ABActivity"
               }
             }
           },
@@ -7745,38 +7613,12 @@
             },
             "application/vnd.adobe.target.v2+json": {
               "schema": {
-                "type": "object",
-                "properties": {
-                  "abActivity": {
-                    "$ref": "#/components/schemas/ABActivity"
-                  },
-                  "activityType": {
-                    "type": "string",
-                    "enum": [
-                      "ab",
-                      "xt",
-                      "abt"
-                    ]
-                  }
-                }
+                "$ref": "#/components/schemas/ABActivity"
               }
             },
             "application/vnd.adobe.target.v1+json": {
               "schema": {
-                "type": "object",
-                "properties": {
-                  "abActivity": {
-                    "$ref": "#/components/schemas/ABActivity"
-                  },
-                  "activityType": {
-                    "type": "string",
-                    "enum": [
-                      "ab",
-                      "xt",
-                      "abt"
-                    ]
-                  }
-                }
+                "$ref": "#/components/schemas/ABActivity"
               }
             }
           },
@@ -11821,11 +11663,11 @@
       "DateTimeZone": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "string"
-          },
           "fixed": {
             "type": "boolean"
+          },
+          "id": {
+            "type": "string"
           }
         },
         "description": ""
