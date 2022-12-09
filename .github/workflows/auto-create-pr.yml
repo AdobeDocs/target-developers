@@ -20,11 +20,6 @@ jobs:
           TO_BRANCH: "main"
           PULL_REQUEST_TITLE: ${{github.event.head_commit.message}}
           PULL_REQUEST_BODY: "New documentation changes by Adobe employees"
-#  auto-approve:
-#    runs-on: ubuntu-latest
-#    name: Auto-approve automated documentation PR
-#    needs: create-pr
-#    steps:
       - name: Auto-approve
         uses: hmarr/auto-approve-action@v3
         if: github.actor == 'dplacinta'
@@ -32,14 +27,3 @@ jobs:
           github-token: ${{ secrets.PLACINTA_TOKEN }}
           review-message: "Auto-approved automatically created pull request"
           pull-request-number: ${{steps.open-pr.outputs.PULL_REQUEST_NUMBER}}
-#  auto-merge:
-#    name: Auto merge after successful checks
-#    needs: auto-approve
-#    runs-on: ubuntu-latest
-#    steps:
-#      - name: Auto merge
-#        uses: pascalgn/automerge-action@v0.15.5
-#        if: github.actor == 'dplacinta'
-#        env:
-#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#          MERGE_METHOD: rebase
