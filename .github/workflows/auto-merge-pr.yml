@@ -21,3 +21,8 @@ jobs:
           MERGE_LABELS: ""
           MERGE_METHOD: rebase
           LOG: "TRACE"
+    trigger-deploy:
+      name: Trigger documentation deployment
+      uses: ./.github/workflows/deploy.yml
+      with:
+        env: "dev prod"
