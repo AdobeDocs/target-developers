@@ -50,7 +50,7 @@ Before blocklisting a feature, view the list of features that are currently bein
 #### Request
 
 ```json
-GET https://mc.adobe.io/<tenant>/target/models/features/<campaignId>
+GET https://mc.adobe.io/<clientCode>/target/models/features/<campaignId>
 ```
 
 #### Response
@@ -80,7 +80,7 @@ GET https://mc.adobe.io/<tenant>/target/models/features/<campaignId>
         }
     ],
     "reportParameters": {
-        "clientCode": <tenant>,
+        "clientCode": <clientCode>,
         "campaignId": <campaignId>
     }
 }
@@ -122,7 +122,7 @@ Note that `/blockList/` is case sensitive in the request.
 #### Request
 
 ```json
-GET https://mc.adobe.io/<tenant>/target/models/features/blockList/<campaignId>
+GET https://mc.adobe.io/<clientCode>/target/models/features/blockList/<campaignId>
 ```
 
 #### Response
@@ -171,7 +171,7 @@ Note that `blockedFeatureSources` indicates where a feature came from. For the p
 #### Request
 
 ```json
-PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/<campaignId>
+PUT https://mc.adobe.io/<clientCode>/target/models/features/blockList/<campaignId>
 
 {
     "blockedFeatureSources": ["AAM"],
@@ -211,7 +211,7 @@ To unblock all blocklisted features, clear the values from `blockedFeatureSource
 #### Request
 
 ```json
-PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/<campaignId>
+PUT https://mc.adobe.io/<clientCode>/target/models/features/blockList/<campaignId>
 
 {
     "blockedFeatureSources": [],
@@ -252,7 +252,7 @@ The examples above were all in the context of a single activity. You may also bl
 #### Request
 
 ```json
-PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/global
+PUT https://mc.adobe.io/<clientCode>/target/models/features/blockList/global
 
 {
     "blockedFeatureSources": ["AAM", "PRO", "ENV"],
