@@ -1,3 +1,4 @@
+---
 name: Auto-merge PR
 on:
   pull_request_review:
@@ -25,4 +26,5 @@ jobs:
     name: Trigger documentation deployment
     uses: ./.github/workflows/deploy.yml
     with:
-      env: "dev prod"
+      env: 'dev prod'
+    secrets: inherit
