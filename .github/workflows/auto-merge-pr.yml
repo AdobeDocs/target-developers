@@ -2,8 +2,6 @@
 name: Auto-merge PR and publish docs
 on:
   pull_request_review:
-    types:
-      - submitted
   check_suite:
     types:
       - completed
