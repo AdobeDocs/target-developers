@@ -19,26 +19,29 @@ on:
     inputs:
       env:
         description: 'Deploy to (dev|prod|dev prod)'
+        type: string
         required: true
-        default: 'dev'
+        default: 'dev prod'
       clean:
         description: 'Clean cache (yes|no)'
-        required: true
+        type: string
+        required: false
         default: 'no'
       excludeSubfolder:
         description: 'Exclude a subfolder from deletion'
+        type: string
         required: false
         default: ''
 jobs:
   set-state:
     runs-on: ubuntu-latest
     outputs:
-      deploy_prod: ${{ contains(github.event.inputs.env, 'prod') }}
-      deploy_dev: ${{ contains(github.event.inputs.env, 'dev') }}
-      clean_cache: ${{ contains(github.event.inputs.clean, 'yes') }}
+      deploy_prod: ${{ contains(inputs.env, 'prod') }}
+      deploy_dev: ${{ contains(inputs.env, 'dev') }}
+      clean_cache: ${{ contains(inputs.clean, 'yes') }}
       path_prefix: ${{ steps.get_path_prefix.outputs.path_prefix }}
       branch_short_ref: ${{ steps.get_branch.outputs.branch }}
-      exclude_subfolder: ${{ github.event.inputs.excludeSubfolder }}
+      exclude_subfolder: ${{ inputs.excludeSubfolder }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3
