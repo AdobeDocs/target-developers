@@ -1,3 +1,4 @@
+---
 name: Auto-create PR
 on:
   push:
