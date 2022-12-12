@@ -9,20 +9,20 @@ on:
   status: { }
 
 jobs:
-  auto-merge:
-    name: Auto merge after successful checks
-    runs-on: ubuntu-latest
-    steps:
-      - name: Auto merge
-        uses: pascalgn/automerge-action@v0.15.5
-        if: github.actor == 'dplacinta'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          MERGE_LABELS: ""
-          MERGE_METHOD: rebase
-          LOG: "TRACE"
+#  auto-merge:
+#    name: Auto merge after successful checks
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Auto merge
+#        uses: pascalgn/automerge-action@v0.15.5
+#        if: github.actor == 'dplacinta'
+#        env:
+#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#          MERGE_LABELS: ""
+#          MERGE_METHOD: rebase
+#          LOG: "TRACE"
   trigger-deploy:
     name: Trigger documentation deployment
-    uses: ./.github/workflows/deploy.yml
+    uses: ./.github/workflows/deploy.yml@main
     with:
       env: "dev prod"
