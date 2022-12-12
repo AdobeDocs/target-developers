@@ -1,5 +1,5 @@
 ---
-name: Auto-merge PR
+name: Auto-merge PR and publish docs
 on:
   pull_request_review:
     types:
@@ -23,7 +23,7 @@ jobs:
           MERGE_METHOD: rebase
           LOG: "TRACE"
   trigger-deploy:
-    name: Trigger documentation deployment
+    name: Trigger documentation publishing
     uses: ./.github/workflows/deploy.yml
     with:
       env: 'dev prod'
