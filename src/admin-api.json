@@ -62,8 +62,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -72,8 +72,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -92,8 +92,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -173,8 +173,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -183,8 +183,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -203,8 +203,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -274,8 +274,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -284,8 +284,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -304,8 +304,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -377,8 +377,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -387,8 +387,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -407,8 +407,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -488,8 +488,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -498,8 +498,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -518,8 +518,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -589,8 +589,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -599,8 +599,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -619,8 +619,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -692,8 +692,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -702,8 +702,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -722,8 +722,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -813,8 +813,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -823,8 +823,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -843,8 +843,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -919,8 +919,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -929,8 +929,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -949,8 +949,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -1027,8 +1027,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -1037,8 +1037,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -1057,8 +1057,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -1148,8 +1148,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -1158,8 +1158,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -1178,8 +1178,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -1254,8 +1254,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -1264,8 +1264,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -1284,8 +1284,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -1371,8 +1371,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -1381,8 +1381,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -1401,8 +1401,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -1471,8 +1471,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -1481,8 +1481,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -1501,8 +1501,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -1574,8 +1574,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -1584,8 +1584,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -1604,8 +1604,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -1685,8 +1685,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -1695,8 +1695,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -1715,8 +1715,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -1786,8 +1786,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -1796,8 +1796,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -1816,8 +1816,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -1878,8 +1878,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -1888,8 +1888,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -1908,8 +1908,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -1978,8 +1978,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -1988,8 +1988,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -2008,8 +2008,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -2070,8 +2070,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -2080,8 +2080,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -2100,8 +2100,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -2170,8 +2170,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -2180,8 +2180,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -2200,8 +2200,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -2262,8 +2262,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -2272,8 +2272,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -2292,8 +2292,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -2362,8 +2362,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -2372,8 +2372,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -2392,8 +2392,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -2476,8 +2476,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -2486,8 +2486,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -2506,8 +2506,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -2601,8 +2601,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -2611,8 +2611,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -2631,8 +2631,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -2693,8 +2693,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -2703,8 +2703,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -2723,8 +2723,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -2793,8 +2793,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -2803,8 +2803,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -2823,8 +2823,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -2896,8 +2896,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -2906,8 +2906,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -2926,8 +2926,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -3027,8 +3027,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -3037,8 +3037,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -3057,8 +3057,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -3138,8 +3138,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -3148,8 +3148,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -3168,8 +3168,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -3259,8 +3259,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -3269,8 +3269,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -3289,8 +3289,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -3351,8 +3351,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -3361,8 +3361,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -3381,8 +3381,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -3451,8 +3451,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -3461,8 +3461,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -3481,8 +3481,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -3564,8 +3564,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -3574,8 +3574,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -3594,8 +3594,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -3677,8 +3677,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -3687,8 +3687,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -3707,8 +3707,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -3790,8 +3790,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -3800,8 +3800,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -3820,8 +3820,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -3903,8 +3903,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -3913,8 +3913,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -3933,8 +3933,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -4016,8 +4016,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -4026,8 +4026,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -4046,8 +4046,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -4129,8 +4129,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -4139,8 +4139,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -4159,8 +4159,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -4242,8 +4242,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -4252,8 +4252,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -4272,8 +4272,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -4355,8 +4355,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -4365,8 +4365,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -4385,8 +4385,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -4468,8 +4468,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -4478,8 +4478,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -4498,8 +4498,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -4581,8 +4581,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -4591,8 +4591,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -4611,8 +4611,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -4694,8 +4694,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -4704,8 +4704,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -4724,8 +4724,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -4807,8 +4807,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -4817,8 +4817,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -4837,8 +4837,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -4910,8 +4910,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -4920,8 +4920,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -4940,8 +4940,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -5031,8 +5031,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -5041,8 +5041,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -5061,8 +5061,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -5137,8 +5137,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -5147,8 +5147,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -5167,8 +5167,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -5212,19 +5212,6 @@
               "type": "integer",
               "format": "int64"
             }
-          },
-          {
-            "name": "activityType",
-            "in": "query",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "enum": [
-                "ab",
-                "xt",
-                "abt"
-              ]
-            }
           }
         ],
         "responses": {
@@ -5258,8 +5245,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -5268,8 +5255,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -5288,8 +5275,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -5347,38 +5334,12 @@
             },
             "application/vnd.adobe.target.v2+json": {
               "schema": {
-                "type": "object",
-                "properties": {
-                  "abActivity": {
-                    "$ref": "#/components/schemas/ABActivity"
-                  },
-                  "activityType": {
-                    "type": "string",
-                    "enum": [
-                      "ab",
-                      "xt",
-                      "abt"
-                    ]
-                  }
-                }
+                "$ref": "#/components/schemas/ABActivity"
               }
             },
             "application/vnd.adobe.target.v1+json": {
               "schema": {
-                "type": "object",
-                "properties": {
-                  "abActivity": {
-                    "$ref": "#/components/schemas/ABActivity"
-                  },
-                  "activityType": {
-                    "type": "string",
-                    "enum": [
-                      "ab",
-                      "xt",
-                      "abt"
-                    ]
-                  }
-                }
+                "$ref": "#/components/schemas/ABActivity"
               }
             }
           },
@@ -5415,8 +5376,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -5425,8 +5386,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -5445,8 +5406,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -5495,20 +5456,6 @@
             }
           }
         ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "string",
-                "enum": [
-                  "ab",
-                  "xt",
-                  "abt"
-                ]
-              }
-            }
-          }
-        },
         "responses": {
           "407": {
             "description": "Proxy Authentication Required",
@@ -5540,8 +5487,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -5550,8 +5497,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -5570,8 +5517,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -5620,19 +5567,6 @@
               "type": "integer",
               "format": "int64"
             }
-          },
-          {
-            "name": "activityType",
-            "in": "query",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "enum": [
-                "ab",
-                "xt",
-                "abt"
-              ]
-            }
           }
         ],
         "responses": {
@@ -5666,8 +5600,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -5676,8 +5610,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -5696,8 +5630,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -5755,38 +5689,12 @@
             },
             "application/vnd.adobe.target.v2+json": {
               "schema": {
-                "type": "object",
-                "properties": {
-                  "abActivity": {
-                    "$ref": "#/components/schemas/ABActivity"
-                  },
-                  "activityType": {
-                    "type": "string",
-                    "enum": [
-                      "ab",
-                      "xt",
-                      "abt"
-                    ]
-                  }
-                }
+                "$ref": "#/components/schemas/ABActivity"
               }
             },
             "application/vnd.adobe.target.v1+json": {
               "schema": {
-                "type": "object",
-                "properties": {
-                  "abActivity": {
-                    "$ref": "#/components/schemas/ABActivity"
-                  },
-                  "activityType": {
-                    "type": "string",
-                    "enum": [
-                      "ab",
-                      "xt",
-                      "abt"
-                    ]
-                  }
-                }
+                "$ref": "#/components/schemas/ABActivity"
               }
             }
           },
@@ -5823,8 +5731,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -5833,8 +5741,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -5853,8 +5761,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -5903,20 +5811,6 @@
             }
           }
         ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "string",
-                "enum": [
-                  "ab",
-                  "xt",
-                  "abt"
-                ]
-              }
-            }
-          }
-        },
         "responses": {
           "407": {
             "description": "Proxy Authentication Required",
@@ -5948,8 +5842,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -5958,8 +5852,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -5978,8 +5872,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -6051,8 +5945,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -6061,8 +5955,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -6081,8 +5975,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -6151,8 +6045,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -6161,8 +6055,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -6181,8 +6075,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -6244,8 +6138,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -6254,8 +6148,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -6274,8 +6168,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -6344,8 +6238,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -6354,8 +6248,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -6374,8 +6268,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -6447,8 +6341,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -6457,8 +6351,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -6477,8 +6371,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -6555,8 +6449,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -6565,8 +6459,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -6585,8 +6479,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -6668,8 +6562,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -6678,8 +6572,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -6698,8 +6592,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -6766,8 +6660,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -6776,8 +6670,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -6796,8 +6690,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -6866,8 +6760,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -6876,8 +6770,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -6896,8 +6790,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -6979,8 +6873,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -6989,8 +6883,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -7009,8 +6903,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -7085,8 +6979,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -7095,8 +6989,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -7115,8 +7009,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -7188,8 +7082,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -7198,8 +7092,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -7218,8 +7112,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -7281,8 +7175,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -7291,8 +7185,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -7311,8 +7205,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -7402,8 +7296,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -7412,8 +7306,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -7432,8 +7326,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -7520,8 +7414,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -7530,8 +7424,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -7550,8 +7444,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -7596,38 +7490,12 @@
             },
             "application/vnd.adobe.target.v2+json": {
               "schema": {
-                "type": "object",
-                "properties": {
-                  "abActivity": {
-                    "$ref": "#/components/schemas/ABActivity"
-                  },
-                  "activityType": {
-                    "type": "string",
-                    "enum": [
-                      "ab",
-                      "xt",
-                      "abt"
-                    ]
-                  }
-                }
+                "$ref": "#/components/schemas/ABActivity"
               }
             },
             "application/vnd.adobe.target.v1+json": {
               "schema": {
-                "type": "object",
-                "properties": {
-                  "abActivity": {
-                    "$ref": "#/components/schemas/ABActivity"
-                  },
-                  "activityType": {
-                    "type": "string",
-                    "enum": [
-                      "ab",
-                      "xt",
-                      "abt"
-                    ]
-                  }
-                }
+                "$ref": "#/components/schemas/ABActivity"
               }
             }
           },
@@ -7664,8 +7532,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -7674,8 +7542,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -7694,8 +7562,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -7745,38 +7613,12 @@
             },
             "application/vnd.adobe.target.v2+json": {
               "schema": {
-                "type": "object",
-                "properties": {
-                  "abActivity": {
-                    "$ref": "#/components/schemas/ABActivity"
-                  },
-                  "activityType": {
-                    "type": "string",
-                    "enum": [
-                      "ab",
-                      "xt",
-                      "abt"
-                    ]
-                  }
-                }
+                "$ref": "#/components/schemas/ABActivity"
               }
             },
             "application/vnd.adobe.target.v1+json": {
               "schema": {
-                "type": "object",
-                "properties": {
-                  "abActivity": {
-                    "$ref": "#/components/schemas/ABActivity"
-                  },
-                  "activityType": {
-                    "type": "string",
-                    "enum": [
-                      "ab",
-                      "xt",
-                      "abt"
-                    ]
-                  }
-                }
+                "$ref": "#/components/schemas/ABActivity"
               }
             }
           },
@@ -7813,8 +7655,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -7823,8 +7665,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -7843,8 +7685,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -7916,8 +7758,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -7926,8 +7768,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -7946,8 +7788,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -8009,8 +7851,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -8019,8 +7861,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -8039,8 +7881,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -8107,8 +7949,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -8117,8 +7959,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -8137,8 +7979,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -8210,8 +8052,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -8220,8 +8062,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -8240,8 +8082,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -8303,8 +8145,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -8313,8 +8155,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -8333,8 +8175,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -8405,8 +8247,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -8415,8 +8257,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -8435,8 +8277,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -8498,8 +8340,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -8508,8 +8350,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -8528,8 +8370,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -8590,8 +8432,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -8600,8 +8442,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -8620,8 +8462,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -8686,8 +8528,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -8696,8 +8538,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -8716,8 +8558,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -8799,8 +8641,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -8809,8 +8651,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -8829,8 +8671,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -8902,8 +8744,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -8912,8 +8754,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -8932,8 +8774,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -9005,8 +8847,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -9015,8 +8857,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -9035,8 +8877,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -9108,8 +8950,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -9118,8 +8960,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -9138,8 +8980,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -9211,8 +9053,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -9221,8 +9063,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -9241,8 +9083,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -9314,8 +9156,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -9324,8 +9166,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -9344,8 +9186,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -9417,8 +9259,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -9427,8 +9269,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -9447,8 +9289,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -9520,8 +9362,8 @@
               }
             }
           },
-          "405": {
-            "description": "Method Not Allowed",
+          "404": {
+            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -9530,8 +9372,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "405": {
+            "description": "Method Not Allowed",
             "content": {
               "*/*": {
                 "schema": {
@@ -9550,8 +9392,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -11821,11 +11663,11 @@
       "DateTimeZone": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "string"
-          },
           "fixed": {
             "type": "boolean"
+          },
+          "id": {
+            "type": "string"
           }
         },
         "description": ""
