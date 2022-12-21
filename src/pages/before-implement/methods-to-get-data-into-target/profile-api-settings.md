@@ -15,13 +15,13 @@ exl-id: 6346e11b-0853-47f1-9706-69e8635a6f25
 
 Enable or disable authentication for batch updates via Adobe Target APIs and generate a profile authentication token.
 
-Adobe Target creates and maintains a profile for every individual user. This profile is stored on the Target edge cluster and is updated in real time after every visit; however, you can update a profile individually or in bulk via API.
+Adobe Target creates and maintains a profile for every individual user. This profile is stored on the Target edge cluster and is updated in real time after every visit. You can also update a profile individually or in bulk via API.
 
 For added security, you can require that the Bulk Update API call require a valid access token to be passed in the header of the request.
 
 **To require authentication and to generate an access token using the Target UI:**
 
-1. Click **Administration** > **Implementation**. 
+1. Click **Administration** > **Implementation**.
 2. Under **Profile API** slide the **Require Authentication** toggle to the enabled or disabled position.
 
    ![alt image](assets/profile_api_settings.png)
@@ -34,7 +34,7 @@ For added security, you can require that the Bulk Update API call require a vali
 
    You must have one of the following user permissions to generate an authentication token:
 
-   * At least Editor permission (or Approver)
+   * Admin role or have at least Approver rights
 
      For more information for Target Standard customers, see [Specify roles and Permissions](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/users/user-management.html#roles-permissions) in *Users*. For more information for Target Premium customers, see [Configure enterprise permissions](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html).
 
