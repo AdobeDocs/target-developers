@@ -21,7 +21,7 @@ For added security, you can require that the Bulk Update API call require a vali
 
 **To require authentication and to generate an access token using the Target UI:**
 
-1. Click **Administration** > **Implementation**. 
+1. Click **Administration** > **Implementation**.
 2. Under **Profile API** slide the **Require Authentication** toggle to the enabled or disabled position.
 
    ![alt image](assets/profile_api_settings.png)
