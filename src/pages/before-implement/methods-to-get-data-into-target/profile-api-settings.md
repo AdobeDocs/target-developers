@@ -34,7 +34,7 @@ For added security, you can require that the Bulk Update API call require a vali
 
    You must have one of the following user permissions to generate an authentication token:
 
-   * At least Editor permission (or Approver)
+   * Admin role or have at least Approver rights
 
      For more information for Target Standard customers, see [Specify roles and Permissions](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/users/user-management.html#roles-permissions) in *Users*. For more information for Target Premium customers, see [Configure enterprise permissions](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html).
 
