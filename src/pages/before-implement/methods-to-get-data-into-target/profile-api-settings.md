@@ -15,7 +15,7 @@ exl-id: 6346e11b-0853-47f1-9706-69e8635a6f25
 
 Enable or disable authentication for batch updates via Adobe Target APIs and generate a profile authentication token.
 
-Adobe Target creates and maintains a profile for every individual user. This profile is stored on the Target edge cluster and is updated in real time after every visit; however, you can update a profile individually or in bulk via API.
+Adobe Target creates and maintains a profile for every individual user. This profile is stored on the Target edge cluster and is updated in real time after every visit. You can also update a profile individually or in bulk via API.
 
 For added security, you can require that the Bulk Update API call require a valid access token to be passed in the header of the request.
 
