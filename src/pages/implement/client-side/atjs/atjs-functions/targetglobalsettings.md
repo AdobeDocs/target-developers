@@ -53,7 +53,8 @@ You can override the following settings:
 
 * **Type**: String
 * **Default Value**: None
-* **Description**: A fully qualified url to the [on-device decisioning rule artifact](../../sdk-guides/on-device-decisioning/rule-artifact/index.md). Overrides internally determined location.
+* **Description**: A fully qualified url to the [on-device decisioning rule artifact](../../../server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md)
+
 
 ### bodyHiddenStyle
 
@@ -228,7 +229,7 @@ The deviceIdLifetime setting is overrideable in at.js version 2.3.1 or later.
 
 * **Type**: String
 * **Default Value**: None
-* **Description**: **Target Property Token**. If specified here, all `getOffers` calls will use this value. **For on-device decisioning**, the SDK will only download the artifact that contains the qualified activities for the property token set in `propertyToken`|
+* **Description**: If specified here, all `getOffers` calls will use this value. **For on-device decisioning**, the at.js will only download the artifact that contains the qualified activities for the property token set in `propertyToken`
 
 ### secureOnly
 
