@@ -55,7 +55,6 @@ You can override the following settings:
 * **Default Value**: None
 * **Description**: A fully qualified url to the [on-device decisioning rule artifact](../../../server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md)
 
-
 ### bodyHiddenStyle
 
 * **Type**: String
@@ -229,7 +228,7 @@ The deviceIdLifetime setting is overrideable in at.js version 2.3.1 or later.
 
 * **Type**: String
 * **Default Value**: None
-* **Description**: If specified here, all `getOffers` calls will use this value. **For on-device decisioning**, the at.js will only download the artifact that contains the qualified activities for the property token set in `propertyToken`
+* **Description**: If specified here, all `getOffers` calls will use this value. **For on-device decisioning**, at.js will only download the artifact that contains the qualified activities for the property token set in `propertyToken`
 
 ### secureOnly
 
@@ -482,7 +481,7 @@ const PAGE_TEMPLATE = `
 
 A sample `serverState` object JSON for view prefetch looks as follows:
 
-```
+```javascript
 {
  "request": {
   "requestId": "076ace1cd3624048bae1ced1f9e0c536",
@@ -566,7 +565,7 @@ Consider the following when using `serverState`:
 
   * **Note**:  Currently, mboxes retrieved on the server-side is not supported in `serverState`.
 
-* When applying `serverState `offers, at.js takes into consideration `pageLoadEnabled` and `viewsEnabled` settings, e.g. Page Load offers will not be applied if the `pageLoadEnabled` setting is false.
+* When applying `serverState` offers, at.js takes into consideration `pageLoadEnabled` and `viewsEnabled` settings, e.g. Page Load offers will not be applied if the `pageLoadEnabled` setting is false.
 
   To turn these settings on, enable the toggle in **Administration > Implementation > Edit > Page Load Enabled**.
 
