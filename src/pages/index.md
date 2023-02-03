@@ -199,7 +199,7 @@ Use the Recommendations API.
 
 [Models API](administer/models-api/) 
 
-Manage blocklists to determine the features used in Target machine learning models.
+Manage blocklists to define the features used in Target machine learning models.
 
 <DiscoverBlock slots="link, text"/> 
 
