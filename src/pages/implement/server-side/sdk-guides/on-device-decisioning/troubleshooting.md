@@ -5,10 +5,10 @@
 ### Summary of Steps
 
 1. Ensure the `logger` is configured
-1. Ensure Target Traces is enabled
-1. Verify the on-device decisioning *rule artifact* has been retrieved and cached according to the polling interval defined.
-1. Validate content delivery via the cached rule artifact by creating a test on-device decisioning activity through the form-based experience composer.
-1. Inspect send notification errors
+2. Ensure Target Traces is enabled
+3. Verify the on-device decisioning *rule artifact* has been retrieved and cached according to the polling interval defined.
+4. Validate content delivery via the cached rule artifact by creating a test on-device decisioning activity through the form-based experience composer.
+5. Inspect send notification errors
 
 ## Ensure the logger is configured
 
@@ -30,7 +30,7 @@ const CONFIG = {
 
 For Java SDK `logRequests` on the `ClientConfig` should be enabled.
 
-```javascript
+```java
 ClientConfig config = ClientConfig.builder()
   .client("<your client code>")
   .organizationId("<your organization ID>")
@@ -40,7 +40,7 @@ ClientConfig config = ClientConfig.builder()
 
 Also the JVM should be started with the following command line parameter:
 
-```javascript
+```bash
 java -Dorg.slf4j.simpleLogger.defaultLogLevel=DEBUG ...
 ```
 
@@ -49,14 +49,14 @@ java -Dorg.slf4j.simpleLogger.defaultLogLevel=DEBUG ...
 Enabling traces will output additional information from Adobe Target in regards to the rules artifact.
 
 1. Navigate to the Target UI in Experience Cloud.
-  
+
    ![alt image](assets/asset-target-ui-1.png)
 
-1. Navigate to **Administration** > **Implementation** and click **Generate New Authorization Token**.
-  
+2. Navigate to **Administration** > **Implementation** and click **Generate New Authorization Token**.
+
    ![alt image](assets/asset-target-ui-2.png)
 
-1. Copy the newly generated authorization token to the clipboard and add it to your Target request:
+3. Copy the newly generated authorization token to the clipboard and add it to your Target request:
 
 **Node.js**
 
@@ -74,7 +74,7 @@ const request = {
 
 **Java SDK**
 
-```javascript
+```java
 Trace trace = new Trace()
   .authorizationToken("88f1a924-6bc5-4836-8560-2f9c86aeb36b");
 Context context = new Context()
@@ -96,7 +96,7 @@ TargetDeliveryRequest request = TargetDeliveryRequest.builder()
 
 **Node.js SDK**
 
-```js
+```text
   AT: LD.ArtifactProvider fetching artifact - https://assets.adobetarget.com/your-client-code/production/v1/rules.json
   AT: LD.ArtifactProvider artifact received - status=200
 ```
@@ -105,7 +105,7 @@ TargetDeliveryRequest request = TargetDeliveryRequest.builder()
 
    Additionally, information from the the Target Trace should be outputted to the terminal with details about the rule artifact.
 
-```
+```text
 "trace": {
    "clientCode": "your-client-code",
    "artifact": {
@@ -127,23 +127,23 @@ TargetDeliveryRequest request = TargetDeliveryRequest.builder()
 
     ![alt image](assets/asset-target-ui-1.png)
 
-1. Create a new XT activity using the Form-based Experience Composer.
+2. Create a new XT activity using the Form-based Experience Composer.
 
     ![alt image](assets/asset-form-base-composer-ui.png)
 
-1. Input the mbox name used in your Target request as the location for the XT activity (note this should be a unique mbox name specifically for development purposes).
+3. Input the mbox name used in your Target request as the location for the XT activity (note this should be a unique mbox name specifically for development purposes).
 
     ![alt image](assets/asset-mbox-location-ui.png)
 
-1. Change the content to either an HTML offer or JSON offer. This will be returned in the Target request to your application. Leave targeting for the activity as 'All Visitors' and select any metric you would like. Name the activity, save it, and then activate it to ensure the mbox/location in use is only for development.
+4. Change the content to either an HTML offer or JSON offer. This will be returned in the Target request to your application. Leave targeting for the activity as 'All Visitors' and select any metric you would like. Name the activity, save it, and then activate it to ensure the mbox/location in use is only for development.
 
    ![alt image](assets/asset-target-content-ui.png)
 
-1. In your application, add a log statements for the content received in the response from your Target request
+5. In your application, add a log statements for the content received in the response from your Target request
 
 **Node.js SDK**
 
-```
+```js
 try {
   const response = await targetClient.getOffers({ request });
   console.log('Response: ', response.response.execute.mboxes[0].options[0].content);
@@ -154,7 +154,7 @@ try {
 
 **Java SDK**
 
-```
+```java
 try {
   Context context = new Context()
     .channel(ChannelType.WEB);
@@ -181,7 +181,7 @@ try {
 
 **Logger output**
 
-```
+```text
 AT: LD.DecisionProvider {...}
 AT: Response received {...}
 Response:  <div>test</div>
@@ -217,7 +217,7 @@ async function targetClientReady() {
 
 client = TargetClient.create({
   events: {
-    clientReady: targetClientReady
+    clientReady: targetClientReady,
     sendNotificationError: onSendNotificationError
   }
 });
@@ -225,7 +225,7 @@ client = TargetClient.create({
 
 ## Common Troubleshooting Scenarios
 
-<InlineAlert variant="info" slots="text"/>
+<InlineAlert variant="info" slots="text"></InlineAlert>
 
 Please be sure to review [supported features](supported-features.md) for on-device decisioning when running into issues.
 
@@ -237,7 +237,7 @@ A common issue that can occur is on-device decisioning activities not executing 
 
 **Trace output**
 
-```
+```text
   "execute": {
   "mboxes": [
     {
@@ -258,7 +258,7 @@ You will notice that the activity you are trying to qualify for is not in the `c
 
 **Logger output**
 
-```
+```text
  ...
  rules: {
    mboxes: { },
@@ -280,7 +280,7 @@ If an on-device decisioning activity is not executing, but you have verified tha
 
 **rules.json**
 
-```json
+```text
  ...
  rules: {
    mboxes: {
@@ -308,7 +308,7 @@ If an on-device decisioning activity is not executing, but you have verified tha
 
 **Java SDK**
 
-```javascript
+```java
 Context context = new Context()
   .channel(ChannelType.WEB);
 MboxRequest mbox = new MboxRequest()
@@ -330,7 +330,7 @@ TargetDeliveryResponse response = targetClient.getOffers(request);
 
 **Trace output**
 
-```
+```text
 ...
 },
 "campaignId": 368564,
@@ -363,7 +363,7 @@ It may not be readily apparent why an on-device decisioning activity is not exec
 
 **Trace output**
 
-```
+```text
 ...
       "artifact": {
           "artifactLocation": "https://assets.adobetarget.com/your-client-code/production/v1/rules.json",
@@ -384,8 +384,8 @@ Look at the `artifactLastRetrieved` date of the artifact and ensure that you hav
 
 **Logger output**
 
-```
-... 
+```text
+...
   "evaluatedCampaignTargets": [
       {
         "context": {
