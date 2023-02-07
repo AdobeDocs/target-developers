@@ -8,6 +8,7 @@
 1. Ensure Target Traces is enabled
 1. Verify the on-device decisioning *rule artifact* has been retrieved and cached according to the polling interval defined.
 1. Validate content delivery via the cached rule artifact by creating a test on-device decisioning activity through the form-based experience composer.
+1. Inspect send notification errors
 
 ## Ensure the logger is configured
 
@@ -40,7 +41,7 @@ ClientConfig config = ClientConfig.builder()
 Also the JVM should be started with the following command line parameter:
 
 ```javascript
-$ java -Dorg.slf4j.simpleLogger.defaultLogLevel=DEBUG ...
+java -Dorg.slf4j.simpleLogger.defaultLogLevel=DEBUG ...
 ```
 
 ## Ensure Target Traces is enabled
@@ -100,12 +101,11 @@ TargetDeliveryRequest request = TargetDeliveryRequest.builder()
   AT: LD.ArtifactProvider artifact received - status=200
 ```
 
-
 1. Wait the duration of the polling interval (default is 5 minutes) and ensure that the artifact is being fetched by the SDK. The same terminal logs will be output.
 
    Additionally, information from the the Target Trace should be outputted to the terminal with details about the rule artifact.
 
-``` 
+```
 "trace": {
    "clientCode": "your-client-code",
    "artifact": {
@@ -120,7 +120,8 @@ TargetDeliveryRequest request = TargetDeliveryRequest.builder()
      "generatedAt": "2020-09-22T17:17:59.783Z"
    },
 ```
-## Validate content delivery via the cached rule artifact by creating a test on-device decisioning activity through the form-based experience composer.
+
+## Validate content delivery via the cached rule artifact by creating a test on-device decisioning activity through the form-based experience composer
 
 1. Navigate to the Target UI in Experience Cloud
 
@@ -184,6 +185,42 @@ try {
 AT: LD.DecisionProvider {...}
 AT: Response received {...}
 Response:  <div>test</div>
+```
+
+## Inspect send notification errors
+
+When using On-device decisioning, notifications are sent automatically for getOffers execute requests.  These reqeusts are sent silently in the background.  But any errors can be inspected by subscribing to an event called `sendNotificationError`  Here is a code sample for how to subscribe to notifiaction errors using the Node.js SDK.
+
+```js
+const TargetClient = require("@adobe/target-nodejs-sdk");
+let client;
+
+function onSendNotificationError({ notification, error }) {
+  console.log(
+    `There was an error when sending a notification: ${error.message}`
+  );
+  console.log(`Notification Payload: ${JSON.stringify(notification, null, 2)}`);
+}
+
+async function targetClientReady() {
+  const request = {
+    context: { channel: "web" },
+    execute: {
+      mboxes: [{
+        name: "a1-serverside-ab",
+        index: 1
+      }]
+    }
+  };
+  const targetResponse = await client.getOffers({ request });
+}
+
+client = TargetClient.create({
+  events: {
+    clientReady: targetClientReady
+    sendNotificationError: onSendNotificationError
+  }
+});
 ```
 
 ## Common Troubleshooting Scenarios
@@ -431,10 +468,10 @@ Look at the `artifactLastRetrieved` date of the artifact and ensure that you hav
 
 (8) Ensure you are using supported audience rules and supported activity types.
 
-### A server call is made even though the activity setup under an mbox says "On Device Decisioning Eligible" in the Target user interface.
+### A server call is made even though the activity setup under an mbox says "On Device Decisioning Eligible" in the Target user interface
 
 There are a few reasons why a server call is made even though the device is eligible for on-device decisioning:
 
 * When the mbox used for an "On Device Decisioning Eligible" activity is also used for other activities that are not "On Device Decisioning Eligible," the mbox is listed under the `remoteMboxes` section in the `rules.json` artifact. When an mbox is listed under `remoteMboxes`, any `getOffer(s)` calls to that mbox result in a server call.
 
-*  If you set up an activity under a workspace/property and do not include the same when configuring the SDK, this can cause the `rules.josn` of the default workspace to be downloaded, which can use the mbox under the `remoteMboxes` section.
+* If you set up an activity under a workspace/property and do not include the same when configuring the SDK, this can cause the `rules.josn` of the default workspace to be downloaded, which can use the mbox under the `remoteMboxes` section.
