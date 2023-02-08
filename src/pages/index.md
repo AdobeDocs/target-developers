@@ -197,6 +197,12 @@ Use the Recommendations API.
 
 <DiscoverBlock slots="link, text"/> 
 
+[Models API](administer/models-api/) 
+
+Manage blocklists to define the features used in Target machine learning models.
+
+<DiscoverBlock slots="link, text"/> 
+
 [Admin Console APIs](https://developer.adobe.com/umapi/) 
 
 Manage users and product entitlements through the Adobe User Management and User Sync APIs.
