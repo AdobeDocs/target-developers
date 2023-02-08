@@ -222,13 +222,7 @@ The deviceIdLifetime setting is overrideable in at.js version 2.3.1 or later.
 
 * **Type**: Number
 * **Default Value**: 300000 (Five minutes in milliseconds)
-* **Description**: Interval that at.js fetches a new version of an artifact and updates the cache
-
-### propertyToken
-
-* **Type**: String
-* **Default Value**: None
-* **Description**: If specified here, all `getOffers` calls will use this value. **For on-device decisioning**, at.js will only download the artifact that contains the qualified activities for the property token set in `propertyToken`
+* **Description**: Interval that at.js fetches a new version of an on-device decisioning artifact and updates the cache. 300000 is the minimum value allowed for `pollingInterval`.
 
 ### secureOnly
 
