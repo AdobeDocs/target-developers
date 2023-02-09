@@ -30,7 +30,7 @@ const CONFIG = {
 
 For Java SDK `logRequests` on the `ClientConfig` should be enabled.
 
-```java
+```js
 ClientConfig config = ClientConfig.builder()
   .client("<your client code>")
   .organizationId("<your organization ID>")
@@ -74,7 +74,7 @@ const request = {
 
 **Java SDK**
 
-```java
+```js
 Trace trace = new Trace()
   .authorizationToken("88f1a924-6bc5-4836-8560-2f9c86aeb36b");
 Context context = new Context()
@@ -154,7 +154,7 @@ try {
 
 **Java SDK**
 
-```java
+```js
 try {
   Context context = new Context()
     .channel(ChannelType.WEB);
@@ -189,7 +189,7 @@ Response:  <div>test</div>
 
 ## Inspect send notification errors
 
-When using On-device decisioning, notifications are sent automatically for getOffers execute requests.  These reqeusts are sent silently in the background.  But any errors can be inspected by subscribing to an event called `sendNotificationError`  Here is a code sample for how to subscribe to notifiaction errors using the Node.js SDK.
+When using On-device decisioning, notifications are sent automatically for getOffers execute requests. These requests are sent silently in the background. Any errors can be inspected by subscribing to an event called `sendNotificationError`. Here is a code sample showing how to subscribe to notification errors using the Node.js SDK.
 
 ```js
 const TargetClient = require("@adobe/target-nodejs-sdk");
@@ -308,7 +308,7 @@ If an on-device decisioning activity is not executing, but you have verified tha
 
 **Java SDK**
 
-```java
+```js
 Context context = new Context()
   .channel(ChannelType.WEB);
 MboxRequest mbox = new MboxRequest()
