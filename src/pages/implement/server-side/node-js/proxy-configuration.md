@@ -1,6 +1,6 @@
 # Proxy Configuration
 
-It is possible to configure a proxy for the Node SDK's HTTP requests. This is possible by overriding the `fetch` API used by the SDK during initialization.
+It is possible to configure a proxy for the Node SDK's HTTP requests. This is done by overriding the `fetch` API used by the SDK during initialization.
 
 The following is a basic example of how to override `fetchApi` during the `TargetClient` initialization to add a proxy:
 
