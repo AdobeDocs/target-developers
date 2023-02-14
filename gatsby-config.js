@@ -660,6 +660,10 @@ module.exports = {
           {
             title: 'Logger',
             path: '/implement/server-side/node-js/logger.md'
+          },
+          {
+            title: 'Proxy Configuration',
+            path: '/implement/server-side/node-js/proxy-configuration.md'
           }
         ]
       },
