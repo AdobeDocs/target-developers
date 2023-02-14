@@ -2,7 +2,7 @@
 
 It is possible to configure a proxy for the Node SDK's HTTP requests. This is possible by overriding the `fetch` API used by the SDK during initialization.
 
-The following is a basic example of how to override `fetchApi` during the `TargetClient` initialization to add a proxy: 
+The following is a basic example of how to override `fetchApi` during the `TargetClient` initialization to add a proxy:
 
 ```javascript
 const { ProxyAgent } = require("undici");
@@ -21,6 +21,6 @@ client = TargetClient.create({
 });
 ```
 
-Note that this only works for Node versions 18.2+, in which `undici.fetch` is the default `fetch` for node. 
-Please visit the [Node SDK samples repo](https://github.com/ericfichtel/target-nodejs-sdk-samples/tree/TNT-46700/proxy-configuration) for proxy configuration examples
-for older versions of node and more information. 
+Note that this only works for Node versions 18.2+, in which `undici.fetch` is the default `fetch` for node.
+Please visit the [Node SDK samples repo](https://github.com/ericfichtel/target-nodejs-sdk-samples/tree/TNT-46700/proxy-configuration)
+for proxy configuration examples for older versions of node and more information.
