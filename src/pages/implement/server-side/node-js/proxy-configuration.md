@@ -22,5 +22,5 @@ client = TargetClient.create({
 ```
 
 Note that this only works for Node versions 18.2+, in which `undici.fetch` is the default `fetch` for node.
-Please visit the [Node SDK samples repo](https://github.com/ericfichtel/target-nodejs-sdk-samples/tree/TNT-46700/proxy-configuration)
+Please visit the [Node SDK samples repo](https://github.com/adobe/target-nodejs-sdk-samples/tree/master/proxy-configuration)
 for proxy configuration examples for older versions of node and more information.
