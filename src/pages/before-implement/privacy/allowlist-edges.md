@@ -20,7 +20,7 @@ Information and an up-to-date list of hosts to help you allowlist Adobe Target e
 
 An edge is a geographically distributed serving architecture that ensures optimum response times for end-users requesting content, regardless of where they are located. Each edge node has all the information required to respond to the user's content request and to track analytics data on that request. User requests are routed to the nearest edge node. For more information, see [The edge network](https://experienceleague.adobe.com/docs/target/using/introduction/how-target-works.html#concept_0AE2ED8E9DE64288A8B30FCBF1040934).
 
-You can allowlist Target edge nodes, if desired. 
+You can allowlist Target edge nodes, if desired.
 
 ## Network Address Translation (NAT) IP addresses of Target edges
 
