@@ -125,7 +125,7 @@ Overview of how to implement Adobe Target with Adobe Experience Platform Mobile 
 
 <DiscoverBlock slots= "link, text"/>
 
-[AEP Mobile SDK Reference](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-target)
+[AEP Mobile SDK Reference](https://developer.adobe.com/client-sdks/documentation/)
 
 Implement Adobe Target with Adobe Experience Platform Mobile SDKs.
 
@@ -175,7 +175,7 @@ Overview and configuration requirements for Adobe Target Admin and Profile APIs,
 
 [Admin API](administer/admin-api/) 
 
-Use Adobe Target’s Admin API to manage properties, activities, audiences, offers, properties, reports, mboxes, hosts, environments, and more.
+Use Adobe Target's Admin API to manage properties, activities, audiences, offers, properties, reports, mboxes, hosts, environments, and more.
 
 <DiscoverBlock slots="link, text"/> 
 
