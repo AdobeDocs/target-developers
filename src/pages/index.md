@@ -5,7 +5,7 @@ contributors:
   - https://github.com/icaraps
 ---
 
-<Hero slots="heading, text"/> 
+<Hero slots="heading, text"/>
 
 # Adobe Target Developer Guide
 
