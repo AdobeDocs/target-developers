@@ -42,7 +42,7 @@ List of IP addresses of Target edges. Allowlist these IPs if you want to make AP
 
 <InlineAlert variant="warning" slots="text" />
 
-This list will change often, as the load balancers scale up and down based on traffic profiles. See below for script.
+This list will change often, as the load balancers scale up and down based on traffic profiles.
 
 |Edge Location|Domain|IP Addresses|
 | --- | --- | --- |
