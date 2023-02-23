@@ -28,9 +28,13 @@ For more information, see the following links in the *Adobe Experience Platform 
 
 Learn how to implement Experience Cloud applications using Adobe Experience Platform Web SDK with [this tutorial](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html). For information specific to Target, see the tutorial section titled [Set up Target with Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html).
 
+## Tutorial: Migrate Target from at.js 2.*x* to Platform Web SDK
+
+Learn how to migrate your Target implementation from at.js 2.*x* to the Adobe Experience Platform Web SDK with [this tutorial](https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html).
+
 ## Recommended documentation
 
-In addition to the Platform Web SDK documentation mentioned above, topics in this guide also have information specific to the Platform Web SDK as it relates to Target features and functionality.
+In addition to the Platform Web SDK documentation mentioned above, the following topics also have information specific to the Platform Web SDK as it relates to Target features and functionality.
 
 |Feature|Description/Link|
 | --- | --- |
