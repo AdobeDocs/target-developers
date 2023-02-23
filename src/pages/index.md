@@ -51,9 +51,15 @@ Implement Target using the AEP Web SDK.
 
 <DiscoverBlock slots="link, text"/>
 
-[Target Web SDK](implement/client-side/)
+[Target at.js](implement/client-side/)
 
 Implement Target using at.js.
+
+<DiscoverBlock slots="link, text"/>
+
+[Migrate from at.js to Web SDK](https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html)
+
+Migrate Target from at.js 2.x to Platform Web SDK.
 
 <DiscoverBlock slots="heading, link, text"/>
 
