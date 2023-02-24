@@ -67,7 +67,7 @@
                       },
                       "thirdPartyId": {
                         "type": "string",
-                        "maxLength": 128,
+                        "maxLength": 256,
                         "description": "Third party id\n"
                       },
                       "marketingCloudVisitorId": {
