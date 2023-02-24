@@ -101,14 +101,6 @@ For video instructions applicable for any Experience Cloud solution, including T
 7. Note `CLIENT_SECRET` and `API_KEY` (along with other variables) have their values pre-populated, taken from your integration as defined in the Adobe Developer Console. (The Postman `CLIENT_SECRET` variable should match the `CLIENT SECRET` Adobe credential as displayed in the Developer Console, and `API_KEY` in Postman should likewise match `CLIENT ID` in the Developer Console.) By contrast, note `PRIVATE_KEY`, `JWT_TOKEN`, and `ACCESS_TOKEN` are blank. Let's start by providing the `PRIVATE_KEY` value.
    ![JWT7](assets/configure-io-target-jwt7.png)
 
-<InlineAlert variant="help" slots="text"/>
-
-Pop quiz! Can you remember where your private key is?
-
-<InlineAlert variant="success" slots="text"/>
-
-That's right, it's in the `config` file downloaded earlier from the Adobe Developer Console!
-
 8. From your file system, open your `config` file, and open the `private` key file.
    ![JWT8](assets/configure-io-target-jwt8.png)
 9. Select and copy the entire contents of the `private` key file.
@@ -116,7 +108,6 @@ That's right, it's in the `config` file downloaded earlier from the Adobe Develo
 10. In Postman, paste your private key value into the **INITIAL VALUE** and **CURRENT VALUE** fields.
    ![JWT10](assets/configure-io-target-jwt10.png)
 11. Click **Update**, and close the Environments modal.
-
 
 ## Generate the bearer access token
 
