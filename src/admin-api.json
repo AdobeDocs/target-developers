@@ -9978,12 +9978,6 @@
             "type": "string",
             "format": "date-time"
           },
-          "lastModifiedByUserImsName": {
-            "type": "string"
-          },
-          "createdByUserImsName": {
-            "type": "string"
-          },
           "workspaces": {
             "maxItems": 200,
             "minItems": 0,
@@ -11973,12 +11967,6 @@
             "type": "string",
             "format": "date-time"
           },
-          "modifiedBy": {
-            "type": "string"
-          },
-          "modifiedByImsUserId": {
-            "type": "string"
-          },
           "reportDataReset": {
             "type": "boolean"
           },
@@ -12334,10 +12322,10 @@
               "type": "string"
             }
           },
-          "outlier": {
+          "duplicate": {
             "type": "boolean"
           },
-          "duplicate": {
+          "outlier": {
             "type": "boolean"
           }
         },
