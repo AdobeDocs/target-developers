@@ -28,7 +28,7 @@ This function was introduced with at.js 2.x. This function is not available for 
 | --- | --- | --- | --- |
 |viewName|String|Yes|Pass in any name as a string type that you want to represent your view. This view name appears in the Modifications panel of the VEC for marketers to create actions and run their A/B and XT activities.|
 |options|Object|No||
-|options > page|Boolean|No|**TRUE:** Default value of page is true. When page=true, notifications are sent to the Target backend for incrementing impression count.<br />A notification is always sent by default when a `triggerView` is called, except when options > page is set to false.<br />**FALSE:** When page=false, notifications are not sent for incrementing impression count. This should be used when you want to only re-render a component on a page with an offer.|
+|options > page|Boolean|No|**TRUE:** Default value of page is true. When page=true, notifications are sent to the Target backend for incrementing impression count.<br />A notification is always sent by default when a `triggerView` is called, except when options > page is set to false.<br />**FALSE:** When page=false, notifications are not sent for incrementing impression count. This should be used when you want to only re-render a component on a page with an offer.<br />**Note**: Custom Code offers in the VEC are not re-rendered when `triggerView()` is called with `{page: false}` as the option.|
 
 ## Example: True
 
