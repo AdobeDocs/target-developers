@@ -45,3 +45,33 @@ adobe.target.triggerView("homeView")
 ```javascript
 adobe.target.triggerView("homeView", {page: false})
 ```
+
+## Example: Promise chaining with `getoffers()` and `applyOffers()`
+
+To execute `triggerView()` when the `getOffers()` promise is resolved, it is important to execute `triggerView()` on the final block, as shown in the example below. This is necessary for the VEC to detect `Views` in authoring mode. 
+
+```javascript {line-numbers="true"}
+adobe.target.getOffers({
+    'request': {
+        'prefetch': {
+            'views': [{
+                'parameters': {}
+            }]
+        }
+    }
+}).then(function(response) {
+    // Apply Offers
+    adobe.target.applyOffers({
+        response: response
+    });
+}).catch(function(error) {
+    console.log("AT: getOffers failed - Error", error);
+}).finally(() => {
+    // Trigger View call, assuming pageView is defined elsewhere
+    adobe.target.triggerView(pageView, {
+        page: true
+    });
+    console.log('AT: View triggered on : ' + pageView);
+});
+```
+
