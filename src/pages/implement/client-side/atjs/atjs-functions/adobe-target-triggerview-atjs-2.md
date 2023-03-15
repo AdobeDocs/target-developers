@@ -74,3 +74,4 @@ adobe.target.getOffers({
     console.log('AT: View triggered on : ' + pageView);
 });
 ```
+
