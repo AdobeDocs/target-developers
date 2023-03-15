@@ -25,9 +25,7 @@ Adobe Target has enabled processes and settings that allow you to use Target in 
 
 The IP address of a visitor to your website is transmitted to an Adobe Data Processing Center (DPC). Depending on the network configuration for the visitor, the IP address does not necessarily represent the IP address of the visitor's computer. For example, the IP address could be the external IP address of a Network Address Translation (NAT) firewall, HTTP proxy, or Internet gateway. 
 
->[!IMPORTANT]
->
->[!DNL Target] does not store any IP addresses of the user or any Personally Identifiable Information (PII). IP addresses are used only by [!DNL Target] during the session (in-memory, never persisted).
+Target does not store any IP addresses of the user or any Personally Identifiable Information (PII). IP addresses are used only by Target during the session (in-memory, never persisted).
 
 ## Replacement of last octet of IP addresses
 
