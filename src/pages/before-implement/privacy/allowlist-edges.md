@@ -24,7 +24,7 @@ An edge is a geographically distributed serving architecture that ensures optimu
 
 In addition to allowlisting the Network Address Translation (NAT) IP addresses of Target edges and Target edge IP addresses discussed in the article, you should also allowlist all Adobe Analytics IP address blocks. For more information, see [All Adobe Analytics IP address blocks](https://experienceleague.adobe.com/docs/analytics/technotes/ip-addresses.html?lang=en#all-adobe-analytics-ip-address-blocks) in the *Adobe Analytics tech notes* documentation.
 
-You can allowlist Target edge nodes, if desired.
+You can allowlist Target edge nodes, if desired. 
 
 ## Network Address Translation (NAT) IP addresses of Target edges
 
