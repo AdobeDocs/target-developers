@@ -12,6 +12,636 @@
     }
   ],
   "paths": {
+    "/{tenant}/target/ui/v1/activities/ab/{id}": {
+      "get": {
+        "tags": [
+          "Ui"
+        ],
+        "summary": "Get AB activity by ID",
+        "description": "Fetch the current definition of an AB activity as referenced by the provided ID.",
+        "operationId": "getActivity",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "407": {
+            "description": "Proxy Authentication Required",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "Method Not Allowed",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "406": {
+            "description": "Not Acceptable",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "415": {
+            "description": "Unsupported Media Type",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/vnd.adobe.target.v1+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ABActivity"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Ui"
+        ],
+        "summary": "Update AB activity",
+        "description": "Update the AB activity definition with the contents as provided in the request. This can change the state and behaviour of an existing activity.",
+        "operationId": "updateActivity",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/vnd.adobe.target.v1+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ABActivity"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "407": {
+            "description": "Proxy Authentication Required",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "Method Not Allowed",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "406": {
+            "description": "Not Acceptable",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "415": {
+            "description": "Unsupported Media Type",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/vnd.adobe.target.v1+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ABActivity"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Ui"
+        ],
+        "summary": "Delete AB activity",
+        "description": "Delete the AB activity referenced by the provided ID.",
+        "operationId": "deleteActivity",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "407": {
+            "description": "Proxy Authentication Required",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "Method Not Allowed",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "406": {
+            "description": "Not Acceptable",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "415": {
+            "description": "Unsupported Media Type",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/vnd.adobe.target.v1+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ABActivity"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/{tenant}/target/ui/v1/activities/xt/{id}": {
+      "get": {
+        "tags": [
+          "Ui"
+        ],
+        "summary": "Get AB activity by ID",
+        "description": "Fetch the current definition of an AB activity as referenced by the provided ID.",
+        "operationId": "getActivity_1",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "407": {
+            "description": "Proxy Authentication Required",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "Method Not Allowed",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "406": {
+            "description": "Not Acceptable",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "415": {
+            "description": "Unsupported Media Type",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/vnd.adobe.target.v1+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ABActivity"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Ui"
+        ],
+        "summary": "Update AB activity",
+        "description": "Update the AB activity definition with the contents as provided in the request. This can change the state and behaviour of an existing activity.",
+        "operationId": "updateActivity_1",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/vnd.adobe.target.v1+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ABActivity"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "407": {
+            "description": "Proxy Authentication Required",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "Method Not Allowed",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "406": {
+            "description": "Not Acceptable",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "415": {
+            "description": "Unsupported Media Type",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/vnd.adobe.target.v1+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ABActivity"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Ui"
+        ],
+        "summary": "Delete AB activity",
+        "description": "Delete the AB activity referenced by the provided ID.",
+        "operationId": "deleteActivity_1",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "407": {
+            "description": "Proxy Authentication Required",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "Method Not Allowed",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "406": {
+            "description": "Not Acceptable",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "415": {
+            "description": "Unsupported Media Type",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/vnd.adobe.target.v1+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ABActivity"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/{tenant}/target/properties/{id}": {
       "get": {
         "tags": [
@@ -62,6 +692,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -84,16 +724,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -173,6 +803,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -195,16 +835,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -274,6 +904,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -296,16 +936,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -377,6 +1007,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -399,16 +1039,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -488,6 +1118,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -510,16 +1150,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -589,6 +1219,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -611,16 +1251,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -692,6 +1322,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -714,16 +1354,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -813,6 +1443,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -835,16 +1475,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -919,6 +1549,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -941,16 +1581,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -1027,6 +1657,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -1049,16 +1689,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -1148,6 +1778,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -1170,16 +1810,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -1254,6 +1884,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -1276,16 +1916,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -1371,6 +2001,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -1393,16 +2033,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -1471,6 +2101,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -1493,16 +2133,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -1574,6 +2204,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -1596,16 +2236,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -1685,6 +2315,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -1707,16 +2347,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -1786,6 +2416,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -1808,16 +2448,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -1878,6 +2508,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -1900,16 +2540,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -1978,6 +2608,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -2000,16 +2640,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -2070,6 +2700,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -2092,16 +2732,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -2170,6 +2800,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -2192,16 +2832,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -2262,6 +2892,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -2284,16 +2924,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -2362,6 +2992,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -2384,16 +3024,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -2476,6 +3106,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -2498,16 +3138,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -2601,6 +3231,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -2623,16 +3263,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -2693,6 +3323,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -2715,16 +3355,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -2793,6 +3423,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -2815,16 +3455,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -2896,6 +3526,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -2918,16 +3558,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -3027,6 +3657,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -3049,16 +3689,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -3138,6 +3768,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -3160,16 +3800,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -3259,6 +3889,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -3281,16 +3921,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -3351,6 +3981,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -3373,16 +4013,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -3451,6 +4081,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -3473,16 +4113,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -3564,6 +4194,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -3586,16 +4226,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -3677,6 +4307,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -3699,16 +4339,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -3790,6 +4420,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -3812,16 +4452,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -3903,6 +4533,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -3925,16 +4565,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -4016,6 +4646,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -4038,16 +4678,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -4129,6 +4759,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -4151,16 +4791,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -4242,6 +4872,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -4264,16 +4904,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -4355,6 +4985,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -4377,16 +5017,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -4468,6 +5098,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -4490,16 +5130,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -4581,6 +5211,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -4603,16 +5243,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -4694,6 +5324,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -4716,16 +5356,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -4807,6 +5437,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -4837,16 +5477,6 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
           "200": {
             "description": "OK",
             "content": {
@@ -4867,7 +5497,7 @@
         ],
         "summary": "Get AP activity by ID",
         "description": "Fetch the current definition of an Automated Personalization activity as referenced by the provided ID.",
-        "operationId": "getActivity_1",
+        "operationId": "getActivity_2_1",
         "parameters": [
           {
             "name": "id",
@@ -4910,6 +5540,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -4932,16 +5572,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -5031,6 +5661,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -5053,16 +5693,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -5094,7 +5724,7 @@
         ],
         "summary": "Delete AP activity",
         "description": "Delete the Automated Personalization activity referenced by the provided ID.",
-        "operationId": "deleteActivity_1",
+        "operationId": "deleteActivity_2_1",
         "parameters": [
           {
             "name": "id",
@@ -5137,6 +5767,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -5159,16 +5799,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -5202,7 +5832,7 @@
         ],
         "summary": "Get AB activity by ID",
         "description": "Fetch the current definition of an AB activity as referenced by the provided ID.",
-        "operationId": "getActivity_3_1",
+        "operationId": "getActivity_2_2_1",
         "parameters": [
           {
             "name": "id",
@@ -5245,6 +5875,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -5267,16 +5907,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -5313,7 +5943,7 @@
         ],
         "summary": "Update AB activity",
         "description": "Update the AB activity definition with the contents as provided in the request. This can change the state and behaviour of an existing activity.",
-        "operationId": "updateActivity_2_1",
+        "operationId": "updateActivity_2_1_1",
         "parameters": [
           {
             "name": "id",
@@ -5376,6 +6006,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -5398,16 +6038,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -5444,7 +6074,7 @@
         ],
         "summary": "Delete AB activity",
         "description": "Delete the AB activity referenced by the provided ID.",
-        "operationId": "deleteActivity_3_1",
+        "operationId": "deleteActivity_2_2_1",
         "parameters": [
           {
             "name": "id",
@@ -5487,6 +6117,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -5509,16 +6149,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -5557,7 +6187,7 @@
         ],
         "summary": "Get AB activity by ID",
         "description": "Fetch the current definition of an AB activity as referenced by the provided ID.",
-        "operationId": "getActivity_2_1_1",
+        "operationId": "getActivity_3_1_1",
         "parameters": [
           {
             "name": "id",
@@ -5600,6 +6230,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -5622,16 +6262,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -5668,7 +6298,7 @@
         ],
         "summary": "Update AB activity",
         "description": "Update the AB activity definition with the contents as provided in the request. This can change the state and behaviour of an existing activity.",
-        "operationId": "updateActivity_1_1_1",
+        "operationId": "updateActivity_3_1_1",
         "parameters": [
           {
             "name": "id",
@@ -5731,6 +6361,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -5753,16 +6393,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -5799,7 +6429,7 @@
         ],
         "summary": "Delete AB activity",
         "description": "Delete the AB activity referenced by the provided ID.",
-        "operationId": "deleteActivity_2_1_1",
+        "operationId": "deleteActivity_3_1_1",
         "parameters": [
           {
             "name": "id",
@@ -5842,6 +6472,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -5872,16 +6512,6 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
           "200": {
             "description": "OK",
             "content": {
@@ -5895,6 +6525,464 @@
                   "$ref": "#/components/schemas/ABActivity"
                 }
               },
+              "application/vnd.adobe.target.v1+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ABActivity"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/{tenant}/target/ui/v1/activities/ab/{id}/qamode": {
+      "post": {
+        "tags": [
+          "Ui"
+        ],
+        "summary": "Create AB Activity QAMode Response",
+        "description": "Create AB Activity QAMode Response",
+        "operationId": "createABActivityQAModeResponse",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/vnd.adobe.target.v1+json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "qaModeRequest": {
+                    "$ref": "#/components/schemas/QAModeRequest"
+                  },
+                  "activityType": {
+                    "type": "string",
+                    "enum": [
+                      "ab",
+                      "xt",
+                      "abt"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "407": {
+            "description": "Proxy Authentication Required",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "Method Not Allowed",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "406": {
+            "description": "Not Acceptable",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "415": {
+            "description": "Unsupported Media Type",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/vnd.adobe.target.v1+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ABQAModeResponseDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/{tenant}/target/ui/v1/activities/xt/{id}/qamode": {
+      "post": {
+        "tags": [
+          "Ui"
+        ],
+        "summary": "Create AB Activity QAMode Response",
+        "description": "Create AB Activity QAMode Response",
+        "operationId": "createABActivityQAModeResponse_1",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/vnd.adobe.target.v1+json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "qaModeRequest": {
+                    "$ref": "#/components/schemas/QAModeRequest"
+                  },
+                  "activityType": {
+                    "type": "string",
+                    "enum": [
+                      "ab",
+                      "xt",
+                      "abt"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "407": {
+            "description": "Proxy Authentication Required",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "Method Not Allowed",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "406": {
+            "description": "Not Acceptable",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "415": {
+            "description": "Unsupported Media Type",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/vnd.adobe.target.v1+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ABQAModeResponseDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/{tenant}/target/ui/v1/activities/ab": {
+      "post": {
+        "tags": [
+          "Ui"
+        ],
+        "summary": "Create AB activity",
+        "description": "Create a new AB activity based on the specified contents, and return the created activity.",
+        "operationId": "createActivity",
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "application/vnd.adobe.target.v1+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ABActivity"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "407": {
+            "description": "Proxy Authentication Required",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "Method Not Allowed",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "406": {
+            "description": "Not Acceptable",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "415": {
+            "description": "Unsupported Media Type",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "Created",
+            "content": {
+              "application/vnd.adobe.target.v1+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ABActivity"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/{tenant}/target/ui/v1/activities/xt": {
+      "post": {
+        "tags": [
+          "Ui"
+        ],
+        "summary": "Create AB activity",
+        "description": "Create a new AB activity based on the specified contents, and return the created activity.",
+        "operationId": "createActivity_2",
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "application/vnd.adobe.target.v1+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ABActivity"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "407": {
+            "description": "Proxy Authentication Required",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "Method Not Allowed",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "406": {
+            "description": "Not Acceptable",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "415": {
+            "description": "Unsupported Media Type",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "Created",
+            "content": {
               "application/vnd.adobe.target.v1+json": {
                 "schema": {
                   "$ref": "#/components/schemas/ABActivity"
@@ -5945,6 +7033,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -5967,16 +7065,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -6045,6 +7133,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -6067,16 +7165,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -6138,6 +7226,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -6160,16 +7258,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -6238,6 +7326,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -6260,16 +7358,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -6341,6 +7429,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -6363,16 +7461,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -6449,6 +7537,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -6471,16 +7569,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -6562,6 +7650,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -6584,16 +7682,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -6660,6 +7748,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -6682,16 +7780,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -6760,6 +7848,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -6782,16 +7880,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -6873,6 +7961,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -6895,16 +7993,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -6979,6 +8067,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -7001,16 +8099,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -7082,6 +8170,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -7104,16 +8202,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -7175,6 +8263,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -7197,16 +8295,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -7296,6 +8384,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -7318,16 +8416,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -7366,7 +8454,7 @@
         ],
         "summary": "Create AP activity",
         "description": "Create a new Automated Personalization activity based on the specified contents, and return the created activity.",
-        "operationId": "createActivity_2",
+        "operationId": "createActivity_3_1",
         "parameters": [],
         "requestBody": {
           "content": {
@@ -7414,6 +8502,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -7436,16 +8534,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -7479,7 +8567,7 @@
         ],
         "summary": "Create AB activity",
         "description": "Create a new AB activity based on the specified contents, and return the created activity.",
-        "operationId": "createActivity_4_1",
+        "operationId": "createActivity_3_2_1",
         "parameters": [],
         "requestBody": {
           "content": {
@@ -7532,6 +8620,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -7554,16 +8652,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -7602,7 +8690,7 @@
         ],
         "summary": "Create AB activity",
         "description": "Create a new AB activity based on the specified contents, and return the created activity.",
-        "operationId": "createActivity_3_1_1",
+        "operationId": "createActivity_4_1_1",
         "parameters": [],
         "requestBody": {
           "content": {
@@ -7655,6 +8743,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -7677,16 +8775,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -7775,6 +8863,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -7797,16 +8895,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -7886,6 +8974,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -7908,16 +9006,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -8006,6 +9094,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -8028,16 +9126,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -8126,6 +9214,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -8148,16 +9246,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -8219,6 +9307,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -8241,16 +9339,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -8312,6 +9400,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -8334,16 +9432,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -8410,6 +9498,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -8432,16 +9530,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -8513,6 +9601,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -8535,16 +9633,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -8606,6 +9694,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -8628,16 +9726,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -8708,6 +9796,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -8730,16 +9828,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -8801,6 +9889,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -8823,16 +9921,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -8893,6 +9981,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -8915,16 +10013,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -8989,6 +10077,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -9011,16 +10109,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -9102,6 +10190,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -9124,16 +10222,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -9205,6 +10293,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -9227,16 +10325,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -9308,6 +10396,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -9330,16 +10428,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -9411,6 +10499,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -9433,16 +10531,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -9514,6 +10602,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -9536,16 +10634,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -9617,6 +10705,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -9639,16 +10737,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -9720,6 +10808,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -9742,16 +10840,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -9823,6 +10911,16 @@
               }
             }
           },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "405": {
             "description": "Method Not Allowed",
             "content": {
@@ -9845,16 +10943,6 @@
           },
           "415": {
             "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
             "content": {
               "*/*": {
                 "schema": {
@@ -9939,6 +11027,608 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Error"
+            }
+          }
+        },
+        "description": ""
+      },
+      "ABActivity": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "thirdPartyId": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "startsAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "endsAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "state": {
+            "$ref": "#/components/schemas/ActivityState"
+          },
+          "priority": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "autoAllocateTraffic": {
+            "$ref": "#/components/schemas/AutoAllocateTraffic"
+          },
+          "entryConstraint": {
+            "$ref": "#/components/schemas/EntryConstraint"
+          },
+          "options": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Option"
+            }
+          },
+          "locations": {
+            "$ref": "#/components/schemas/Locations"
+          },
+          "experiences": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Experience"
+            }
+          },
+          "metrics": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Metric"
+            }
+          },
+          "reportingAudiences": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ReportingAudience"
+            }
+          },
+          "analytics": {
+            "$ref": "#/components/schemas/Analytics"
+          },
+          "propertyIds": {
+            "uniqueItems": true,
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          "workspace": {
+            "$ref": "#/components/schemas/workspace"
+          },
+          "modifiedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "views": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ViewReference"
+            }
+          },
+          "applicationContext": {
+            "$ref": "#/components/schemas/ApplicationContext"
+          }
+        },
+        "description": ""
+      },
+      "Analytics": {
+        "type": "object",
+        "properties": {
+          "dataCollectionHost": {
+            "type": "string"
+          },
+          "reportSuites": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ReportSuites"
+            }
+          }
+        },
+        "description": ""
+      },
+      "ApplicationContext": {
+        "type": "object",
+        "properties": {
+          "channel": {
+            "type": "string",
+            "enum": [
+              "web",
+              "mobile"
+            ]
+          },
+          "applicationVersions": {
+            "uniqueItems": true,
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "mobilePlatformVersions": {
+            "uniqueItems": true,
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "deviceType": {
+            "type": "string",
+            "enum": [
+              "phone",
+              "tablet"
+            ]
+          },
+          "screenOrientation": {
+            "type": "string",
+            "enum": [
+              "vertical",
+              "horizontal"
+            ]
+          }
+        },
+        "description": ""
+      },
+      "AutoAllocateTraffic": {
+        "type": "object",
+        "properties": {
+          "enabled": {
+            "type": "boolean"
+          },
+          "successEvaluationCriteria": {
+            "type": "string",
+            "enum": [
+              "conversion_rate",
+              "rpv",
+              "engagement"
+            ]
+          }
+        },
+        "description": ""
+      },
+      "ClickTrackSelector": {
+        "type": "object",
+        "properties": {
+          "selector": {
+            "type": "string"
+          },
+          "audienceIds": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          "selectorVersion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "viewLocalId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "description": ""
+      },
+      "Conditions": {
+        "type": "object",
+        "properties": {
+          "maxVisitCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "maxImpressionCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "experiences": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExperienceCondition"
+            }
+          }
+        },
+        "description": ""
+      },
+      "EntryConstraint": {
+        "type": "object",
+        "properties": {
+          "mboxes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/EntryConstraintMbox"
+            }
+          },
+          "visitorPercentage": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "description": ""
+      },
+      "EntryConstraintMbox": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "audienceIds": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        },
+        "description": ""
+      },
+      "Experience": {
+        "type": "object",
+        "properties": {
+          "experienceLocalId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          },
+          "audienceIds": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          "visitorPercentage": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "optionLocations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/OptionLocation"
+            }
+          }
+        },
+        "description": ""
+      },
+      "ExperienceCondition": {
+        "type": "object",
+        "properties": {
+          "experienceLocalId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "maxVisitCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "maxImpressionCount": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "description": ""
+      },
+      "Locations": {
+        "type": "object",
+        "properties": {
+          "mboxes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Mbox"
+            }
+          },
+          "selectors": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Selector"
+            }
+          }
+        },
+        "description": ""
+      },
+      "Mbox": {
+        "type": "object",
+        "properties": {
+          "locationLocalId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          },
+          "audienceIds": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        },
+        "description": ""
+      },
+      "Metric": {
+        "type": "object",
+        "properties": {
+          "metricLocalId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          },
+          "conversion": {
+            "type": "boolean"
+          },
+          "engagement": {
+            "type": "string",
+            "enum": [
+              "page_count",
+              "score",
+              "time_on_site",
+              "none"
+            ]
+          },
+          "action": {
+            "$ref": "#/components/schemas/MetricAction"
+          },
+          "mboxes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MetricMbox"
+            }
+          },
+          "clickTrackSelectors": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ClickTrackSelector"
+            }
+          },
+          "views": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MetricView"
+            }
+          },
+          "analytics": {
+            "$ref": "#/components/schemas/Analytics"
+          }
+        },
+        "description": ""
+      },
+      "MetricAction": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "count_once",
+              "count_landings",
+              "always_convert",
+              "restart_same_experience",
+              "restart_random_experience",
+              "restart_new_experience",
+              "exclude_to_same_experience",
+              "ban_from_campaign",
+              "experience_frequency_capping"
+            ]
+          },
+          "conditions": {
+            "$ref": "#/components/schemas/Conditions"
+          },
+          "onConditionsMetAction": {
+            "type": "string",
+            "enum": [
+              "count_once",
+              "count_landings",
+              "always_convert",
+              "restart_same_experience",
+              "restart_random_experience",
+              "restart_new_experience",
+              "exclude_to_same_experience",
+              "ban_from_campaign",
+              "experience_frequency_capping"
+            ]
+          }
+        },
+        "description": ""
+      },
+      "MetricMbox": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "successEvent": {
+            "type": "string",
+            "enum": [
+              "mbox_clicked",
+              "mbox_shown"
+            ]
+          },
+          "audienceIds": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        },
+        "description": ""
+      },
+      "MetricView": {
+        "type": "object",
+        "properties": {
+          "viewLocalId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "audienceIds": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        },
+        "description": ""
+      },
+      "OfferTemplate": {
+        "type": "object",
+        "properties": {
+          "offerTemplateId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "templateParameters": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TemplateParameter"
+            }
+          }
+        },
+        "description": ""
+      },
+      "Option": {
+        "type": "object",
+        "properties": {
+          "optionLocalId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          },
+          "offerId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "offerTemplates": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/OfferTemplate"
+            }
+          }
+        },
+        "description": ""
+      },
+      "OptionLocation": {
+        "type": "object",
+        "properties": {
+          "locationLocalId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "optionLocalId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "description": ""
+      },
+      "ReportSuites": {
+        "type": "object",
+        "properties": {
+          "companyName": {
+            "type": "string"
+          },
+          "reportSuites": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "description": ""
+      },
+      "ReportingAudience": {
+        "type": "object",
+        "properties": {
+          "reportingAudienceLocalId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "audienceId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "metricLocalId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "description": ""
+      },
+      "Selector": {
+        "type": "object",
+        "properties": {
+          "locationLocalId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          },
+          "selector": {
+            "type": "string"
+          },
+          "audienceIds": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          "selectorVersion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "viewLocalId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "description": ""
+      },
+      "TemplateParameter": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          }
+        },
+        "description": ""
+      },
+      "ViewReference": {
+        "type": "object",
+        "properties": {
+          "viewLocalId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "viewId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "audienceIds": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int64"
             }
           }
         },
@@ -10613,21 +12303,6 @@
         },
         "description": ""
       },
-      "Analytics": {
-        "type": "object",
-        "properties": {
-          "dataCollectionHost": {
-            "type": "string"
-          },
-          "reportSuites": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ReportSuites"
-            }
-          }
-        },
-        "description": ""
-      },
       "AutomatedExperiencesDTO": {
         "type": "object",
         "properties": {
@@ -10649,26 +12324,6 @@
         },
         "description": ""
       },
-      "ClickTrackSelector": {
-        "type": "object",
-        "properties": {
-          "selector": {
-            "type": "string"
-          },
-          "audienceIds": {
-            "type": "array",
-            "items": {
-              "type": "integer",
-              "format": "int64"
-            }
-          },
-          "selectorVersion": {
-            "type": "integer",
-            "format": "int32"
-          }
-        },
-        "description": ""
-      },
       "ControlExperienceDTO": {
         "type": "object",
         "properties": {
@@ -10686,38 +12341,6 @@
           },
           "custom": {
             "$ref": "#/components/schemas/ExperienceDTO"
-          }
-        },
-        "description": ""
-      },
-      "EntryConstraint": {
-        "type": "object",
-        "properties": {
-          "mboxes": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/EntryConstraintMbox"
-            }
-          },
-          "visitorPercentage": {
-            "type": "integer",
-            "format": "int32"
-          }
-        },
-        "description": ""
-      },
-      "EntryConstraintMbox": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string"
-          },
-          "audienceIds": {
-            "type": "array",
-            "items": {
-              "type": "integer",
-              "format": "int64"
-            }
           }
         },
         "description": ""
@@ -10795,155 +12418,6 @@
         },
         "description": ""
       },
-      "Locations": {
-        "type": "object",
-        "properties": {
-          "mboxes": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Mbox"
-            }
-          },
-          "selectors": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Selector"
-            }
-          }
-        },
-        "description": ""
-      },
-      "Mbox": {
-        "type": "object",
-        "properties": {
-          "locationLocalId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "name": {
-            "type": "string"
-          },
-          "audienceIds": {
-            "type": "array",
-            "items": {
-              "type": "integer",
-              "format": "int64"
-            }
-          }
-        },
-        "description": ""
-      },
-      "Metric": {
-        "type": "object",
-        "properties": {
-          "metricLocalId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "name": {
-            "type": "string"
-          },
-          "conversion": {
-            "type": "boolean"
-          },
-          "engagement": {
-            "type": "string",
-            "enum": [
-              "page_count",
-              "score",
-              "time_on_site",
-              "none"
-            ]
-          },
-          "optimizationCriteria": {
-            "type": "string",
-            "enum": [
-              "conversion_rate",
-              "rpv",
-              "aov",
-              "none"
-            ]
-          },
-          "mboxes": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/MetricMbox"
-            }
-          },
-          "clickTrackSelectors": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ClickTrackSelector"
-            }
-          },
-          "analytics": {
-            "$ref": "#/components/schemas/Analytics"
-          }
-        },
-        "description": ""
-      },
-      "MetricMbox": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string"
-          },
-          "successEvent": {
-            "type": "string",
-            "enum": [
-              "mbox_clicked",
-              "mbox_shown"
-            ]
-          },
-          "audienceIds": {
-            "type": "array",
-            "items": {
-              "type": "integer",
-              "format": "int64"
-            }
-          }
-        },
-        "description": ""
-      },
-      "OfferTemplate": {
-        "type": "object",
-        "properties": {
-          "offerTemplateId": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "templateParameters": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/TemplateParameter"
-            }
-          }
-        },
-        "description": ""
-      },
-      "Option": {
-        "type": "object",
-        "properties": {
-          "optionLocalId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "name": {
-            "type": "string"
-          },
-          "offerId": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "offerTemplates": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/OfferTemplate"
-            }
-          }
-        },
-        "description": ""
-      },
       "OptionGroup": {
         "type": "object",
         "properties": {
@@ -10960,39 +12434,6 @@
               "type": "integer",
               "format": "int32"
             }
-          }
-        },
-        "description": ""
-      },
-      "ReportSuites": {
-        "type": "object",
-        "properties": {
-          "companyName": {
-            "type": "string"
-          },
-          "reportSuites": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          }
-        },
-        "description": ""
-      },
-      "ReportingAudience": {
-        "type": "object",
-        "properties": {
-          "reportingAudienceLocalId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "audienceId": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "metricLocalId": {
-            "type": "integer",
-            "format": "int32"
           }
         },
         "description": ""
@@ -11038,29 +12479,6 @@
         },
         "description": ""
       },
-      "Selector": {
-        "type": "object",
-        "properties": {
-          "locationLocalId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "name": {
-            "type": "string"
-          },
-          "selector": {
-            "type": "string"
-          },
-          "audienceIds": {
-            "type": "array",
-            "items": {
-              "type": "integer",
-              "format": "int64"
-            }
-          }
-        },
-        "description": ""
-      },
       "TargetedExperiencesDTO": {
         "type": "object",
         "properties": {
@@ -11080,227 +12498,52 @@
         },
         "description": ""
       },
-      "TemplateParameter": {
+      "QAModeRequest": {
         "type": "object",
         "properties": {
-          "name": {
+          "url": {
             "type": "string"
           },
-          "value": {
-            "type": "string"
-          }
-        },
-        "description": ""
-      },
-      "ABActivity": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int64"
+          "currentActivityOnly": {
+            "type": "boolean"
           },
-          "thirdPartyId": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          },
-          "startsAt": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "endsAt": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "state": {
-            "$ref": "#/components/schemas/ActivityState"
-          },
-          "priority": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "autoAllocateTraffic": {
-            "$ref": "#/components/schemas/AutoAllocateTraffic"
-          },
-          "entryConstraint": {
-            "$ref": "#/components/schemas/EntryConstraint"
-          },
-          "options": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Option"
-            }
-          },
-          "locations": {
-            "$ref": "#/components/schemas/Locations"
-          },
-          "experiences": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Experience"
-            }
-          },
-          "metrics": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Metric"
-            }
-          },
-          "reportingAudiences": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ReportingAudience"
-            }
-          },
-          "analytics": {
-            "$ref": "#/components/schemas/Analytics"
-          },
-          "propertyIds": {
-            "uniqueItems": true,
+          "audienceIdsEvaluatedAsTrue": {
             "type": "array",
             "items": {
               "type": "integer",
-              "format": "int64"
+              "format": "int32"
             }
           },
-          "workspace": {
-            "$ref": "#/components/schemas/workspace"
-          },
-          "modifiedAt": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "views": {
+          "audienceIdsEvaluatedAsFalse": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/ViewReference"
+              "type": "integer",
+              "format": "int32"
             }
-          },
-          "applicationContext": {
-            "$ref": "#/components/schemas/ApplicationContext"
           }
         },
         "description": ""
       },
-      "ApplicationContext": {
+      "ABQAModeExperienceDTO": {
         "type": "object",
         "properties": {
-          "channel": {
-            "type": "string",
-            "enum": [
-              "web",
-              "mobile"
-            ]
+          "url": {
+            "type": "string"
           },
-          "applicationVersions": {
-            "uniqueItems": true,
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "mobilePlatformVersions": {
-            "uniqueItems": true,
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "deviceType": {
-            "type": "string",
-            "enum": [
-              "phone",
-              "tablet"
-            ]
-          },
-          "screenOrientation": {
-            "type": "string",
-            "enum": [
-              "vertical",
-              "horizontal"
-            ]
-          }
-        },
-        "description": ""
-      },
-      "AutoAllocateTraffic": {
-        "type": "object",
-        "properties": {
-          "enabled": {
-            "type": "boolean"
-          },
-          "successEvaluationCriteria": {
-            "type": "string",
-            "enum": [
-              "conversion_rate",
-              "rpv",
-              "engagement"
-            ]
-          }
-        },
-        "description": ""
-      },
-      "Experience": {
-        "type": "object",
-        "properties": {
           "experienceLocalId": {
             "type": "integer",
             "format": "int32"
-          },
-          "name": {
-            "type": "string"
-          },
-          "audienceIds": {
-            "type": "array",
-            "items": {
-              "type": "integer",
-              "format": "int64"
-            }
-          },
-          "visitorPercentage": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "optionLocations": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/OptionLocation"
-            }
           }
         },
         "description": ""
       },
-      "OptionLocation": {
+      "ABQAModeResponseDTO": {
         "type": "object",
         "properties": {
-          "locationLocalId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "optionLocalId": {
-            "type": "integer",
-            "format": "int32"
-          }
-        },
-        "description": ""
-      },
-      "ViewReference": {
-        "type": "object",
-        "properties": {
-          "viewLocalId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "viewId": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "audienceIds": {
+          "qaModeExperiences": {
             "type": "array",
             "items": {
-              "type": "integer",
-              "format": "int64"
+              "$ref": "#/components/schemas/ABQAModeExperienceDTO"
             }
           }
         },
