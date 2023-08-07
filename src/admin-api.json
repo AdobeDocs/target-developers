@@ -10207,6 +10207,7 @@
             "enum": [
               "target",
               "analytics",
+              "cja",
               "transitional"
             ]
           }
