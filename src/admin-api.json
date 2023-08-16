@@ -7723,8 +7723,8 @@
         "tags": [
           "Revisions"
         ],
-        "summary": "Get the audit log for entities filtered by modifiedBy field",
-        "description": "the audit log for an entity for a activities, audiences or offers filtered by the name of the person who made the modifications",
+        "summary": "Get the audit log for entities filtered by modifiedByName field",
+        "description": "Get revisions of activities, audiences or offers, filtered by last author\u0027s name",
         "operationId": "getRevisionLogForModifiedByName",
         "parameters": [
           {
@@ -7741,6 +7741,15 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "modifiedAt",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "format": "date-time"
             }
           }
         ],
@@ -7834,7 +7843,7 @@
           "Revisions"
         ],
         "summary": "Get the audit log for an entity",
-        "description": "the audit log for an entity for a activity, audience or offer in descending order by time",
+        "description": "Get revisions of an activity, audience or offer in descending order by time",
         "operationId": "getRevisionLog",
         "parameters": [
           {
@@ -7945,7 +7954,7 @@
           "Revisions"
         ],
         "summary": "Get revision at specified moment in time",
-        "description": "Get the latest revision that was created no later than the specified timestamp",
+        "description": "Get the latest revision created no later than a specified timestamp",
         "operationId": "getRevisionBeforeTimestamp",
         "parameters": [
           {
@@ -8065,7 +8074,7 @@
           "Revisions"
         ],
         "summary": "Get revision by id",
-        "description": "Get revision details for a activity, audience or offer by entity id and revision id",
+        "description": "Get revision details for an activity, audience or offer, by entity id and revision id",
         "operationId": "getRevision",
         "parameters": [
           {
@@ -10207,6 +10216,7 @@
             "enum": [
               "target",
               "analytics",
+              "cja",
               "transitional"
             ]
           }
@@ -12196,11 +12206,11 @@
       "DateTimeZone": {
         "type": "object",
         "properties": {
-          "fixed": {
-            "type": "boolean"
-          },
           "id": {
             "type": "string"
+          },
+          "fixed": {
+            "type": "boolean"
           }
         },
         "description": ""
@@ -12322,10 +12332,10 @@
               "type": "string"
             }
           },
-          "outlier": {
+          "duplicate": {
             "type": "boolean"
           },
-          "duplicate": {
+          "outlier": {
             "type": "boolean"
           }
         },
