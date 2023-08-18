@@ -1,0 +1,3252 @@
+{
+	"info": {
+		"name": "Recommendations",
+		"description": "Adobe Target Recommendations API are based on [REST](https://en.wikipedia.org/wiki/Representational_state_transfer). This describes the resources that make up the official Adobe Target Recommendations API. The resources are designated by nouns or objects in the world of Recommendations like a feed or a design. The functionalities or operations on resources are designated by HTTP methods in each resource request.\n\n* Documentation available at [Adobe Target Developers Page](http://http://developers.adobetarget.com/api/recommendations)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Collections",
+			"item": [
+				{
+					"name": "Get collection",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/collections/:collectionId",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"collections",
+								":collectionId"
+							],
+							"variable": [
+								{
+									"key": "collectionId",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Gets the collection with the given ID."
+					},
+					"response": []
+				},
+				{
+					"name": "List collections",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/collections",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"collections"
+							]
+						},
+						"description": "Gets all available collections."
+					},
+					"response": []
+				},
+				{
+					"name": "Create collection",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.adobe.target.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Backpacking Tents\",\n\t\"rules\": [\n\t\t{\n\t\t\t\"id\": {\n\t\t\t\t\"contains\": [\"backpacking\"]\n\t\t\t}\n\t\t}\n\t]\n}"
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/collections",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"collections"
+							]
+						},
+						"description": "Creates a new collection as specified by the rules provided and returns the newly created collection definition."
+					},
+					"response": []
+				},
+				{
+					"name": "Edit collection",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.adobe.target.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Backpacking & Camping Tents\",\n    \"rules\": [\n        {\n            \"id\": {\n                \"contains\": [\n                    \"backpacking\", \"camping\"\n                ]\n            }\n        }\n    ]\n}"
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/collections/:collectionId",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"collections",
+								":collectionId"
+							],
+							"variable": [
+								{
+									"key": "collectionId",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Updates the collection with new name and/or new rules as specified and returns the updated collection definition."
+					},
+					"response": []
+				},
+				{
+					"name": "Delete collection",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/collections/:collectionId",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"collections",
+								":collectionId"
+							],
+							"variable": [
+								{
+									"key": "collectionId",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Deletes the collection referenced by the given ID."
+					},
+					"response": []
+				}
+			],
+			"description": "A [collection](https://docs.adobe.com/content/help/en/target/using/recommendations/entities/collections.html) is a set of items that are eligible for a recommendation. It is defined by a set of membership rules. If an item satisfies these rules, it is a member of the collection.",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Criteria",
+			"item": [
+				{
+					"name": "Get criteria",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/:criteriaId",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								":criteriaId"
+							],
+							"variable": [
+								{
+									"key": "criteriaId",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Gets minimal criteria information by the provided ID. For detailed information, make API call to criteria group path, for example, `/criteria/item/{id}`."
+					},
+					"response": []
+				},
+				{
+					"name": "List criteria",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json",
+								"disabled": true
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria"
+							]
+						},
+						"description": "Gets all available criteria."
+					},
+					"response": []
+				}
+			],
+			"description": "[Criteria](https://docs.adobe.com/content/help/en/target/using/recommendations/criteria/algorithms.html) are rules that determine which items to recommend based on a predetermined set of visitor behaviors. Criteria are categorized into different groups depending on the recommendation key and recommendation logic. These groups are: category, item, recent, popularity, profile attribute, custom, sequence.",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Category Criteria",
+			"item": [
+				{
+					"name": "Get category criteria",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/category/:criteriaId",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"category",
+								":criteriaId"
+							],
+							"variable": [
+								{
+									"key": "criteriaId",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Gets the category based criteria with the given ID."
+					},
+					"response": []
+				},
+				{
+					"name": "List category criteria",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json",
+								"disabled": true
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/category",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"category"
+							]
+						},
+						"description": "Gets all available category based criteria."
+					},
+					"response": []
+				},
+				{
+					"name": "Create category criteria",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.adobe.target.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Most Popular Content from Visitor's Favorite Category\",\n    \"criteriaGroup\": \"CATEGORY\",\n    \"type\": \"VIEWED\",\n    \"key\": \"CURRENT\",\n    \"aggregation\": \"NONE\",\n    \"daysCount\": \"TWO_WEEKS\",\n    \"partialDesignAllowed\": false,\n    \"backupDisabled\": true,\n    \"excludePurchases\": false,\n    \"enableCaching\": false,\n    \"backupInclusionFilteringEnabled\": true,\n    \"configuration\": {\n        \"pastBehaviorOrdinal\": -1\n    }\n}"
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/category",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"category"
+							]
+						},
+						"description": "Creates a new category based criteria as specified by the settings and configuration provided and returns the newly created criteria definition."
+					},
+					"response": []
+				},
+				{
+					"name": "Edit category criteria",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.adobe.target.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Most Popular Content from a Visitor's Favorite Category\",\n    \"criteriaGroup\": \"CATEGORY\",\n    \"type\": \"VIEWED\",\n    \"key\": \"FAVORITE\",\n    \"aggregation\": \"NONE\",\n    \"daysCount\": \"TWO_WEEKS\",\n    \"partialDesignAllowed\": true,\n    \"backupDisabled\": false,\n    \"excludePurchases\": true,\n    \"enableCaching\": false,\n    \"backupInclusionFilteringEnabled\": true,\n    \"configuration\": {\n        \"pastBehaviorOrdinal\": 0\n    }\n}"
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/category/:criteriaId",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"category",
+								":criteriaId"
+							],
+							"variable": [
+								{
+									"key": "criteriaId",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Updates the category based critera with new settings and configuration as specified and returns the updated criteria definition."
+					},
+					"response": []
+				},
+				{
+					"name": "Delete category criteria",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/category/:criteriaId",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"category",
+								":criteriaId"
+							],
+							"variable": [
+								{
+									"key": "criteriaId",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Deletes the category based criteria referenced by the given ID."
+					},
+					"response": []
+				}
+			],
+			"description": "[Category Criteria](https://docs.adobe.com/content/help/en/target/using/recommendations/criteria/algorithms.html) are criteria based on item category. The recommendation key is currently viewed item category or visitor favorite category.",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Custom Criteria",
+			"item": [
+				{
+					"name": "Get custom criteria",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/custom/:criteriaId",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"custom",
+								":criteriaId"
+							],
+							"variable": [
+								{
+									"key": "criteriaId",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Gets the custom criteria with the given ID."
+					},
+					"response": []
+				},
+				{
+					"name": "List custom criteria",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/custom",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"custom"
+							]
+						},
+						"description": "Gets all available custom criteria."
+					},
+					"response": []
+				},
+				{
+					"name": "Create custom criteria",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.adobe.target.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"backupDisabled\": true,\n  \"configuration\": {\n    \"feed\": {\n      \"connection\": {\n    \t\"type\": \"url\",\n        \"attributes\": {\n          \"URL\": \"http://54.91.177.93/evc4/feed/classesevents.csv\"\n        },\n        \"type\": \"url\"\n      },\n      \"environmentId\": -1,\n      \"scheduleTime\": \"00:00:00\",\n      \"scheduleType\": \"daily\"\n    }\n  },\n  \"criteriaGroup\": \"CUSTOM\",\n  \"criteriaTitle\": \"Classes & Events\",\n  \"excludePurchases\": true,\n  \"key\": \"CURRENT\",\n  \"name\": \"Classes Events\",\n  \"partialDesignAllowed\": true\n}"
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/custom",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"custom"
+							]
+						},
+						"description": "Creates a new custom criteria as specified by the settings, configuration, and feed provided and returns the newly created criteria definition."
+					},
+					"response": []
+				},
+				{
+					"name": "Edit custom criteria",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.adobe.target.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"backupDisabled\": false,\n  \"configuration\": {\n    \"feed\": {\n      \"connection\": {\n    \t\"type\": \"url\",\n        \"attributes\": {\n          \"URL\": \"http://54.91.177.93/evc4/feed/classesevents.csv\"\n        },\n        \"type\": \"url\"\n      },\n      \"environmentId\": -1,\n      \"scheduleTime\": \"00:00:00\",\n      \"scheduleType\": \"daily\"\n    }\n  },\n  \"criteriaGroup\": \"CUSTOM\",\n  \"criteriaTitle\": \"Classes & Events\",\n  \"excludePurchases\": true,\n  \"key\": \"CURRENT\",\n  \"name\": \"Classes Events\",\n  \"partialDesignAllowed\": true\n}"
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/custom/:criteriaId",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"custom",
+								":criteriaId"
+							],
+							"variable": [
+								{
+									"key": "criteriaId",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Updates the custom criteria with new settings, configuration and feed as specified and returns the updated criteria definition."
+					},
+					"response": []
+				},
+				{
+					"name": "Delete custom criteria",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/custom/:criteriaId",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"custom",
+								":criteriaId"
+							],
+							"variable": [
+								{
+									"key": "criteriaId",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Deletes the custom criteria referenced by the given ID."
+					},
+					"response": []
+				}
+			],
+			"description": "[Custom Criteria](https://docs.adobe.com/content/help/en/target/using/recommendations/criteria/recommendations-csv.html) are criteria based on user-defined custom recommendations. You upload a CSV containing item keys and their corresponding list of recommendations. These recommendations, after applying configuration rules and settings, if any, will be delivered to your page. The item keys in your CSV should map to items or categories in the catalog. The recommendation key of this criteria can be any item based, category based key or profile attribute key depending on the item keys in the CSV. The CSV upload is carried out through a feed as part of POST request to create a custom criteria. Note, an item key refers to the key in the CSV feed whereas a recommendation key refers to how the item key will be treated, that is, it can be treated as ID of currently viewed item or visitor's favorite category.",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Item Criteria",
+			"item": [
+				{
+					"name": "Get item criteria",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/item/:criteriaId",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"item",
+								":criteriaId"
+							],
+							"variable": [
+								{
+									"key": "criteriaId",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Gets the item based criteria with the given ID."
+					},
+					"response": []
+				},
+				{
+					"name": "List item criteria",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/item",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"item"
+							]
+						},
+						"description": "Gets all available item based criteria."
+					},
+					"response": []
+				},
+				{
+					"name": "Create item criteria",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.adobe.target.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"aggregation\": \"NONE\",\n  \"backupDisabled\": true,\n  \"backupInclusionFilteringEnabled\": true,\n  \"configuration\": {\n    \"inclusionRules\": [\n      {\n        \"attribute\": \"brand\",\n        \"operation\": \"contains\",\n        \"source\": {\n          \"defaultValue\": \"rei-coop\",\n          \"name\": \"brand\",\n          \"type\": \"ENTITY\"\n        }\n      }\n    ],\n    \"pastBehaviorOrdinal\": -1\n  },\n  \"criteriaGroup\": \"ITEM\",\n  \"criteriaTitle\": \"Similar items\",\n  \"daysCount\": \"TWO_WEEKS\",\n  \"enableCaching\": false,\n  \"excludePurchases\": true,\n  \"key\": \"CURRENT\",\n  \"minInventory\": 1,\n  \"name\": \"Items with Brand Similarity\",\n  \"partialDesignAllowed\": false,\n  \"type\": \"SIMILARITY\"\n}"
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/item",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"item"
+							]
+						},
+						"description": "Creates a new item based criteria as specified by the settings and configuration provided and returns the newly created criteria definition."
+					},
+					"response": []
+				},
+				{
+					"name": "Edit item criteria",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.adobe.target.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"aggregation\": \"NONE\",\n  \"backupDisabled\": true,\n  \"backupInclusionFilteringEnabled\": true,\n  \"configuration\": {\n    \"inclusionRules\": [\n      {\n        \"attribute\": \"brand\",\n        \"operation\": \"contains\",\n        \"source\": {\n          \"defaultValue\": \"rei-coop\",\n          \"name\": \"brand\",\n          \"type\": \"ENTITY\"\n        }\n      }\n    ],\n    \"pastBehaviorOrdinal\": -1\n  },\n  \"criteriaGroup\": \"ITEM\",\n  \"criteriaTitle\": \"Similar items\",\n  \"daysCount\": \"TWO_WEEKS\",\n  \"enableCaching\": false,\n  \"excludePurchases\": true,\n  \"key\": \"CURRENT\",\n  \"minInventory\": 1,\n  \"name\": \"Items with Brand Similarity\",\n  \"partialDesignAllowed\": false,\n  \"type\": \"SIMILARITY\"\n}"
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/item/:criteriaId",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"item",
+								":criteriaId"
+							],
+							"variable": [
+								{
+									"key": "criteriaId",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Updates the item based critera with new settings and configuration as specified and returns the updated criteria definition."
+					},
+					"response": []
+				},
+				{
+					"name": "Delete item criteria",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/item/:criteriaId",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"item",
+								":criteriaId"
+							],
+							"variable": [
+								{
+									"key": "criteriaId",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Deletes the item based criteria referenced by the given ID."
+					},
+					"response": []
+				}
+			],
+			"description": "[Item Criteria](https://docs.adobe.com/content/help/en/target/using/recommendations/criteria/algorithms.html) are criteria based on visitor's activity on item. The recommendation key is currently viewed item, last viewed item, most viewed item or last purchased item. Note that this does not include recently viewed item, check Recent Criteria APIs for that.",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Cart Criteria",
+			"item": [
+				{
+					"name": "Get cart criteria",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/cart/:criteriaId",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"cart",
+								":criteriaId"
+							],
+							"variable": [
+								{
+									"key": "criteriaId",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Gets the cart based criteria with the given ID."
+					},
+					"response": []
+				},
+				{
+					"name": "List cart criteria",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/cart",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"cart"
+							]
+						},
+						"description": "Gets all available cart based criteria."
+					},
+					"response": []
+				},
+				{
+					"name": "Create cart criteria",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.adobe.target.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Cart based criteria\",\n    \"criteriaTitle\": \"Cart item recommendations matching current item category\",\n    \"daysCount\": \"TWO_WEEKS\",\n    \"minInventory\": 1,\n    \"partialDesignAllowed\": false,\n    \"backupDisabled\": true,\n    \"excludePurchases\": true,\n    \"backupInclusionFilteringEnabled\": true,\n    \"configuration\": {\n      \"inclusionRulesKey\" : \"CURRENT\", \n      \"inclusionRules\": [\n      {\n        \"attribute\": \"brand\",\n        \"operation\": \"contains\",\n        \"source\": {\n          \"defaultValue\": \"rei-coop\",\n          \"name\": \"brand\",\n          \"type\": \"ENTITY\"\n        }\n      }\n    ]\n    },\n    \"modelActionSettings\": {\n        \"actionOnKeyItems\": \"PURCHASE\",\n        \"actionOnRecommendedItems\": \"PURCHASE\",\n        \"basisForCooccurrence\": \"USERS\"\n    }\n}"
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/cart",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"cart"
+							]
+						},
+						"description": "Creates a new cart based criteria as specified by the settings and configuration provided and returns the newly created criteria definition."
+					},
+					"response": []
+				},
+				{
+					"name": "Edit cart criteria",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.adobe.target.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Cart based criteria\",\n    \"criteriaTitle\": \"Cart item recommendations matching current item category\",\n    \"daysCount\": \"TWO_WEEKS\",\n    \"minInventory\": 1,\n    \"partialDesignAllowed\": false,\n    \"backupDisabled\": true,\n    \"excludePurchases\": true,\n    \"backupInclusionFilteringEnabled\": true,\n    \"configuration\": {\n      \"inclusionRulesKey\" : \"CURRENT\", \n      \"inclusionRules\": [\n      {\n        \"attribute\": \"brand\",\n        \"operation\": \"contains\",\n        \"source\": {\n          \"defaultValue\": \"rei-coop\",\n          \"name\": \"brand\",\n          \"type\": \"ENTITY\"\n        }\n      }\n    ]\n    },\n    \"modelActionSettings\": {\n        \"actionOnKeyItems\": \"PURCHASE\",\n        \"actionOnRecommendedItems\": \"PURCHASE\",\n        \"basisForCooccurrence\": \"USERS\"\n    }\n}"
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/cart/:criteriaId",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"cart",
+								":criteriaId"
+							],
+							"variable": [
+								{
+									"key": "criteriaId",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Updates the cart based critera with new settings and configuration as specified and returns the updated criteria definition."
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a cart criteria",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/cart/:criteriaId",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"cart",
+								":criteriaId"
+							],
+							"variable": [
+								{
+									"key": "criteriaId",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Deletes the cart based criteria referenced by the given ID."
+					},
+					"response": []
+				}
+			],
+			"description": "[Cart Criteria](https://docs.adobe.com/content/help/en/target/using/recommendations/criteria/algorithms.html) are criteria based on visitor's activity on items. The recommendation keys are supplied in CSV format through mbox parameter `cartIds`.\n      Only first 10 items from the CSV will be considered as recommendation keys, once recommendations are calcualted the final result is aggregated and top N items\n      will be recommended.",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "a878cb31-538a-47af-8d3d-1a1ea704b0e8",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "fadadf3f-8866-4f4d-8b2e-a9429202ead6",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Popularity Criteria",
+			"item": [
+				{
+					"name": "Get popularity criteria",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/popularity/:criteriaId",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"popularity",
+								":criteriaId"
+							],
+							"variable": [
+								{
+									"key": "criteriaId",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Gets the popularity based criteria with the given ID."
+					},
+					"response": []
+				},
+				{
+					"name": "List popularity criteria",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/popularity",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"popularity"
+							]
+						},
+						"description": "Gets all available popularity based criteria."
+					},
+					"response": []
+				},
+				{
+					"name": "Create popularity criteria",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.adobe.target.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"aggregation\": \"NONE\",\n  \"backupDisabled\": false,\n  \"backupInclusionFilteringEnabled\": true,\n  \"configuration\": {\n    \"datasource\": \"mboxes\",\n    \"attribute\": \"user.name\",\n    \"groupByEntityAttribute\": \"name\"\n  },\n  \"criteriaGroup\": \"POPULARITY\",\n  \"daysCount\": \"TWO_DAYS\",\n  \"enableCaching\": false,\n  \"excludePurchases\": true,\n  \"minInventory\": 1,\n  \"name\": \"Garage Top Viewed\", \n  \"key\": \"customProfileAttribute\",\n  \"partialDesignAllowed\": true,\n  \"type\": \"VIEWED\"\n}"
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/popularity",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"popularity"
+							]
+						},
+						"description": "Creates a new popularity based criteria as specified by the settings and configuration provided and returns the newly created criteria definition."
+					},
+					"response": []
+				},
+				{
+					"name": "Edit popularity criteria",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.adobe.target.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Garage Top Viewed\",\n    \"criteriaGroup\": \"POPULARITY\",\n    \"type\": \"VIEWED\",\n    \"aggregation\": \"NONE\",\n    \"daysCount\": \"ONE_WEEK\",\n    \"minInventory\": 1,\n    \"partialDesignAllowed\": true,\n    \"backupDisabled\": false,\n    \"excludePurchases\": true,\n    \"enableCaching\": false,\n    \"backupInclusionFilteringEnabled\": true,\n    \"configuration\": {\n        \"datasource\": \"mboxes\"\n    }\n}"
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/popularity/:criteriaId",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"popularity",
+								":criteriaId"
+							],
+							"variable": [
+								{
+									"key": "criteriaId",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Updates the popularity based criteria with new settings and configuration as specified and returns the updated criteria definition."
+					},
+					"response": []
+				},
+				{
+					"name": "Delete popularity criteria",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/popularity/:criteriaId",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"popularity",
+								":criteriaId"
+							],
+							"variable": [
+								{
+									"key": "criteriaId",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Deletes the popularity based criteria referenced by the given ID."
+					},
+					"response": []
+				}
+			],
+			"description": "[Popularity Criteria](https://docs.adobe.com/content/help/en/target/using/recommendations/criteria/algorithms.html) are criteria that generate popular items as recommendations. The recommendation key is top sellers, most viewed items or Analytics product report metric.",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Profile Attribute Criteria",
+			"item": [
+				{
+					"name": "Get profile attribute criteria",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/profileattribute/:criteriaId",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"profileattribute",
+								":criteriaId"
+							],
+							"variable": [
+								{
+									"key": "criteriaId",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Gets the profile attribute based criteria with the given ID."
+					},
+					"response": []
+				},
+				{
+					"name": "List profile attribute criteria",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/profileattribute",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"profileattribute"
+							]
+						},
+						"description": "Gets all available profile attribute based criteria."
+					},
+					"response": []
+				},
+				{
+					"name": "Create profile attribute criteria",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.adobe.target.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"aggregation\": \"NONE\",\n  \"backupDisabled\": true,\n  \"backupInclusionFilteringEnabled\": true,\n  \"configuration\": {\n    \"attribute\": \"profile.city\"\n  },\n  \"criteriaGroup\": \"PROFILEATTRIBUTE\",\n  \"criteriaTitle\": \"Bike recommendations per city\",\n  \"daysCount\": \"TWO_WEEKS\",\n  \"enableCaching\": false,\n  \"excludePurchases\": true,\n  \"minInventory\": 1,\n  \"name\": \"city-bike-recs\",\n  \"partialDesignAllowed\": false,\n  \"superSlotCount\": 0,\n  \"type\": \"VIEWED\"\n}"
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/profileattribute",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"profileattribute"
+							]
+						},
+						"description": "Creates a new profile attribute based criteria as specified by the settings and configuration provided and returns the newly created criteria definition."
+					},
+					"response": []
+				},
+				{
+					"name": "Edit profile attribute criteria",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.adobe.target.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"aggregation\": \"NONE\",\n  \"backupDisabled\": true,\n  \"backupInclusionFilteringEnabled\": true,\n  \"configuration\": {\n    \"attribute\": \"profile.city\"\n  },\n  \"criteriaGroup\": \"PROFILEATTRIBUTE\",\n  \"criteriaTitle\": \"Bike recommendations per city\",\n  \"daysCount\": \"ONE_MONTH\",\n  \"enableCaching\": false,\n  \"excludePurchases\": true,\n  \"minInventory\": 1,\n  \"name\": \"city-bike-recs\",\n  \"partialDesignAllowed\": false,\n  \"superSlotCount\": 0,\n  \"type\": \"VIEWED\"\n}"
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/profileattribute/:criteriaId",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"profileattribute",
+								":criteriaId"
+							],
+							"variable": [
+								{
+									"key": "criteriaId",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Updates the profile attribute based criteria with new settings and configuration as specified and returns the updated criteria definition."
+					},
+					"response": []
+				},
+				{
+					"name": "Delete profile attribute criteria",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/popularity/:criteriaId",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"popularity",
+								":criteriaId"
+							],
+							"variable": [
+								{
+									"key": "criteriaId",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Deletes the profile attribute based criteria referenced by the given ID."
+					},
+					"response": []
+				}
+			],
+			"description": "[Profile Attribute Criteria](https://docs.adobe.com/content/help/en/target/using/recommendations/criteria/algorithms.html) are criteria where recommendation is determined by an item that is stored in visitor's profile using either `user.*` or `profile.*` attributes. The profile attribute contains the item ID on which the recommendations are based.",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Recent Criteria",
+			"item": [
+				{
+					"name": "Get recent criteria",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/recent/:criteriaId",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"recent",
+								":criteriaId"
+							],
+							"variable": [
+								{
+									"key": "criteriaId",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Gets the recent view based criteria with the given ID."
+					},
+					"response": []
+				},
+				{
+					"name": "List recent criteria",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/recent",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"recent"
+							]
+						},
+						"description": "Gets all available recent view based criteria."
+					},
+					"response": []
+				},
+				{
+					"name": "Create recent criteria",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.adobe.target.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Recently Viewed Hammocks\",\n  \"configuration\": {\n    \"inclusionRules\": [\n      {\n        \"attribute\": \"equipmentType\",\n        \"operation\": \"contains\",\n        \"values\": [\n          \"hammock\"\n        ]\n      }\n    ]\n  },\n  \"criteriaGroup\": \"RECENT\",\n  \"criteriaTitle\": \"Just seen Hammocks\",\n  \"minInventory\": 3\n}"
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/recent",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"recent"
+							]
+						},
+						"description": "Creates a new recent view based criteria as specified by the settings and configuration provided and returns the newly created criteria definition."
+					},
+					"response": []
+				},
+				{
+					"name": "Edit recent criteria",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.adobe.target.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Recently Viewed Hammocks\",\n  \"configuration\": {\n    \"inclusionRules\": [\n      {\n        \"attribute\": \"equipmentType\",\n        \"operation\": \"contains\",\n        \"values\": [\n          \"hammock\"\n        ]\n      }\n    ],\n    \"rankingRules\": []\n  },\n  \"criteriaGroup\": \"RECENT\",\n  \"criteriaTitle\": \"Just seen Hammocks\",\n  \"minInventory\": 0\n}"
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/recent/:criteriaId",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"recent",
+								":criteriaId"
+							],
+							"variable": [
+								{
+									"key": "criteriaId",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Updates the recent view based critera with new settings and configuration as specified and returns the updated criteria definition."
+					},
+					"response": []
+				},
+				{
+					"name": "Delete recent criteria",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/recent/:criteriaId",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"recent",
+								":criteriaId"
+							],
+							"variable": [
+								{
+									"key": "criteriaId",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Deletes the recent view based criteria referenced by the given ID."
+					},
+					"response": []
+				}
+			],
+			"description": "[Recent Criteria](https://docs.adobe.com/content/help/en/target/using/recommendations/criteria/algorithms.html) are criteria based on recently viewed items.",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Sequence Criteria",
+			"item": [
+				{
+					"name": "Get sequence criteria",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/sequence/:criteriaId",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"sequence",
+								":criteriaId"
+							],
+							"variable": [
+								{
+									"key": "criteriaId",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Gets the sequence criteria with the given ID."
+					},
+					"response": []
+				},
+				{
+					"name": "List sequence criteria",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/sequence",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"sequence"
+							]
+						},
+						"description": "Gets all available sequence criteria."
+					},
+					"response": []
+				},
+				{
+					"name": "Create sequence criteria",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.adobe.target.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"backupDisabled\": true,\n  \"backupInclusionFilteringEnabled\": true,\n  \"criteriaGroup\": \"SEQUENCE\",\n  \"criteriaTitle\": \"Top Dashboard Items\",\n  \"name\": \"Top Dashboard Items\",\n  \"partialDesignAllowed\": true,\n  \"sequence\": [\n    {\n      \"id\": 227\n    },\n    {\n      \"id\": 2027\n    }\n  ]\n}"
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/sequence",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"sequence"
+							]
+						},
+						"description": "Creates a new sequence criteria as specified by the settings, and single criteria IDs provided and returns the newly created criteria definition."
+					},
+					"response": []
+				},
+				{
+					"name": "Edit sequence criteria",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.adobe.target.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Top Dashboard Items\",\n    \"criteriaTitle\": \"Top Dashboard Items\",\n    \"criteriaGroup\": \"SEQUENCE\",\n    \"sequence\": [\n        {\n            \"id\": 227\n        },\n        {\n            \"id\": 2027\n        }\n    ],\n    \"partialDesignAllowed\": false,\n    \"backupDisabled\": true,\n    \"backupInclusionFilteringEnabled\": true\n}"
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/sequence/:criteriaId",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"sequence",
+								":criteriaId"
+							],
+							"variable": [
+								{
+									"key": "criteriaId",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Updates the sequence criteria with new settings and new single criteria IDs as specified and returns the updated criteria definition."
+					},
+					"response": []
+				},
+				{
+					"name": "Delete sequence criteria",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/sequence/:criteriaId",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"sequence",
+								":criteriaId"
+							],
+							"variable": [
+								{
+									"key": "criteriaId",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Deletes the sequence criteria referenced by the given ID."
+					},
+					"response": []
+				}
+			],
+			"description": "[Sequence Criteria](https://docs.adobe.com/content/help/en/target/using/recommendations/criteria/create-criteria-sequence.html) is a combination of multiple criteria. Such sequence of up to five criteria can be used to exercise greater control of recommendations. By using a criteria sequence, you can provide additional targeted recommendations, instead of using more generic backup recommendations, when a criteria doesn't return enough results to fill your design.",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "User History Criteria",
+			"item": [
+				{
+					"name": "Get user history criteria",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/userhistory/:criteriaId",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"userhistory",
+								":criteriaId"
+							],
+							"variable": [
+								{
+									"key": "criteriaId",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Get the user history based criteria with the given ID."
+					},
+					"response": []
+				},
+				{
+					"name": "List user history criteria",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/userhistory",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"userhistory"
+							]
+						},
+						"description": "Gets all available user history based criteria."
+					},
+					"response": []
+				},
+				{
+					"name": "Create user history criteria",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\" : \"User History Based Criteria\", \n    \"criteriaTitle\" : \"Recommend for you\",\n    \"daysCount\": \"ONE_DAY\",       \n    \"backupDisabled\" : false,                \n    \"partialDesignAllowed\" : true,        \n    \"excludePurchases\": true,                                  \n    \"backupInclusionFilteringEnabled\": true, \n    \"configuration\" : {\n    \"datasource\" : \"mboxes\",\n     \"priceRange\" : {  \n            \"min\": \"10.0\",\n            \"max\": \"50.0\"\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/userhistory",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"userhistory"
+							]
+						},
+						"description": "Creates a new user history based criteria as specified in the request payload and returns newly created criteria."
+					},
+					"response": []
+				},
+				{
+					"name": "Edit user history criteria",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\" : \"User History Based Crieria\", \n    \"daysCount\": \"ONE_DAY\",\n    \"criteriaTitle\" : \"Recommend for you\",      \n    \"minInventory\": 5,  \n    \"backupDisabled\" : false,                \n    \"partialDesignAllowed\" : true,      \n    \"excludePurchases\": true,               \n    \"excludeViews\": true,                    \n    \"backupInclusionFilteringEnabled\": true, \n    \"configuration\" : {\n        \"datasource\" : \"mboxes\"\n    }\n}"
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/userhistory/:criteriaId",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"userhistory",
+								":criteriaId"
+							],
+							"variable": [
+								{
+									"key": "criteriaId",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Updates the user history based criteria with new request payload and returns the updated criteria definition."
+					},
+					"response": []
+				},
+				{
+					"name": "Delete user history criteria",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/userhistory/:criteriaId",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"criteria",
+								"userhistory",
+								":criteriaId"
+							],
+							"variable": [
+								{
+									"key": "criteriaId",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Deletes the user history based criteria referenced by the given ID."
+					},
+					"response": []
+				}
+			],
+			"description": "[User History Criteria](https://docs.adobe.com/content/help/en/target/using/recommendations/criteria/algorithms.html) are criteria based on visitor's browsing, viewing or purchasing history. It is generally referred to as `Recommended for You`.",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Designs",
+			"item": [
+				{
+					"name": "Get design",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/designs/:designId",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"designs",
+								":designId"
+							],
+							"variable": [
+								{
+									"key": "designId",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Gets the design with the given ID."
+					},
+					"response": []
+				},
+				{
+					"name": "List designs",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/designs",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"designs"
+							]
+						},
+						"description": "Gets all available designs."
+					},
+					"response": []
+				},
+				{
+					"name": "Create design",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.adobe.target.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Simple design2\",\n\t\"script\": \" entity Id = $entity1.id <br/> entity name = $entity1.name\"\n}"
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/designs",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"designs"
+							]
+						},
+						"description": "Creates a new design as specified by the script provided and returns the newly created design definition."
+					},
+					"response": []
+				},
+				{
+					"name": "Edit design",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.adobe.target.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Simple design3\",\n    \"script\": \" entity Id = $entity1.id <br/> entity name = $entity1.name\"\n}"
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/designs/:designId",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"designs",
+								":designId"
+							],
+							"variable": [
+								{
+									"key": "designId",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Updates the design with new name and/or new script as specified and returns the updated design definition."
+					},
+					"response": []
+				},
+				{
+					"name": "Validate design",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.adobe.target.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Simple design4\",\n    \"script\": \" entity Id = $entity.id\"\n}"
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/designs/validate",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"designs",
+								"validate"
+							]
+						},
+						"description": "Validates a design by verifying the correctness of the script. If its correct, it returns number of entity objects used in the script; otherwise it returns the validation error.\n\n_Note this POST request does not create any resource. The endpoint is not a resource but rather it is simply a method to validate the design in request payload._."
+					},
+					"response": []
+				},
+				{
+					"name": "Delete design",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/designs/:designId",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"designs",
+								":designId"
+							],
+							"variable": [
+								{
+									"key": "designId",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Deletes the design referenced by the given ID."
+					},
+					"response": []
+				}
+			],
+			"description": "A design is a script that is used to determine how your recommendations look. You can create customized designs to provide the appearance you desire. The script can be HTML or non-HTML; non-HTML for non-web environments where click-tracking is not possible. Recommendation designs use Apache Velocity, so the script should make use of [Velocity Template Language](http://velocity.apache.org/engine/1.7/vtl-reference.html).",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Entities",
+			"item": [
+				{
+					"name": "Get entity",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/entities/:entityId",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"entities",
+								":entityId"
+							],
+							"variable": [
+								{
+									"key": "entityId",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Gets entity with the given ID from default environment. To retrieve entity from a specific environment, `environmentId` request parameter can be used."
+					},
+					"response": []
+				},
+				{
+					"name": "Save entities",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.adobe.target.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"entities\":[\n        {\n            \"attributes\": {\n                \"inventory\": \"77\",\n                \"margin\": \"23\",\n                \"message\": \"Yummy in the tummy\",\n                \"pageUrl\": \"www.foobar.foo.com/rotisserie.html\",\n                \"thumbnailUrl\": \"www.foobar.foo.com/rotisserie.jpg\",\n                \"value\": \"19.2\"\n            },\n            \"categories\": [\n                \"recreation:food\"\n            ],\n            \"environment\": \"292\",\n            \"id\": \"Foobar1\",\n            \"name\": \"Rotisserie Chicken\"\n        }\n    ]\n}"
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/entities",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"entities"
+							]
+						},
+						"description": "Creates entities, updates if present, with the given entity details and returns the numbers of entities rejected, and created or updated. Entities can be rejected if entity details do not conform to the schema. [More info](https://docs.adobe.com/content/help/en/target/using/recommendations/entities/entity-attributes.html).\n\n_Note this POST request does not create a singular resource. The endpoint is not a resource but rather it is simply a method to save multiple entities specified in request payload._"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete entities",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/entities?ids=cloudventureshoes,chameleonshoes&environment=234",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"entities"
+							],
+							"query": [
+								{
+									"key": "ids",
+									"value": "cloudventureshoes,chameleonshoes"
+								},
+								{
+									"key": "environment",
+									"value": "234"
+								}
+							]
+						},
+						"description": "Deletes entities referenced by the given IDs. **If no ID is given, all entities in the given environment are deleted. If no environment ID is given, entities will be deleted from all environments. Use this with caution!**\n\n_Note this DELETE request does not delete a singular resource. The endpoint is not a resource but rather it is simply a method to delete multiple entities specified in request payload._"
+					},
+					"response": []
+				}
+			],
+			"description": "[Entities](https://docs.adobe.com/content/help/en/target/using/recommendations/entities/products.html) refer to the items you want to recommend. Entities can be anything such as products, content (such as articles, slide shows, images, movies, and tv shows), job listings, restaurants, and so forth.",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Promotions",
+			"item": [
+				{
+					"name": "Get promotion",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json;charset=UTF-8"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/promotions/:promotionId",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"promotions",
+								":promotionId"
+							],
+							"variable": [
+								{
+									"key": "promotionId",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Gets the promotion with the given ID."
+					},
+					"response": []
+				},
+				{
+					"name": "List promotions",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/promotions",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"promotions"
+							]
+						},
+						"description": "Gets all available promotions."
+					},
+					"response": []
+				},
+				{
+					"name": "Create promotion",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.adobe.target.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Hiking shoes summer promotion\",\n  \"type\": \"INTERNAL\",\n  \"schedule\": {\n    \"start\": \"2018-07-01T00:00:00Z\",\n    \"end\": \"2018-08-31T23:59:59Z\"\n  },\n  \"order\": {\n    \"type\": \"ORIGINAL\"\n  },\n  \"rules\": [\n    {\n      \"attribute\": \"category\",\n      \"operation\": \"endsWith\",\n      \"values\": [\n        \"Hiking Shoes\"\n      ]\n    }\n  ]\n}"
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/promotions",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"promotions"
+							]
+						},
+						"description": "Creates a new promotion as specified by the settings and configuration provided and returns the newly created promotion definition."
+					},
+					"response": []
+				},
+				{
+					"name": "Edit promotion",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.adobe.target.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Hiking shoes summer promotion\",\n    \"type\": \"INTERNAL\",\n    \"schedule\": {\n        \"start\": \"2018-08-01T00:00:00Z\",\n        \"end\": \"2018-08-31T23:59:59Z\"\n    },\n    \"order\": {\n        \"type\": \"ORIGINAL\"\n    },\n    \"configuration\": {},\n    \"rules\": [\n        {\n            \"attribute\": \"category\",\n            \"operation\": \"endsWith\",\n            \"values\": [\n                \"Hiking Shoes\"\n            ]\n        }\n    ]\n}"
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/promotions/:promotionId",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"promotions",
+								":promotionId"
+							],
+							"variable": [
+								{
+									"key": "promotionId",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Updates the promotion with the new settings and configuration as specified and return the updated promotion definition."
+					},
+					"response": []
+				},
+				{
+					"name": "Delete promotion",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/promotions/:promotionId",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"promotions",
+								":promotionId"
+							],
+							"variable": [
+								{
+									"key": "promotionId",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Deletes the promotion referenced by the given ID."
+					},
+					"response": []
+				}
+			],
+			"description": "Promotion is a special type of criteria that includes promoted items in your recommendation design. Item recommendation by promotions use available slots in the design and take precedence over criteria results and backup recommendations.",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Catalog Search",
+			"item": [
+				{
+					"name": "Simple Search",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.adobe.target.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"meta\": {\n        \"environmentId\": 1776,\n        \"displayFields\": [\n            \"name\",\n            \"description\"\n        ]\n    },\n    \"query\": {\n        \"type\": \"simple\",\n        \"queryFields\": [\n            \"inventory\"\n        ],\n        \"matchValue\": 1000,\n        \"operator\": \"lt\"\n    }\n}"
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/catalogsearch",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"catalogsearch"
+							]
+						},
+						"description": "This is an example of a simple search, which only contains a single search criterion.  Specifically, this example is searching for entities which have low inventory.\n\n_Note this POST request does not create a singular resource. The endpoint is not a resource but rather it is simply a method for searching._"
+					},
+					"response": []
+				},
+				{
+					"name": "Compound Search",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.adobe.target.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"meta\": {\n        \"environmentId\": 1776,\n        \"displayFields\": [\n            \"name\",\n            \"description\"\n        ]\n    },\n    \"query\": {\n        \"type\": \"compound\",\n        \"joinOperator\": \"AND\",\n        \"filters\": [\n            {\n                \"type\": \"simple\",\n                \"queryFields\": [\n                    \"description\"\n                ],\n                \"matchValue\": \"shoe\",\n                \"operator\": \"contains\"\n            },\n            {\n                \"type\": \"compound\",\n                \"joinOperator\": \"OR\",\n                \"filters\": [\n                    {\n                        \"type\": \"simple\",\n                        \"queryFields\": [\n                            \"brand\"\n                        ],\n                        \"matchValue\": \"LuxeBrand\",\n                        \"operator\": \"eq\"\n                    },\n                    {\n                        \"type\": \"simple\",\n                        \"queryFields\": [\n                            \"brand\"\n                        ],\n                        \"matchValue\": \"FancyBrand\",\n                        \"operator\": \"eq\"\n                    }\n                ]\n            }\n        ]\n    }\n}"
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/catalogsearch",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"catalogsearch"
+							]
+						},
+						"description": "This is an example of a compound search, which can include arbitrarily many (and arbitrarily deep) simple and compound searches combined how the various joinOperator values specify.  This example is searching for shoes from either of two different brands.\n\n_Note this POST request does not create a singular resource. The endpoint is not a resource but rather it is simply a method for searching._"
+					},
+					"response": []
+				}
+			],
+			"description": "Catalog Search allows you to search the current set of [Entities](https://docs.adobe.com/content/help/en/target/using/recommendations/entities/products.html) which have been uploaded into Recommendations.\n\n_Note this POST request does not create a singular resource. The endpoint is not a resource but rather it is simply a method for searching._"
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{ACCESS_TOKEN}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
