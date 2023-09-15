@@ -26,8 +26,8 @@ jobs:
   set-state:
     runs-on: ubuntu-latest
     outputs:
-      deploy_prod: ${{ contains(github.event.inputs.env, 'prod') }}
-      deploy_dev: ${{ contains(github.event.inputs.env, 'dev') }}
+      deploy_prod: ${{ contains(inputs.env, 'prod') }}
+      deploy_dev: ${{ contains(inputs.env, 'dev') }}
       clean_cache: ${{ contains(github.event.inputs.clean, 'yes') }}
       path_prefix: ${{ steps.get_path_prefix.outputs.path_prefix }}
       branch_short_ref: ${{ steps.get_branch.outputs.branch }}
