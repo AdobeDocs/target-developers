@@ -119,7 +119,7 @@
           "Properties"
         ],
         "summary": "Update a property by ID",
-        "description": "Update the property referenced by the property ID.",
+        "description": "Update the property referenced by the provided property ID.",
         "operationId": "updateProperty",
         "parameters": [
           {
