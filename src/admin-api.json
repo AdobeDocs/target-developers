@@ -18,7 +18,7 @@
           "Properties"
         ],
         "summary": "Get a property by ID",
-        "description": "Retrieve the current definition of a property referenced by the property ID.",
+        "description": "Retrieve the current definition of a property referenced by the provided property ID.",
         "operationId": "getProperty",
         "parameters": [
           {
