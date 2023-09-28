@@ -12206,11 +12206,11 @@
       "DateTimeZone": {
         "type": "object",
         "properties": {
-          "fixed": {
-            "type": "boolean"
-          },
           "id": {
             "type": "string"
+          },
+          "fixed": {
+            "type": "boolean"
           }
         },
         "description": ""
