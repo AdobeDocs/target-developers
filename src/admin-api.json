@@ -10254,6 +10254,12 @@
           },
           "permissionEnabled": {
             "type": "boolean"
+          },
+          "mobileDeviceTargetingEnabled": {
+            "type": "boolean"
+          },
+          "geoLocationEnabled": {
+            "type": "boolean"
           }
         },
         "description": ""
