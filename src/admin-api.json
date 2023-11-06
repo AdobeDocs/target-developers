@@ -12212,11 +12212,11 @@
       "DateTimeZone": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "string"
-          },
           "fixed": {
             "type": "boolean"
+          },
+          "id": {
+            "type": "string"
           }
         },
         "description": ""
@@ -12232,9 +12232,6 @@
             "type": "integer",
             "format": "int64"
           },
-          "chronology": {
-            "$ref": "#/components/schemas/Chronology"
-          },
           "start": {
             "type": "string",
             "format": "date-time"
@@ -12242,6 +12239,9 @@
           "end": {
             "type": "string",
             "format": "date-time"
+          },
+          "chronology": {
+            "$ref": "#/components/schemas/Chronology"
           },
           "afterNow": {
             "type": "boolean"
@@ -12338,10 +12338,10 @@
               "type": "string"
             }
           },
-          "outlier": {
+          "duplicate": {
             "type": "boolean"
           },
-          "duplicate": {
+          "outlier": {
             "type": "boolean"
           }
         },
