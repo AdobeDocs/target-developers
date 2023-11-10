@@ -33,7 +33,7 @@ module.exports = {
           },
           {
             title: "Recommendations API",
-            description: "Adobe Target Recommendations API Reference",
+            description: "Adobe Target Recommendations APIs",
             path: "/administer/recommendations-api/",
           },
           {
