@@ -32,6 +32,11 @@ module.exports = {
             path: "/administer/admin-api/",
           },
           {
+            title: "Target Recommendations APIs",
+            description: "Adobe Target Recommendations APIs",
+            path: "/administer/recommendations-api/",
+          },
+          {
             title: "Models APIs",
             description: "Adobe Target Blocklisting APIs",
             path: "/administer/models-api/",
