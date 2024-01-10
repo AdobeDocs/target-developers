@@ -37,6 +37,11 @@ module.exports = {
             path: "/administer/recommendations-api/",
           },
           {
+            title: "Profiles APIs",
+            description: "Adobe Target Profiles APIs",
+            path: "https://experienceleague.adobe.com/docs/target-dev/developer/api/profile-apis/profiles-api.html",
+          },
+          {
             title: "Models APIs",
             description: "Adobe Target Blocklisting APIs",
             path: "/administer/models-api/",
