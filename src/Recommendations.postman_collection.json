@@ -101,7 +101,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"name\": \"Backpacking Tents\",\n\t\"rules\": [\n\t\t{\n\t\t\t\"id\": {\n\t\t\t\t\"contains\": [\"backpacking\"]\n\t\t\t}\n\t\t}\n\t]\n}"
+							"raw": "{\n\t\"name\": \"Backpacking Tents\",\n    \"decription\": \"Lightweight tents suitable for backpacking.\",\n\t\"rules\": [\n\t\t{\n\t\t\t\"id\": {\n\t\t\t\t\"contains\": [\"backpacking\"]\n\t\t\t}\n\t\t}\n\t]\n}"
 						},
 						"url": {
 							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/collections",
@@ -142,7 +142,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"Backpacking & Camping Tents\",\n    \"rules\": [\n        {\n            \"id\": {\n                \"contains\": [\n                    \"backpacking\", \"camping\"\n                ]\n            }\n        }\n    ]\n}"
+							"raw": "{\n    \"name\": \"Backpacking & Camping Tents\",\n    \"description\": \"Lightweight tents suitable for backpacking.\",\n    \"rules\": [\n        {\n            \"id\": {\n                \"contains\": [\n                    \"backpacking\", \"camping\"\n                ]\n            }\n        }\n    ]\n}"
 						},
 						"url": {
 							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/collections/:collectionId",
@@ -3217,6 +3217,238 @@
 				}
 			],
 			"description": "Catalog Search allows you to search the current set of [Entities](https://docs.adobe.com/content/help/en/target/using/recommendations/entities/products.html) which have been uploaded into Recommendations.\n\n_Note this POST request does not create a singular resource. The endpoint is not a resource but rather it is simply a method for searching._"
+		},
+		{
+			"name": "Exclusions",
+			"item": [
+				{
+					"name": "Get exclusion",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/exclusions/:exclusionId",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"exclusions",
+								":exclusionId"
+							],
+							"variable": [
+								{
+									"key": "exclusionId",
+									"value": "3"
+								}
+							]
+						},
+						"description": "Gets the exclusion with the given ID."
+					},
+					"response": []
+				},
+				{
+					"name": "List exclusions",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/exclusions",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"exclusions"
+							]
+						},
+						"description": "Gets all available exclusions."
+					},
+					"response": []
+				},
+				{
+					"name": "Create exclusion",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.adobe.target.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Backpacking Tents less than 10 remaining\",\n    \"description\": \"Backpacking Tents less than 10 remaining description\",\n    \"rule\": {\n        \"inventory\": {\n            \"lesserOrEquals\": [\n                \"10\"\n            ]\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/exclusions",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"exclusions"
+							]
+						},
+						"description": "Creates a new exclusion as specified by the rule provided and returns the newly created exclusion definition."
+					},
+					"response": []
+				},
+				{
+					"name": "Edit exclusion",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.adobe.target.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Backpacking Tents less than 20 remaining\",\n    \"description\": \"Backpacking Tents less than 20 remaining description\",\n    \"rule\": {\n        \"inventory\": {\n            \"lesserOrEquals\": [\n                \"20\"\n            ]\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/exclusions/:exclusionId",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"exclusions",
+								":exclusionId"
+							],
+							"variable": [
+								{
+									"key": "exclusionId",
+									"value": "3"
+								}
+							]
+						},
+						"description": "Updates the exclusion with new name and/or new rules as specified and returns the updated exclusion definition."
+					},
+					"response": []
+				},
+				{
+					"name": "Delete exclusion",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Api-Key",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.adobe.target.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://mc.adobe.io/{{TENANT_ID}}/target/recs/exclusions/:exclusionId",
+							"protocol": "https",
+							"host": [
+								"mc",
+								"adobe",
+								"io"
+							],
+							"path": [
+								"{{TENANT_ID}}",
+								"target",
+								"recs",
+								"exclusions",
+								":exclusionId"
+							],
+							"variable": [
+								{
+									"key": "exclusionId",
+									"value": "4"
+								}
+							]
+						},
+						"description": "Deletes the exclusion referenced by the given ID."
+					},
+					"response": []
+				}
+			],
+			"description": "An [exclusion](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/exclusions.html) is a subset of entities that should not be recommended to visitors. It is defined by a set of membership rules. If an item satisfies these rules, it is excluded from recommendations to visitors.",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
 		}
 	],
 	"auth": {
