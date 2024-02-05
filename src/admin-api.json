@@ -82,8 +82,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -92,8 +92,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -193,8 +193,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -203,8 +203,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -294,8 +294,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -304,8 +304,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -397,8 +397,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -407,8 +407,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -508,8 +508,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -518,8 +518,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -609,8 +609,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -619,8 +619,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -712,8 +712,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -722,8 +722,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -833,8 +833,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -843,8 +843,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -939,8 +939,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -949,8 +949,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -1047,8 +1047,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -1057,8 +1057,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -1168,8 +1168,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -1178,8 +1178,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -1274,8 +1274,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -1284,8 +1284,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -1391,8 +1391,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -1401,8 +1401,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -1491,8 +1491,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -1501,8 +1501,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -1594,8 +1594,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -1604,8 +1604,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -1705,8 +1705,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -1715,8 +1715,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -1806,8 +1806,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -1816,8 +1816,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -1898,8 +1898,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -1908,8 +1908,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -1998,8 +1998,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -2008,8 +2008,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -2090,8 +2090,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -2100,8 +2100,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -2190,8 +2190,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -2200,8 +2200,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -2282,8 +2282,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -2292,8 +2292,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -2382,8 +2382,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -2392,8 +2392,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -2497,8 +2497,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -2507,8 +2507,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -2622,8 +2622,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -2632,8 +2632,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -2714,8 +2714,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -2724,8 +2724,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -2814,8 +2814,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -2824,8 +2824,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -2917,8 +2917,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -2927,8 +2927,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -3048,8 +3048,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -3058,8 +3058,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -3159,8 +3159,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -3169,8 +3169,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -3280,8 +3280,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -3290,8 +3290,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -3372,8 +3372,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -3382,8 +3382,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -3472,8 +3472,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -3482,8 +3482,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -3585,8 +3585,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -3595,8 +3595,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -3698,8 +3698,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -3708,8 +3708,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -3811,8 +3811,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -3821,8 +3821,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -3924,8 +3924,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -3934,8 +3934,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -4037,8 +4037,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -4047,8 +4047,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -4150,8 +4150,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -4160,8 +4160,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -4263,8 +4263,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -4273,8 +4273,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -4376,8 +4376,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -4386,8 +4386,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -4489,8 +4489,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -4499,8 +4499,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -4602,8 +4602,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -4612,8 +4612,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -4715,8 +4715,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -4725,8 +4725,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -4828,8 +4828,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -4838,8 +4838,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -4931,8 +4931,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -4941,8 +4941,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -5052,8 +5052,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -5062,8 +5062,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -5158,8 +5158,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -5168,8 +5168,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -5266,8 +5266,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -5276,8 +5276,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -5397,8 +5397,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -5407,8 +5407,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -5508,8 +5508,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -5518,8 +5518,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -5621,8 +5621,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -5631,8 +5631,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -5752,8 +5752,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -5762,8 +5762,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -5863,8 +5863,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -5873,8 +5873,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -5966,8 +5966,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -5976,8 +5976,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -6066,8 +6066,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -6076,8 +6076,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -6159,8 +6159,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -6169,8 +6169,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -6259,8 +6259,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -6269,8 +6269,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -6362,8 +6362,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -6372,8 +6372,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -6470,8 +6470,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -6480,8 +6480,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -6583,8 +6583,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -6593,8 +6593,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -6681,8 +6681,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -6691,8 +6691,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -6781,8 +6781,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -6791,8 +6791,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -6894,8 +6894,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -6904,8 +6904,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -7000,8 +7000,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -7010,8 +7010,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -7103,8 +7103,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -7113,8 +7113,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -7196,8 +7196,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -7206,8 +7206,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -7317,8 +7317,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -7327,8 +7327,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -7435,8 +7435,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -7445,8 +7445,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -7553,8 +7553,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -7563,8 +7563,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -7676,8 +7676,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -7686,8 +7686,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -7805,8 +7805,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -7815,8 +7815,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -7916,8 +7916,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -7926,8 +7926,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -8036,8 +8036,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -8046,8 +8046,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -8156,8 +8156,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -8166,8 +8166,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -8249,8 +8249,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -8259,8 +8259,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -8342,8 +8342,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -8352,8 +8352,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -8440,8 +8440,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -8450,8 +8450,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -8543,8 +8543,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -8553,8 +8553,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -8636,8 +8636,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -8646,8 +8646,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -8738,8 +8738,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -8748,8 +8748,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -8831,8 +8831,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -8841,8 +8841,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -8923,8 +8923,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -8933,8 +8933,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -9019,8 +9019,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -9029,8 +9029,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -9132,8 +9132,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -9142,8 +9142,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -9235,8 +9235,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -9245,8 +9245,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -9338,8 +9338,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -9348,8 +9348,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -9441,8 +9441,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -9451,8 +9451,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -9544,8 +9544,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -9554,8 +9554,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -9647,8 +9647,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -9657,8 +9657,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -9750,8 +9750,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -9760,8 +9760,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -9853,8 +9853,8 @@
               }
             }
           },
-          "415": {
-            "description": "Unsupported Media Type",
+          "406": {
+            "description": "Not Acceptable",
             "content": {
               "*/*": {
                 "schema": {
@@ -9863,8 +9863,8 @@
               }
             }
           },
-          "406": {
-            "description": "Not Acceptable",
+          "415": {
+            "description": "Unsupported Media Type",
             "content": {
               "*/*": {
                 "schema": {
@@ -10261,6 +10261,15 @@
           },
           "geoLocationEnabled": {
             "type": "boolean"
+          },
+          "defaultCompanyName": {
+            "type": "string"
+          },
+          "defaultReportSuite": {
+            "type": "string"
+          },
+          "defaultDataCollectionHost": {
+            "type": "string"
           }
         },
         "description": ""
@@ -12213,11 +12222,11 @@
       "DateTimeZone": {
         "type": "object",
         "properties": {
-          "fixed": {
-            "type": "boolean"
-          },
           "id": {
             "type": "string"
+          },
+          "fixed": {
+            "type": "boolean"
           }
         },
         "description": ""
