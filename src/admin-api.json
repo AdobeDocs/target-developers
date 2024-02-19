@@ -12349,10 +12349,10 @@
               "type": "string"
             }
           },
-          "duplicate": {
+          "outlier": {
             "type": "boolean"
           },
-          "outlier": {
+          "duplicate": {
             "type": "boolean"
           }
         },
