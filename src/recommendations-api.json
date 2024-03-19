@@ -347,6 +347,12 @@
           },
           {
             "$ref": "#/components/parameters/limit"
+          },
+          {
+            "$ref": "#/components/parameters/orderby"
+          },
+          {
+            "$ref": "#/components/parameters/name"
           }
         ],
         "responses": {
@@ -1929,6 +1935,12 @@
           },
           {
             "$ref": "#/components/parameters/includeScript"
+          },
+          {
+            "$ref": "#/components/parameters/orderby"
+          },
+          {
+            "$ref": "#/components/parameters/name"
           }
         ],
         "responses": {
@@ -2879,6 +2891,24 @@
             "type": "string",
             "maxLength": 250,
             "description": "Unique name of the criteria."
+          },
+          "description": {
+            "type": "string",
+            "maxLength": 1000
+          },
+          "lastModifiersName": {
+            "type": "string",
+            "readOnly": true
+          },
+          "lastModifiersEmail": {
+            "type": "string",
+            "readOnly": true
+          },
+          "lastModified": {
+            "type": "string",
+            "readOnly": true,
+            "format": "date-time",
+            "description": "The time in UTC when the criteria was last modified."
           }
         },
         "required": [
@@ -4082,6 +4112,20 @@
             ],
             "description": "The content type of the design script.",
             "default": "OTHER"
+          },
+          "lastModifiersName": {
+            "type": "string",
+            "readOnly": true
+          },
+          "lastModifiersEmail": {
+            "type": "string",
+            "readOnly": true
+          },
+          "lastModified": {
+            "type": "string",
+            "readOnly": true,
+            "format": "date-time",
+            "description": "The time in UTC when the design was last modified."
           }
         },
         "required": [
@@ -4748,7 +4792,7 @@
               "id": 1,
               "name": "Men's Trail Running Shoes",
               "description": "Shoes marked for trail running in men's clothing category.",
-              "lastModified": "2018-08-07T16:34:01.000-04:00",
+              "lastModified": "2018-08-07T16:34:01.000Z",
               "lastModifiersName": "Buzz Lightyear",
               "lastModifiersEmail": "buzz@spacemail.com"
             },
@@ -4756,7 +4800,7 @@
               "id": 2,
               "name": "Climbing Harnesses",
               "description": "Harness type unisex accessories in climbing section.",
-              "lastModified": "2018-08-07T16:35:01.000-04:00",
+              "lastModified": "2018-08-07T16:35:01.000Z",
               "lastModifiersName": "Alex Honnold",
               "lastModifiersEmail": "honnold@climbinggold.com"
             }
@@ -4801,7 +4845,7 @@
           "id": 1,
           "name": "Backpacking Tents",
           "description": "Lightweight tents suitable for backpacking.",
-          "lastModified": "2018-08-07T16:34:01.000-04:00",
+          "lastModified": "2018-08-07T16:34:01.000Z",
           "lastModifiersName": "Buzz Lightyear",
           "lastModifierEmail": "buzz@spacemail.com",
           "rules": [
@@ -4845,7 +4889,11 @@
               "minInventory": 1,
               "configuration": {
                 "rankingRules": []
-              }
+              },
+              "description": "Lightweight backpacks suitable for multiday excursions.",
+              "lastModified": "2023-08-15T14:29:01.000Z",
+              "lastModifiersName": "John Muir",
+              "lastModifiersEmail": "jmuir@nps.gov"
             },
             {
               "id": 4,
@@ -4862,7 +4910,11 @@
               "backupInclusionFilteringEnabled": true,
               "configuration": {
                 "pastBehaviorOrdinal": 0
-              }
+              },
+              "description": "Items to recommend based upon similar purchases.",
+              "lastModified": "2022-05-13T19:39:01.000Z",
+              "lastModifiersName": "Dee Dee",
+              "lastModifiersEmail": "ddee@dexterslabratory.inc"
             },
             {
               "id": 5,
@@ -4887,7 +4939,11 @@
                   }
                 ],
                 "pastBehaviorOrdinal": 0
-              }
+              },
+              "description": "Items to recommend based upon popularity.",
+              "lastModified": "2023-08-15T14:29:01.000Z",
+              "lastModifiersName": "Danny Phantom",
+              "lastModifiersEmail": "dphantom@ghostzone.com"
             }
           ]
         }
@@ -6064,7 +6120,7 @@
       },
       "DesignsResponse": {
         "summary": "List of designs in response",
-        "description": "A response body example of a list containing 1 design.",
+        "description": "A response body example of a list containing 2 designs.",
         "value": {
           "offset": 0,
           "limit": 2147483647,
@@ -6074,13 +6130,19 @@
               "id": 4,
               "name": "Landing Page",
               "script": "<table>\\n <tr>\\n  <td>\\n   <a href=\\\"$entity1.pageUrl\\\">\\n <img src=\\\"$entity1.thumbnailUrl\\\"/>\\n    <br/>$profile\\n    <br/> $token\\n    <br/>$url\\n   </a>\\n  </td>\\n  <td>\\n <a href=\\\"$entity2.pageUrl\\\">\\n   <img src=\\\"$entity2.thumbnailUrl\\\"/> \\n    <br/>$entity2.name\\n    <br/>$entity2.message\\n    <br/> $entity2.value\\n   </a>\\n  </td>\\n  <td>\\n <a href=\\\"$entity3.pageUrl\\\">\\n   <img src=\\\"$entity3.thumbnailUrl\\\"/> \\n    <br/>$entity3.name\\n    <br/>$entity3.message\\n    <br/> $entity3.value\\n   </a>\\n  </td>\\n </tr>\\n</table>",
-              "type": "HTML"
+              "type": "HTML",
+              "lastModifiersEmail": "jneutron@boygenius.com",
+              "lastModifiersName": "Jimmy Neutron",
+              "lastModified": "2023-12-25T17:34:01.000Z"
             },
             {
               "id": 5,
               "name": "Prime Product Box",
               "script": "<div id=\"productBox\">$entity1.name</div>",
-              "type": "HTML"
+              "type": "HTML",
+              "lastModifiersEmail": "stentacles@krustykrab.com",
+              "lastModifiersName": "Squidward Tentacles",
+              "lastModified": "2022-08-07T16:34:01.000Z"
             }
           ]
         }
@@ -6393,7 +6455,7 @@
               "description": "Exclude Trail Running shoes for hiking",
               "lastModifiersEmail": "buzz@spacemail.com",
               "lastModifiersName": "Buzz Lightyear",
-              "lastModified": "2018-08-07T16:34:01.000-04:00",
+              "lastModified": "2018-08-07T16:34:01.000Z",
               "rule": {
                 "name": {
                   "contains": "hiking"
@@ -6406,7 +6468,7 @@
               "description": "Exclude climbing shoes for bouldering",
               "lastModifiersEmail": "honnold@climbinggold.com",
               "lastModifiersName": "Alex Honnold",
-              "lastModified": "2018-08-07T16:35:01.000-04:00",
+              "lastModified": "2018-08-07T16:35:01.000Z",
               "rule": {
                 "name": {
                   "contains": "bouldering"
@@ -6439,7 +6501,7 @@
           "description": "Exclude backpacking tents with less than 10 items remaining in the inventory",
           "lastModifiersEmail": "buzz@spacemail.com",
           "lastModifiersName": "Buzz Lightyear",
-          "lastModified": "2018-08-07T16:34:01.000-04:00",
+          "lastModified": "2018-08-07T16:34:01.000Z",
           "rule": {
             "name": {
               "contains": "backpacking"
