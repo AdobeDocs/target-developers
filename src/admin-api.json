@@ -32,8 +32,8 @@
           }
         ],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -42,8 +42,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -143,8 +143,8 @@
           "required": true
         },
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -153,8 +153,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -244,8 +244,8 @@
           }
         ],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -254,8 +254,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -347,8 +347,8 @@
           }
         ],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -357,8 +357,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -458,8 +458,8 @@
           "required": true
         },
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -468,8 +468,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -559,8 +559,8 @@
           }
         ],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -569,8 +569,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -662,8 +662,8 @@
           }
         ],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -672,8 +672,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -783,8 +783,8 @@
           "required": true
         },
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -793,8 +793,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -889,8 +889,8 @@
           }
         ],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -899,8 +899,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -997,8 +997,8 @@
           }
         ],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -1007,8 +1007,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -1118,8 +1118,8 @@
           "required": true
         },
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -1128,8 +1128,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -1224,8 +1224,8 @@
           }
         ],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -1234,8 +1234,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -1341,8 +1341,8 @@
           "required": true
         },
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -1351,8 +1351,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -1441,8 +1441,8 @@
           }
         ],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -1451,8 +1451,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -1544,8 +1544,8 @@
           }
         ],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -1554,8 +1554,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -1655,8 +1655,8 @@
           "required": true
         },
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -1665,8 +1665,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -1756,8 +1756,8 @@
           }
         ],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -1766,8 +1766,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -1848,8 +1848,8 @@
         "description": "Retrieve a list of the default environments.",
         "operationId": "getDefaultEnvironments",
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -1858,8 +1858,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -1948,8 +1948,8 @@
           "required": true
         },
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -1958,8 +1958,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -2040,8 +2040,8 @@
         "description": "Retrieve client UI settings.",
         "operationId": "getSettings",
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -2050,8 +2050,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -2140,8 +2140,8 @@
           "required": true
         },
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -2150,8 +2150,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -2232,8 +2232,8 @@
         "description": "Retrieve client settings.",
         "operationId": "getSettings_1",
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -2242,8 +2242,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -2332,8 +2332,8 @@
           "required": true
         },
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -2342,8 +2342,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -2447,8 +2447,8 @@
           }
         ],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -2457,8 +2457,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -2572,8 +2572,8 @@
           "required": true
         },
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -2582,8 +2582,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -2664,8 +2664,8 @@
         "description": "Retrieve list of hosts that are authorized.",
         "operationId": "getAuthorizedHosts",
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -2674,8 +2674,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -2764,8 +2764,8 @@
           "required": true
         },
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -2774,8 +2774,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -2867,8 +2867,8 @@
           }
         ],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -2877,8 +2877,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -2998,8 +2998,8 @@
           "required": true
         },
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -3008,8 +3008,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -3109,8 +3109,8 @@
           }
         ],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -3119,8 +3119,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -3230,8 +3230,8 @@
           "required": true
         },
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -3240,8 +3240,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -3322,8 +3322,8 @@
         "description": "Retrieve at.js settings.",
         "operationId": "getAtJsSettings",
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -3332,8 +3332,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -3422,8 +3422,8 @@
           "required": true
         },
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -3432,8 +3432,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -3535,8 +3535,8 @@
           "required": true
         },
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -3545,8 +3545,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -3648,8 +3648,8 @@
           "required": true
         },
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -3658,8 +3658,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -3761,8 +3761,8 @@
           "required": true
         },
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -3771,8 +3771,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -3874,8 +3874,8 @@
           "required": true
         },
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -3884,8 +3884,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -3987,8 +3987,8 @@
           "required": true
         },
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -3997,8 +3997,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -4100,8 +4100,8 @@
           "required": true
         },
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -4110,8 +4110,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -4213,8 +4213,8 @@
           "required": true
         },
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -4223,8 +4223,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -4326,8 +4326,8 @@
           "required": true
         },
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -4336,8 +4336,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -4439,8 +4439,8 @@
           "required": true
         },
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -4449,8 +4449,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -4552,8 +4552,8 @@
           "required": true
         },
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -4562,8 +4562,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -4665,8 +4665,8 @@
           "required": true
         },
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -4675,8 +4675,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -4778,8 +4778,8 @@
           "required": true
         },
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -4788,8 +4788,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -4881,8 +4881,8 @@
           }
         ],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -4891,8 +4891,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -5002,8 +5002,8 @@
           "required": true
         },
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -5012,8 +5012,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -5108,8 +5108,8 @@
           }
         ],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -5118,8 +5118,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -5216,8 +5216,8 @@
           }
         ],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -5226,8 +5226,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -5347,8 +5347,8 @@
           "required": true
         },
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -5357,8 +5357,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -5458,8 +5458,8 @@
           }
         ],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -5468,8 +5468,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -5571,8 +5571,8 @@
           }
         ],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -5581,8 +5581,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -5702,8 +5702,8 @@
           "required": true
         },
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -5712,8 +5712,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -5813,8 +5813,8 @@
           }
         ],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -5823,8 +5823,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -5916,8 +5916,8 @@
         "operationId": "getResponseTokens",
         "parameters": [],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -5926,8 +5926,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -6016,8 +6016,8 @@
           "required": true
         },
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -6026,8 +6026,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -6109,8 +6109,8 @@
         "operationId": "getProperties",
         "parameters": [],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -6119,8 +6119,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -6209,8 +6209,8 @@
           "required": true
         },
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -6219,8 +6219,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -6312,8 +6312,8 @@
           "required": true
         },
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -6322,8 +6322,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -6420,8 +6420,8 @@
           "required": true
         },
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -6430,8 +6430,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -6533,8 +6533,8 @@
           "required": true
         },
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -6543,8 +6543,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -6631,8 +6631,8 @@
         "operationId": "getEnvironments",
         "parameters": [],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -6641,8 +6641,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -6731,8 +6731,8 @@
           "required": true
         },
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -6741,8 +6741,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -6844,8 +6844,8 @@
           "required": true
         },
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -6854,8 +6854,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -6950,8 +6950,8 @@
           }
         ],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -6960,8 +6960,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -7053,8 +7053,8 @@
           }
         },
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -7063,8 +7063,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -7146,8 +7146,8 @@
         "operationId": "getAudiences_1_1",
         "parameters": [],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -7156,8 +7156,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -7267,8 +7267,8 @@
           "required": true
         },
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -7277,8 +7277,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -7385,8 +7385,8 @@
           "required": true
         },
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -7395,8 +7395,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -7503,8 +7503,8 @@
           "required": true
         },
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -7513,8 +7513,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -7626,8 +7626,8 @@
           "required": true
         },
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -7636,8 +7636,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -7755,8 +7755,8 @@
           }
         ],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -7765,8 +7765,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -7866,8 +7866,8 @@
           }
         ],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -7876,8 +7876,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -7986,8 +7986,8 @@
           }
         ],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -7996,8 +7996,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -8106,8 +8106,8 @@
           }
         ],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -8116,8 +8116,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -8199,8 +8199,8 @@
         "operationId": "getMboxProfileAttributes",
         "parameters": [],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -8209,8 +8209,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -8292,8 +8292,8 @@
         "operationId": "getOffers_1",
         "parameters": [],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -8302,8 +8302,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -8390,8 +8390,8 @@
         "operationId": "getOfferTemplates",
         "parameters": [],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -8400,8 +8400,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -8493,8 +8493,8 @@
           }
         ],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -8503,8 +8503,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -8586,8 +8586,8 @@
         "operationId": "getMboxes",
         "parameters": [],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -8596,8 +8596,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -8688,8 +8688,8 @@
           }
         ],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -8698,8 +8698,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -8781,8 +8781,8 @@
         "operationId": "getHosts",
         "parameters": [],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -8791,8 +8791,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -8873,8 +8873,8 @@
         "description": "Retrieve at.js versions.",
         "operationId": "getAtJsVersions",
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -8883,8 +8883,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -8969,8 +8969,8 @@
         "operationId": "getActivities_1_1",
         "parameters": [],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -8979,8 +8979,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -9082,8 +9082,8 @@
           }
         ],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -9092,8 +9092,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -9185,8 +9185,8 @@
           }
         ],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -9195,8 +9195,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -9288,8 +9288,8 @@
           }
         ],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -9298,8 +9298,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -9391,8 +9391,8 @@
           }
         ],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -9401,8 +9401,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -9494,8 +9494,8 @@
           }
         ],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -9504,8 +9504,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -9597,8 +9597,8 @@
           }
         ],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -9607,8 +9607,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -9700,8 +9700,8 @@
           }
         ],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -9710,8 +9710,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
@@ -9803,8 +9803,8 @@
           }
         ],
         "responses": {
-          "407": {
-            "description": "Proxy Authentication Required",
+          "400": {
+            "description": "Bad Request",
             "content": {
               "*/*": {
                 "schema": {
@@ -9813,8 +9813,8 @@
               }
             }
           },
-          "400": {
-            "description": "Bad Request",
+          "407": {
+            "description": "Proxy Authentication Required",
             "content": {
               "*/*": {
                 "schema": {
