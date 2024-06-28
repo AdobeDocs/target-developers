@@ -4973,7 +4973,7 @@
           "Activities"
         ],
         "summary": "Update AP activity",
-        "description": "Update the Automated Personalization activity definition with the contents as provided in the request. This can change the state and behaviour of an existing activity.",
+        "description": "Update the Automated Personalization activity definition with the contents as provided in the request. This can change the state and behaviour of an existing activity.\u003cbr/\u003e\u003cb\u003eNote:\u003c/b\u003eCreating auto-target activities is currently not supported through the API.",
         "operationId": "updateActivity_1",
         "parameters": [
           {
@@ -7366,7 +7366,7 @@
           "Activities"
         ],
         "summary": "Create AP activity",
-        "description": "Create a new Automated Personalization activity based on the specified contents, and return the created activity.",
+        "description": "Create a new Automated Personalization activity based on the specified contents, and return the created activity.\u003cbr/\u003e\u003cb\u003eNote:\u003c/b\u003eCreating auto-target activities is currently not supported through the API.",
         "operationId": "createActivity_1",
         "parameters": [],
         "requestBody": {
