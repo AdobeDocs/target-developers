@@ -4972,9 +4972,9 @@
         "tags": [
           "Activities"
         ],
-        "summary": "Create AP activity",
-        "description": "Create a new Automated Personalization activity based on the specified contents, and return the created activity.",
-        "operationId": "createActivity_1",
+        "summary": "Update AP activity",
+        "description": "Update the Automated Personalization activity definition with the contents as provided in the request. This can change the state and behaviour of an existing activity.",
+        "operationId": "updateActivity_1",
         "parameters": [
           {
             "name": "id",
@@ -5314,7 +5314,7 @@
         ],
         "summary": "Update AB activity",
         "description": "Update the AB activity definition with the contents as provided in the request. This can change the state and behaviour of an existing activity.",
-        "operationId": "updateActivity_2_1",
+        "operationId": "updateActivity_3_1",
         "parameters": [
           {
             "name": "id",
@@ -5669,7 +5669,7 @@
         ],
         "summary": "Update AB activity",
         "description": "Update the AB activity definition with the contents as provided in the request. This can change the state and behaviour of an existing activity.",
-        "operationId": "updateActivity_1_1_1",
+        "operationId": "updateActivity_2_1_1",
         "parameters": [
           {
             "name": "id",
@@ -7367,7 +7367,7 @@
         ],
         "summary": "Create AP activity",
         "description": "Create a new Automated Personalization activity based on the specified contents, and return the created activity.",
-        "operationId": "createActivity_2",
+        "operationId": "createActivity_1",
         "parameters": [],
         "requestBody": {
           "content": {
@@ -7480,7 +7480,7 @@
         ],
         "summary": "Create AB activity",
         "description": "Create a new AB activity based on the specified contents, and return the created activity.",
-        "operationId": "createActivity_4_1",
+        "operationId": "createActivity_3_1",
         "parameters": [],
         "requestBody": {
           "content": {
@@ -7603,7 +7603,7 @@
         ],
         "summary": "Create AB activity",
         "description": "Create a new AB activity based on the specified contents, and return the created activity.",
-        "operationId": "createActivity_3_1_1",
+        "operationId": "createActivity_2_1_1",
         "parameters": [],
         "requestBody": {
           "content": {
@@ -11147,9 +11147,6 @@
             "type": "integer",
             "format": "int32"
           },
-          "autoAllocateTraffic": {
-            "$ref": "#/components/schemas/AutoAllocateTraffic"
-          },
           "entryConstraint": {
             "$ref": "#/components/schemas/EntryConstraint"
           },
@@ -11246,23 +11243,6 @@
             "enum": [
               "vertical",
               "horizontal"
-            ]
-          }
-        },
-        "description": ""
-      },
-      "AutoAllocateTraffic": {
-        "type": "object",
-        "properties": {
-          "enabled": {
-            "type": "boolean"
-          },
-          "successEvaluationCriteria": {
-            "type": "string",
-            "enum": [
-              "conversion_rate",
-              "rpv",
-              "engagement"
             ]
           }
         },
