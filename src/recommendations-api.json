@@ -438,6 +438,9 @@
           },
           {
             "$ref": "#/components/parameters/limit"
+          },
+          {
+            "$ref": "#/components/parameters/name"
           }
         ],
         "responses": {
@@ -604,6 +607,9 @@
           },
           {
             "$ref": "#/components/parameters/limit"
+          },
+          {
+            "$ref": "#/components/parameters/name"
           }
         ],
         "responses": {
@@ -770,6 +776,9 @@
           },
           {
             "$ref": "#/components/parameters/limit"
+          },
+          {
+            "$ref": "#/components/parameters/name"
           }
         ],
         "responses": {
@@ -936,6 +945,9 @@
           },
           {
             "$ref": "#/components/parameters/limit"
+          },
+          {
+            "$ref": "#/components/parameters/name"
           }
         ],
         "responses": {
@@ -1102,6 +1114,9 @@
           },
           {
             "$ref": "#/components/parameters/limit"
+          },
+          {
+            "$ref": "#/components/parameters/name"
           }
         ],
         "responses": {
@@ -1268,6 +1283,9 @@
           },
           {
             "$ref": "#/components/parameters/limit"
+          },
+          {
+            "$ref": "#/components/parameters/name"
           }
         ],
         "responses": {
@@ -1434,6 +1452,9 @@
           },
           {
             "$ref": "#/components/parameters/limit"
+          },
+          {
+            "$ref": "#/components/parameters/name"
           }
         ],
         "responses": {
@@ -1600,6 +1621,15 @@
           },
           {
             "$ref": "#/components/parameters/limit"
+          },
+          {
+            "$ref": "#/components/parameters/industryVertical"
+          },
+          {
+            "$ref": "#/components/parameters/pageType"
+          },
+          {
+            "$ref": "#/components/parameters/name"
           }
         ],
         "responses": {
@@ -1766,6 +1796,9 @@
           },
           {
             "$ref": "#/components/parameters/limit"
+          },
+          {
+            "$ref": "#/components/parameters/name"
           }
         ],
         "responses": {
@@ -2873,6 +2906,37 @@
       "CriteriaMin": {
         "type": "object",
         "properties": {
+          "pageTypes": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "HOME_PAGE",
+                "CATEGORY",
+                "PRODUCT",
+                "CART",
+                "LANDING_PAGE",
+                "SEARCH_RESULT",
+                "THANK_YOU",
+                "SIGN_UP",
+                "PROD_SOLUTION_SERVICE",
+                "ARTICLE",
+                "SLIDESHOW",
+                "VIDEO_PLAYER",
+                "OTHER"
+              ]
+            },
+            "description": "Used to categorize criterias."
+          },
+          "industryVertical": {
+            "type": "string",
+            "enum": [
+              "RETAIL_ECOMMERCE",
+              "LEAD_GEN_B2B_FINANCIAL",
+              "MEDIA_PUBLISHING"
+            ],
+            "description": "Used to categorize criterias."
+          },
           "criteriaGroup": {
             "type": "string",
             "readOnly": true
@@ -3392,6 +3456,15 @@
           {
             "type": "object",
             "properties": {
+              "contentSimilarity": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 20
+                },
+                "description": "Rules to increase or decrease the importance of specific item attributes in determining recommendations. [More info](https://experienceleague.adobe.com/en/docs/target/using/recommendations/criteria/create-new-algorithm#similarity)."
+              },
               "confidence": {
                 "type": "string",
                 "enum": [
@@ -3684,6 +3757,15 @@
           {
             "type": "object",
             "properties": {
+              "contentSimilarity": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 20
+                },
+                "description": "Rules to increase or decrease the importance of specific item attributes in determining recommendations. [More info](https://experienceleague.adobe.com/en/docs/target/using/recommendations/criteria/create-new-algorithm#similarity)."
+              },
               "attribute": {
                 "type": "string",
                 "pattern": "^(profile\\.|user\\.).+",
@@ -4737,6 +4819,44 @@
           ]
         }
       },
+      "industryVertical": {
+        "name": "industryVertical",
+        "in": "query",
+        "description": "Used to filter criteria by industry vertical.",
+        "required": false,
+        "schema": {
+          "type": "string",
+          "enum": [
+            "RETAIL_ECOMMERCE",
+            "LEAD_GEN_B2B_FINANCIAL",
+            "MEDIA_PUBLISHING"
+          ]
+        }
+      },
+      "pageType": {
+        "name": "pageType",
+        "in": "query",
+        "description": "Used to filter criteria by page type.",
+        "required": false,
+        "schema": {
+          "type": "string",
+          "enum": [
+            "HOME_PAGE",
+            "CATEGORY",
+            "PRODUCT",
+            "CART",
+            "LANDING_PAGE",
+            "SEARCH_RESULT",
+            "THANK_YOU",
+            "SIGN_UP",
+            "PROD_SOLUTION_SERVICE",
+            "ARTICLE",
+            "SLIDESHOW",
+            "VIDEO_PLAYER",
+            "OTHER"
+          ]
+        }
+      },
       "includeScript": {
         "name": "includeScript",
         "in": "query",
@@ -4974,6 +5094,11 @@
               "partialDesignAllowed": true,
               "backupDisabled": false,
               "excludePurchases": true,
+              "industryVertical": "RETAIL_ECOMMERCE",
+              "pageTypes": [
+                "ARTICLE",
+                "SLIDESHOW"
+              ],
               "backupInclusionFilteringEnabled": true,
               "modelActionSettings": {
                 "actionOnKeyItems": "PURCHASE",
@@ -5038,6 +5163,11 @@
           "partialDesignAllowed": true,
           "backupDisabled": false,
           "excludePurchases": true,
+          "industryVertical": "RETAIL_ECOMMERCE",
+          "pageTypes": [
+            "ARTICLE",
+            "SLIDESHOW"
+          ],
           "backupInclusionFilteringEnabled": true,
           "modelActionSettings": {
             "actionOnKeyItems": "VIEW",
@@ -5069,6 +5199,11 @@
           "criteriaGroup": "CART",
           "daysCount": "TWO_WEEKS",
           "partialDesignAllowed": true,
+          "industryVertical": "RETAIL_ECOMMERCE",
+          "pageTypes": [
+            "ARTICLE",
+            "SLIDESHOW"
+          ],
           "backupDisabled": false,
           "excludePurchases": true,
           "backupInclusionFilteringEnabled": true,
@@ -5107,6 +5242,11 @@
               "criteriaGroup": "CATEGORY",
               "type": "VIEWED",
               "key": "FAVORITE",
+              "industryVertical": "RETAIL_ECOMMERCE",
+              "pageTypes": [
+                "ARTICLE",
+                "SLIDESHOW"
+              ],
               "aggregation": "NONE",
               "daysCount": "TWO_WEEKS",
               "partialDesignAllowed": false,
@@ -5176,6 +5316,11 @@
           "key": "FAVORITE",
           "aggregation": "NONE",
           "daysCount": "TWO_WEEKS",
+          "industryVertical": "RETAIL_ECOMMERCE",
+          "pageTypes": [
+            "ARTICLE",
+            "SLIDESHOW"
+          ],
           "partialDesignAllowed": false,
           "backupDisabled": false,
           "excludePurchases": true,
@@ -5196,6 +5341,11 @@
           "key": "FAVORITE",
           "aggregation": "NONE",
           "daysCount": "TWO_WEEKS",
+          "industryVertical": "RETAIL_ECOMMERCE",
+          "pageTypes": [
+            "ARTICLE",
+            "SLIDESHOW"
+          ],
           "partialDesignAllowed": false,
           "backupDisabled": false,
           "excludePurchases": true,
@@ -5223,6 +5373,11 @@
               "partialDesignAllowed": true,
               "backupDisabled": false,
               "excludePurchases": true,
+              "industryVertical": "RETAIL_ECOMMERCE",
+              "pageTypes": [
+                "ARTICLE",
+                "SLIDESHOW"
+              ],
               "configuration": {
                 "feed": {
                   "environmentId": -1,
@@ -5296,6 +5451,11 @@
               "criteriaTitle": "Classes & Events",
               "criteriaGroup": "CUSTOM",
               "key": "PROFILE_ATTRIBUTE",
+              "industryVertical": "RETAIL_ECOMMERCE",
+              "pageTypes": [
+                "ARTICLE",
+                "SLIDESHOW"
+              ],
               "partialDesignAllowed": true,
               "backupDisabled": false,
               "excludePurchases": true,
@@ -5344,6 +5504,11 @@
           "partialDesignAllowed": true,
           "backupDisabled": false,
           "excludePurchases": true,
+          "industryVertical": "RETAIL_ECOMMERCE",
+          "pageTypes": [
+            "ARTICLE",
+            "SLIDESHOW"
+          ],
           "backupInclusionFilteringEnabled": true,
           "configuration": {
             "attribute": "profile.city",
@@ -5374,6 +5539,11 @@
           "criteriaTitle": "Classes & Events",
           "criteriaGroup": "CUSTOM",
           "key": "PROFILE_ATTRIBUTE",
+          "industryVertical": "RETAIL_ECOMMERCE",
+          "pageTypes": [
+            "ARTICLE",
+            "SLIDESHOW"
+          ],
           "partialDesignAllowed": true,
           "backupDisabled": false,
           "excludePurchases": true,
@@ -5451,7 +5621,11 @@
                     ]
                   }
                 ],
-                "pastBehaviorOrdinal": -1
+                "pastBehaviorOrdinal": -1,
+                "contentSimilarity": {
+                  "name": 0,
+                  "id": 5
+                }
               }
             },
             {
@@ -5459,6 +5633,11 @@
               "name": "Similar items",
               "criteriaGroup": "ITEM",
               "type": "BOUGHT_CF",
+              "industryVertical": "RETAIL_ECOMMERCE",
+              "pageTypes": [
+                "ARTICLE",
+                "SLIDESHOW"
+              ],
               "key": "CURRENT",
               "aggregation": "NONE",
               "daysCount": "TWO_WEEKS",
@@ -5513,6 +5692,11 @@
           "type": "BOUGHT_CF",
           "key": "CURRENT",
           "aggregation": "NONE",
+          "industryVertical": "RETAIL_ECOMMERCE",
+          "pageTypes": [
+            "ARTICLE",
+            "SLIDESHOW"
+          ],
           "daysCount": "TWO_WEEKS",
           "minInventory": 1,
           "partialDesignAllowed": false,
@@ -5551,6 +5735,11 @@
           "criteriaGroup": "ITEM",
           "type": "BOUGHT_CF",
           "key": "CURRENT",
+          "industryVertical": "RETAIL_ECOMMERCE",
+          "pageTypes": [
+            "ARTICLE",
+            "SLIDESHOW"
+          ],
           "aggregation": "NONE",
           "daysCount": "TWO_WEEKS",
           "minInventory": 1,
@@ -5604,6 +5793,11 @@
               "name": "Top sold by region",
               "criteriaGroup": "POPULARITY",
               "type": "SELLERS",
+              "industryVertical": "RETAIL_ECOMMERCE",
+              "pageTypes": [
+                "ARTICLE",
+                "SLIDESHOW"
+              ],
               "aggregation": "ALL_OR_NOTHING",
               "daysCount": "ONE_MONTH",
               "configuration": {
@@ -5631,6 +5825,11 @@
           "aggregation": "NONE",
           "daysCount": "TWO_DAYS",
           "minInventory": 2,
+          "industryVertical": "RETAIL_ECOMMERCE",
+          "pageTypes": [
+            "ARTICLE",
+            "SLIDESHOW"
+          ],
           "partialDesignAllowed": true,
           "backupDisabled": false,
           "excludePurchases": true,
@@ -5650,6 +5849,11 @@
           "name": "Top sold by region",
           "criteriaGroup": "POPULARITY",
           "type": "VIEWED",
+          "industryVertical": "RETAIL_ECOMMERCE",
+          "pageTypes": [
+            "ARTICLE",
+            "SLIDESHOW"
+          ],
           "key": "customProfileAttribute",
           "aggregation": "ALL_OR_NOTHING",
           "daysCount": "ONE_MONTH",
@@ -5681,6 +5885,11 @@
               "name": "city-bike-recs",
               "criteriaTitle": "Bike recommendations per city",
               "criteriaGroup": "PROFILEATTRIBUTE",
+              "industryVertical": "RETAIL_ECOMMERCE",
+              "pageTypes": [
+                "ARTICLE",
+                "SLIDESHOW"
+              ],
               "type": "VIEWED_CF",
               "aggregation": "NONE",
               "daysCount": "ONE_MONTH",
@@ -5703,7 +5912,11 @@
                     ]
                   }
                 ],
-                "datasource": "mboxes"
+                "datasource": "mboxes",
+                "contentSimilarity": {
+                  "name": 10,
+                  "id": 14
+                }
               }
             },
             {
@@ -5732,6 +5945,11 @@
           "aggregation": "NONE",
           "daysCount": "ONE_MONTH",
           "minInventory": 5,
+          "industryVertical": "RETAIL_ECOMMERCE",
+          "pageTypes": [
+            "ARTICLE",
+            "SLIDESHOW"
+          ],
           "partialDesignAllowed": true,
           "backupDisabled": false,
           "excludePurchases": true,
@@ -5762,6 +5980,11 @@
           "name": "city-bike-recs",
           "criteriaTitle": "Bike recommendations per city",
           "criteriaGroup": "PROFILEATTRIBUTE",
+          "industryVertical": "RETAIL_ECOMMERCE",
+          "pageTypes": [
+            "ARTICLE",
+            "SLIDESHOW"
+          ],
           "type": "VIEWED_CF",
           "aggregation": "NONE",
           "daysCount": "ONE_MONTH",
@@ -5810,6 +6033,11 @@
               "id": 2,
               "name": "Recently Viewed in Same Brand",
               "criteriaGroup": "RECENT",
+              "industryVertical": "RETAIL_ECOMMERCE",
+              "pageTypes": [
+                "ARTICLE",
+                "SLIDESHOW"
+              ],
               "minInventory": 1,
               "configuration": {
                 "inclusionRules": [
@@ -5843,6 +6071,11 @@
           "criteriaTitle": "Just Seen Items",
           "excludePurchases": true,
           "criteriaGroup": "RECENT",
+          "industryVertical": "RETAIL_ECOMMERCE",
+          "pageTypes": [
+            "ARTICLE",
+            "SLIDESHOW"
+          ],
           "minInventory": 3,
           "configuration": {
             "rankingRules": []
@@ -5857,6 +6090,11 @@
           "name": "Recently Viewed in Same Brand",
           "criteriaGroup": "RECENT",
           "excludePurchases": true,
+          "industryVertical": "RETAIL_ECOMMERCE",
+          "pageTypes": [
+            "ARTICLE",
+            "SLIDESHOW"
+          ],
           "minInventory": 1,
           "configuration": {
             "inclusionRules": [
@@ -5893,6 +6131,11 @@
               "name": "Top Dashboard Items",
               "criteriaTitle": "Top Dashboard Items",
               "criteriaGroup": "SEQUENCE",
+              "industryVertical": "RETAIL_ECOMMERCE",
+              "pageTypes": [
+                "ARTICLE",
+                "SLIDESHOW"
+              ],
               "backupDisabled": true,
               "sequence": [
                 {
@@ -5957,6 +6200,11 @@
           "name": "Top Dashboard Items",
           "criteriaTitle": "Top Dashboard Items",
           "backupDisabled": true,
+          "industryVertical": "RETAIL_ECOMMERCE",
+          "pageTypes": [
+            "ARTICLE",
+            "SLIDESHOW"
+          ],
           "sequence": [
             {
               "id": 332,
@@ -5976,6 +6224,11 @@
           "name": "Top Dashboard Items",
           "criteriaTitle": "Top Dashboard Items",
           "criteriaGroup": "SEQUENCE",
+          "industryVertical": "RETAIL_ECOMMERCE",
+          "pageTypes": [
+            "ARTICLE",
+            "SLIDESHOW"
+          ],
           "backupDisabled": true,
           "sequence": [
             {
@@ -6003,6 +6256,11 @@
               "criteriaGroup": "USERHISTORY",
               "daysCount": "TWO_WEEKS",
               "partialDesignAllowed": true,
+              "industryVertical": "RETAIL_ECOMMERCE",
+              "pageTypes": [
+                "ARTICLE",
+                "SLIDESHOW"
+              ],
               "backupDisabled": false,
               "excludePurchases": true,
               "backupInclusionFilteringEnabled": true,
@@ -6059,6 +6317,11 @@
           "partialDesignAllowed": true,
           "backupDisabled": false,
           "excludePurchases": true,
+          "industryVertical": "RETAIL_ECOMMERCE",
+          "pageTypes": [
+            "ARTICLE",
+            "SLIDESHOW"
+          ],
           "backupInclusionFilteringEnabled": true,
           "excludeViews": true,
           "configuration": {
@@ -6092,6 +6355,11 @@
           "criteriaGroup": "USERHISTORY",
           "daysCount": "TWO_WEEKS",
           "minInventory": 5,
+          "industryVertical": "RETAIL_ECOMMERCE",
+          "pageTypes": [
+            "ARTICLE",
+            "SLIDESHOW"
+          ],
           "partialDesignAllowed": true,
           "backupDisabled": false,
           "excludePurchases": true,
