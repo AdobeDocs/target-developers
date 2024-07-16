@@ -7724,8 +7724,8 @@
         "tags": [
           "Revisions"
         ],
-        "summary": "Get the audit log for entities filtered by modifiedByName field",
-        "description": "Get revisions of activities, audiences, offers or profile scripts, filtered by timestamp and last author\u0027s name",
+        "summary": "Get the audit log by last author\u0027s name and a `modified-after` timestamp",
+        "description": "Get all the revisions, filtered by author\u0027s name and modified-after timestamp (in ISO 8601 format). If not supplied, the default is the last 1 day. In the response, the `modifiedBy` field will contain the author\u0027s email, while the `modifiedByName` will contain its name.",
         "operationId": "getRevisionLogForModifiedByName",
         "parameters": [
           {
@@ -7843,8 +7843,8 @@
         "tags": [
           "Revisions"
         ],
-        "summary": "Get the audit log for an entity",
-        "description": "Get revisions of an activity, audience or offer in descending order by time",
+        "summary": "Get the audit log by entity id",
+        "description": "Get all the revisions of an entity (activity / audience / offer / profile script), in descending order by time",
         "operationId": "getRevisionLog",
         "parameters": [
           {
@@ -7954,8 +7954,8 @@
         "tags": [
           "Revisions"
         ],
-        "summary": "Get revision at specified moment in time",
-        "description": "Get the latest revision created no later than a specified timestamp",
+        "summary": "Get a revision by timestamp",
+        "description": "Get a specific revision created no later than a specified timestamp",
         "operationId": "getRevisionBeforeTimestamp",
         "parameters": [
           {
@@ -8074,8 +8074,8 @@
         "tags": [
           "Revisions"
         ],
-        "summary": "Get revision by id",
-        "description": "Get revision details for an activity, audience or offer, by entity id and revision id",
+        "summary": "Get a revision by revision id",
+        "description": "Get a specific revision by entity id and revision id",
         "operationId": "getRevision",
         "parameters": [
           {
