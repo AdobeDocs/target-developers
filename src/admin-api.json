@@ -7844,7 +7844,7 @@
           "Revisions"
         ],
         "summary": "Get the audit log by entity id",
-        "description": "Get all the revisions of an entity (activity / audience / offer / profile script), in descending order by time",
+        "description": "Get all the revisions of an entity (activity / audience / offer / profile script), in descending order by time. Please note: Only the last 100 revisions are recorded per entityId (including the CREATE \u0026 DELETE actions).",
         "operationId": "getRevisionLog",
         "parameters": [
           {
@@ -7955,7 +7955,7 @@
           "Revisions"
         ],
         "summary": "Get a revision by timestamp",
-        "description": "Get a specific revision created no later than a specified timestamp",
+        "description": "Get a specific revision created no later than a specified timestamp.",
         "operationId": "getRevisionBeforeTimestamp",
         "parameters": [
           {
@@ -8075,7 +8075,7 @@
           "Revisions"
         ],
         "summary": "Get a revision by revision id",
-        "description": "Get a specific revision by entity id and revision id",
+        "description": "Get a specific revision by entity id and revision id.",
         "operationId": "getRevision",
         "parameters": [
           {
@@ -12226,11 +12226,11 @@
           "chronology": {
             "$ref": "#/components/schemas/Chronology"
           },
-          "start": {
+          "end": {
             "type": "string",
             "format": "date-time"
           },
-          "end": {
+          "start": {
             "type": "string",
             "format": "date-time"
           },
@@ -12329,10 +12329,10 @@
               "type": "string"
             }
           },
-          "duplicate": {
+          "outlier": {
             "type": "boolean"
           },
-          "outlier": {
+          "duplicate": {
             "type": "boolean"
           }
         },
