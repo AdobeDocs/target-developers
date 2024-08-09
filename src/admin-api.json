@@ -7719,6 +7719,117 @@
         }
       }
     },
+    "/{tenant}/target/ui/revisions/{RevisionResourceUIV1Type}/{id}": {
+      "get": {
+        "tags": [
+          "Ui"
+        ],
+        "summary": "Get the audit log with jsonData by entity id",
+        "description": "Get all the revisions with jsonData of an entity (activity / audience / offer / profile script), in descending order by time. Please note: Only the last 100 revisions are recorded per entityId (including the CREATE \u0026 DELETE actions).",
+        "operationId": "getRevisionLog",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "RevisionResourceUIV1Type",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "$ref": "#/components/schemas/RevisionResourceUiV1Type"
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "407": {
+            "description": "Proxy Authentication Required",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "Method Not Allowed",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "406": {
+            "description": "Not Acceptable",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "415": {
+            "description": "Unsupported Media Type",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/vnd.adobe.target.v1+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RevisionUIV1Log"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/{tenant}/target/revisions/{revisionResourceType}": {
       "get": {
         "tags": [
@@ -7845,7 +7956,7 @@
         ],
         "summary": "Get the audit log by entity id",
         "description": "Get all the revisions of an entity (activity / audience / offer / profile script), in descending order by time. Please note: Only the last 100 revisions are recorded per entityId (including the CREATE \u0026 DELETE actions).",
-        "operationId": "getRevisionLog",
+        "operationId": "getRevisionLog_1",
         "parameters": [
           {
             "name": "id",
@@ -11493,6 +11604,9 @@
         },
         "description": ""
       },
+      "RevisionResourceUiV1Type": {
+        "$ref": "#/components/schemas/RevisionResourceUiV1Type"
+      },
       "Pagination": {
         "type": "object",
         "properties": {
@@ -11507,21 +11621,14 @@
         },
         "description": ""
       },
-      "RevisionLog": {
+      "Revision": {
         "type": "object",
         "properties": {
-          "total": {
-            "type": "integer",
-            "format": "int32"
+          "summary": {
+            "$ref": "#/components/schemas/RevisionSummary"
           },
-          "pagination": {
-            "$ref": "#/components/schemas/Pagination"
-          },
-          "revisions": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/RevisionSummary"
-            }
+          "jsonData": {
+            "type": "string"
           }
         },
         "description": ""
@@ -11556,14 +11663,40 @@
         },
         "description": ""
       },
-      "Revision": {
+      "RevisionUIV1Log": {
         "type": "object",
         "properties": {
-          "summary": {
-            "$ref": "#/components/schemas/RevisionSummary"
+          "total": {
+            "type": "integer",
+            "format": "int32"
           },
-          "jsonData": {
-            "type": "string"
+          "pagination": {
+            "$ref": "#/components/schemas/Pagination"
+          },
+          "revisions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Revision"
+            }
+          }
+        },
+        "description": ""
+      },
+      "RevisionLog": {
+        "type": "object",
+        "properties": {
+          "total": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pagination": {
+            "$ref": "#/components/schemas/Pagination"
+          },
+          "revisions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RevisionSummary"
+            }
           }
         },
         "description": ""
@@ -12226,11 +12359,11 @@
           "chronology": {
             "$ref": "#/components/schemas/Chronology"
           },
-          "end": {
+          "start": {
             "type": "string",
             "format": "date-time"
           },
-          "start": {
+          "end": {
             "type": "string",
             "format": "date-time"
           },
