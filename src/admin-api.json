@@ -7719,124 +7719,13 @@
         }
       }
     },
-    "/{tenant}/target/ui/revisions/{RevisionResourceUIV1Type}/{id}": {
-      "get": {
-        "tags": [
-          "Ui"
-        ],
-        "summary": "Get the audit log with jsonData by entity id",
-        "description": "Get all the revisions with jsonData of an entity (activity / audience / offer / profile script), in descending order by time. \u003cbr\u003e\u003cbr\u003e\u003cb\u003ePlease Note:\u003c/b\u003e Only the \u003cu\u003elatest 100 revisions\u003c/u\u003e will be retained per entityId (including `CREATE` and `DELETE` actions, excluding `PATCH` actions).",
-        "operationId": "getRevisionLog",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int64"
-            }
-          },
-          {
-            "name": "RevisionResourceUIV1Type",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "$ref": "#/components/schemas/RevisionResourceUiV1Type"
-            }
-          }
-        ],
-        "responses": {
-          "400": {
-            "description": "Bad Request",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "407": {
-            "description": "Proxy Authentication Required",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "401": {
-            "description": "Unauthorized",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "405": {
-            "description": "Method Not Allowed",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "406": {
-            "description": "Not Acceptable",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "415": {
-            "description": "Unsupported Media Type",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/vnd.adobe.target.v1+json": {
-                "schema": {
-                  "$ref": "#/components/schemas/RevisionUIV1Log"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
     "/{tenant}/target/revisions/{revisionResourceType}": {
       "get": {
         "tags": [
           "Revisions"
         ],
-        "summary": "Get the audit log by last author\u0027s name and a `modified-after` timestamp",
-        "description": "Get all the revisions, filtered by author\u0027s name and modified-after timestamp (optional, \u003cb\u003ein ISO-8601 format\u003c/b\u003e, default: last 1 day). \u003cbr\u003e\u003cbr\u003eIn the response, the `modifiedBy` field will contain the author\u0027s email, while the `modifiedByName` will contain its name.",
+        "summary": "Get the audit log by last author\u0027s name and a modified-after timestamp",
+        "description": "Get all the revisions, filtered by author\u0027s name and modified-after timestamp (optional, in ISO-8601 format, default: last 1 day). \u003cbr/\u003eIn the response, the \u003ci\u003emodifiedBy\u003c/i\u003e field will contain the author\u0027s email, while the \u003ci\u003emodifiedByName\u003c/i\u003e will contain its name.",
         "operationId": "getRevisionLogForModifiedByName",
         "parameters": [
           {
@@ -7955,8 +7844,8 @@
           "Revisions"
         ],
         "summary": "Get the audit log by entity id",
-        "description": "Get all the revisions of an entity (activity / audience / offer / profile script), in descending order by time. \u003cbr\u003e\u003cbr\u003e\u003cb\u003ePlease Note:\u003c/b\u003e Only the \u003cu\u003elatest 100 revisions\u003c/u\u003e will be retained per entityId (including `CREATE` and `DELETE` actions, excluding `PATCH` actions).",
-        "operationId": "getRevisionLog_1",
+        "description": "Get all the revisions of an entity (activity / audience / offer / profile script), in descending order by time. \u003cbr/\u003e\u003cb\u003ePlease Note:\u003c/b\u003e Only the \u003cu\u003elatest 100 revisions\u003c/u\u003e will be retained per entityId (including \u003ci\u003eCREATE\u003c/i\u003e and \u003ci\u003eDELETE\u003c/i\u003e actions, excluding \u003ci\u003ePATCH\u003c/i\u003e actions).",
+        "operationId": "getRevisionLog",
         "parameters": [
           {
             "name": "id",
@@ -11604,9 +11493,6 @@
         },
         "description": ""
       },
-      "RevisionResourceUiV1Type": {
-        "$ref": "#/components/schemas/RevisionResourceUiV1Type"
-      },
       "Pagination": {
         "type": "object",
         "properties": {
@@ -11621,14 +11507,21 @@
         },
         "description": ""
       },
-      "Revision": {
+      "RevisionLog": {
         "type": "object",
         "properties": {
-          "summary": {
-            "$ref": "#/components/schemas/RevisionSummary"
+          "total": {
+            "type": "integer",
+            "format": "int32"
           },
-          "jsonData": {
-            "type": "string"
+          "pagination": {
+            "$ref": "#/components/schemas/Pagination"
+          },
+          "revisions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RevisionSummary"
+            }
           }
         },
         "description": ""
@@ -11663,40 +11556,14 @@
         },
         "description": ""
       },
-      "RevisionUIV1Log": {
+      "Revision": {
         "type": "object",
         "properties": {
-          "total": {
-            "type": "integer",
-            "format": "int32"
+          "summary": {
+            "$ref": "#/components/schemas/RevisionSummary"
           },
-          "pagination": {
-            "$ref": "#/components/schemas/Pagination"
-          },
-          "revisions": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Revision"
-            }
-          }
-        },
-        "description": ""
-      },
-      "RevisionLog": {
-        "type": "object",
-        "properties": {
-          "total": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "pagination": {
-            "$ref": "#/components/schemas/Pagination"
-          },
-          "revisions": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/RevisionSummary"
-            }
+          "jsonData": {
+            "type": "string"
           }
         },
         "description": ""
