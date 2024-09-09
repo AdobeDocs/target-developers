@@ -9929,8 +9929,7 @@
               "type": "object"
             }
           }
-        },
-        "description": ""
+        }
       },
       "ErrorResponse": {
         "type": "object",
@@ -9952,8 +9951,7 @@
               "$ref": "#/components/schemas/Error"
             }
           }
-        },
-        "description": ""
+        }
       },
       "Property": {
         "required": [
@@ -10000,8 +9998,7 @@
           "token": {
             "type": "string"
           }
-        },
-        "description": ""
+        }
       },
       "PromotionSlotConfiguration": {
         "type": "object",
@@ -10010,8 +10007,7 @@
             "type": "integer",
             "format": "int32"
           }
-        },
-        "description": ""
+        }
       },
       "Promotions": {
         "type": "object",
@@ -10034,8 +10030,7 @@
               "$ref": "#/components/schemas/RecommendationUnitPromotionConfiguration"
             }
           }
-        },
-        "description": ""
+        }
       },
       "RecommendationOffer": {
         "required": [
@@ -10071,8 +10066,7 @@
             "type": "string",
             "format": "date-time"
           }
-        },
-        "description": ""
+        }
       },
       "RecommendationUnitPromotionConfiguration": {
         "type": "object",
@@ -10084,8 +10078,7 @@
           "configuration": {
             "$ref": "#/components/schemas/PromotionSlotConfiguration"
           }
-        },
-        "description": ""
+        }
       },
       "JsonNode": {
         "type": "object"
@@ -10110,8 +10103,7 @@
             "type": "string",
             "format": "date-time"
           }
-        },
-        "description": ""
+        }
       },
       "ContentOffer": {
         "type": "object",
@@ -10133,8 +10125,7 @@
             "type": "string",
             "format": "date-time"
           }
-        },
-        "description": ""
+        }
       },
       "HostEnvironment": {
         "required": [
@@ -10146,8 +10137,7 @@
             "type": "integer",
             "format": "int64"
           }
-        },
-        "description": ""
+        }
       },
       "Environment": {
         "type": "object",
@@ -10169,8 +10159,7 @@
           "default": {
             "type": "boolean"
           }
-        },
-        "description": ""
+        }
       },
       "DefaultEnvironmentsDTO": {
         "type": "object",
@@ -10183,8 +10172,7 @@
             "type": "integer",
             "format": "int64"
           }
-        },
-        "description": ""
+        }
       },
       "UiSettingsDto": {
         "type": "object",
@@ -10222,8 +10210,7 @@
               "transitional"
             ]
           }
-        },
-        "description": ""
+        }
       },
       "ClientSelfServiceSettings": {
         "type": "object",
@@ -10272,8 +10259,7 @@
           "defaultDataCollectionHost": {
             "type": "string"
           }
-        },
-        "description": ""
+        }
       },
       "IpFilterDTO": {
         "type": "object",
@@ -10284,8 +10270,7 @@
           "netmask": {
             "type": "string"
           }
-        },
-        "description": ""
+        }
       },
       "IpFiltersDto": {
         "type": "object",
@@ -10296,8 +10281,7 @@
               "$ref": "#/components/schemas/IpFilterDTO"
             }
           }
-        },
-        "description": ""
+        }
       },
       "AuthorizedMboxHosts": {
         "type": "object",
@@ -10311,8 +10295,7 @@
           "blockedMboxHostsConstraint": {
             "$ref": "#/components/schemas/MboxHostConstraints"
           }
-        },
-        "description": ""
+        }
       },
       "MboxHostConstraints": {
         "type": "object",
@@ -10323,8 +10306,7 @@
               "type": "string"
             }
           }
-        },
-        "description": ""
+        }
       },
       "Audience": {
         "type": "object",
@@ -10381,8 +10363,7 @@
             "type": "string",
             "format": "date-time"
           }
-        },
-        "description": ""
+        }
       },
       "CompositeSegmentRule": {
         "type": "object",
@@ -10401,8 +10382,7 @@
               "$ref": "#/components/schemas/SegmentRule"
             }
           }
-        },
-        "description": ""
+        }
       },
       "PlatformMetadata": {
         "type": "object",
@@ -10410,8 +10390,7 @@
           "sandbox": {
             "$ref": "#/components/schemas/Sandbox"
           }
-        },
-        "description": ""
+        }
       },
       "Sandbox": {
         "type": "object",
@@ -10422,8 +10401,7 @@
           "name": {
             "type": "string"
           }
-        },
-        "description": ""
+        }
       },
       "SegmentRule": {
         "type": "object"
@@ -10476,8 +10454,7 @@
             "type": "integer",
             "format": "int64"
           }
-        },
-        "description": ""
+        }
       },
       "State": {
         "type": "object",
@@ -10485,8 +10462,7 @@
           "state": {
             "$ref": "#/components/schemas/ActivityState"
           }
-        },
-        "description": ""
+        }
       },
       "ActivityDescription": {
         "type": "object",
@@ -10520,8 +10496,7 @@
             "type": "string",
             "format": "date-time"
           }
-        },
-        "description": ""
+        }
       },
       "Schedule": {
         "type": "object",
@@ -10534,8 +10509,7 @@
             "type": "string",
             "format": "date-time"
           }
-        },
-        "description": ""
+        }
       },
       "Priority": {
         "type": "object",
@@ -10544,8 +10518,7 @@
             "type": "integer",
             "format": "int32"
           }
-        },
-        "description": ""
+        }
       },
       "Name": {
         "type": "object",
@@ -10553,8 +10526,7 @@
           "name": {
             "type": "string"
           }
-        },
-        "description": ""
+        }
       },
       "ABTActivity": {
         "type": "object",
@@ -10637,8 +10609,7 @@
           "analytics": {
             "$ref": "#/components/schemas/Analytics"
           }
-        },
-        "description": ""
+        }
       },
       "Analytics": {
         "type": "object",
@@ -10652,8 +10623,7 @@
               "$ref": "#/components/schemas/ReportSuites"
             }
           }
-        },
-        "description": ""
+        }
       },
       "AutomatedExperiencesDTO": {
         "type": "object",
@@ -10673,8 +10643,7 @@
               "$ref": "#/components/schemas/LocationOptionExperienceDTO"
             }
           }
-        },
-        "description": ""
+        }
       },
       "ClickTrackSelector": {
         "type": "object",
@@ -10693,8 +10662,7 @@
             "type": "integer",
             "format": "int32"
           }
-        },
-        "description": ""
+        }
       },
       "ControlExperienceDTO": {
         "type": "object",
@@ -10714,8 +10682,7 @@
           "custom": {
             "$ref": "#/components/schemas/ExperienceDTO"
           }
-        },
-        "description": ""
+        }
       },
       "EntryConstraint": {
         "type": "object",
@@ -10730,8 +10697,7 @@
             "type": "integer",
             "format": "int32"
           }
-        },
-        "description": ""
+        }
       },
       "EntryConstraintMbox": {
         "type": "object",
@@ -10746,8 +10712,7 @@
               "format": "int64"
             }
           }
-        },
-        "description": ""
+        }
       },
       "ExperienceDTO": {
         "type": "object",
@@ -10762,8 +10727,7 @@
               "$ref": "#/components/schemas/LocationOptionDTO"
             }
           }
-        },
-        "description": ""
+        }
       },
       "ExplicitExperiencesDTO": {
         "type": "object",
@@ -10777,8 +10741,7 @@
               "$ref": "#/components/schemas/SegmentExperienceDTO"
             }
           }
-        },
-        "description": ""
+        }
       },
       "LocationOptionDTO": {
         "type": "object",
@@ -10791,8 +10754,7 @@
             "type": "integer",
             "format": "int32"
           }
-        },
-        "description": ""
+        }
       },
       "LocationOptionExperienceDTO": {
         "type": "object",
@@ -10803,8 +10765,7 @@
               "$ref": "#/components/schemas/LocationOptionDTO"
             }
           }
-        },
-        "description": ""
+        }
       },
       "LocationSegmentOptionsDTO": {
         "type": "object",
@@ -10819,8 +10780,7 @@
               "$ref": "#/components/schemas/SegmentOptionDTO"
             }
           }
-        },
-        "description": ""
+        }
       },
       "Locations": {
         "type": "object",
@@ -10837,8 +10797,7 @@
               "$ref": "#/components/schemas/Selector"
             }
           }
-        },
-        "description": ""
+        }
       },
       "Mbox": {
         "type": "object",
@@ -10857,8 +10816,7 @@
               "format": "int64"
             }
           }
-        },
-        "description": ""
+        }
       },
       "Metric": {
         "type": "object",
@@ -10906,8 +10864,7 @@
           "analytics": {
             "$ref": "#/components/schemas/Analytics"
           }
-        },
-        "description": ""
+        }
       },
       "MetricMbox": {
         "type": "object",
@@ -10929,8 +10886,7 @@
               "format": "int64"
             }
           }
-        },
-        "description": ""
+        }
       },
       "OfferTemplate": {
         "type": "object",
@@ -10945,8 +10901,7 @@
               "$ref": "#/components/schemas/TemplateParameter"
             }
           }
-        },
-        "description": ""
+        }
       },
       "Option": {
         "type": "object",
@@ -10968,8 +10923,7 @@
               "$ref": "#/components/schemas/OfferTemplate"
             }
           }
-        },
-        "description": ""
+        }
       },
       "OptionGroup": {
         "type": "object",
@@ -10988,8 +10942,7 @@
               "format": "int32"
             }
           }
-        },
-        "description": ""
+        }
       },
       "ReportSuites": {
         "type": "object",
@@ -11003,8 +10956,7 @@
               "type": "string"
             }
           }
-        },
-        "description": ""
+        }
       },
       "ReportingAudience": {
         "type": "object",
@@ -11021,8 +10973,7 @@
             "type": "integer",
             "format": "int32"
           }
-        },
-        "description": ""
+        }
       },
       "SegmentExperienceDTO": {
         "type": "object",
@@ -11044,8 +10995,7 @@
               "format": "int64"
             }
           }
-        },
-        "description": ""
+        }
       },
       "SegmentOptionDTO": {
         "type": "object",
@@ -11062,8 +11012,7 @@
               "format": "int64"
             }
           }
-        },
-        "description": ""
+        }
       },
       "Selector": {
         "type": "object",
@@ -11085,8 +11034,7 @@
               "format": "int64"
             }
           }
-        },
-        "description": ""
+        }
       },
       "TargetedExperiencesDTO": {
         "type": "object",
@@ -11104,8 +11052,7 @@
               "custom_dsw"
             ]
           }
-        },
-        "description": ""
+        }
       },
       "TemplateParameter": {
         "type": "object",
@@ -11116,8 +11063,7 @@
           "value": {
             "type": "string"
           }
-        },
-        "description": ""
+        }
       },
       "ABActivity": {
         "type": "object",
@@ -11204,8 +11150,7 @@
           "applicationContext": {
             "$ref": "#/components/schemas/ApplicationContext"
           }
-        },
-        "description": ""
+        }
       },
       "ApplicationContext": {
         "type": "object",
@@ -11245,8 +11190,7 @@
               "horizontal"
             ]
           }
-        },
-        "description": ""
+        }
       },
       "Experience": {
         "type": "object",
@@ -11275,8 +11219,7 @@
               "$ref": "#/components/schemas/OptionLocation"
             }
           }
-        },
-        "description": ""
+        }
       },
       "OptionLocation": {
         "type": "object",
@@ -11289,8 +11232,7 @@
             "type": "integer",
             "format": "int32"
           }
-        },
-        "description": ""
+        }
       },
       "ViewReference": {
         "type": "object",
@@ -11310,8 +11252,7 @@
               "format": "int64"
             }
           }
-        },
-        "description": ""
+        }
       },
       "ResponseTokenDTO": {
         "type": "object",
@@ -11334,8 +11275,7 @@
               "SCRIPT"
             ]
           }
-        },
-        "description": ""
+        }
       },
       "BatchOperation": {
         "required": [
@@ -11383,8 +11323,7 @@
           "body": {
             "$ref": "#/components/schemas/JsonNode"
           }
-        },
-        "description": ""
+        }
       },
       "BatchRequest": {
         "required": [
@@ -11400,8 +11339,7 @@
               "$ref": "#/components/schemas/BatchOperation"
             }
           }
-        },
-        "description": ""
+        }
       },
       "Header": {
         "type": "object",
@@ -11412,12 +11350,10 @@
           "value": {
             "type": "string"
           }
-        },
-        "description": ""
+        }
       },
       "BatchAuthData": {
-        "type": "object",
-        "description": ""
+        "type": "object"
       },
       "BatchOperationResponse": {
         "type": "object",
@@ -11442,8 +11378,7 @@
           "body": {
             "type": "string"
           }
-        },
-        "description": ""
+        }
       },
       "BatchResponse": {
         "type": "object",
@@ -11454,8 +11389,7 @@
               "$ref": "#/components/schemas/BatchOperationResponse"
             }
           }
-        },
-        "description": ""
+        }
       },
       "AuthorizationToken": {
         "type": "object",
@@ -11477,8 +11411,7 @@
             "type": "integer",
             "format": "int64"
           }
-        },
-        "description": ""
+        }
       },
       "AudiencePatch": {
         "type": "object",
@@ -11490,8 +11423,7 @@
           "workspace": {
             "$ref": "#/components/schemas/workspace"
           }
-        },
-        "description": ""
+        }
       },
       "Pagination": {
         "type": "object",
@@ -11504,8 +11436,7 @@
             "type": "integer",
             "format": "int32"
           }
-        },
-        "description": ""
+        }
       },
       "RevisionLog": {
         "type": "object",
@@ -11523,8 +11454,7 @@
               "$ref": "#/components/schemas/RevisionSummary"
             }
           }
-        },
-        "description": ""
+        }
       },
       "RevisionSummary": {
         "type": "object",
@@ -11553,8 +11483,7 @@
             "type": "string",
             "format": "date-time"
           }
-        },
-        "description": ""
+        }
       },
       "Revision": {
         "type": "object",
@@ -11565,8 +11494,7 @@
           "jsonData": {
             "type": "string"
           }
-        },
-        "description": ""
+        }
       },
       "ResponseToken": {
         "type": "object",
@@ -11602,8 +11530,7 @@
           "deletable": {
             "type": "boolean"
           }
-        },
-        "description": ""
+        }
       },
       "ResponseTokenList": {
         "type": "object",
@@ -11626,8 +11553,7 @@
               "$ref": "#/components/schemas/ResponseToken"
             }
           }
-        },
-        "description": ""
+        }
       },
       "PropertyList": {
         "type": "object",
@@ -11650,8 +11576,7 @@
               "$ref": "#/components/schemas/Property"
             }
           }
-        },
-        "description": ""
+        }
       },
       "MboxProfileAttributesDTO": {
         "type": "object",
@@ -11662,8 +11587,7 @@
               "type": "string"
             }
           }
-        },
-        "description": ""
+        }
       },
       "OfferList": {
         "type": "object",
@@ -11686,8 +11610,7 @@
               "$ref": "#/components/schemas/OfferListDescription"
             }
           }
-        },
-        "description": ""
+        }
       },
       "OfferListDescription": {
         "type": "object",
@@ -11714,8 +11637,7 @@
           "workspace": {
             "type": "string"
           }
-        },
-        "description": ""
+        }
       },
       "OfferTemplateList": {
         "type": "object",
@@ -11738,8 +11660,7 @@
               "$ref": "#/components/schemas/OfferTemplate"
             }
           }
-        },
-        "description": ""
+        }
       },
       "MboxList": {
         "type": "object",
@@ -11762,8 +11683,7 @@
               "$ref": "#/components/schemas/MboxListDescription"
             }
           }
-        },
-        "description": ""
+        }
       },
       "MboxListDescription": {
         "type": "object",
@@ -11778,8 +11698,7 @@
             "type": "string",
             "format": "date-time"
           }
-        },
-        "description": ""
+        }
       },
       "Host": {
         "type": "object",
@@ -11795,8 +11714,7 @@
             "type": "integer",
             "format": "int64"
           }
-        },
-        "description": ""
+        }
       },
       "HostList": {
         "type": "object",
@@ -11819,8 +11737,7 @@
               "$ref": "#/components/schemas/Host"
             }
           }
-        },
-        "description": ""
+        }
       },
       "EnvironmentList": {
         "type": "object",
@@ -11843,8 +11760,7 @@
               "$ref": "#/components/schemas/Environment"
             }
           }
-        },
-        "description": ""
+        }
       },
       "AudienceList": {
         "type": "object",
@@ -11867,8 +11783,7 @@
               "$ref": "#/components/schemas/Audience"
             }
           }
-        },
-        "description": ""
+        }
       },
       "ActivityList": {
         "type": "object",
@@ -11891,8 +11806,7 @@
               "$ref": "#/components/schemas/ActivityListDescription"
             }
           }
-        },
-        "description": ""
+        }
       },
       "ActivityListDescription": {
         "type": "object",
@@ -11950,8 +11864,7 @@
             "type": "string",
             "format": "date-time"
           }
-        },
-        "description": ""
+        }
       },
       "CampaignLifetimeDTO": {
         "type": "object",
@@ -11964,8 +11877,7 @@
             "type": "string",
             "format": "date-time"
           }
-        },
-        "description": ""
+        }
       },
       "ActivityChangelog": {
         "type": "object",
@@ -11998,8 +11910,7 @@
           "stoppedProfileAttribute": {
             "$ref": "#/components/schemas/IdAndName"
           }
-        },
-        "description": ""
+        }
       },
       "ActivityChangelogList": {
         "type": "object",
@@ -12022,8 +11933,7 @@
               "$ref": "#/components/schemas/ActivityChangelog"
             }
           }
-        },
-        "description": ""
+        }
       },
       "ActivityLocationOfferChange": {
         "type": "object",
@@ -12040,8 +11950,7 @@
           "experience": {
             "$ref": "#/components/schemas/Experience"
           }
-        },
-        "description": ""
+        }
       },
       "ActivityParameterChange": {
         "type": "object",
@@ -12055,8 +11964,7 @@
           "changedValue": {
             "type": "string"
           }
-        },
-        "description": ""
+        }
       },
       "IdAndName": {
         "type": "object",
@@ -12068,8 +11976,7 @@
           "name": {
             "type": "string"
           }
-        },
-        "description": ""
+        }
       },
       "AbstractActivity": {
         "type": "object",
@@ -12123,8 +12030,7 @@
               "$ref": "#/components/schemas/ReportingAudience"
             }
           }
-        },
-        "description": ""
+        }
       },
       "AbstractActivityPerformanceReport": {
         "type": "object",
@@ -12135,8 +12041,7 @@
           "activity": {
             "$ref": "#/components/schemas/AbstractActivity"
           }
-        },
-        "description": ""
+        }
       },
       "ActivityPerformanceReportParameters": {
         "type": "object",
@@ -12189,8 +12094,7 @@
               "month"
             ]
           }
-        },
-        "description": ""
+        }
       },
       "Chronology": {
         "type": "object",
@@ -12209,20 +12113,11 @@
           "fixed": {
             "type": "boolean"
           }
-        },
-        "description": ""
+        }
       },
       "Interval": {
         "type": "object",
         "properties": {
-          "startMillis": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "endMillis": {
-            "type": "integer",
-            "format": "int64"
-          },
           "chronology": {
             "$ref": "#/components/schemas/Chronology"
           },
@@ -12234,14 +12129,21 @@
             "type": "string",
             "format": "date-time"
           },
+          "startMillis": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "endMillis": {
+            "type": "integer",
+            "format": "int64"
+          },
           "afterNow": {
             "type": "boolean"
           },
           "beforeNow": {
             "type": "boolean"
           }
-        },
-        "description": ""
+        }
       },
       "MetricDTO": {
         "type": "object",
@@ -12257,8 +12159,7 @@
             "type": "string",
             "format": "date-time"
           }
-        },
-        "description": ""
+        }
       },
       "ActivityOrdersReport": {
         "type": "object",
@@ -12275,8 +12176,7 @@
               "$ref": "#/components/schemas/OrderDTO"
             }
           }
-        },
-        "description": ""
+        }
       },
       "ActivityOrdersReportParameters": {
         "type": "object",
@@ -12299,8 +12199,7 @@
               "format": "int32"
             }
           }
-        },
-        "description": ""
+        }
       },
       "OrderDTO": {
         "type": "object",
@@ -12335,8 +12234,7 @@
           "duplicate": {
             "type": "boolean"
           }
-        },
-        "description": ""
+        }
       }
     }
   }
