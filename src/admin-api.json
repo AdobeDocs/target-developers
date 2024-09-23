@@ -9906,12 +9906,13 @@
       },
       "RevisionResourceType": {
         "type": "string",
-        "description": "\u003cp\u003especifies entity type to fetch revision or list of revisions\u003c/p\u003e\u003cp\u003eSupported entities:\u003c/p\u003e\u003cul\u003e\u003cli\u003eactivity\u003c/li\u003e\u003cli\u003eaudience\u003c/li\u003e\u003cli\u003eoffer\u003c/li\u003e\u003cli\u003eprofileScript\u003c/li\u003e\u003c/ul\u003e",
+        "description": "\u003cp\u003especifies entity type to fetch revision or list of revisions\u003c/p\u003e\u003cp\u003eSupported entities:\u003c/p\u003e\u003cul\u003e\u003cli\u003eactivity\u003c/li\u003e\u003cli\u003eaudience\u003c/li\u003e\u003cli\u003eoffer\u003c/li\u003e\u003cli\u003eprofileScript\u003c/li\u003e\u003cli\u003eproperty\u003c/li\u003e\u003c/ul\u003e",
         "enum": [
           "activity",
           "audience",
           "offer",
-          "profileScript"
+          "profileScript",
+          "property"
         ]
       },
       "Error": {
@@ -12228,10 +12229,10 @@
               "type": "string"
             }
           },
-          "outlier": {
+          "duplicate": {
             "type": "boolean"
           },
-          "duplicate": {
+          "outlier": {
             "type": "boolean"
           }
         }
