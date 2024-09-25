@@ -7844,7 +7844,7 @@
           "Revisions"
         ],
         "summary": "Get the audit log by entity id",
-        "description": "Get all the revisions of an entity (activity / audience / offer / profile script), in descending order by time. \u003cbr/\u003e\u003cb\u003ePlease Note:\u003c/b\u003e Only the \u003cu\u003elatest 100 revisions\u003c/u\u003e will be retained per entityId (including \u003ci\u003eCREATE\u003c/i\u003e and \u003ci\u003eDELETE\u003c/i\u003e actions, excluding \u003ci\u003ePATCH\u003c/i\u003e actions).",
+        "description": "Get all the revisions of an entity (activity / audience / offer / profile script / environment), in descending order by time. \u003cbr/\u003e\u003cb\u003ePlease Note:\u003c/b\u003e\u003cbr/\u003e Only the \u003cu\u003elatest 100 revisions\u003c/u\u003e will be retained per campaign/segment/offer id (including \u003ci\u003eCREATE\u003c/i\u003e and \u003ci\u003eDELETE\u003c/i\u003e actions, excluding \u003ci\u003ePATCH\u003c/i\u003e actions). \u003cbr/\u003e For property/environment, only concrete updates will be recorded.",
         "operationId": "getRevisionLog",
         "parameters": [
           {
@@ -9906,13 +9906,14 @@
       },
       "RevisionResourceType": {
         "type": "string",
-        "description": "\u003cp\u003especifies entity type to fetch revision or list of revisions\u003c/p\u003e\u003cp\u003eSupported entities:\u003c/p\u003e\u003cul\u003e\u003cli\u003eactivity\u003c/li\u003e\u003cli\u003eaudience\u003c/li\u003e\u003cli\u003eoffer\u003c/li\u003e\u003cli\u003eprofileScript\u003c/li\u003e\u003cli\u003eproperty\u003c/li\u003e\u003c/ul\u003e",
+        "description": "\u003cp\u003especifies entity type to fetch revision or list of revisions\u003c/p\u003e\u003cp\u003eSupported entities:\u003c/p\u003e\u003cul\u003e\u003cli\u003eactivity\u003c/li\u003e\u003cli\u003eaudience\u003c/li\u003e\u003cli\u003eoffer\u003c/li\u003e\u003cli\u003eprofileScript\u003c/li\u003e\u003cli\u003eproperty\u003c/li\u003e\u003cli\u003eenvironment\u003c/li\u003e\u003c/ul\u003e",
         "enum": [
           "activity",
           "audience",
           "offer",
           "profileScript",
-          "property"
+          "property",
+          "environment"
         ]
       },
       "Error": {
@@ -12229,10 +12230,10 @@
               "type": "string"
             }
           },
-          "duplicate": {
+          "outlier": {
             "type": "boolean"
           },
-          "outlier": {
+          "duplicate": {
             "type": "boolean"
           }
         }
