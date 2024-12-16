@@ -12126,11 +12126,11 @@
           "chronology": {
             "$ref": "#/components/schemas/Chronology"
           },
-          "end": {
+          "start": {
             "type": "string",
             "format": "date-time"
           },
-          "start": {
+          "end": {
             "type": "string",
             "format": "date-time"
           },
@@ -12233,10 +12233,10 @@
               "type": "string"
             }
           },
-          "duplicate": {
+          "outlier": {
             "type": "boolean"
           },
-          "outlier": {
+          "duplicate": {
             "type": "boolean"
           }
         }
