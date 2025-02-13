@@ -5901,6 +5901,285 @@
         }
       }
     },
+    "/{tenant}/target/activities/abt/{id}/qamode": {
+      "post": {
+        "tags": [
+          "Activities"
+        ],
+        "summary": "Create preview links for the AP activity",
+        "description": "Get a set of preview links for the AP activity referenced by the provided ID. The \u003cb\u003eurl\u003c/b\u003e parameter indicates the URL on which the activity will be running. The \u003cb\u003ecurrentActivityOnly\u003c/b\u003e (defaults to true) indicates whether other activities running on the same URL should be ignored. The payload of the request also allows you to specify which segment ids should be evaluated to true by including these in the \u003cb\u003eaudienceIdsEvaluatedAsTrue\u003c/b\u003e list, so that the user doesn\u0027t necessarily have to qualify for these. At the same time you can specify which segments should always evaluate to false by including these in the \u003cb\u003eaudienceIdsEvaluatedAsFalse\u003c/b\u003e list.",
+        "operationId": "createABTActivityQAModeResponse",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/vnd.adobe.target.v2+json": {
+              "schema": {
+                "$ref": "#/components/schemas/QAModeRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "407": {
+            "description": "Proxy Authentication Required",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "406": {
+            "description": "Not Acceptable",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/vnd.adobe.target.v2+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ABTQAModeResponseDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/{tenant}/target/activities/ab/{id}/qamode": {
+      "post": {
+        "tags": [
+          "Activities"
+        ],
+        "summary": "Create preview links for the AB activity",
+        "description": "Get a set of preview links for the AB activity referenced by the provided ID. The \u003cb\u003eurl\u003c/b\u003e parameter indicates the URL on which the activity will be running. The \u003cb\u003ecurrentActivityOnly\u003c/b\u003e (defaults to true) indicates whether other activities running on the same URL should be ignored. The payload of the request also allows you to specify which segment ids should be evaluated to true by including these in the \u003cb\u003eaudienceIdsEvaluatedAsTrue\u003c/b\u003e list, so that the user doesn\u0027t necessarily have to qualify for these. At the same time you can specify which segments should always evaluate to false by including these in the \u003cb\u003eaudienceIdsEvaluatedAsFalse\u003c/b\u003e list.",
+        "operationId": "createABActivityQAModeResponse",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/vnd.adobe.target.v3+json": {
+              "schema": {
+                "$ref": "#/components/schemas/QAModeRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "407": {
+            "description": "Proxy Authentication Required",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "406": {
+            "description": "Not Acceptable",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/vnd.adobe.target.v3+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ABQAModeResponseDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/{tenant}/target/activities/xt/{id}/qamode": {
+      "post": {
+        "tags": [
+          "Activities"
+        ],
+        "summary": "Create preview links for the XT activity",
+        "description": "Get a set of preview links for the Experience Targeted activity referenced by the provided ID. The \u003cb\u003eurl\u003c/b\u003e parameter indicates the URL on which the activity will be running. The \u003cb\u003ecurrentActivityOnly\u003c/b\u003e (defaults to true) indicates whether other activities running on the same URL should be ignored. The payload of the request also allows you to specify which segment ids should be evaluated to true by including these in the \u003cb\u003eaudienceIdsEvaluatedAsTrue\u003c/b\u003e list, so that the user doesn\u0027t necessarily have to qualify for these. At the same time you can specify which segments should always evaluate to false by including these in the \u003cb\u003eaudienceIdsEvaluatedAsFalse\u003c/b\u003e list.",
+        "operationId": "createABActivityQAModeResponse_1",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/vnd.adobe.target.v3+json": {
+              "schema": {
+                "$ref": "#/components/schemas/QAModeRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "407": {
+            "description": "Proxy Authentication Required",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "406": {
+            "description": "Not Acceptable",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/vnd.adobe.target.v3+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ABQAModeResponseDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/{tenant}/target/activities/ab": {
       "post": {
         "tags": [
@@ -9462,6 +9741,83 @@
           "expiresIn": {
             "type": "integer",
             "format": "int64"
+          }
+        }
+      },
+      "QAModeRequest": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string"
+          },
+          "currentActivityOnly": {
+            "type": "boolean"
+          },
+          "audienceIdsEvaluatedAsTrue": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          "audienceIdsEvaluatedAsFalse": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        }
+      },
+      "ABTQAModeExperienceDTO": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string"
+          },
+          "experienceLocalId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "locationOptions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/LocationOptionDTO"
+            }
+          }
+        }
+      },
+      "ABTQAModeResponseDTO": {
+        "type": "object",
+        "properties": {
+          "qaModeExperiences": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ABTQAModeExperienceDTO"
+            }
+          }
+        }
+      },
+      "ABQAModeExperienceDTO": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string"
+          },
+          "experienceLocalId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "ABQAModeResponseDTO": {
+        "type": "object",
+        "properties": {
+          "qaModeExperiences": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ABQAModeExperienceDTO"
+            }
           }
         }
       },
