@@ -6451,7 +6451,7 @@
           "Revisions"
         ],
         "summary": "Get the audit log by entity id",
-        "description": "Get all the revisions of an entity, in descending order by time. \u003cbr/\u003e\u003cb\u003ePlease Note:\u003c/b\u003e\u003cbr/\u003e - Only the \u003cu\u003elatest 100 revisions\u003c/u\u003e will be retained per campaign/segment/offer id (including \u003ci\u003eCREATE\u003c/i\u003e and \u003ci\u003eDELETE\u003c/i\u003e actions, excluding \u003ci\u003ePATCH\u003c/i\u003e actions). \u003cbr/\u003e - For admin page entities, only concrete updates will be recorded. \u003cbr/\u003e - For authorizedHosts use client id as entity id.",
+        "description": "Get all the revisions of an entity, in descending order by time. \u003cbr/\u003e\u003cb\u003ePlease Note:\u003c/b\u003e\u003cbr/\u003e - Only the \u003cu\u003elatest 100 revisions\u003c/u\u003e will be retained per campaign/segment/offer id (including \u003ci\u003eCREATE\u003c/i\u003e and \u003ci\u003eDELETE\u003c/i\u003e actions). \u003cbr/\u003e - For admin page entities, only concrete updates will be recorded. \u003cbr/\u003e - For authorizedHosts use client id as entity id.",
         "operationId": "getRevisionLog",
         "parameters": [
           {
