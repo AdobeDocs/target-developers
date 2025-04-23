@@ -6809,6 +6809,98 @@
         }
       }
     },
+    "/{tenant}/target/ondevicedecisioning/bundle": {
+      "get": {
+        "tags": [
+          "On-device decisioning"
+        ],
+        "summary": "Get the Target SDK On-Device Decisioning rules bundle",
+        "description": "Retrieve the rules bundle that is used by the Target SDKs for on-device decisioning.",
+        "operationId": "getTargetSdkRulesBundle",
+        "parameters": [
+          {
+            "name": "client",
+            "in": "query",
+            "description": "Client identifier. Same value as the `{tenant}` path parameter in the API URL.",
+            "required": true
+          },
+          {
+            "name": "environment",
+            "in": "query",
+            "description": "Adobe Target environment name. If not provided, the bundle will contain rules related to the eligible activities from the production environment.",
+            "required": false
+          },
+          {
+            "name": "property-token",
+            "in": "query",
+            "description": "Property token. If not provided, the bundle will contain rules related to the eligible activities in the environment specified by the `environment` query parameter.",
+            "required": false
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "407": {
+            "description": "Proxy Authentication Required",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "406": {
+            "description": "Not Acceptable",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/vnd.adobe.target.v1+json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/{tenant}/target/offers": {
       "get": {
         "tags": [
@@ -10519,10 +10611,10 @@
               "type": "string"
             }
           },
-          "duplicate": {
+          "outlier": {
             "type": "boolean"
           },
-          "outlier": {
+          "duplicate": {
             "type": "boolean"
           }
         }
