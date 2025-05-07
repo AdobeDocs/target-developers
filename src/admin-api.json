@@ -6814,27 +6814,137 @@
         "tags": [
           "On-device decisioning"
         ],
-        "summary": "Get the Target SDK On-Device Decisioning rules bundle",
-        "description": "Retrieve the rules bundle that is used by the Target SDKs for on-device decisioning.",
+        "summary": "Get Target SDK On-Device Decisioning rules bundle",
+        "description": "Retrieve the private rules bundle that is used by the Target SDKs for on-device decisioning. Available only to tenants that have opted in for private on-device decisioning rules bundles.",
         "operationId": "getTargetSdkRulesBundle",
         "parameters": [
           {
             "name": "client",
             "in": "query",
             "description": "Client identifier. Same value as the `{tenant}` path parameter in the API URL.",
-            "required": true
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
           },
           {
             "name": "environment",
             "in": "query",
             "description": "Adobe Target environment name. If not provided, the bundle will contain rules related to the eligible activities from the production environment.",
-            "required": false
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           },
           {
             "name": "property-token",
             "in": "query",
             "description": "Property token. If not provided, the bundle will contain rules related to the eligible activities in the environment specified by the `environment` query parameter.",
-            "required": false
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "407": {
+            "description": "Proxy Authentication Required",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "406": {
+            "description": "Not Acceptable",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/vnd.adobe.target.v1+json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/{tenant}/target/ondevicedecisioning/bundle/aep": {
+      "get": {
+        "tags": [
+          "On-device decisioning"
+        ],
+        "summary": "Get AEP WebSDK On-Device Decisioning rules bundle",
+        "description": "Retrieve the private rules bundle used by the AEP WebSDK for on-device decisioning. Available only to tenants that have opted in for private on-device decisioning rules bundles.",
+        "operationId": "getAepWebSdkRulesBundle",
+        "parameters": [
+          {
+            "name": "client",
+            "in": "query",
+            "description": "Client identifier. Same value as the `{tenant}` path parameter in the API URL.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "environment",
+            "in": "query",
+            "description": "Adobe Target environment name. If not provided, the bundle will contain rules related to the eligible activities from the production environment.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "property-token",
+            "in": "query",
+            "description": "Property token. If not provided, the bundle will contain rules related to the eligible activities in the environment specified by the `environment` query parameter.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
