@@ -9225,9 +9225,6 @@
       "Sandbox": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "string"
-          },
           "name": {
             "type": "string"
           }
@@ -9446,6 +9443,9 @@
           "entryConstraint": {
             "$ref": "#/components/schemas/EntryConstraint"
           },
+          "applicationContext": {
+            "$ref": "#/components/schemas/ApplicationContext"
+          },
           "options": {
             "type": "array",
             "items": {
@@ -9454,6 +9454,12 @@
           },
           "locations": {
             "$ref": "#/components/schemas/Locations"
+          },
+          "views": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ViewReference"
+            }
           },
           "experiences": {
             "type": "array",
@@ -9473,8 +9479,19 @@
               "$ref": "#/components/schemas/ReportingAudience"
             }
           },
+          "reportingSource": {
+            "type": "string",
+            "enum": [
+              "target",
+              "analytics",
+              "customer_journey_analytics"
+            ]
+          },
           "analytics": {
             "$ref": "#/components/schemas/Analytics"
+          },
+          "workspace": {
+            "$ref": "#/components/schemas/workspace"
           },
           "propertyIds": {
             "uniqueItems": true,
@@ -9484,21 +9501,15 @@
               "format": "int64"
             }
           },
-          "workspace": {
-            "$ref": "#/components/schemas/workspace"
-          },
           "modifiedAt": {
             "type": "string",
             "format": "date-time"
           },
-          "views": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ViewReference"
-            }
+          "modifiedByName": {
+            "type": "string"
           },
-          "applicationContext": {
-            "$ref": "#/components/schemas/ApplicationContext"
+          "platform": {
+            "$ref": "#/components/schemas/PlatformMetadata"
           }
         }
       },
@@ -9998,22 +10009,37 @@
               "$ref": "#/components/schemas/ReportingAudience"
             }
           },
-          "propertyIds": {
-            "type": "array",
-            "items": {
-              "type": "integer",
-              "format": "int32"
-            }
+          "reportingSource": {
+            "type": "string",
+            "enum": [
+              "target",
+              "analytics",
+              "customer_journey_analytics"
+            ]
+          },
+          "analytics": {
+            "$ref": "#/components/schemas/Analytics"
           },
           "workspace": {
             "$ref": "#/components/schemas/workspace"
+          },
+          "propertyIds": {
+            "uniqueItems": true,
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int64"
+            }
           },
           "modifiedAt": {
             "type": "string",
             "format": "date-time"
           },
-          "analytics": {
-            "$ref": "#/components/schemas/Analytics"
+          "modifiedByName": {
+            "type": "string"
+          },
+          "platform": {
+            "$ref": "#/components/schemas/PlatformMetadata"
           }
         }
       },
@@ -10199,6 +10225,9 @@
             "type": "integer",
             "format": "int32"
           },
+          "name": {
+            "type": "string"
+          },
           "locationOptions": {
             "type": "array",
             "items": {
@@ -10225,8 +10254,7 @@
             "uniqueItems": true,
             "type": "array",
             "items": {
-              "type": "integer",
-              "format": "int64"
+              "type": "string"
             }
           }
         }
@@ -10280,6 +10308,9 @@
           "entryConstraint": {
             "$ref": "#/components/schemas/EntryConstraint"
           },
+          "applicationContext": {
+            "$ref": "#/components/schemas/ApplicationContext"
+          },
           "options": {
             "type": "array",
             "items": {
@@ -10288,6 +10319,12 @@
           },
           "locations": {
             "$ref": "#/components/schemas/Locations"
+          },
+          "views": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ViewReference"
+            }
           },
           "experiences": {
             "type": "array",
@@ -10307,8 +10344,19 @@
               "$ref": "#/components/schemas/ReportingAudience"
             }
           },
+          "reportingSource": {
+            "type": "string",
+            "enum": [
+              "target",
+              "analytics",
+              "customer_journey_analytics"
+            ]
+          },
           "analytics": {
             "$ref": "#/components/schemas/Analytics"
+          },
+          "workspace": {
+            "$ref": "#/components/schemas/workspace"
           },
           "propertyIds": {
             "uniqueItems": true,
@@ -10318,21 +10366,15 @@
               "format": "int64"
             }
           },
-          "workspace": {
-            "$ref": "#/components/schemas/workspace"
-          },
           "modifiedAt": {
             "type": "string",
             "format": "date-time"
           },
-          "views": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ViewReference"
-            }
+          "modifiedByName": {
+            "type": "string"
           },
-          "applicationContext": {
-            "$ref": "#/components/schemas/ApplicationContext"
+          "platform": {
+            "$ref": "#/components/schemas/PlatformMetadata"
           }
         }
       },
@@ -10902,6 +10944,9 @@
             "type": "integer",
             "format": "int64"
           },
+          "name": {
+            "type": "string"
+          },
           "thirdPartyId": {
             "type": "string"
           },
@@ -10919,9 +10964,6 @@
           "state": {
             "$ref": "#/components/schemas/ActivityState"
           },
-          "name": {
-            "type": "string"
-          },
           "startsAt": {
             "type": "string",
             "format": "date-time"
@@ -10937,6 +10979,17 @@
             "type": "integer",
             "format": "int32"
           },
+          "reportingSource": {
+            "type": "string",
+            "enum": [
+              "target",
+              "analytics",
+              "customer_journey_analytics"
+            ]
+          },
+          "workspace": {
+            "type": "string"
+          },
           "propertyIds": {
             "type": "array",
             "items": {
@@ -10944,12 +10997,12 @@
               "format": "int64"
             }
           },
-          "workspace": {
-            "type": "string"
-          },
           "modifiedAt": {
             "type": "string",
             "format": "date-time"
+          },
+          "modifiedByName": {
+            "type": "string"
           }
         }
       },
