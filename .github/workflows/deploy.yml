@@ -24,6 +24,13 @@ on:
         options:
           - console
           - index
+  workflow_call:
+    inputs:
+      env:
+        description: 'Deploy to (dev|prod|dev prod)'
+        type: string
+        required: true
+        default: 'dev prod'
 jobs:
   deployment:
     name: Deployment
