@@ -9322,6 +9322,10 @@
           "modifiedAt": {
             "type": "string",
             "format": "date-time"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
           }
         }
       },
@@ -9502,6 +9506,10 @@
             }
           },
           "modifiedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "createdAt": {
             "type": "string",
             "format": "date-time"
           },
@@ -10035,6 +10043,10 @@
             "type": "string",
             "format": "date-time"
           },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
           "modifiedByName": {
             "type": "string"
           },
@@ -10367,6 +10379,10 @@
             }
           },
           "modifiedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "createdAt": {
             "type": "string",
             "format": "date-time"
           },
@@ -10998,6 +11014,10 @@
             }
           },
           "modifiedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "createdAt": {
             "type": "string",
             "format": "date-time"
           },
