@@ -1932,8 +1932,87 @@
               }
             }
           }
+        }
+      },
+      "patch": {
+        "tags": [
+          "Clients"
+        ],
+        "summary": "Partial update of client settings",
+        "description": "Allows updating individual client settings without the need to pass in the entire configuration.",
+        "operationId": "patchSettings",
+        "requestBody": {
+          "content": {
+            "application/vnd.adobe.target.v1+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ClientSelfServiceSettings"
+              }
+            }
+          },
+          "required": true
         },
-        "deprecated": true
+        "responses": {
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "407": {
+            "description": "Proxy Authentication Required",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "406": {
+            "description": "Not Acceptable",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/vnd.adobe.target.v1+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ClientSelfServiceSettings"
+                }
+              }
+            }
+          }
+        }
       }
     },
     "/{tenant}/target/clients/ipfilter/{type}": {
@@ -9088,6 +9167,33 @@
           },
           "defaultDataCollectionHost": {
             "type": "string"
+          },
+          "flickerManagerSettings": {
+            "$ref": "#/components/schemas/FlickerManagerSettingsDTO"
+          },
+          "allowedRemoteOfferUrlPatterns": {
+            "uniqueItems": true,
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "FlickerManagerSettingsDTO": {
+        "required": [
+          "enabled"
+        ],
+        "type": "object",
+        "properties": {
+          "enabled": {
+            "type": "boolean"
+          },
+          "timeout": {
+            "maximum": 10000,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int32"
           }
         }
       },
@@ -9322,6 +9428,10 @@
           "modifiedAt": {
             "type": "string",
             "format": "date-time"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
           }
         }
       },
@@ -9502,6 +9612,10 @@
             }
           },
           "modifiedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "createdAt": {
             "type": "string",
             "format": "date-time"
           },
@@ -10035,6 +10149,10 @@
             "type": "string",
             "format": "date-time"
           },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
           "modifiedByName": {
             "type": "string"
           },
@@ -10367,6 +10485,10 @@
             }
           },
           "modifiedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "createdAt": {
             "type": "string",
             "format": "date-time"
           },
@@ -10998,6 +11120,10 @@
             }
           },
           "modifiedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "createdAt": {
             "type": "string",
             "format": "date-time"
           },
