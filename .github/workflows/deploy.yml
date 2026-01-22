@@ -24,6 +24,28 @@ on:
         options:
           - console
           - index
+  workflow_call:
+    inputs:
+      env:
+        description: 'Deploy to (dev|prod|dev prod)'
+        type: string
+        required: true
+        default: 'dev prod'
+      clean:
+        description: 'Clean cache'
+        type: boolean
+        required: false
+        default: false
+      excludeSubfolder:
+        description: 'Exclude a subfolder from deletion'
+        type: string
+        required: false
+        default: ''
+      index-mode:
+        description: 'Type of indexing. "index" to push to Algolia, "console" for dry run.'
+        type: string
+        required: false
+        default: 'index'
 jobs:
   deployment:
     name: Deployment
