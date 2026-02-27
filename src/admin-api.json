@@ -9290,7 +9290,7 @@
             "format": "date-time"
           },
           "platform": {
-            "$ref": "#/components/schemas/PlatformMetadata"
+            "$ref": "#/components/schemas/AudiencePlatformMetadata"
           },
           "workspace": {
             "$ref": "#/components/schemas/workspace"
@@ -9298,6 +9298,17 @@
           "createdAt": {
             "type": "string",
             "format": "date-time"
+          }
+        }
+      },
+      "AudiencePlatformMetadata": {
+        "type": "object",
+        "properties": {
+          "sandbox": {
+            "$ref": "#/components/schemas/Sandbox"
+          },
+          "destinationId": {
+            "type": "string"
           }
         }
       },
@@ -9317,14 +9328,6 @@
             "items": {
               "$ref": "#/components/schemas/SegmentRule"
             }
-          }
-        }
-      },
-      "PlatformMetadata": {
-        "type": "object",
-        "properties": {
-          "sandbox": {
-            "$ref": "#/components/schemas/Sandbox"
           }
         }
       },
@@ -9964,6 +9967,14 @@
           "optionLocalId": {
             "type": "integer",
             "format": "int32"
+          }
+        }
+      },
+      "PlatformMetadata": {
+        "type": "object",
+        "properties": {
+          "sandbox": {
+            "$ref": "#/components/schemas/Sandbox"
           }
         }
       },
@@ -11449,10 +11460,10 @@
               "type": "string"
             }
           },
-          "outlier": {
+          "duplicate": {
             "type": "boolean"
           },
-          "duplicate": {
+          "outlier": {
             "type": "boolean"
           }
         }
