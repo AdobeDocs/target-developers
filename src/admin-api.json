@@ -4000,6 +4000,261 @@
         }
       }
     },
+    "/{tenant}/target/activities/autotarget/{id}": {
+      "get": {
+        "tags": [
+          "Activities"
+        ],
+        "summary": "Get Auto-Target activity by ID",
+        "description": "Fetch the current definition of an Auto-Target activity as referenced by the provided ID.",
+        "operationId": "getActivity",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "407": {
+            "description": "Proxy Authentication Required",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "406": {
+            "description": "Not Acceptable",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/vnd.adobe.target.v1+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AutoTargetActivity"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Activities"
+        ],
+        "summary": "Update Auto-Target activity",
+        "description": "Update the Auto-Target activity definition with the contents as provided in the request. This can change the state and behaviour of an existing activity.",
+        "operationId": "updateActivity",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/vnd.adobe.target.v1+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AutoTargetActivity"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "407": {
+            "description": "Proxy Authentication Required",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "406": {
+            "description": "Not Acceptable",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/vnd.adobe.target.v1+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AutoTargetActivity"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Activities"
+        ],
+        "summary": "Delete Auto-Target activity",
+        "description": "Delete the Auto-Target activity referenced by the provided ID.",
+        "operationId": "deleteActivity",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "407": {
+            "description": "Proxy Authentication Required",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "406": {
+            "description": "Not Acceptable",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/vnd.adobe.target.v1+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AutoTargetActivity"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/{tenant}/target/activities/autoallocate/{id}": {
       "get": {
         "tags": [
@@ -4007,7 +4262,7 @@
         ],
         "summary": "Get Auto-Allocate activity by ID",
         "description": "Fetch the current definition of an Auto-Allocate activity as referenced by the provided ID.",
-        "operationId": "getActivity",
+        "operationId": "getActivity_1",
         "parameters": [
           {
             "name": "id",
@@ -4088,7 +4343,7 @@
         ],
         "summary": "Update Auto-Allocate activity",
         "description": "Update the Auto-Allocate activity definition with the contents as provided in the request. This can change the state and behaviour of an existing activity.",
-        "operationId": "updateActivity",
+        "operationId": "updateActivity_1",
         "parameters": [
           {
             "name": "id",
@@ -4179,7 +4434,7 @@
         ],
         "summary": "Delete Auto-Allocate activity",
         "description": "Delete the Auto-Allocate activity referenced by the provided ID.",
-        "operationId": "deleteActivity",
+        "operationId": "deleteActivity_1",
         "parameters": [
           {
             "name": "id",
@@ -4262,7 +4517,7 @@
         ],
         "summary": "Get AP activity by ID",
         "description": "Fetch the current definition of an Automated Personalization activity as referenced by the provided ID.",
-        "operationId": "getActivity_1",
+        "operationId": "getActivity_2",
         "parameters": [
           {
             "name": "id",
@@ -4343,7 +4598,7 @@
         ],
         "summary": "Update AP activity",
         "description": "Update the Automated Personalization activity definition with the contents as provided in the request. This can change the state and behaviour of an existing activity.\u003cbr/\u003e\u003cb\u003eNote:\u003c/b\u003eCreating auto-target activities is currently not supported through the API.",
-        "operationId": "updateActivity_1",
+        "operationId": "updateActivity_2",
         "parameters": [
           {
             "name": "id",
@@ -4434,7 +4689,7 @@
         ],
         "summary": "Delete AP activity",
         "description": "Delete the Automated Personalization activity referenced by the provided ID.",
-        "operationId": "deleteActivity_1",
+        "operationId": "deleteActivity_2",
         "parameters": [
           {
             "name": "id",
@@ -4517,7 +4772,7 @@
         ],
         "summary": "Get AB activity by ID",
         "description": "Fetch the current definition of an AB activity as referenced by the provided ID.",
-        "operationId": "getActivity_2",
+        "operationId": "getActivity_3",
         "parameters": [
           {
             "name": "id",
@@ -4598,7 +4853,7 @@
         ],
         "summary": "Update AB activity",
         "description": "Update the AB activity definition with the contents as provided in the request. This can change the state and behaviour of an existing activity.",
-        "operationId": "updateActivity_2",
+        "operationId": "updateActivity_3",
         "parameters": [
           {
             "name": "id",
@@ -4689,7 +4944,7 @@
         ],
         "summary": "Delete AB activity",
         "description": "Delete the AB activity referenced by the provided ID.",
-        "operationId": "deleteActivity_2",
+        "operationId": "deleteActivity_3",
         "parameters": [
           {
             "name": "id",
@@ -4772,7 +5027,7 @@
         ],
         "summary": "Get XT activity by ID",
         "description": "Fetch the current definition of an Experience Targeting activity as referenced by the provided ID.",
-        "operationId": "getActivity_3",
+        "operationId": "getActivity_4",
         "parameters": [
           {
             "name": "id",
@@ -4853,7 +5108,7 @@
         ],
         "summary": "Update XT activity",
         "description": "Update an Experience Targeting activity definition with the contents as provided in the request. This can change the state and behaviour of an existing activity.",
-        "operationId": "updateActivity_3",
+        "operationId": "updateActivity_4",
         "parameters": [
           {
             "name": "id",
@@ -4944,7 +5199,7 @@
         ],
         "summary": "Delete XT activity",
         "description": "Delete the Experience Targeting activity referenced by the provided ID.",
-        "operationId": "deleteActivity_3",
+        "operationId": "deleteActivity_4",
         "parameters": [
           {
             "name": "id",
@@ -6152,6 +6407,182 @@
         }
       }
     },
+    "/{tenant}/target/activities/autotarget": {
+      "post": {
+        "tags": [
+          "Activities"
+        ],
+        "summary": "Create Auto-Target activity",
+        "description": "Create a new Auto-Target activity based on the specified contents, and return the created activity.",
+        "operationId": "createActivity",
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "application/vnd.adobe.target.v1+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AutoTargetActivity"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "407": {
+            "description": "Proxy Authentication Required",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "406": {
+            "description": "Not Acceptable",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "Created",
+            "content": {
+              "application/vnd.adobe.target.v1+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AutoTargetActivity"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/{tenant}/target/activities/autotarget/{id}/qamode": {
+      "post": {
+        "tags": [
+          "Activities"
+        ],
+        "summary": "Create preview links for the Auto-Target activity",
+        "description": "Get a set of preview links for the Auto-Target activity referenced by the provided ID. The \u003cb\u003eurl\u003c/b\u003e parameter indicates the URL on which the activity will be running. The \u003cb\u003ecurrentActivityOnly\u003c/b\u003e (defaults to true) indicates whether other activities running on the same URL should be ignored. The payload of the request also allows you to specify which segment ids should be evaluated to true by including these in the \u003cb\u003eaudienceIdsEvaluatedAsTrue\u003c/b\u003e list, so that the user doesn\u0027t necessarily have to qualify for these. At the same time you can specify which segments should always evaluate to false by including these in the \u003cb\u003eaudienceIdsEvaluatedAsFalse\u003c/b\u003e list.",
+        "operationId": "createAutoTargetActivityQAModeResponse",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/vnd.adobe.target.v1+json": {
+              "schema": {
+                "$ref": "#/components/schemas/QAModeRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "407": {
+            "description": "Proxy Authentication Required",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "406": {
+            "description": "Not Acceptable",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/vnd.adobe.target.v1+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ABTQAModeResponseDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/{tenant}/target/activities/autoallocate": {
       "post": {
         "tags": [
@@ -6159,7 +6590,7 @@
         ],
         "summary": "Create Auto-Allocate activity",
         "description": "Create a new Auto-Allocate activity based on the specified contents, and return the created activity.",
-        "operationId": "createActivity",
+        "operationId": "createActivity_1",
         "parameters": [],
         "requestBody": {
           "content": {
@@ -6335,7 +6766,7 @@
         ],
         "summary": "Create AP activity",
         "description": "Create a new Automated Personalization activity based on the specified contents, and return the created activity.\u003cbr/\u003e\u003cb\u003eNote:\u003c/b\u003eCreating auto-target activities is currently not supported through the API.",
-        "operationId": "createActivity_1",
+        "operationId": "createActivity_2",
         "parameters": [],
         "requestBody": {
           "content": {
@@ -6697,7 +7128,7 @@
         ],
         "summary": "Create AB activity",
         "description": "Create a new AB activity based on the specified contents, and return the created activity.",
-        "operationId": "createActivity_2",
+        "operationId": "createActivity_3",
         "parameters": [],
         "requestBody": {
           "content": {
@@ -6780,7 +7211,7 @@
         ],
         "summary": "Create XT activity",
         "description": "Create a new Experience Targeting activity based on the specified contents, and return the created activity.",
-        "operationId": "createActivity_3",
+        "operationId": "createActivity_4",
         "parameters": [],
         "requestBody": {
           "content": {
@@ -9468,6 +9899,54 @@
           }
         }
       },
+      "AbtMetric": {
+        "type": "object",
+        "properties": {
+          "metricLocalId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          },
+          "conversion": {
+            "type": "boolean"
+          },
+          "engagement": {
+            "type": "string",
+            "enum": [
+              "page_count",
+              "score",
+              "time_on_site",
+              "none"
+            ]
+          },
+          "optimizationCriteria": {
+            "type": "string",
+            "enum": [
+              "conversion_rate",
+              "rpv",
+              "aov",
+              "none"
+            ]
+          },
+          "mboxes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MetricMbox"
+            }
+          },
+          "clickTrackSelectors": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ClickTrackSelector"
+            }
+          },
+          "analytics": {
+            "$ref": "#/components/schemas/Analytics"
+          }
+        }
+      },
       "Analytics": {
         "type": "object",
         "properties": {
@@ -9479,6 +9958,514 @@
             "items": {
               "$ref": "#/components/schemas/ReportSuites"
             }
+          }
+        }
+      },
+      "AutoTargetActivity": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "thirdPartyId": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "startsAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "endsAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "state": {
+            "$ref": "#/components/schemas/ActivityState"
+          },
+          "priority": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "entryConstraint": {
+            "$ref": "#/components/schemas/EntryConstraint"
+          },
+          "locations": {
+            "$ref": "#/components/schemas/Locations"
+          },
+          "options": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Option"
+            }
+          },
+          "controlExperience": {
+            "$ref": "#/components/schemas/ControlExperienceDTO"
+          },
+          "targetedExperience": {
+            "$ref": "#/components/schemas/TargetedExperiencesDTO"
+          },
+          "optionGroups": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/OptionGroup"
+            }
+          },
+          "metrics": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AbtMetric"
+            }
+          },
+          "reportingAudiences": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ReportingAudience"
+            }
+          },
+          "reportingSource": {
+            "type": "string",
+            "enum": [
+              "target",
+              "analytics",
+              "customer_journey_analytics"
+            ]
+          },
+          "analytics": {
+            "$ref": "#/components/schemas/Analytics"
+          },
+          "workspace": {
+            "$ref": "#/components/schemas/workspace"
+          },
+          "propertyIds": {
+            "uniqueItems": true,
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modifiedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modifiedByName": {
+            "type": "string"
+          },
+          "platform": {
+            "$ref": "#/components/schemas/PlatformMetadata"
+          }
+        }
+      },
+      "AutomatedExperiencesDTO": {
+        "type": "object",
+        "properties": {
+          "locationOptions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/LocationSegmentOptionsDTO"
+            }
+          },
+          "excludeRepeatingOptions": {
+            "type": "boolean"
+          },
+          "manualExclusions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/LocationOptionExperienceDTO"
+            }
+          }
+        }
+      },
+      "ClickTrackSelector": {
+        "type": "object",
+        "properties": {
+          "selector": {
+            "type": "string"
+          },
+          "audienceIds": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          "selectorVersion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "viewLocalId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "ControlExperienceDTO": {
+        "type": "object",
+        "properties": {
+          "visitorPercentage": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "random",
+              "default_content",
+              "custom"
+            ]
+          },
+          "custom": {
+            "$ref": "#/components/schemas/ExperienceDTO"
+          }
+        }
+      },
+      "EntryConstraint": {
+        "type": "object",
+        "properties": {
+          "mboxes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/EntryConstraintMbox"
+            }
+          },
+          "visitorPercentage": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "EntryConstraintMbox": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "audienceIds": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        }
+      },
+      "ExperienceDTO": {
+        "type": "object",
+        "properties": {
+          "experienceLocalId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "locationOptions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/LocationOptionDTO"
+            }
+          }
+        }
+      },
+      "ExplicitExperiencesDTO": {
+        "type": "object",
+        "properties": {
+          "optimizeByExperience": {
+            "type": "boolean"
+          },
+          "explicitExperiences": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SegmentExperienceDTO"
+            }
+          }
+        }
+      },
+      "LocationOptionDTO": {
+        "type": "object",
+        "properties": {
+          "locationLocalId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "optionLocalId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "LocationOptionExperienceDTO": {
+        "type": "object",
+        "properties": {
+          "locationOptions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/LocationOptionDTO"
+            }
+          }
+        }
+      },
+      "LocationSegmentOptionsDTO": {
+        "type": "object",
+        "properties": {
+          "locationLocalId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "options": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SegmentOptionDTO"
+            }
+          }
+        }
+      },
+      "Locations": {
+        "type": "object",
+        "properties": {
+          "mboxes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Mbox"
+            }
+          },
+          "selectors": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Selector"
+            }
+          }
+        }
+      },
+      "Mbox": {
+        "type": "object",
+        "properties": {
+          "locationLocalId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          },
+          "audienceIds": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        }
+      },
+      "MetricMbox": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "successEvent": {
+            "type": "string",
+            "enum": [
+              "mbox_clicked",
+              "mbox_shown"
+            ]
+          },
+          "audienceIds": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        }
+      },
+      "OfferTemplate": {
+        "type": "object",
+        "properties": {
+          "offerTemplateId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "templateParameters": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TemplateParameter"
+            }
+          }
+        }
+      },
+      "Option": {
+        "type": "object",
+        "properties": {
+          "optionLocalId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          },
+          "offerId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "offerTemplates": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/OfferTemplate"
+            }
+          }
+        }
+      },
+      "OptionGroup": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "optionGroupLocalId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "optionLocalIds": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        }
+      },
+      "PlatformMetadata": {
+        "type": "object",
+        "properties": {
+          "sandbox": {
+            "$ref": "#/components/schemas/Sandbox"
+          }
+        }
+      },
+      "ReportSuites": {
+        "type": "object",
+        "properties": {
+          "companyName": {
+            "type": "string"
+          },
+          "reportSuites": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "ReportingAudience": {
+        "type": "object",
+        "properties": {
+          "reportingAudienceLocalId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "audienceId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "metricLocalId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "SegmentExperienceDTO": {
+        "type": "object",
+        "properties": {
+          "experienceLocalId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          },
+          "locationOptions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/LocationOptionDTO"
+            }
+          },
+          "segmentIds": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        }
+      },
+      "SegmentOptionDTO": {
+        "type": "object",
+        "properties": {
+          "optionLocalId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "segmentIds": {
+            "uniqueItems": true,
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "Selector": {
+        "type": "object",
+        "properties": {
+          "locationLocalId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          },
+          "selector": {
+            "type": "string"
+          },
+          "audienceIds": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        }
+      },
+      "TargetedExperiencesDTO": {
+        "type": "object",
+        "properties": {
+          "automatic": {
+            "$ref": "#/components/schemas/AutomatedExperiencesDTO"
+          },
+          "explicit": {
+            "$ref": "#/components/schemas/ExplicitExperiencesDTO"
+          },
+          "modelProvider": {
+            "type": "string",
+            "enum": [
+              "target",
+              "custom_dsw"
+            ]
+          }
+        }
+      },
+      "TemplateParameter": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
           }
         }
       },
@@ -9646,29 +10633,6 @@
           }
         }
       },
-      "ClickTrackSelector": {
-        "type": "object",
-        "properties": {
-          "selector": {
-            "type": "string"
-          },
-          "audienceIds": {
-            "type": "array",
-            "items": {
-              "type": "integer",
-              "format": "int64"
-            }
-          },
-          "selectorVersion": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "viewLocalId": {
-            "type": "integer",
-            "format": "int32"
-          }
-        }
-      },
       "Conditions": {
         "type": "object",
         "properties": {
@@ -9684,36 +10648,6 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/ExperienceCondition"
-            }
-          }
-        }
-      },
-      "EntryConstraint": {
-        "type": "object",
-        "properties": {
-          "mboxes": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/EntryConstraintMbox"
-            }
-          },
-          "visitorPercentage": {
-            "type": "integer",
-            "format": "int32"
-          }
-        }
-      },
-      "EntryConstraintMbox": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string"
-          },
-          "audienceIds": {
-            "type": "array",
-            "items": {
-              "type": "integer",
-              "format": "int64"
             }
           }
         }
@@ -9761,42 +10695,6 @@
           "maxImpressionCount": {
             "type": "integer",
             "format": "int32"
-          }
-        }
-      },
-      "Locations": {
-        "type": "object",
-        "properties": {
-          "mboxes": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Mbox"
-            }
-          },
-          "selectors": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Selector"
-            }
-          }
-        }
-      },
-      "Mbox": {
-        "type": "object",
-        "properties": {
-          "locationLocalId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "name": {
-            "type": "string"
-          },
-          "audienceIds": {
-            "type": "array",
-            "items": {
-              "type": "integer",
-              "format": "int64"
-            }
           }
         }
       },
@@ -9882,28 +10780,6 @@
           }
         }
       },
-      "MetricMbox": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string"
-          },
-          "successEvent": {
-            "type": "string",
-            "enum": [
-              "mbox_clicked",
-              "mbox_shown"
-            ]
-          },
-          "audienceIds": {
-            "type": "array",
-            "items": {
-              "type": "integer",
-              "format": "int64"
-            }
-          }
-        }
-      },
       "MetricView": {
         "type": "object",
         "properties": {
@@ -9920,43 +10796,6 @@
           }
         }
       },
-      "OfferTemplate": {
-        "type": "object",
-        "properties": {
-          "offerTemplateId": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "templateParameters": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/TemplateParameter"
-            }
-          }
-        }
-      },
-      "Option": {
-        "type": "object",
-        "properties": {
-          "optionLocalId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "name": {
-            "type": "string"
-          },
-          "offerId": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "offerTemplates": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/OfferTemplate"
-            }
-          }
-        }
-      },
       "OptionLocation": {
         "type": "object",
         "properties": {
@@ -9967,86 +10806,6 @@
           "optionLocalId": {
             "type": "integer",
             "format": "int32"
-          }
-        }
-      },
-      "PlatformMetadata": {
-        "type": "object",
-        "properties": {
-          "sandbox": {
-            "$ref": "#/components/schemas/Sandbox"
-          }
-        }
-      },
-      "ReportSuites": {
-        "type": "object",
-        "properties": {
-          "companyName": {
-            "type": "string"
-          },
-          "reportSuites": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          }
-        }
-      },
-      "ReportingAudience": {
-        "type": "object",
-        "properties": {
-          "reportingAudienceLocalId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "audienceId": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "metricLocalId": {
-            "type": "integer",
-            "format": "int32"
-          }
-        }
-      },
-      "Selector": {
-        "type": "object",
-        "properties": {
-          "locationLocalId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "name": {
-            "type": "string"
-          },
-          "selector": {
-            "type": "string"
-          },
-          "audienceIds": {
-            "type": "array",
-            "items": {
-              "type": "integer",
-              "format": "int64"
-            }
-          },
-          "selectorVersion": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "viewLocalId": {
-            "type": "integer",
-            "format": "int32"
-          }
-        }
-      },
-      "TemplateParameter": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string"
-          },
-          "value": {
-            "type": "string"
           }
         }
       },
@@ -10169,240 +10928,6 @@
           },
           "platform": {
             "$ref": "#/components/schemas/PlatformMetadata"
-          }
-        }
-      },
-      "AbtMetric": {
-        "type": "object",
-        "properties": {
-          "metricLocalId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "name": {
-            "type": "string"
-          },
-          "conversion": {
-            "type": "boolean"
-          },
-          "engagement": {
-            "type": "string",
-            "enum": [
-              "page_count",
-              "score",
-              "time_on_site",
-              "none"
-            ]
-          },
-          "optimizationCriteria": {
-            "type": "string",
-            "enum": [
-              "conversion_rate",
-              "rpv",
-              "aov",
-              "none"
-            ]
-          },
-          "mboxes": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/MetricMbox"
-            }
-          },
-          "clickTrackSelectors": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ClickTrackSelector"
-            }
-          },
-          "analytics": {
-            "$ref": "#/components/schemas/Analytics"
-          }
-        }
-      },
-      "AutomatedExperiencesDTO": {
-        "type": "object",
-        "properties": {
-          "locationOptions": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/LocationSegmentOptionsDTO"
-            }
-          },
-          "excludeRepeatingOptions": {
-            "type": "boolean"
-          },
-          "manualExclusions": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/LocationOptionExperienceDTO"
-            }
-          }
-        }
-      },
-      "ControlExperienceDTO": {
-        "type": "object",
-        "properties": {
-          "visitorPercentage": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "type": {
-            "type": "string",
-            "enum": [
-              "random",
-              "default_content",
-              "custom"
-            ]
-          },
-          "custom": {
-            "$ref": "#/components/schemas/ExperienceDTO"
-          }
-        }
-      },
-      "ExperienceDTO": {
-        "type": "object",
-        "properties": {
-          "experienceLocalId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "locationOptions": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/LocationOptionDTO"
-            }
-          }
-        }
-      },
-      "ExplicitExperiencesDTO": {
-        "type": "object",
-        "properties": {
-          "optimizeByExperience": {
-            "type": "boolean"
-          },
-          "explicitExperiences": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/SegmentExperienceDTO"
-            }
-          }
-        }
-      },
-      "LocationOptionDTO": {
-        "type": "object",
-        "properties": {
-          "locationLocalId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "optionLocalId": {
-            "type": "integer",
-            "format": "int32"
-          }
-        }
-      },
-      "LocationOptionExperienceDTO": {
-        "type": "object",
-        "properties": {
-          "locationOptions": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/LocationOptionDTO"
-            }
-          }
-        }
-      },
-      "LocationSegmentOptionsDTO": {
-        "type": "object",
-        "properties": {
-          "locationLocalId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "options": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/SegmentOptionDTO"
-            }
-          }
-        }
-      },
-      "OptionGroup": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string"
-          },
-          "optionGroupLocalId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "optionLocalIds": {
-            "type": "array",
-            "items": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        }
-      },
-      "SegmentExperienceDTO": {
-        "type": "object",
-        "properties": {
-          "experienceLocalId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "name": {
-            "type": "string"
-          },
-          "locationOptions": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/LocationOptionDTO"
-            }
-          },
-          "segmentIds": {
-            "type": "array",
-            "items": {
-              "type": "integer",
-              "format": "int64"
-            }
-          }
-        }
-      },
-      "SegmentOptionDTO": {
-        "type": "object",
-        "properties": {
-          "optionLocalId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "segmentIds": {
-            "uniqueItems": true,
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          }
-        }
-      },
-      "TargetedExperiencesDTO": {
-        "type": "object",
-        "properties": {
-          "automatic": {
-            "$ref": "#/components/schemas/AutomatedExperiencesDTO"
-          },
-          "explicit": {
-            "$ref": "#/components/schemas/ExplicitExperiencesDTO"
-          },
-          "modelProvider": {
-            "type": "string",
-            "enum": [
-              "target",
-              "custom_dsw"
-            ]
           }
         }
       },
@@ -10695,29 +11220,6 @@
           }
         }
       },
-      "ABQAModeExperienceDTO": {
-        "type": "object",
-        "properties": {
-          "url": {
-            "type": "string"
-          },
-          "experienceLocalId": {
-            "type": "integer",
-            "format": "int32"
-          }
-        }
-      },
-      "ABQAModeResponseDTO": {
-        "type": "object",
-        "properties": {
-          "qaModeExperiences": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ABQAModeExperienceDTO"
-            }
-          }
-        }
-      },
       "ABTQAModeExperienceDTO": {
         "type": "object",
         "properties": {
@@ -10743,6 +11245,29 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/ABTQAModeExperienceDTO"
+            }
+          }
+        }
+      },
+      "ABQAModeExperienceDTO": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string"
+          },
+          "experienceLocalId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "ABQAModeResponseDTO": {
+        "type": "object",
+        "properties": {
+          "qaModeExperiences": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ABQAModeExperienceDTO"
             }
           }
         }
@@ -11353,11 +11878,11 @@
           "chronology": {
             "$ref": "#/components/schemas/Chronology"
           },
-          "start": {
+          "end": {
             "type": "string",
             "format": "date-time"
           },
-          "end": {
+          "start": {
             "type": "string",
             "format": "date-time"
           },
