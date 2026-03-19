@@ -11878,11 +11878,11 @@
           "chronology": {
             "$ref": "#/components/schemas/Chronology"
           },
-          "end": {
+          "start": {
             "type": "string",
             "format": "date-time"
           },
-          "start": {
+          "end": {
             "type": "string",
             "format": "date-time"
           },
