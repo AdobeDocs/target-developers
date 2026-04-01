@@ -8492,7 +8492,35 @@
         "summary": "List activities",
         "description": "Get a list of activities created in your Target account, with the ability to filter and sort by attributes.",
         "operationId": "getActivities",
-        "parameters": [],
+        "parameters": [
+          {
+            "name": "mbox",
+            "in": "query",
+            "description": "Filter activities by mbox name. Returns only activities that use the specified mbox location.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "offerId",
+            "in": "query",
+            "description": "Filter activities by offer ID. Returns only activities that reference the specified offer.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "viewId",
+            "in": "query",
+            "description": "Filter activities by view ID. Returns only activities associated with the specified view.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
           "400": {
             "description": "Bad Request",
