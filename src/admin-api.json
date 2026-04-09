@@ -9259,7 +9259,11 @@
       },
       "workspaces": {
         "type": "array",
-        "description": "In case of premium customers (customers with multiple workspaces), a list of workspace ids can be provided to associate the resource with multiple workspaces. If not stated, the default workspace will be used. The API consumer must have \"approver\" privilege on each workspace provided, if not the API will respond with an error indicating the lack of sufficient privileges to perform the operation."
+        "description": "In case of premium customers (customers with multiple workspaces), a list of workspace ids can be provided to associate the resource with multiple workspaces. If not stated, the default workspace will be used. The API consumer must have \"approver\" privilege on each workspace provided, if not the API will respond with an error indicating the lack of sufficient privileges to perform the operation.",
+        "items": {
+          "maxLength": 250,
+          "type": "string"
+        }
       },
       "ActivityState": {
         "type": "string",
