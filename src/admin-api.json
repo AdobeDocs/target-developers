@@ -9751,8 +9751,8 @@
           "platform": {
             "$ref": "#/components/schemas/AudiencePlatformMetadata"
           },
-          "workspace": {
-            "$ref": "#/components/schemas/workspace"
+          "workspaces": {
+            "type": "string"
           },
           "createdAt": {
             "type": "string",
@@ -11307,8 +11307,8 @@
             "type": "integer",
             "format": "int64"
           },
-          "workspace": {
-            "$ref": "#/components/schemas/workspace"
+          "workspaces": {
+            "type": "string"
           }
         }
       },
