@@ -8530,7 +8530,7 @@
           "Activities"
         ],
         "summary": "List activities",
-        "description": "Get a list of activities created in your Target account, with the ability to filter and sort by attributes.",
+        "description": "Get a list of activities created in your Target account, with the ability to filter and sort by attributes, including filtering by one or more authors using the createdBy attribute.",
         "operationId": "getActivities",
         "parameters": [
           {
@@ -11968,11 +11968,11 @@
           "chronology": {
             "$ref": "#/components/schemas/Chronology"
           },
-          "end": {
+          "start": {
             "type": "string",
             "format": "date-time"
           },
-          "start": {
+          "end": {
             "type": "string",
             "format": "date-time"
           },
