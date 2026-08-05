@@ -4790,9 +4790,9 @@
         "tags": [
           "Activities"
         ],
-        "summary": "Get AB activity by ID",
-        "description": "Fetch the current definition of an AB activity as referenced by the provided ID.",
-        "operationId": "getActivity_2",
+        "summary": "Get XT activity by ID",
+        "description": "Fetch the current definition of an Experience Targeting activity as referenced by the provided ID.",
+        "operationId": "getActivity_2_1",
         "parameters": [
           {
             "name": "id",
@@ -4858,6 +4858,11 @@
           "200": {
             "description": "OK",
             "content": {
+              "application/vnd.adobe.target.v4+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ABActivity"
+                }
+              },
               "application/vnd.adobe.target.v3+json": {
                 "schema": {
                   "$ref": "#/components/schemas/ABActivity"
@@ -4871,9 +4876,9 @@
         "tags": [
           "Activities"
         ],
-        "summary": "Update AB activity",
-        "description": "Update the AB activity definition with the contents as provided in the request. This can change the state and behaviour of an existing activity.",
-        "operationId": "updateActivity_2",
+        "summary": "Update XT activity",
+        "description": "Update an Experience Targeting activity definition with the contents as provided in the request. This can change the state and behaviour of an existing activity.",
+        "operationId": "updateActivity_2_1",
         "parameters": [
           {
             "name": "id",
@@ -4887,6 +4892,11 @@
         ],
         "requestBody": {
           "content": {
+            "application/vnd.adobe.target.v4+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ABActivity"
+              }
+            },
             "application/vnd.adobe.target.v3+json": {
               "schema": {
                 "$ref": "#/components/schemas/ABActivity"
@@ -4949,6 +4959,11 @@
           "200": {
             "description": "OK",
             "content": {
+              "application/vnd.adobe.target.v4+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ABActivity"
+                }
+              },
               "application/vnd.adobe.target.v3+json": {
                 "schema": {
                   "$ref": "#/components/schemas/ABActivity"
@@ -4962,9 +4977,9 @@
         "tags": [
           "Activities"
         ],
-        "summary": "Delete AB activity",
-        "description": "Delete the AB activity referenced by the provided ID.",
-        "operationId": "deleteActivity_2",
+        "summary": "Delete XT activity",
+        "description": "Delete the Experience Targeting activity referenced by the provided ID.",
+        "operationId": "deleteActivity_2_1",
         "parameters": [
           {
             "name": "id",
@@ -5030,6 +5045,11 @@
           "200": {
             "description": "OK",
             "content": {
+              "application/vnd.adobe.target.v4+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ABActivity"
+                }
+              },
               "application/vnd.adobe.target.v3+json": {
                 "schema": {
                   "$ref": "#/components/schemas/ABActivity"
@@ -5047,7 +5067,7 @@
         ],
         "summary": "Get XT activity by ID",
         "description": "Fetch the current definition of an Experience Targeting activity as referenced by the provided ID.",
-        "operationId": "getActivity_3",
+        "operationId": "getActivity_2",
         "parameters": [
           {
             "name": "id",
@@ -5128,7 +5148,7 @@
         ],
         "summary": "Update XT activity",
         "description": "Update an Experience Targeting activity definition with the contents as provided in the request. This can change the state and behaviour of an existing activity.",
-        "operationId": "updateActivity_3",
+        "operationId": "updateActivity_2",
         "parameters": [
           {
             "name": "id",
@@ -5219,7 +5239,7 @@
         ],
         "summary": "Delete XT activity",
         "description": "Delete the Experience Targeting activity referenced by the provided ID.",
-        "operationId": "deleteActivity_3",
+        "operationId": "deleteActivity_2",
         "parameters": [
           {
             "name": "id",
@@ -6975,13 +6995,209 @@
         }
       }
     },
+    "/{tenant}/target/activities/ab": {
+      "post": {
+        "tags": [
+          "Activities"
+        ],
+        "summary": "Create XT activity",
+        "description": "Create a new Experience Targeting activity based on the specified contents, and return the created activity.",
+        "operationId": "createActivity_2_1",
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "application/vnd.adobe.target.v4+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ABActivity"
+              }
+            },
+            "application/vnd.adobe.target.v3+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ABActivity"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "407": {
+            "description": "Proxy Authentication Required",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "406": {
+            "description": "Not Acceptable",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "Created",
+            "content": {
+              "application/vnd.adobe.target.v4+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ABActivity"
+                }
+              },
+              "application/vnd.adobe.target.v3+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ABActivity"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/{tenant}/target/activities/ab/{id}/qamode": {
       "post": {
         "tags": [
           "Activities"
         ],
-        "summary": "Create preview links for the AB activity",
-        "description": "Get a set of preview links for the AB activity referenced by the provided ID. The \u003cb\u003eurl\u003c/b\u003e parameter indicates the URL on which the activity will be running. The \u003cb\u003ecurrentActivityOnly\u003c/b\u003e (defaults to true) indicates whether other activities running on the same URL should be ignored. The payload of the request also allows you to specify which segment ids should be evaluated to true by including these in the \u003cb\u003eaudienceIdsEvaluatedAsTrue\u003c/b\u003e list, so that the user doesn\u0027t necessarily have to qualify for these. At the same time you can specify which segments should always evaluate to false by including these in the \u003cb\u003eaudienceIdsEvaluatedAsFalse\u003c/b\u003e list.",
+        "summary": "Create preview links for the XT activity",
+        "description": "Get a set of preview links for the Experience Targeted activity referenced by the provided ID. The \u003cb\u003eurl\u003c/b\u003e parameter indicates the URL on which the activity will be running. The \u003cb\u003ecurrentActivityOnly\u003c/b\u003e (defaults to true) indicates whether other activities running on the same URL should be ignored. The payload of the request also allows you to specify which segment ids should be evaluated to true by including these in the \u003cb\u003eaudienceIdsEvaluatedAsTrue\u003c/b\u003e list, so that the user doesn\u0027t necessarily have to qualify for these. At the same time you can specify which segments should always evaluate to false by including these in the \u003cb\u003eaudienceIdsEvaluatedAsFalse\u003c/b\u003e list.",
+        "operationId": "createABActivityQAModeResponse_2",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/vnd.adobe.target.v4+json": {
+              "schema": {
+                "$ref": "#/components/schemas/QAModeRequest"
+              }
+            },
+            "application/vnd.adobe.target.v3+json": {
+              "schema": {
+                "$ref": "#/components/schemas/QAModeRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "407": {
+            "description": "Proxy Authentication Required",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "406": {
+            "description": "Not Acceptable",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/vnd.adobe.target.v4+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ABQAModeResponseDTO"
+                }
+              },
+              "application/vnd.adobe.target.v3+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ABQAModeResponseDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/{tenant}/target/activities/xt/{id}/qamode": {
+      "post": {
+        "tags": [
+          "Activities"
+        ],
+        "summary": "Create preview links for the XT activity",
+        "description": "Get a set of preview links for the Experience Targeted activity referenced by the provided ID. The \u003cb\u003eurl\u003c/b\u003e parameter indicates the URL on which the activity will be running. The \u003cb\u003ecurrentActivityOnly\u003c/b\u003e (defaults to true) indicates whether other activities running on the same URL should be ignored. The payload of the request also allows you to specify which segment ids should be evaluated to true by including these in the \u003cb\u003eaudienceIdsEvaluatedAsTrue\u003c/b\u003e list, so that the user doesn\u0027t necessarily have to qualify for these. At the same time you can specify which segments should always evaluate to false by including these in the \u003cb\u003eaudienceIdsEvaluatedAsFalse\u003c/b\u003e list.",
         "operationId": "createABActivityQAModeResponse",
         "parameters": [
           {
@@ -7068,182 +7284,6 @@
         }
       }
     },
-    "/{tenant}/target/activities/xt/{id}/qamode": {
-      "post": {
-        "tags": [
-          "Activities"
-        ],
-        "summary": "Create preview links for the XT activity",
-        "description": "Get a set of preview links for the Experience Targeted activity referenced by the provided ID. The \u003cb\u003eurl\u003c/b\u003e parameter indicates the URL on which the activity will be running. The \u003cb\u003ecurrentActivityOnly\u003c/b\u003e (defaults to true) indicates whether other activities running on the same URL should be ignored. The payload of the request also allows you to specify which segment ids should be evaluated to true by including these in the \u003cb\u003eaudienceIdsEvaluatedAsTrue\u003c/b\u003e list, so that the user doesn\u0027t necessarily have to qualify for these. At the same time you can specify which segments should always evaluate to false by including these in the \u003cb\u003eaudienceIdsEvaluatedAsFalse\u003c/b\u003e list.",
-        "operationId": "createABActivityQAModeResponse_2",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int64"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/vnd.adobe.target.v3+json": {
-              "schema": {
-                "$ref": "#/components/schemas/QAModeRequest"
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "400": {
-            "description": "Bad Request",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "407": {
-            "description": "Proxy Authentication Required",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "401": {
-            "description": "Unauthorized",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "406": {
-            "description": "Not Acceptable",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/vnd.adobe.target.v3+json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ABQAModeResponseDTO"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/{tenant}/target/activities/ab": {
-      "post": {
-        "tags": [
-          "Activities"
-        ],
-        "summary": "Create AB activity",
-        "description": "Create a new AB activity based on the specified contents, and return the created activity.",
-        "operationId": "createActivity_2",
-        "parameters": [],
-        "requestBody": {
-          "content": {
-            "application/vnd.adobe.target.v3+json": {
-              "schema": {
-                "$ref": "#/components/schemas/ABActivity"
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "400": {
-            "description": "Bad Request",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "407": {
-            "description": "Proxy Authentication Required",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "401": {
-            "description": "Unauthorized",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "406": {
-            "description": "Not Acceptable",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "201": {
-            "description": "Created",
-            "content": {
-              "application/vnd.adobe.target.v3+json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ABActivity"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
     "/{tenant}/target/activities/xt": {
       "post": {
         "tags": [
@@ -7251,7 +7291,7 @@
         ],
         "summary": "Create XT activity",
         "description": "Create a new Experience Targeting activity based on the specified contents, and return the created activity.",
-        "operationId": "createActivity_3",
+        "operationId": "createActivity_2",
         "parameters": [],
         "requestBody": {
           "content": {
@@ -11098,6 +11138,9 @@
           },
           "analytics": {
             "$ref": "#/components/schemas/Analytics"
+          },
+          "cjaReporting": {
+            "$ref": "#/components/schemas/CjaReporting"
           },
           "workspace": {
             "$ref": "#/components/schemas/workspace"
