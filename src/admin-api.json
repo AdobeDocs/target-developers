@@ -11914,6 +11914,12 @@
               "$ref": "#/components/schemas/MetricDTO"
             }
           },
+          "experiences": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ActivityExperience"
+            }
+          },
           "reportingAudiences": {
             "type": "array",
             "items": {
@@ -11930,6 +11936,59 @@
           },
           "activity": {
             "$ref": "#/components/schemas/AbstractActivity"
+          },
+          "report": {
+            "$ref": "#/components/schemas/ActivityReport"
+          }
+        }
+      },
+      "ActivityExperience": {
+        "type": "object",
+        "properties": {
+          "experienceLocalId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          }
+        }
+      },
+      "ActivityReportStatistics": {
+        "type": "object",
+        "properties": {
+          "experiences": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": true
+            }
+          },
+          "totals": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        }
+      },
+      "ActivityReport": {
+        "type": "object",
+        "properties": {
+          "statistics": {
+            "$ref": "#/components/schemas/ActivityReportStatistics"
+          },
+          "reportingAudiences": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": true
+            }
+          },
+          "optionStatistics": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": true
+            }
           }
         }
       },
