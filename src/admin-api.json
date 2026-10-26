@@ -6370,7 +6370,7 @@
           "Audiences"
         ],
         "summary": "Create audience",
-        "description": "Create a new audience as specified by the contents of the request and return the newly-created audience definition. Each audience definition is composed of either target or audience rules. Target rules allow the API caller to define conjunctions (OR) or disjunctions (AND) between various targeting conditions. Audience rules allow the API caller to build conjunctions (OR) or disjunctions (AND) over pre-built audiences (referred by IDs) to create even more powerful definitions. The targetRule and audienceRule attributes cannot be mixed within the same audience definition. Note: Audiences created using the API can only be edited using the API. You cannot edit an API-created audience in the UI, although you can use it within activities.",
+        "description": "Create a new audience as specified by the contents of the request and return the newly-created audience definition. Each audience definition is composed of either target or audience rules. Target rules allow the API caller to define conjunctions (AND) or disjunctions (OR) between various targeting conditions. Audience rules allow the API caller to build conjunctions (AND) or disjunctions (OR) over pre-built audiences (referred by IDs) to create even more powerful definitions. The targetRule and audienceRule attributes cannot be mixed within the same audience definition. Note: Audiences created using the API can only be edited using the API. You cannot edit an API-created audience in the UI, although you can use it within activities.",
         "operationId": "createAudience",
         "parameters": [],
         "requestBody": {
@@ -10338,7 +10338,31 @@
         "type": "object"
       },
       "TargetRule": {
-        "type": "object"
+        "type": "object",
+        "description": "Defines the conditions an audience must meet, based on request attributes such as mbox parameters or page properties. A rule is a logical container (`and` or `or`) that holds an array of conditions. Containers can be nested. Each condition is an object with exactly one operator key (for example `equals`, `equalsIgnoreCase`, `greaterEquals`, `lesserEquals`, `contains`), whose value is an array of values, plus one attribute key that names the attribute source and the attribute, for example `\"mbox\": \"userGroup\"` or `\"page\": \"url\"`. All values must be JSON strings. Numeric operators such as `greaterEquals` and `lesserEquals` accept only numeric strings (for example `\"0\"` or `\"49\"`, not `0`). Cannot be combined with `audienceRule` in the same audience.",
+        "additionalProperties": true,
+        "example": {
+          "and": [
+            {
+              "equalsIgnoreCase": [
+                "PIP"
+              ],
+              "mbox": "pageType"
+            },
+            {
+              "greaterEquals": [
+                "0"
+              ],
+              "mbox": "userGroup"
+            },
+            {
+              "lesserEquals": [
+                "49"
+              ],
+              "mbox": "userGroup"
+            }
+          ]
+        }
       },
       "ATJSSettings": {
         "type": "object",
