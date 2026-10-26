@@ -4790,8 +4790,8 @@
         "tags": [
           "Activities"
         ],
-        "summary": "Get XT activity by ID",
-        "description": "Fetch the current definition of an Experience Targeting activity as referenced by the provided ID.",
+        "summary": "Get AB activity by ID",
+        "description": "Fetch the current definition of an A/B Test activity as referenced by the provided ID.",
         "operationId": "getActivity_2_1",
         "parameters": [
           {
@@ -4876,8 +4876,8 @@
         "tags": [
           "Activities"
         ],
-        "summary": "Update XT activity",
-        "description": "Update an Experience Targeting activity definition with the contents as provided in the request. This can change the state and behaviour of an existing activity.",
+        "summary": "Update AB activity",
+        "description": "Update an A/B Test activity definition with the contents as provided in the request. This can change the state and behaviour of an existing activity.",
         "operationId": "updateActivity_2_1",
         "parameters": [
           {
@@ -4977,8 +4977,8 @@
         "tags": [
           "Activities"
         ],
-        "summary": "Delete XT activity",
-        "description": "Delete the Experience Targeting activity referenced by the provided ID.",
+        "summary": "Delete AB activity",
+        "description": "Delete the A/B Test activity referenced by the provided ID.",
         "operationId": "deleteActivity_2_1",
         "parameters": [
           {
@@ -7000,8 +7000,8 @@
         "tags": [
           "Activities"
         ],
-        "summary": "Create XT activity",
-        "description": "Create a new Experience Targeting activity based on the specified contents, and return the created activity.",
+        "summary": "Create AB activity",
+        "description": "Create a new A/B Test activity based on the specified contents, and return the created activity.",
         "operationId": "createActivity_2_1",
         "parameters": [],
         "requestBody": {
@@ -7093,8 +7093,8 @@
         "tags": [
           "Activities"
         ],
-        "summary": "Create preview links for the XT activity",
-        "description": "Get a set of preview links for the Experience Targeted activity referenced by the provided ID. The \u003cb\u003eurl\u003c/b\u003e parameter indicates the URL on which the activity will be running. The \u003cb\u003ecurrentActivityOnly\u003c/b\u003e (defaults to true) indicates whether other activities running on the same URL should be ignored. The payload of the request also allows you to specify which segment ids should be evaluated to true by including these in the \u003cb\u003eaudienceIdsEvaluatedAsTrue\u003c/b\u003e list, so that the user doesn\u0027t necessarily have to qualify for these. At the same time you can specify which segments should always evaluate to false by including these in the \u003cb\u003eaudienceIdsEvaluatedAsFalse\u003c/b\u003e list.",
+        "summary": "Create preview links for the AB activity",
+        "description": "Get a set of preview links for the A/B Test activity referenced by the provided ID. The \u003cb\u003eurl\u003c/b\u003e parameter indicates the URL on which the activity will be running. The \u003cb\u003ecurrentActivityOnly\u003c/b\u003e (defaults to true) indicates whether other activities running on the same URL should be ignored. The payload of the request also allows you to specify which segment ids should be evaluated to true by including these in the \u003cb\u003eaudienceIdsEvaluatedAsTrue\u003c/b\u003e list, so that the user doesn\u0027t necessarily have to qualify for these. At the same time you can specify which segments should always evaluate to false by including these in the \u003cb\u003eaudienceIdsEvaluatedAsFalse\u003c/b\u003e list.",
         "operationId": "createABActivityQAModeResponse_2",
         "parameters": [
           {
@@ -9541,8 +9541,8 @@
         "tags": [
           "Reports"
         ],
-        "summary": "Get XT orders report",
-        "description": "Retrieve orders report data for the Experience Targeting activity referenced by the provided ID.",
+        "summary": "Get AB orders report",
+        "description": "Retrieve orders report data for the AB activity referenced by the provided ID.",
         "operationId": "getReportById_4",
         "parameters": [
           {
