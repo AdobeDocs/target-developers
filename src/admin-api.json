@@ -9380,6 +9380,26 @@
         "operationId": "getReportById_2",
         "parameters": [
           {
+            "name": "metricLocalId",
+            "in": "query",
+            "required": false,
+            "description": "Local ID of the goal metric to report on. Defaults to the activity's main goal metric. Available IDs are listed in the `metrics` array of the `activity` object in the report response.",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "reportingAudienceLocalId",
+            "in": "query",
+            "required": false,
+            "description": "Local ID of the reporting segment to report on. Defaults to All Visitors. Available IDs are listed in the `reportingAudiences` array of the `activity` object in the report response.",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
             "name": "id",
             "in": "path",
             "required": true,
@@ -9462,6 +9482,26 @@
         "description": "Retrieve performance report data for the Experience Targeting activity referenced by the provided ID.",
         "operationId": "getReportById_3",
         "parameters": [
+          {
+            "name": "metricLocalId",
+            "in": "query",
+            "required": false,
+            "description": "Local ID of the goal metric to report on. Defaults to the activity's main goal metric. Available IDs are listed in the `metrics` array of the `activity` object in the report response.",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "reportingAudienceLocalId",
+            "in": "query",
+            "required": false,
+            "description": "Local ID of the reporting segment to report on. Defaults to All Visitors. Available IDs are listed in the `reportingAudiences` array of the `activity` object in the report response.",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
           {
             "name": "id",
             "in": "path",
