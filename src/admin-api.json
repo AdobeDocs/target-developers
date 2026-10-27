@@ -6133,7 +6133,7 @@
         "operationId": "getAuthorizationToken",
         "parameters": [
           {
-            "name": "authorizationScope",
+            "name": "scope",
             "in": "query",
             "required": true,
             "schema": {
@@ -6217,7 +6217,7 @@
         "operationId": "requestAuthorizationToken",
         "parameters": [
           {
-            "name": "authorizationScope",
+            "name": "scope",
             "in": "query",
             "required": true,
             "schema": {
