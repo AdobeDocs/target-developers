@@ -9026,9 +9026,29 @@
           "Activities"
         ],
         "summary": "List activities",
-        "description": "Get a list of activities created in your Target account, with the ability to filter and sort by attributes, including filtering by one or more authors using the createdBy attribute.",
+        "description": "Get a list of activities created in your Target account, with the ability to filter and sort by attributes, including filtering by one or more authors using the createdBy attribute. Only activities in the Default Workspace are returned unless a workspace is specified.",
         "operationId": "getActivities",
         "parameters": [
+          {
+            "name": "Accept",
+            "in": "header",
+            "description": "Versioned media type. Use the Accept header, not Content-Type.",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "application/vnd.adobe.target.v3+json"
+            }
+          },
+          {
+            "name": "workspace",
+            "in": "query",
+            "description": "Numeric ID of the workspace to return activities from.",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
           {
             "name": "mbox",
             "in": "query",
