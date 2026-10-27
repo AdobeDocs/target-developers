@@ -415,6 +415,20 @@
                             "description": "secure tracking server"
                           }
                         }
+                      },
+                      "platform": {
+                        "type": "object",
+                        "description": "Adobe Experience Platform (AEP) sandbox information.\nRequired when using a non-production sandbox (for example, *dev*) so that AEP segment qualification is evaluated under the correct sandbox. If sandbox information is not sent, the default *prod* sandbox is used.\n",
+                        "properties": {
+                          "sandboxId": {
+                            "type": "string",
+                            "description": "AEP sandbox ID."
+                          },
+                          "sandboxName": {
+                            "type": "string",
+                            "description": "AEP sandbox name, for example `dev` or `prod`."
+                          }
+                        }
                       }
                     }
                   },
@@ -754,6 +768,10 @@
                         "logging": "server_side",
                         "supplementalDataId": "1122334455667788-1122334455667788",
                         "trackingServer": "sstats.adobe.com"
+                      },
+                      "platform": {
+                        "sandboxId": "5f9f1a54-da61-44c1-9f1a-54da61d4c16c",
+                        "sandboxName": "dev"
                       }
                     },
                     "execute": {
