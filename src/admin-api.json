@@ -2473,7 +2473,7 @@
           "Audiences"
         ],
         "summary": "Update audience",
-        "description": "Update an audience with the new rules specified by the request data.",
+        "description": "Update an audience with the new rules specified by the request data. For the structure, operators and value types of a targetRule, see the TargetRule schema.",
         "operationId": "updateAudience",
         "parameters": [
           {
@@ -2645,7 +2645,7 @@
           "Audiences"
         ],
         "summary": "Patch a specific audience by ID",
-        "description": "Partial update to the audience referenced by the specified ID. You can update individual fields like name, description, targetRule, etc.",
+        "description": "Partial update to the audience referenced by the specified ID. You can update individual fields like name, description, targetRule, etc. For the structure, operators and value types of a targetRule, see the TargetRule schema.",
         "operationId": "patchAudience",
         "parameters": [
           {
@@ -6370,7 +6370,7 @@
           "Audiences"
         ],
         "summary": "Create audience",
-        "description": "Create a new audience as specified by the contents of the request and return the newly-created audience definition. Each audience definition is composed of either target or audience rules. Target rules allow the API caller to define conjunctions (OR) or disjunctions (AND) between various targeting conditions. Audience rules allow the API caller to build conjunctions (OR) or disjunctions (AND) over pre-built audiences (referred by IDs) to create even more powerful definitions. The targetRule and audienceRule attributes cannot be mixed within the same audience definition. Note: Audiences created using the API can only be edited using the API. You cannot edit an API-created audience in the UI, although you can use it within activities.",
+        "description": "Create a new audience as specified by the contents of the request and return the newly-created audience definition. Each audience definition is composed of either target or audience rules. Target rules allow the API caller to define conjunctions (AND) or disjunctions (OR) between various targeting conditions. Audience rules allow the API caller to build conjunctions (AND) or disjunctions (OR) over pre-built audiences (referred by IDs) to create even more powerful definitions. The targetRule and audienceRule attributes cannot be mixed within the same audience definition. Note: Audiences created using the API can only be edited using the API. You cannot edit an API-created audience in the UI, although you can use it within activities. For the structure, operators and value types of a targetRule, see the TargetRule schema.",
         "operationId": "createAudience",
         "parameters": [],
         "requestBody": {
@@ -10378,7 +10378,30 @@
         "type": "object"
       },
       "TargetRule": {
-        "type": "object"
+        "type": "object",
+        "description": "Defines the conditions an audience must meet. A rule is either a single condition or a logical container. `and` and `or` hold an array of two or more rules; `not` holds exactly one rule (an object, not an array). Containers can be nested. A `targetRule` cannot be combined with `audienceRule` in the same audience.\n\nEach condition has three parts:\n- A **source key** that names where the value comes from, for example `mbox` or `page`. Its value is the attribute name, for example `\"mbox\": \"userGroup\"`.\n- An **operator key** that names how the value is compared, for example `greaterEquals`.\n- **Values**: an array of strings. Numbers and booleans are not supported. For the `profile` and `crs` sources only, an item can also be `{\"profile\": \"<attribute>\"}` or `{\"crs\": \"<attribute>\"}` to compare against another attribute's value.\n\nExample: mbox parameter `userGroup` is at least 0: `{ \"mbox\": \"userGroup\", \"greaterEquals\": [\"0\"] }`\n\n**Source keys:** `mbox`, `page`, `landingPage`, `referring`, `referringLandingPage`, `profile`, `geo`, `mobile`, `time`, `withinDateRange`, `crs`, `header`. `withinDateRange` takes no operator key; the dates go directly under the source key: `{\"withinDateRange\": [ ... ]}`.\n\n**Operator keys**\n\n| Type | Keys | Values |\n|---|---|---|\n| Text | `equals`, `equalsIgnoreCase`, `doesNotEqual`, `doesNotEqualIgnoreCase`, `contains`, `containsIgnoreCase`, `doesNotContain`, `doesNotContainIgnoreCase`, `startsWith`, `startsWithIgnoreCase`, `endsWith`, `endsWithIgnoreCase`, `matches`, `doesNotMatch` | Strings |\n| Numeric | `greater`, `greaterEquals`, `lesser`, `lesserEquals` | Numbers written as strings: `\"0\"`, not `0` |\n| Presence | `present`, `notPresent`, `empty`, `notEmpty`, `paramPresent`, `paramNotPresent`, `paramNotPresentValueNotPresent`, `paramValuePresent` | Empty array: `[]` |\n| Other | `withinTimeframe` (`time`), `radius` (`geo`) | Depends on the source |\n\n**Allowed operators per source**\n\n| Source | Attribute | Allowed operators |\n|---|---|---|\n| `mbox` | Any mbox parameter name | Text (except `matches` and `doesNotMatch`), Numeric, and the four `param*` presence keys |\n| `page` | URL part: `url`, `domain`, `query`, `subdomain`, `topLevelDomain`, `path`, `fragment` | Text (except `matches` and `doesNotMatch`), `present`, `notPresent`, `empty`, `notEmpty` |\n| `page` | URL query parameter: `{\"parameter\": \"<name>\"}` | Text (except `matches` and `doesNotMatch`), Numeric, and the four `param*` presence keys |\n\nUsing an operator that a source does not accept returns a validation error.",
+        "example": {
+          "and": [
+            {
+              "equalsIgnoreCase": [
+                "PIP"
+              ],
+              "mbox": "pageType"
+            },
+            {
+              "greaterEquals": [
+                "0"
+              ],
+              "mbox": "userGroup"
+            },
+            {
+              "lesserEquals": [
+                "49"
+              ],
+              "mbox": "userGroup"
+            }
+          ]
+        }
       },
       "ATJSSettings": {
         "type": "object",
