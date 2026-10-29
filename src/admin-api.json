@@ -4790,8 +4790,8 @@
         "tags": [
           "Activities"
         ],
-        "summary": "Get XT activity by ID",
-        "description": "Fetch the current definition of an Experience Targeting activity as referenced by the provided ID.",
+        "summary": "Get AB activity by ID",
+        "description": "Fetch the current definition of an A/B Test activity as referenced by the provided ID.",
         "operationId": "getActivity_2_1",
         "parameters": [
           {
@@ -4876,8 +4876,8 @@
         "tags": [
           "Activities"
         ],
-        "summary": "Update XT activity",
-        "description": "Update an Experience Targeting activity definition with the contents as provided in the request. This can change the state and behaviour of an existing activity.",
+        "summary": "Update AB activity",
+        "description": "Update an A/B Test activity definition with the contents as provided in the request. This can change the state and behaviour of an existing activity.",
         "operationId": "updateActivity_2_1",
         "parameters": [
           {
@@ -4977,8 +4977,8 @@
         "tags": [
           "Activities"
         ],
-        "summary": "Delete XT activity",
-        "description": "Delete the Experience Targeting activity referenced by the provided ID.",
+        "summary": "Delete AB activity",
+        "description": "Delete the A/B Test activity referenced by the provided ID.",
         "operationId": "deleteActivity_2_1",
         "parameters": [
           {
@@ -6133,7 +6133,7 @@
         "operationId": "getAuthorizationToken",
         "parameters": [
           {
-            "name": "authorizationScope",
+            "name": "scope",
             "in": "query",
             "required": true,
             "schema": {
@@ -6217,7 +6217,7 @@
         "operationId": "requestAuthorizationToken",
         "parameters": [
           {
-            "name": "authorizationScope",
+            "name": "scope",
             "in": "query",
             "required": true,
             "schema": {
@@ -7000,8 +7000,8 @@
         "tags": [
           "Activities"
         ],
-        "summary": "Create XT activity",
-        "description": "Create a new Experience Targeting activity based on the specified contents, and return the created activity.",
+        "summary": "Create AB activity",
+        "description": "Create a new A/B Test activity based on the specified contents, and return the created activity.",
         "operationId": "createActivity_2_1",
         "parameters": [],
         "requestBody": {
@@ -7093,8 +7093,8 @@
         "tags": [
           "Activities"
         ],
-        "summary": "Create preview links for the XT activity",
-        "description": "Get a set of preview links for the Experience Targeted activity referenced by the provided ID. The \u003cb\u003eurl\u003c/b\u003e parameter indicates the URL on which the activity will be running. The \u003cb\u003ecurrentActivityOnly\u003c/b\u003e (defaults to true) indicates whether other activities running on the same URL should be ignored. The payload of the request also allows you to specify which segment ids should be evaluated to true by including these in the \u003cb\u003eaudienceIdsEvaluatedAsTrue\u003c/b\u003e list, so that the user doesn\u0027t necessarily have to qualify for these. At the same time you can specify which segments should always evaluate to false by including these in the \u003cb\u003eaudienceIdsEvaluatedAsFalse\u003c/b\u003e list.",
+        "summary": "Create preview links for the AB activity",
+        "description": "Get a set of preview links for the A/B Test activity referenced by the provided ID. The \u003cb\u003eurl\u003c/b\u003e parameter indicates the URL on which the activity will be running. The \u003cb\u003ecurrentActivityOnly\u003c/b\u003e (defaults to true) indicates whether other activities running on the same URL should be ignored. The payload of the request also allows you to specify which segment ids should be evaluated to true by including these in the \u003cb\u003eaudienceIdsEvaluatedAsTrue\u003c/b\u003e list, so that the user doesn\u0027t necessarily have to qualify for these. At the same time you can specify which segments should always evaluate to false by including these in the \u003cb\u003eaudienceIdsEvaluatedAsFalse\u003c/b\u003e list.",
         "operationId": "createABActivityQAModeResponse_2",
         "parameters": [
           {
@@ -9026,9 +9026,29 @@
           "Activities"
         ],
         "summary": "List activities",
-        "description": "Get a list of activities created in your Target account, with the ability to filter and sort by attributes, including filtering by one or more authors using the createdBy attribute.",
+        "description": "Get a list of activities created in your Target account, with the ability to filter and sort by attributes, including filtering by one or more authors using the createdBy attribute. Only activities in the Default Workspace are returned unless a workspace is specified.",
         "operationId": "getActivities",
         "parameters": [
+          {
+            "name": "Accept",
+            "in": "header",
+            "description": "Versioned media type. Use the Accept header, not Content-Type.",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "application/vnd.adobe.target.v3+json"
+            }
+          },
+          {
+            "name": "workspace",
+            "in": "query",
+            "description": "Numeric ID of the workspace to return activities from.",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
           {
             "name": "mbox",
             "in": "query",
@@ -9380,6 +9400,26 @@
         "operationId": "getReportById_2",
         "parameters": [
           {
+            "name": "metricLocalId",
+            "in": "query",
+            "required": false,
+            "description": "Local ID of the goal metric to report on. Defaults to the activity's main goal metric. Available IDs are listed in the `metrics` array of the `activity` object in the report response.",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "reportingAudienceLocalId",
+            "in": "query",
+            "required": false,
+            "description": "Local ID of the reporting segment to report on. Defaults to All Visitors. Available IDs are listed in the `reportingAudiences` array of the `activity` object in the report response.",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
             "name": "id",
             "in": "path",
             "required": true,
@@ -9463,6 +9503,26 @@
         "operationId": "getReportById_3",
         "parameters": [
           {
+            "name": "metricLocalId",
+            "in": "query",
+            "required": false,
+            "description": "Local ID of the goal metric to report on. Defaults to the activity's main goal metric. Available IDs are listed in the `metrics` array of the `activity` object in the report response.",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "reportingAudienceLocalId",
+            "in": "query",
+            "required": false,
+            "description": "Local ID of the reporting segment to report on. Defaults to All Visitors. Available IDs are listed in the `reportingAudiences` array of the `activity` object in the report response.",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
             "name": "id",
             "in": "path",
             "required": true,
@@ -9541,8 +9601,8 @@
         "tags": [
           "Reports"
         ],
-        "summary": "Get XT orders report",
-        "description": "Retrieve orders report data for the Experience Targeting activity referenced by the provided ID.",
+        "summary": "Get AB orders report",
+        "description": "Retrieve orders report data for the AB activity referenced by the provided ID.",
         "operationId": "getReportById_4",
         "parameters": [
           {
@@ -10339,7 +10399,7 @@
       },
       "TargetRule": {
         "type": "object",
-        "description": "Defines the conditions an audience must meet. A rule is either a single condition or a logical container. `and` and `or` hold an array of two or more rules; `not` holds exactly one rule (an object, not an array). Containers can be nested. A `targetRule` cannot be combined with `audienceRule` in the same audience.\n\nEach condition has three parts:\n- A **source key** that names where the value comes from, for example `mbox` or `page`. Its value is the attribute name, for example `\"mbox\": \"userGroup\"`.\n- An **operator key** that names how the value is compared, for example `greaterEquals`.\n- **Values**: an array of strings. Numbers and booleans are not supported. For the `profile` and `crs` sources only, an item can also be `{\"profile\": \"<attribute>\"}` or `{\"crs\": \"<attribute>\"}` to compare against another attribute's value.\n\nExample: mbox parameter `userGroup` is at least 0: `{ \"mbox\": \"userGroup\", \"greaterEquals\": [\"0\"] }`\n\n**Source keys:** `mbox`, `page`, `landingPage`, `referring`, `referringLandingPage`, `profile`, `geo`, `mobile`, `time`, `withinDateRange`, `crs`, `header`. `withinDateRange` takes no operator key; the dates go directly under the source key: `{\"withinDateRange\": [ ... ]}`.\n\n**Operator keys**\n\n| Type | Keys | Values |\n|---|---|---|\n| Text | `equals`, `equalsIgnoreCase`, `doesNotEqual`, `doesNotEqualIgnoreCase`, `contains`, `containsIgnoreCase`, `doesNotContain`, `doesNotContainIgnoreCase`, `startsWith`, `startsWithIgnoreCase`, `endsWith`, `endsWithIgnoreCase`, `matches`, `doesNotMatch` | Strings |\n| Numeric | `greater`, `greaterEquals`, `lesser`, `lesserEquals` | Numbers written as strings: `\"0\"`, not `0` |\n| Presence | `present`, `notPresent`, `empty`, `notEmpty`, `paramPresent`, `paramNotPresent`, `paramNotPresentValueNotPresent`, `paramValuePresent` | Empty array: `[]` |\n| Timeframe | `withinTimeframe` (source `time`) | 1 to 50 strings, each `days:start:end`. `time` is `null` or `[]`. Days: 1 (Monday) to 7 (Sunday). Times: 24-hour `HHmm`, with an optional `+HHmm` or `-HHmm` offset on both. The end must be after the start. Example: `\"1:3:6:0400:1600\"` means Monday, Wednesday and Saturday, 04:00 to 16:00. |\n| Radius | `radius` (source `geo`) | Not an array. Flat keys `latitude` (-90 to 90), `longitude` (-180 to 180), `radius` (maximum 20,000 km or equivalent in miles) and optional `unit` (`km` or `mile`) sit next to `\"geo\": \"area\"`. All values are strings. Example: `{\"geo\": \"area\", \"latitude\": \"40.7\", \"longitude\": \"-74.0\", \"radius\": \"10\", \"unit\": \"km\"}` |\n| Date range | None. Use the source key `withinDateRange`. | 1 to 50 `\"start/end\"` strings, either side optional, for example `\"/2001\"`. Dates: 1970 to 9999. A fully open interval is rejected. Example: `{\"withinDateRange\": [\"2016-09-01T12:23/2016-12-05T12:23\"]}` |\n\n**Allowed operators per source**\n\n| Source | Attribute | Allowed operators |\n|---|---|---|\n| mbox | Any mbox parameter name | Text (except `matches` and `doesNotMatch`), Numeric, and the four `param*` presence keys |\n| page | URL part: `url`, `domain`, `query`, `subdomain`, `topLevelDomain`, `path`, `fragment` | Text (except `matches` and `doesNotMatch`), `present`, `notPresent`, `empty`, `notEmpty` |\n| page | URL query parameter: `{\"parameter\": \"<name>\"}` | Text (except `matches` and `doesNotMatch`), Numeric, and the four `param*` presence keys |\n\nUsing an operator that a source does not accept returns a validation error.",
+        "description": "Defines the conditions an audience must meet. A rule is either a single condition or a logical container. `and` and `or` hold an array of two or more rules; `not` holds exactly one rule (an object, not an array). Containers can be nested. A `targetRule` cannot be combined with `audienceRule` in the same audience.\n\nEach condition has three parts:\n- A **source key** that names where the value comes from, for example `mbox` or `page`. Its value is the attribute name, for example `\"mbox\": \"userGroup\"`.\n- An **operator key** that names how the value is compared, for example `greaterEquals`.\n- **Values**: an array of strings. Numbers and booleans are not supported. For the `profile` and `crs` sources only, an item can also be `{\"profile\": \"<attribute>\"}` or `{\"crs\": \"<attribute>\"}` to compare against another attribute's value.\n\nExample: mbox parameter `userGroup` is at least 0: `{ \"mbox\": \"userGroup\", \"greaterEquals\": [\"0\"] }`\n\n**Source keys:** `mbox`, `page`, `landingPage`, `referring`, `referringLandingPage`, `profile`, `geo`, `mobile`, `time`, `withinDateRange`, `crs`, `header`. `withinDateRange` takes no operator key; the dates go directly under the source key: `{\"withinDateRange\": [ ... ]}`.\n\n**Operator keys**\n\n| Type | Keys | Values |\n|---|---|---|\n| Text | `equals`, `equalsIgnoreCase`, `doesNotEqual`, `doesNotEqualIgnoreCase`, `contains`, `containsIgnoreCase`, `doesNotContain`, `doesNotContainIgnoreCase`, `startsWith`, `startsWithIgnoreCase`, `endsWith`, `endsWithIgnoreCase`, `matches`, `doesNotMatch` | Strings |\n| Numeric | `greater`, `greaterEquals`, `lesser`, `lesserEquals` | Numbers written as strings: `\"0\"`, not `0` |\n| Presence | `present`, `notPresent`, `empty`, `notEmpty`, `paramPresent`, `paramNotPresent`, `paramNotPresentValueNotPresent`, `paramValuePresent` | Empty array: `[]` |\n| Timeframe | `withinTimeframe` (source `time`) | 1 to 50 strings, each `days:start:end`. `time` is `null` or `[]`. Days: 1 (Monday) to 7 (Sunday). Times: 24-hour `HHmm`, with an optional `+HHmm` or `-HHmm` offset on both. The end must be after the start. Example: `\"1:3:6:0400:1600\"` means Monday, Wednesday and Saturday, 04:00 to 16:00. |\n| Radius | `radius` (source `geo`) | Not an array. Flat keys `latitude` (-90 to 90), `longitude` (-180 to 180), `radius` (maximum 20,000 km or equivalent in miles) and optional `unit` (`km` or `mile`) sit next to `\"geo\": \"area\"`. All values are strings. Example: `{\"geo\": \"area\", \"latitude\": \"40.7\", \"longitude\": \"-74.0\", \"radius\": \"10\", \"unit\": \"km\"}` |\n| Date range | None. Use the source key `withinDateRange`. | 1 to 50 `\"start/end\"` strings, either side optional, for example `\"/2001\"`. Dates: 1970 to 9999. A fully open interval is rejected. Example: `{\"withinDateRange\": [\"2016-09-01T12:23/2016-12-05T12:23\"]}` |\n\n**Allowed operators per source**\n\n| Source | Attribute | Allowed operators |\n|---|---|---|\n| `mbox` | Any mbox parameter name | Text (except `matches` and `doesNotMatch`), Numeric, and the four `param*` presence keys |\n| `page` | URL part: `url`, `domain`, `query`, `subdomain`, `topLevelDomain`, `path`, `fragment` | Text (except `matches` and `doesNotMatch`), `present`, `notPresent`, `empty`, `notEmpty` |\n| `page` | URL query parameter: `{\"parameter\": \"<name>\"}` | Text (except `matches` and `doesNotMatch`), Numeric, and the four `param*` presence keys |\n\nUsing an operator that a source does not accept returns a validation error.",
         "example": {
           "and": [
             {
