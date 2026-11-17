@@ -4791,7 +4791,7 @@
           "Activities"
         ],
         "summary": "Get XT activity by ID",
-        "description": "Fetch the current definition of an Experience Targeting activity as referenced by the provided ID.",
+        "description": "Fetch the current definition of an Experience Targeting activity as referenced by the provided ID. The response does not include the page URL that a visual (VEC) activity opens on (authoredLocation), even though the Target UI shows it. Activities created through the API are saved without a page URL, including activities that contain selector (CSS) changes. If present, marketingCloudMetadata.editURL is a link back to the activity, not the VEC page URL.",
         "operationId": "getActivity_2_1",
         "parameters": [
           {
@@ -4877,7 +4877,7 @@
           "Activities"
         ],
         "summary": "Update XT activity",
-        "description": "Update an Experience Targeting activity definition with the contents as provided in the request. This can change the state and behaviour of an existing activity.",
+        "description": "Update an Experience Targeting activity definition with the contents as provided in the request. This can change the state and behaviour of an existing activity. The page URL of a visual (VEC) activity (authoredLocation) is not part of the API and is not returned in the response. Activities created through the API are saved without a page URL, including activities that contain selector (CSS) changes. If present, marketingCloudMetadata.editURL is a link back to the activity, not the VEC page URL.",
         "operationId": "updateActivity_2_1",
         "parameters": [
           {
@@ -5066,7 +5066,7 @@
           "Activities"
         ],
         "summary": "Get XT activity by ID",
-        "description": "Fetch the current definition of an Experience Targeting activity as referenced by the provided ID.",
+        "description": "Fetch the current definition of an Experience Targeting activity as referenced by the provided ID. The response does not include the page URL that a visual (VEC) activity opens on (authoredLocation), even though the Target UI shows it. Activities created through the API are saved without a page URL, including activities that contain selector (CSS) changes. If present, marketingCloudMetadata.editURL is a link back to the activity, not the VEC page URL.",
         "operationId": "getActivity_2",
         "parameters": [
           {
@@ -5147,7 +5147,7 @@
           "Activities"
         ],
         "summary": "Update XT activity",
-        "description": "Update an Experience Targeting activity definition with the contents as provided in the request. This can change the state and behaviour of an existing activity.",
+        "description": "Update an Experience Targeting activity definition with the contents as provided in the request. This can change the state and behaviour of an existing activity. The page URL of a visual (VEC) activity (authoredLocation) is not part of the API and is not returned in the response. Activities created through the API are saved without a page URL, including activities that contain selector (CSS) changes. If present, marketingCloudMetadata.editURL is a link back to the activity, not the VEC page URL.",
         "operationId": "updateActivity_2",
         "parameters": [
           {
@@ -7001,7 +7001,7 @@
           "Activities"
         ],
         "summary": "Create XT activity",
-        "description": "Create a new Experience Targeting activity based on the specified contents, and return the created activity.",
+        "description": "Create a new Experience Targeting activity based on the specified contents, and return the created activity. The page URL of a visual (VEC) activity cannot be set through the API and is not returned in the response: a request that contains authoredLocation or experienceEditorType is rejected with HTTP 400 (Unrecognized property name). Activities created through the API are saved without a page URL, including activities that contain selector (CSS) changes. If present, marketingCloudMetadata.editURL is a link back to the activity, not the VEC page URL.",
         "operationId": "createActivity_2_1",
         "parameters": [],
         "requestBody": {
@@ -7290,7 +7290,7 @@
           "Activities"
         ],
         "summary": "Create XT activity",
-        "description": "Create a new Experience Targeting activity based on the specified contents, and return the created activity.",
+        "description": "Create a new Experience Targeting activity based on the specified contents, and return the created activity. The page URL of a visual (VEC) activity (authoredLocation) is not part of the API and is not returned in the response. Activities created through the API are saved without a page URL, including activities that contain selector (CSS) changes. If present, marketingCloudMetadata.editURL is a link back to the activity, not the VEC page URL.",
         "operationId": "createActivity_2",
         "parameters": [],
         "requestBody": {
